@@ -18,16 +18,14 @@ export default class Simulator extends React.Component {
     const is4k = this.state.view === '4k';
     const card = 'border-radius: 8px; padding: 32px; display: flex; flex-direction: column; gap: 16px; min-height: 380px; ';
     const sessions = [
-      { tag: 'TASTER', time: '30 MIN', copy: 'Perfect for first-timers. Learn the car, set a lap time, get hooked.', price: '[PRICE]', cta: 'Book 30 min', href: '/book', popular: false },
-      { tag: 'RACE', time: '60 MIN', copy: 'Time to find your limits and chase down a personal best.', price: '[PRICE]', cta: 'Book 60 min', href: '/book', popular: true },
-      { tag: 'ENDURANCE', time: '90 MIN', copy: 'Try more cars and circuits, or run a head-to-head with friends.', price: '[PRICE]', cta: 'Book 90 min', href: '/book', popular: false },
-      { tag: 'EXCLUSIVE', time: '3 HRS', copy: 'Hire the whole venue: sims, Scalextric, games and your own playlist.', price: '[PRICE]', cta: 'Enquire', href: '/visit-us', popular: false }
+      { tag: 'SIM ROOM · MON–FRI 09:00–17:00', time: '1 HOUR', copy: '1 hour in the sim room for 2 people sharing 1 sim. Swap seats, chase each other’s lap times and pick 4K or VR.', price: '£80 per hour', cta: 'Book a sim hour', href: '/book', popular: false, featured: true },
+      { tag: 'EXCLUSIVE · WHOLE CAVE', time: '3 HRS', copy: 'Hire the whole venue: sims, Scalextric, games and your own playlist.', price: 'From £600', cta: 'Enquire', href: '/visit-us', popular: false, featured: false }
     ].map((s) => ({ ...s,
-      style: card + (s.popular ? 'background: #18181C; border: 1px solid ' + accent : 'background: #131316; border: 1px solid #232328'),
-      btnBg: s.popular ? accent : 'transparent', btnFg: s.popular ? '#09090B' : '#FFFFFF' }));
+      style: card + (s.featured ? 'background: #18181C; border: 1px solid ' + accent : 'background: #131316; border: 1px solid #232328'),
+      btnBg: s.featured ? accent : 'transparent', btnFg: s.featured ? '#09090B' : '#FFFFFF' }));
     const faqList = [
       ['Do I need racing experience?', 'Not at all. The simulator suits complete beginners and experienced racers alike, and our team will guide you through everything before you set off.'],
-      ['How long is a session?', 'Standard sessions are 30, 60 or 90 minutes, and venue hire is 3 hours. Longer sessions and packages are available on request.'],
+      ['How long is a session?', 'Sim room slots are 1 hour, for 2 people sharing 1 sim: £80 per hour, Monday to Friday 9am–5pm. Whole-cave hire is 3 hours, from £600.'],
       ['Can I book parties or corporate events?', 'Yes. We run private parties and tailored packages for birthdays, stag and hen parties, team building and corporate events. Get in touch to plan yours.'],
       ['Do you offer VR or 4K?', 'Both. Choose crystal-clear 4K screens or fully immersive VR when you book — or try each on the day.'],
       ['Can under-16s use the simulator?', 'Yes. Under-16s drive in static mode, with the motion system switched off — everything else is the full experience.'],
@@ -110,8 +108,8 @@ export default class Simulator extends React.Component {
 <div style={css("font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 32px; color: #FFFFFF; margin-top: 6px")}>{"Gated manual"}</div>
 </div>
 <div style={css("padding: 28px 0 28px 20px")}>
-<div style={css("font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: #71717A")}>{"SESSIONS"}</div>
-<div style={css("font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 32px; color: #FFFFFF; margin-top: 6px")}>{"30 \u00b7 60 \u00b7 90 min"}</div>
+<div style={css("font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: #71717A")}>{"SLOTS"}</div>
+<div style={css("font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 32px; color: #FFFFFF; margin-top: 6px")}>{"1 hour"}</div>
 </div>
 </div>
 </section>
@@ -205,7 +203,7 @@ export default class Simulator extends React.Component {
 <p style={css(`margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: ${V.accent}`)}>{"04 / SESSIONS"}</p>
 <h2 id="sess-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 84px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Pick your"}<br />{"stint"}</h2>
 </div>
-<p style={css("margin: 0; max-width: 420px; font-size: 18px; line-height: 1.6; color: #A1A1AA")}>{"Longer sessions and packages are available \u2014 get in touch and we\u2019ll tailor one for you."}</p>
+<p style={css("margin: 0; max-width: 420px; font-size: 18px; line-height: 1.6; color: #A1A1AA")}>{"The sim room is booked in 1-hour slots, priced for 2 people sharing 1 sim. Bigger group? Hire the whole cave for 3 hours."}</p>
 </div>
 <div style={css("display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px")}>
 {(V.sessions || []).map((s, $index) => (<React.Fragment key={$index}>
