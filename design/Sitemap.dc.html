@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<title>Site map — 4-tier SEO structure</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800;900&amp;family=Barlow:wght@400;500;600&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="width: 1600px; min-height: 2600px; box-sizing: border-box; padding: 72px; background: #09090B; font-family: 'Barlow', system-ui, sans-serif; color: #E4E4E7; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 40px">
+<div>
+<p style="margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 14px; letter-spacing: 0.16em; color: #FFC233">LEMAN CAVE · SITE MAP</p>
+<h1 style="margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 112px; line-height: 0.88; color: #FFFFFF; text-transform: uppercase">4-tier SEO<br><span style="color: #ED2835">website strategy</span></h1>
+</div>
+<img src="/_blob/d8a1bc65662ee5a26ca2d3cbc9ca559e" alt="LeMan Cave" style="width: 260px; height: auto">
+</div>
+<p style="margin: 0; max-width: 900px; font-size: 20px; line-height: 1.55; color: #A1A1AA">Built for motorsport fans, families, groups and general visitors. In Play mode, click any page to open it.</p>
+<sc-for list="{{tiers}}" as="t" hint-placeholder-count="4">
+<section style="border: 1px solid #27272A; border-radius: 12px; overflow: hidden; background: #0F0F12">
+<div style="display: flex; align-items: center; gap: 24px; padding: 22px 28px; border-bottom: 1px solid #27272A; background: #131316">
+<span style="font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 34px; color: #09090B; background: #ED2835; padding: 6px 18px; border-radius: 4px; text-transform: uppercase">{{t.tier}}</span>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<span style="font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 34px; line-height: 1; color: #FFFFFF; text-transform: uppercase">{{t.title}}</span>
+<span style="font-size: 15px; color: #A1A1AA">{{t.copy}}</span>
+</div>
+</div>
+<div style="padding: 24px 28px; display: flex; flex-direction: column; gap: 18px">
+<sc-for list="{{t.rows}}" as="r" hint-placeholder-count="2">
+<div style="display: flex; gap: 20px; align-items: flex-start">
+<span style="flex: none; width: 170px; padding-top: 12px; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: #FFC233">{{r.label}}</span>
+<div style="display: flex; flex-wrap: wrap; gap: 10px">
+<sc-for list="{{r.pages}}" as="pg" hint-placeholder-count="6">
+<a href="{{pg.href}}" style="{{pg.style}}">{{pg.name}}</a>
+</sc-for>
+</div>
+</div>
+</sc-for>
+</div>
+</section>
+</sc-for>
+<div style="display: flex; gap: 18px; flex-wrap: wrap; font-size: 14px; color: #A1A1AA">
+<span style="display: inline-flex; align-items: center; gap: 8px"><span style="width: 14px; height: 14px; border-radius: 3px; background: #1C1C21; border: 1px solid #3F3F46"></span>Page built</span>
+<span style="display: inline-flex; align-items: center; gap: 8px"><span style="width: 14px; height: 14px; border-radius: 3px; background: #ED2835"></span>Booking (external)</span>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1600,"height":2600}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const chip = 'display: inline-block; font-size: 15px; font-weight: 600; padding: 12px 16px; border-radius: 6px; text-decoration: none; ';
+    const P = (rows) => rows.map(([name, href]) => ({ name, href, style: chip + (href.startsWith('http') ? 'background: #ED2835; color: #09090B' : 'background: #1C1C21; color: #F4F4F5; border: 1px solid #3F3F46') }));
+    const tiers = [
+      { tier: 'Tier 1', title: 'Core website pages', copy: 'Primary navigation and core conversion pages.', rows: [
+        { label: 'NAVIGATION', pages: P([['Home', 'Main.dc.html'], ['Attractions', 'Attractions.dc.html'], ['Food & Drink', 'Food.dc.html'], ['BYO Drinks', 'Drinks.dc.html'], ['Parties & Events', 'Events.dc.html'], ['Prices', 'Pricing.dc.html'], ['Gallery', 'Gallery.dc.html'], ['Location & Contact', 'Visit.dc.html'], ['Book Now', 'https://lemancave.co.uk/book']]) }] },
+      { tier: 'Tier 2', title: 'Experience / product pages', copy: 'A dedicated page for every attraction and on-site experience.', rows: [
+        { label: 'RACING', pages: P([['Pro Racing Simulator', 'Simulator.dc.html'], ['Motorcycle Sim', 'MotoSim.dc.html'], ['Digital Scalextric', 'Scalextric.dc.html'], ['Retro Memorabilia', 'Memorabilia.dc.html']]) },
+        { label: 'GAMES', pages: P([['Games & Arcade', 'Games.dc.html'], ['PS5 Lounge', 'PS5.dc.html'], ['Digital Pinball', 'Pinball.dc.html'], ['Pool Table', 'Pool.dc.html'], ['Air Hockey', 'AirHockey.dc.html'], ['Table Football', 'TableFootball.dc.html'], ['Darts', 'Darts.dc.html'], ['Arcade', 'Arcade.dc.html']]) },
+        { label: 'SERVICES', pages: P([['Corporate Events', 'Corporate.dc.html'], ['Christmas Parties', 'Christmas.dc.html'], ['Gift Vouchers', 'GiftVouchers.dc.html']]) }] },
+      { tier: 'Tier 3', title: 'SEO landing pages', copy: 'Targeting search intent by hire type, audience and location.', rows: [
+        { label: 'HIRE TYPES (15)', pages: P([['Exclusive Venue Hire', 'VenueHire.dc.html'], ['Birthday Parties', 'Birthday.dc.html'], ['Kids Parties', 'KidsParties.dc.html'], ['Teen Parties', 'TeenParties.dc.html'], ['Stag Dos', 'StagDo.dc.html'], ['Hen Dos', 'HenDo.dc.html'], ['Team Building', 'TeamBuilding.dc.html'], ['Client Entertaining', 'ClientEntertaining.dc.html'], ['Leaving & Retirement', 'LeavingParties.dc.html'], ['Family Days Out', 'FamilyDays.dc.html'], ['Group Nights Out', 'AdultGroups.dc.html'], ['Group Bookings', 'GroupBookings.dc.html'], ['Car Club Meets', 'CarClub.dc.html'], ['Club Socials', 'ClubSocials.dc.html']]) },
+        { label: 'AUDIENCES (9)', pages: P([['Families', 'ForFamilies.dc.html'], ['Friends', 'ForFriends.dc.html'], ['Corporate Teams', 'ForCorporateTeams.dc.html'], ['Motorsport Fans', 'ForMotorsportFans.dc.html'], ['Gamers', 'ForGamers.dc.html'], ['Not Into Cars?', 'ForNonPetrolheads.dc.html'], ['Tourists', 'ForTourists.dc.html'], ['Locals', 'ForLocals.dc.html'], ['Accessibility', 'Accessibility.dc.html']]) },
+        { label: 'LOCATIONS (18)', pages: P([['East Anglia (hub)', 'EastAnglia.dc.html'], ['Norwich', 'Norwich.dc.html'], ['Norfolk', 'Norfolk.dc.html'], ['Wroxham', 'Wroxham.dc.html'], ['Aylsham', 'Aylsham.dc.html'], ['Wymondham', 'Wymondham.dc.html'], ['North Walsham', 'NorthWalsham.dc.html'], ['Dereham', 'Dereham.dc.html'], ['Cromer', 'Cromer.dc.html'], ['Great Yarmouth', 'GreatYarmouth.dc.html'], ['Diss', 'Diss.dc.html'], ['Beccles', 'Beccles.dc.html'], ['Lowestoft', 'Lowestoft.dc.html'], ['Thetford', 'Thetford.dc.html'], ['King’s Lynn', 'KingsLynn.dc.html'], ['Ipswich', 'Ipswich.dc.html'], ['Bury St Edmunds', 'BuryStEdmunds.dc.html'], ['Cambridge', 'Cambridge.dc.html']]) }] },
+      { tier: 'Tier 4', title: 'Guides, comparisons & resources', copy: 'Helpful content that supports rankings, internal linking and conversions.', rows: [
+        { label: 'RESOURCES', pages: P([['FAQs', 'FAQs.dc.html'], ['Opening Times', 'OpeningTimes.dc.html'], ['Travel & Parking', 'TravelParking.dc.html'], ['Blog & Guides', 'Blog.dc.html']]) },
+        { label: 'GUIDES (12)', pages: P([['Things To Do in Norwich', 'GuideNorwich.dc.html'], ['Indoor Activities in Norfolk', 'GuideIndoor.dc.html'], ['Planning a Team Event', 'GuideTeamEvent.dc.html'], ['Birthday Party Ideas', 'GuideBirthday.dc.html'], ['Race Simulator Guide', 'GuideSim.dc.html'], ['Venue Hire Guide', 'GuideVenueHire.dc.html'], ['Kids Party Checklist', 'GuideKidsChecklist.dc.html'], ['Stag & Hen Planner', 'GuideStagHen.dc.html'], ['Sim Racing Tips', 'GuideSimTips.dc.html'], ['Christmas Party Planner', 'GuideChristmas.dc.html'], ['Gifts for Petrolheads', 'GuideGifts.dc.html'], ['Le Mans History', 'GuideLeMans.dc.html']]) },
+        { label: 'COMPARISONS (9)', pages: P([['Sim Racing vs Karting', 'CompareKarting.dc.html'], ['4K vs VR', 'Compare4kVr.dc.html'], ['Motion vs Static', 'CompareMotionStatic.dc.html'], ['Sim Room vs Whole Cave', 'CompareSimVsHire.dc.html'], ['Saturday Packages', 'CompareSaturday.dc.html'], ['Indoor Activities', 'CompareIndoor.dc.html'], ['Team Building', 'CompareTeamBuilding.dc.html'], ['Party Venues', 'ComparePartyVenues.dc.html'], ['Digital vs Classic Scalextric', 'CompareScalextric.dc.html']]) }] }
+    ];
+    return { tiers };
+  }
+}
+</script>
+</body>
+</html>

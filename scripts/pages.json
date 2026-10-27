@@ -1,0 +1,547 @@
+{
+ "pages": {
+  "Accessibility": {
+   "component": "Landing",
+   "slug": "accessibility",
+   "title": "Accessible Activities Norwich \u2014 LeMan Cave"
+  },
+  "AdultGroups": {
+   "component": "Landing",
+   "slug": "adultgroups",
+   "title": "Group Nights Out in Norwich \u2014 LeMan Cave"
+  },
+  "AirHockey": {
+   "component": "Product",
+   "slug": "airhockey",
+   "title": "Air Hockey \u2014 LeMan Cave Norwich"
+  },
+  "Arcade": {
+   "component": "Product",
+   "slug": "arcade",
+   "title": "Two-Player Arcade \u2014 LeMan Cave Norwich"
+  },
+  "Attractions": {
+   "component": "Hub",
+   "slug": "attractions",
+   "title": "Attractions \u2014 LeMan Cave Norwich"
+  },
+  "Aylsham": {
+   "component": "Landing",
+   "slug": "aylsham",
+   "title": "Things to do near Aylsham \u2014 LeMan Cave"
+  },
+  "Beccles": {
+   "component": "Landing",
+   "slug": "beccles",
+   "title": "Things to do near Beccles \u2014 LeMan Cave"
+  },
+  "Birthday": {
+   "component": "Landing",
+   "slug": "birthday",
+   "title": "Birthday Parties in Norwich \u2014 LeMan Cave"
+  },
+  "Blog": {
+   "component": "Guide",
+   "slug": "blog",
+   "title": "Blog & Guides \u2014 LeMan Cave Norwich"
+  },
+  "Book": {
+   "component": "Book",
+   "slug": null,
+   "title": "Book Your Visit \u2014 LeMan Cave Norwich"
+  },
+  "BuryStEdmunds": {
+   "component": "Landing",
+   "slug": "bury",
+   "title": "Things to do near Bury St Edmunds \u2014 LeMan Cave"
+  },
+  "Cambridge": {
+   "component": "Landing",
+   "slug": "cambridge",
+   "title": "Day trips from Cambridge \u2014 LeMan Cave"
+  },
+  "CarClub": {
+   "component": "Landing",
+   "slug": "carclub",
+   "title": "Car Club Meets Norfolk \u2014 LeMan Cave"
+  },
+  "Christmas": {
+   "component": "Christmas",
+   "slug": null,
+   "title": "Christmas Parties \u2014 LeMan Cave Norwich"
+  },
+  "ClientEntertaining": {
+   "component": "Landing",
+   "slug": "client",
+   "title": "Client Entertaining Norwich \u2014 LeMan Cave"
+  },
+  "ClubSocials": {
+   "component": "Landing",
+   "slug": "clubs",
+   "title": "Sports & Social Club Nights Norwich \u2014 LeMan Cave"
+  },
+  "Compare4kVr": {
+   "component": "Compare",
+   "slug": "4kvr",
+   "title": "4K vs VR Sim Racing \u2014 LeMan Cave"
+  },
+  "CompareIndoor": {
+   "component": "Compare",
+   "slug": "indoor",
+   "title": "Indoor Activities in Norwich Compared \u2014 LeMan Cave"
+  },
+  "CompareKarting": {
+   "component": "Compare",
+   "slug": "karting",
+   "title": "Sim Racing vs Karting \u2014 LeMan Cave"
+  },
+  "CompareMotionStatic": {
+   "component": "Compare",
+   "slug": "motionstatic",
+   "title": "Motion vs Static Simulators \u2014 LeMan Cave"
+  },
+  "ComparePartyVenues": {
+   "component": "Compare",
+   "slug": "partyvenues",
+   "title": "Party Venue Types Compared \u2014 LeMan Cave"
+  },
+  "CompareSaturday": {
+   "component": "Compare",
+   "slug": "saturday",
+   "title": "Saturday Packages Compared \u2014 LeMan Cave"
+  },
+  "CompareScalextric": {
+   "component": "Compare",
+   "slug": "scalextric",
+   "title": "Digital vs Classic Scalextric \u2014 LeMan Cave"
+  },
+  "CompareSimVsHire": {
+   "component": "Compare",
+   "slug": "simvshire",
+   "title": "Sim Room vs Whole-Cave Hire \u2014 LeMan Cave"
+  },
+  "CompareTeamBuilding": {
+   "component": "Compare",
+   "slug": "teambuilding",
+   "title": "Team Building Activities Compared \u2014 LeMan Cave"
+  },
+  "Corporate": {
+   "component": "Corporate",
+   "slug": null,
+   "title": "Corporate Events \u2014 LeMan Cave Norwich"
+  },
+  "Cromer": {
+   "component": "Landing",
+   "slug": "cromer",
+   "title": "Things to do near Cromer \u2014 LeMan Cave"
+  },
+  "Darts": {
+   "component": "Product",
+   "slug": "darts",
+   "title": "Darts \u2014 LeMan Cave Norwich"
+  },
+  "Dereham": {
+   "component": "Landing",
+   "slug": "dereham",
+   "title": "Things to do near Dereham \u2014 LeMan Cave"
+  },
+  "Diss": {
+   "component": "Landing",
+   "slug": "diss",
+   "title": "Things to do near Diss \u2014 LeMan Cave"
+  },
+  "Drinks": {
+   "component": "Drinks",
+   "slug": null,
+   "title": "Bring Your Own Drinks \u2014 LeMan Cave Norwich"
+  },
+  "EastAnglia": {
+   "component": "Landing",
+   "slug": "eastanglia",
+   "title": "Motorsport Venue in East Anglia \u2014 LeMan Cave"
+  },
+  "Events": {
+   "component": "Hub",
+   "slug": "events",
+   "title": "Parties & Events \u2014 LeMan Cave Norwich"
+  },
+  "FAQs": {
+   "component": "Guide",
+   "slug": "faqs",
+   "title": "FAQs \u2014 LeMan Cave Norwich"
+  },
+  "FamilyDays": {
+   "component": "Landing",
+   "slug": "familydays",
+   "title": "Family Days Out in Norfolk \u2014 LeMan Cave"
+  },
+  "Food": {
+   "component": "Food",
+   "slug": null,
+   "title": "Pizza \u2014 LeMan Cave Norwich"
+  },
+  "ForCorporateTeams": {
+   "component": "Landing",
+   "slug": "corporateteams",
+   "title": "Corporate Team Days in Norwich \u2014 LeMan Cave"
+  },
+  "ForFamilies": {
+   "component": "Landing",
+   "slug": "families",
+   "title": "Family Fun in Norwich \u2014 LeMan Cave"
+  },
+  "ForFriends": {
+   "component": "Landing",
+   "slug": "friends",
+   "title": "Things to Do with Friends in Norwich \u2014 LeMan Cave"
+  },
+  "ForGamers": {
+   "component": "Landing",
+   "slug": "gamers",
+   "title": "Gaming in Norwich \u2014 LeMan Cave"
+  },
+  "ForLocals": {
+   "component": "Landing",
+   "slug": "locals",
+   "title": "For Local Visitors \u2014 LeMan Cave Norwich"
+  },
+  "ForMotorsportFans": {
+   "component": "Landing",
+   "slug": "motorsportfans",
+   "title": "For Motorsport Fans \u2014 LeMan Cave Norwich"
+  },
+  "ForNonPetrolheads": {
+   "component": "Landing",
+   "slug": "nonpetrolheads",
+   "title": "Fun for Non-Petrolheads \u2014 LeMan Cave"
+  },
+  "ForTourists": {
+   "component": "Landing",
+   "slug": "tourists",
+   "title": "Visiting Norwich? \u2014 LeMan Cave"
+  },
+  "Gallery": {
+   "component": "Gallery",
+   "slug": null,
+   "title": "Gallery \u2014 LeMan Cave Norwich"
+  },
+  "Games": {
+   "component": "Games",
+   "slug": null,
+   "title": "Games & Arcade \u2014 LeMan Cave Norwich"
+  },
+  "GiftVouchers": {
+   "component": "GiftVouchers",
+   "slug": null,
+   "title": "Gift Vouchers \u2014 LeMan Cave Norwich"
+  },
+  "GreatYarmouth": {
+   "component": "Landing",
+   "slug": "greatyarmouth",
+   "title": "Days Out from Great Yarmouth \u2014 LeMan Cave"
+  },
+  "GroupBookings": {
+   "component": "Landing",
+   "slug": "groups",
+   "title": "Group Bookings \u2014 LeMan Cave Norwich"
+  },
+  "GuideBirthday": {
+   "component": "Guide",
+   "slug": "birthday",
+   "title": "Best Birthday Party Ideas \u2014 LeMan Cave"
+  },
+  "GuideChristmas": {
+   "component": "Guide",
+   "slug": "christmas",
+   "title": "Christmas Party Planner \u2014 LeMan Cave"
+  },
+  "GuideGifts": {
+   "component": "Guide",
+   "slug": "gifts",
+   "title": "Gifts for Petrolheads \u2014 LeMan Cave"
+  },
+  "GuideIndoor": {
+   "component": "Guide",
+   "slug": "indoor",
+   "title": "Best Indoor Activities in Norfolk \u2014 LeMan Cave"
+  },
+  "GuideKidsChecklist": {
+   "component": "Guide",
+   "slug": "kidschecklist",
+   "title": "Kids Party Checklist \u2014 LeMan Cave"
+  },
+  "GuideLeMans": {
+   "component": "Guide",
+   "slug": "lemans",
+   "title": "Le Mans & Motorsport History \u2014 LeMan Cave"
+  },
+  "GuideNorwich": {
+   "component": "Guide",
+   "slug": "norwich",
+   "title": "Top Things To Do in Norwich \u2014 LeMan Cave"
+  },
+  "GuideSim": {
+   "component": "Guide",
+   "slug": "simguide",
+   "title": "Race Simulator Guide \u2014 LeMan Cave"
+  },
+  "GuideSimTips": {
+   "component": "Guide",
+   "slug": "simtips",
+   "title": "Sim Racing Tips for Beginners \u2014 LeMan Cave"
+  },
+  "GuideStagHen": {
+   "component": "Guide",
+   "slug": "staghen",
+   "title": "Stag & Hen Do Planner \u2014 LeMan Cave"
+  },
+  "GuideTeamEvent": {
+   "component": "Guide",
+   "slug": "teamevent",
+   "title": "Planning a Corporate Team Event \u2014 LeMan Cave"
+  },
+  "GuideVenueHire": {
+   "component": "Guide",
+   "slug": "venuehire",
+   "title": "Venue Hire Guide \u2014 LeMan Cave"
+  },
+  "HenDo": {
+   "component": "Landing",
+   "slug": "hen",
+   "title": "Hen Do Activities Norfolk \u2014 LeMan Cave"
+  },
+  "Ipswich": {
+   "component": "Landing",
+   "slug": "ipswich",
+   "title": "Days Out from Ipswich \u2014 LeMan Cave"
+  },
+  "KidsParties": {
+   "component": "Landing",
+   "slug": "kids",
+   "title": "Kids Parties in Norwich \u2014 LeMan Cave"
+  },
+  "KingsLynn": {
+   "component": "Landing",
+   "slug": "kingslynn",
+   "title": "Things to do near King\u2019s Lynn \u2014 LeMan Cave"
+  },
+  "LeavingParties": {
+   "component": "Landing",
+   "slug": "leaving",
+   "title": "Leaving & Retirement Parties Norwich \u2014 LeMan Cave"
+  },
+  "Lowestoft": {
+   "component": "Landing",
+   "slug": "lowestoft",
+   "title": "Days Out from Lowestoft \u2014 LeMan Cave"
+  },
+  "Main": {
+   "component": "Main",
+   "slug": null,
+   "title": "LeMan Cave Norwich \u2014 Homepage"
+  },
+  "Memorabilia": {
+   "component": "Product",
+   "slug": "memorabilia",
+   "title": "Retro Memorabilia \u2014 LeMan Cave Norwich"
+  },
+  "MotoSim": {
+   "component": "Product",
+   "slug": "moto",
+   "title": "Classic Motorcycle Simulator \u2014 LeMan Cave Norwich"
+  },
+  "Norfolk": {
+   "component": "Landing",
+   "slug": "norfolk",
+   "title": "Days Out in Norfolk \u2014 LeMan Cave"
+  },
+  "NorthWalsham": {
+   "component": "Landing",
+   "slug": "northwalsham",
+   "title": "Things to do near North Walsham \u2014 LeMan Cave"
+  },
+  "Norwich": {
+   "component": "Landing",
+   "slug": "norwich",
+   "title": "Things to Do in Norwich \u2014 LeMan Cave"
+  },
+  "OpeningTimes": {
+   "component": "Guide",
+   "slug": "opening",
+   "title": "Opening Times \u2014 LeMan Cave Norwich"
+  },
+  "PS5": {
+   "component": "Product",
+   "slug": "ps5",
+   "title": "PS5 Lounge \u2014 LeMan Cave Norwich"
+  },
+  "Pinball": {
+   "component": "Product",
+   "slug": "pinball",
+   "title": "Digital Pinball \u2014 LeMan Cave Norwich"
+  },
+  "Pool": {
+   "component": "Product",
+   "slug": "pool",
+   "title": "Pool Table \u2014 LeMan Cave Norwich"
+  },
+  "Pricing": {
+   "component": "Pricing",
+   "slug": null,
+   "title": "Price List \u2014 LeMan Cave Norwich"
+  },
+  "Scalextric": {
+   "component": "Scalextric",
+   "slug": null,
+   "title": "Digital Scalextric \u2014 LeMan Cave Norwich"
+  },
+  "Simulator": {
+   "component": "Simulator",
+   "slug": null,
+   "title": "Pro Racing Simulator \u2014 LeMan Cave Norwich"
+  },
+  "StagDo": {
+   "component": "Landing",
+   "slug": "stag",
+   "title": "Stag Do Activities Norwich \u2014 LeMan Cave"
+  },
+  "TableFootball": {
+   "component": "Product",
+   "slug": "football",
+   "title": "Football Table \u2014 LeMan Cave Norwich"
+  },
+  "TeamBuilding": {
+   "component": "Landing",
+   "slug": "teambuilding",
+   "title": "Team Building in Norwich \u2014 LeMan Cave"
+  },
+  "TeenParties": {
+   "component": "Landing",
+   "slug": "teen",
+   "title": "Teen Parties Norwich \u2014 LeMan Cave"
+  },
+  "Thetford": {
+   "component": "Landing",
+   "slug": "thetford",
+   "title": "Things to do near Thetford \u2014 LeMan Cave"
+  },
+  "TravelParking": {
+   "component": "Guide",
+   "slug": "travel",
+   "title": "Travel & Parking \u2014 LeMan Cave Norwich"
+  },
+  "VenueHire": {
+   "component": "Landing",
+   "slug": "venuehire",
+   "title": "Exclusive Venue Hire Norwich \u2014 LeMan Cave"
+  },
+  "Visit": {
+   "component": "Visit",
+   "slug": null,
+   "title": "Visit & Contact \u2014 LeMan Cave Norwich"
+  },
+  "Wroxham": {
+   "component": "Landing",
+   "slug": "wroxham",
+   "title": "Things to do near Wroxham \u2014 LeMan Cave"
+  },
+  "Wymondham": {
+   "component": "Landing",
+   "slug": "wymondham",
+   "title": "Things to do near Wymondham \u2014 LeMan Cave"
+  }
+ },
+ "routes": {
+  "Main": "/",
+  "Attractions": "/attractions",
+  "Events": "/parties-and-events",
+  "Food": "/food",
+  "Drinks": "/drinks",
+  "Pricing": "/prices",
+  "Gallery": "/gallery",
+  "Visit": "/visit-us",
+  "Corporate": "/corporate-events",
+  "Christmas": "/christmas-parties",
+  "GiftVouchers": "/gift-vouchers",
+  "Simulator": "/attractions/racing-simulator",
+  "Scalextric": "/attractions/digital-scalextric",
+  "Games": "/attractions/games-and-arcade",
+  "MotoSim": "/attractions/motorcycle-simulator",
+  "PS5": "/attractions/ps5-lounge",
+  "Pinball": "/attractions/digital-pinball",
+  "Pool": "/attractions/pool-table",
+  "AirHockey": "/attractions/air-hockey",
+  "TableFootball": "/attractions/table-football",
+  "Darts": "/attractions/darts",
+  "Arcade": "/attractions/arcade",
+  "Memorabilia": "/attractions/memorabilia",
+  "VenueHire": "/venue-hire",
+  "Birthday": "/birthday-parties",
+  "KidsParties": "/kids-parties",
+  "TeenParties": "/teen-parties",
+  "StagDo": "/stag-do-norwich",
+  "HenDo": "/hen-do-norfolk",
+  "TeamBuilding": "/team-building",
+  "ClientEntertaining": "/client-entertaining",
+  "LeavingParties": "/leaving-and-retirement-parties",
+  "FamilyDays": "/family-days-out",
+  "AdultGroups": "/group-nights-out",
+  "GroupBookings": "/group-bookings",
+  "CarClub": "/car-club-meets",
+  "ClubSocials": "/club-socials",
+  "ForFamilies": "/who-its-for/families",
+  "ForFriends": "/who-its-for/friends",
+  "ForCorporateTeams": "/who-its-for/corporate-teams",
+  "ForMotorsportFans": "/who-its-for/motorsport-fans",
+  "ForGamers": "/who-its-for/gamers",
+  "ForNonPetrolheads": "/who-its-for/non-petrolheads",
+  "ForTourists": "/who-its-for/tourists",
+  "ForLocals": "/who-its-for/locals",
+  "Accessibility": "/accessibility",
+  "EastAnglia": "/locations",
+  "Norwich": "/locations/norwich",
+  "Norfolk": "/locations/norfolk",
+  "Wroxham": "/locations/wroxham",
+  "Aylsham": "/locations/aylsham",
+  "Wymondham": "/locations/wymondham",
+  "NorthWalsham": "/locations/north-walsham",
+  "Dereham": "/locations/dereham",
+  "Cromer": "/locations/cromer",
+  "GreatYarmouth": "/locations/great-yarmouth",
+  "Diss": "/locations/diss",
+  "Beccles": "/locations/beccles",
+  "Lowestoft": "/locations/lowestoft",
+  "Thetford": "/locations/thetford",
+  "KingsLynn": "/locations/kings-lynn",
+  "Ipswich": "/locations/ipswich",
+  "BuryStEdmunds": "/locations/bury-st-edmunds",
+  "Cambridge": "/locations/cambridge",
+  "Blog": "/guides",
+  "FAQs": "/faqs",
+  "OpeningTimes": "/opening-times",
+  "TravelParking": "/travel-and-parking",
+  "GuideNorwich": "/guides/things-to-do-in-norwich",
+  "GuideIndoor": "/guides/indoor-activities-norfolk",
+  "GuideTeamEvent": "/guides/planning-a-team-event",
+  "GuideBirthday": "/guides/birthday-party-ideas",
+  "GuideSim": "/guides/race-simulator-guide",
+  "GuideVenueHire": "/guides/venue-hire-guide",
+  "GuideKidsChecklist": "/guides/kids-party-checklist",
+  "GuideStagHen": "/guides/stag-and-hen-planner",
+  "GuideSimTips": "/guides/sim-racing-tips",
+  "GuideChristmas": "/guides/christmas-party-planner",
+  "GuideGifts": "/guides/gifts-for-petrolheads",
+  "GuideLeMans": "/guides/le-mans-history",
+  "CompareKarting": "/compare/sim-racing-vs-karting",
+  "Compare4kVr": "/compare/4k-vs-vr",
+  "CompareMotionStatic": "/compare/motion-vs-static-simulators",
+  "CompareSimVsHire": "/compare/sim-room-vs-whole-cave-hire",
+  "CompareSaturday": "/compare/saturday-packages",
+  "CompareIndoor": "/compare/indoor-activities-norwich",
+  "CompareTeamBuilding": "/compare/team-building-activities",
+  "ComparePartyVenues": "/compare/party-venues",
+  "CompareScalextric": "/compare/digital-vs-classic-scalextric",
+  "Sitemap": "/site-map",
+  "Book": "/book"
+ }
+}

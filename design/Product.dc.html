@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<title>Product page template — LeMan Cave</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800;900&amp;family=Barlow:wght@400;500;600&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="font-family: 'Barlow', system-ui, sans-serif; color: #E4E4E7; background: #09090B; min-height: 100vh; overflow-x: hidden">
+
+<!-- NAV -->
+<header style="position: sticky; top: 0; z-index: 10; background: rgba(9,9,11,0.92); border-bottom: 1px solid #1F1F23; backdrop-filter: blur(10px)">
+<nav class="lc-section" aria-label="Main" style="max-width: 1360px; margin: 0 auto; padding: 0 40px; height: 92px; display: flex; align-items: center; justify-content: space-between; gap: 24px">
+<a href="Main.dc.html" aria-label="LeMan Cave home" style="display: flex; align-items: center">
+<img src="/_blob/d8a1bc65662ee5a26ca2d3cbc9ca559e" alt="LeMan Cave" style="height: 80px; width: auto; display: block">
+</a>
+<div class="lc-nav-links" style="display: flex; align-items: center; flex-wrap: nowrap; white-space: nowrap; gap: 22px; font-size: 14px; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; height: 92px"><div class="lc-mm"><a href="Attractions.dc.html" style="{{nv.attractions}}">Attractions<svg aria-hidden="true" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></a><div class="lc-mm-p" style="display: none; position: absolute; left: 0; right: 0; top: 92px; background: #0B0B0E; border-top: 1px solid #1F1F23; border-bottom: 1px solid #27272A; box-shadow: 0 40px 80px rgba(0,0,0,0.65); z-index: 20"><div style="max-width: 1360px; margin: 0 auto; padding: 36px 40px 30px; box-sizing: border-box"><div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)) 300px; gap: 36px"><div style="display: flex; flex-direction: column; min-width: 0"><span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.16em; color: #ED2835; text-transform: uppercase; margin-bottom: 10px; display: block">Racing</span><a href="Simulator.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Pro Racing Simulator</a><a href="Scalextric.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Digital Scalextric</a><a href="MotoSim.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Motorcycle Sim</a><a href="Memorabilia.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Retro Memorabilia</a></div><div style="display: flex; flex-direction: column; min-width: 0"><span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.16em; color: #71717A; text-transform: uppercase; margin-bottom: 10px; display: block">Games</span><a href="Games.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Games &amp; Arcade</a><a href="PS5.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">PS5 Lounge</a><a href="Pinball.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Digital Pinball</a><a href="Pool.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Pool Table</a><a href="AirHockey.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Air Hockey</a><a href="TableFootball.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Table Football</a><a href="Darts.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Darts</a><a href="Arcade.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Arcade</a></div><div style="display: flex; flex-direction: column; min-width: 0"><span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.16em; color: #FFC233; text-transform: uppercase; margin-bottom: 10px; display: block">Learn &amp; compare</span><a href="GuideSim.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Race Simulator Guide</a><a href="GuideSimTips.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Sim Racing Tips</a><a href="CompareKarting.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Sim Racing vs Karting</a><a href="Compare4kVr.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">4K vs VR</a><a href="CompareMotionStatic.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Motion vs Static</a><a href="GuideLeMans.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Le Mans History</a></div><a href="Simulator.dc.html" style="position: relative; display: block; min-height: 260px; border-radius: 10px; overflow: hidden; background: #131316; text-decoration: none; text-transform: none; letter-spacing: 0"><img src="/_blob/87af79a958a3ccd899908f5b2bb8b25b" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover"><span aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(9,9,11,0.96) 20%, rgba(9,9,11,0.1) 80%)"></span><span style="position: absolute; left: 20px; right: 20px; bottom: 18px; display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.14em; color: #FFC233">4 DOF · 4K OR VR</span><span style="font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 30px; line-height: 0.95; color: #FFFFFF; text-transform: uppercase">Pro racing simulators</span><span style="color: #ED2835; font-weight: 700; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase">From £80/hr →</span></span></a></div><div style="margin-top: 26px; padding-top: 18px; border-top: 1px solid #1F1F23; display: flex; flex-wrap: wrap; gap: 24px; font-size: 13px; letter-spacing: 0.06em"><a href="Attractions.dc.html" style="color: #ED2835; font-weight: 700; text-decoration: none">All attractions →</a><a href="Pricing.dc.html" style="color: #E4E4E7; font-weight: 700; text-decoration: none">Price list →</a><a href="GiftVouchers.dc.html" style="color: #E4E4E7; font-weight: 700; text-decoration: none">Gift vouchers →</a></div></div></div></div><div class="lc-mm"><a href="Food.dc.html" style="{{nv.food}}">Food &amp; Drink<svg aria-hidden="true" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></a><div class="lc-mm-p" style="display: none; position: absolute; left: 0; right: 0; top: 92px; background: #0B0B0E; border-top: 1px solid #1F1F23; border-bottom: 1px solid #27272A; box-shadow: 0 40px 80px rgba(0,0,0,0.65); z-index: 20"><div style="max-width: 1360px; margin: 0 auto; padding: 36px 40px 30px; box-sizing: border-box"><div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)) 300px; gap: 36px"><div style="display: flex; flex-direction: column; min-width: 0"><span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.16em; color: #ED2835; text-transform: uppercase; margin-bottom: 10px; display: block">Food &amp; drink</span><a href="Food.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Pit-Stop Pizza</a><a href="Drinks.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">BYO Drinks</a><a href="CompareSaturday.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Saturday Packages Compared</a><a href="Pricing.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Price list</a></div><div style="display: flex; flex-direction: column; min-width: 0"><span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.16em; color: #71717A; text-transform: uppercase; margin-bottom: 10px; display: block">Good to know</span><a href="FAQs.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Cakes by arrangement</a><a href="Food.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Dietary options</a><a href="Drinks.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Drinks pre-chilled</a><a href="Drinks.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Leftover drinks collected after</a></div><a href="Food.dc.html" style="position: relative; display: block; min-height: 260px; border-radius: 10px; overflow: hidden; background: #131316; text-decoration: none; text-transform: none; letter-spacing: 0"><img src="/_blob/674381e1bdc07d2b4660c7c77ccae43e" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover"><span aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(9,9,11,0.96) 20%, rgba(9,9,11,0.1) 80%)"></span><span style="position: absolute; left: 20px; right: 20px; bottom: 18px; display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.14em; color: #FFC233">BYO DRINK &amp; PIZZA</span><span style="font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 30px; line-height: 0.95; color: #FFFFFF; text-transform: uppercase">Pizza for the whole grid</span><span style="color: #ED2835; font-weight: 700; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase">£60pp →</span></span></a></div><div style="margin-top: 26px; padding-top: 18px; border-top: 1px solid #1F1F23; display: flex; flex-wrap: wrap; gap: 24px; font-size: 13px; letter-spacing: 0.06em"><a href="FAQs.dc.html" style="color: #ED2835; font-weight: 700; text-decoration: none">Food &amp; drink FAQs →</a></div></div></div></div><div class="lc-mm"><a href="Events.dc.html" style="{{nv.events}}">Parties &amp; Events<svg aria-hidden="true" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></a><div class="lc-mm-p" style="display: none; position: absolute; left: 0; right: 0; top: 92px; background: #0B0B0E; border-top: 1px solid #1F1F23; border-bottom: 1px solid #27272A; box-shadow: 0 40px 80px rgba(0,0,0,0.65); z-index: 20"><div style="max-width: 1360px; margin: 0 auto; padding: 36px 40px 30px; box-sizing: border-box"><div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)) 300px; gap: 36px"><div style="display: flex; flex-direction: column; min-width: 0"><span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.16em; color: #ED2835; text-transform: uppercase; margin-bottom: 10px; display: block">Parties</span><a href="VenueHire.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Exclusive Venue Hire</a><a href="Birthday.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Birthday Parties</a><a href="KidsParties.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Kids Parties</a><a href="TeenParties.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Teen Parties</a><a href="StagDo.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Stag Dos</a><a href="HenDo.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Hen Dos</a><a href="AdultGroups.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Group Nights Out</a><a href="FamilyDays.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Family Days Out</a></div><div style="display: flex; flex-direction: column; min-width: 0"><span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.16em; color: #71717A; text-transform: uppercase; margin-bottom: 10px; display: block">Business &amp; clubs</span><a href="Corporate.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Corporate Events</a><a href="TeamBuilding.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Team Building</a><a href="ClientEntertaining.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Client Entertaining</a><a href="LeavingParties.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Leaving &amp; Retirement</a><a href="Christmas.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Christmas Parties</a><a href="GroupBookings.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Group Bookings</a><a href="CarClub.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Car Club Meets</a><a href="ClubSocials.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Club Socials</a></div><div style="display: flex; flex-direction: column; min-width: 0"><span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.16em; color: #60A5FA; text-transform: uppercase; margin-bottom: 10px; display: block">Who it’s for</span><a href="ForFamilies.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Families</a><a href="ForFriends.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Friends</a><a href="ForCorporateTeams.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Corporate Teams</a><a href="ForMotorsportFans.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Motorsport Fans</a><a href="ForGamers.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Gamers</a><a href="ForNonPetrolheads.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Not Into Cars?</a><a href="ForTourists.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Tourists</a><a href="ForLocals.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Locals</a><a href="Accessibility.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Accessibility</a></div><a href="Christmas.dc.html" style="position: relative; display: block; min-height: 260px; border-radius: 10px; overflow: hidden; background: #131316; text-decoration: none; text-transform: none; letter-spacing: 0"><img src="/_blob/7c15572ebe192fbe0f7eae982a1bb152" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover"><span aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(9,9,11,0.96) 20%, rgba(9,9,11,0.1) 80%)"></span><span style="position: absolute; left: 20px; right: 20px; bottom: 18px; display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.14em; color: #FFC233">DEC WEEKNIGHTS &amp; SATURDAYS</span><span style="font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 30px; line-height: 0.95; color: #FFFFFF; text-transform: uppercase">Christmas parties</span><span style="color: #ED2835; font-weight: 700; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase">From £45pp →</span></span></a></div><div style="margin-top: 26px; padding-top: 18px; border-top: 1px solid #1F1F23; display: flex; flex-wrap: wrap; gap: 24px; font-size: 13px; letter-spacing: 0.06em"><a href="Events.dc.html" style="color: #ED2835; font-weight: 700; text-decoration: none">All parties &amp; events →</a><a href="GuideVenueHire.dc.html" style="color: #E4E4E7; font-weight: 700; text-decoration: none">Venue hire guide →</a><a href="Blog.dc.html" style="color: #E4E4E7; font-weight: 700; text-decoration: none">Party planners &amp; checklists →</a></div></div></div></div><a href="Pricing.dc.html" style="{{nv.prices}}">Prices</a><a href="Gallery.dc.html" style="{{nv.gallery}}">Gallery</a><div class="lc-mm"><a href="Visit.dc.html" style="{{nv.visit}}">Visit Us<svg aria-hidden="true" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></a><div class="lc-mm-p" style="display: none; position: absolute; left: 0; right: 0; top: 92px; background: #0B0B0E; border-top: 1px solid #1F1F23; border-bottom: 1px solid #27272A; box-shadow: 0 40px 80px rgba(0,0,0,0.65); z-index: 20"><div style="max-width: 1360px; margin: 0 auto; padding: 36px 40px 30px; box-sizing: border-box"><div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)) 300px; gap: 36px"><div style="display: flex; flex-direction: column; min-width: 0"><span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.16em; color: #4ADE80; text-transform: uppercase; margin-bottom: 10px; display: block">Plan your visit</span><a href="Visit.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Visit &amp; Contact</a><a href="OpeningTimes.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Opening Times</a><a href="TravelParking.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Travel &amp; Parking</a><a href="Accessibility.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Accessibility</a><a href="FAQs.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">FAQs</a><a href="GiftVouchers.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Gift Vouchers</a></div><div style="display: flex; flex-direction: column; min-width: 0"><span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.16em; color: #A78BFA; text-transform: uppercase; margin-bottom: 10px; display: block">Visiting from</span><a href="Norwich.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Norwich</a><a href="Norfolk.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Norfolk</a><a href="GreatYarmouth.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Great Yarmouth</a><a href="Cromer.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Cromer</a><a href="Lowestoft.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Lowestoft</a><a href="Ipswich.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Ipswich</a><a href="Cambridge.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Cambridge</a><a href="EastAnglia.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">All 18 locations</a></div><div style="display: flex; flex-direction: column; min-width: 0"><span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.16em; color: #FFC233; text-transform: uppercase; margin-bottom: 10px; display: block">Guides &amp; ideas</span><a href="Blog.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Blog &amp; Guides</a><a href="GuideNorwich.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Things to do in Norwich</a><a href="GuideIndoor.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Indoor Activities in Norfolk</a><a href="GuideGifts.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Gifts for Petrolheads</a><a href="CompareIndoor.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Indoor Activities Compared</a><a href="CompareSimVsHire.dc.html" style="display: block; padding: 6px 0; color: #E4E4E7; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; text-decoration: none">Sim Room vs Whole Cave</a></div><a href="Visit.dc.html" style="position: relative; display: block; min-height: 260px; border-radius: 10px; overflow: hidden; background: #131316; text-decoration: none; text-transform: none; letter-spacing: 0"><img src="/_blob/1f8523dff0e8abab56a7b3457a5e06ba" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover"><span aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(9,9,11,0.96) 20%, rgba(9,9,11,0.1) 80%)"></span><span style="position: absolute; left: 20px; right: 20px; bottom: 18px; display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.14em; color: #FFC233">NR6 7BW · PARKING ON SITE</span><span style="font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 30px; line-height: 0.95; color: #FFFFFF; text-transform: uppercase">Find the cave</span><span style="color: #ED2835; font-weight: 700; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase">Map &amp; contact →</span></span></a></div><div style="margin-top: 26px; padding-top: 18px; border-top: 1px solid #1F1F23; display: flex; flex-wrap: wrap; gap: 24px; font-size: 13px; letter-spacing: 0.06em"><a href="Visit.dc.html" style="color: #ED2835; font-weight: 700; text-decoration: none">bookings@lemancave.co.uk →</a><a href="OpeningTimes.dc.html" style="color: #E4E4E7; font-weight: 700; text-decoration: none">Mon–Fri 06:30–21:30 · Sat 10:00–21:00 →</a></div></div></div></div></div>
+<div style="display: flex; align-items: center; gap: 12px">
+<a href="https://lemancave.co.uk/login" style="font-size: 15px; font-weight: 500; padding: 12px 8px; color: #A1A1AA; text-decoration: none">Log in</a>
+<a href="https://lemancave.co.uk/book" style="background: {{accent}}; color: #09090B; font-weight: 700; font-size: 15px; letter-spacing: 0.06em; text-transform: uppercase; padding: 14px 22px; border-radius: 4px; text-decoration: none">Book now</a>
+</div>
+</nav>
+</header>
+
+<!-- HERO -->
+<section aria-labelledby="p-h" style="position: relative; min-height: 640px; display: flex; align-items: flex-end; background: #0E0E11; overflow: hidden">
+<img src="{{p.hero}}" alt="{{p.heroAlt}}" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 65% 50%">
+<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(9,9,11,0.95) 0%, rgba(9,9,11,0.78) 42%, rgba(9,9,11,0.2) 75%, rgba(9,9,11,0.1) 100%)"></div>
+<div aria-hidden="true" style="position: absolute; left: 0; right: 0; bottom: 0; height: 300px; background: linear-gradient(to top, #09090B 10%, transparent)"></div>
+<div class="lc-section" style="position: relative; max-width: 1360px; width: 100%; margin: 0 auto; padding: 140px 40px 64px; box-sizing: border-box">
+<nav aria-label="Breadcrumb" style="font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px">
+<a href="Main.dc.html" style="color: #A1A1AA; text-decoration: none">HOME</a> <span aria-hidden="true">/</span> <a href="{{p.parentHref}}" style="color: #A1A1AA; text-decoration: none">{{p.parentLabel}}</a> <span aria-hidden="true">/</span> <span style="color: {{accent}}">{{p.crumb}}</span>
+</nav>
+<p style="margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 14px; letter-spacing: 0.16em; color: {{amber}}">{{p.kicker}}</p>
+<h1 id="p-h" style="margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(64px, 10vw, 144px); line-height: 0.88; color: #FFFFFF; text-transform: uppercase">{{p.line1}}<br><span style="color: {{accent}}">{{p.line2}}</span></h1>
+<p style="margin: 28px 0 0; max-width: 580px; font-size: 20px; line-height: 1.55; color: #D4D4D8">{{p.intro}}</p>
+<div style="display: flex; flex-wrap: wrap; gap: 14px; margin-top: 36px">
+<a href="https://lemancave.co.uk/book" style="background: {{accent}}; color: #09090B; font-weight: 700; font-size: 16px; letter-spacing: 0.06em; text-transform: uppercase; padding: 18px 30px; border-radius: 4px; text-decoration: none">{{p.cta}}</a>
+<a href="{{p.parentHref}}" style="border: 1px solid #52525B; color: #FFFFFF; font-weight: 600; font-size: 16px; letter-spacing: 0.06em; text-transform: uppercase; padding: 17px 30px; border-radius: 4px; text-decoration: none">{{p.parentCta}}</a>
+</div>
+</div>
+</section>
+
+<!-- SPEC STRIP -->
+<section aria-label="Key facts" style="border-top: 1px solid #1F1F23; border-bottom: 1px solid #1F1F23; background: #0F0F12">
+<div class="lc-section" style="max-width: 1360px; margin: 0 auto; padding: 0 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr))">
+<sc-for list="{{p.specs}}" as="s" hint-placeholder-count="4">
+<div style="padding: 28px 20px; border-right: 1px solid #1F1F23">
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: #71717A">{{s.k}}</div>
+<div style="font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 32px; color: {{s.color}}; margin-top: 6px">{{s.v}}</div>
+</div>
+</sc-for>
+</div>
+</section>
+
+<!-- DETAIL -->
+<section class="lc-section" aria-labelledby="d-h" style="max-width: 1360px; margin: 0 auto; padding: 120px 40px">
+<div style="display: flex; flex-wrap: wrap; gap: 64px; align-items: stretch">
+<div style="flex: 1 1 460px; display: flex; flex-direction: column; justify-content: center">
+<p style="margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: {{accent}}">01 / WHAT TO EXPECT</p>
+<h2 id="d-h" style="margin: 0 0 28px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 80px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase">{{p.detailTitle}}</h2>
+<p style="margin: 0 0 32px; font-size: 19px; line-height: 1.65; color: #D4D4D8">{{p.detail}}</p>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; border-top: 1px solid #27272A">
+<sc-for list="{{p.points}}" as="pt" hint-placeholder-count="4">
+<li style="display: flex; gap: 16px; align-items: baseline; padding: 16px 0; border-bottom: 1px solid #27272A; font-size: 17px; color: #E4E4E7">
+<span aria-hidden="true" style="flex: none; width: 8px; height: 8px; border-radius: 50%; background: {{accent}}; transform: translateY(-2px)"></span>{{pt}}</li>
+</sc-for>
+</ul>
+</div>
+<div style="flex: 1.1 1 480px; min-height: 500px; position: relative; border-radius: 8px; overflow: hidden; background: #131316; border: 1px solid #232328; display: flex; align-items: center; justify-content: center">
+<sc-if value="{{p.hasDetailImg}}" hint-placeholder-val="{{ true }}">
+<img src="{{p.detailImg}}" alt="{{p.detailAlt}}" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
+</sc-if>
+<sc-if value="{{p.noDetailImg}}" hint-placeholder-val="{{ false }}">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.12em; color: #71717A; border: 1px dashed #3F3F46; padding: 8px 12px; border-radius: 4px">{{p.detailAlt}}</span>
+</sc-if>
+</div>
+</div>
+</section>
+
+<!-- PERFECT FOR -->
+<section aria-labelledby="pf-h" style="position: relative; background: #0B0B0E; border-top: 1px solid #1F1F23; border-bottom: 1px solid #1F1F23; overflow: hidden">
+<div aria-hidden="true" style="position: absolute; left: 0; right: 0; top: 0; height: 8px; background: repeating-linear-gradient(90deg, #ED2835 0 40px, #09090B 40px 80px)"></div>
+<div class="lc-section" style="max-width: 1360px; margin: 0 auto; padding: 80px 40px">
+<div style="display: flex; align-items: center; gap: 16px; margin-bottom: 26px"><h2 id="pf-h" style="margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 48px; line-height: 1; color: #FFFFFF; text-transform: uppercase">Perfect for</h2><span aria-hidden="true" style="flex: 1; height: 1px; background: #27272A"></span></div>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px">
+<sc-for list="{{perfect}}" as="t" hint-placeholder-count="10">
+<a href="{{t.href}}" style="position: relative; display: flex; flex-direction: column; gap: 10px; min-height: 100px; padding: 18px 18px 16px 22px; border-radius: 8px; background: #131316; border: 1px solid #232328; text-decoration: none; overflow: hidden">
+<span aria-hidden="true" style="position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: {{t.color}}"></span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.14em; color: {{t.color}}">{{t.tag}}</span>
+<span style="display: flex; justify-content: space-between; align-items: flex-end; gap: 10px; margin-top: auto">
+<span style="font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 23px; line-height: 1; color: #FFFFFF; text-transform: uppercase">{{t.label}}</span>
+<span aria-hidden="true" style="flex: none; width: 30px; height: 30px; border-radius: 50%; border: 1px solid #3F3F46; color: #ED2835; display: flex; align-items: center; justify-content: center; font-weight: 800">→</span>
+</span>
+</a>
+</sc-for>
+</div>
+</div>
+</section>
+
+<!-- RELATED -->
+<section class="lc-section" aria-labelledby="rel-h" style="max-width: 1360px; margin: 0 auto; padding: 120px 40px 60px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 40px">
+<div>
+<p style="margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: {{accent}}">02 / KEEP PLAYING</p>
+<h2 id="rel-h" style="margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 80px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase">{{p.relatedTitle}}</h2>
+</div>
+<a href="{{p.parentHref}}" style="color: {{accent}}; font-weight: 700; font-size: 15px; letter-spacing: 0.06em; text-transform: uppercase; padding: 12px 0; text-decoration: none">{{p.parentCta}} →</a>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px">
+<sc-for list="{{related}}" as="r" hint-placeholder-count="3">
+<a href="{{r.href}}" style="position: relative; height: 300px; border-radius: 8px; overflow: hidden; background: #131316; display: block; text-decoration: none">
+<img src="{{r.img}}" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
+<span aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(9,9,11,0.95) 0%, rgba(9,9,11,0.1) 65%)"></span>
+<span style="position: absolute; left: 26px; right: 26px; bottom: 24px; display: flex; flex-direction: column; gap: 4px">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: {{amber}}">{{r.tag}}</span>
+<span style="font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 32px; color: #FFFFFF; text-transform: uppercase">{{r.name}} →</span>
+</span>
+</a>
+</sc-for>
+</div>
+</section>
+
+<!-- FAQ -->
+<section aria-labelledby="faq-h" style="margin-top: 60px; background: #0F0F12; border-top: 1px solid #1F1F23; border-bottom: 1px solid #1F1F23">
+<div class="lc-section" style="max-width: 1360px; margin: 0 auto; padding: 120px 40px; display: flex; flex-wrap: wrap; gap: 64px">
+<div style="flex: 1 1 340px">
+<p style="margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: {{accent}}">03 / PIT BRIEFING</p>
+<h2 id="faq-h" style="margin: 0 0 20px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 84px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase">Good to<br>know</h2>
+<a href="https://lemancave.co.uk/contact" style="display: inline-block; border: 1px solid #52525B; color: #FFFFFF; font-weight: 600; font-size: 15px; letter-spacing: 0.06em; text-transform: uppercase; padding: 16px 24px; border-radius: 4px; text-decoration: none">Make an enquiry</a>
+</div>
+<div style="flex: 2 1 560px; border-top: 1px solid #27272A">
+<sc-for list="{{faqs}}" as="f" hint-placeholder-count="3">
+<div style="border-bottom: 1px solid #27272A">
+<button type="button" onClick="{{f.toggle}}" aria-expanded="{{f.expanded}}" style="width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 20px; background: none; border: 0; padding: 26px 0; cursor: pointer; text-align: left; font: inherit; color: #FFFFFF; font-size: 20px; font-weight: 600">
+<span>{{f.q}}</span>
+<span aria-hidden="true" style="{{f.iconStyle}}">+</span>
+</button>
+<sc-if value="{{f.open}}" hint-placeholder-val="{{ false }}">
+<p style="margin: 0; padding: 0 48px 28px 0; font-size: 17px; line-height: 1.65; color: #A1A1AA">{{f.a}}</p>
+</sc-if>
+</div>
+</sc-for>
+</div>
+</div>
+</section>
+
+<!-- CTA BAND -->
+<section class="lc-section" aria-labelledby="cta-h" style="max-width: 1360px; margin: 0 auto; padding: 120px 40px">
+<div style="position: relative; border-radius: 10px; overflow: hidden; background: {{accent}}; padding: 64px 56px; display: flex; flex-wrap: wrap; gap: 40px; align-items: center; justify-content: space-between">
+<div aria-hidden="true" style="position: absolute; right: 0; top: 0; bottom: 0; width: 220px; background: repeating-conic-gradient(#09090B 0% 25%, transparent 0% 50%) 0 0 / 40px 40px; opacity: 0.18"></div>
+<div style="position: relative; flex: 1 1 460px">
+<h2 id="cta-h" style="margin: 0 0 14px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 80px); line-height: 0.92; color: #09090B; text-transform: uppercase">{{p.ctaTitle}}</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.55; color: #1C1C1F">Mon–Fri 06:30–21:30 · Sat 10:00–21:00 · Sun by special request</p>
+</div>
+<div style="position: relative; display: flex; flex-direction: column; gap: 12px; flex: 0 1 340px">
+<a href="https://lemancave.co.uk/book" style="display: flex; justify-content: space-between; align-items: center; background: #09090B; color: #FFFFFF; font-weight: 700; font-size: 16px; letter-spacing: 0.06em; text-transform: uppercase; padding: 20px 24px; border-radius: 4px; text-decoration: none">{{p.cta}}
+<svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+<a href="https://lemancave.co.uk/contact#map" style="color: #09090B; font-weight: 600; font-size: 15px; padding: 10px 0; text-decoration: underline">How to find us</a>
+</div>
+</div>
+</section>
+
+<dc-import name="SiteFooter" hint-size="100%,780px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"slug":{"editor":"enum","options":["ps5","pinball","pool","airhockey","football","darts","arcade","moto","memorabilia"],"default":"pool","section":"Content"},"accent":{"editor":"color","default":"#ED2835","options":["#ED2835","#FF2E88","#2EE6FF","#C6FF3D"],"section":"Theme"},"amber":{"editor":"color","default":"#FFC233","section":"Theme"},"$preview":{"width":1440,"height":4700}}'>
+class Component extends DCLogic {
+  constructor(props) { super(props); this.state = { open: 0 }; }
+  renderVals() {
+    const accent = this.props.accent ?? '#ED2835';
+    const amber = this.props.amber ?? '#FFC233';
+    const B = (id) => '/_blob/' + id;
+    const IMG = {
+      ps5: B('9dc6e1e4d0002cd48daa24a834848cbd'), lounge: B('d76d56e086301523c4971afc4f5dfe57'),
+      pinball: B('61be8e75bbfd3651047d20e5a346ffd3'), pinball2: B('087eb617edc639f42d522945ddefd32b'),
+      pool: B('44da4bb4e9c2f25471b7f35352440547'), airhockey: B('4b14d96bd1414bd7eaf55fc8afca2612'),
+      football: B('acb9b99ec403334bf4a49d12c7cc7fb9'), arcade: B('30c5e67b4cd608a17bdb32e677371fd2'),
+      moto: B('80e1b5cd2743753b0c06cbf34ef30502'), sim: B('87af79a958a3ccd899908f5b2bb8b25b'),
+      scalextric: B('df355e4462e1a0cc01c740047878ecdf'), venue: B('4a552ab4df1d6b27548d7bd0e68e6d3e'), suits: B('b1f31c249d74acb3cc85257e6956012e'), wide: B('d8088e3823809fc023e85fd23c0ce0d9')
+    };
+    const games = { parentHref: 'Games.dc.html', parentLabel: 'GAMES & ARCADE', parentCta: 'All games & arcade', navActive: 'Games.dc.html', relatedTitle: 'More to play' };
+    const P = {
+      ps5: { ...games, file: 'PS5.dc.html', crumb: 'PS5 LOUNGE', name: 'PS5 Lounge', tag: '120IN 4K', kicker: 'PLAYSTATION 5 · 120IN 4K', line1: 'Big screen.', line2: 'Bigger rivalries.',
+        intro: 'PlayStation 5 on a 120-inch 4K immersive screen, played from a sofa built out of a converted Mini Cooper.',
+        hero: IMG.ps5, heroAlt: 'Friends on the Mini Cooper sofa playing a racing game on the 120-inch screen', cta: 'Book the lounge',
+        specs: [['SCREEN', '120in 4K'], ['CONSOLE', 'PlayStation 5'], ['SEATING', 'Mini Cooper sofa'], ['INCLUDED', 'With venue hire']],
+        detailTitle: 'The best seat in the house', detail: 'Sink into our converted Mini Cooper sofa and take on your mates on a wall-sized 4K screen. Racers, sports and party games — perfect between sim sessions or as the main event.',
+        points: ['120-inch 4K immersive screen', 'PlayStation 5 with a selection of games', 'Converted Mini Cooper sofa', 'Included with venue hire'],
+        detailImg: B('e99e1654859658bbd21c96f616aa54ea'), detailAlt: 'The Mini Cooper sofa in the games lounge', ctaTitle: 'Controllers ready.',
+        faqs: [['Which games do you have?', 'Our PS5 game list is coming soon. [GAME LIST TBC]'], ['Is the PS5 included with venue hire?', 'Yes — everything is included with exclusive venue hire.'], ['Can I bring my own games?', 'No — PS5 games are provided, so just bring your skills.']] },
+      pinball: { ...games, file: 'Pinball.dc.html', crumb: 'DIGITAL PINBALL', name: 'Digital Pinball', tag: 'FULL-SIZE CABINET', kicker: 'FULL-SIZE CABINET', line1: 'Tilt at your', line2: 'own risk.',
+        intro: 'One full-size digital pinball machine — all the lights, sound and multiball chaos of classic pinball, with a digital twist.',
+        hero: IMG.pinball, heroAlt: 'Hands on the flippers of a glowing digital pinball machine', cta: 'Book your visit',
+        specs: [['CABINET', 'Full-size'], ['FORMAT', 'Digital'], ['MACHINES', '1'], ['INCLUDED', 'With venue hire']],
+        detailTitle: 'Flippers at the ready', detail: 'Our full-size digital pinball machine is made for groups: chase the high score, then hand over to the next player and watch them try to beat it.',
+        points: ['One full-size digital pinball machine', 'High-score bragging rights', 'Easy to pick up, hard to put down', 'Included with venue hire'],
+        detailImg: B('51e3dc729e6a9351f77816ec6e8a33a5'), detailAlt: 'Le Mans-themed pinball backglass and score display', ctaTitle: 'Insert coin.',
+        faqs: [['How many pinball machines are there?', 'We have one full-size digital pinball machine.'], ['Is it included with venue hire?', 'Yes — everything is included with exclusive venue hire.'], ['Can kids play?', 'No age limits — everyone can play.']] },
+      pool: { ...games, file: 'Pool.dc.html', crumb: 'POOL TABLE', name: 'Pool Table', tag: '9FT SLATE', kicker: '9FT PRO POOL TABLE', line1: 'Rack ’em', line2: 'up.',
+        intro: 'A 9ft pro pool table — a proper table for proper shots, under the low glow of the cave. Cues provided.',
+        hero: B('fad7e0da23e886ea2f41d6f857255765'), heroAlt: 'The 9ft pool table under pendant lights and red neon', cta: 'Book your visit',
+        specs: [['TABLE', '9ft pro'], ['GAME', 'Pool'], ['CUES', 'Provided'], ['INCLUDED', 'With venue hire']],
+        detailTitle: 'A table worth the trip', detail: 'Our 9ft pro pool table plays true and fast, and cues are provided. Settle a score, run a doubles knockout or just take a break from the racing.',
+        points: ['9ft pro pool table', 'Cues provided', 'Singles or doubles', 'Included with venue hire'],
+        detailImg: B('4ce867edd79a7d832da29a7c7aa700dd'), detailAlt: 'Racked balls and cues on the 9ft pool table', ctaTitle: 'Break off.',
+        faqs: [['Do you provide cues?', 'Yes — cues are provided, so just bring your best break.'], ['Is it included with venue hire?', 'Yes — everything is included with exclusive venue hire.'], ['Can we run a tournament?', 'Yes — talk to us when you book and we’ll help you set it up.']] },
+      airhockey: { ...games, file: 'AirHockey.dc.html', crumb: 'AIR HOCKEY', name: 'Air Hockey', tag: 'PRO-GRADE', kicker: 'PRO-GRADE TABLE', line1: 'Fast hands', line2: 'only.',
+        intro: 'A pro-grade air hockey table. Quick, loud and fiercely competitive — the fastest game in the cave.',
+        hero: IMG.airhockey, heroAlt: 'Two players mid-rally at air hockey', cta: 'Book your visit',
+        specs: [['TABLE', 'Pro-grade'], ['PLAYERS', '2'], ['PACE', 'Flat out'], ['INCLUDED', 'With venue hire']],
+        detailTitle: 'Head to head', detail: 'Two players, one puck and no hiding place. Air hockey is the perfect quick-fire grudge match between races.',
+        points: ['Pro-grade air table', 'Two-player head-to-head', 'Quick games, easy to pick up', 'Perfect for tournaments'],
+        detailImg: B('a36aa54903a7cf23a4c34b30de115426'), detailAlt: 'Air hockey table beside the pool table under neon', ctaTitle: 'Face off.',
+        faqs: [['Is it suitable for kids?', 'No age limits — everyone can play.'], ['Is it included with venue hire?', 'Yes — everything is included with exclusive venue hire.'], ['Can we run a tournament?', 'Yes — ask us when you book.']] },
+      football: { ...games, file: 'TableFootball.dc.html', crumb: 'FOOTBALL TABLE', name: 'Football Table', tag: 'LEAGUE-GRADE', kicker: 'LEAGUE-GRADE TABLE', line1: 'No spinning.', line2: 'Mostly.',
+        intro: 'A league-grade table football unit for settling office rivalries and family feuds alike.',
+        hero: B('80c2ad5ad02f459c89546738d1b1a09e'), heroAlt: 'League-grade table football table under red neon', cta: 'Book your visit',
+        specs: [['TABLE', 'League-grade'], ['PLAYERS', '2–4'], ['FORMAT', 'Singles or doubles'], ['INCLUDED', 'With venue hire']],
+        detailTitle: 'Every office needs a champion', detail: 'A sturdy, league-grade table built for fast, competitive games. Play one-on-one or two-on-two.',
+        points: ['League-grade table', 'Singles or doubles', 'Easy to learn, hard to master', 'Great for team days'],
+        detailImg: B('da937b12a0426afcc896c14abaed54b3'), detailAlt: 'Red and blue table football players, close-up', ctaTitle: 'Kick off.',
+        faqs: [['How many can play?', 'Two to four players — singles or doubles.'], ['Is it included with venue hire?', 'Yes — everything is included with exclusive venue hire.'], ['Can kids play?', 'No age limits — everyone can play.']] },
+      arcade: { ...games, file: 'Arcade.dc.html', crumb: 'ARCADE AREA', name: 'Two-Player Arcade', tag: 'HEAD TO HEAD', kicker: 'TWO-PLAYER CLASSICS', line1: 'Player two', line2: 'ready.',
+        intro: 'Two-player arcade classics, side by side. Grab a stick, pick a game and chase the high score.',
+        hero: IMG.arcade, heroAlt: 'Two friends playing a retro arcade cabinet', cta: 'Book your visit',
+        specs: [['PLAYERS', '2'], ['STYLE', 'Retro classics'], ['GAMES', 'TBC'], ['INCLUDED', 'With venue hire']],
+        detailTitle: 'Old school, new rivals', detail: 'Our arcade area brings back the classics — side-by-side, two-player games made for friendly (and not-so-friendly) competition.',
+        points: ['Two-player arcade classics', 'Game list coming soon [TBC]', 'Side-by-side head-to-heads', 'Included with venue hire'],
+        detailImg: B('3bb7b8b6d1661fa12a1c6d470c802daf'), detailAlt: 'Two friends laughing as they battle on an arcade cabinet', ctaTitle: 'Game on.',
+        faqs: [['Which games are on the arcade?', 'Our arcade game list is coming soon. [GAME LIST TBC]'], ['Is it included with venue hire?', 'Yes — everything is included with exclusive venue hire.'], ['Can kids play?', 'No age limits — everyone can play.']] },
+      moto: { file: 'MotoSim.dc.html', parentHref: 'Simulator.dc.html', parentLabel: 'SIMULATOR', parentCta: 'See the pro simulator', navActive: 'Simulator.dc.html', relatedTitle: 'More racing',
+        crumb: 'MOTORCYCLE SIMULATOR', name: 'Motorcycle Sim', tag: 'RETRO · TWO WHEELS', kicker: 'FOR THE LOVERS OF TWO WHEELS', line1: 'Lean in.', line2: 'Open it up.',
+        intro: 'A classic 1990s motorcycle simulator. Swap four wheels for two, lean into the bends and chase the lap record.',
+        hero: IMG.moto, heroAlt: 'Rider leaning into a corner on the classic 1990s motorcycle simulator', cta: 'Book a ride',
+        specs: [['ERA', '1990s classic'], ['WHEELS', 'Two'], ['STYLE', 'Ride-on arcade'], ['RIDERS', '1 at a time']],
+        detailTitle: 'Pure 90s nostalgia', detail: 'A genuine 1990s arcade motorcycle simulator — sit astride the bike, lean to steer and twist the throttle. Retro fun for riders and racers alike.',
+        points: ['Classic 1990s ride-on cabinet', 'Lean to steer, twist to go', 'Retro arcade fun', 'Pairs perfectly with the pro sims'],
+        detailImg: B('8a3ca7d90040eff1fe549d3d709cfa73'), detailAlt: 'Motorcycle simulator cabinet under neon', ctaTitle: 'Full throttle.',
+        faqs: [['Do I need a motorbike licence?', 'Not at all — it’s an arcade game, so anyone can ride.'], ['Is there an age limit?', 'No age limit — anyone can ride.'], ['Is it included with venue hire?', 'Yes — everything is included with exclusive venue hire.']] },
+      darts: { ...games, file: 'Darts.dc.html', crumb: 'DARTS', name: 'Darts', tag: 'AIM · PLAY · COMPETE', kicker: 'AIM · PLAY · COMPETE', line1: 'One hundred', line2: 'and eighty!',
+        intro: 'Step up to the oche with a fully automated scoring system — no chalk, no maths, just throw.',
+        hero: B('7c1e54e0a4d7ce95deabcd2d695065d8'), heroAlt: 'Darts in the board with the scoring screen glowing behind', cta: 'Book your visit',
+        specs: [['SCORING', 'Fully automated'], ['PLAYERS', '2+'], ['GAMES', '501 & more'], ['INCLUDED', 'With venue hire']],
+        detailTitle: 'Aim for the treble twenty', detail: 'Our fully automated darts scoring system keeps track of every throw, so you can focus on hitting the treble twenty. Perfect for quick-fire games between races.',
+        points: ['Fully automated scoring system', 'Singles or team games', 'Great between races', 'Included with venue hire'],
+        detailImg: B('39178d73e26841e6a0dec70c93e456e9'), detailAlt: 'Three darts on the board under neon glow', ctaTitle: 'Game on.',
+        faqs: [['Do we need to keep score?', 'No — our fully automated scoring system does it all for you.'], ['Are darts provided?', 'Yes — darts are provided.'], ['Is it included with venue hire?', 'Yes — everything is included with exclusive venue hire.'], ] },
+      memorabilia: { file: 'Memorabilia.dc.html', parentHref: 'Attractions.dc.html', parentLabel: 'ATTRACTIONS', parentCta: 'All attractions', navActive: 'Attractions.dc.html', relatedTitle: 'More racing',
+        crumb: 'RETRO MEMORABILIA', name: 'Retro Memorabilia', tag: 'MOTORSPORT HISTORY', kicker: 'MOTORSPORT HISTORY', line1: 'Racing history', line2: 'on every wall.',
+        intro: 'Autographed race suits, F1 spoilers, NASCAR wheels, Le Mans race panels and neon signs — a museum you can race in, included with your venue hire.',
+        hero: B('391bb670a4d33c1c7c09c18bb09b8a63'), heroAlt: 'Race suit and helmets on display', cta: 'Book your visit',
+        specs: [['RACE SUITS', 'Autographed'], ['F1', 'Spoilers'], ['LE MANS', 'Race panels'], ['VIEWING', 'Venue hire only']],
+        detailTitle: 'A museum you can race in', detail: 'Every corner of LeMan Cave is packed with motorsport memorabilia — from autographed race suits to genuine race panels from Le Mans.',
+        points: ['Autographed race suits', 'F1 spoilers and NASCAR wheels', 'Le Mans race panels', 'Neon signs throughout'],
+        detailImg: B('fc7112025e8ba60f1f0ccd133931c460'), detailAlt: 'Le Mans car, race suit and trophies in the memorabilia room', ctaTitle: 'Come and see it.',
+        faqs: [['Can I visit just to see the memorabilia?', 'No — the memorabilia can be enjoyed as part of your venue hire only.'], ['Is the memorabilia for sale?', 'No — the collection is not for sale.'], ['Can I take photos?', 'Yes — photos of the venue are fine. Tag us @leman.cave!']] }
+    };
+    const slug = P[this.props.slug] ? this.props.slug : 'pool';
+    const raw = P[slug];
+    const p = { ...raw,
+      specs: raw.specs.map(([k, v], i) => ({ k, v, color: i === 0 ? amber : '#FFFFFF' })),
+      hasDetailImg: !!raw.detailImg, noDetailImg: !raw.detailImg };
+    const gameOrder = ['ps5', 'pinball', 'pool', 'airhockey', 'football', 'darts', 'arcade'];
+    let related;
+    if (slug === 'moto' || slug === 'memorabilia') {
+      related = [
+        { href: 'Simulator.dc.html', img: IMG.sim, tag: '4 DOF · 4K OR VR', name: 'Pro Racing Simulator' },
+        { href: 'Scalextric.dc.html', img: IMG.scalextric, tag: '160FT · 6 LANES', name: 'Digital Scalextric' },
+        { href: 'Games.dc.html', img: IMG.arcade, tag: 'BETWEEN RACES', name: 'Games & Arcade' }
+      ];
+    } else {
+      const i = gameOrder.indexOf(slug);
+      related = [1, 2, 3].map((d) => gameOrder[(i + d) % gameOrder.length]).map((k) => ({ href: P[k].file, img: (P[k].hero), tag: P[k].tag, name: P[k].name }));
+    }
+    const navItems = [['Attractions.dc.html', 'Attractions'], ['Food.dc.html', 'Food & Drink'], ['Events.dc.html', 'Parties & Events'], ['Pricing.dc.html', 'Prices'], ['Gallery.dc.html', 'Gallery'], ['Visit.dc.html', 'Visit Us']];
+    const nav = navItems.map(([href, label]) => ({ href, label,
+      style: 'text-decoration: none; ' + (href === 'Attractions.dc.html' ? 'color: ' + accent + '; padding: 8px 0; border-bottom: 2px solid ' + accent : 'color: #F4F4F5') }));
+    const faqs = raw.faqs.map(([q, a], i) => {
+      const open = this.state.open === i;
+      return { q, a, open, expanded: open ? 'true' : 'false',
+        iconStyle: 'flex: none; width: 36px; height: 36px; border-radius: 50%; border: 1px solid #3F3F46; display: flex; align-items: center; justify-content: center; font-size: 22px; color: ' + (open ? accent : '#E4E4E7') + '; transform: rotate(' + (open ? '45' : '0') + 'deg); transition: transform .2s',
+        toggle: () => this.setState({ open: open ? -1 : i }) };
+    });
+    const NVK = { 'Attractions.dc.html': 'attractions', 'Food.dc.html': 'food', 'Events.dc.html': 'events', 'Pricing.dc.html': 'prices', 'Gallery.dc.html': 'gallery', 'Visit.dc.html': 'visit' };
+    const nv = Object.fromEntries(nav.map((n) => [NVK[n.href], 'display: flex; align-items: center; gap: 6px; height: 92px; box-sizing: border-box; white-space: nowrap; flex: none; text-decoration: none; ' + (n.style.includes('#ED2835') ? 'color: #ED2835; border-bottom: 2px solid #ED2835' : 'color: #F4F4F5; border-bottom: 2px solid transparent')]));
+    return { nv,
+      accent, amber, p, related, nav, faqs,
+      perfect: [['BIRTHDAYS', 'Birthday.dc.html'], ['KIDS PARTIES', 'KidsParties.dc.html'], ['STAG DOS', 'StagDo.dc.html'], ['HEN DOS', 'HenDo.dc.html'], ['TEAM BUILDING', 'TeamBuilding.dc.html'], ['FAMILY DAYS', 'FamilyDays.dc.html'], ['VENUE HIRE', 'VenueHire.dc.html'], ['SIM RACING VS KARTING', 'CompareKarting.dc.html'], ['INDOOR ACTIVITIES COMPARED', 'CompareIndoor.dc.html'], ['VENUE HIRE GUIDE', 'GuideVenueHire.dc.html']].map(([label, href]) => ({ label: label.charAt(0) + label.slice(1).toLowerCase(), href, tag: href.startsWith('Compare') ? 'COMPARISON' : href.startsWith('Guide') ? 'GUIDE' : 'HIRE TYPE', color: href.startsWith('Compare') ? '#FFC233' : href.startsWith('Guide') ? '#4ADE80' : '#ED2835' })),
+      brands: [
+        { name: 'Race Car Graphics UK', href: 'https://racecargraphics.uk/', logo: '/_blob/af46cb048a3538fff3ada1542e3a6666' },
+        { name: 'Broadland Digital', href: 'https://broadlanddigital.co.uk/', logo: '/_blob/3af5e52699d5da909dbac3e38fd47a32' },
+        { name: 'Consensus Media', href: '#', logo: '/_blob/8ca017d8a0e0e8edd2c55f414a56e8af' },
+        { name: 'Auto Opulence', href: 'https://autoopulence.co.uk/', logo: '/_blob/30d005beeac001ad9a9af4176bcf0bb6' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>
