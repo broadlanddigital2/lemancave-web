@@ -30,7 +30,7 @@ in a Cowork session (Oct 2026). Setup and deploy steps are in `README.md`.
 
 ## Prices
 Whole-cave prices are per person, with a minimum spend that still applies if fewer guests come.
-- **Sim room**: £80/hr Mon–Fri 9–5 (2 sharing 1 sim); £125/hr evenings and weekends.
+- **Sim room**: £80/hr Mon–Fri 9–5 (2 sharing 1 sim); £125/hr evenings and weekends: Mon–Fri 17–20, Sat 12–20, Sun 12–16 (staffed for security and health & safety; only when the cave isn't booked for private hire).
 - **After School Special**: Mon–Thu 16–18, £40pp, min spend £440. Static mode. Not December or early January.
 - **Car Club Special**: Sat 10–13, £45pp, min £630.
 - **Saturday 14–17**:
