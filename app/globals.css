@@ -101,3 +101,11 @@ html.lc-mob-lock, html.lc-mob-lock body { overflow: hidden; }
   .lc-festive::before { left: 26px; }
   .lc-festive-bow { left: 13px; }
 }
+
+/* Mobile menu: "Search the site" opens the CRM site search (components/MobileMenu.jsx) */
+.lc-mob-search {
+  display: flex; align-items: center; gap: 10px; width: calc(100% - 40px); margin: 16px 20px 0; padding: 12px 14px;
+  border: 1px solid #27272A; border-radius: 10px; background: #131316; color: #D4D4D8;
+  font: 500 16px 'Barlow', sans-serif; text-align: left; cursor: pointer;
+}
+.lc-mob-search:hover, .lc-mob-search:focus-visible { border-color: #ED2835; color: #FFFFFF; }

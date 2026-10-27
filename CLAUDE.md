@@ -99,6 +99,7 @@ Whole-cave prices are per person, with a minimum spend that still applies if few
   - Seasonal rules (After School off in December and early January; Saturday Night on December weeknights and early January) are dated rules that run to January 2028. Renew them before then.
   - Stripe for LeMan Cave is in **test mode**. Switch to live keys in the CRM (Ecommerce → Payments) before taking real bookings.
   - CRM side: `ecommerce_create_guest_service_order`, `slot_mode = 'clock'`, `venue_space` providers and the widget's venue profile (race-car-graphics-crm, Oct 2026).
+- **Site search and AI enquiry bot** (Oct 2026): `app/layout.tsx` loads the CRM's `embed/site-search.js` (floating Search button bottom-left, `/` or Ctrl/Cmd+K, "Search the site" in the mobile menu) and `rcg-enquiry-bot.js` (chat launcher bottom-right). Configured in the CRM: Marketing → Site search, and Channels → LeMan Cave Enquiry Bot (tables `site_search_configs`, `enquiry_bot_configs`). Bot leads land in LeMan Cave leads with alerts to bookings@ (Boxly off). The bot learns the site by crawling it; until go-live both point at the workers.dev preview. **At go-live** set `site_url` (and search `appearance.booking_url` / `enquiry_url`, and the services' `source_url`) to https://lemancave.co.uk, then refresh the bot index and reindex search.
 - The Auto Opulence site (`broadlanddigital2/autoopulence`) uses the same Cloudflare and CRM pattern. Use it as the reference.
 
 ## Related Claude artifacts and docs
