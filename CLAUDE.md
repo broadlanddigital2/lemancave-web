@@ -99,6 +99,7 @@ Whole-cave prices are per person, with a minimum spend that still applies if few
 - **Image brief**: Claude Docs.
 
 ## Content rules
+- Write "Bring Your Own" on the site, never "BYO" (the owner's preference, Oct 2026).
 - Never invent reviews, testimonials or ratings. Placeholders say `[ADD REAL REVIEW]` or similar.
 - Don't state unconfirmed facts. Mark them `[CONFIRM …]` instead.
 - **Images** are AI-generated stand-ins until real photos arrive.
