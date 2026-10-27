@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import { css } from '../lib/css';
+import MobileMenu from './MobileMenu';
 import A from './A';
 import SiteFooter from './SiteFooter';
 
@@ -83,6 +84,7 @@ export default class Christmas extends React.Component {
 <div style={css("display: flex; align-items: center; gap: 12px")}>
 
 <A href="#packages" style={css(`background: ${V.green}; color: #FFFFFF; font-weight: 700; font-size: 15px; letter-spacing: 0.06em; text-transform: uppercase; padding: 14px 22px; border-radius: 4px`)}>{"Book Christmas"}</A>
+<MobileMenu />
 </div>
 </nav>
 </header>

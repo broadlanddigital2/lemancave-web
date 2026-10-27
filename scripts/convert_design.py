@@ -228,6 +228,16 @@ def fix_links(code, exts):
     assert '_blob' not in code, code[code.index('_blob') - 80: code.index('_blob') + 40]
     return code
 
+def add_mobile_menu(code):
+    # The design has no mobile menu. Put the hand-written <MobileMenu /> (components/MobileMenu.jsx)
+    # next to the header's Book now button. The button only shows at 760px and below.
+    end = '\n</div>\n</nav>\n</header>'
+    if '<header' not in code:
+        return code
+    assert code.count(end) == 1, 'header end not found'
+    code = code.replace(end, '\n<MobileMenu />' + end)
+    return code.replace("import { css } from '../lib/css';\n", "import { css } from '../lib/css';\nimport MobileMenu from './MobileMenu';\n", 1)
+
 if __name__ == '__main__':
     exts = {}
     imgdir = os.path.join(OUT, 'public', 'images')
@@ -249,6 +259,7 @@ if __name__ == '__main__':
             continue
         code, _ = convert(name, src)
         code = fix_links(code, exts)
+        code = add_mobile_menu(code)
         if name == 'GiftVouchers':
             code = re.sub(r'(<EnquiryForm formType="gift-voucher"[^>]*>)', lambda m: m.group(1) + '<input type="hidden" name="voucher" value={`${V.v.title} \u00b7 ${V.v.price}`} />', code, count=1)
             assert 'name="voucher"' in code

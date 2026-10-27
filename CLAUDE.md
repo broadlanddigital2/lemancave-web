@@ -77,6 +77,7 @@ Whole-cave prices are per person, with a minimum spend that still applies if few
 
   Every page links up to its hub, across to related pages, and down to guides and comparisons. Keep that internal linking when adding pages.
 - **Header**: a mega menu (Attractions / Food & Drink / Parties & Events / Visit Us). The footer is deliberately slim.
+- **Mobile menu**: `components/MobileMenu.jsx` (hand-written, links in `lib/nav.js`, styles `.lc-mob-*` in `app/globals.css`). The converter inserts `<MobileMenu />` into every page header. If the mega menu's links change in the design, update `lib/nav.js` to match.
 
 ## Hosting and CRM
 - Cloudflare Worker (`worker/index.js`, `wrangler.jsonc`) serves the static export and handles `POST /api/enquiry`. Workers Builds deploys every push to `main`.
@@ -115,7 +116,6 @@ Whole-cave prices are per person, with a minimum spend that still applies if few
   - pizza menu;
   - local picks in the guides.
 - Map embed on `/visit-us`.
-- Mobile hamburger menu.
 - Real photography.
 - CRM online booking setup.
 - Go-live domain switch.

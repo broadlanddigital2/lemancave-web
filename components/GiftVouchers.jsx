@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import { css } from '../lib/css';
+import MobileMenu from './MobileMenu';
 import A from './A';
 import EnquiryForm from './EnquiryForm';
 import SiteFooter from './SiteFooter';
@@ -48,6 +49,7 @@ export default class GiftVouchers extends React.Component {
 <div style={css("display: flex; align-items: center; gap: 12px")}>
 
 <A href="/book" style={css("background: #ED2835; color: #09090B; font-weight: 700; font-size: 15px; letter-spacing: 0.06em; text-transform: uppercase; padding: 14px 22px; border-radius: 4px")}>{"Book now"}</A>
+<MobileMenu />
 </div>
 </nav>
 </header>

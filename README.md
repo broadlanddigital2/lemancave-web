@@ -78,7 +78,6 @@ npm run preview    # static build + wrangler dev on http://localhost:8787
 - Review placeholders `[NAME]`, and "Last reviewed: [DATE]" on the comparison pages.
 - **Map embed** on `/visit-us` is a placeholder box.
 - **Images** are AI-generated stand-ins, and some show invented "LeMan Cave" signage and building exteriors. Replace them with real photos in `public/images/`.
-- **Mobile menu.** Small screens show the logo and Book Now only; a hamburger menu is still to add.
 
 ## URL map
 
