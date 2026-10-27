@@ -7,12 +7,12 @@ a:hover{color:#FFFFFF}
 .lc-mm-p a:hover{color:#ED2835 !important}
 .lc-mm:hover>a{color:#ED2835 !important}
 @media (max-width:760px){.lc-nav-links{display:none !important}.lc-section{padding-left:20px !important;padding-right:20px !important}}
+a{color:#F4F4F5;text-decoration:none}
+.lc input,.lc textarea{font:inherit}
 @media (max-width:760px){
 .lc-nav-links{display:none !important}
 .lc-section{padding-left:20px !important;padding-right:20px !important}
 }
-a{color:#F4F4F5;text-decoration:none}
-.lc input,.lc textarea{font:inherit}
 body{margin:0}
 .lc input:focus,.lc textarea:focus{outline:2px solid #ED2835;outline-offset:1px}
 @media (max-width:760px){

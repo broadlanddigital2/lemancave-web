@@ -15,7 +15,7 @@
 const REDIRECTS = {
   '/experiences': '/attractions',
   '/contact': '/visit-us',
-  '/login': '/book',
+  '/login': '/account',
 };
 
 // Subjects avoid the words the CRM uses as field labels (enquiry, message, details, comments).

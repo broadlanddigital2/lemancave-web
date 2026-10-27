@@ -109,3 +109,13 @@ html.lc-mob-lock, html.lc-mob-lock body { overflow: hidden; }
   font: 500 16px 'Barlow', sans-serif; text-align: left; cursor: pointer;
 }
 .lc-mob-search:hover, .lc-mob-search:focus-visible { border-color: #ED2835; color: #FFFFFF; }
+
+/* Header icons: search and account (components/HeaderTools.jsx) */
+.lc-hdr-tools { display: inline-flex; align-items: center; gap: 2px; }
+.lc-hdr-icon {
+  display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; padding: 0;
+  border: 0; border-radius: 50%; background: none; color: #D4D4D8; cursor: pointer; text-decoration: none;
+}
+.lc-hdr-icon:hover, .lc-hdr-icon:focus-visible { color: #FFFFFF; background: #18181B; }
+.lc-hdr-icon:focus-visible { outline: 2px solid #ED2835; outline-offset: 2px; }
+@media (max-width: 420px) { .lc-hdr-tools .lc-hdr-icon { width: 38px; height: 38px; } }

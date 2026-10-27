@@ -35,7 +35,7 @@ ROUTES = {
  'CompareKarting': '/compare/sim-racing-vs-karting', 'Compare4kVr': '/compare/4k-vs-vr', 'CompareMotionStatic': '/compare/motion-vs-static-simulators',
  'CompareSimVsHire': '/compare/sim-room-vs-whole-cave-hire', 'CompareSaturday': '/compare/saturday-packages', 'CompareIndoor': '/compare/indoor-activities-norwich',
  'CompareTeamBuilding': '/compare/team-building-activities', 'ComparePartyVenues': '/compare/party-venues', 'CompareScalextric': '/compare/digital-vs-classic-scalextric',
- 'Sitemap': '/site-map', 'Book': '/book',
+ 'Sitemap': '/site-map', 'Book': '/book', 'Advertise': '/advertise', 'Account': '/account',
 }
 TEMPLATES = {'Landing', 'Guide', 'Compare', 'Hub', 'Product', 'SiteFooter'}
 SKIP = {'Sitemap'}  # strategy diagram board; replaced by a generated HTML site map
@@ -219,12 +219,13 @@ def fix_links(code, exts):
         n = m.group(1)
         return ROUTES.get(n, '/' + n.lower())
     code = re.sub(r'\b([A-Za-z0-9]+)\.dc\.html', r, code)
-    code = code.replace('https://lemancave.co.uk/book', '/book').replace('https://lemancave.co.uk/login', '/book')
+    code = code.replace('https://lemancave.co.uk/book', '/book').replace('https://lemancave.co.uk/login', '/account')
     code = code.replace('https://lemancave.co.uk/experiences', '/attractions').replace('https://lemancave.co.uk/corporate-events', '/corporate-events')
     code = code.replace('https://lemancave.co.uk/contact', '/visit-us').replace('https://lemancave.co.uk/', '/')
     code = re.sub(r"/_blob/([0-9a-f]{32})", lambda m: f"/images/{m.group(1)}.{exts.get(m.group(1), 'webp')}", code)
     code = code.replace("'/_blob/' + id", "'/images/' + id + '.webp'")
-    code = re.sub(r'<A href="/(?:login|book)"[^>]*>\{"Log in"\}</A>', '', code)
+    # The text "Log in" link: the header's account icon (HeaderTools) replaces it.
+    code = re.sub(r'<A href="/(?:login|book|account)"[^>]*>\{"Log in"\}</A>', '', code)
     assert '_blob' not in code, code[code.index('_blob') - 80: code.index('_blob') + 40]
     return code
 
@@ -237,6 +238,20 @@ def add_mobile_menu(code):
     assert code.count(end) == 1, 'header end not found'
     code = code.replace(end, '\n<MobileMenu />' + end)
     return code.replace("import { css } from '../lib/css';\n", "import { css } from '../lib/css';\nimport MobileMenu from './MobileMenu';\n", 1)
+
+def add_header_tools(code):
+    # Search and account icons (components/HeaderTools.jsx) just before the header's Book now button.
+    if '<header' not in code:
+        return code
+    start, end = code.index('<header'), code.index('</header>')
+    head = code[start:end]
+    # The header's right-hand group holds the main button (Book now, or Book Christmas / Enquire on those pages).
+    box = '<div style={css("display: flex; align-items: center; gap: 12px")}>'
+    i = head.rfind(box)
+    assert i >= 0, 'header button group not found'
+    i += len(box)
+    code = code[:start] + head[:i] + '\n<HeaderTools />' + head[i:] + code[end:]
+    return code.replace("import { css } from '../lib/css';\n", "import { css } from '../lib/css';\nimport HeaderTools from './HeaderTools';\n", 1)
 
 def add_festive_bar(code):
     # The Christmas ribbon banner (components/FestiveBar.jsx) above the header on every page with one.
@@ -275,6 +290,7 @@ if __name__ == '__main__':
         code, _ = convert(name, src)
         code = fix_links(code, exts)
         code = add_mobile_menu(code)
+        code = add_header_tools(code)
         code = add_booking_widget(code)
         code = add_festive_bar(code)
         if name == 'GiftVouchers' and 'formType="gift-voucher"' in code:

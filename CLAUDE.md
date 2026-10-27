@@ -68,7 +68,7 @@ Whole-cave prices are per person, with a minimum spend that still applies if few
   - `Hub`: attractions and events hubs;
   - `Product`: attraction pages;
   - `SiteFooter`.
-- The other pages are one-offs (Main, Simulator, Scalextric, Games, Food, Drinks, Corporate, Christmas, Pricing, Gallery, Visit, GiftVouchers, Book).
+- The other pages are one-offs (Main, Simulator, Scalextric, Games, Food, Drinks, Corporate, Christmas, Pricing, Gallery, Visit, GiftVouchers, Book, Advertise, Account). New pages also need an entry in `ROUTES` (converter and `lib/routes.js`) and an `app/<route>/page.tsx` with metadata.
 - **SEO structure**: 4 tiers.
   1. Core pages.
   2. Attraction / product pages.
@@ -76,7 +76,7 @@ Whole-cave prices are per person, with a minimum spend that still applies if few
   4. Guides and resources: 12 guides, 9 comparisons, FAQs, opening times, travel.
 
   Every page links up to its hub, across to related pages, and down to guides and comparisons. Keep that internal linking when adding pages.
-- **Header**: a mega menu (Attractions / Food & Drink / Parties & Events / Visit Us). The footer is deliberately slim.
+- **Header**: a mega menu (Attractions / Food & Drink / Parties & Events / Visit Us), then search and account icons (`components/HeaderTools.jsx`, inserted by the converter) and the main button. The footer is deliberately slim.
 - **Mobile menu**: `components/MobileMenu.jsx` (hand-written, links in `lib/nav.js`, styles `.lc-mob-*` in `app/globals.css`). The converter inserts `<MobileMenu />` into every page header. If the mega menu's links change in the design, update `lib/nav.js` to match.
 
 ## Hosting and CRM
@@ -100,6 +100,8 @@ Whole-cave prices are per person, with a minimum spend that still applies if few
   - Stripe for LeMan Cave is in **test mode**. Switch to live keys in the CRM (Ecommerce → Payments) before taking real bookings.
   - CRM side: `ecommerce_create_guest_service_order`, `slot_mode = 'clock'`, `venue_space` providers and the widget's venue profile (race-car-graphics-crm, Oct 2026).
 - **Site search and AI enquiry bot** (Oct 2026): `app/layout.tsx` loads the CRM's `embed/site-search.js` (floating Search button bottom-left, `/` or Ctrl/Cmd+K, "Search the site" in the mobile menu) and `rcg-enquiry-bot.js` (chat launcher bottom-right). Configured in the CRM: Marketing → Site search, and Channels → LeMan Cave Enquiry Bot (tables `site_search_configs`, `enquiry_bot_configs`). Bot leads land in LeMan Cave leads with alerts to bookings@ (Boxly off). The bot learns the site by crawling it; until go-live both point at the workers.dev preview. **At go-live** set `site_url` (and search `appearance.booking_url` / `enquiry_url`, and the services' `source_url`) to https://lemancave.co.uk, then refresh the bot index and reindex search.
+- **Advertising** (`/advertise`, Oct 2026): digital signage screens around the building. Package cards (3/6/12 months, "price to be confirmed" on the page) and `<CrmBooking mode="signage" />`, the CRM order form (digital-signage function). Artwork: upload now, later from the account, or "we create it" (+£50, `signage_settings.design_fee`). Prices come from the CRM signage package (`signage_packages.prices`; currently placeholders 450/900/1800). `signage_settings.online_orders` is `request`: each order becomes a draft quote with a "check and send the quote" task and a lead/alert to bookings@. Switch it to `pay` (CRM: Digital signage → Settings → Website orders) once prices are final, and update the page's price text. Screen sizes and visitor numbers on the page are `[CONFIRM]`.
+- **Customer account** (`/account`, header account icon; `/login` redirects there): `<CrmBooking mode="account" />`: bookings, invoices with Pay now, gift cards, screen adverts (status, artwork upload, quote/pay, preview approval), account details. Email-code sign-in.
 - The Auto Opulence site (`broadlanddigital2/autoopulence`) uses the same Cloudflare and CRM pattern. Use it as the reference.
 
 ## Related Claude artifacts and docs

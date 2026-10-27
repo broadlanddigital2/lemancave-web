@@ -5,10 +5,20 @@
    "slug": "accessibility",
    "title": "Accessible Activities Norwich \u2014 LeMan Cave"
   },
+  "Account": {
+   "component": "Account",
+   "slug": null,
+   "title": "Your Account \u2014 LeMan Cave Norwich"
+  },
   "AdultGroups": {
    "component": "Landing",
    "slug": "adultgroups",
    "title": "Group Nights Out in Norwich \u2014 LeMan Cave"
+  },
+  "Advertise": {
+   "component": "Advertise",
+   "slug": null,
+   "title": "Advertise at LeMan Cave \u2014 Digital Signage Screens, Norwich"
   },
   "AirHockey": {
    "component": "Product",
@@ -542,6 +552,8 @@
   "ComparePartyVenues": "/compare/party-venues",
   "CompareScalextric": "/compare/digital-vs-classic-scalextric",
   "Sitemap": "/site-map",
-  "Book": "/book"
+  "Book": "/book",
+  "Advertise": "/advertise",
+  "Account": "/account"
  }
 }

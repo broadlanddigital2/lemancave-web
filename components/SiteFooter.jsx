@@ -10,7 +10,7 @@ export default class SiteFooter extends React.Component {
       cols: [
         { title: 'EXPLORE', links: L([['Attractions', '/attractions'], ['Food & Drink', '/food'], ['Parties & Events', '/parties-and-events'], ['Prices', '/prices'], ['Gallery', '/gallery'], ['Visit Us', '/visit-us']]) },
         { title: 'POPULAR', links: L([['Pro Racing Simulator', '/attractions/racing-simulator'], ['Digital Scalextric', '/attractions/digital-scalextric'], ['Birthday Parties', '/birthday-parties'], ['Kids Parties', '/kids-parties'], ['Stag & Hen Dos', '/stag-do-norwich'], ['Team Building', '/team-building'], ['Christmas Parties', '/christmas-parties'], ['Exclusive Venue Hire', '/venue-hire']]) },
-        { title: 'PLAN YOUR VISIT', links: L([['Opening Times', '/opening-times'], ['Travel & Parking', '/travel-and-parking'], ['Accessibility', '/accessibility'], ['FAQs', '/faqs'], ['Gift Vouchers', '/gift-vouchers'], ['Contact', '/visit-us']]) },
+        { title: 'PLAN YOUR VISIT', links: L([['Opening Times', '/opening-times'], ['Travel & Parking', '/travel-and-parking'], ['Accessibility', '/accessibility'], ['FAQs', '/faqs'], ['Gift Vouchers', '/gift-vouchers'], ['Advertise With Us', '/advertise'], ['Contact', '/visit-us']]) },
         { title: 'MORE', links: L([['Who it’s for', '/parties-and-events'], ['All locations', '/locations'], ['Blog & guides', '/guides'], ['Corporate Events', '/corporate-events'], ['Comparisons', '/guides']]) }
       ],
       brands: [
