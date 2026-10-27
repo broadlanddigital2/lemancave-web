@@ -238,6 +238,14 @@ def add_mobile_menu(code):
     code = code.replace(end, '\n<MobileMenu />' + end)
     return code.replace("import { css } from '../lib/css';\n", "import { css } from '../lib/css';\nimport MobileMenu from './MobileMenu';\n", 1)
 
+def add_booking_widget(code):
+    # <div data-lc-booking="form"></div> in a design page becomes the live CRM booking widget (components/CrmBooking.jsx).
+    if 'data-lc-booking' not in code:
+        return code
+    code, n = re.subn(r'<div data-lc-booking="[a-z-]+"\s*(?:/>|>\s*</div>)', '<CrmBooking />', code)
+    assert n == 1, 'booking widget placeholder not found'
+    return code.replace("import { css } from '../lib/css';\n", "import { css } from '../lib/css';\nimport CrmBooking from './CrmBooking';\n", 1)
+
 if __name__ == '__main__':
     exts = {}
     imgdir = os.path.join(OUT, 'public', 'images')
@@ -260,6 +268,7 @@ if __name__ == '__main__':
         code, _ = convert(name, src)
         code = fix_links(code, exts)
         code = add_mobile_menu(code)
+        code = add_booking_widget(code)
         if name == 'GiftVouchers':
             code = re.sub(r'(<EnquiryForm formType="gift-voucher"[^>]*>)', lambda m: m.group(1) + '<input type="hidden" name="voucher" value={`${V.v.title} \u00b7 ${V.v.price}`} />', code, count=1)
             assert 'name="voucher"' in code

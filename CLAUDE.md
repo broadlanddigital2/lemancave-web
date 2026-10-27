@@ -89,7 +89,12 @@ Whole-cave prices are per person, with a minimum spend that still applies if few
   - Leads land in "LeMan Cave leads → Incoming", and alerts go to bookings@lemancave.co.uk.
   - The CRM reads labelled lines from `details`: `Name:`, `Email:`, `Phone:`, `Company:`. It takes the lead message from the `Enquiry:` line.
   - Keep the words enquiry, message, details and comments out of subjects (see `buildCrmPayload`).
-- **Booking**: "Book now" goes to `/book`, a booking request that becomes a CRM lead. Full online booking (like Auto Opulence) needs LeMan Cave's services, packages and availability set up in the CRM booking module first, then the CRM booking widget (`booking-order-flow` function).
+- **Booking**: `/book` has live online booking: the CRM booking widget (`components/CrmBooking.jsx`, loaded from `https://crm.racecargraphics.uk/embed/booking.js`, inserted by the converter in place of `<div data-lc-booking="form">` in `design/Book.dc.html`). Stripe returns to `/book?session_id=…`, which shows the receipt.
+  - Services, prices and opening times live in the CRM (Ecommerce, LeMan Cave): Sim Room (Sim 1, Sim 2; daytime £80, evenings & weekends £125, 1-hour slots, paid in full) and Whole Cave Hire (After School, Car Club, Saturday Afternoon x3, Sunday, Saturday Night x3; per person with a minimum spend, 25% deposit). Change prices there, not on the site.
+  - A whole-cave booking blocks both sims; a sim booking blocks only that sim and the overlapping whole-cave session.
+  - Seasonal rules (After School off in December and early January; Saturday Night on December weeknights and early January) are dated rules that run to January 2028. Renew them before then.
+  - Stripe for LeMan Cave is in **test mode**. Switch to live keys in the CRM (Ecommerce → Payments) before taking real bookings.
+  - CRM side: `ecommerce_create_guest_service_order`, `slot_mode = 'clock'`, `venue_space` providers and the widget's venue profile (race-car-graphics-crm, Oct 2026).
 - The Auto Opulence site (`broadlanddigital2/autoopulence`) uses the same Cloudflare and CRM pattern. Use it as the reference.
 
 ## Related Claude artifacts and docs
@@ -118,5 +123,6 @@ Whole-cave prices are per person, with a minimum spend that still applies if few
   - local picks in the guides.
 - Map embed on `/visit-us`.
 - Real photography.
-- CRM online booking setup.
+- Privacy policy and booking terms pages (the booking form links to `/privacy`).
+- Switch LeMan Cave Stripe to live mode.
 - Go-live domain switch.

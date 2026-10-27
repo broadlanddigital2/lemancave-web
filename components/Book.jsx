@@ -1,9 +1,9 @@
 'use client';
 import React from 'react';
 import { css } from '../lib/css';
+import CrmBooking from './CrmBooking';
 import MobileMenu from './MobileMenu';
 import A from './A';
-import EnquiryForm from './EnquiryForm';
 import SiteFooter from './SiteFooter';
 
 export default class Book extends React.Component {
@@ -33,26 +33,13 @@ export default class Book extends React.Component {
 <A href="/" style={css("color: #A1A1AA")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <span style={css("color: #ED2835")}>{"BOOK"}</span>
 </nav>
 <h1 id="bk-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(64px, 10vw, 144px); line-height: 0.88; color: #FFFFFF; text-transform: uppercase")}>{"Book your"}<br /><span style={css("color: #ED2835")}>{"slot."}</span></h1>
-<p style={css("margin: 22px 0 0; max-width: 620px; font-size: 19px; line-height: 1.55; color: #D4D4D8")}>{"Tell us what you\u2019d like to book and when. We\u2019ll check availability and come back to you with confirmation and a payment link for your 25% deposit."}</p>
+<p style={css("margin: 22px 0 0; max-width: 620px; font-size: 19px; line-height: 1.55; color: #D4D4D8")}>{"Pick a sim hour or a whole-cave session, choose a live date and time, and pay securely online. Sim hours are paid in full; whole-cave hire takes a 25% deposit, with the balance due 7 days before."}</p>
 </section>
-<section className="lc-section" aria-label="Booking request" style={css("max-width: 1360px; margin: 0 auto; padding: 20px 40px 110px; display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start")}>
-<EnquiryForm formType="booking-request" aria-label="Booking request form" style={css("flex: 1.5 1 560px; background: #131316; border: 1px solid #232328; border-radius: 10px; padding: 40px; display: flex; flex-direction: column; gap: 20px")}>
-<label style={css("flex: 1 1 200px; display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 600; color: #A1A1AA")}>{"Package"}<select style={css("background: #09090B; border: 1px solid #3F3F46; border-radius: 4px; padding: 15px 16px; color: #FFFFFF; font-size: 16px; color-scheme: dark")} name="package"><option>{"Sim room \u2014 1 hour (2 sharing 1 sim)"}</option><option>{"Saturday Afternoon (14:00\u201317:00)"}</option><option>{"Saturday Night (18:00\u201321:00)"}</option><option>{"Sunday Session (13:00\u201316:00)"}</option><option>{"After School Special (Mon\u2013Thu 16:00\u201318:00)"}</option><option>{"Car Club Special (Sat 10:00\u201313:00)"}</option><option>{"Christmas party"}</option><option>{"Corporate / team event"}</option><option>{"Not sure yet \u2014 please advise"}</option></select></label>
-<div style={css("display: flex; flex-wrap: wrap; gap: 16px")}>
-<label style={css("flex: 1 1 200px; display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 600; color: #A1A1AA")}>{"Preferred date"}<input type="date" style={css("background: #09090B; border: 1px solid #3F3F46; border-radius: 4px; padding: 15px 16px; color: #FFFFFF; font-size: 16px; padding: 14px 16px; color-scheme: dark")} name="preferred_date" /></label>
-<label style={css("flex: 1 1 200px; display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 600; color: #A1A1AA")}>{"Preferred time"}<select style={css("background: #09090B; border: 1px solid #3F3F46; border-radius: 4px; padding: 15px 16px; color: #FFFFFF; font-size: 16px; color-scheme: dark")} name="preferred_time"><option>{"Any time"}</option><option>{"Morning"}</option><option>{"Afternoon"}</option><option>{"Evening"}</option></select></label>
-<label style={css("flex: 1 1 200px; display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 600; color: #A1A1AA")}>{"Group size"}<input type="number" min="1" placeholder="e.g. 14" style={css("background: #09090B; border: 1px solid #3F3F46; border-radius: 4px; padding: 15px 16px; color: #FFFFFF; font-size: 16px")} name="group_size" /></label>
-</div>
-<div style={css("display: flex; flex-wrap: wrap; gap: 16px")}>
-<label style={css("flex: 1 1 200px; display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 600; color: #A1A1AA")}>{"Name"}<input type="text" placeholder="Your name" autoComplete="name" style={css("background: #09090B; border: 1px solid #3F3F46; border-radius: 4px; padding: 15px 16px; color: #FFFFFF; font-size: 16px")} name="name" required={true} /></label>
-<label style={css("flex: 1 1 200px; display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 600; color: #A1A1AA")}>{"Email"}<input type="email" placeholder="you@example.com" autoComplete="email" style={css("background: #09090B; border: 1px solid #3F3F46; border-radius: 4px; padding: 15px 16px; color: #FFFFFF; font-size: 16px")} name="email" required={true} /></label>
-<label style={css("flex: 1 1 200px; display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 600; color: #A1A1AA")}>{"Phone"}<input type="tel" placeholder="Phone number" autoComplete="tel" style={css("background: #09090B; border: 1px solid #3F3F46; border-radius: 4px; padding: 15px 16px; color: #FFFFFF; font-size: 16px")} name="phone" /></label>
-</div>
-<label style={css("display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 600; color: #A1A1AA")}>{"Anything else?"}<textarea rows="4" placeholder={"Occasion, ages, Bring Your Own drinks, pizza, cake, accessibility\u2026"} style={css("background: #09090B; border: 1px solid #3F3F46; border-radius: 4px; padding: 15px 16px; color: #FFFFFF; font-size: 16px; resize: vertical")} name="anything_else"></textarea></label>
-<button type="submit" style={css("align-self: flex-start; background: #ED2835; color: #09090B; border: 0; cursor: pointer; font-weight: 700; font-size: 16px; letter-spacing: 0.06em; text-transform: uppercase; padding: 18px 32px; border-radius: 4px")}>{"Request booking"}</button>
-<p style={css("margin: 0; font-size: 14px; line-height: 1.6; color: #71717A")}>{"This is a booking request, not a confirmed booking. We reply within one working day. A 25% deposit secures your date; the balance is due 7 days before."}</p>
-</EnquiryForm>
-<aside style={css("flex: 1 1 340px; display: flex; flex-direction: column; gap: 16px")}>
+<section className="lc-section" aria-label="Book online" style={css("max-width: 1360px; margin: 0 auto; padding: 20px 40px 60px")}>
+<CrmBooking />
+</section>
+<section className="lc-section" aria-label="Good to know" style={css("max-width: 1360px; margin: 0 auto; padding: 0 40px 110px; display: flex; flex-wrap: wrap; gap: 24px; align-items: stretch")}>
+<div style={css("flex: 1 1 100%; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px")}>
 <div style={css("padding: 30px; border-radius: 10px; background: #131316; border: 1px solid #232328")}>
 <div style={css("font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: #71717A; margin-bottom: 14px")}>{"QUICK PRICES"}</div>
 {(V.prices || []).map((p, $index) => (<React.Fragment key={$index}>
@@ -70,7 +57,7 @@ export default class Book extends React.Component {
 <div style={css("font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: #71717A; margin-bottom: 10px")}>{"PREFER EMAIL?"}</div>
 <A href="mailto:bookings@lemancave.co.uk" style={css("font-size: 18px; color: #FFFFFF")}>{"bookings@lemancave.co.uk"}</A>
 </div>
-</aside>
+</div>
 </section>
 <SiteFooter />
 </div>

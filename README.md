@@ -38,9 +38,8 @@ The CRM picks out these fields from what the Worker sends:
 Spam protection is a hidden honeypot field. Bad emails are rejected before anything reaches the CRM.
 
 ### Booking
-For this first version, **Book now** opens `/book`, a booking request form that becomes a CRM lead.
-Full online booking (live availability and deposit payment) can be switched on once LeMan Cave's services,
-packages and opening hours are set up in the CRM's booking module, as Auto Opulence has.
+**Book now** opens `/book`, which has live online booking through the CRM booking widget (live availability, prices
+and Stripe payment). Services, prices and opening times are managed in the CRM, not on the site. See CLAUDE.md.
 
 ## Deploying (Cloudflare Workers Builds)
 
