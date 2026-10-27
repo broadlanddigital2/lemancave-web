@@ -70,3 +70,8 @@ html.lc-mob-lock, html.lc-mob-lock body { overflow: hidden; }
 @media (min-width: 761px) {
   .lc-mob-panel { display: none !important; }
 }
+
+/* The design pages wrap everything in .lc with overflow-x: hidden, which makes it a scroll container and stops
+   position: sticky working inside it (the site header and the booking summary). clip hides sideways overflow the
+   same way without that side effect; browsers that don't know clip keep the inline hidden. */
+.lc { overflow-x: clip !important; }
