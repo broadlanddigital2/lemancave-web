@@ -66,6 +66,13 @@ export default function MobileMenu() {
                 <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" style={{ transform: isOpen ? 'rotate(180deg)' : 'none', transition: 'transform .2s' }}><path d="M6 9l6 6 6-6" /></svg>
               </button>
               <div id={id} className="lc-mob-sub" hidden={!isOpen}>
+                {item.feature && (
+                  <A href={item.feature[0]} className="lc-mob-feat" onClick={close}>
+                    <span className="lc-mob-feat-tag">Featured</span>
+                    <strong>{item.feature[1]}</strong>
+                    {item.feature[2] && <small>{item.feature[2]}</small>}
+                  </A>
+                )}
                 {item.groups.map((g) => (
                   <div key={g.title} className="lc-mob-group">
                     <span className="lc-mob-label">{g.title}</span>

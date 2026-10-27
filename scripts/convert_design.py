@@ -47,7 +47,7 @@ ATTR_MAP = {'class': 'className', 'for': 'htmlFor', 'onclick': 'onClick', 'oncha
             'stroke-linejoin': 'strokeLinejoin', 'stroke-dasharray': 'strokeDasharray', 'text-anchor': 'textAnchor',
             'preserveaspectratio': 'preserveAspectRatio', 'letter-spacing': 'letterSpacing', 'font-size': 'fontSize',
             'font-family': 'fontFamily', 'fill-rule': 'fillRule', 'clip-rule': 'clipRule', 'tabindex': 'tabIndex',
-            'colspan': 'colSpan', 'rowspan': 'rowSpan', 'maxlength': 'maxLength', 'readonly': 'readOnly', 'autocomplete': 'autoComplete'}
+            'colspan': 'colSpan', 'referrerpolicy': 'referrerPolicy', 'rowspan': 'rowSpan', 'maxlength': 'maxLength', 'readonly': 'readOnly', 'autocomplete': 'autoComplete'}
 DROP_ATTRS = {'hint-size', 'hint-placeholder-count', 'hint-placeholder-val'}
 
 HOLE = re.compile(r'\{\{\s*([^}]*?)\s*\}\}')

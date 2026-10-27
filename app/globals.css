@@ -119,3 +119,23 @@ html.lc-mob-lock, html.lc-mob-lock body { overflow: hidden; }
 .lc-hdr-icon:hover, .lc-hdr-icon:focus-visible { color: #FFFFFF; background: #18181B; }
 .lc-hdr-icon:focus-visible { outline: 2px solid #ED2835; outline-offset: 2px; }
 @media (max-width: 420px) { .lc-hdr-tools .lc-hdr-icon { width: 38px; height: 38px; } }
+
+/* Christmas in green: any card or button linking to the Christmas page (search results do the same, CRM config). */
+a[href="/christmas-parties"][style*="border-radius"] {
+  border-color: #1E9E5E !important;
+  box-shadow: 0 0 0 1px #1E9E5E, 0 0 30px rgba(30, 158, 94, 0.22) !important;
+}
+a[href="/christmas-parties"][style*="border-radius"] [style*="color:#ED2835" i],
+a[href="/christmas-parties"][style*="border-radius"][style*="color:#ED2835" i] { color: #34C77B !important; }
+a[href="/christmas-parties"][style*="border-radius"] [style*="background:#ED2835" i],
+a[href="/christmas-parties"][style*="background:#ED2835" i] { background: #1E9E5E !important; color: #FFFFFF !important; }
+.lc-mm-feat:hover { color: #5BE09A !important; }
+/* Mobile menu: featured item (Christmas Parties) */
+.lc-mob-feat {
+  display: flex; flex-direction: column; gap: 4px; margin: 6px 0 14px; padding: 14px 16px; border-radius: 8px;
+  background: linear-gradient(135deg, rgba(30, 158, 94, 0.28), rgba(30, 158, 94, 0.08)); border: 1px solid #1E9E5E;
+  color: #FFFFFF; text-decoration: none;
+}
+.lc-mob-feat strong { font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 22px; text-transform: uppercase; letter-spacing: 0.02em; }
+.lc-mob-feat small { color: #C6F0D6; font-size: 14px; }
+.lc-mob-feat-tag { align-self: flex-start; font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; background: #1E9E5E; color: #FFFFFF; padding: 3px 7px; border-radius: 3px; }
