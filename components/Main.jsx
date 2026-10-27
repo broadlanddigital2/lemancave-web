@@ -427,7 +427,7 @@ export default class Main extends React.Component {
 <p style={css("margin: 0; font-size: 18px; line-height: 1.6; color: #A1A1AA")}>{"Planning something bigger? Tell us the date, the crew and the vibe \u2014 we\u2019ll build the package."}</p>
 </div>
 <div style={css("display: flex; flex-direction: column; border-top: 1px solid #27272A")}>
-<div style={css("display: flex; justify-content: space-between; gap: 16px; padding: 18px 0; border-bottom: 1px solid #27272A")}><span style={css("color: #71717A")}>{"Phone"}</span><A href="tel:01603000000" style={css("font-weight: 600")}>{"01603 [NUMBER]"}</A></div>
+<div style={css("display: flex; justify-content: space-between; gap: 16px; padding: 18px 0; border-bottom: 1px solid #27272A")}><span style={css("color: #71717A")}>{"Phone"}</span><A href="tel:01603517080" style={css("font-weight: 600")}>{"01603 517080"}</A></div>
 <div style={css("display: flex; justify-content: space-between; gap: 16px; padding: 18px 0; border-bottom: 1px solid #27272A")}><span style={css("color: #71717A")}>{"Email"}</span><A href="mailto:bookings@lemancave.co.uk" style={css("font-weight: 600")}>{"bookings@lemancave.co.uk"}</A></div>
 <div style={css("display: flex; justify-content: space-between; gap: 16px; padding: 18px 0; border-bottom: 1px solid #27272A")}><span style={css("color: #71717A")}>{"Find us"}</span><span style={css("font-weight: 600; text-align: right")}>{"Unit 1, Consensus House, St Faith\u2019s Rd, NR6 7BW"}</span></div>
 <div style={css("display: flex; justify-content: space-between; gap: 16px; padding: 18px 0; border-bottom: 1px solid #27272A")}><span style={css("color: #71717A")}>{"Mon\u2013Fri"}</span><span style={css("font-family: 'JetBrains Mono', monospace")}>{"06:30 \u2013 21:30"}</span></div>

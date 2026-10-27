@@ -60,7 +60,7 @@ export default class Visit extends React.Component {
 </div>
 <div style={css("padding: 30px; border-radius: 10px; background: #131316; border: 1px solid #232328")}>
 <div style={css("font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: #71717A; margin-bottom: 10px")}>{"GET IN TOUCH"}</div>
-<div style={css("display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #27272A")}><span style={css("color: #A1A1AA")}>{"Phone"}</span><A href="tel:01603000000" style={css("font-weight: 600")}>{"01603 [NUMBER]"}</A></div>
+<div style={css("display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #27272A")}><span style={css("color: #A1A1AA")}>{"Phone"}</span><A href="tel:01603517080" style={css("font-weight: 600")}>{"01603 517080"}</A></div>
 <div style={css("display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #27272A")}><span style={css("color: #A1A1AA")}>{"Email"}</span><A href="mailto:bookings@lemancave.co.uk" style={css("font-weight: 600")}>{"bookings@lemancave.co.uk"}</A></div>
 <div style={css("display: flex; justify-content: space-between; padding: 10px 0")}><span style={css("color: #A1A1AA")}>{"Instagram"}</span><A href="https://www.instagram.com/leman.cave/" style={css("font-weight: 600")}>{"@leman.cave"}</A></div>
 </div>

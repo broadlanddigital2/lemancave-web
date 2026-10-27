@@ -7,7 +7,7 @@ in a Cowork session (Oct 2026). Setup and deploy steps are in `README.md`.
 - **LeMan Cave**: indoor motorsport entertainment venue. Unit 1, Consensus House, St Faith's Rd, Norwich NR6 7BW.
   - Full parking on site, about 4 miles from the city centre. Fully accessible.
   - Around 50 guests across 2,000 sq ft.
-  - Email bookings@lemancave.co.uk. Instagram @leman.cave.
+  - Phone 01603 517080 (`tel:01603517080`). Email bookings@lemancave.co.uk. Instagram @leman.cave.
 - **Positioning**: a real motorsport venue that's great for non-petrolheads too. Imagery should show the general public, not just car fans.
 - **Hours**: Mon–Fri 06:30–21:30, Sat 10:00–21:00, Sun by request.
 - **Attractions**:
@@ -91,6 +91,7 @@ Whole-cave prices are per person, with a minimum spend that still applies if few
   - Keep the words enquiry, message, details and comments out of subjects (see `buildCrmPayload`).
 - **Booking**: `/book` has live online booking: the CRM booking widget (`components/CrmBooking.jsx`, loaded from `https://crm.racecargraphics.uk/embed/booking.js`, inserted by the converter in place of `<div data-lc-booking="form">` in `design/Book.dc.html`). Stripe returns to `/book?session_id=…`, which shows the receipt.
   - Services, prices and opening times live in the CRM (Ecommerce, LeMan Cave): Sim Room (Sim 1, Sim 2; daytime £80, evenings & weekends £125, 1-hour slots, paid in full) and Whole Cave Hire (After School, Car Club, Saturday Afternoon x3, Sunday, Saturday Night x3; per person with a minimum spend, 25% deposit). Change prices there, not on the site.
+  - Online bookings need 24 hours' notice (CRM: `ecommerce_sites.min_notice_minutes = 1440`). Anything sooner, or a special request, goes through the widget's "Have an urgent booking?" form (a lead in LeMan Cave leads, alert to bookings@) or by phone.
   - Sessions starting within 14 days are paid in full at checkout instead of the deposit (CRM: `ecommerce_sites.full_payment_within_days`).
   - Deposit bookings get a final invoice for the balance 14 days before (email with invoice PDF and a "Pay balance" link to `/book?pay_balance=…`), due 7 days before, plus a "Check balance paid" task in the CRM that closes itself when paid online. Settings: `ecommerce_sites.balance_invoice_days_before`, `balance_due_days_before`, and `site_url` (the booking page the pay link uses; change it to https://lemancave.co.uk/book at go-live).
   - **Gift cards**: `/gift-vouchers` sells digital gift cards for any amount from £10 to £2,000 (`<CrmBooking mode="gift-card" />`), emailed with a code to the buyer or the recipient, valid 12 months. Customers enter the code on the booking review: the card comes off first, any deposit still due is charged, and the rest stays on the card. Settings: `ecommerce_sites.gift_cards_enabled`, `gift_card_min_amount`, `gift_card_max_amount`, `gift_card_valid_days`; cards are in `ecommerce_gift_cards`.
@@ -115,7 +116,6 @@ Whole-cave prices are per person, with a minimum spend that still applies if few
   - Avoid images with Pac-Man or other copyrighted characters.
 
 ## Open items (as of 27 Oct 2026)
-- **Real phone number**: `tel:01603000000` is a placeholder.
 - **`[CONFIRM]` items**:
   - sim titles;
   - VR age policy;
