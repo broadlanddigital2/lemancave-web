@@ -33,7 +33,7 @@ export default class Book extends React.Component {
 <A href="/" style={css("color: #A1A1AA")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <span style={css("color: #ED2835")}>{"BOOK"}</span>
 </nav>
 <h1 id="bk-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(64px, 10vw, 144px); line-height: 0.88; color: #FFFFFF; text-transform: uppercase")}>{"Book your"}<br /><span style={css("color: #ED2835")}>{"slot."}</span></h1>
-<p style={css("margin: 22px 0 0; max-width: 620px; font-size: 19px; line-height: 1.55; color: #D4D4D8")}>{"Pick a sim hour or a whole-cave session, choose a live date and time, and pay securely online. Sim hours are paid in full; whole-cave hire takes a 25% deposit, with the balance due 7 days before."}</p>
+<p style={css("margin: 22px 0 0; max-width: 620px; font-size: 19px; line-height: 1.55; color: #D4D4D8")}>{"Pick a sim hour or a whole-cave session, choose a live date and time, and pay securely online. Sim hours are paid in full; whole-cave hire takes a 25% deposit, with the balance due 7 days before. Sessions within 14 days are paid in full when you book."}</p>
 </section>
 <section className="lc-section" aria-label="Book online" style={css("max-width: 1360px; margin: 0 auto; padding: 20px 40px 60px")}>
 <CrmBooking />
