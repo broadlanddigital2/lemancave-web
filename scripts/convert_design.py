@@ -238,6 +238,13 @@ def add_mobile_menu(code):
     code = code.replace(end, '\n<MobileMenu />' + end)
     return code.replace("import { css } from '../lib/css';\n", "import { css } from '../lib/css';\nimport MobileMenu from './MobileMenu';\n", 1)
 
+def add_festive_bar(code):
+    # The Christmas ribbon banner (components/FestiveBar.jsx) above the header on every page with one.
+    if '<header' not in code:
+        return code
+    code = code.replace('<header', '<FestiveBar />\n<header', 1)
+    return code.replace("import { css } from '../lib/css';\n", "import { css } from '../lib/css';\nimport FestiveBar from './FestiveBar';\n", 1)
+
 def add_booking_widget(code):
     # <div data-lc-booking="form"></div> in a design page becomes the live CRM booking widget (components/CrmBooking.jsx).
     if 'data-lc-booking' not in code:
@@ -269,6 +276,7 @@ if __name__ == '__main__':
         code = fix_links(code, exts)
         code = add_mobile_menu(code)
         code = add_booking_widget(code)
+        code = add_festive_bar(code)
         if name == 'GiftVouchers':
             code = re.sub(r'(<EnquiryForm formType="gift-voucher"[^>]*>)', lambda m: m.group(1) + '<input type="hidden" name="voucher" value={`${V.v.title} \u00b7 ${V.v.price}`} />', code, count=1)
             assert 'name="voucher"' in code

@@ -75,3 +75,29 @@ html.lc-mob-lock, html.lc-mob-lock body { overflow: hidden; }
    position: sticky working inside it (the site header and the booking summary). clip hides sideways overflow the
    same way without that side effect; browsers that don't know clip keep the inline hidden. */
 .lc { overflow-x: clip !important; }
+
+/* Christmas ribbon banner (components/FestiveBar.jsx): green band with a red-and-gold ribbon running through it. */
+.lc-festive {
+  position: relative; display: flex; justify-content: center; align-items: center; gap: 14px; flex-wrap: wrap;
+  padding: 12px 20px 12px 64px; background: #1E9E5E; color: #FFFFFF; text-align: center; text-decoration: none;
+  font-family: Barlow, sans-serif; font-size: 15px; font-weight: 600; letter-spacing: 0.04em;
+  border-top: 3px solid #ED2835; border-bottom: 3px solid #ED2835;
+  box-shadow: inset 0 2px 0 #FFC233, inset 0 -2px 0 #FFC233;
+}
+.lc-festive:hover { color: #FFFFFF; background: #1A8C53; }
+.lc-festive::before {
+  /* the ribbon wrapping round the band */
+  content: ""; position: absolute; top: 0; bottom: 0; left: 34px; width: 14px;
+  background: #ED2835; box-shadow: inset 2px 0 0 #FFC233, inset -2px 0 0 #FFC233;
+}
+.lc-festive-bow { position: absolute; left: 21px; top: 50%; transform: translateY(-50%); line-height: 0; }
+.lc-festive-tag {
+  font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase;
+  color: #09090B; background: #FFC233; padding: 4px 8px; border-radius: 3px;
+}
+.lc-festive-link { text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 760px) {
+  .lc-festive { font-size: 13px; gap: 6px 10px; padding: 10px 14px 10px 56px; }
+  .lc-festive::before { left: 26px; }
+  .lc-festive-bow { left: 13px; }
+}

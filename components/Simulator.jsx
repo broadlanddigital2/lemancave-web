@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import { css } from '../lib/css';
+import FestiveBar from './FestiveBar';
 import MobileMenu from './MobileMenu';
 import A from './A';
 import SiteFooter from './SiteFooter';
@@ -62,6 +63,7 @@ export default class Simulator extends React.Component {
     const V = this.renderVals() || {};
     return (<>
 <div style={css("font-family: 'Barlow', system-ui, sans-serif; color: #E4E4E7; background: #09090B; min-height: 100vh; overflow-x: hidden")}>
+<FestiveBar />
 <header style={css("position: sticky; top: 0; z-index: 10; background: rgba(9,9,11,0.92); border-bottom: 1px solid #1F1F23; backdrop-filter: blur(10px)")}>
 <nav className="lc-section" aria-label="Main" style={css("max-width: 1360px; margin: 0 auto; padding: 0 40px; height: 92px; display: flex; align-items: center; justify-content: space-between; gap: 24px")}>
 <A href="/" aria-label="LeMan Cave home" style={css("display: flex; align-items: center")}>

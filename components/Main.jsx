@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import { css } from '../lib/css';
+import FestiveBar from './FestiveBar';
 import MobileMenu from './MobileMenu';
 import A from './A';
 import EnquiryForm from './EnquiryForm';
@@ -88,11 +89,7 @@ export default class Main extends React.Component {
     const V = this.renderVals() || {};
     return (<>
 <div className="lc" style={css("font-family: 'Barlow', system-ui, sans-serif; color: #E4E4E7; background: #09090B; min-height: 100vh; overflow-x: hidden")}>
-<A href="/christmas-parties" style={css("display: flex; justify-content: center; align-items: center; gap: 14px; flex-wrap: wrap; padding: 12px 20px; background: #1E9E5E; color: #FFFFFF; font-size: 15px; font-weight: 600; letter-spacing: 0.04em; text-decoration: none; text-align: center")}>
-<span style={css("font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: #09090B; background: #FFC233; padding: 4px 8px; border-radius: 3px")}>{"NOW BOOKING"}</span>
-<span>{"Christmas parties: every weeknight in December \u2014 from \u00a345pp"}</span>
-<span style={css("text-decoration: underline; text-underline-offset: 3px")}>{"The Festive Grand Prix \u2192"}</span>
-</A>
+<FestiveBar />
 <header style={css("position: sticky; top: 0; z-index: 10; background: rgba(9,9,11,0.92); border-bottom: 1px solid #1F1F23; backdrop-filter: blur(10px)")}>
 <nav className="lc-section" aria-label="Main" style={css("max-width: 1360px; margin: 0 auto; padding: 0 40px; height: 92px; display: flex; align-items: center; justify-content: space-between; gap: 24px")}>
 <A href="#top" aria-label="LeMan Cave home" style={css("display: flex; align-items: center")}>
