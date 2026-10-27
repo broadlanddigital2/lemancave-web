@@ -410,6 +410,8 @@ class Component extends DCLogic {
     const E = (o) => ({ ...ev, ...o });
     const A = (o) => ({ ...au, ...o });
     const CAVE = "Consensus House, St Faith's Rd, Norwich NR6 7BW";
+    // Map pin: NR6 7BW coordinates (a text search for the address lands on St Faith's Lane in the city centre).
+    const CAVE_LL = '52.672141,1.298626';
     // Local photos for the location pages: openly licensed photos from Wikimedia Commons (hot-linked, credited as their
     // licences require). Replace with your own photos any time.
     const PHOTOS = {
@@ -579,10 +581,10 @@ class Component extends DCLogic {
     const loc = (town, miles, time, route, day, landmark, extra) => ({ ...lo, crumb: town.toUpperCase(), kicker: 'THINGS TO DO NEAR ' + town.toUpperCase(), line1: 'Things to do', line2: 'near ' + town + '.', intro: 'Looking for something different to do near ' + town + '? LeMan Cave is ' + miles + ' away in Norwich — full-motion racing simulators, a 160ft digital Scalextric and a garage full of games.', hero: extra.hero || IMG.night, heroAlt: 'Racing simulator at LeMan Cave, Norwich', img2: extra.img2 || IMG.venue, img2Alt: 'Inside LeMan Cave', cta: 'Book your visit', ctaTitle: 'Worth the trip from ' + town + '.', whyTitle: 'Why ' + town + ' makes the trip', aboutTitle: 'A day out from ' + town, faqTitle: 'From ' + town + ': FAQs',
       loc: { town, miles, time, route, day, landmark,
         // Route map from the town to the cave (Google Maps embed, darkened with a CSS filter); Norfolk / East Anglia show the pin.
-        map: 'https://maps.google.com/maps?' + (/^(Norfolk|East Anglia)$/.test(town) ? 'q=' + encodeURIComponent(CAVE) + '&z=9' : 'saddr=' + encodeURIComponent(town + ', UK') + '&daddr=' + encodeURIComponent(CAVE)) + '&output=embed',
+        map: 'https://maps.google.com/maps?' + (/^(Norfolk|East Anglia)$/.test(town) ? 'q=' + CAVE_LL + '&z=9' : 'saddr=' + encodeURIComponent(town + ', UK') + '&daddr=' + CAVE_LL) + '&output=embed',
         mapTitle: /^(Norfolk|East Anglia)$/.test(town) ? 'Map: LeMan Cave, NR6 7BW' : 'Route map: ' + town + ' to LeMan Cave, NR6 7BW',
         photo: PHOTOS[town] || null,
-        directions: 'https://www.google.com/maps/dir/?api=1&destination=' + encodeURIComponent(CAVE) + (/^(Norfolk|East Anglia)$/.test(town) ? '' : '&origin=' + encodeURIComponent(town + ', UK')) },
+        directions: 'https://www.google.com/maps/dir/?api=1&destination=' + CAVE_LL + (/^(Norfolk|East Anglia)$/.test(town) ? '' : '&origin=' + encodeURIComponent(town + ', UK')) },
       body: ['If you’re in ' + town + ' and looking for an indoor activity that works for everyone, LeMan Cave is ' + miles + ' — around ' + time + ' by car — with full parking on site at Consensus House, St Faith’s Rd, Norwich NR6 7BW.', 'Petrolheads get pro-grade, full-motion racing simulators in 4K or VR, a 160ft six-lane digital Scalextric and a classic 1990s motorbike sim. Everyone else gets a PS5 on a 120-inch screen, pool, darts, pinball, air hockey and arcade classics — plus pizza and Bring Your Own packages for groups.', extra.local || 'It’s a brilliant option whatever the weather, and with exclusive whole-cave hire for groups of up to around 50, it’s ideal for birthdays, team days and nights out.'],
       reasons: [['Worth the drive', 'Around ' + time + ' from ' + town + ', with full parking on site when you arrive.'], ['Something for everyone', 'Racing for the fans, games for everyone else — no age limits on the games.'], ['Groups welcome', 'Exclusive whole-cave hire for up to around 50 guests, with pizza and Bring Your Own options.']],
       pkgs: ['satpm', 'satnight', 'simday'], things: ['sim', 'scalex', 'ps5', 'pool', 'darts', 'pizza'],
