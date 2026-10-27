@@ -22,7 +22,6 @@ Every form posts to `/api/enquiry`:
 - contact (`/visit-us`)
 - corporate quote
 - gift voucher
-- booking request (`/book`)
 
 The Worker forwards each one to the CRM's `inbound-webform-email` function with LeMan Cave's web form key, the same way the Auto Opulence site does. The CRM then:
 - creates the lead in **LeMan Cave leads → Incoming**;
