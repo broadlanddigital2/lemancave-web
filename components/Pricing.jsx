@@ -128,7 +128,7 @@ export default class Pricing extends React.Component {
 </div>
 <div style={css("display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: #27272A; border: 1px solid #27272A; border-radius: 6px; overflow: hidden; font-family: 'JetBrains Mono', monospace")}>
 <div style={css("background: #0B0B0E; padding: 14px")}><div style={css("font-size: 11px; letter-spacing: 0.14em; color: #71717A")}>{"MON\u2013FRI"}</div><div style={css(`font-size: 17px; color: ${V.amber}; margin-top: 6px`)}>{"17:00\u201320:00"}</div></div>
-<div style={css("background: #0B0B0E; padding: 14px")}><div style={css("font-size: 11px; letter-spacing: 0.14em; color: #71717A")}>{"SATURDAY"}</div><div style={css(`font-size: 17px; color: ${V.amber}; margin-top: 6px`)}>{"12:00\u201318:00"}</div></div>
+<div style={css("background: #0B0B0E; padding: 14px")}><div style={css("font-size: 11px; letter-spacing: 0.14em; color: #71717A")}>{"SATURDAY"}</div><div style={css(`font-size: 17px; color: ${V.amber}; margin-top: 6px`)}>{"12:00\u201320:00"}</div></div>
 <div style={css("background: #0B0B0E; padding: 14px")}><div style={css("font-size: 11px; letter-spacing: 0.14em; color: #71717A")}>{"SUNDAY"}</div><div style={css(`font-size: 17px; color: ${V.amber}; margin-top: 6px`)}>{"12:00\u201316:00"}</div></div>
 </div>
 <ul style={css("margin: 0; padding: 0; list-style: none; border-top: 1px solid #27272A")}>
