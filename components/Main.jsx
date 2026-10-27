@@ -320,7 +320,7 @@ export default class Main extends React.Component {
 <p style={css(`margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: ${V.accent}`)}>{"04 / THE CAVE"}</p>
 <h2 id="venue-h" style={css("margin: 0 0 28px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 84px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"A garage built"}<br />{"for good times"}</h2>
 <p style={css("margin: 0 0 18px; font-size: 19px; line-height: 1.65; color: #D4D4D8")}>{"LeMan Cave is a purpose-built motorsport den in Norwich. Low light, loud engines and walls lined with racing memorabilia \u2014 it\u2019s where petrolheads, first-timers and office leagues come to settle scores."}</p>
-<p style={css("margin: 0 0 40px; font-size: 19px; line-height: 1.65; color: #A1A1AA")}>{"Fully air-conditioned, with a proper sound system and ambient lighting throughout. Add pizza, bring your own drinks, and make the place yours."}</p>
+<p style={css("margin: 0 0 40px; font-size: 19px; line-height: 1.65; color: #A1A1AA")}>{"Fully air-conditioned, with a Sonos sound system and ambient lighting throughout. Add pizza, bring your own drinks, and make the place yours."}</p>
 <div style={css("display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: #27272A; border: 1px solid #27272A; border-radius: 6px; overflow: hidden")}>
 <div style={css("background: #09090B; padding: 22px")}>
 <div style={css(`font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 44px; color: ${V.amber}`)}>{"2,000"}</div>
@@ -338,11 +338,37 @@ export default class Main extends React.Component {
 </div>
 </div>
 </section>
+<section id="sound" className="lc-section" aria-labelledby="sound-h" style={css("max-width: 1360px; margin: 0 auto; padding: 0 40px 120px")}>
+<div style={css("background: #0F0F12; border: 1px solid #232328; border-radius: 8px; padding: clamp(28px, 5vw, 56px) clamp(20px, 4vw, 48px); display: flex; flex-wrap: wrap; gap: clamp(32px, 4vw, 48px); align-items: center")}>
+<div style={css("flex: 1 1 380px")}>
+<p style={css(`margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: ${V.accent}`)}>{"05 / SOUND SYSTEM"}</p>
+<h2 id="sound-h" style={css("margin: 0 0 20px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(44px, 5vw, 72px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Your tunes,"}<br />{"turned up"}</h2>
+<p style={css("margin: 0; font-size: 19px; line-height: 1.65; color: #A1A1AA")}>{"A Sonos sound system with integrated ceiling speakers and a sub fills the whole cave. It\u2019s Wi-Fi ready, so you can connect and play your own tunes."}</p>
+</div>
+<div style={css("flex: 1 1 520px; display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1px; background: #27272A; border: 1px solid #27272A; border-radius: 6px; overflow: hidden")}>
+<div style={css("background: #09090B; padding: 26px 22px")}>
+<div style={css("font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: #71717A")}>{"SYSTEM"}</div>
+<div style={css(`font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 40px; color: ${V.amber}; margin-top: 6px`)}>{"Sonos"}</div>
+<div style={css("font-size: 14px; color: #A1A1AA; margin-top: 4px")}>{"Throughout the cave"}</div>
+</div>
+<div style={css("background: #09090B; padding: 26px 22px")}>
+<div style={css("font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: #71717A")}>{"SPEAKERS"}</div>
+<div style={css("font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 40px; color: #FFFFFF; margin-top: 6px")}>{"Ceiling + sub"}</div>
+<div style={css("font-size: 14px; color: #A1A1AA; margin-top: 4px")}>{"Integrated ceiling speakers and a subwoofer"}</div>
+</div>
+<div style={css("background: #09090B; padding: 26px 22px")}>
+<div style={css("font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: #71717A")}>{"PLAY"}</div>
+<div style={css("font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 40px; color: #FFFFFF; margin-top: 6px")}>{"Wi-Fi ready"}</div>
+<div style={css("font-size: 14px; color: #A1A1AA; margin-top: 4px")}>{"Connect and play your own tunes"}</div>
+</div>
+</div>
+</div>
+</section>
 <section id="events" aria-labelledby="offer-h" style={css("background: #0F0F12; border-top: 1px solid #1F1F23; border-bottom: 1px solid #1F1F23")}>
 <div className="lc-section" style={css("max-width: 1360px; margin: 0 auto; padding: 120px 40px")}>
 <div style={css("display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 56px")}>
 <div>
-<p style={css(`margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: ${V.accent}`)}>{"05 / WHAT WE OFFER"}</p>
+<p style={css(`margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: ${V.accent}`)}>{"06 / WHAT WE OFFER"}</p>
 <h2 id="offer-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 88px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Your race,"}<br />{"your rules"}</h2>
 </div>
 <A href="/visit-us" style={css("border: 1px solid #52525B; color: #FFFFFF; font-weight: 600; font-size: 15px; letter-spacing: 0.06em; text-transform: uppercase; padding: 16px 26px; border-radius: 4px")}>{"Ask about packages"}</A>
@@ -364,7 +390,7 @@ export default class Main extends React.Component {
 <section id="gallery" className="lc-section" aria-labelledby="gallery-h" style={css("max-width: 1360px; margin: 0 auto; padding: 120px 40px 0")}>
 <div style={css("display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 48px")}>
 <div>
-<p style={css(`margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: ${V.accent}`)}>{"06 / GALLERY"}</p>
+<p style={css(`margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: ${V.accent}`)}>{"07 / GALLERY"}</p>
 <h2 id="gallery-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 88px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Inside"}<br />{"the cave"}</h2>
 </div>
 <A href="https://www.instagram.com/leman.cave/" style={css("display: inline-flex; align-items: center; gap: 10px; border: 1px solid #52525B; color: #FFFFFF; font-weight: 600; font-size: 15px; letter-spacing: 0.06em; text-transform: uppercase; padding: 16px 24px; border-radius: 4px")}>
@@ -399,7 +425,7 @@ export default class Main extends React.Component {
 <div style={css("display: flex; flex-wrap: wrap; gap: 64px")}>
 <div style={css("flex: 1 1 380px; display: flex; flex-direction: column; gap: 32px")}>
 <div>
-<p style={css(`margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: ${V.accent}`)}>{"07 / PIT WALL"}</p>
+<p style={css(`margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: ${V.accent}`)}>{"08 / PIT WALL"}</p>
 <h2 id="contact-h" style={css("margin: 0 0 18px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 84px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Get in touch"}</h2>
 <p style={css("margin: 0; font-size: 18px; line-height: 1.6; color: #A1A1AA")}>{"Planning something bigger? Tell us the date, the crew and the vibe \u2014 we\u2019ll build the package."}</p>
 </div>
