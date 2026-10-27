@@ -26,7 +26,7 @@ in a Cowork session (Oct 2026). Setup and deploy steps are in `README.md`.
   - No outside food except cakes by prior arrangement. Pizza only on pizza packages, with a range of dietary options.
   - BYO drinks: drop off in advance to be pre-chilled, or bring on the day. Glasses and ice provided. Leftovers collected after.
   - Deposit 25% at booking, balance 7 days before.
-  - Gift vouchers are e-vouchers.
+  - Gift cards are digital: any amount from £10 to £2,000, valid 12 months, usable against any booking.
 
 ## Prices
 Whole-cave prices are per person, with a minimum spend that still applies if fewer guests come.
@@ -93,6 +93,7 @@ Whole-cave prices are per person, with a minimum spend that still applies if few
   - Services, prices and opening times live in the CRM (Ecommerce, LeMan Cave): Sim Room (Sim 1, Sim 2; daytime £80, evenings & weekends £125, 1-hour slots, paid in full) and Whole Cave Hire (After School, Car Club, Saturday Afternoon x3, Sunday, Saturday Night x3; per person with a minimum spend, 25% deposit). Change prices there, not on the site.
   - Sessions starting within 14 days are paid in full at checkout instead of the deposit (CRM: `ecommerce_sites.full_payment_within_days`).
   - Deposit bookings get a final invoice for the balance 14 days before (email with invoice PDF and a "Pay balance" link to `/book?pay_balance=…`), due 7 days before, plus a "Check balance paid" task in the CRM that closes itself when paid online. Settings: `ecommerce_sites.balance_invoice_days_before`, `balance_due_days_before`, and `site_url` (the booking page the pay link uses; change it to https://lemancave.co.uk/book at go-live).
+  - **Gift cards**: `/gift-vouchers` sells digital gift cards for any amount from £10 to £2,000 (`<CrmBooking mode="gift-card" />`), emailed with a code to the buyer or the recipient, valid 12 months. Customers enter the code on the booking review: the card comes off first, any deposit still due is charged, and the rest stays on the card. Settings: `ecommerce_sites.gift_cards_enabled`, `gift_card_min_amount`, `gift_card_max_amount`, `gift_card_valid_days`; cards are in `ecommerce_gift_cards`.
   - A whole-cave booking blocks both sims; a sim booking blocks only that sim and the overlapping whole-cave session.
   - Seasonal rules (After School off in December and early January; Saturday Night on December weeknights and early January) are dated rules that run to January 2028. Renew them before then.
   - Stripe for LeMan Cave is in **test mode**. Switch to live keys in the CRM (Ecommerce → Payments) before taking real bookings.
@@ -118,7 +119,6 @@ Whole-cave prices are per person, with a minimum spend that still applies if few
 - **`[CONFIRM]` items**:
   - sim titles;
   - VR age policy;
-  - voucher validity;
   - public transport;
   - accessibility details;
   - pizza menu;

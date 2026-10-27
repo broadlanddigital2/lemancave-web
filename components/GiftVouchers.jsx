@@ -2,31 +2,21 @@
 import React from 'react';
 import { css } from '../lib/css';
 import FestiveBar from './FestiveBar';
+import CrmBooking from './CrmBooking';
 import MobileMenu from './MobileMenu';
 import A from './A';
-import EnquiryForm from './EnquiryForm';
 import SiteFooter from './SiteFooter';
 
 export default class GiftVouchers extends React.Component {
-  constructor(props) { super(props); this.state = { sel: 0, open: 0 }; }
+  constructor(props) { super(props); this.state = { open: 0 }; }
   renderVals() {
-    const list = [
-      { tag: 'MON–FRI · 09:00–17:00', title: 'Sim Hour — Daytime', sub: '1 hour in the sim room for 2 people sharing 1 sim.', price: '£80' },
-      { tag: 'EVENINGS & WEEKENDS', title: 'Sim Hour — Peak', sub: '1 hour in the sim room for 2, at peak times (subject to availability).', price: '£125' },
-      { tag: 'GROUPS', title: 'Whole Cave Hire', sub: 'Towards an exclusive hire — sims, Scalextric and every game. From £45pp.', price: '[£XXX]' },
-      { tag: 'ANY AMOUNT', title: 'Custom Value', sub: 'Let them choose — put any amount towards their visit.', price: '£ you pick' }
-    ];
-    const sel = this.state.sel;
-    const opts = list.map((o, i) => {
-      const on = sel === i;
-      return { ...o, pressed: on ? 'true' : 'false', pick: () => this.setState({ sel: i }),
-        style: 'display: flex; flex-direction: column; align-items: flex-start; gap: 10px; text-align: left; padding: 30px; min-height: 260px; border-radius: 10px; cursor: pointer; font: inherit; ' + (on ? 'background: #18181C; border: 2px solid #FFC233; box-shadow: 0 0 40px rgba(255,194,51,0.12)' : 'background: #131316; border: 2px solid #232328') };
-    });
+    // Hero preview: a sample card (gift cards are any amount from £10 to £2,000).
+    const v = { title: 'Gift card', sub: 'Any amount, for any booking. Valid for 12 months.', price: '£50' };
     const faqList = [
-      ['How do I get a gift voucher?', 'We organise every voucher personally. Fill in the request form and we’ll be in touch to arrange it.'],
-      ['Are vouchers physical or digital?', 'All our gift vouchers are e-vouchers, sent by email — perfect for last-minute gifts.'],
-      ['How long are vouchers valid for?', '[CONFIRM VALIDITY PERIOD]'],
-      ['Can vouchers be used for venue hire?', 'Yes — vouchers can go towards a whole-cave hire. [CONFIRM]'],
+      ['How do I buy a gift card?', 'Online, above: choose any amount from £10 to £2,000, pay securely, and the digital gift card is emailed with its own code — to you or straight to the recipient.'],
+      ['Are gift cards physical or digital?', 'Digital: they arrive by email as soon as payment completes, so they’re perfect for last-minute gifts. Print the email if you’d like something to hand over.'],
+      ['How long are gift cards valid for?', '12 months from the date of purchase. The expiry date is on the gift card email.'],
+      ['What can a gift card be used for?', 'Any online booking: sim room hours or a whole-cave hire. Enter the code when you review your booking. Use it in one go or across several bookings; anything left stays on the card.'],
       ['Where is LeMan Cave?', 'Unit 1, Consensus House, St Faith’s Rd, Norwich NR6 7BW — about 4 miles from the city centre, with full parking on site.']
     ];
     const faqs = faqList.map(([q, a], i) => {
@@ -35,7 +25,7 @@ export default class GiftVouchers extends React.Component {
         iconStyle: 'flex: none; width: 36px; height: 36px; border-radius: 50%; border: 1px solid #3F3F46; display: flex; align-items: center; justify-content: center; font-size: 22px; color: ' + (open ? '#ED2835' : '#E4E4E7') + '; transform: rotate(' + (open ? '45' : '0') + 'deg); transition: transform .2s',
         toggle: () => this.setState({ open: open ? -1 : i }) };
     });
-    return { opts, faqs, v: list[sel], toName: 'THE LUCKY DRIVER' };
+    return { faqs, v, toName: 'THE LUCKY DRIVER' };
   }
   render() {
     const V = this.renderVals() || {};
@@ -64,8 +54,8 @@ export default class GiftVouchers extends React.Component {
 </nav>
 <p style={css("margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 14px; letter-spacing: 0.16em; color: #FFC233")}>{"THE PERFECT GIFT"}</p>
 <h1 id="gv-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(68px, 10vw, 148px); line-height: 0.86; color: #FFFFFF; text-transform: uppercase")}>{"Give them"}<br /><span style={css("color: #ED2835")}>{"pole position."}</span></h1>
-<p style={css("margin: 26px 0 0; max-width: 520px; font-size: 20px; line-height: 1.55; color: #D4D4D8")}>{"A LeMan Cave gift voucher \u2014 for petrolheads, gamers and anyone who loves a good night out. E-vouchers are organised personally and sent by email \u2014 tell us what you\u2019d like and we\u2019ll take care of the rest."}</p>
-<A href="#request" style={css("display: inline-block; margin-top: 34px; background: #ED2835; color: #09090B; font-weight: 700; font-size: 16px; letter-spacing: 0.06em; text-transform: uppercase; padding: 18px 30px; border-radius: 4px")}>{"Request a voucher"}</A>
+<p style={css("margin: 26px 0 0; max-width: 520px; font-size: 20px; line-height: 1.55; color: #D4D4D8")}>{"A LeMan Cave gift card \u2014 for petrolheads, gamers and anyone who loves a good night out. Pick any amount from \u00a310 to \u00a32,000, pay online, and we email a digital gift card with its own code, to you or straight to them."}</p>
+<A href="#buy" style={css("display: inline-block; margin-top: 34px; background: #ED2835; color: #09090B; font-weight: 700; font-size: 16px; letter-spacing: 0.06em; text-transform: uppercase; padding: 18px 30px; border-radius: 4px")}>{"Buy a gift card"}</A>
 </div>
 <div style={css("flex: 1 1 460px; display: flex; justify-content: center")}>
 <div role="img" aria-label={`Gift voucher preview: ${V.v.title} for ${V.toName}`} style={css("position: relative; width: 100%; max-width: 560px; aspect-ratio: 1.7 / 1; border-radius: 16px; overflow: hidden; background: #131316; border: 1px solid #3F3F46; box-shadow: 0 30px 80px rgba(0,0,0,0.6); transform: rotate(-3deg); display: flex")}>
@@ -73,7 +63,7 @@ export default class GiftVouchers extends React.Component {
 <div style={css("flex: 1; padding: 30px 32px; display: flex; flex-direction: column; justify-content: space-between; background: radial-gradient(ellipse 70% 90% at 100% 0%, rgba(237,40,53,0.35), transparent 60%)")}>
 <div style={css("display: flex; justify-content: space-between; align-items: flex-start; gap: 12px")}>
 <img src="/images/d8a1bc65662ee5a26ca2d3cbc9ca559e.svg" alt="" style={css("width: 130px; height: auto")} />
-<span style={css("font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.16em; color: #FFC233; border: 1px solid #FFC233; padding: 6px 10px; border-radius: 3px")}>{"E-VOUCHER"}</span>
+<span style={css("font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.16em; color: #FFC233; border: 1px solid #FFC233; padding: 6px 10px; border-radius: 3px")}>{"GIFT CARD"}</span>
 </div>
 <div>
 <div style={css("font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 40px; line-height: 0.95; color: #FFFFFF; text-transform: uppercase")}>{V.v.title}</div>
@@ -88,55 +78,21 @@ export default class GiftVouchers extends React.Component {
 </div>
 </div>
 </section>
-<section className="lc-section" aria-labelledby="opt-h" style={css("max-width: 1360px; margin: 0 auto; padding: 110px 40px")}>
-<div style={css("display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 40px")}>
+<section id="buy" aria-labelledby="buy-h" style={css("background: #0F0F12; border-top: 1px solid #1F1F23; border-bottom: 1px solid #1F1F23")}>
+<div className="lc-section" style={css("max-width: 1360px; margin: 0 auto; padding: 110px 40px 90px")}>
+<div style={css("display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 36px")}>
 <div>
-<p style={css("margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: #ED2835")}>{"01 / CHOOSE A VOUCHER"}</p>
-<h2 id="opt-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(44px, 5.5vw, 80px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Pick the"}<br />{"experience"}</h2>
+<p style={css("margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: #ED2835")}>{"01 / BUY ONLINE"}</p>
+<h2 id="buy-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(44px, 5.5vw, 80px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Pick any"}<br />{"amount"}</h2>
 </div>
-<p style={css("margin: 0; max-width: 420px; font-size: 18px; line-height: 1.6; color: #A1A1AA")}>{"Tap an option to preview the voucher above. Not sure? Choose a custom amount and let them decide."}</p>
+<p style={css("margin: 0; max-width: 440px; font-size: 18px; line-height: 1.6; color: #A1A1AA")}>{"Sim hours, a Saturday night with the whole crew, or something towards a party: a gift card works against any LeMan Cave booking."}</p>
 </div>
-<div style={css("display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px")}>
-{(V.opts || []).map((o, $index) => (<React.Fragment key={$index}>
-<button type="button" onClick={o.pick} aria-pressed={o.pressed} style={css(o.style)}>
-<span style={css("font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: #A1A1AA")}>{o.tag}</span>
-<span style={css("font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 32px; line-height: 1; color: #FFFFFF; text-transform: uppercase")}>{o.title}</span>
-<span style={css("font-size: 15px; line-height: 1.5; color: #A1A1AA; flex: 1")}>{o.sub}</span>
-<span style={css("font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 48px; line-height: 1; color: #FFC233")}>{o.price}</span>
-</button>
-</React.Fragment>))}
-</div>
-</section>
-<section id="request" aria-labelledby="req-h" style={css("background: #0F0F12; border-top: 1px solid #1F1F23; border-bottom: 1px solid #1F1F23")}>
-<div className="lc-section" style={css("max-width: 1360px; margin: 0 auto; padding: 110px 40px; display: flex; flex-wrap: wrap; gap: 56px")}>
-<div style={css("flex: 1 1 360px; display: flex; flex-direction: column; gap: 28px")}>
-<div>
-<p style={css("margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: #ED2835")}>{"02 / HOW IT WORKS"}</p>
-<h2 id="req-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(44px, 5.5vw, 80px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"We sort"}<br />{"the rest"}</h2>
-</div>
-<ol style={css("list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px")}>
-<li style={css("display: flex; gap: 16px; align-items: flex-start")}><span style={css("flex: none; width: 34px; height: 34px; border-radius: 50%; background: #ED2835; color: #09090B; display: flex; align-items: center; justify-content: center; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 18px")}>{"1"}</span><span style={css("font-size: 17px; line-height: 1.55; color: #D4D4D8")}><strong style={css("color: #FFFFFF")}>{"Tell us what you\u2019d like"}</strong>{" \u2014 pick a voucher and add your details."}</span></li>
-<li style={css("display: flex; gap: 16px; align-items: flex-start")}><span style={css("flex: none; width: 34px; height: 34px; border-radius: 50%; background: #ED2835; color: #09090B; display: flex; align-items: center; justify-content: center; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 18px")}>{"2"}</span><span style={css("font-size: 17px; line-height: 1.55; color: #D4D4D8")}><strong style={css("color: #FFFFFF")}>{"We\u2019ll be in touch"}</strong>{" to confirm and arrange payment."}</span></li>
-<li style={css("display: flex; gap: 16px; align-items: flex-start")}><span style={css("flex: none; width: 34px; height: 34px; border-radius: 50%; background: #ED2835; color: #09090B; display: flex; align-items: center; justify-content: center; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 18px")}>{"3"}</span><span style={css("font-size: 17px; line-height: 1.55; color: #D4D4D8")}><strong style={css("color: #FFFFFF")}>{"Your e-voucher is emailed"}</strong>{" \u2014 ready to forward, print or give."}</span></li>
+<ol style={css("list-style: none; margin: 0 0 44px; padding: 0; display: flex; flex-wrap: wrap; gap: 20px 32px")}>
+<li style={css("display: flex; gap: 16px; align-items: flex-start; flex: 1 1 260px")}><span style={css("flex: none; width: 34px; height: 34px; border-radius: 50%; background: #ED2835; color: #09090B; display: flex; align-items: center; justify-content: center; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 18px")}>{"1"}</span><span style={css("font-size: 17px; line-height: 1.55; color: #D4D4D8; padding-top: 4px")}>{"Choose any amount from \u00a310 to \u00a32,000, who it\u2019s for, and add a message."}</span></li>
+<li style={css("display: flex; gap: 16px; align-items: flex-start; flex: 1 1 260px")}><span style={css("flex: none; width: 34px; height: 34px; border-radius: 50%; background: #ED2835; color: #09090B; display: flex; align-items: center; justify-content: center; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 18px")}>{"2"}</span><span style={css("font-size: 17px; line-height: 1.55; color: #D4D4D8; padding-top: 4px")}>{"Pay securely online. We email the digital gift card with its own code, to you or straight to them."}</span></li>
+<li style={css("display: flex; gap: 16px; align-items: flex-start; flex: 1 1 260px")}><span style={css("flex: none; width: 34px; height: 34px; border-radius: 50%; background: #ED2835; color: #09090B; display: flex; align-items: center; justify-content: center; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 18px")}>{"3"}</span><span style={css("font-size: 17px; line-height: 1.55; color: #D4D4D8; padding-top: 4px")}>{"They enter the code when they book online \u2014 in one go or across several bookings, within 12 months."}</span></li>
 </ol>
-<div style={css("height: 280px; border-radius: 10px; overflow: hidden; position: relative; background: #131316")}><img src="/images/5ab5721cd94e2e430c2d6b7b0091b14a.webp" alt="A delighted guest opening a LeMan Cave gift" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} /></div>
-</div>
-<EnquiryForm formType="gift-voucher" aria-label="Gift voucher request" style={css("flex: 1.4 1 520px; background: #131316; border: 1px solid #232328; border-radius: 10px; padding: 40px; display: flex; flex-direction: column; gap: 20px")}><input type="hidden" name="voucher" value={`${V.v.title} · ${V.v.price}`} />
-<div style={css("padding: 16px 18px; border-radius: 6px; background: #09090B; border: 1px solid #27272A; display: flex; justify-content: space-between; gap: 16px; align-items: center")}>
-<span style={css("font-size: 15px; color: #A1A1AA")}>{"Selected voucher"}</span>
-<span style={css("font-family: 'JetBrains Mono', monospace; font-size: 15px; color: #FFC233")}>{V.v.title}{" \u00b7 "}{V.v.price}</span>
-</div>
-<div style={css("display: flex; flex-wrap: wrap; gap: 16px")}>
-<label style={css("flex: 1 1 200px; display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 600; color: #A1A1AA")}>{"Your name"}<input type="text" placeholder="Your name" style={css("background: #09090B; border: 1px solid #3F3F46; border-radius: 4px; padding: 15px 16px; color: #FFFFFF; font-size: 16px")} name="your_name" required={true} /></label>
-<label style={css("flex: 1 1 200px; display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 600; color: #A1A1AA")}>{"Your email"}<input type="email" placeholder="you@example.com" style={css("background: #09090B; border: 1px solid #3F3F46; border-radius: 4px; padding: 15px 16px; color: #FFFFFF; font-size: 16px")} name="your_email" required={true} /></label>
-</div>
-<div style={css("display: flex; flex-wrap: wrap; gap: 16px")}>
-<label style={css("flex: 1 1 200px; display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 600; color: #A1A1AA")}>{"Phone"}<input type="tel" placeholder="Phone number" style={css("background: #09090B; border: 1px solid #3F3F46; border-radius: 4px; padding: 15px 16px; color: #FFFFFF; font-size: 16px")} name="phone" /></label>
-<label style={css("flex: 1 1 200px; display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 600; color: #A1A1AA")}>{"Recipient\u2019s name"}<input type="text" placeholder={"Who\u2019s it for?"} style={css("background: #09090B; border: 1px solid #3F3F46; border-radius: 4px; padding: 15px 16px; color: #FFFFFF; font-size: 16px")} name="recipient_s_name" /></label>
-</div>
-<label style={css("display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 600; color: #A1A1AA")}>{"Message (optional)"}<textarea rows="3" placeholder={"Happy birthday \u2014 see you on the grid!"} style={css("background: #09090B; border: 1px solid #3F3F46; border-radius: 4px; padding: 15px 16px; color: #FFFFFF; font-size: 16px; resize: vertical")} name="message_optional"></textarea></label>
-<button type="submit" style={css("align-self: flex-start; background: #ED2835; color: #09090B; border: 0; cursor: pointer; font-weight: 700; font-size: 16px; letter-spacing: 0.06em; text-transform: uppercase; padding: 18px 32px; border-radius: 4px")}>{"Request voucher"}</button>
-</EnquiryForm>
+<CrmBooking mode="gift-card" />
 </div>
 </section>
 <section className="lc-section" aria-labelledby="faq-h" style={css("max-width: 1360px; margin: 0 auto; padding: 110px 40px; display: flex; flex-wrap: wrap; gap: 64px")}>

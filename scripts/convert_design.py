@@ -249,7 +249,7 @@ def add_booking_widget(code):
     # <div data-lc-booking="form"></div> in a design page becomes the live CRM booking widget (components/CrmBooking.jsx).
     if 'data-lc-booking' not in code:
         return code
-    code, n = re.subn(r'<div data-lc-booking="[a-z-]+"\s*(?:/>|>\s*</div>)', '<CrmBooking />', code)
+    code, n = re.subn(r'<div data-lc-booking="([a-z-]+)"\s*(?:/>|>\s*</div>)', lambda m: '<CrmBooking />' if m.group(1) == 'form' else f'<CrmBooking mode="{m.group(1)}" />', code)
     assert n == 1, 'booking widget placeholder not found'
     return code.replace("import { css } from '../lib/css';\n", "import { css } from '../lib/css';\nimport CrmBooking from './CrmBooking';\n", 1)
 
@@ -277,7 +277,7 @@ if __name__ == '__main__':
         code = add_mobile_menu(code)
         code = add_booking_widget(code)
         code = add_festive_bar(code)
-        if name == 'GiftVouchers':
+        if name == 'GiftVouchers' and 'formType="gift-voucher"' in code:
             code = re.sub(r'(<EnquiryForm formType="gift-voucher"[^>]*>)', lambda m: m.group(1) + '<input type="hidden" name="voucher" value={`${V.v.title} \u00b7 ${V.v.price}`} />', code, count=1)
             assert 'name="voucher"' in code
         open(os.path.join(OUT, 'components', name + '.jsx'), 'w').write(code)
