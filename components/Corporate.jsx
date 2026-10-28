@@ -139,7 +139,7 @@ export default class Corporate extends React.Component {
 <span aria-hidden="true" style={css("position: absolute; inset: 0; background: linear-gradient(to top, rgba(9,9,11,0.95) 0%, rgba(9,9,11,0.1) 65%)")}></span>
 <span style={css("position: absolute; left: 28px; right: 28px; bottom: 26px; display: flex; flex-direction: column; gap: 6px")}>
 <span style={css("font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 34px; color: #FFFFFF; text-transform: uppercase")}>{"Digital Scalextric"}</span>
-<span style={css("font-size: 15px; color: #D4D4D8")}>{"Six lanes, live timing \u2192"}</span>
+<span style={css("font-size: 15px; color: #D4D4D8")}>{"Up to six cars, live timing \u2192"}</span>
 </span>
 </A>
 <A href="/attractions/arcade-games-norwich" style={css("position: relative; height: 340px; border-radius: 8px; overflow: hidden; background: #131316; display: block")}>

@@ -14,10 +14,10 @@ in a Cowork session (Oct 2026). Setup and deploy steps are in `README.md`.
   - two pro racing simulators (direct-drive wheel, a 4K monitor each or VR; NOT triple or wraparound screens); only ONE has 4 DOF full motion, the other is static. Features: pedal haptics, ambient lighting (e.g. sun glare effects), wind simulation, active harness, and gear shifters: the motion sim has a ‘bazooka’ H-pattern shifter inspired by the Ford Escort Mk2 rally car; the static sim has a gated manual (owner, 28 Oct 2026). Never call the motion sim's shifter gated. Never write "full-motion simulators" (plural);
   - 160ft digital Scalextric: TWO lanes, up to six cars at once (never "six lanes");
   - 1990s motorbike sim;
-  - the Games Console Lounge: games consoles on a 100-inch screen with a Mini Cooper sofa (games provided). Don't name the console (it's a Wii, the owner prefers not to say). The page is /attractions/gaming-lounge-norwich (the old PS5 address redirects);
+  - the Games Console Lounge: games consoles on a 100-inch screen; seating is a converted classic Mini sofa (NOT a Mini Cooper), oil drum chairs and a Top Gear-style Alfa Romeo sofa (games provided). Consoles: Nintendo Wii, PlayStation or Steam gaming PCs (owner, 28 Oct 2026). Games: the classic Mario Kart with four wheel controllers; other games on request before booking. The page is /attractions/gaming-lounge-norwich (the old PS5 address redirects);
   - a poker table (8 players) [not on the site yet];
   - 1 digital pinball machine;
-  - 9ft pool / billiards table, US spec (cues provided). Always "pool / billiards";
+  - 9ft championship-grade slate pool / billiards table, US spec (cues provided). Always "pool / billiards";
   - air hockey, table football, two-player arcade;
   - darts (provided, fully automated scoring);
   - memorabilia (venue hire only, not for sale; photos fine).
@@ -31,7 +31,7 @@ in a Cowork session (Oct 2026). Setup and deploy steps are in `README.md`.
 
 ## Prices
 Whole-cave prices are per person, with a minimum spend that still applies if fewer guests come.
-- **Sim room**: £80/hr Mon–Fri 9–5 (2 sharing 1 sim); £125/hr evenings and weekends: Mon–Fri 17–20, Sat 12–20, Sun 12–16 (staffed for security and health & safety; only when the cave isn't booked for private hire).
+- **Sim room**: 1-hour slots only (no 30 or 90-minute sessions; owner, 28 Oct 2026). £80/hr Mon–Fri 9–5 (2 sharing 1 sim); £125/hr evenings and weekends: Mon–Fri 17–20, Sat 12–20, Sun 12–16 (staffed for security and health & safety; only when the cave isn't booked for private hire).
 - **After School Special**: Mon–Thu 16–18, £40pp, min spend £440. Static mode. Not December or early January.
 - **Car Club Special**: Sat 10–13, £45pp, min £630.
 - **Saturday 14–17**:
