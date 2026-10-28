@@ -568,7 +568,7 @@ export default class Landing extends React.Component {
 <div className="lc-section" style={css("max-width: 1360px; margin: 0 auto; padding: 100px 40px")}>
 <p style={css("margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: #ED2835")}>{"IN DETAIL"}</p>
 <h2 id="dt-h" style={css("margin: 0 0 40px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(42px, 5vw, 72px); line-height: 0.95; color: #FFFFFF; text-transform: uppercase")}>{V.p.deepTitle}</h2>
-<div style={css("display: grid; grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); gap: 48px 56px")}>
+<div style={css("display: grid; grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr)); gap: 48px 56px")}>
 {(V.deep || []).map((d, $index) => (<React.Fragment key={$index}>
 <article style={css("display: flex; flex-direction: column; gap: 14px; padding-top: 22px; border-top: 2px solid #ED2835")}>
 <h3 style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 32px; line-height: 1; color: #FFFFFF; text-transform: uppercase")}>{d.h}</h3>
