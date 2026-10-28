@@ -122,6 +122,7 @@ Whole-cave prices are per person, with a minimum spend that still applies if few
 - **Image brief**: Claude Docs.
 
 ## Content rules
+- The small print on every page (`app/layout.tsx`, `.lc-smallprint`) also says the venue is open for booked sessions and events only.
 - Every visible "pizza" is written "pizza*". The * and ** footnotes are in `app/layout.tsx` (`.lc-smallprint`) on every page. Not in alt text, aria-labels, meta descriptions or code keys.
 - Capacity: up to 50 people, with activities for 34 players at once (arcade 2, air hockey 2, darts 2, pool 2, motorbike 2, sim 1, sim 1, Scalextric 6, table football 4, console 4, poker 8).
 - Write "Bring Your Own" on the site, never "BYO" (the owner's preference, Oct 2026).

@@ -62,6 +62,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {children}
         {/* Small print for the * and ** marks used across the site (owner, 28 Oct 2026). */}
         <aside className="lc-smallprint" aria-label="Notes">
+          <p>LeMan Cave is open for booked sessions and events only. There is no walk-in entry.</p>
           <p>*Pizza is an additional cost option.</p>
           <p>**The simulators may be subject to height restrictions, and motion may be disabled for safety reasons for any guests under 14.</p>
         </aside>
