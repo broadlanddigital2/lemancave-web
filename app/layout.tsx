@@ -17,8 +17,11 @@ export const viewport: Viewport = { themeColor: '#09090B', width: 'device-width'
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'EntertainmentBusiness',
+  '@id': 'https://lemancave.co.uk/#business',
   name: 'LeMan Cave',
+  description: 'Indoor motorsport entertainment venue in Norwich: motion racing simulators, a 160ft six-lane digital Scalextric, motorbike simulator, PS5 lounge, pool, darts and arcade games, with private hire for parties and events of up to about 50 guests.',
   url: 'https://lemancave.co.uk',
+  telephone: '+44 1603 517080',
   logo: 'https://lemancave.co.uk/images/d8a1bc65662ee5a26ca2d3cbc9ca559e.svg',
   email: 'bookings@lemancave.co.uk',
   address: {
@@ -34,6 +37,10 @@ const jsonLd = {
     { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Saturday', opens: '10:00', closes: '21:00' },
   ],
   sameAs: ['https://www.instagram.com/leman.cave/'],
+  areaServed: ['Norwich', 'Norfolk', 'Suffolk', 'Cambridgeshire'].map((name) => ({ '@type': 'Place', name })),
+  amenityFeature: ['Racing simulators', 'Digital Scalextric', 'Motorbike simulator', 'PS5 lounge', 'Pool table', 'Darts', 'Air hockey', 'Table football', 'Arcade', 'Free parking', 'Wheelchair accessible']
+    .map((name) => ({ '@type': 'LocationFeatureSpecification', name, value: true })),
+  maximumAttendeeCapacity: 50,
   priceRange: '££',
 };
 
