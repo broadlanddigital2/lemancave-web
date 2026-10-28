@@ -83,7 +83,7 @@ export default class Scalextric extends React.Component {
 </div>
 <div style={css("padding: 28px 20px; border-right: 1px solid #1F1F23")}>
 <div style={css("font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: #71717A")}>{"GRID"}</div>
-<div style={css("font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 32px; color: #FFFFFF; margin-top: 6px")}>{"6 lanes"}</div>
+<div style={css("font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 32px; color: #FFFFFF; margin-top: 6px")}>{"6 cars"}</div>
 </div>
 <div style={css("padding: 28px 20px; border-right: 1px solid #1F1F23")}>
 <div style={css("font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: #71717A")}>{"TIMING"}</div>

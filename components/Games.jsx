@@ -19,7 +19,7 @@ export default class Games extends React.Component {
       return { label, pressed: on ? 'true' : 'false', style: pill + (on ? 'background: ' + accent + '; color: #09090B' : 'background: transparent; color: #E4E4E7'), pick: () => this.setState({ filter: id }) };
     });
     const games = [
-      { cat: 'screen', tag: '100IN · CONSOLES', name: 'Games Console Lounge', href: '/attractions/gaming-lounge-norwich', copy: 'Games consoles on a 100-inch big screen, played from a converted Mini Cooper sofa.', img: '/images/9dc6e1e4d0002cd48daa24a834848cbd.webp', alt: 'Mini Cooper sofa facing the big screen' },
+      { cat: 'screen', tag: '100IN · CONSOLES', name: 'Games Console Lounge', href: '/attractions/gaming-lounge-norwich', copy: 'Games consoles on a 100-inch big screen, played from a converted classic Mini sofa.', img: '/images/9dc6e1e4d0002cd48daa24a834848cbd.webp', alt: 'classic Mini sofa facing the big screen' },
       { cat: 'arcade', tag: 'FULL-SIZE CABINET', name: 'Digital Pinball', href: '/attractions/digital-pinball-norwich', copy: 'One full-size digital pinball machine with all the lights, sound and multiball chaos.', img: '/images/61be8e75bbfd3651047d20e5a346ffd3.webp', alt: 'Hands on the flippers of a glowing pinball machine' },
       { cat: 'table', tag: '9FT PRO TABLE', name: 'Pool / Billiards Table', href: '/attractions/pool-table-norwich', copy: 'A 9ft pro pool / billiards table for the sharp shooters. Cues provided.', img: '/images/fad7e0da23e886ea2f41d6f857255765.webp', alt: 'View along the cue on the 9ft pool / billiards table' },
       { cat: 'table', tag: 'PRO-GRADE', name: 'Air Hockey', href: '/attractions/air-hockey-norwich', copy: 'A pro-grade table. Quick, loud and fiercely competitive.', img: '/images/4b14d96bd1414bd7eaf55fc8afca2612.webp', alt: 'Two players mid-rally at air hockey' },
@@ -69,7 +69,7 @@ export default class Games extends React.Component {
 </nav>
 </header>
 <section aria-labelledby="gm-h" style={css("position: relative; min-height: 680px; display: flex; align-items: flex-end; background: #0E0E11; overflow: hidden")}>
-<img src="/images/9dc6e1e4d0002cd48daa24a834848cbd.webp" alt="Friends on the Mini Cooper sofa playing a racing game on the 100-inch screen, among the arcade games Norwich groups love" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 70% 50%")} />
+<img src="/images/9dc6e1e4d0002cd48daa24a834848cbd.webp" alt="Friends on the classic Mini sofa playing a racing game on the 100-inch screen, among the arcade games Norwich groups love" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 70% 50%")} />
 <div aria-hidden="true" style={css("position: absolute; inset: 0; background: linear-gradient(90deg, rgba(9,9,11,0.94) 0%, rgba(9,9,11,0.75) 40%, rgba(9,9,11,0.2) 72%, rgba(9,9,11,0.1) 100%)")}></div>
 <div aria-hidden="true" style={css("position: absolute; left: 0; right: 0; bottom: 0; height: 300px; background: linear-gradient(to top, #09090B 10%, transparent)")}></div>
 <div className="lc-section" style={css("position: relative; max-width: 1360px; width: 100%; margin: 0 auto; padding: 140px 40px 64px; box-sizing: border-box")}>
@@ -135,13 +135,13 @@ export default class Games extends React.Component {
 <div className="lc-section" style={css("max-width: 1360px; margin: 0 auto; padding: 120px 40px")}>
 <div style={css("display: flex; flex-wrap: wrap; gap: 64px; align-items: center")}>
 <div style={css("flex: 1.2 1 520px; min-height: 460px; position: relative; border-radius: 8px; overflow: hidden; background: #131316")}>
-<img src="/images/e99e1654859658bbd21c96f616aa54ea.webp" alt="The Mini Cooper sofa in the games lounge" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} />
+<img src="/images/e99e1654859658bbd21c96f616aa54ea.webp" alt="The classic Mini sofa in the games lounge" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} />
 </div>
 <div style={css("flex: 1 1 400px")}>
 <p style={css(`margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: ${V.accent}`)}>{"02 / THE LOUNGE"}</p>
 <h2 id="sofa-h" style={css("margin: 0 0 24px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 80px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"A gaming venue in Norwich with the best seat in the house"}</h2>
-<p style={css("margin: 0 0 18px; font-size: 19px; line-height: 1.65; color: #D4D4D8")}>{"Sink into a sofa built from a converted Mini Cooper and take on your mates on a 100-inch screen."}</p>
-<p style={css("margin: 0; font-size: 19px; line-height: 1.65; color: #A1A1AA")}>{"Games consoles with a selection of games. Full game list coming soon. [TBC]"}</p>
+<p style={css("margin: 0 0 18px; font-size: 19px; line-height: 1.65; color: #D4D4D8")}>{"Sink into a sofa built from a converted classic Mini and take on your mates on a 100-inch screen."}</p>
+<p style={css("margin: 0; font-size: 19px; line-height: 1.65; color: #A1A1AA")}>{"Nintendo Wii, PlayStation or Steam gaming PCs. We\u2019ve stuck with the classic Mario Kart, complete with four wheel controllers, and many other games are available on request."}</p>
 </div>
 </div>
 </div>

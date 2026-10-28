@@ -60,7 +60,7 @@ export default class Main extends React.Component {
         { label: 'Group lifting a trophy on race night', src: '/images/b9fe66c760257f986f787f1fb05c7ef2.webp', style: tile('') },
         { label: 'Wide view of the venue with the neon on', src: '/images/d8088e3823809fc023e85fd23c0ce0d9.webp', style: tile('grid-column: span 2; ') },
         { label: 'Close-up of a glowing pinball playfield', src: '/images/087eb617edc639f42d522945ddefd32b.webp', style: tile('') },
-        { label: 'The Mini Cooper sofa in the lounge', src: '/images/d76d56e086301523c4971afc4f5dfe57.webp', style: tile('') }
+        { label: 'The classic Mini sofa in the lounge', src: '/images/d76d56e086301523c4971afc4f5dfe57.webp', style: tile('') }
       ],
       brands: [
         { name: 'Race Car Graphics UK', href: 'https://racecargraphics.uk/', logo: '/images/af46cb048a3538fff3ada1542e3a6666.png' },
@@ -69,7 +69,7 @@ export default class Main extends React.Component {
         { name: 'Auto Opulence', href: 'https://autoopulence.co.uk/', logo: '/images/30d005beeac001ad9a9af4176bcf0bb6.svg' }
       ],
       games: [
-        { tag: '100IN SCREEN', name: 'Games Console Lounge', href: '/attractions/gaming-lounge-norwich', copy: 'Console games on a 100-inch screen, from a sofa built out of a converted Mini Cooper.', photo: '/images/9dc6e1e4d0002cd48daa24a834848cbd.webp', alt: 'Mini Cooper sofa facing the big screen' },
+        { tag: '100IN SCREEN', name: 'Games Console Lounge', href: '/attractions/gaming-lounge-norwich', copy: 'Console games on a 100-inch screen, from a sofa built out of a converted classic Mini.', photo: '/images/9dc6e1e4d0002cd48daa24a834848cbd.webp', alt: 'classic Mini sofa facing the big screen' },
         { tag: 'FLIPPERS', name: 'Digital Pinball', href: '/attractions/digital-pinball-norwich', copy: 'Full-size digital pinball with all the lights, sound and multiball chaos.', photo: '/images/61be8e75bbfd3651047d20e5a346ffd3.webp', alt: 'Hands on the flippers of a glowing pinball machine' },
         { tag: 'CUE UP', name: '9ft Pool / Billiards', href: '/attractions/pool-table-norwich', copy: 'A 9ft pro pool / billiards table for the sharp shooters in the group. Cues provided.', photo: '/images/44da4bb4e9c2f25471b7f35352440547.webp', alt: 'View along the cue on the 9ft pool / billiards table' },
         { tag: 'FAST HANDS', name: 'Air Hockey', href: '/attractions/air-hockey-norwich', copy: 'Quick, loud and fiercely competitive. Best of three?', photo: '/images/4b14d96bd1414bd7eaf55fc8afca2612.webp', alt: 'Two players mid-rally at air hockey' },
