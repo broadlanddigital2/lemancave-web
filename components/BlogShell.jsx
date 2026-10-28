@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import { css } from '../lib/css';
+import BlogSlot from './BlogSlot';
 import FestiveBar from './FestiveBar';
 import HeaderTools from './HeaderTools';
 import MobileMenu from './MobileMenu';
@@ -29,7 +30,7 @@ export default class BlogShell extends React.Component {
 </nav>
 </header>
 <section className="lc-section" aria-label="Blog" style={css("max-width: 1360px; margin: 0 auto; padding: 90px 40px 110px")}>
-<div data-crm-blog="slot"></div>
+<BlogSlot />
 </section>
 <SiteFooter />
 </div>

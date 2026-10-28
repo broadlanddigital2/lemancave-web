@@ -283,6 +283,15 @@ def add_faqs(code):
         assert k == 1, 'FAQ list not found'
     return code.replace("import { css } from '../lib/css';\n", "import { css } from '../lib/css';\nimport FaqSchema from './FaqSchema';\n", 1)
 
+def add_blog_slot(code):
+    # <div data-crm-blog="slot"></div> (the /blog shell page) becomes components/BlogSlot.jsx, which keeps the blog the
+    # worker puts there when React takes over the page.
+    if 'data-crm-blog' not in code:
+        return code
+    code, n = re.subn(r'<div data-crm-blog="slot"\s*(?:/>|>\s*</div>)', '<BlogSlot />', code)
+    assert n == 1, 'blog slot not found'
+    return code.replace("import { css } from '../lib/css';\n", "import { css } from '../lib/css';\nimport BlogSlot from './BlogSlot';\n", 1)
+
 if __name__ == '__main__':
     exts = {}
     imgdir = os.path.join(OUT, 'public', 'images')
@@ -309,6 +318,7 @@ if __name__ == '__main__':
         code = add_booking_widget(code)
         code = add_festive_bar(code)
         code = add_faqs(code)
+        code = add_blog_slot(code)
         if name == 'GiftVouchers' and 'formType="gift-voucher"' in code:
             code = re.sub(r'(<EnquiryForm formType="gift-voucher"[^>]*>)', lambda m: m.group(1) + '<input type="hidden" name="voucher" value={`${V.v.title} \u00b7 ${V.v.price}`} />', code, count=1)
             assert 'name="voucher"' in code
