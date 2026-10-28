@@ -15,7 +15,7 @@ ROUTES = {
  'MotoSim': '/attractions/motorbike-simulator-norwich', 'PS5': '/attractions/ps5-gaming-lounge-norwich', 'Pinball': '/attractions/digital-pinball-norwich',
  'Pool': '/attractions/pool-table-norwich', 'AirHockey': '/attractions/air-hockey-norwich', 'TableFootball': '/attractions/table-football-norwich',
  'Darts': '/attractions/darts-norwich', 'Arcade': '/attractions/arcade-norwich', 'Memorabilia': '/attractions/motorsport-memorabilia-norwich',
- 'VenueHire': '/party-venue-norwich', 'Birthday': '/birthday-party-venue-norwich', 'KidsParties': '/kids-party-venue-norwich', 'TeenParties': '/teenage-party-ideas-norwich',
+ 'VenueHire': '/party-venue-norwich', 'VenueHireNorwich': '/venue-hire-norwich', 'FunctionRooms': '/function-room-hire-norwich', 'WeddingReceptions': '/wedding-reception-venue-norwich', 'Birthday': '/birthday-party-venue-norwich', 'KidsParties': '/kids-party-venue-norwich', 'TeenParties': '/teenage-party-ideas-norwich',
  'StagDo': '/stag-do-norwich', 'HenDo': '/hen-do-norwich', 'TeamBuilding': '/team-building-norwich', 'ClientEntertaining': '/corporate-hospitality-norwich',
  'LeavingParties': '/leaving-do-ideas-norwich', 'FamilyDays': '/family-days-out-norfolk', 'AdultGroups': '/night-out-norwich',
  'GroupBookings': '/group-activities-norwich', 'CarClub': '/car-club-meet-venue-norfolk', 'ClubSocials': '/club-social-ideas-norfolk',
