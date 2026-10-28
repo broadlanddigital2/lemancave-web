@@ -172,6 +172,16 @@ export default class Simulator extends React.Component {
 <h3 style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 30px; color: #FFFFFF; text-transform: uppercase")}>{"Gated manual shifter"}</h3>
 <p style={css("margin: 0; font-size: 16px; line-height: 1.6; color: #A1A1AA")}>{"A professional shifter with a realistic clutch and proper gear changes."}</p>
 </div>
+<div style={css("background: #0F0F12; padding: 36px 32px; display: flex; flex-direction: column; gap: 14px")}>
+<svg aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke={V.accent} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M8 3h8l-1 11H9z"></path><path d="M7 21h10"></path><path d="M12 14v7"></path><path d="M4 8c-1 1-1 3 0 4M20 8c1 1 1 3 0 4"></path></svg>
+<h3 style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 30px; color: #FFFFFF; text-transform: uppercase")}>{"Pedal haptics"}</h3>
+<p style={css("margin: 0; font-size: 16px; line-height: 1.6; color: #A1A1AA")}>{"Feel the brakes lock and the tyres slip through vibration in the pedals."}</p>
+</div>
+<div style={css("background: #0F0F12; padding: 36px 32px; display: flex; flex-direction: column; gap: 14px")}>
+<svg aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke={V.accent} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+<h3 style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 30px; color: #FFFFFF; text-transform: uppercase")}>{"Ambient lighting"}</h3>
+<p style={css("margin: 0; font-size: 16px; line-height: 1.6; color: #A1A1AA")}>{"Lighting around the rig adds effects such as sun glare as you drive."}</p>
+</div>
 </div>
 </div>
 </section>
