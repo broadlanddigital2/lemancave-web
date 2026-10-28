@@ -197,7 +197,7 @@
  },
  "/accessible-activities-norwich": {
   "title": "Accessible Activities Norwich: Access Guide",
-  "description": "Accessible activities Norwich: LeMan Cave is a fully accessible venue with on-site parking. Read how to visit and what to tell us before you book."
+  "description": "Accessible activities Norwich: a fully accessible venue with disabled access, Part M toilets and parking on site. Tell us about extra assistance when you book."
  },
  "/locations": {
   "title": "Party Venue East Anglia: Racing in Norwich",
@@ -382,5 +382,9 @@
  "/blog": {
   "title": "LeMan Cave Blog: Party Ideas & Sim Racing",
   "description": "The LeMan Cave blog: party ideas, sim racing tips, Christmas and corporate event inspiration, and news from our motorsport entertainment venue in Norwich."
+ },
+ "/minibus-taxi-norwich": {
+  "title": "Minibus Taxi Norwich: Getting Home From Your Event",
+  "description": "Minibus taxi Norwich groups can arrange from LeMan Cave: carry on the party in the city or get home safe and sound. Additional cost; get in touch to book."
  }
 }
