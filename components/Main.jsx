@@ -208,7 +208,7 @@ export default class Main extends React.Component {
 </div>
 <div style={css("display: flex; flex-wrap: wrap; gap: 20px")}>
 <article style={css("flex: 2 1 560px; min-height: 540px; position: relative; border-radius: 8px; overflow: hidden; background: #131316; border: 1px solid #232328; display: flex; flex-direction: column; justify-content: flex-end")}>
-<img src="/images/87af79a958a3ccd899908f5b2bb8b25b.webp" alt="Driver gripping the wheel of the pro racing simulator, triple screens showing a mountain circuit" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%")} />
+<img src="/images/87af79a958a3ccd899908f5b2bb8b25b.webp" alt="Driver gripping the wheel of the pro racing simulator, the screen showing a mountain circuit" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%")} />
 <div aria-hidden="true" style={css("position: absolute; inset: 0; background: linear-gradient(to top, rgba(9,9,11,0.96) 0%, rgba(9,9,11,0.75) 40%, rgba(9,9,11,0.1) 75%)")}></div>
 <div style={css("position: relative; padding: 36px")}>
 <div style={css(`display: inline-block; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #09090B; background: ${V.amber}; padding: 6px 10px; border-radius: 3px`)}>{"FLAGSHIP"}</div>

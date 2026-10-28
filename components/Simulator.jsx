@@ -32,7 +32,7 @@ export default class Simulator extends React.Component {
       ['Do I need racing experience?', 'Not at all. The simulator suits complete beginners and experienced racers alike, and our team will guide you through everything before you set off.'],
       ['How long is a session?', 'Sim room sessions are 30, 60 or 90 minutes, for 2 people sharing 1 sim. An hour is £80, Monday to Friday 9am–5pm. Whole-cave hire is 3 hours, from £600.'],
       ['Can I book parties or corporate events?', 'Yes. We run private parties and tailored packages for birthdays, stag and hen parties, team building and corporate events. Get in touch to plan yours.'],
-      ['Do you offer VR or 4K?', 'Both. Choose crystal-clear 4K screens or fully immersive VR when you book — or try each on the day.'],
+      ['Do you offer VR or 4K?', 'Both. Choose a crystal-clear 4K monitor or fully immersive VR when you book — or try each on the day.'],
       ['Can children use the simulator?', 'Yes. The simulators may have height restrictions, and motion may be disabled for safety for guests under 14 — everything else is the full experience.'],
       ['Is it suitable for beginners and experienced drivers?', 'Yes. Settings range from easy driving assists for newcomers to full pro settings for seasoned sim racers.']
     ];
@@ -44,9 +44,9 @@ export default class Simulator extends React.Component {
     });
     return {
       accent, amber, views, is4k, isVr: !is4k,
-      viewTag: is4k ? 'TRIPLE 4K ULTRA HD' : 'FULL IMMERSION',
-      viewTitle: is4k ? 'Wraparound 4K' : 'Step inside the car',
-      viewCopy: is4k ? 'Crisp, ultra-high-definition screens wrap around the cockpit for a wide, natural field of view — ideal if you want to race with friends watching on.' : 'Pull on the headset and the garage disappears. Look into the apex, check your mirrors and feel completely surrounded by the race.',
+      viewTag: is4k ? '4K ULTRA HD MONITOR' : 'FULL IMMERSION',
+      viewTitle: is4k ? '4K monitor' : 'Step inside the car',
+      viewCopy: is4k ? 'A crisp, ultra-high-definition 4K monitor in front of the cockpit — ideal if you want to race with friends watching on.' : 'Pull on the headset and the garage disappears. Look into the apex, check your mirrors and feel completely surrounded by the race.',
       sessions, faqs,
       reviews: [
         { name: 'James T.', quote: '[PASTE JAMES T.’S REVIEW VERBATIM — on the simulator’s realism.]' },
@@ -81,7 +81,7 @@ export default class Simulator extends React.Component {
 </nav>
 </header>
 <section aria-labelledby="sim-h" style={css("position: relative; min-height: 720px; display: flex; align-items: flex-end; background: #0E0E11; overflow: hidden")}>
-<img src="/images/87af79a958a3ccd899908f5b2bb8b25b.webp" alt="Driver gripping the wheel of the pro racing simulator Norwich drivers book, triple screens showing a mountain circuit" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 60% 40%")} />
+<img src="/images/87af79a958a3ccd899908f5b2bb8b25b.webp" alt="Driver gripping the wheel of the pro racing simulator Norwich drivers book, the screen showing a mountain circuit" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 60% 40%")} />
 <div aria-hidden="true" style={css("position: absolute; inset: 0; background: linear-gradient(90deg, rgba(9,9,11,0.94) 0%, rgba(9,9,11,0.75) 40%, rgba(9,9,11,0.2) 72%, rgba(9,9,11,0.1) 100%)")}></div>
 <div aria-hidden="true" style={css("position: absolute; left: 0; right: 0; bottom: 0; height: 300px; background: linear-gradient(to top, #09090B 10%, transparent)")}></div>
 <div className="lc-section" style={css("position: relative; max-width: 1360px; width: 100%; margin: 0 auto; padding: 140px 40px 64px; box-sizing: border-box")}>
@@ -200,7 +200,7 @@ export default class Simulator extends React.Component {
 <div style={css("display: flex; flex-wrap: wrap; border-radius: 10px; overflow: hidden; border: 1px solid #232328; background: #131316")}>
 <div style={css("flex: 1.4 1 520px; min-height: 440px; position: relative; background: #18181C; display: flex; align-items: center; justify-content: center")}>
 {V.is4k ? (<>
-<img src="/images/f392a5c6eef5ba757181348eaa3dc99c.webp" alt="Triple 4K screens wrapped around the simulator cockpit" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} />
+<img src="/images/f392a5c6eef5ba757181348eaa3dc99c.webp" alt="A 4K monitor in front of the simulator cockpit" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} />
 </>) : null}
 {V.isVr ? (<>
 <img src="/images/536b036d141561157d953a6c5dd5f3f9.webp" alt="Driver wearing a VR headset in the simulator rig" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} />

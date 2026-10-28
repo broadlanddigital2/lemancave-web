@@ -28,7 +28,7 @@ export default class Product extends React.Component {
         intro: 'Games consoles on a 100-inch big screen, played from a sofa built out of a converted Mini Cooper.',
         hero: IMG.ps5, heroAlt: 'Friends on the Mini Cooper sofa playing a racing game on the 100-inch screen', cta: 'Book the lounge',
         specs: [['SCREEN', '100in'], ['CONSOLE', 'Games consoles'], ['SEATING', 'Mini Cooper sofa'], ['INCLUDED', 'With venue hire']],
-        detailTitle: 'The best seat in the house', detail: 'Sink into our converted Mini Cooper sofa and take on your mates on a wall-sized 4K screen. Racers, sports and party games — perfect between sim sessions or as the main event.',
+        detailTitle: 'The best seat in the house', detail: 'Sink into our converted Mini Cooper sofa and take on your mates on a wall-sized screen. Racers, sports and party games — perfect between sim sessions or as the main event.',
         points: ['100-inch big screen', 'Games consoles with a selection of games', 'Converted Mini Cooper sofa', 'Included with venue hire'],
         detailImg: B('e99e1654859658bbd21c96f616aa54ea'), detailAlt: 'The Mini Cooper sofa in the games lounge', ctaTitle: 'Controllers ready.',
         faqs: [['Which games do you have?', 'Our game list is coming soon. [GAME LIST TBC]'], ['Is the games console lounge included with venue hire?', 'Yes — everything is included with exclusive venue hire.'], ['Can I bring my own games?', 'No — games are provided, so just bring your skills.']] },

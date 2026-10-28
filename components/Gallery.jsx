@@ -37,7 +37,7 @@ export default class Gallery extends React.Component {
       ['3d9a0547fd1c48350560b4509e8d5467', 'venue', 'Bottles on ice at the bar', 'BRING YOUR OWN BAR', 1, 1],
       ['75b0be67d4e541bd9a3256d10090ecb7', 'parties', 'Pizza and drinks on the bar', 'PARTY SPREAD', 1, 1],
       ['336075970ba46c355a5d6ca9b2187bf9', 'parties', 'Simulator decorated for Christmas', 'CHRISTMAS GRAND PRIX', 2, 1],
-      ['f392a5c6eef5ba757181348eaa3dc99c', 'racing', 'Triple-screen sim cockpit', 'TRIPLE 4K', 2, 1],
+      ['f392a5c6eef5ba757181348eaa3dc99c', 'racing', 'Sim cockpit with a 4K monitor', '4K MONITOR', 2, 1],
       ['a0e87d9be4bcb5246b3cc004a7b3cf86', 'racing', 'Slot cars in the pit lane', 'PIT LANE', 1, 1],
       ['002cef838ff9172727fdab6d097cc372', 'racing', 'Live timing leaderboard', 'LIVE TIMING', 1, 1],
       ['a75ffec0fec186c1fc8d6f31552be6d8', 'racing', 'Slot cars through a bend', 'SIX LANES', 1, 2],
@@ -136,7 +136,7 @@ export default class Gallery extends React.Component {
 <div style={css("display: flex; flex-wrap: wrap; gap: 24px; margin-top: 56px")}>
 <div style={css("flex: 1 1 420px; padding: 34px; border-radius: 10px; background: #131316; border: 1px solid #232328")}>
 <h2 style={css("margin: 0 0 14px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(32px, 4vw, 48px); line-height: 0.95; color: #FFFFFF; text-transform: uppercase")}>{"Racing simulator venue photos"}</h2>
-<p style={css("margin: 0 0 14px; font-size: 17px; line-height: 1.65; color: #D4D4D8")}>{"The racing photos show the heart of the cave: pro racing simulators (one with full motion) with direct-drive wheels and a choice of 4K screens or VR, the 160ft six-lane digital Scalextric and the classic 1990s motorbike sim. The simulators may have height restrictions, and motion may be disabled for safety for guests under 14."}</p>
+<p style={css("margin: 0 0 14px; font-size: 17px; line-height: 1.65; color: #D4D4D8")}>{"The racing photos show the heart of the cave: pro racing simulators (one with full motion) with direct-drive wheels and a choice of 4K monitors or VR, the 160ft six-lane digital Scalextric and the classic 1990s motorbike sim. The simulators may have height restrictions, and motion may be disabled for safety for guests under 14."}</p>
 <A href="/attractions/racing-simulator-norwich" style={css("color: #ED2835; font-weight: 700; font-size: 14px; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none")}>{"Racing simulators \u2192"}</A>
 </div>
 <div style={css("flex: 1 1 420px; padding: 34px; border-radius: 10px; background: #131316; border: 1px solid #232328")}>
