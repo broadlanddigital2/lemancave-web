@@ -22,7 +22,7 @@ export default class Food extends React.Component {
       { label: '', src: '/images/d86d6f264b37fd479881e577263f4b4a.webp', alt: 'Pizza spread on the bar with the arcade and pool table behind', style: tile('grid-column: span 3; ') }
     ];
     shots.forEach((s) => { s.hasImg = !!s.src; s.noImg = !s.src; });
-    const pizzas* = [
+    const pizzas = [
       { pos: '1', name: 'Margherita', copy: 'Tomato, mozzarella and fresh basil. [CONFIRM]', img: '/images/9b7ffaf52daa0e567dc86082f20db456.webp', alt: 'Margherita pizza' },
       { pos: '2', name: 'Pepperoni', copy: 'Tomato, mozzarella and pepperoni. [CONFIRM]', img: '/images/6b70836bdb7a6ffa1b24a23dbf626d4b.webp', alt: 'Pepperoni pizza' },
       { pos: '3', name: 'Prosciutto & Rocket', copy: 'Prosciutto, rocket and parmesan shavings. [CONFIRM]', img: '/images/5d94b15c7fa716a5b500a87e07e33c15.webp', alt: 'Prosciutto and rocket pizza' },
@@ -42,7 +42,7 @@ export default class Food extends React.Component {
         toggle: () => this.setState({ open: open ? -1 : i }) };
     });
     return {
-      accent, amber, shots, pizzas*, faqs,
+      accent, amber, shots, pizzas, faqs,
       brands: [
         { name: 'Race Car Graphics UK', href: 'https://racecargraphics.uk/', logo: '/images/af46cb048a3538fff3ada1542e3a6666.png' },
         { name: 'Broadland Digital', href: 'https://broadlanddigital.co.uk/', logo: '/images/3af5e52699d5da909dbac3e38fd47a32.svg' },
@@ -184,10 +184,10 @@ export default class Food extends React.Component {
 <p style={css(`margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: ${V.accent}`)}>{"03 / THE LINE-UP"}</p>
 <h2 id="menu-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 84px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"On the grid"}</h2>
 </div>
-<p style={css("margin: 0; max-width: 420px; font-size: 18px; line-height: 1.6; color: #A1A1AA")}>{"A large selection of pizzas*, with options for a range of dietary needs. [ADD FEATURED PIZZAS*]"}</p>
+<p style={css("margin: 0; max-width: 420px; font-size: 18px; line-height: 1.6; color: #A1A1AA")}>{"A large selection of pizzas*, with options for a range of dietary needs. [ADD FEATURED PIZZAS]"}</p>
 </div>
 <div style={css("display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px")}>
-{(V.pizzas* || []).map((z, $index) => (<React.Fragment key={$index}>
+{(V.pizzas || []).map((z, $index) => (<React.Fragment key={$index}>
 <article style={css("border-radius: 8px; overflow: hidden; background: #131316; border: 1px solid #232328; display: flex; flex-direction: column")}>
 <div style={css("height: 220px; position: relative; overflow: hidden; background: #18181C; border-bottom: 1px solid #232328")}><img src={z.img} alt={z.alt} style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 70%")} /></div>
 <div style={css("padding: 26px; display: flex; flex-direction: column; gap: 10px")}>
@@ -201,7 +201,7 @@ export default class Food extends React.Component {
 </section>
 <section className="lc-section" aria-labelledby="pair-h" style={css("max-width: 1360px; margin: 0 auto; padding: 0 40px 120px")}>
 <div style={css("display: flex; flex-wrap: wrap; border-radius: 10px; overflow: hidden; border: 1px solid #232328; background: #131316")}>
-<div style={css("flex: 1 1 440px; min-height: 340px; position: relative; background: #18181C")}><img src="/images/75b0be67d4e541bd9a3256d10090ecb7.webp" alt="Bottles chilling on ice beside fresh pizzas* on the bar" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} /></div>
+<div style={css("flex: 1 1 440px; min-height: 340px; position: relative; background: #18181C")}><img src="/images/75b0be67d4e541bd9a3256d10090ecb7.webp" alt="Bottles chilling on ice beside fresh pizzas on the bar" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} /></div>
 <div style={css("flex: 1 1 440px; padding: 48px; display: flex; flex-direction: column; justify-content: center; gap: 14px")}>
 <div style={css(`font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: ${V.amber}`)}>{"PERFECT PAIRING"}</div>
 <h2 id="pair-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 52px; line-height: 0.95; color: #FFFFFF; text-transform: uppercase")}>{"Pizza* meets"}<br />{"Bring Your Own"}</h2>
