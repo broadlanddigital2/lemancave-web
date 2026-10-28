@@ -136,7 +136,7 @@ export default class Gallery extends React.Component {
 <div style={css("display: flex; flex-wrap: wrap; gap: 24px; margin-top: 56px")}>
 <div style={css("flex: 1 1 420px; padding: 34px; border-radius: 10px; background: #131316; border: 1px solid #232328")}>
 <h2 style={css("margin: 0 0 14px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(32px, 4vw, 48px); line-height: 0.95; color: #FFFFFF; text-transform: uppercase")}>{"Racing simulator venue photos"}</h2>
-<p style={css("margin: 0 0 14px; font-size: 17px; line-height: 1.65; color: #D4D4D8")}>{"The racing photos show the heart of the cave: pro racing simulators (one with full motion) with direct-drive wheels and a choice of 4K monitors or VR, the 160ft digital Scalextric (up to six cars) and the classic 1990s motorbike sim. The simulators may have height restrictions, and motion may be disabled for safety for guests under 14."}</p>
+<p style={css("margin: 0 0 14px; font-size: 17px; line-height: 1.65; color: #D4D4D8")}>{"The racing photos show the heart of the cave: pro racing simulators (one with full motion) with direct-drive wheels (the full-motion sim in 4K or VR, the static sim on an HD monitor), the 160ft digital Scalextric (up to six cars) and the classic 1990s motorbike sim. The simulators may have height restrictions, and motion may be disabled for safety for guests under 14."}</p>
 <A href="/attractions/racing-simulator-norwich" style={css("color: #ED2835; font-weight: 700; font-size: 14px; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none")}>{"Racing simulators \u2192"}</A>
 </div>
 <div style={css("flex: 1 1 420px; padding: 34px; border-radius: 10px; background: #131316; border: 1px solid #232328")}>
