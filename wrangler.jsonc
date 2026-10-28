@@ -8,7 +8,7 @@
     "directory": "./out",
     "binding": "ASSETS",
     "not_found_handling": "404-page",
-    "run_worker_first": ["/api/*", "/experiences", "/contact", "/login",
+    "run_worker_first": ["/api/*", "/experiences", "/contact", "/login", "/blog", "/blog/*", "/sitemap.xml",
       "/accessibility", "/advertise", "/attractions/air-hockey", "/attractions/arcade",
       "/attractions/darts", "/attractions/digital-pinball", "/attractions/digital-scalextric", "/attractions/games-and-arcade",
       "/attractions/memorabilia", "/attractions/motorcycle-simulator", "/attractions/pool-table", "/attractions/ps5-lounge",

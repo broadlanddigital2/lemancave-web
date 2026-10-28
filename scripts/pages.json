@@ -55,6 +55,11 @@
    "slug": "blog",
    "title": "Blog & Guides \u2014 LeMan Cave Norwich"
   },
+  "BlogShell": {
+   "component": "BlogShell",
+   "slug": null,
+   "title": "Blog \u2014 LeMan Cave Norwich"
+  },
   "Book": {
    "component": "Book",
    "slug": null,
@@ -553,6 +558,7 @@
   "CompareScalextric": "/compare/digital-vs-classic-scalextric",
   "Sitemap": "/site-map",
   "Book": "/book",
+  "BlogShell": "/blog",
   "Advertise": "/advertising-screens-norwich",
   "Account": "/account"
  }
