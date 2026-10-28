@@ -190,6 +190,12 @@ async function handle(request, env) {
 
 export default {
   async fetch(request, env, ctx) {
+    // www.lemancave.co.uk → lemancave.co.uk (permanent), keeping the path and query.
+    const host = new URL(request.url);
+    if (host.hostname === 'www.lemancave.co.uk') {
+      host.hostname = 'lemancave.co.uk';
+      return Response.redirect(host.toString(), 301);
+    }
     const response = await handle(request, env);
     // Counted on the workers.dev preview too until the lemancave.co.uk switch (the CRM's LeMan Cave site reads it).
     trackAi(request, response, ctx, { feedKey: BLOG.feedKey, countPreview: true });

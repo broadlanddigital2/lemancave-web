@@ -18,10 +18,11 @@
     // LeMan Cave Web Forms channel public key (CRM → channel_integrations)
     "CRM_FORM_KEY": "e12dbb86-3cd9-4065-afa5-31f974d9e710"
   },
-  "observability": { "enabled": true }
-  // GO-LIVE: when the new site is signed off, add the domain (DNS is already in Cloudflare):
-  // ,"routes": [
-  //   { "pattern": "lemancave.co.uk", "custom_domain": true },
-  //   { "pattern": "www.lemancave.co.uk", "custom_domain": true }
-  // ]
+  "observability": { "enabled": true },
+  // Live on the domain since 28 Oct 2026 (added in the dashboard by the owner; kept here so deploys match).
+  // www redirects to the root in worker/index.js.
+  "routes": [
+    { "pattern": "lemancave.co.uk", "custom_domain": true },
+    { "pattern": "www.lemancave.co.uk", "custom_domain": true }
+  ]
 }
