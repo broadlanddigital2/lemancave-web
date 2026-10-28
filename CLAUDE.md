@@ -81,7 +81,8 @@ Whole-cave prices are per person, with a minimum spend that still applies if few
 
 ## Hosting and CRM
 - Cloudflare Worker (`worker/index.js`, `wrangler.jsonc`) serves the static export and handles `POST /api/enquiry`. Workers Builds deploys every push to `main`.
-- **Custom domain is NOT enabled yet.** The current lemancave.co.uk (an older Next.js app with its own `/book`) stays live until the owner signs off. Don't uncomment `routes` in `wrangler.jsonc` without explicit approval.
+- **Live on lemancave.co.uk since 28 Oct 2026 (for testing before launch).** The owner attached `lemancave.co.uk` and `www.lemancave.co.uk` as custom domains, and they're listed in `routes` in `wrangler.jsonc`. `www` 301s to the root in `worker/index.js`. The other go-live steps below (CRM `site_url`s, search reindex, `audit_origin`, Stripe live keys) are still to do, except the enquiry bot's `site_url`, which already points at lemancave.co.uk.
+- **Review placeholders are hidden** (commented out in `design/Landing.dc.html`) until real reviews are available.
 - **CRM**: the Race Car Graphics CRM.
   - Supabase project `dipjypzrfigkzuarlsov`, repo `broadlanddigital2/race-car-graphics-crm`.
   - Forms post to the `inbound-webform-email` function as JSON `{form_key, name, email, subject, details, page_url}`.
