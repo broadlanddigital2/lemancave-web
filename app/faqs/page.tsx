@@ -1,13 +1,14 @@
 import type { Metadata } from 'next';
+import { pageMeta, PageSchema } from '../../lib/seo';
 import Guide from '../../components/Guide';
 
-export const metadata: Metadata = {
-  title: "FAQs",
-  description: "Everything you need to know before you visit — bookings, food and drink, ages, access and more.",
-  alternates: { canonical: "/faqs" },
-  openGraph: { title: "FAQs | LeMan Cave Norwich", description: "Everything you need to know before you visit — bookings, food and drink, ages, access and more.", url: "/faqs" },
-};
+export const metadata: Metadata = pageMeta('/faqs');
 
 export default function Page() {
-  return <Guide slug="faqs" />;
+  return (
+    <>
+      <PageSchema path="/faqs" />
+      <Guide slug="faqs" />
+    </>
+  );
 }

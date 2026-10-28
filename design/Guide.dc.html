@@ -37,8 +37,8 @@ body{margin:0}
 <nav aria-label="Breadcrumb" style="font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px">
 <a href="Main.dc.html" style="color: #A1A1AA; text-decoration: none">HOME</a> <span aria-hidden="true">/</span> <a href="{{g.parentHref}}" style="color: #A1A1AA; text-decoration: none">{{g.parentLabel}}</a> <span aria-hidden="true">/</span> <span style="color: #ED2835">{{g.crumb}}</span>
 </nav>
-<p style="margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 14px; letter-spacing: 0.16em; color: #FFC233">{{g.kicker}}</p>
-<h1 id="g-h" style="margin: 0; max-width: 980px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(56px, 8vw, 120px); line-height: 0.9; color: #FFFFFF; text-transform: uppercase">{{g.title}}</h1>
+<h1 id="g-h" style="margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 500; line-height: 1.5; letter-spacing: 0.16em; color: #FFC233; text-transform: uppercase">{{g.kicker}}</h1>
+<p style="margin: 0; max-width: 980px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(56px, 8vw, 120px); line-height: 0.9; color: #FFFFFF; text-transform: uppercase">{{g.title}}</p>
 <p style="margin: 24px 0 0; max-width: 680px; font-size: 20px; line-height: 1.55; color: #D4D4D8">{{g.intro}}</p>
 </div>
 </section>
@@ -50,7 +50,7 @@ body{margin:0}
 <sc-if value="{{hasSummary}}" hint-placeholder-val="{{ true }}">
 <div style="display: flex; flex-wrap: wrap; gap: 20px">
 <div style="flex: 1.4 1 360px; padding: 30px 32px; border-radius: 10px; background: #131316; border: 1px solid #232328; border-left: 4px solid #ED2835">
-<div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.16em; color: #FFC233; margin-bottom: 14px">THE SHORT VERSION</div>
+<h2 style="margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 500; line-height: 1.5; letter-spacing: 0.16em; color: #FFC233; text-transform: uppercase">{{g.shortTitle}}</h2>
 <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px">
 <sc-for list="{{summary}}" as="sm" hint-placeholder-count="3">
 <li style="display: flex; gap: 12px; font-size: 17px; line-height: 1.55; color: #F4F4F5"><span aria-hidden="true" style="color: #ED2835; font-weight: 700">▸</span>{{sm}}</li>
@@ -97,7 +97,7 @@ body{margin:0}
 
 <sc-if value="{{hasThings}}" hint-placeholder-val="{{ false }}">
 <div>
-<h2 style="margin: 0 0 20px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 40px; color: #FFFFFF; text-transform: uppercase">Try it at LeMan Cave</h2>
+<h2 style="margin: 0 0 20px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 40px; color: #FFFFFF; text-transform: uppercase">{{g.tryTitle}}</h2>
 <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 14px">
 <sc-for list="{{things}}" as="t" hint-placeholder-count="4">
 <a href="{{t.href}}" style="position: relative; height: 170px; border-radius: 8px; overflow: hidden; background: #131316; display: block; text-decoration: none">
@@ -292,6 +292,33 @@ class Component extends DCLogic {
         sections: [S('The race', ['First held in 1923, the 24 Hours of Le Mans tests speed and endurance — teams of drivers race through day and night on the Circuit de la Sarthe in western France.']), S('The circuit', ['At over 13 km, the circuit combines a permanent track with public roads, including the famous Mulsanne Straight — broken up by chicanes since 1990.']), S('Legends', ['The “Bentley Boys” of the 1920s, Ford’s 1960s battles with Ferrari, Porsche’s record run of overall wins and Tom Kristensen’s nine victories are all part of the race’s story.']), S('Le Mans at LeMan Cave', ['Le Mans race panels, signed race suits and F1 spoilers line our walls — part of every venue hire.'], [], 'Ask the team about the story behind each panel.', ['Memorabilia', 'Memorabilia.dc.html'])],
         things: ['memo', 'sim', 'scalex', 'moto'], related: [['For fans', ['ForMotorsportFans', 'CarClub', 'Simulator', 'Memorabilia']], ['Read next', ['GuideSim', 'GuideSimTips', 'GuideGifts']]] }
     };
+
+    // SEO (Oct 2026): H1 (the hero's small line), image alt and two subheadings carry each page's keywords
+    // (seo/keywords.json in the site repo; also in the CRM SEO optimiser). [h1, alt, shortTitle, tryTitle, faq group titles?]
+    const SEO = {
+      faqs: ['LeMan Cave FAQs · quick answers', '', 'The short version', 'Try it at LeMan Cave', ['Party booking questions: booking & pricing', 'Food & drink', 'Racing simulator questions: ages & experience', 'Getting here & access']],
+      opening: ['LeMan Cave opening times', 'The venue lit up: LeMan Cave opening times', 'Party booking times at a glance', 'Racing simulator opening hours: what to book'],
+      travel: ['LeMan Cave parking & travel', 'Car park and entrance: LeMan Cave parking on site', 'How to get to LeMan Cave', 'Directions to LeMan Cave, Norwich: what’s nearby'],
+      blog: ['Party planning guides · ideas & checklists', '', 'Party ideas and checklists', 'Sim racing guides: try it at LeMan Cave'],
+      norwich: ['Things to do in Norwich · our guide', 'Inside LeMan Cave, one of the things to do in Norwich', 'Things to do in Norwich for adults: the short version', 'Indoor things to do in Norwich: try LeMan Cave'],
+      indoor: ['Indoor activities Norfolk · our guide', 'Air hockey, one of the indoor activities Norfolk families love', 'Things to do in Norfolk indoors: the short version', 'Rainy day activities in Norfolk: try LeMan Cave'],
+      teamevent: ['Planning a team event · step by step', 'A racing simulator team day: planning a team event', 'Team away day ideas: the short version', 'Team building ideas in Norwich: try LeMan Cave'],
+      birthday: ['Birthday party ideas · for every age', 'A group celebrating, one of our birthday party ideas', 'Adult birthday party ideas: the short version', '30th birthday ideas and more: try LeMan Cave'],
+      simguide: ['Race simulator guide · how sims work', 'A driver in a race simulator, from our race simulator guide', 'What is a racing simulator? The short version', 'Try a race simulator at LeMan Cave'],
+      venuehire: ['Venue hire guide · what to ask', 'The whole venue, from our venue hire guide', 'Venue hire checklist: the short version', 'How to hire a party venue: try LeMan Cave'],
+      kidschecklist: ['Kids party checklist · plan it step by step', 'Kids racing Scalextric, top of our kids party checklist', 'Kids party planning: the short version', 'Children’s party ideas: try LeMan Cave'],
+      staghen: ['Stag and hen planner · Norfolk ideas', 'Pizza and drinks from our stag and hen planner', 'Stag do ideas in Norfolk: the short version', 'Hen party ideas in Norfolk: try LeMan Cave'],
+      simtips: ['Sim racing tips · for beginners', 'Hands on the wheel: sim racing tips for beginners', 'How to get faster in sim racing: the short version', 'Racing simulator tips in practice: try LeMan Cave'],
+      christmas: ['Christmas party ideas Norwich · planner', 'Drinks at the bar, one of the Christmas party ideas Norwich teams book', 'Office Christmas party ideas: the short version', 'Work Christmas party planning: try LeMan Cave'],
+      gifts: ['Gifts for petrolheads · experience ideas', 'A gift card surprise, one of our gifts for petrolheads', 'Gifts for car lovers: the short version', 'Motorsport gift ideas: try LeMan Cave'],
+      lemans: ['Le Mans history · motorsport guide', 'A race suit on display, a nod to Le Mans history', '24 Hours of Le Mans: the short version', 'Le Mans race history, recreated at LeMan Cave'],
+    };
+    Object.keys(G).forEach((k) => {
+      const x = SEO[k] || [G[k].kicker, '', 'The short version', 'Try it at LeMan Cave'];
+      G[k] = { ...G[k], kicker: x[0], shortTitle: x[2] || 'The short version', tryTitle: x[3] || 'Try it at LeMan Cave' };
+      if (x[1] && G[k].image) G[k].imageAlt = x[1];
+      if (x[4] && G[k].faqGroups) G[k].faqGroups = G[k].faqGroups.map(([t, items], i) => [x[4][i] || t, items]);
+    });
     const slug = G[this.props.slug] ? this.props.slug : 'faqs';
     const g = G[slug];
     const tagOf = (href) => { const h = href.replace('.dc.html', ''); if (h.startsWith('Compare')) return ['COMPARISON', '#FFC233']; if (h.startsWith('Guide')) return ['GUIDE', '#ED2835']; if (h.startsWith('For') || h === 'Accessibility') return ['WHO IT’S FOR', '#60A5FA']; if (['Norwich','Norfolk','Wroxham','Cromer','GreatYarmouth','Lowestoft','Ipswich','Cambridge','EastAnglia'].includes(h)) return ['LOCATION', '#A78BFA']; if (['Pricing','OpeningTimes','TravelParking','FAQs','Visit','GiftVouchers','Food','Drinks'].includes(h)) return ['PLAN YOUR VISIT', '#4ADE80']; if (['Simulator','Scalextric','Memorabilia','Games','PS5'].includes(h)) return ['ATTRACTION', '#F472B6']; return ['HIRE TYPE', '#ED2835']; };

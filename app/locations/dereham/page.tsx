@@ -1,13 +1,14 @@
 import type { Metadata } from 'next';
+import { pageMeta, PageSchema } from '../../../lib/seo';
 import Landing from '../../../components/Landing';
 
-export const metadata: Metadata = {
-  title: "Things to do near Dereham",
-  description: "Looking for something different to do near Dereham? LeMan Cave is ~17 miles away in Norwich — full-motion racing simulators, a 160ft digital Scalextric and…",
-  alternates: { canonical: "/locations/dereham" },
-  openGraph: { title: "Things to do near Dereham | LeMan Cave Norwich", description: "Looking for something different to do near Dereham? LeMan Cave is ~17 miles away in Norwich — full-motion racing simulators, a 160ft digital Scalextric and…", url: "/locations/dereham" },
-};
+export const metadata: Metadata = pageMeta('/locations/dereham');
 
 export default function Page() {
-  return <Landing slug="dereham" />;
+  return (
+    <>
+      <PageSchema path="/locations/dereham" />
+      <Landing slug="dereham" />
+    </>
+  );
 }

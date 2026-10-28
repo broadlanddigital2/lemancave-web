@@ -58,14 +58,15 @@ export default class Scalextric extends React.Component {
 </nav>
 </header>
 <section aria-labelledby="sx-h" style={css("position: relative; min-height: 720px; display: flex; align-items: flex-end; background: #0E0E11; overflow: hidden")}>
-<img src="/images/c2a615d5274599ccc19ef695052deaba.webp" alt="A group gathered round the digital Scalextric track mid-race" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 60% 50%")} />
+<img src="/images/c2a615d5274599ccc19ef695052deaba.webp" alt="A group gathered round the Scalextric track Norwich groups race on, mid-race" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 60% 50%")} />
 <div aria-hidden="true" style={css("position: absolute; inset: 0; background: linear-gradient(90deg, rgba(9,9,11,0.94) 0%, rgba(9,9,11,0.75) 40%, rgba(9,9,11,0.2) 72%, rgba(9,9,11,0.1) 100%)")}></div>
 <div aria-hidden="true" style={css("position: absolute; left: 0; right: 0; bottom: 0; height: 300px; background: linear-gradient(to top, #09090B 10%, transparent)")}></div>
 <div className="lc-section" style={css("position: relative; max-width: 1360px; width: 100%; margin: 0 auto; padding: 140px 40px 64px; box-sizing: border-box")}>
 <nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
 <A href="/" style={css("color: #A1A1AA")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <A href="/attractions" style={css("color: #A1A1AA")}>{"EXPERIENCES"}</A> <span aria-hidden="true">{"/"}</span> <span style={css(`color: ${V.accent}`)}>{"DIGITAL SCALEXTRIC"}</span>
 </nav>
-<h1 id="sx-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(64px, 10vw, 152px); line-height: 0.88; color: #FFFFFF; text-transform: uppercase")}>{"160ft of"}<br /><span style={css(`color: ${V.accent}`)}>{"pure rivalry."}</span></h1>
+<h1 id="sx-h" style={css("margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 500; line-height: 1.5; letter-spacing: 0.16em; color: #FFC233; text-transform: uppercase")}>{"Scalextric track Norwich \u00b7 160ft digital"}</h1>
+<p style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(64px, 10vw, 152px); line-height: 0.88; color: #FFFFFF; text-transform: uppercase")}>{"160ft of"}<br /><span style={css(`color: ${V.accent}`)}>{"pure rivalry."}</span></p>
 <p style={css("margin: 28px 0 0; max-width: 560px; font-size: 20px; line-height: 1.55; color: #D4D4D8")}>{"Digital Scalextric on a six-lane circuit, with lap timers, a working pit lane and live timing screens. Easy to pick up, impossible to put down."}</p>
 <div style={css("display: flex; flex-wrap: wrap; gap: 14px; margin-top: 36px")}>
 <A href="/book" style={css(`background: ${V.accent}; color: #09090B; font-weight: 700; font-size: 16px; letter-spacing: 0.06em; text-transform: uppercase; padding: 18px 30px; border-radius: 4px`)}>{"Book track time"}</A>
@@ -101,7 +102,7 @@ export default class Scalextric extends React.Component {
 <div style={css("display: flex; flex-wrap: wrap; gap: 64px; align-items: center")}>
 <div style={css("flex: 1 1 460px")}>
 <p style={css(`margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: ${V.accent}`)}>{"01 / THE TRACK"}</p>
-<h2 id="intro-h" style={css("margin: 0 0 28px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 84px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Not the set"}<br />{"under your tree"}</h2>
+<h2 id="intro-h" style={css("margin: 0 0 28px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 84px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Digital Scalextric: not the set under your tree"}</h2>
 <p style={css("margin: 0 0 18px; font-size: 19px; line-height: 1.65; color: #D4D4D8")}>{"Our digital circuit winds 160ft through the cave, past a lit pit lane and live timing screens. Everyone races at once, every lap is timed, and the leaderboard never lies."}</p>
 <p style={css("margin: 0; font-size: 19px; line-height: 1.65; color: #A1A1AA")}>{"It\u2019s the perfect warm-up before the simulators \u2014 or the main event for groups who just want to battle it out together."}</p>
 </div>
@@ -156,7 +157,7 @@ export default class Scalextric extends React.Component {
 </section>
 <section className="lc-section" aria-labelledby="how-h" style={css("max-width: 1360px; margin: 0 auto; padding: 120px 40px")}>
 <p style={css(`margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: ${V.accent}`)}>{"03 / RACE NIGHT"}</p>
-<h2 id="how-h" style={css("margin: 0 0 56px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 84px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"How it works"}</h2>
+<h2 id="how-h" style={css("margin: 0 0 56px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 84px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Scalextric racing in Norwich: how it works"}</h2>
 <ol style={css("list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px")}>
 <li style={css("padding: 32px; background: #131316; border: 1px solid #232328; border-radius: 8px; display: flex; flex-direction: column; gap: 12px")}>
 <span style={css(`font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 64px; line-height: 1; color: ${V.accent}`)}>{"01"}</span>

@@ -1,13 +1,14 @@
 import type { Metadata } from 'next';
+import { pageMeta, PageSchema } from '../../lib/seo';
 import Landing from '../../components/Landing';
 
-export const metadata: Metadata = {
-  title: "Accessible Activities Norwich",
-  description: "LeMan Cave is a fully accessible venue — everyone gets a place on the grid.",
-  alternates: { canonical: "/accessibility" },
-  openGraph: { title: "Accessible Activities Norwich | LeMan Cave Norwich", description: "LeMan Cave is a fully accessible venue — everyone gets a place on the grid.", url: "/accessibility" },
-};
+export const metadata: Metadata = pageMeta('/accessibility');
 
 export default function Page() {
-  return <Landing slug="accessibility" />;
+  return (
+    <>
+      <PageSchema path="/accessibility" />
+      <Landing slug="accessibility" />
+    </>
+  );
 }

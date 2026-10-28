@@ -111,7 +111,8 @@ export default class Gallery extends React.Component {
 </nav>
 <div style={css("display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 40px")}>
 <div>
-<h1 id="gal-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(64px, 10vw, 144px); line-height: 0.88; color: #FFFFFF; text-transform: uppercase")}>{"Inside"}<br /><span style={css("color: #ED2835")}>{"the cave."}</span></h1>
+<h1 id="gal-h" style={css("margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 500; line-height: 1.5; letter-spacing: 0.16em; color: #FFC233; text-transform: uppercase")}>{"LeMan Cave photos \u00b7 inside the cave"}</h1>
+<p style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(64px, 10vw, 144px); line-height: 0.88; color: #FFFFFF; text-transform: uppercase")}>{"Inside"}<br /><span style={css("color: #ED2835")}>{"the cave."}</span></p>
 <p style={css("margin: 22px 0 0; max-width: 520px; font-size: 19px; line-height: 1.55; color: #D4D4D8")}>{"See the atmosphere before you arrive \u2014 racing, games, parties and the memorabilia on the walls."}</p>
 </div>
 <div role="group" aria-label="Filter photos" style={css("display: flex; flex-wrap: wrap; gap: 6px; padding: 6px; border: 1px solid #27272A; border-radius: 999px; background: #0F0F12")}>

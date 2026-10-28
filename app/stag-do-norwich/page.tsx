@@ -1,13 +1,14 @@
 import type { Metadata } from 'next';
+import { pageMeta, PageSchema } from '../../lib/seo';
 import Landing from '../../components/Landing';
 
-export const metadata: Metadata = {
-  title: "Stag Do Activities Norwich",
-  description: "Head-to-head racing, a grudge match on the Scalextric and Bring Your Own drinks — the perfect start to a Norwich stag do.",
-  alternates: { canonical: "/stag-do-norwich" },
-  openGraph: { title: "Stag Do Activities Norwich | LeMan Cave Norwich", description: "Head-to-head racing, a grudge match on the Scalextric and Bring Your Own drinks — the perfect start to a Norwich stag do.", url: "/stag-do-norwich" },
-};
+export const metadata: Metadata = pageMeta('/stag-do-norwich');
 
 export default function Page() {
-  return <Landing slug="stag" />;
+  return (
+    <>
+      <PageSchema path="/stag-do-norwich" />
+      <Landing slug="stag" />
+    </>
+  );
 }

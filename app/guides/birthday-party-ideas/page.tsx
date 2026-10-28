@@ -1,13 +1,14 @@
 import type { Metadata } from 'next';
+import { pageMeta, PageSchema } from '../../../lib/seo';
 import Guide from '../../../components/Guide';
 
-export const metadata: Metadata = {
-  title: "Best Birthday Party Ideas",
-  description: "Stuck for ideas? Here’s how to make this birthday unforgettable.",
-  alternates: { canonical: "/guides/birthday-party-ideas" },
-  openGraph: { title: "Best Birthday Party Ideas | LeMan Cave Norwich", description: "Stuck for ideas? Here’s how to make this birthday unforgettable.", url: "/guides/birthday-party-ideas" },
-};
+export const metadata: Metadata = pageMeta('/guides/birthday-party-ideas');
 
 export default function Page() {
-  return <Guide slug="birthday" />;
+  return (
+    <>
+      <PageSchema path="/guides/birthday-party-ideas" />
+      <Guide slug="birthday" />
+    </>
+  );
 }

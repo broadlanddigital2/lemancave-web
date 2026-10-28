@@ -1,13 +1,14 @@
 import type { Metadata } from 'next';
+import { pageMeta, PageSchema } from '../../lib/seo';
 import Gallery from '../../components/Gallery';
 
-export const metadata: Metadata = {
-  title: "Gallery",
-  description: "Photos from inside LeMan Cave, Norwich: racing simulators, digital Scalextric, games, parties and motorsport memorabilia.",
-  alternates: { canonical: "/gallery" },
-  openGraph: { title: "Gallery | LeMan Cave Norwich", description: "Photos from inside LeMan Cave, Norwich: racing simulators, digital Scalextric, games, parties and motorsport memorabilia.", url: "/gallery" },
-};
+export const metadata: Metadata = pageMeta('/gallery');
 
 export default function Page() {
-  return <Gallery />;
+  return (
+    <>
+      <PageSchema path="/gallery" />
+      <Gallery />
+    </>
+  );
 }

@@ -112,9 +112,10 @@ export default class Main extends React.Component {
 <div aria-hidden="true" style={css("position: absolute; inset: 0; background: linear-gradient(90deg, rgba(9,9,11,0.94) 0%, rgba(9,9,11,0.72) 40%, rgba(9,9,11,0.15) 72%, rgba(9,9,11,0.05) 100%)")}></div>
 <div aria-hidden="true" style={css("position: absolute; left: 0; right: 0; bottom: 0; height: 340px; background: linear-gradient(to top, #09090B 10%, transparent)")}></div>
 <div className="lc-section" style={css("position: relative; max-width: 1360px; width: 100%; margin: 0 auto; padding: 170px 40px 72px; box-sizing: border-box")}>
-<div aria-live="polite" style={css("min-height: 470px; display: flex; flex-direction: column; justify-content: flex-end")}>
+<h1 style={css("margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 500; line-height: 1.5; letter-spacing: 0.16em; color: #FFC233; text-transform: uppercase")}>{"Indoor activities Norwich \u00b7 racing sims & games"}</h1>
+<div aria-live="polite" style={css("min-height: 440px; display: flex; flex-direction: column; justify-content: flex-end")}>
 <p style={css(`margin: 0 0 20px; font-family: 'JetBrains Mono', monospace; font-size: 14px; letter-spacing: 0.16em; color: ${V.accent}`)}>{V.cur.kicker}</p>
-<h1 style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(64px, 11vw, 168px); line-height: 0.88; letter-spacing: -0.01em; color: #FFFFFF; text-transform: uppercase")}>{V.cur.l1}<br /><span style={css(`color: ${V.accent}`)}>{V.cur.l2}</span></h1>
+<p style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(64px, 11vw, 168px); line-height: 0.88; letter-spacing: -0.01em; color: #FFFFFF; text-transform: uppercase")}>{V.cur.l1}<br /><span style={css(`color: ${V.accent}`)}>{V.cur.l2}</span></p>
 <p style={css("margin: 28px 0 0; max-width: 580px; font-size: 20px; line-height: 1.55; color: #D4D4D8")}>{V.cur.copy}</p>
 <div style={css("display: flex; flex-wrap: wrap; gap: 14px; margin-top: 36px")}>
 <A href={V.cur.href1} style={css(`background: ${V.accent}; color: #09090B; font-weight: 700; font-size: 16px; letter-spacing: 0.06em; text-transform: uppercase; padding: 18px 30px; border-radius: 4px`)}>{V.cur.cta1}</A>
@@ -158,11 +159,11 @@ export default class Main extends React.Component {
 <section className="lc-section" aria-labelledby="lane-h" style={css("max-width: 1360px; margin: 0 auto; padding: 120px 40px 0")}>
 <div style={css("text-align: center; margin-bottom: 48px")}>
 <p style={css(`margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: ${V.accent}`)}>{"CHOOSE YOUR LANE"}</p>
-<h2 id="lane-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 88px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"One venue."}<br />{"Two kinds of fun."}</h2>
+<h2 id="lane-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 88px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"One entertainment venue in Norwich. Two kinds of fun."}</h2>
 </div>
 <div style={css("display: grid; grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); gap: 20px")}>
 <A href="/attractions/racing-simulator" style={css("position: relative; min-height: 560px; border-radius: 10px; overflow: hidden; background: #131316; display: flex; flex-direction: column; justify-content: flex-end; text-decoration: none")}>
-<img src="/images/87af79a958a3ccd899908f5b2bb8b25b.webp" alt="Driver on the pro racing simulator" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} />
+<img src="/images/87af79a958a3ccd899908f5b2bb8b25b.webp" alt="Driver on the pro racing simulator at LeMan Cave, indoor activities Norwich" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} />
 <span aria-hidden="true" style={css("position: absolute; inset: 0; background: linear-gradient(to top, rgba(9,9,11,0.97) 0%, rgba(9,9,11,0.6) 45%, rgba(9,9,11,0.1) 75%)")}></span>
 <span style={css("position: relative; padding: 40px; display: flex; flex-direction: column; gap: 14px")}>
 <span style={css(`align-self: flex-start; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: #09090B; background: ${V.accent}; padding: 6px 10px; border-radius: 3px`)}>{"PETROLHEADS"}</span>
@@ -201,7 +202,7 @@ export default class Main extends React.Component {
 <div style={css("display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 48px")}>
 <div>
 <p style={css(`margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: ${V.accent}`)}>{"01 / FOR THE PETROLHEADS"}</p>
-<h2 id="exp-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 88px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Pick your"}<br />{"machine"}</h2>
+<h2 id="exp-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 88px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Racing simulators in Norwich: pick your machine"}</h2>
 </div>
 <p style={css("margin: 0; max-width: 420px; font-size: 18px; line-height: 1.6; color: #A1A1AA")}>{"Motion rigs, live timing and a proper grid. Book by the half-hour, or take over the whole cave."}</p>
 </div>
@@ -368,7 +369,7 @@ export default class Main extends React.Component {
 <div style={css("display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 56px")}>
 <div>
 <p style={css(`margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: ${V.accent}`)}>{"06 / WHAT WE OFFER"}</p>
-<h2 id="offer-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 88px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Your race,"}<br />{"your rules"}</h2>
+<h2 id="offer-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 88px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"A private hire venue in Norwich: your race, your rules"}</h2>
 </div>
 <A href="/visit-us" style={css("border: 1px solid #52525B; color: #FFFFFF; font-weight: 600; font-size: 15px; letter-spacing: 0.06em; text-transform: uppercase; padding: 16px 26px; border-radius: 4px")}>{"Ask about packages"}</A>
 </div>

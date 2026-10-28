@@ -1,13 +1,14 @@
 import type { Metadata } from 'next';
+import { pageMeta, PageSchema } from '../../lib/seo';
 import Advertise from '../../components/Advertise';
 
-export const metadata: Metadata = {
-  title: 'Advertise at LeMan Cave',
-  description: 'Advertise your business on the digital signage screens around LeMan Cave in Norwich. 3, 6 and 12-month packages; upload your artwork or let us create it.',
-  alternates: { canonical: '/advertise' },
-  openGraph: { title: 'Advertise at LeMan Cave | LeMan Cave Norwich', description: 'Advertise your business on the digital signage screens around LeMan Cave in Norwich.', url: '/advertise' },
-};
+export const metadata: Metadata = pageMeta('/advertise');
 
 export default function Page() {
-  return <Advertise />;
+  return (
+    <>
+      <PageSchema path="/advertise" />
+      <Advertise />
+    </>
+  );
 }

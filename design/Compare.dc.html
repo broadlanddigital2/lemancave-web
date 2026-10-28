@@ -37,8 +37,8 @@ body{margin:0}
 <nav aria-label="Breadcrumb" style="font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px">
 <a href="Main.dc.html" style="color: #A1A1AA; text-decoration: none">HOME</a> <span aria-hidden="true">/</span> <a href="Blog.dc.html" style="color: #A1A1AA; text-decoration: none">BLOG &amp; GUIDES</a> <span aria-hidden="true">/</span> <span style="color: #ED2835">{{c.crumb}}</span>
 </nav>
-<p style="margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 14px; letter-spacing: 0.16em; color: #FFC233">COMPARISON · {{c.kicker}}</p>
-<h1 id="c-h" style="margin: 0; max-width: 1080px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(56px, 8vw, 116px); line-height: 0.9; color: #FFFFFF; text-transform: uppercase">{{c.a}} <span style="color: #ED2835">vs</span> {{c.b}}</h1>
+<h1 id="c-h" style="margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 500; line-height: 1.5; letter-spacing: 0.16em; color: #FFC233; text-transform: uppercase">{{c.h1}}</h1>
+<p style="margin: 0; max-width: 1080px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(56px, 8vw, 116px); line-height: 0.9; color: #FFFFFF; text-transform: uppercase">{{c.a}} <span style="color: #ED2835">vs</span> {{c.b}}</p>
 <p style="margin: 24px 0 0; max-width: 720px; font-size: 20px; line-height: 1.55; color: #D4D4D8">{{c.intro}}</p>
 </div>
 </section>
@@ -66,7 +66,7 @@ body{margin:0}
 <!-- TABLE -->
 <section id="table" class="lc-section" aria-labelledby="t-h" style="max-width: 1360px; margin: 0 auto; padding: 90px 40px 0">
 <p style="margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: #ED2835">01 / SIDE BY SIDE</p>
-<h2 id="t-h" style="margin: 0 0 30px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(40px, 5vw, 64px); line-height: 0.95; color: #FFFFFF; text-transform: uppercase">How they compare</h2>
+<h2 id="t-h" style="margin: 0 0 30px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(40px, 5vw, 64px); line-height: 0.95; color: #FFFFFF; text-transform: uppercase">{{c.tableTitle}}</h2>
 <div style="overflow-x: auto; border: 1px solid #27272A; border-radius: 10px">
 <table style="width: 100%; min-width: 640px; border-collapse: collapse; font-size: 16px">
 <thead><tr style="background: #131316">
@@ -92,7 +92,7 @@ body{margin:0}
 <!-- BEST FOR -->
 <section id="best-for" class="lc-section" aria-labelledby="b-h" style="max-width: 1360px; margin: 0 auto; padding: 90px 40px 0">
 <p style="margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: #ED2835">02 / BEST FOR</p>
-<h2 id="b-h" style="margin: 0 0 30px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(40px, 5vw, 64px); line-height: 0.95; color: #FFFFFF; text-transform: uppercase">Which one is for you?</h2>
+<h2 id="b-h" style="margin: 0 0 30px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(40px, 5vw, 64px); line-height: 0.95; color: #FFFFFF; text-transform: uppercase">{{c.whichTitle}}</h2>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px">
 <sc-for list="{{best}}" as="b" hint-placeholder-count="3">
 <a href="{{b.href}}" style="display: flex; flex-direction: column; gap: 10px; padding: 30px; border-radius: 8px; background: #131316; border: 1px solid #232328; text-decoration: none">
@@ -262,6 +262,25 @@ class Component extends DCLogic {
         faqs: [['How long is the track?', '160ft, six lanes.'], ['Any age limit?', 'No age limits on the games.']],
         method: 'We compared lane changes, cars on track, timing and length.', sideTitle: 'Six lanes. 160ft.', sideCopy: 'Included with every whole-cave hire.', related: [['Read next', ['GuideKidsChecklist', 'GuideBirthday']], ['Book for', ['KidsParties', 'FamilyDays', 'Birthday']]] }
     };
+
+    // SEO (Oct 2026): H1 (the hero's small line), image alt and two subheadings carry each comparison's keywords
+    // (seo/keywords.json in the site repo; also in the CRM SEO optimiser). [h1, alt, tableTitle, whichTitle]
+    const SEO = {
+      karting: ['Sim racing vs karting · compared', 'A full-motion simulator: sim racing vs karting', 'Karting or sim racing? How they compare', 'The indoor karting alternative: which is for you?'],
+      '4kvr': ['4K vs VR racing · compared', 'A full-motion rig set up for 4K vs VR racing', 'VR racing in Norwich: how they compare', 'Which VR racing simulator setup is for you?'],
+      motionstatic: ['Motion vs static simulator · compared', 'Hands on the wheel: motion vs static simulator', 'Motion simulator in Norwich vs static: how they compare', 'Static racing simulator or motion: which is for you?'],
+      simvshire: ['Sim room vs whole cave hire · compared', 'The whole venue: sim room vs whole cave hire', 'Racing simulator hire in Norwich: how they compare', 'Private hire in Norwich or a sim room: which is for you?'],
+      saturday: ['Saturday party packages Norwich · compared', 'Pizza from one of the Saturday party packages Norwich groups book', 'Bring Your Own drinks package: how they compare', 'Pizza party package or rooms only: which is for you?'],
+      indoor: ['Best indoor activities Norwich · compared', 'Arcade rivalry, one of the best indoor activities Norwich offers', 'Bowling vs escape room vs sim racing: how they compare', 'Group activities compared: which is for you?'],
+      teambuilding: ['Team building activities compared', 'Team round the Scalextric: team building activities compared', 'Team building ideas: how they compare', 'Corporate team activities: which is for you?'],
+      partyvenues: ['Party venues Norwich compared', 'A group on the podium: party venues Norwich compared', 'Best party venues Norwich: how they compare', 'Party venue ideas in Norwich: which is for you?'],
+      scalextric: ['Digital vs classic Scalextric · compared', 'Slot cars through a bend: digital vs classic Scalextric', 'Digital Scalextric: how they compare', 'Scalextric racing: which is for you?'],
+    };
+    Object.keys(C).forEach((k) => {
+      const x = SEO[k] || ['Comparison · ' + (C[k].kicker || ''), '', 'How they compare', 'Which one is for you?'];
+      C[k] = { ...C[k], h1: x[0], tableTitle: x[2], whichTitle: x[3] };
+      if (x[1]) C[k].imageAlt = x[1];
+    });
     const slug = C[this.props.slug] ? this.props.slug : 'karting';
     const c = C[slug];
     const tagOf = (href) => { const h = href.replace('.dc.html', ''); if (h.startsWith('Compare')) return ['COMPARISON', '#FFC233']; if (h.startsWith('Guide')) return ['GUIDE', '#ED2835']; if (h.startsWith('For') || h === 'Accessibility') return ['WHO IT’S FOR', '#60A5FA']; if (['Norwich','Norfolk','Wroxham','Cromer','GreatYarmouth','Lowestoft','Ipswich','Cambridge','EastAnglia'].includes(h)) return ['LOCATION', '#A78BFA']; if (['Pricing','OpeningTimes','TravelParking','FAQs','Visit','GiftVouchers','Food','Drinks'].includes(h)) return ['PLAN YOUR VISIT', '#4ADE80']; if (['Simulator','Scalextric','Memorabilia','Games','PS5'].includes(h)) return ['ATTRACTION', '#F472B6']; return ['HIRE TYPE', '#ED2835']; };

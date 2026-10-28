@@ -84,7 +84,8 @@ export default class Pricing extends React.Component {
 <nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
 <A href="/" style={css("color: #A1A1AA")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <span style={css(`color: ${V.accent}`)}>{"PRICE LIST"}</span>
 </nav>
-<h1 id="pr-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(64px, 10vw, 152px); line-height: 0.88; color: #FFFFFF; text-transform: uppercase")}>{"Pick your"}<br /><span style={css(`color: ${V.accent}`)}>{"grid slot."}</span></h1>
+<h1 id="pr-h" style={css("margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 500; line-height: 1.5; letter-spacing: 0.16em; color: #FFC233; text-transform: uppercase")}>{"Party packages Norwich \u00b7 prices"}</h1>
+<p style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(64px, 10vw, 152px); line-height: 0.88; color: #FFFFFF; text-transform: uppercase")}>{"Pick your"}<br /><span style={css(`color: ${V.accent}`)}>{"grid slot."}</span></p>
 <p style={css("margin: 28px 0 0; max-width: 600px; font-size: 20px; line-height: 1.55; color: #D4D4D8")}>{"Book the sim room by the hour, or take over the whole cave with your crew. Every price, every slot, all in one place."}</p>
 <div style={css("display: flex; flex-wrap: wrap; gap: 10px; margin-top: 36px")}>
 <A href="#sim-room" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; padding: 12px 18px; border: 1px solid #3F3F46; border-radius: 999px; color: #E4E4E7")}>{"01 SIM ROOM \u2193"}</A>
@@ -97,7 +98,7 @@ export default class Pricing extends React.Component {
 <div style={css("display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 48px")}>
 <div>
 <p style={css(`margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: ${V.accent}`)}>{"01 / SIM ROOM"}</p>
-<h2 id="sim-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 84px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"By the hour"}</h2>
+<h2 id="sim-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 84px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Racing simulator prices: by the hour"}</h2>
 </div>
 <div style={css("display: flex; flex-wrap: wrap; gap: 10px")}>
 <span style={css("font-size: 14px; font-weight: 600; letter-spacing: 0.06em; padding: 10px 16px; border: 1px solid #3F3F46; border-radius: 999px; color: #E4E4E7")}>{"1-HOUR SLOTS"}</span>
@@ -148,7 +149,7 @@ export default class Pricing extends React.Component {
 <div style={css("display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 40px")}>
 <div>
 <p style={css(`margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: ${V.accent}`)}>{"02 / WHOLE CAVE HIRE"}</p>
-<h2 id="hire-h" style={css("margin: 0 0 16px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 84px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"The whole"}<br />{"cave is yours"}</h2>
+<h2 id="hire-h" style={css("margin: 0 0 16px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 84px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Venue hire prices in Norwich: the whole cave is yours"}</h2>
 <p style={css("margin: 0; max-width: 520px; font-size: 18px; line-height: 1.6; color: #A1A1AA")}>{"Exclusive use of every room. Prices are per person, and each session has a minimum number of guests. Fewer guests? The minimum spend still applies. Tap a price to load it into the calculator."}</p>
 </div>
 <div role="group" aria-label="Filter sessions" style={css("display: flex; flex-wrap: wrap; gap: 6px; padding: 6px; border: 1px solid #27272A; border-radius: 999px; background: #09090B")}>

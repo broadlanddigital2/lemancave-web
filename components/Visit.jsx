@@ -33,12 +33,13 @@ export default class Visit extends React.Component {
 <nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
 <A href="/" style={css("color: #A1A1AA")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <span style={css("color: #ED2835")}>{"VISIT & CONTACT"}</span>
 </nav>
-<h1 id="v-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(64px, 10vw, 144px); line-height: 0.88; color: #FFFFFF; text-transform: uppercase")}>{"Find us."}<br /><span style={css("color: #ED2835")}>{"Race us."}</span></h1>
+<h1 id="v-h" style={css("margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 500; line-height: 1.5; letter-spacing: 0.16em; color: #FFC233; text-transform: uppercase")}>{"LeMan Cave Norwich \u00b7 find us & contact"}</h1>
+<p style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(64px, 10vw, 144px); line-height: 0.88; color: #FFFFFF; text-transform: uppercase")}>{"Find us."}<br /><span style={css("color: #ED2835")}>{"Race us."}</span></p>
 <p style={css("margin: 22px 0 0; max-width: 560px; font-size: 19px; line-height: 1.55; color: #D4D4D8")}>{"Everything you need to plan your visit \u2014 where we are, when we\u2019re open and how to get in touch."}</p>
 </section>
 <section className="lc-section" aria-label="Arriving at LeMan Cave" style={css("max-width: 1360px; margin: 0 auto; padding: 0 40px 24px")}>
 <div style={css("display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); grid-auto-rows: 220px; gap: 12px")}>
-<figure style={css("position: relative; margin: 0; border-radius: 10px; overflow: hidden; background: #131316; grid-row: span 2")}><img src="/images/81488339817be0029022da5ae6b67d1a.webp" alt="Guests arriving at the LeMan Cave entrance" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} /><figcaption style={css("position: absolute; left: 0; right: 0; bottom: 0; padding: 40px 18px 14px; background: linear-gradient(to top, rgba(9,9,11,0.92), transparent); font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #F4F4F5")}>{"ARRIVING AT THE CAVE"}</figcaption></figure>
+<figure style={css("position: relative; margin: 0; border-radius: 10px; overflow: hidden; background: #131316; grid-row: span 2")}><img src="/images/81488339817be0029022da5ae6b67d1a.webp" alt="Guests arriving at the LeMan Cave Norwich entrance" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} /><figcaption style={css("position: absolute; left: 0; right: 0; bottom: 0; padding: 40px 18px 14px; background: linear-gradient(to top, rgba(9,9,11,0.92), transparent); font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #F4F4F5")}>{"ARRIVING AT THE CAVE"}</figcaption></figure>
 <figure style={css("position: relative; margin: 0; border-radius: 10px; overflow: hidden; background: #131316")}><img src="/images/85db74f7ed2f4c95b0ef40a9a1a2c3a3.webp" alt="Parking right outside the entrance" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} /><figcaption style={css("position: absolute; left: 0; right: 0; bottom: 0; padding: 40px 18px 14px; background: linear-gradient(to top, rgba(9,9,11,0.92), transparent); font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #F4F4F5")}>{"FULL PARKING ON SITE"}</figcaption></figure>
 <figure style={css("position: relative; margin: 0; border-radius: 10px; overflow: hidden; background: #131316")}><img src="/images/edb999563eba8f2be9424d3acddfcea2.webp" alt="Step-free entrance with accessible parking bay" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} /><figcaption style={css("position: absolute; left: 0; right: 0; bottom: 0; padding: 40px 18px 14px; background: linear-gradient(to top, rgba(9,9,11,0.92), transparent); font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #F4F4F5")}>{"STEP-FREE ACCESS"}</figcaption></figure>
 </div>
@@ -72,7 +73,7 @@ export default class Visit extends React.Component {
 <section aria-labelledby="form-h" style={css("background: #0F0F12; border-top: 1px solid #1F1F23; border-bottom: 1px solid #1F1F23")}>
 <div className="lc-section" style={css("max-width: 1360px; margin: 0 auto; padding: 100px 40px; display: flex; flex-wrap: wrap; gap: 56px")}>
 <div style={css("flex: 1 1 340px")}>
-<h2 id="form-h" style={css("margin: 0 0 18px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(44px, 5.5vw, 80px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Send us"}<br />{"a message"}</h2>
+<h2 id="form-h" style={css("margin: 0 0 18px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(44px, 5.5vw, 80px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Contact LeMan Cave: send us a message"}</h2>
 <p style={css("margin: 0 0 24px; font-size: 18px; line-height: 1.6; color: #A1A1AA")}>{"Questions, group bookings or something custom \u2014 we\u2019ll get back to you."}</p>
 <div style={css("display: flex; flex-direction: column; gap: 8px")}>
 <A href="/faqs" style={css("color: #ED2835; font-weight: 700; font-size: 15px; letter-spacing: 0.06em; text-transform: uppercase; padding: 8px 0")}>{"Read the FAQs \u2192"}</A>
@@ -91,7 +92,7 @@ export default class Visit extends React.Component {
 </div>
 </section>
 <section className="lc-section" aria-labelledby="from-h" style={css("max-width: 1360px; margin: 0 auto; padding: 100px 40px")}>
-<h2 id="from-h" style={css("margin: 0 0 28px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 44px; color: #FFFFFF; text-transform: uppercase")}>{"Visiting from"}</h2>
+<h2 id="from-h" style={css("margin: 0 0 28px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 44px; color: #FFFFFF; text-transform: uppercase")}>{"Directions to LeMan Cave: visiting from"}</h2>
 <div style={css("display: flex; flex-wrap: wrap; gap: 10px")}>
 <A href="/locations/norwich" style={css("font-size: 15px; font-weight: 600; padding: 14px 20px; border: 1px solid #3F3F46; border-radius: 999px")}>{"Norwich \u2192"}</A>
 <A href="/locations/norfolk" style={css("font-size: 15px; font-weight: 600; padding: 14px 20px; border: 1px solid #3F3F46; border-radius: 999px")}>{"Norfolk \u2192"}</A>

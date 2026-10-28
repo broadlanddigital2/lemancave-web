@@ -38,8 +38,8 @@ body{margin:0}
 <nav aria-label="Breadcrumb" style="font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px">
 <a href="Main.dc.html" style="color: #A1A1AA; text-decoration: none">HOME</a> <span aria-hidden="true">/</span> <a href="{{p.parentHref}}" style="color: #A1A1AA; text-decoration: none">{{p.parentLabel}}</a> <span aria-hidden="true">/</span> <span style="color: {{accent}}">{{p.crumb}}</span>
 </nav>
-<p style="margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 14px; letter-spacing: 0.16em; color: {{amber}}">{{p.kicker}}</p>
-<h1 id="p-h" style="margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(64px, 10vw, 144px); line-height: 0.88; color: #FFFFFF; text-transform: uppercase">{{p.line1}}<br><span style="color: {{accent}}">{{p.line2}}</span></h1>
+<h1 id="p-h" style="margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 500; line-height: 1.5; letter-spacing: 0.16em; color: {{amber}}; text-transform: uppercase">{{p.kicker}}</h1>
+<p style="margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(64px, 10vw, 144px); line-height: 0.88; color: #FFFFFF; text-transform: uppercase">{{p.line1}}<br><span style="color: {{accent}}">{{p.line2}}</span></p>
 <p style="margin: 28px 0 0; max-width: 580px; font-size: 20px; line-height: 1.55; color: #D4D4D8">{{p.intro}}</p>
 <div style="display: flex; flex-wrap: wrap; gap: 14px; margin-top: 36px">
 <a href="https://lemancave.co.uk/book" style="background: {{accent}}; color: #09090B; font-weight: 700; font-size: 16px; letter-spacing: 0.06em; text-transform: uppercase; padding: 18px 30px; border-radius: 4px; text-decoration: none">{{p.cta}}</a>
@@ -89,7 +89,7 @@ body{margin:0}
 <section aria-labelledby="pf-h" style="position: relative; background: #0B0B0E; border-top: 1px solid #1F1F23; border-bottom: 1px solid #1F1F23; overflow: hidden">
 <div aria-hidden="true" style="position: absolute; left: 0; right: 0; top: 0; height: 8px; background: repeating-linear-gradient(90deg, #ED2835 0 40px, #09090B 40px 80px)"></div>
 <div class="lc-section" style="max-width: 1360px; margin: 0 auto; padding: 80px 40px">
-<div style="display: flex; align-items: center; gap: 16px; margin-bottom: 26px"><h2 id="pf-h" style="margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 48px; line-height: 1; color: #FFFFFF; text-transform: uppercase">Perfect for</h2><span aria-hidden="true" style="flex: 1; height: 1px; background: #27272A"></span></div>
+<div style="display: flex; align-items: center; gap: 16px; margin-bottom: 26px"><h2 id="pf-h" style="margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 48px; line-height: 1; color: #FFFFFF; text-transform: uppercase">{{p.perfectTitle}}</h2><span aria-hidden="true" style="flex: 1; height: 1px; background: #27272A"></span></div>
 <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px">
 <sc-for list="{{perfect}}" as="t" hint-placeholder-count="10">
 <a href="{{t.href}}" style="position: relative; display: flex; flex-direction: column; gap: 10px; min-height: 100px; padding: 18px 18px 16px 22px; border-radius: 8px; background: #131316; border: 1px solid #232328; text-decoration: none; overflow: hidden">
@@ -263,6 +263,21 @@ class Component extends DCLogic {
         detailImg: B('fc7112025e8ba60f1f0ccd133931c460'), detailAlt: 'Le Mans car, race suit and trophies in the memorabilia room', ctaTitle: 'Come and see it.',
         faqs: [['Can I visit just to see the memorabilia?', 'No — the memorabilia can be enjoyed as part of your venue hire only.'], ['Is the memorabilia for sale?', 'No — the collection is not for sale.'], ['Can I take photos?', 'Yes — photos of the venue are fine. Tag us @leman.cave!']] }
     };
+
+    // SEO (Oct 2026): H1 (the hero's small line), hero alt and two subheadings carry each attraction's keywords
+    // (seo/keywords.json in the site repo; also in the CRM SEO optimiser). [h1, heroAlt, detailTitle, perfectTitle]
+    const SEO = {
+      ps5: ['PS5 gaming lounge Norwich · 120in 4K', 'Friends on the Mini Cooper sofa in the PS5 gaming lounge Norwich groups love', 'Big screen gaming in Norwich: the best seat in the house', 'Perfect for a PS5 party in Norwich'],
+      pinball: ['Digital pinball Norwich · full-size cabinet', 'Hands on the flippers: digital pinball Norwich', 'A pinball machine in Norwich, flippers at the ready', 'Perfect for'],
+      pool: ['Pool table Norwich · 9ft pro table', 'The 9ft pool table under red neon: the pool table Norwich players book', 'A 9ft pool table worth the trip', 'Play pool in Norwich: perfect for'],
+      airhockey: ['Air hockey Norwich · pro-grade table', 'Two players mid-rally: air hockey Norwich', 'Head to head on the air hockey table', 'Perfect for'],
+      football: ['Table football Norwich · league-grade table', 'A league-grade table: table football Norwich', 'Every office needs a foosball table champion', 'Perfect for'],
+      arcade: ['Arcade Norwich · two-player classics', 'Two friends playing a retro cabinet: arcade Norwich', 'Old school, new rivals: a two-player arcade machine', 'Retro arcade games: perfect for'],
+      moto: ['Motorbike simulator Norwich · 1990s classic', 'A rider leaning into a corner on the motorbike simulator Norwich riders love', 'Pure 90s nostalgia: a classic motorcycle simulator', 'A motorbike racing game for real: perfect for'],
+      darts: ['Darts Norwich · automatic scoring', 'Darts in the board: darts Norwich with automatic scoring', 'Automatic scoring darts: aim for the treble twenty', 'A darts party in Norwich: perfect for'],
+      memorabilia: ['Motorsport memorabilia Norwich · on every wall', 'Race suit and helmets: motorsport memorabilia Norwich', 'Racing memorabilia: a museum you can race in', 'A motorsport collection: perfect for'],
+    };
+    Object.keys(P).forEach((k) => { const x = SEO[k]; P[k] = { ...P[k], perfectTitle: (x && x[3]) || 'Perfect for' }; if (x) Object.assign(P[k], { kicker: x[0], heroAlt: x[1], detailTitle: x[2] }); });
     const slug = P[this.props.slug] ? this.props.slug : 'pool';
     const raw = P[slug];
     const p = { ...raw,

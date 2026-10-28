@@ -54,8 +54,8 @@ export default class GiftVouchers extends React.Component {
 <nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
 <A href="/" style={css("color: #A1A1AA")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <span style={css("color: #ED2835")}>{"GIFT VOUCHERS"}</span>
 </nav>
-<p style={css("margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 14px; letter-spacing: 0.16em; color: #FFC233")}>{"THE PERFECT GIFT"}</p>
-<h1 id="gv-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(68px, 10vw, 148px); line-height: 0.86; color: #FFFFFF; text-transform: uppercase")}>{"Give them"}<br /><span style={css("color: #ED2835")}>{"pole position."}</span></h1>
+<h1 id="gv-h" style={css("margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 500; line-height: 1.5; letter-spacing: 0.16em; color: #FFC233; text-transform: uppercase")}>{"Experience gifts Norwich \u00b7 digital gift cards"}</h1>
+<p style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(68px, 10vw, 148px); line-height: 0.86; color: #FFFFFF; text-transform: uppercase")}>{"Give them"}<br /><span style={css("color: #ED2835")}>{"pole position."}</span></p>
 <p style={css("margin: 26px 0 0; max-width: 520px; font-size: 20px; line-height: 1.55; color: #D4D4D8")}>{"A LeMan Cave gift card \u2014 for petrolheads, gamers and anyone who loves a good night out. Pick any amount from \u00a310 to \u00a32,000, pay online, and we email a digital gift card with its own code, to you or straight to them."}</p>
 <A href="#buy" style={css("display: inline-block; margin-top: 34px; background: #ED2835; color: #09090B; font-weight: 700; font-size: 16px; letter-spacing: 0.06em; text-transform: uppercase; padding: 18px 30px; border-radius: 4px")}>{"Buy a gift card"}</A>
 </div>
@@ -85,7 +85,7 @@ export default class GiftVouchers extends React.Component {
 <div style={css("display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 36px")}>
 <div>
 <p style={css("margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: #ED2835")}>{"01 / BUY ONLINE"}</p>
-<h2 id="buy-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(44px, 5.5vw, 80px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Pick any"}<br />{"amount"}</h2>
+<h2 id="buy-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(44px, 5.5vw, 80px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Gift vouchers Norwich: pick any amount"}</h2>
 </div>
 <p style={css("margin: 0; max-width: 440px; font-size: 18px; line-height: 1.6; color: #A1A1AA")}>{"Sim hours, a Saturday night with the whole crew, or something towards a party: a gift card works against any LeMan Cave booking."}</p>
 </div>
@@ -100,7 +100,7 @@ export default class GiftVouchers extends React.Component {
 <section className="lc-section" aria-labelledby="faq-h" style={css("max-width: 1360px; margin: 0 auto; padding: 110px 40px; display: flex; flex-wrap: wrap; gap: 64px")}>
 <div style={css("flex: 1 1 340px")}>
 <p style={css("margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: #ED2835")}>{"03 / PIT BRIEFING"}</p>
-<h2 id="faq-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(44px, 5.5vw, 80px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Good to"}<br />{"know"}</h2>
+<h2 id="faq-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(44px, 5.5vw, 80px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Racing simulator gift voucher: good to know"}</h2>
 </div>
 <div style={css("flex: 2 1 560px; border-top: 1px solid #27272A")}>
 {(V.faqs || []).map((f, $index) => (<React.Fragment key={$index}>

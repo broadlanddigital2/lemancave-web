@@ -93,7 +93,7 @@ export default class Christmas extends React.Component {
 </nav>
 </header>
 <section aria-labelledby="xm-h" style={css("position: relative; min-height: 760px; display: flex; align-items: flex-end; background: #0E0E11; overflow: hidden")}>
-<img src="/images/336075970ba46c355a5d6ca9b2187bf9.webp" alt="Racing simulator decorated for Christmas with a tree and presents" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 60% 50%")} />
+<img src="/images/336075970ba46c355a5d6ca9b2187bf9.webp" alt="Racing simulator decorated for a Christmas party Norwich groups book, with a tree and presents" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 60% 50%")} />
 <div aria-hidden="true" style={css("position: absolute; inset: 0; background: linear-gradient(90deg, rgba(9,9,11,0.96) 0%, rgba(9,9,11,0.82) 45%, rgba(9,9,11,0.3) 78%, rgba(9,9,11,0.2) 100%)")}></div>
 <div aria-hidden="true" style={css("position: absolute; inset: 0; background-image: radial-gradient(rgba(255,255,255,0.5) 1px, transparent 1.5px), radial-gradient(rgba(255,255,255,0.3) 1px, transparent 1.5px); background-size: 90px 90px, 140px 140px; background-position: 0 0, 45px 70px; opacity: 0.5")}></div>
 <div aria-hidden="true" style={css("position: absolute; left: 0; right: 0; bottom: 0; height: 300px; background: linear-gradient(to top, #09090B 10%, transparent)")}></div>
@@ -129,8 +129,8 @@ export default class Christmas extends React.Component {
 <nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
 <A href="/" style={css("color: #A1A1AA")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <span style={css(`color: ${V.green}`)}>{"CHRISTMAS PARTIES"}</span>
 </nav>
-<p style={css(`margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 14px; letter-spacing: 0.16em; color: ${V.gold}`)}>{"CHRISTMAS PARTIES \u00b7 NOW BOOKING"}</p>
-<h1 id="xm-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(68px, 10.5vw, 160px); line-height: 0.86; color: #FFFFFF; text-transform: uppercase")}>{"The Festive"}<br /><span style={css(`color: ${V.accent}`)}>{"Grand"}</span> <span style={css(`color: ${V.green}`)}>{"Prix."}</span></h1>
+<h1 id="xm-h" style={css("margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 500; line-height: 1.5; letter-spacing: 0.16em; color: #FFC233; text-transform: uppercase")}>{"Christmas party Norwich \u00b7 now booking"}</h1>
+<p style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(68px, 10.5vw, 160px); line-height: 0.86; color: #FFFFFF; text-transform: uppercase")}>{"The Festive"}<br /><span style={css(`color: ${V.accent}`)}>{"Grand"}</span> <span style={css(`color: ${V.green}`)}>{"Prix."}</span></p>
 <p style={css("margin: 28px 0 0; max-width: 580px; font-size: 20px; line-height: 1.55; color: #D4D4D8")}>{"Swap the same old Christmas do for a race night. Take over the whole cave \u2014 simulators, Scalextric, games, pizza and your own drinks \u2014 every weeknight in December and Saturday nights through the season."}</p>
 <div style={css("display: flex; flex-wrap: wrap; gap: 14px; margin-top: 36px")}>
 <A href="#packages" style={css(`background: ${V.accent}; color: #09090B; font-weight: 700; font-size: 16px; letter-spacing: 0.06em; text-transform: uppercase; padding: 18px 30px; border-radius: 4px`)}>{"See festive packages"}</A>
@@ -174,7 +174,7 @@ export default class Christmas extends React.Component {
 <div style={css("display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 48px")}>
 <div>
 <p style={css(`margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: ${V.green}`)}>{"01 / FESTIVE PACKAGES"}</p>
-<h2 id="pk-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 84px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Pick your"}<br />{"party"}</h2>
+<h2 id="pk-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 84px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Christmas party nights in Norwich: pick your party"}</h2>
 </div>
 <p style={css("margin: 0; max-width: 460px; font-size: 18px; line-height: 1.6; color: #A1A1AA")}>{"Exclusive hire of the whole cave for 3 hours. Prices are per person with a minimum of 14 guests \u2014 fewer guests and the minimum spend still applies."}</p>
 </div>
@@ -206,7 +206,7 @@ export default class Christmas extends React.Component {
 <div className="lc-section" style={css("max-width: 1360px; margin: 0 auto; padding: 120px 40px; display: flex; flex-wrap: wrap; gap: 48px; align-items: center")}>
 <div style={css("flex: 1 1 380px")}>
 <p style={css(`margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: ${V.green}`)}>{"02 / PARTY PLANNER"}</p>
-<h2 id="calc-h" style={css("margin: 0 0 20px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 84px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"How much"}<br />{"for the team?"}</h2>
+<h2 id="calc-h" style={css("margin: 0 0 20px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 84px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Work Christmas party in Norwich: how much for the team?"}</h2>
 <p style={css("margin: 0; font-size: 18px; line-height: 1.6; color: #A1A1AA")}>{"Choose a package above, set your headcount and get an instant total for your Christmas do."}</p>
 </div>
 <div style={css("flex: 1.2 1 480px; border-radius: 10px; overflow: hidden; border: 1px solid #27272A; background: #0B0B0E; font-family: 'JetBrains Mono', monospace")}>
@@ -237,7 +237,7 @@ export default class Christmas extends React.Component {
 <div style={css("display: flex; flex-wrap: wrap; gap: 64px")}>
 <div style={css("flex: 1 1 360px")}>
 <p style={css(`margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: ${V.green}`)}>{"03 / THE BIG NIGHT"}</p>
-<h2 id="run-h" style={css("margin: 0 0 24px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 84px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Your Christmas"}<br />{"race night"}</h2>
+<h2 id="run-h" style={css("margin: 0 0 24px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 84px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"A Christmas party venue in Norwich, built for race night"}</h2>
 <p style={css("margin: 0 0 18px; font-size: 18px; line-height: 1.6; color: #A1A1AA")}>{"An example of how three festive hours could run. We\u2019ll tailor the night to your group."}</p>
 <div style={css("height: 320px; border-radius: 8px; position: relative; overflow: hidden; background: #131316")}><img src="/images/1131d4f1ed0b4b6378f15643e4164a65.webp" alt="Friends racing Scalextric at a Christmas party" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 100%")} /></div>
 </div>

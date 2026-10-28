@@ -73,14 +73,15 @@ export default class Corporate extends React.Component {
 </nav>
 </header>
 <section aria-labelledby="co-h" style={css("position: relative; min-height: 700px; display: flex; align-items: flex-end; background: #0E0E11; overflow: hidden")}>
-<img src="/images/2680ca5597d3d10ef956cf0b8239d676.webp" alt="Colleague racing the simulator while the team cheers" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%")} />
+<img src="/images/2680ca5597d3d10ef956cf0b8239d676.webp" alt="Colleague racing the simulator while the team cheers at one of our corporate events Norwich teams book" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%")} />
 <div aria-hidden="true" style={css("position: absolute; inset: 0; background: linear-gradient(90deg, rgba(9,9,11,0.95) 0%, rgba(9,9,11,0.8) 45%, rgba(9,9,11,0.35) 80%, rgba(9,9,11,0.25) 100%)")}></div>
 <div aria-hidden="true" style={css("position: absolute; left: 0; right: 0; bottom: 0; height: 300px; background: linear-gradient(to top, #09090B 10%, transparent)")}></div>
 <div className="lc-section" style={css("position: relative; max-width: 1360px; width: 100%; margin: 0 auto; padding: 140px 40px 64px; box-sizing: border-box")}>
 <nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
 <A href="/" style={css("color: #A1A1AA")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <span style={css(`color: ${V.accent}`)}>{"CORPORATE EVENTS"}</span>
 </nav>
-<h1 id="co-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(64px, 10vw, 144px); line-height: 0.88; color: #FFFFFF; text-transform: uppercase")}>{"Team day?"}<br /><span style={css(`color: ${V.accent}`)}>{"Race day."}</span></h1>
+<h1 id="co-h" style={css("margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 500; line-height: 1.5; letter-spacing: 0.16em; color: #FFC233; text-transform: uppercase")}>{"Corporate events Norwich \u00b7 team days & client hospitality"}</h1>
+<p style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(64px, 10vw, 144px); line-height: 0.88; color: #FFFFFF; text-transform: uppercase")}>{"Team day?"}<br /><span style={css(`color: ${V.accent}`)}>{"Race day."}</span></p>
 <p style={css("margin: 28px 0 0; max-width: 600px; font-size: 20px; line-height: 1.55; color: #D4D4D8")}>{"Team building, client entertaining and away days in Norwich\u2019s motorsport venue. Pro simulators, digital Scalextric and games \u2014 tailored to your group."}</p>
 <div style={css("display: flex; flex-wrap: wrap; gap: 14px; margin-top: 36px")}>
 <A href="#enquire" style={css(`background: ${V.accent}; color: #09090B; font-weight: 700; font-size: 16px; letter-spacing: 0.06em; text-transform: uppercase; padding: 18px 30px; border-radius: 4px`)}>{"Plan your event"}</A>
@@ -92,7 +93,7 @@ export default class Corporate extends React.Component {
 <div style={css("display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 48px")}>
 <div>
 <p style={css(`margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: ${V.accent}`)}>{"01 / EVENTS"}</p>
-<h2 id="types-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 84px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Built for"}<br />{"business"}</h2>
+<h2 id="types-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 84px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"A corporate event venue in Norwich, built for business"}</h2>
 </div>
 <p style={css("margin: 0; max-width: 440px; font-size: 18px; line-height: 1.6; color: #A1A1AA")}>{"Every package is tailored. Tell us your group, your goals and your timings \u2014 we\u2019ll build the day around them."}</p>
 </div>
@@ -122,7 +123,7 @@ export default class Corporate extends React.Component {
 <section aria-labelledby="inc-h" style={css("background: #0F0F12; border-top: 1px solid #1F1F23; border-bottom: 1px solid #1F1F23")}>
 <div className="lc-section" style={css("max-width: 1360px; margin: 0 auto; padding: 120px 40px")}>
 <p style={css(`margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: ${V.accent}`)}>{"02 / ON THE GRID"}</p>
-<h2 id="inc-h" style={css("margin: 0 0 48px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 84px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Mix your"}<br />{"own day"}</h2>
+<h2 id="inc-h" style={css("margin: 0 0 48px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 84px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Staff party ideas in Norwich: mix your own day"}</h2>
 <div style={css("display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px")}>
 <A href="/attractions/racing-simulator" style={css("position: relative; height: 340px; border-radius: 8px; overflow: hidden; background: #131316; display: block")}>
 <img src="/images/e0f543b4818c089dbaa999e13ff06616.webp" alt="" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} />
@@ -184,7 +185,7 @@ export default class Corporate extends React.Component {
 <div style={css("flex: 1 1 360px; display: flex; flex-direction: column; gap: 28px")}>
 <div>
 <p style={css(`margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: ${V.accent}`)}>{"04 / ENQUIRE"}</p>
-<h2 id="enq-h" style={css("margin: 0 0 18px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 84px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Plan your"}<br />{"event"}</h2>
+<h2 id="enq-h" style={css("margin: 0 0 18px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 84px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Corporate entertainment in Norwich: plan your event"}</h2>
 <p style={css("margin: 0; font-size: 18px; line-height: 1.6; color: #A1A1AA")}>{"Tell us a little about your group and we\u2019ll come back with a tailored package."}</p>
 </div>
 <div style={css("display: flex; flex-direction: column; border-top: 1px solid #27272A")}>

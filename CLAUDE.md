@@ -104,6 +104,12 @@ Whole-cave prices are per person, with a minimum spend that still applies if few
 - **Customer account** (`/account`, header account icon; `/login` redirects there): `<CrmBooking mode="account" />`: bookings, invoices with Pay now, gift cards, screen adverts (status, artwork upload, quote/pay, preview approval), account details. Email-code sign-in.
 - The Auto Opulence site (`broadlanddigital2/autoopulence`) uses the same Cloudflare and CRM pattern. Use it as the reference.
 
+## SEO (Oct 2026)
+- **Keywords**: `seo/keywords.json` maps every page to one primary and up to 3 secondary keywords (from the "LeMan Cave Keyword List" doc). The same list is in the CRM (`seo_page_keywords`, site "LeMan Cave"), where Marketing → SEO optimiser scores each page against it. If you change a page's keywords, change both.
+- **Titles and descriptions**: `seo/meta.json`, read by `lib/seo.tsx` (`pageMeta(path)` for metadata and share image; `<PageSchema path>` for WebPage + BreadcrumbList JSON-LD). Every `app/**/page.tsx` uses them; new pages need an entry in both JSON files.
+- **On the page**: each template has an `SEO` overlay in its design file (Landing, Guide, Compare, Product, Hub) setting the H1, hero alt text and keyword subheadings per slug; one-off pages have them in their own design file. The hero's small line is the H1 (keyword) and the big display headline is a styled `<p>`.
+- The CRM checks the preview until go-live (`seo_sites.profile.audit_origin`). **At go-live** remove `audit_origin` so the weekly check reads lemancave.co.uk.
+
 ## Related Claude artifacts and docs
 - **Design canvas**: Claude Design artifact "LeMan Cave Website", with all pages as boards.
 - **SEO scope doc**: "4-Tier SEO Scope" (Claude Docs).

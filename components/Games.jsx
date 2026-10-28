@@ -68,14 +68,15 @@ export default class Games extends React.Component {
 </nav>
 </header>
 <section aria-labelledby="gm-h" style={css("position: relative; min-height: 680px; display: flex; align-items: flex-end; background: #0E0E11; overflow: hidden")}>
-<img src="/images/9dc6e1e4d0002cd48daa24a834848cbd.webp" alt="Friends on the Mini Cooper sofa playing a racing game on the 120-inch screen" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 70% 50%")} />
+<img src="/images/9dc6e1e4d0002cd48daa24a834848cbd.webp" alt="Friends on the Mini Cooper sofa playing a racing game on the 120-inch screen, among the arcade games Norwich groups love" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 70% 50%")} />
 <div aria-hidden="true" style={css("position: absolute; inset: 0; background: linear-gradient(90deg, rgba(9,9,11,0.94) 0%, rgba(9,9,11,0.75) 40%, rgba(9,9,11,0.2) 72%, rgba(9,9,11,0.1) 100%)")}></div>
 <div aria-hidden="true" style={css("position: absolute; left: 0; right: 0; bottom: 0; height: 300px; background: linear-gradient(to top, #09090B 10%, transparent)")}></div>
 <div className="lc-section" style={css("position: relative; max-width: 1360px; width: 100%; margin: 0 auto; padding: 140px 40px 64px; box-sizing: border-box")}>
 <nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
 <A href="/" style={css("color: #A1A1AA")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <A href="/attractions" style={css("color: #A1A1AA")}>{"EXPERIENCES"}</A> <span aria-hidden="true">{"/"}</span> <span style={css(`color: ${V.accent}`)}>{"GAMES & ARCADE"}</span>
 </nav>
-<h1 id="gm-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(64px, 10vw, 152px); line-height: 0.88; color: #FFFFFF; text-transform: uppercase")}>{"Player two"}<br /><span style={css(`color: ${V.accent}`)}>{"has entered."}</span></h1>
+<h1 id="gm-h" style={css("margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 500; line-height: 1.5; letter-spacing: 0.16em; color: #FFC233; text-transform: uppercase")}>{"Arcade games Norwich \u00b7 PS5, pinball, pool & more"}</h1>
+<p style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(64px, 10vw, 152px); line-height: 0.88; color: #FFFFFF; text-transform: uppercase")}>{"Player two"}<br /><span style={css(`color: ${V.accent}`)}>{"has entered."}</span></p>
 <p style={css("margin: 28px 0 0; max-width: 560px; font-size: 20px; line-height: 1.55; color: #D4D4D8")}>{"Big-screen PS5, digital pinball, a 9ft slate pool table, air hockey, table football and two-player arcade classics. No licence required."}</p>
 <div style={css("display: flex; flex-wrap: wrap; gap: 14px; margin-top: 36px")}>
 <A href="/book" style={css(`background: ${V.accent}; color: #09090B; font-weight: 700; font-size: 16px; letter-spacing: 0.06em; text-transform: uppercase; padding: 18px 30px; border-radius: 4px`)}>{"Book your visit"}</A>
@@ -107,7 +108,7 @@ export default class Games extends React.Component {
 <div style={css("display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 40px")}>
 <div>
 <p style={css(`margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: ${V.accent}`)}>{"01 / THE GAMES"}</p>
-<h2 id="all-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 84px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Choose your"}<br />{"game"}</h2>
+<h2 id="all-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 84px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"A games room in Norwich: choose your game"}</h2>
 </div>
 <div role="group" aria-label="Filter games" style={css("display: flex; flex-wrap: wrap; gap: 6px; padding: 6px; border: 1px solid #27272A; border-radius: 999px; background: #0F0F12")}>
 {(V.filters || []).map((f, $index) => (<React.Fragment key={$index}>
@@ -137,7 +138,7 @@ export default class Games extends React.Component {
 </div>
 <div style={css("flex: 1 1 400px")}>
 <p style={css(`margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: ${V.accent}`)}>{"02 / THE LOUNGE"}</p>
-<h2 id="sofa-h" style={css("margin: 0 0 24px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 80px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Best seat"}<br />{"in the house"}</h2>
+<h2 id="sofa-h" style={css("margin: 0 0 24px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 80px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"A gaming venue in Norwich with the best seat in the house"}</h2>
 <p style={css("margin: 0 0 18px; font-size: 19px; line-height: 1.65; color: #D4D4D8")}>{"Sink into a sofa built from a converted Mini Cooper and take on your mates on a 120-inch 4K screen."}</p>
 <p style={css("margin: 0; font-size: 19px; line-height: 1.65; color: #A1A1AA")}>{"PS5 with a selection of games. Full game list coming soon. [TBC]"}</p>
 </div>

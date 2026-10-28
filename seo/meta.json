@@ -1,0 +1,366 @@
+{
+ "/": {
+  "title": "Indoor Activities Norwich: Racing Sims & Parties",
+  "description": "Indoor activities Norwich groups love: pro racing simulators, a 160ft digital Scalextric, arcade games and private hire for parties of up to 50. Pre-book only."
+ },
+ "/attractions": {
+  "title": "Indoor Attractions Norwich: Sims & Games",
+  "description": "Indoor attractions Norwich-wide favourites under one roof: motion racing simulators, a six-lane digital Scalextric, motorbike sim, PS5 lounge, pool and darts."
+ },
+ "/parties-and-events": {
+  "title": "Parties and Events Norwich: Private Hire",
+  "description": "Parties and events Norwich groups remember: birthdays, stag and hen dos, team days and Christmas with racing sims, Scalextric and games. Hire for up to 50."
+ },
+ "/venue-hire": {
+  "title": "Party Venue Norwich: Exclusive Venue Hire",
+  "description": "Party venue Norwich groups hire whole: racing simulators, digital Scalextric, games and Bring Your Own drinks for up to 50 guests. Saturday packages from £45pp."
+ },
+ "/food": {
+  "title": "Pizza Party Norwich: Pit-Stop Pizza Packages",
+  "description": "Pizza party Norwich style: add pit-stop pizza to a Saturday whole-cave package at LeMan Cave, with dietary options. Bring Your Own drinks, glasses and ice provided."
+ },
+ "/drinks": {
+  "title": "Bring Your Own Drinks Venue Norwich",
+  "description": "Bring Your Own drinks venue Norwich: drop drinks off to be pre-chilled or bring them on the day. Glasses and ice provided at every LeMan Cave private party."
+ },
+ "/prices": {
+  "title": "Party Packages Norwich: LeMan Cave Prices",
+  "description": "Party packages Norwich prices: whole-cave packages from £45 per person with a minimum spend, racing simulator prices from £80 an hour. 25% deposit to book."
+ },
+ "/gallery": {
+  "title": "LeMan Cave Photos: Inside the Cave",
+  "description": "LeMan Cave photos from inside our Norwich venue: racing simulators, the 160ft digital Scalextric, arcade games, parties and motorsport memorabilia."
+ },
+ "/visit-us": {
+  "title": "LeMan Cave Norwich: Find Us & Contact",
+  "description": "LeMan Cave Norwich is at Unit 1, Consensus House, St Faith's Rd, NR6 7BW, with free parking on site. Call 01603 517080 or email bookings@lemancave.co.uk to book."
+ },
+ "/corporate-events": {
+  "title": "Corporate Events Norwich: Venue Hire",
+  "description": "Corporate events Norwich teams enjoy: racing simulators, Scalextric tournaments and arcade games. Exclusive hire for up to 50, catering and drinks, easy parking."
+ },
+ "/christmas-parties": {
+  "title": "Christmas Party Norwich: Festive Grand Prix",
+  "description": "Christmas party Norwich nights: racing simulators, Scalextric, pizza and Bring Your Own drinks. Every weeknight in December and Saturdays, from £45 per person."
+ },
+ "/gift-vouchers": {
+  "title": "Experience Gifts Norwich: Gift Cards",
+  "description": "Experience gifts Norwich racers love: digital LeMan Cave gift cards from £10 to £2,000, emailed instantly and valid for 12 months on sim sessions and parties."
+ },
+ "/attractions/racing-simulator": {
+  "title": "Racing Simulator Norwich: Pro Motion Sims",
+  "description": "Racing simulator Norwich: 4 DOF full-motion sims with direct-drive wheels, in 4K or VR. Book a sim room session from £80 an hour or hire the whole cave."
+ },
+ "/attractions/digital-scalextric": {
+  "title": "Scalextric Track Norwich: 160ft Digital",
+  "description": "Scalextric track Norwich: 160ft and six lanes of digital Scalextric with lane changing and lap timing, included with every whole-cave booking at LeMan Cave."
+ },
+ "/attractions/games-and-arcade": {
+  "title": "Arcade Games Norwich: Games Room & Arcade",
+  "description": "Arcade games Norwich: two-player arcade, digital pinball, air hockey, table football, pool and automatic-scoring darts, all included with venue hire."
+ },
+ "/attractions/motorcycle-simulator": {
+  "title": "Motorbike Simulator Norwich: 1990s Bike Sim",
+  "description": "Motorbike simulator Norwich: ride our classic 1990s bike sim, lean into the corners and race your friends. Included with every whole-cave booking at LeMan Cave."
+ },
+ "/attractions/ps5-lounge": {
+  "title": "PS5 Gaming Lounge Norwich: 120in Screen",
+  "description": "PS5 gaming lounge Norwich: a 120-inch screen and a Mini Cooper sofa, with PS5 games provided. Included with every whole-cave booking at LeMan Cave."
+ },
+ "/attractions/digital-pinball": {
+  "title": "Digital Pinball Norwich: Classic Tables",
+  "description": "Digital pinball Norwich: a full-size digital pinball machine loaded with classic tables, included with every whole-cave booking at LeMan Cave."
+ },
+ "/attractions/pool-table": {
+  "title": "Pool Table Norwich: 9ft Pro Pool Table",
+  "description": "Pool table Norwich: play on a 9ft pro table with cues provided, included with every whole-cave booking alongside racing simulators and arcade games."
+ },
+ "/attractions/air-hockey": {
+  "title": "Air Hockey Norwich: Fast Two-Player Table",
+  "description": "Air hockey Norwich: a fast two-player air hockey table at LeMan Cave, included with every whole-cave booking alongside racing sims and arcade games."
+ },
+ "/attractions/table-football": {
+  "title": "Table Football Norwich: Classic Foosball",
+  "description": "Table football Norwich: settle it on our classic foosball table, included with every whole-cave booking alongside racing sims, Scalextric and arcade games."
+ },
+ "/attractions/darts": {
+  "title": "Darts Norwich: Automatic Scoring Darts",
+  "description": "Darts Norwich with fully automatic scoring: no chalk, no maths, just throw. Darts are provided and included with every LeMan Cave whole-cave booking."
+ },
+ "/attractions/arcade": {
+  "title": "Arcade Norwich: Two-Player Arcade Machine",
+  "description": "Arcade Norwich: a two-player arcade machine packed with retro classics at LeMan Cave, included with every whole-cave booking and party package."
+ },
+ "/attractions/memorabilia": {
+  "title": "Motorsport Memorabilia Norwich",
+  "description": "Motorsport memorabilia Norwich: racing helmets, signs and collectables on display around LeMan Cave for venue hire guests. Photos welcome, nothing for sale."
+ },
+ "/birthday-parties": {
+  "title": "Birthday Party Venue Norwich: Racing Parties",
+  "description": "Birthday party venue Norwich: hire the whole cave for racing sims, Scalextric, arcade games, pizza and Bring Your Own drinks. Up to 50 guests, from £45pp."
+ },
+ "/kids-parties": {
+  "title": "Kids Party Venue Norwich: Racing Parties",
+  "description": "Kids party venue Norwich: static-mode racing sims, a 160ft digital Scalextric, arcade games and pizza for up to 50. After School Special from £40 per person."
+ },
+ "/teen-parties": {
+  "title": "Teenage Party Ideas Norwich: Racing & Gaming",
+  "description": "Teenage party ideas Norwich: racing sims in static mode, Scalextric, PS5 on a 120-inch screen and arcade games. A teen birthday party venue with pizza."
+ },
+ "/stag-do-norwich": {
+  "title": "Stag Do Norwich: Racing Sims & Games",
+  "description": "Stag do Norwich: race motion simulators, battle on a 160ft Scalextric and play pool and darts with Bring Your Own drinks. Private hire for up to 50, from £45pp."
+ },
+ "/hen-do-norfolk": {
+  "title": "Hen Do Norwich: Racing Simulators & Games",
+  "description": "Hen do Norwich: racing simulators, Scalextric, arcade games, pizza and Bring Your Own drinks for your group. Exclusive hire, Saturday packages from £45pp."
+ },
+ "/team-building": {
+  "title": "Team Building Norwich: Racing Team Days",
+  "description": "Team building Norwich: racing simulator tournaments, Scalextric team races and arcade challenges. Team building activities in Norfolk for up to 50 people."
+ },
+ "/client-entertaining": {
+  "title": "Corporate Hospitality Norwich",
+  "description": "Corporate hospitality Norwich: entertain clients with racing sims, Scalextric and games at an exclusive-hire venue with catering, drinks and on-site parking."
+ },
+ "/leaving-and-retirement-parties": {
+  "title": "Leaving Do Ideas Norwich: Leaving Parties",
+  "description": "Leaving do ideas Norwich: send colleagues off with racing sims, Scalextric, pizza and Bring Your Own drinks. A retirement party venue for up to 50 people."
+ },
+ "/family-days-out": {
+  "title": "Family Days Out Norfolk: Racing for All Ages",
+  "description": "Family days out Norfolk: racing sims, a 160ft digital Scalextric and arcade games for all ages at LeMan Cave. Pre-book a sim room or hire the whole cave."
+ },
+ "/group-nights-out": {
+  "title": "Night Out Norwich: Group Racing Nights",
+  "description": "Night out Norwich with a difference: race simulators, Scalextric and arcade games with Bring Your Own drinks. Saturday nights from £45 per person, up to 50."
+ },
+ "/group-bookings": {
+  "title": "Group Activities Norwich: Group Bookings",
+  "description": "Group activities Norwich for 10 to 50 people: racing simulators, Scalextric, pool, darts and arcade games, with pizza and Bring Your Own drinks."
+ },
+ "/car-club-meets": {
+  "title": "Car Club Meet Venue Norfolk",
+  "description": "Car club meet venue Norfolk: the Saturday morning Car Club Special at LeMan Cave, with racing sims, Scalextric and memorabilia, from £45 per person."
+ },
+ "/club-socials": {
+  "title": "Club Social Ideas Norfolk: Club Nights",
+  "description": "Club social ideas Norfolk: take over LeMan Cave for a sports club social with racing sim tournaments, Scalextric, darts, pizza and Bring Your Own drinks."
+ },
+ "/who-its-for/families": {
+  "title": "Family Entertainment Norwich: All Ages Fun",
+  "description": "Family entertainment Norwich: racing sims, a 160ft Scalextric, PS5 and arcade games for kids and adults. No age limits; under-16s race in static mode."
+ },
+ "/who-its-for/friends": {
+  "title": "Things to Do with Friends in Norwich",
+  "description": "Things to do with friends in Norwich: race each other on motion simulators and Scalextric, then pool, darts and arcade games. Pre-book a session or the whole cave."
+ },
+ "/who-its-for/corporate-teams": {
+  "title": "Corporate Team Activities Norwich",
+  "description": "Corporate team activities Norwich: racing simulator leagues, Scalextric relays and arcade challenges for team days and work socials of up to 50 people."
+ },
+ "/who-its-for/motorsport-fans": {
+  "title": "Motorsport Experience Norwich: Pro Sims",
+  "description": "Motorsport experience Norwich: pro motion simulators with direct-drive wheels, a 160ft digital Scalextric and memorabilia. A racing experience in Norfolk."
+ },
+ "/who-its-for/gamers": {
+  "title": "Gaming Venue Norwich: Sims, PS5 & Arcade",
+  "description": "Gaming venue Norwich: racing simulators in 4K or VR, PS5 on a 120-inch screen, digital pinball and a two-player arcade. Great for gaming parties."
+ },
+ "/who-its-for/non-petrolheads": {
+  "title": "Fun Group Activities Norwich: Not Into Cars?",
+  "description": "Fun group activities Norwich for people who aren't into cars: Scalextric, pool, darts, air hockey, PS5 and arcade games alongside the racing sims."
+ },
+ "/who-its-for/tourists": {
+  "title": "Rainy Day Activities Norwich: Indoor Fun",
+  "description": "Rainy day activities Norwich: pre-book racing simulators, Scalextric and arcade games at LeMan Cave, 4 miles from the city centre with free parking."
+ },
+ "/who-its-for/locals": {
+  "title": "Things to Do in Norwich for Adults",
+  "description": "Things to do in Norwich for adults: racing simulator sessions, group nights out with Bring Your Own drinks and private parties at LeMan Cave, NR6 7BW."
+ },
+ "/accessibility": {
+  "title": "Accessible Activities Norwich: Access Guide",
+  "description": "Accessible activities Norwich: LeMan Cave is a fully accessible venue with on-site parking. Read how to visit and what to tell us before you book."
+ },
+ "/locations": {
+  "title": "Party Venue East Anglia: Racing in Norwich",
+  "description": "Party venue East Anglia groups travel for: racing sims, Scalextric and games in Norwich for groups from Norfolk, Suffolk and Cambridgeshire. Find your route."
+ },
+ "/locations/norwich": {
+  "title": "Things to Do in Norwich for Groups",
+  "description": "Things to do in Norwich for groups: racing simulators, a 160ft Scalextric and arcade games at LeMan Cave, NR6 7BW. Party ideas and team days out in Norwich."
+ },
+ "/locations/norfolk": {
+  "title": "Party Venue Norfolk: Racing Sims & Games",
+  "description": "Party venue Norfolk: birthdays, stag dos and team building with racing simulators, Scalextric and arcade games in Norwich, with free parking on site."
+ },
+ "/locations/wroxham": {
+  "title": "Party Venue Near Wroxham: Racing & Parties",
+  "description": "Party venue near Wroxham: birthday parties, stag dos and team building at LeMan Cave in Norwich, with racing simulators, Scalextric and free parking on site."
+ },
+ "/locations/aylsham": {
+  "title": "Party Venue Near Aylsham: Racing & Parties",
+  "description": "Party venue near Aylsham: birthday parties, stag dos and team building at LeMan Cave in Norwich, with racing simulators, Scalextric and free parking on site."
+ },
+ "/locations/wymondham": {
+  "title": "Party Venue Near Wymondham",
+  "description": "Party venue near Wymondham: birthday parties, stag dos and team building at LeMan Cave in Norwich, with racing simulators, Scalextric and free parking on site."
+ },
+ "/locations/north-walsham": {
+  "title": "Party Venue Near North Walsham",
+  "description": "Party venue near North Walsham: birthday parties, stag dos and team building at LeMan Cave in Norwich, with racing simulators, Scalextric and free parking on site."
+ },
+ "/locations/dereham": {
+  "title": "Party Venue Near Dereham: Racing & Parties",
+  "description": "Party venue near Dereham: birthday parties, stag dos and team building at LeMan Cave in Norwich, with racing simulators, Scalextric and free parking on site."
+ },
+ "/locations/cromer": {
+  "title": "Party Venue Near Cromer: Racing & Parties",
+  "description": "Party venue near Cromer: birthday parties, stag dos and team building at LeMan Cave in Norwich, with racing simulators, Scalextric and free parking on site."
+ },
+ "/locations/great-yarmouth": {
+  "title": "Party Venue Near Great Yarmouth",
+  "description": "Party venue near Great Yarmouth: birthday parties, stag dos and team building at LeMan Cave in Norwich, with racing simulators, Scalextric and free parking on site."
+ },
+ "/locations/diss": {
+  "title": "Party Venue Near Diss: Racing & Parties",
+  "description": "Party venue near Diss: birthday parties, stag dos and team building at LeMan Cave in Norwich, with racing simulators, Scalextric and free parking on site."
+ },
+ "/locations/beccles": {
+  "title": "Party Venue Near Beccles: Racing & Parties",
+  "description": "Party venue near Beccles: birthday parties, stag dos and team building at LeMan Cave in Norwich, with racing simulators, Scalextric and free parking on site."
+ },
+ "/locations/lowestoft": {
+  "title": "Party Venue Near Lowestoft",
+  "description": "Party venue near Lowestoft: birthday parties, stag dos and team building at LeMan Cave in Norwich, with racing simulators, Scalextric and free parking on site."
+ },
+ "/locations/thetford": {
+  "title": "Party Venue Near Thetford",
+  "description": "Party venue near Thetford: birthday parties, stag dos and team building at LeMan Cave in Norwich, with racing simulators, Scalextric and free parking on site."
+ },
+ "/locations/kings-lynn": {
+  "title": "Party Venue Near Kings Lynn",
+  "description": "Party venue near Kings Lynn: birthday parties, stag dos and team building at LeMan Cave in Norwich, with racing simulators, Scalextric and free parking on site."
+ },
+ "/locations/ipswich": {
+  "title": "Party Venue Near Ipswich: Racing & Parties",
+  "description": "Party venue near Ipswich: birthday parties, stag dos and team building at LeMan Cave in Norwich, with racing simulators, Scalextric and free parking on site."
+ },
+ "/locations/bury-st-edmunds": {
+  "title": "Party Venue Near Bury St Edmunds",
+  "description": "Party venue near Bury St Edmunds: birthday parties, stag dos and team building at LeMan Cave in Norwich, with racing simulators, Scalextric and free parking on site."
+ },
+ "/locations/cambridge": {
+  "title": "Party Venue Near Cambridge",
+  "description": "Party venue near Cambridge: birthday parties, stag dos and team building at LeMan Cave in Norwich, with racing simulators, Scalextric and free parking on site."
+ },
+ "/guides": {
+  "title": "Party Planning Guides: LeMan Cave Blog",
+  "description": "Party planning guides and checklists from LeMan Cave: birthday and kids party ideas, stag and hen planning, team events, sim racing tips and Christmas parties."
+ },
+ "/faqs": {
+  "title": "LeMan Cave FAQs: Booking, Ages & Parties",
+  "description": "LeMan Cave FAQs: racing simulator questions, age rules, deposits, food and Bring Your Own drinks, and party booking questions answered in one place."
+ },
+ "/opening-times": {
+  "title": "LeMan Cave Opening Times",
+  "description": "LeMan Cave opening times: Monday to Friday 06:30 to 21:30, Saturday 10:00 to 21:00, Sunday by request. All racing simulator and party bookings are pre-booked."
+ },
+ "/travel-and-parking": {
+  "title": "LeMan Cave Parking & Directions",
+  "description": "LeMan Cave parking and directions: full free parking on site at Consensus House, St Faith's Rd, Norwich NR6 7BW, about 4 miles from the city centre."
+ },
+ "/guides/things-to-do-in-norwich": {
+  "title": "Things to Do in Norwich: Our Top Picks",
+  "description": "Things to do in Norwich, from the cathedral and Lanes to indoor things to do in Norwich for adults, including racing simulators at LeMan Cave. Plan your visit."
+ },
+ "/guides/indoor-activities-norfolk": {
+  "title": "Indoor Activities Norfolk: Best Picks",
+  "description": "Indoor activities Norfolk for rainy days: our pick of things to do in Norfolk under cover, from museums to racing sims and Scalextric at LeMan Cave."
+ },
+ "/guides/planning-a-team-event": {
+  "title": "Planning a Team Event: Step-by-Step Guide",
+  "description": "Planning a team event in Norwich: a step-by-step guide to dates, budgets, numbers and activities, with team building ideas and away day tips that people enjoy."
+ },
+ "/guides/birthday-party-ideas": {
+  "title": "Birthday Party Ideas: Make It Memorable",
+  "description": "Birthday party ideas for kids and adults, including 30th birthday ideas and adult birthday party ideas in Norwich, from racing nights to private venue hire."
+ },
+ "/guides/race-simulator-guide": {
+  "title": "Race Simulator Guide: How Sims Work",
+  "description": "Our race simulator guide: what a racing simulator is, how motion rigs, direct-drive wheels and VR work, and what to expect on your first session at LeMan Cave."
+ },
+ "/guides/venue-hire-guide": {
+  "title": "Venue Hire Guide: How to Hire a Venue",
+  "description": "Our venue hire guide: how to hire a party venue, what to ask, deposits and timings, plus a venue hire checklist for birthdays, team events and celebrations."
+ },
+ "/guides/kids-party-checklist": {
+  "title": "Kids Party Checklist: Plan It Step by Step",
+  "description": "A kids party checklist covering guest numbers, invites, food, cake and timings, with kids party planning tips and children's party ideas in Norwich."
+ },
+ "/guides/stag-and-hen-planner": {
+  "title": "Stag and Hen Planner: Norfolk Ideas",
+  "description": "Our stag and hen planner: stag do ideas in Norfolk, hen party ideas, budgets, timings and what to book, with racing simulators and Bring Your Own drinks in Norwich."
+ },
+ "/guides/sim-racing-tips": {
+  "title": "Sim Racing Tips: Go Faster, Fast",
+  "description": "Sim racing tips for beginners: racing simulator tips on seating, braking, racing lines and wheel feel to get faster in sim racing on your first session."
+ },
+ "/guides/christmas-party-planner": {
+  "title": "Christmas Party Ideas Norwich: Planner",
+  "description": "Christmas party ideas Norwich: office Christmas party ideas, dates, packages and timings for planning a work Christmas party at LeMan Cave."
+ },
+ "/guides/gifts-for-petrolheads": {
+  "title": "Gifts for Petrolheads: Experience Ideas",
+  "description": "Gifts for petrolheads and car lovers: motorsport gift ideas and experience gifts in Norwich, from racing simulator gift cards to memorabilia and books."
+ },
+ "/guides/le-mans-history": {
+  "title": "Le Mans History: The 24 Hours of Le Mans",
+  "description": "Le Mans history in brief: how the 24 Hours of Le Mans began, the cars and drivers that shaped the race, and how LeMan Cave got its name."
+ },
+ "/compare/sim-racing-vs-karting": {
+  "title": "Sim Racing vs Karting: Which to Choose?",
+  "description": "Sim racing vs karting compared: cost, safety, weather, ages and skill. Find out if sim racing is the indoor karting alternative your group is looking for."
+ },
+ "/compare/4k-vs-vr": {
+  "title": "4K vs VR Racing: Which Sim Setup?",
+  "description": "4K vs VR racing simulators compared: immersion, comfort, motion sickness and what suits first-timers. Try VR racing in Norwich at LeMan Cave."
+ },
+ "/compare/motion-vs-static-simulators": {
+  "title": "Motion vs Static Simulator: Which Is Best?",
+  "description": "Motion vs static simulator compared: what 4 DOF motion adds, who should race in static mode and why under-16s use static at our motion simulator in Norwich."
+ },
+ "/compare/sim-room-vs-whole-cave-hire": {
+  "title": "Sim Room vs Whole Cave Hire: Which to Book?",
+  "description": "Sim room vs whole cave hire: compare racing simulator hire in Norwich by the hour with private hire of the whole venue for parties and groups."
+ },
+ "/compare/saturday-packages": {
+  "title": "Saturday Party Packages Norwich Compared",
+  "description": "Saturday party packages Norwich: rooms only, a Bring Your Own drinks package, or Bring Your Own and a pizza party package, from £45 per person."
+ },
+ "/compare/indoor-activities-norwich": {
+  "title": "Best Indoor Activities Norwich Compared",
+  "description": "Best indoor activities Norwich groups compare: bowling, escape rooms, trampoline parks, crazy golf and sim racing by cost, ages and group size."
+ },
+ "/compare/team-building-activities": {
+  "title": "Team Building Activities Compared",
+  "description": "Team building activities compared: workshops, outdoor challenges, team meals and racing simulator days, with team building ideas for corporate teams."
+ },
+ "/compare/party-venues": {
+  "title": "Party Venues Norwich Compared",
+  "description": "Party venues Norwich compared: function rooms, pubs, activity venues and private hire. Find the best party venues in Norwich for your group and budget."
+ },
+ "/compare/digital-vs-classic-scalextric": {
+  "title": "Digital vs Classic Scalextric: What Changes?",
+  "description": "Digital vs classic Scalextric: lane changing, more cars per lane and lap timing explained, and what it's like racing on our 160ft digital Scalextric track."
+ },
+ "/book": {
+  "title": "Book Racing Simulator Norwich",
+  "description": "Book racing simulator Norwich sessions or book a party online: choose a sim room session or whole-cave package, pick a time and pay securely online."
+ },
+ "/advertise": {
+  "title": "Advertising Screens Norwich: Digital Signage",
+  "description": "Advertising screens Norwich: put your business on digital signage advertising around LeMan Cave, with 3, 6 and 12-month packages and artwork design."
+ }
+}

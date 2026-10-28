@@ -76,8 +76,8 @@ export default class Food extends React.Component {
 <nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
 <A href="/" style={css("color: #A1A1AA")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <span style={css(`color: ${V.accent}`)}>{"PIZZA"}</span>
 </nav>
-<p style={css(`margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 14px; letter-spacing: 0.16em; color: ${V.amber}`)}>{"FRESH SET OF SLICKS"}</p>
-<h1 id="pz-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(72px, 11vw, 168px); line-height: 0.86; color: #FFFFFF; text-transform: uppercase")}>{"Pit-stop"}<br /><span style={css(`color: ${V.accent}`)}>{"pizza."}</span></h1>
+<h1 id="pz-h" style={css("margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 500; line-height: 1.5; letter-spacing: 0.16em; color: #FFC233; text-transform: uppercase")}>{"Pizza party Norwich \u00b7 pit-stop pizza"}</h1>
+<p style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(72px, 11vw, 168px); line-height: 0.86; color: #FFFFFF; text-transform: uppercase")}>{"Pit-stop"}<br /><span style={css(`color: ${V.accent}`)}>{"pizza."}</span></p>
 <p style={css("margin: 28px 0 0; max-width: 540px; font-size: 20px; line-height: 1.55; color: #D4D4D8")}>{"Hot pizza for your whole crew, served right in the cave \u2014 a large selection, with options for a range of dietary needs. Add it to your hire with our Bring Your Own drink & pizza packages \u2014 you bring the drinks, we bring the pizza."}</p>
 <div style={css("display: flex; flex-wrap: wrap; gap: 14px; margin-top: 36px")}>
 <A href="/prices" style={css(`background: ${V.accent}; color: #09090B; font-weight: 700; font-size: 16px; letter-spacing: 0.06em; text-transform: uppercase; padding: 18px 30px; border-radius: 4px`)}>{"See pizza packages"}</A>
@@ -117,7 +117,7 @@ export default class Food extends React.Component {
 </section>
 <section aria-labelledby="pk-h" style={css("background: #0F0F12; border-bottom: 1px solid #1F1F23")}>
 <div className="lc-section" style={css("max-width: 1360px; margin: 0 auto; padding: 56px 40px; display: flex; flex-wrap: wrap; align-items: center; gap: 32px")}>
-<h2 id="pk-h" style={css("flex: 0 1 260px; margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 40px; line-height: 0.95; color: #FFFFFF; text-transform: uppercase")}>{"Pizza is on"}<br />{"the menu for"}</h2>
+<h2 id="pk-h" style={css("flex: 0 1 260px; margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 40px; line-height: 0.95; color: #FFFFFF; text-transform: uppercase")}>{"Pizza party packages: pizza is on the menu for"}</h2>
 <div style={css("flex: 1 1 640px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; font-family: 'JetBrains Mono', monospace")}>
 <A href="/prices" style={css("padding: 20px 22px; border: 1px solid #27272A; border-radius: 8px; background: #09090B; display: flex; flex-direction: column; gap: 8px")}>
 <span style={css("font-size: 12px; letter-spacing: 0.14em; color: #A1A1AA")}>{"SAT \u00b7 14:00\u201317:00"}</span>
@@ -141,7 +141,7 @@ export default class Food extends React.Component {
 <div style={css("display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 40px")}>
 <div>
 <p style={css(`margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: ${V.accent}`)}>{"01 / REFUEL"}</p>
-<h2 id="ph-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 84px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Hot. Fresh."}<br />{"Fast."}</h2>
+<h2 id="ph-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 84px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Party food packages: hot, fresh, fast."}</h2>
 </div>
 <p style={css("margin: 0; max-width: 440px; font-size: 18px; line-height: 1.6; color: #A1A1AA")}>{"Boxes on the bar, slices in hand, then straight back to the grid. Pizza keeps the race night rolling."}</p>
 </div>

@@ -73,8 +73,8 @@ export default class Advertise extends React.Component {
 <nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
 <A href="/" style={css("color: #A1A1AA")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <span style={css("color: #ED2835")}>{"ADVERTISE"}</span>
 </nav>
-<p style={css("margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 14px; letter-spacing: 0.16em; color: #FFC233")}>{"DIGITAL SIGNAGE"}</p>
-<h1 id="ad-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(64px, 9.5vw, 140px); line-height: 0.86; color: #FFFFFF; text-transform: uppercase")}>{"Advertise"}<br /><span style={css("color: #ED2835")}>{"at LeMan Cave."}</span></h1>
+<h1 id="ad-h" style={css("margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 500; line-height: 1.5; letter-spacing: 0.16em; color: #FFC233; text-transform: uppercase")}>{"Advertising screens Norwich \u00b7 digital signage"}</h1>
+<p style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(64px, 9.5vw, 140px); line-height: 0.86; color: #FFFFFF; text-transform: uppercase")}>{"Advertise"}<br /><span style={css("color: #ED2835")}>{"at LeMan Cave."}</span></p>
 <p style={css("margin: 26px 0 0; max-width: 540px; font-size: 20px; line-height: 1.55; color: #D4D4D8")}>{"Advertise your business on our digital signage screens around the building, seen by the parties, corporate teams, car clubs and families who visit the cave."}</p>
 <div style={css("display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px")}>
 <A href="#packages" style={css("display: inline-block; background: #ED2835; color: #09090B; font-weight: 700; font-size: 16px; letter-spacing: 0.06em; text-transform: uppercase; padding: 18px 30px; border-radius: 4px")}>{"See packages"}</A>
@@ -102,7 +102,7 @@ export default class Advertise extends React.Component {
 <div style={css("display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 44px")}>
 <div>
 <p style={css("margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: #ED2835")}>{"01 / PACKAGES"}</p>
-<h2 id="pk-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 84px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Pick your"}<br />{"run"}</h2>
+<h2 id="pk-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 84px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Digital signage advertising in Norwich: pick your run"}</h2>
 </div>
 <p style={css("margin: 0; max-width: 460px; font-size: 18px; line-height: 1.6; color: #A1A1AA")}>{"Three, six or twelve months on our screens. Upload your own artwork, or let us design it for an extra \u00a350."}</p>
 </div>
@@ -156,7 +156,7 @@ export default class Advertise extends React.Component {
 <div style={css("display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 36px")}>
 <div>
 <p style={css("margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: #ED2835")}>{"03 / ORDER ONLINE"}</p>
-<h2 id="or-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(44px, 5.5vw, 80px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Get on"}<br />{"screen"}</h2>
+<h2 id="or-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(44px, 5.5vw, 80px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Advertise in Norwich: get on screen"}</h2>
 </div>
 <p style={css("margin: 0; max-width: 460px; font-size: 18px; line-height: 1.6; color: #A1A1AA")}>{"Your order, invoices and advert status are all in your account, where you can upload or change your artwork at any time."}</p>
 </div>

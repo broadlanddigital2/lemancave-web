@@ -1,13 +1,14 @@
 import type { Metadata } from 'next';
+import { pageMeta, PageSchema } from '../../../lib/seo';
 import Landing from '../../../components/Landing';
 
-export const metadata: Metadata = {
-  title: "Gaming in Norwich",
-  description: "PS5 on a 120-inch 4K screen, pro racing sims in VR, digital pinball and arcade classics.",
-  alternates: { canonical: "/who-its-for/gamers" },
-  openGraph: { title: "Gaming in Norwich | LeMan Cave Norwich", description: "PS5 on a 120-inch 4K screen, pro racing sims in VR, digital pinball and arcade classics.", url: "/who-its-for/gamers" },
-};
+export const metadata: Metadata = pageMeta('/who-its-for/gamers');
 
 export default function Page() {
-  return <Landing slug="gamers" />;
+  return (
+    <>
+      <PageSchema path="/who-its-for/gamers" />
+      <Landing slug="gamers" />
+    </>
+  );
 }

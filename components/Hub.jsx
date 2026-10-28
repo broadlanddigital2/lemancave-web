@@ -29,7 +29,15 @@ export default class Hub extends React.Component {
         ] }
     };
     const h = H[this.props.slug] || H.attractions;
-    const groups = h.groups.map(([num, title, copy, items]) => ({ num, title, copy, items }));
+    // SEO (Oct 2026): H1 (the hero's small line), hero alt and group headings carry the hub's keywords
+    // (seo/keywords.json in the site repo; also in the CRM SEO optimiser).
+    const SEO = {
+      attractions: { h1: 'Indoor attractions Norwich · all under one roof', heroAlt: 'A wide view of LeMan Cave, home to indoor attractions Norwich groups love', titles: ['Racing simulators and Scalextric', 'Arcade games in Norwich for everyone'] },
+      events: { h1: 'Parties and events Norwich · exclusive hire', heroAlt: 'A group celebrating with a trophy at one of our parties and events Norwich groups book', titles: ['Party ideas in Norwich', 'Work & clubs', 'Made for you', 'A private party venue in Norwich: guides & comparisons'] },
+    };
+    const sx = SEO[H[this.props.slug] ? this.props.slug : 'attractions'] || { h1: h.crumb, titles: [] };
+    h.h1 = sx.h1; if (sx.heroAlt) h.heroAlt = sx.heroAlt;
+    const groups = h.groups.map(([num, title, copy, items], i) => ({ num, title: sx.titles[i] || title, copy, items }));
     const nav = [['/attractions', 'Attractions'], ['/food', 'Food & Drink'], ['/parties-and-events', 'Parties & Events'], ['/prices', 'Prices'], ['/gallery', 'Gallery'], ['/visit-us', 'Visit Us']].map(([href, label]) => ({ href, label, style: 'text-decoration: none; ' + (href === h.active ? 'color: #ED2835; padding: 8px 0; border-bottom: 2px solid #ED2835' : 'color: #F4F4F5') }));
     const NVK = { '/attractions': 'attractions', '/food': 'food', '/parties-and-events': 'events', '/prices': 'prices', '/gallery': 'gallery', '/visit-us': 'visit' };
     const nv = Object.fromEntries(nav.map((n) => [NVK[n.href], 'display: flex; align-items: center; gap: 6px; height: 92px; box-sizing: border-box; white-space: nowrap; flex: none; text-decoration: none; ' + (n.style.includes('#ED2835') ? 'color: #ED2835; border-bottom: 2px solid #ED2835' : 'color: #F4F4F5; border-bottom: 2px solid transparent')]));
@@ -62,7 +70,8 @@ export default class Hub extends React.Component {
 <nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
 <A href="/" style={css("color: #A1A1AA; text-decoration: none")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <span style={css("color: #ED2835")}>{V.h.crumb}</span>
 </nav>
-<h1 id="h-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(64px, 10vw, 144px); line-height: 0.88; color: #FFFFFF; text-transform: uppercase")}>{V.h.line1}<br /><span style={css("color: #ED2835")}>{V.h.line2}</span></h1>
+<h1 id="h-h" style={css("margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 500; line-height: 1.5; letter-spacing: 0.16em; color: #FFC233; text-transform: uppercase")}>{V.h.h1}</h1>
+<p style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(64px, 10vw, 144px); line-height: 0.88; color: #FFFFFF; text-transform: uppercase")}>{V.h.line1}<br /><span style={css("color: #ED2835")}>{V.h.line2}</span></p>
 <p style={css("margin: 24px 0 0; max-width: 600px; font-size: 20px; line-height: 1.55; color: #D4D4D8")}>{V.h.intro}</p>
 </div>
 </section>

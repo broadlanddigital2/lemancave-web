@@ -1,13 +1,14 @@
 import type { Metadata } from 'next';
+import { pageMeta, PageSchema } from '../lib/seo';
 import Main from '../components/Main';
 
-export const metadata: Metadata = {
-  title: "LeMan Cave Norwich — Homepage",
-  description: "Norwich’s motorsport entertainment venue: full-motion racing simulators, a 160ft digital Scalextric, PS5, pool, darts and arcade. Parties, team days and…",
-  alternates: { canonical: "/" },
-  openGraph: { title: "LeMan Cave Norwich — Homepage | LeMan Cave Norwich", description: "Norwich’s motorsport entertainment venue: full-motion racing simulators, a 160ft digital Scalextric, PS5, pool, darts and arcade. Parties, team days and…", url: "/" },
-};
+export const metadata: Metadata = pageMeta('/');
 
 export default function Page() {
-  return <Main />;
+  return (
+    <>
+      <PageSchema path="/" />
+      <Main />
+    </>
+  );
 }

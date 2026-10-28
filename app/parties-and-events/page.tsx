@@ -1,13 +1,14 @@
 import type { Metadata } from 'next';
+import { pageMeta, PageSchema } from '../../lib/seo';
 import Hub from '../../components/Hub';
 
-export const metadata: Metadata = {
-  title: "Parties & Events",
-  description: "Birthdays, stag and hen dos, team days and Christmas parties — take over the whole cave.",
-  alternates: { canonical: "/parties-and-events" },
-  openGraph: { title: "Parties & Events | LeMan Cave Norwich", description: "Birthdays, stag and hen dos, team days and Christmas parties — take over the whole cave.", url: "/parties-and-events" },
-};
+export const metadata: Metadata = pageMeta('/parties-and-events');
 
 export default function Page() {
-  return <Hub slug="events" />;
+  return (
+    <>
+      <PageSchema path="/parties-and-events" />
+      <Hub slug="events" />
+    </>
+  );
 }

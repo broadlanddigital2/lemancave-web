@@ -36,7 +36,8 @@ export default class Book extends React.Component {
 <nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
 <A href="/" style={css("color: #A1A1AA")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <span style={css("color: #ED2835")}>{"BOOK"}</span>
 </nav>
-<h1 id="bk-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(64px, 10vw, 144px); line-height: 0.88; color: #FFFFFF; text-transform: uppercase")}>{"Book your"}<br /><span style={css("color: #ED2835")}>{"slot."}</span></h1>
+<h1 id="bk-h" style={css("margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 500; line-height: 1.5; letter-spacing: 0.16em; color: #FFC233; text-transform: uppercase")}>{"Book racing simulator Norwich sessions & parties"}</h1>
+<p style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(64px, 10vw, 144px); line-height: 0.88; color: #FFFFFF; text-transform: uppercase")}>{"Book your"}<br /><span style={css("color: #ED2835")}>{"slot."}</span></p>
 <p style={css("margin: 22px 0 0; max-width: 620px; font-size: 19px; line-height: 1.55; color: #D4D4D8")}>{"Pick a sim hour or a whole-cave session, choose a live date and time, and pay securely online. Sim hours are paid in full; whole-cave hire takes a 25% deposit, with the balance due 7 days before. Sessions within 14 days are paid in full when you book. Online bookings need 24 hours\u2019 notice; for anything sooner, use \u201cHave an urgent booking?\u201d below or call "}<A href="tel:01603517080" style={css("color: #FFFFFF; font-weight: 600")}>{"01603 517080"}</A>{"."}</p>
 </section>
 <section className="lc-section" aria-label="Book online" style={css("max-width: 1360px; margin: 0 auto; padding: 20px 40px 60px")}>

@@ -1,13 +1,14 @@
 import type { Metadata } from 'next';
+import { pageMeta, PageSchema } from '../../../lib/seo';
 import Landing from '../../../components/Landing';
 
-export const metadata: Metadata = {
-  title: "Things to do near North Walsham",
-  description: "Looking for something different to do near North Walsham? LeMan Cave is ~14 miles away in Norwich — full-motion racing simulators, a 160ft digital…",
-  alternates: { canonical: "/locations/north-walsham" },
-  openGraph: { title: "Things to do near North Walsham | LeMan Cave Norwich", description: "Looking for something different to do near North Walsham? LeMan Cave is ~14 miles away in Norwich — full-motion racing simulators, a 160ft digital…", url: "/locations/north-walsham" },
-};
+export const metadata: Metadata = pageMeta('/locations/north-walsham');
 
 export default function Page() {
-  return <Landing slug="northwalsham" />;
+  return (
+    <>
+      <PageSchema path="/locations/north-walsham" />
+      <Landing slug="northwalsham" />
+    </>
+  );
 }

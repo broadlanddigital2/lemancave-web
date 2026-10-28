@@ -80,14 +80,15 @@ export default class Simulator extends React.Component {
 </nav>
 </header>
 <section aria-labelledby="sim-h" style={css("position: relative; min-height: 720px; display: flex; align-items: flex-end; background: #0E0E11; overflow: hidden")}>
-<img src="/images/87af79a958a3ccd899908f5b2bb8b25b.webp" alt="Driver gripping the wheel of the pro racing simulator, triple screens showing a mountain circuit" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 60% 40%")} />
+<img src="/images/87af79a958a3ccd899908f5b2bb8b25b.webp" alt="Driver gripping the wheel of the pro racing simulator Norwich drivers book, triple screens showing a mountain circuit" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 60% 40%")} />
 <div aria-hidden="true" style={css("position: absolute; inset: 0; background: linear-gradient(90deg, rgba(9,9,11,0.94) 0%, rgba(9,9,11,0.75) 40%, rgba(9,9,11,0.2) 72%, rgba(9,9,11,0.1) 100%)")}></div>
 <div aria-hidden="true" style={css("position: absolute; left: 0; right: 0; bottom: 0; height: 300px; background: linear-gradient(to top, #09090B 10%, transparent)")}></div>
 <div className="lc-section" style={css("position: relative; max-width: 1360px; width: 100%; margin: 0 auto; padding: 140px 40px 64px; box-sizing: border-box")}>
 <nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
 <A href="/" style={css("color: #A1A1AA")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <A href="/attractions" style={css("color: #A1A1AA")}>{"EXPERIENCES"}</A> <span aria-hidden="true">{"/"}</span> <span style={css(`color: ${V.accent}`)}>{"PRO RACING SIMULATOR"}</span>
 </nav>
-<h1 id="sim-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(64px, 10vw, 152px); line-height: 0.88; color: #FFFFFF; text-transform: uppercase")}>{"Feel."}<br />{"Control."}<br /><span style={css(`color: ${V.accent}`)}>{"Compete."}</span></h1>
+<h1 id="sim-h" style={css("margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 500; line-height: 1.5; letter-spacing: 0.16em; color: #FFC233; text-transform: uppercase")}>{"Racing simulator Norwich \u00b7 4 DOF full motion"}</h1>
+<p style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(64px, 10vw, 152px); line-height: 0.88; color: #FFFFFF; text-transform: uppercase")}>{"Feel."}<br />{"Control."}<br /><span style={css(`color: ${V.accent}`)}>{"Compete."}</span></p>
 <p style={css("margin: 28px 0 0; max-width: 560px; font-size: 20px; line-height: 1.55; color: #D4D4D8")}>{"A professional-grade racing simulator built for speed and immersion. Full motion, real racing kit and your choice of 4K or VR."}</p>
 <div style={css("display: flex; flex-wrap: wrap; gap: 14px; margin-top: 36px")}>
 <A href="/book" style={css(`background: ${V.accent}; color: #09090B; font-weight: 700; font-size: 16px; letter-spacing: 0.06em; text-transform: uppercase; padding: 18px 30px; border-radius: 4px`)}>{"Book a sim session"}</A>
@@ -123,7 +124,7 @@ export default class Simulator extends React.Component {
 <div style={css("display: flex; flex-wrap: wrap; gap: 64px; align-items: center")}>
 <div style={css("flex: 1 1 460px")}>
 <p style={css(`margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: ${V.accent}`)}>{"01 / THE EXPERIENCE"}</p>
-<h2 id="ult-h" style={css("margin: 0 0 28px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 84px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"The ultimate"}<br />{"racing experience"}</h2>
+<h2 id="ult-h" style={css("margin: 0 0 28px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 84px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Sim racing in Norwich: the ultimate racing experience"}</h2>
 <p style={css("margin: 0 0 18px; font-size: 19px; line-height: 1.65; color: #D4D4D8")}>{"Our simulator uses the latest technology to get as close to the real thing as possible. The motion system reacts to every turn, bump and brake, so you feel the car move beneath you."}</p>
 <p style={css("margin: 0 0 32px; font-size: 19px; line-height: 1.65; color: #A1A1AA")}>{"Add wind simulation, force-feedback steering and a gated manual shifter, then pick your car and your circuit."}</p>
 <div style={css("display: flex; flex-wrap: wrap; gap: 10px")}>
@@ -138,7 +139,7 @@ export default class Simulator extends React.Component {
 <section aria-labelledby="feat-h" style={css("background: #0F0F12; border-top: 1px solid #1F1F23; border-bottom: 1px solid #1F1F23")}>
 <div className="lc-section" style={css("max-width: 1360px; margin: 0 auto; padding: 120px 40px")}>
 <p style={css(`margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: ${V.accent}`)}>{"02 / UNDER THE HOOD"}</p>
-<h2 id="feat-h" style={css("margin: 0 0 56px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 84px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Built like"}<br />{"the real thing"}</h2>
+<h2 id="feat-h" style={css("margin: 0 0 56px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 84px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"An F1-style simulator in Norwich, built like the real thing"}</h2>
 <div style={css("display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1px; background: #27272A; border: 1px solid #27272A; border-radius: 8px; overflow: hidden")}>
 <div style={css("background: #0F0F12; padding: 36px 32px; display: flex; flex-direction: column; gap: 14px")}>
 <svg aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke={V.accent} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M4 17l4-4 4 3 8-9"></path><path d="M14 7h6v6"></path></svg>
@@ -207,7 +208,7 @@ export default class Simulator extends React.Component {
 <div style={css("display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 48px")}>
 <div>
 <p style={css(`margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: ${V.accent}`)}>{"04 / SESSIONS"}</p>
-<h2 id="sess-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 84px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Pick your"}<br />{"stint"}</h2>
+<h2 id="sess-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 84px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Pick your stint: a driving simulator experience in Norfolk"}</h2>
 </div>
 <p style={css("margin: 0; max-width: 420px; font-size: 18px; line-height: 1.6; color: #A1A1AA")}>{"Sim room sessions are priced for 2 people sharing 1 sim. Bigger group? Hire the whole cave for 3 hours."}</p>
 </div>

@@ -93,8 +93,8 @@ export default class Drinks extends React.Component {
 <nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
 <A href="/" style={css("color: #A1A1AA")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <span style={css(`color: ${V.accent}`)}>{"BRING YOUR OWN DRINKS"}</span>
 </nav>
-<p style={css(`margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 14px; letter-spacing: 0.16em; color: ${V.amber}`)}>{"BRING YOUR OWN \u00b7 WE CHILL IT"}</p>
-<h1 id="by-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(72px, 11vw, 160px); line-height: 0.86; color: #FFFFFF; text-transform: uppercase")}>{"You bring it."}<br /><span style={css(`color: ${V.accent}`)}>{"We chill it."}</span></h1>
+<h1 id="by-h" style={css("margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 500; line-height: 1.5; letter-spacing: 0.16em; color: #FFC233; text-transform: uppercase")}>{"Bring Your Own drinks venue Norwich \u00b7 we chill it"}</h1>
+<p style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(72px, 11vw, 160px); line-height: 0.86; color: #FFFFFF; text-transform: uppercase")}>{"You bring it."}<br /><span style={css(`color: ${V.accent}`)}>{"We chill it."}</span></p>
 <p style={css("margin: 28px 0 0; max-width: 540px; font-size: 20px; line-height: 1.55; color: #D4D4D8")}>{"Drop your drinks off before your event and we\u2019ll have them pre-chilled and waiting \u2014 or simply bring them on the day. Glasses, ice and the essentials are all on us."}</p>
 <div style={css("display: flex; flex-wrap: wrap; gap: 14px; margin-top: 36px")}>
 <A href="#how" style={css(`background: ${V.accent}; color: #09090B; font-weight: 700; font-size: 16px; letter-spacing: 0.06em; text-transform: uppercase; padding: 18px 30px; border-radius: 4px`)}>{"How it works"}</A>
@@ -118,7 +118,7 @@ export default class Drinks extends React.Component {
 </section>
 <section id="how" className="lc-section" aria-labelledby="how-h" style={css("max-width: 1360px; margin: 0 auto; padding: 120px 40px")}>
 <p style={css(`margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: ${V.accent}`)}>{"01 / HOW IT WORKS"}</p>
-<h2 id="how-h" style={css("margin: 0 0 64px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 84px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Four laps to"}<br />{"a cold one"}</h2>
+<h2 id="how-h" style={css("margin: 0 0 64px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 84px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Party drinks in Norwich: four laps to a cold one"}</h2>
 <ol style={css("list-style: none; margin: 0; padding: 0; position: relative; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px")}>
 {(V.steps || []).map((st, $index) => (<React.Fragment key={$index}>
 <li style={css("position: relative; padding-top: 52px; display: flex; flex-direction: column; gap: 12px")}>
@@ -136,7 +136,7 @@ export default class Drinks extends React.Component {
 <div style={css("display: flex; flex-wrap: wrap; gap: 56px; align-items: stretch")}>
 <div style={css("flex: 1 1 380px; display: flex; flex-direction: column; justify-content: center")}>
 <p style={css(`margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: ${V.accent}`)}>{"02 / ON US"}</p>
-<h2 id="prov-h" style={css("margin: 0 0 24px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 84px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Just bring"}<br />{"the drinks"}</h2>
+<h2 id="prov-h" style={css("margin: 0 0 24px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 84px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"A Bring Your Own party venue: just bring the drinks"}</h2>
 <p style={css("margin: 0 0 32px; font-size: 18px; line-height: 1.6; color: #A1A1AA")}>{"Everything else is taken care of, so you can walk in empty-handed on the night."}</p>
 <div style={css("display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px")}>
 <div style={css("padding: 24px; background: #131316; border: 1px solid #232328; border-radius: 8px; display: flex; flex-direction: column; gap: 12px")}>
@@ -157,7 +157,7 @@ export default class Drinks extends React.Component {
 </div>
 </div>
 </div>
-<div style={css("flex: 1.2 1 480px; min-height: 480px; border-radius: 10px; overflow: hidden; position: relative; background: #131316")}><img src="/images/0c8a70eb98bd990c9de8c330cbcda0a9.webp" alt="Bottles and cans chilling in an ice bucket, glasses lined up on the bar, ready for a Bring Your Own party" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} /></div>
+<div style={css("flex: 1.2 1 480px; min-height: 480px; border-radius: 10px; overflow: hidden; position: relative; background: #131316")}><img src="/images/0c8a70eb98bd990c9de8c330cbcda0a9.webp" alt="Bottles and cans chilling in an ice bucket, glasses lined up on the bar at a Bring Your Own drinks venue Norwich party" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} /></div>
 </div>
 </div>
 </section>
