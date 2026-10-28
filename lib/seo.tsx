@@ -28,8 +28,13 @@ export function pageMeta(path: string): Metadata {
 }
 
 // Breadcrumb names: the part of each page's title before the colon ("Party Venue Norwich: Exclusive Venue Hire" → "Party Venue Norwich").
-const SECTION: Record<string, string> = { '/who-its-for': 'Who It’s For', '/compare': 'Comparisons' };
-const crumbName = (path: string) => SECTION[path] || (PAGES[path] ? PAGES[path].title.split(':')[0].trim() : '');
+// /who-its-for and /compare are URL folders, not pages, so their breadcrumb step points at the hub the visible
+// breadcrumb uses instead (a link to a folder would be a 404 in Search Console).
+const SECTION: Record<string, { name: string; path: string }> = {
+  '/who-its-for': { name: 'Parties & Events', path: '/parties-and-events-norwich' },
+  '/compare': { name: 'Guides', path: '/guides' },
+};
+const crumbName = (path: string) => (PAGES[path] ? PAGES[path].title.split(':')[0].trim() : '');
 
 export function PageSchema({ path }: { path: string }) {
   const m = PAGES[path];
@@ -39,6 +44,8 @@ export function PageSchema({ path }: { path: string }) {
   const crumbs = [{ name: 'Home', path: '/' }];
   parts.forEach((_, i) => {
     const p = '/' + parts.slice(0, i + 1).join('/');
+    if (SECTION[p]) { crumbs.push(SECTION[p]); return; }
+    // Only real pages become breadcrumb steps.
     const name = crumbName(p);
     if (name) crumbs.push({ name, path: p });
   });
