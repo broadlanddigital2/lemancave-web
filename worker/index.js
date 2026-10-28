@@ -13,6 +13,8 @@
  */
 
 import { blogResponse, addPostsToSitemap } from './crm-blog.js';
+// Shared with the Race Car Graphics and Auto Opulence workers: AI crawler visits and people sent by AI assistants (CRM).
+import { trackAi } from './ai-visibility.js';
 
 // Pages moved to keyword addresses (Oct 2026): seo/redirects.json, old path → new path.
 import MOVED from '../seo/redirects.json';
@@ -168,8 +170,7 @@ export async function handleEnquiry(request, env) {
   }
 }
 
-export default {
-  async fetch(request, env) {
+async function handle(request, env) {
     const url = new URL(request.url);
     if (url.pathname === '/api/enquiry') {
       if (request.method !== 'POST') return json({ ok: false, error: 'POST required' }, 405);
@@ -185,5 +186,13 @@ export default {
     const to = REDIRECTS[url.pathname.replace(/\/$/, '')];
     if (to) return Response.redirect(url.origin + to + url.search, 301);
     return env.ASSETS.fetch(request);
+}
+
+export default {
+  async fetch(request, env, ctx) {
+    const response = await handle(request, env);
+    // Counted on the workers.dev preview too until the lemancave.co.uk switch (the CRM's LeMan Cave site reads it).
+    trackAi(request, response, ctx, { feedKey: BLOG.feedKey, countPreview: true });
+    return response;
   },
 };
