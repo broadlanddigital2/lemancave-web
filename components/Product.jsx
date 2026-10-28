@@ -48,12 +48,19 @@ export default class Product extends React.Component {
         points: ['9ft championship-grade slate table', 'US-spec pool / billiards', 'Cues provided', 'Singles or doubles', 'Included with venue hire'],
         detailImg: B('4ce867edd79a7d832da29a7c7aa700dd'), detailAlt: 'Racked balls and cues on the 9ft pool / billiards table', ctaTitle: 'Break off.',
         faqs: [['Do you provide cues?', 'Yes — cues are provided, so just bring your best break.'], ['Is it included with venue hire?', 'Yes — everything is included with exclusive venue hire.'], ['Can we run a tournament?', 'Yes — talk to us when you book and we’ll help you set it up.']] },
-      airhockey: { ...games, file: '/attractions/air-hockey-norwich', crumb: 'AIR HOCKEY', name: 'Air Hockey', tag: 'PRO-GRADE', kicker: 'PRO-GRADE TABLE', line1: 'Fast hands', line2: 'only.',
-        intro: 'A pro-grade air hockey table. Quick, loud and fiercely competitive — the fastest game in the cave.',
+      poker: { ...games, file: '/attractions/poker-table-norwich', crumb: 'POKER TABLE', name: 'Poker Table', tag: '8 PLAYERS', kicker: 'NO-STAKES POKER · 8 SEATS', line1: 'Poker face', line2: 'on.',
+        intro: 'No-stakes poker for up to eight players: purely for fun, with no real money, so nobody leaves on a downer. Deal everyone in between races and see who keeps their nerve.',
+        hero: IMG.lounge, heroAlt: 'The lounge at LeMan Cave, home to the poker table', cta: 'Book your visit',
+        specs: [['SEATS', '8 players'], ['GAME', 'No-stakes poker'], ['MONEY', 'None, just for fun'], ['INCLUDED', 'With venue hire']],
+        detailTitle: 'Deal everyone in', detail: 'Eight seats around one table make poker one of the easiest ways to bring a group together between sim sessions and Scalextric heats. Play a few hands, run a mini tournament or just take a break from the racing.',
+        points: ['Seats 8 players', 'No-stakes, purely for fun', 'Great for groups between races', 'Run a mini tournament', 'Included with venue hire'], ctaTitle: 'Shuffle up.',
+        faqs: [['How many people can play?', 'Up to eight players at once.'], ['Do you play for real money?', 'No — it’s no-stakes poker, purely for fun with no real money, so nobody leaves on a downer.'], ['Is it included with venue hire?', 'Yes — everything is included with exclusive venue hire.'], ['Can we run a tournament?', 'Yes — ask us when you book.']] },
+      airhockey: { ...games, file: '/attractions/air-hockey-norwich', crumb: 'AIR HOCKEY', name: 'Air Hockey', tag: 'COMMERCIAL', kicker: 'COMMERCIAL FULL-SIZE TABLE', line1: 'Fast hands', line2: 'only.',
+        intro: 'A commercial, full-size air hockey table. Quick, loud and fiercely competitive — the fastest game in the cave.',
         hero: IMG.airhockey, heroAlt: 'Two players mid-rally at air hockey', cta: 'Book your visit',
-        specs: [['TABLE', 'Pro-grade'], ['PLAYERS', '2'], ['PACE', 'Flat out'], ['INCLUDED', 'With venue hire']],
-        detailTitle: 'Head to head', detail: 'Two players, one puck and no hiding place. Air hockey is the perfect quick-fire grudge match between races.',
-        points: ['Pro-grade air table', 'Two-player head-to-head', 'Quick games, easy to pick up', 'Perfect for tournaments'],
+        specs: [['TABLE', 'Commercial, full size'], ['PLAYERS', '2'], ['PACE', 'Flat out'], ['INCLUDED', 'With venue hire']],
+        detailTitle: 'Head to head', detail: 'Two players, one puck each and no hiding place. Air hockey is the perfect quick-fire grudge match between races.',
+        points: ['Commercial, full-size table', 'Two-player head-to-head', 'Quick games, easy to pick up', 'Perfect for tournaments'],
         detailImg: B('a36aa54903a7cf23a4c34b30de115426'), detailAlt: 'Air hockey table beside the pool / billiards table under neon', ctaTitle: 'Face off.',
         faqs: [['Is it suitable for kids?', 'No age limits** — everyone can play.'], ['Is it included with venue hire?', 'Yes — everything is included with exclusive venue hire.'], ['Can we run a tournament?', 'Yes — ask us when you book.']] },
       football: { ...games, file: '/attractions/table-football-norwich', crumb: 'FOOTBALL TABLE', name: 'Football Table', tag: 'LEAGUE-GRADE', kicker: 'LEAGUE-GRADE TABLE', line1: 'No spinning.', line2: 'Mostly.',
@@ -67,11 +74,11 @@ export default class Product extends React.Component {
       arcade: { ...games, file: '/attractions/arcade-norwich', crumb: 'ARCADE AREA', name: 'Two-Player Arcade', tag: 'HEAD TO HEAD', kicker: 'TWO-PLAYER CLASSICS', line1: 'Player two', line2: 'ready.',
         intro: 'Two-player arcade classics, side by side. Grab a stick, pick a game and chase the high score.',
         hero: IMG.arcade, heroAlt: 'Two friends playing a retro arcade cabinet', cta: 'Book your visit',
-        specs: [['PLAYERS', '2'], ['STYLE', 'Retro classics'], ['GAMES', 'TBC'], ['INCLUDED', 'With venue hire']],
+        specs: [['PLAYERS', '2'], ['STYLE', 'Retro classics'], ['GAMES', '1000s to choose from'], ['INCLUDED', 'With venue hire']],
         detailTitle: 'Old school, new rivals', detail: 'Our arcade area brings back the classics — side-by-side, two-player games made for friendly (and not-so-friendly) competition.',
-        points: ['Two-player arcade classics', 'Game list coming soon [TBC]', 'Side-by-side head-to-heads', 'Included with venue hire'],
+        points: ['Two-player arcade classics', '1000s of games to choose from', 'Side-by-side head-to-heads', 'Included with venue hire'],
         detailImg: B('3bb7b8b6d1661fa12a1c6d470c802daf'), detailAlt: 'Two friends laughing as they battle on an arcade cabinet', ctaTitle: 'Game on.',
-        faqs: [['Which games are on the arcade?', 'Our arcade game list is coming soon. [GAME LIST TBC]'], ['Is it included with venue hire?', 'Yes — everything is included with exclusive venue hire.'], ['Can kids play?', 'No age limits** — everyone can play.']] },
+        faqs: [['Which games are on the arcade?', 'There are 1000s of games to choose from.'], ['Is it included with venue hire?', 'Yes — everything is included with exclusive venue hire.'], ['Can kids play?', 'No age limits** — everyone can play.']] },
       moto: { file: '/attractions/motorbike-simulator-norwich', parentHref: '/attractions/racing-simulator-norwich', parentLabel: 'SIMULATOR', parentCta: 'See the pro simulator', navActive: '/attractions/racing-simulator-norwich', relatedTitle: 'More racing',
         crumb: 'MOTORCYCLE SIMULATOR', name: 'Motorcycle Sim', tag: 'RETRO · TWO WHEELS', kicker: 'FOR THE LOVERS OF TWO WHEELS', line1: 'Lean in.', line2: 'Open it up.',
         intro: 'A classic 1990s motorcycle simulator. Swap four wheels for two, lean into the bends and chase the lap record.',
@@ -91,11 +98,11 @@ export default class Product extends React.Component {
         faqs: [['Do we need to keep score?', 'No — our fully automated scoring system does it all for you.'], ['Are darts provided?', 'Yes — darts are provided.'], ['Is it included with venue hire?', 'Yes — everything is included with exclusive venue hire.'], ] },
       memorabilia: { file: '/attractions/motorsport-memorabilia-norwich', parentHref: '/attractions', parentLabel: 'ATTRACTIONS', parentCta: 'All attractions', navActive: '/attractions', relatedTitle: 'More racing',
         crumb: 'RETRO MEMORABILIA', name: 'Retro Memorabilia', tag: 'MOTORSPORT HISTORY', kicker: 'MOTORSPORT HISTORY', line1: 'Racing history', line2: 'on every wall.',
-        intro: 'Autographed race suits, F1 spoilers, NASCAR wheels, Le Mans race panels and neon signs — a museum you can race in, included with your venue hire.',
+        intro: 'Autographed race suits, F1 spoilers, NASCAR wheels, Le Mans race panels and neon and vintage signs — a museum you can race in, included with your venue hire.',
         hero: B('391bb670a4d33c1c7c09c18bb09b8a63'), heroAlt: 'Race suit and helmets on display', cta: 'Book your visit',
         specs: [['RACE SUITS', 'Autographed'], ['F1', 'Spoilers'], ['LE MANS', 'Race panels'], ['VIEWING', 'Venue hire only']],
         detailTitle: 'A museum you can race in', detail: 'Every corner of LeMan Cave is packed with motorsport memorabilia — from autographed race suits to genuine race panels from Le Mans.',
-        points: ['Autographed race suits', 'F1 spoilers and NASCAR wheels', 'Le Mans race panels', 'Neon signs throughout'],
+        points: ['Autographed race suits', 'F1 spoilers and NASCAR wheels', 'Le Mans race panels', 'Neon & vintage signs throughout'],
         detailImg: B('fc7112025e8ba60f1f0ccd133931c460'), detailAlt: 'Le Mans car, race suit and trophies in the memorabilia room', ctaTitle: 'Come and see it.',
         faqs: [['Can I visit just to see the memorabilia?', 'No — the memorabilia can be enjoyed as part of your venue hire only.'], ['Is the memorabilia for sale?', 'No — the collection is not for sale.'], ['Can I take photos?', 'Yes — photos of the venue are fine. Tag us @leman.cave!']] }
     };
@@ -103,6 +110,7 @@ export default class Product extends React.Component {
     // SEO (Oct 2026): H1 (the hero's small line), hero alt and two subheadings carry each attraction's keywords
     // (seo/keywords.json in the site repo; also in the CRM SEO optimiser). [h1, heroAlt, detailTitle, perfectTitle]
     const SEO = {
+      poker: ['Poker table Norwich · no-stakes, 8 seats', 'The lounge at LeMan Cave, home to the poker table in Norwich', 'Deal everyone in', 'Perfect for groups'],
       ps5: ['Games console lounge Norwich · 100in screen', 'Friends on the classic Mini sofa in the games console lounge Norwich groups love', 'Big screen gaming in Norwich: the best seat in the house', 'Perfect for a gaming party in Norwich'],
       pinball: ['Digital pinball Norwich · full-size cabinet', 'Hands on the flippers: digital pinball Norwich', 'A pinball machine in Norwich, flippers at the ready', 'Perfect for'],
       pool: ['Pool table Norwich · 9ft pro table', 'The 9ft pool / billiards table under red neon: the pool / billiards table Norwich players book', 'A 9ft pool / billiards table worth the trip', 'Play pool in Norwich: perfect for'],
@@ -119,7 +127,7 @@ export default class Product extends React.Component {
     const p = { ...raw,
       specs: raw.specs.map(([k, v], i) => ({ k, v, color: i === 0 ? amber : '#FFFFFF' })),
       hasDetailImg: !!raw.detailImg, noDetailImg: !raw.detailImg };
-    const gameOrder = ['ps5', 'pinball', 'pool', 'airhockey', 'football', 'darts', 'arcade'];
+    const gameOrder = ['ps5', 'pinball', 'pool', 'airhockey', 'poker', 'football', 'darts', 'arcade'];
     let related;
     if (slug === 'moto' || slug === 'memorabilia') {
       related = [

@@ -395,6 +395,11 @@
    "slug": "pinball",
    "title": "Digital Pinball \u2014 LeMan Cave Norwich"
   },
+  "Poker": {
+   "component": "Product",
+   "slug": "airhockey",
+   "title": "Poker Table \u2014 LeMan Cave Norwich"
+  },
   "Pool": {
    "component": "Product",
    "slug": "pool",
@@ -486,6 +491,7 @@
   "Pinball": "/attractions/digital-pinball-norwich",
   "Pool": "/attractions/pool-table-norwich",
   "AirHockey": "/attractions/air-hockey-norwich",
+  "Poker": "/attractions/poker-table-norwich",
   "TableFootball": "/attractions/table-football-norwich",
   "Darts": "/attractions/darts-norwich",
   "Arcade": "/attractions/arcade-norwich",

@@ -15,12 +15,12 @@ in a Cowork session (Oct 2026). Setup and deploy steps are in `README.md`.
   - 160ft digital Scalextric: TWO lanes, up to six cars at once (never "six lanes");
   - 1990s motorbike sim;
   - the Games Console Lounge: games consoles on a 100-inch screen; seating is a converted classic Mini sofa (NOT a Mini Cooper), oil drum chairs and a Top Gear-style Alfa Romeo sofa (games provided). Consoles: Nintendo Wii, PlayStation or Steam gaming PCs (owner, 28 Oct 2026). Games: the classic Mario Kart with four wheel controllers; other games on request before booking. The page is /attractions/gaming-lounge-norwich (the old PS5 address redirects);
-  - a poker table (8 players) [not on the site yet];
+  - a no-stakes poker table (8 players): purely for fun, no real money, "so no one leaves on a downer". Page /attractions/poker-table-norwich;
   - 1 digital pinball machine;
   - 9ft championship-grade slate pool / billiards table, US spec (cues provided). Always "pool / billiards";
-  - air hockey, table football, two-player arcade;
+  - air hockey (commercial, full-size table), table football, two-player arcade (1000s of games to choose from);
   - darts (provided, fully automated scoring);
-  - memorabilia (venue hire only, not for sale; photos fine).
+  - memorabilia (venue hire only, not for sale; photos fine), with neon & vintage signs throughout.
 - **Rules**:
   - "No age limits on the experiences**". ** = "The simulators may be subject to height restrictions, and motion may be disabled for safety reasons for any guests under 14." (was under-16s static; changed 28 Oct 2026).
   - Everything is included with venue hire.
