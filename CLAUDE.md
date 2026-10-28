@@ -5,7 +5,8 @@ in a Cowork session (Oct 2026). Setup and deploy steps are in `README.md`.
 
 ## The business
 - **LeMan Cave**: indoor motorsport entertainment venue. Unit 1, Consensus House, St Faith's Rd, Norwich NR6 7BW.
-  - Full parking on site, about 4 miles from the city centre. Fully accessible.
+  - Full parking on site, about 4 miles from the city centre. Fully accessible: disabled access, Part M toilets, many activities suitable for wheelchair users; guests needing extra assistance tell us at booking. The accessibility page carries a suitability disclaimer (owner, 28 Oct 2026).
+  - Minibus taxi service operating from the site, run by Freedom Transport (https://freedomtransport.co.uk/), at additional cost; page /minibus-taxi-norwich (owner, 28 Oct 2026).
   - Around 50 guests across about 1,600 sq ft (owner, 28 Oct 2026: 2,000 was a high estimate).
   - The site is about 0.5 acres; car clubs can arrange an external catering trailer or other facilities by special request (owner, 28 Oct 2026).
   - Phone 01603 517080 (`tel:01603517080`). Email bookings@lemancave.co.uk. Instagram @leman.cave.

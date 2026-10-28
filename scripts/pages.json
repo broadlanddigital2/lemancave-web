@@ -360,6 +360,11 @@
    "slug": "memorabilia",
    "title": "Retro Memorabilia \u2014 LeMan Cave Norwich"
   },
+  "MinibusTaxi": {
+   "component": "Guide",
+   "slug": "taxi",
+   "title": "Minibus Taxi Service \u2014 LeMan Cave"
+  },
   "MotoSim": {
    "component": "Product",
    "slug": "moto",
@@ -544,6 +549,7 @@
   "FAQs": "/leman-cave-faqs",
   "OpeningTimes": "/leman-cave-opening-times",
   "TravelParking": "/leman-cave-parking-and-travel",
+  "MinibusTaxi": "/minibus-taxi-norwich",
   "GuideNorwich": "/guides/things-to-do-in-norwich",
   "GuideIndoor": "/guides/indoor-activities-norfolk",
   "GuideTeamEvent": "/guides/planning-a-team-event",
