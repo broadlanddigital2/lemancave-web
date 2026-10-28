@@ -113,7 +113,7 @@ export default class Simulator extends React.Component {
 </div>
 <div style={css("padding: 28px 20px; border-right: 1px solid #1F1F23")}>
 <div style={css("font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: #71717A")}>{"GEARS"}</div>
-<div style={css("font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 32px; color: #FFFFFF; margin-top: 6px")}>{"Gated manual"}</div>
+<div style={css("font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 32px; color: #FFFFFF; margin-top: 6px")}>{"\u2018Bazooka\u2019 gated"}</div>
 </div>
 <div style={css("padding: 28px 0 28px 20px")}>
 <div style={css("font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: #71717A")}>{"SESSIONS"}</div>
@@ -127,7 +127,7 @@ export default class Simulator extends React.Component {
 <p style={css(`margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: ${V.accent}`)}>{"01 / THE EXPERIENCE"}</p>
 <h2 id="ult-h" style={css("margin: 0 0 28px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 84px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Sim racing in Norwich: the ultimate racing experience"}</h2>
 <p style={css("margin: 0 0 18px; font-size: 19px; line-height: 1.65; color: #D4D4D8")}>{"Our simulator uses the latest technology to get as close to the real thing as possible. The motion system reacts to every turn, bump and brake, so you feel the car move beneath you."}</p>
-<p style={css("margin: 0 0 32px; font-size: 19px; line-height: 1.65; color: #A1A1AA")}>{"Add wind simulation, force-feedback steering and a gated manual shifter, then pick your car and your circuit."}</p>
+<p style={css("margin: 0 0 32px; font-size: 19px; line-height: 1.65; color: #A1A1AA")}>{"Add wind simulation, force-feedback steering and a \u2018bazooka\u2019 gated shifter inspired by the Ford Escort Mk2 rally car, then pick your car and your circuit."}</p>
 <div style={css("display: flex; flex-wrap: wrap; gap: 10px")}>
 <span style={css("font-size: 14px; font-weight: 600; letter-spacing: 0.06em; padding: 10px 16px; border: 1px solid #3F3F46; border-radius: 999px; color: #E4E4E7")}>{"GRAND PRIX CIRCUITS"}</span>
 <span style={css("font-size: 14px; font-weight: 600; letter-spacing: 0.06em; padding: 10px 16px; border: 1px solid #3F3F46; border-radius: 999px; color: #E4E4E7")}>{"ROAD COURSES"}</span>
@@ -169,8 +169,8 @@ export default class Simulator extends React.Component {
 </div>
 <div style={css("background: #0F0F12; padding: 36px 32px; display: flex; flex-direction: column; gap: 14px")}>
 <svg aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke={V.accent} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M6 4v16M12 4v16M18 4v8H6"></path></svg>
-<h3 style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 30px; color: #FFFFFF; text-transform: uppercase")}>{"Gated manual shifter"}</h3>
-<p style={css("margin: 0; font-size: 16px; line-height: 1.6; color: #A1A1AA")}>{"A professional shifter with a realistic clutch and proper gear changes."}</p>
+<h3 style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 30px; color: #FFFFFF; text-transform: uppercase")}>{"\u2018Bazooka\u2019 gated shifter"}</h3>
+<p style={css("margin: 0; font-size: 16px; line-height: 1.6; color: #A1A1AA")}>{"A gated manual shifter inspired by the \u2018bazooka\u2019 gear lever of the Ford Escort Mk2 rally car, with a realistic clutch."}</p>
 </div>
 <div style={css("background: #0F0F12; padding: 36px 32px; display: flex; flex-direction: column; gap: 14px")}>
 <svg aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke={V.accent} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M8 3h8l-1 11H9z"></path><path d="M7 21h10"></path><path d="M12 14v7"></path><path d="M4 8c-1 1-1 3 0 4M20 8c1 1 1 3 0 4"></path></svg>
