@@ -98,11 +98,11 @@ export default class Product extends React.Component {
         faqs: [['Do we need to keep score?', 'No — our fully automated scoring system does it all for you.'], ['Are darts provided?', 'Yes — darts are provided.'], ['Is it included with venue hire?', 'Yes — everything is included with exclusive venue hire.'], ] },
       memorabilia: { file: '/attractions/motorsport-memorabilia-norwich', parentHref: '/attractions', parentLabel: 'ATTRACTIONS', parentCta: 'All attractions', navActive: '/attractions', relatedTitle: 'More racing',
         crumb: 'RETRO MEMORABILIA', name: 'Retro Memorabilia', tag: 'MOTORSPORT HISTORY', kicker: 'MOTORSPORT HISTORY', line1: 'Racing history', line2: 'on every wall.',
-        intro: 'Autographed race suits, F1 spoilers, NASCAR wheels, Le Mans race panels and neon and vintage signs — a museum you can race in, included with your venue hire.',
+        intro: 'Autographed race suits, F1 spoilers, NASCAR wheels, Le Mans memorabilia and neon and vintage signs — a museum you can race in, included with your venue hire.',
         hero: B('391bb670a4d33c1c7c09c18bb09b8a63'), heroAlt: 'Race suit and helmets on display', cta: 'Book your visit',
         specs: [['RACE SUITS', 'Autographed'], ['F1', 'Spoilers'], ['LE MANS', 'Race panels'], ['VIEWING', 'Venue hire only']],
         detailTitle: 'A museum you can race in', detail: 'Every corner of LeMan Cave is packed with motorsport memorabilia — from autographed race suits to genuine race panels from Le Mans.',
-        points: ['Autographed race suits', 'F1 spoilers and NASCAR wheels', 'Le Mans race panels', 'Neon & vintage signs throughout'],
+        points: ['Autographed race suits', 'F1 spoilers and NASCAR wheels', 'Pieces from Le Mans', 'Neon & vintage signs throughout'],
         detailImg: B('fc7112025e8ba60f1f0ccd133931c460'), detailAlt: 'Le Mans car, race suit and trophies in the memorabilia room', ctaTitle: 'Come and see it.',
         faqs: [['Can I visit just to see the memorabilia?', 'No — the memorabilia can be enjoyed as part of your venue hire only.'], ['Is the memorabilia for sale?', 'No — the collection is not for sale.'], ['Can I take photos?', 'Yes — photos of the venue are fine. Tag us @leman.cave!']] }
     };
