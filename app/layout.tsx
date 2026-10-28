@@ -6,7 +6,7 @@ import './design.css';
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://lemancave.co.uk'),
   title: { default: 'LeMan Cave Norwich — Racing Simulators, Scalextric & Party Venue', template: '%s | LeMan Cave Norwich' },
-  description: 'Norwich’s motorsport entertainment venue: full-motion racing simulators, digital Scalextric, PS5, pool, darts and arcade. Parties, team days and nights out.',
+  description: 'Norwich’s motorsport entertainment venue: racing simulators, digital Scalextric, games consoles, pool, darts and arcade. Parties, team days and nights out.',
   openGraph: { siteName: 'LeMan Cave', locale: 'en_GB', type: 'website' },
   icons: { icon: '/images/d8a1bc65662ee5a26ca2d3cbc9ca559e.svg' },
 };
@@ -19,7 +19,7 @@ const jsonLd = {
   '@type': 'EntertainmentBusiness',
   '@id': 'https://lemancave.co.uk/#business',
   name: 'LeMan Cave',
-  description: 'Indoor motorsport entertainment venue in Norwich: motion racing simulators, a 160ft six-lane digital Scalextric, motorbike simulator, PS5 lounge, pool, darts and arcade games, with private hire for parties and events of up to about 50 guests.',
+  description: 'Indoor motorsport entertainment venue in Norwich: racing simulators (one with full motion), a 160ft six-lane digital Scalextric, motorbike simulator, a gaming lounge with games consoles, pool, darts and arcade games, with private hire for parties and events of up to about 50 guests.',
   url: 'https://lemancave.co.uk',
   telephone: '+44 1603 517080',
   logo: 'https://lemancave.co.uk/images/d8a1bc65662ee5a26ca2d3cbc9ca559e.svg',
@@ -33,12 +33,12 @@ const jsonLd = {
     addressCountry: 'GB',
   },
   openingHoursSpecification: [
-    { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '06:30', closes: '21:30' },
+    { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '18:00', closes: '21:00' },
     { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Saturday', opens: '10:00', closes: '21:00' },
   ],
   sameAs: ['https://www.instagram.com/leman.cave/'],
   areaServed: ['Norwich', 'Norfolk', 'Suffolk', 'Cambridgeshire'].map((name) => ({ '@type': 'Place', name })),
-  amenityFeature: ['Racing simulators', 'Digital Scalextric', 'Motorbike simulator', 'PS5 lounge', 'Pool table', 'Darts', 'Air hockey', 'Table football', 'Arcade', 'Free parking', 'Wheelchair accessible']
+  amenityFeature: ['Racing simulators', 'Digital Scalextric', 'Motorbike simulator', 'Gaming lounge', 'Pool table', 'Darts', 'Air hockey', 'Table football', 'Arcade', 'Free parking', 'Wheelchair accessible']
     .map((name) => ({ '@type': 'LocationFeatureSpecification', name, value: true })),
   maximumAttendeeCapacity: 50,
   priceRange: '££',
@@ -59,6 +59,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         {children}
+        {/* Small print for the * and ** marks used across the site (owner, 28 Oct 2026). */}
+        <aside className="lc-smallprint" aria-label="Notes">
+          <p>*Pizza is an additional cost option.</p>
+          <p>**The simulators may be subject to height restrictions, and motion may be disabled for safety reasons for any guests under 14.</p>
+        </aside>
         {/* CRM site search (floating Search button, "/" or Ctrl/Cmd+K) and the AI enquiry bot. Both are set up in the
             Race Car Graphics CRM (Marketing → Site search; Channels → LeMan Cave Enquiry Bot); leads go to LeMan Cave leads.
             Loaded after the page has started up (afterInteractive): loaded earlier, React's start-up could remove the

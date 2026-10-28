@@ -5,7 +5,7 @@
  },
  "/attractions": {
   "title": "Indoor Attractions Norwich: Sims & Games",
-  "description": "Indoor attractions Norwich-wide favourites under one roof: motion racing simulators, a six-lane digital Scalextric, motorbike sim, PS5 lounge, pool and darts."
+  "description": "Indoor attractions Norwich-wide favourites under one roof: motion racing simulators, a six-lane digital Scalextric, motorbike sim, gaming lounge, pool and darts."
  },
  "/parties-and-events-norwich": {
   "title": "Parties and Events Norwich: Private Hire",
@@ -61,7 +61,7 @@
  },
  "/attractions/racing-simulator-norwich": {
   "title": "Racing Simulator Norwich: Pro Motion Sims",
-  "description": "Racing simulator Norwich: 4 DOF full-motion sims with direct-drive wheels, in 4K or VR. Book a sim room session from £80 an hour or hire the whole cave."
+  "description": "Racing simulator Norwich: a 4 DOF full-motion sim with direct-drive wheels, in 4K or VR. Book a sim room session from £80 an hour or hire the whole cave."
  },
  "/attractions/scalextric-track-norwich": {
   "title": "Scalextric Track Norwich: 160ft Digital",
@@ -75,9 +75,9 @@
   "title": "Motorbike Simulator Norwich: 1990s Bike Sim",
   "description": "Motorbike simulator Norwich: ride our classic 1990s bike sim, lean into the corners and race your friends. Included with every whole-cave booking at LeMan Cave."
  },
- "/attractions/ps5-gaming-lounge-norwich": {
-  "title": "PS5 Gaming Lounge Norwich: 120in Screen",
-  "description": "PS5 gaming lounge Norwich: a 120-inch screen and a Mini Cooper sofa, with PS5 games provided. Included with every whole-cave booking at LeMan Cave."
+ "/attractions/gaming-lounge-norwich": {
+  "title": "Gaming Lounge Norwich: 100in Big Screen",
+  "description": "Gaming lounge Norwich: games consoles on a 100-inch screen and a Mini Cooper sofa, with games provided. Included with every whole-cave booking at LeMan Cave."
  },
  "/attractions/digital-pinball-norwich": {
   "title": "Digital Pinball Norwich: Classic Tables",
@@ -117,7 +117,7 @@
  },
  "/teenage-party-ideas-norwich": {
   "title": "Teenage Party Ideas Norwich: Racing & Gaming",
-  "description": "Teenage party ideas Norwich: racing sims in static mode, Scalextric, PS5 on a 120-inch screen and arcade games. A teen birthday party venue with pizza."
+  "description": "Teenage party ideas Norwich: racing sims in static mode, Scalextric, games consoles on a 100-inch screen and arcade games. A teen birthday party venue with pizza."
  },
  "/stag-do-norwich": {
   "title": "Stag Do Norwich: Racing Sims & Games",
@@ -161,11 +161,11 @@
  },
  "/who-its-for/family-entertainment-norwich": {
   "title": "Family Entertainment Norwich: All Ages Fun",
-  "description": "Family entertainment Norwich: racing sims, a 160ft Scalextric, PS5 and arcade games for kids and adults. No age limits; under-16s race in static mode."
+  "description": "Family entertainment Norwich: racing sims, a 160ft Scalextric, games consoles and arcade games for kids and adults. No age limits on the experiences; motion may be disabled for under-14s."
  },
  "/who-its-for/things-to-do-with-friends-in-norwich": {
   "title": "Things to Do with Friends in Norwich",
-  "description": "Things to do with friends in Norwich: race each other on motion simulators and Scalextric, then pool, darts and arcade games. Pre-book a session or the whole cave."
+  "description": "Things to do with friends in Norwich: race each other on racing simulators and Scalextric, then pool, darts and arcade games. Pre-book a session or the whole cave."
  },
  "/who-its-for/corporate-team-activities-norwich": {
   "title": "Corporate Team Activities Norwich",
@@ -173,15 +173,15 @@
  },
  "/who-its-for/motorsport-experience-norwich": {
   "title": "Motorsport Experience Norwich: Pro Sims",
-  "description": "Motorsport experience Norwich: pro motion simulators with direct-drive wheels, a 160ft digital Scalextric and memorabilia. A racing experience in Norfolk."
+  "description": "Motorsport experience Norwich: pro racing simulators (one with full motion) with direct-drive wheels, a 160ft digital Scalextric and memorabilia. A racing experience in Norfolk."
  },
  "/who-its-for/gaming-venue-norwich": {
-  "title": "Gaming Venue Norwich: Sims, PS5 & Arcade",
-  "description": "Gaming venue Norwich: racing simulators in 4K or VR, PS5 on a 120-inch screen, digital pinball and a two-player arcade. Great for gaming parties."
+  "title": "Gaming Venue Norwich: Sims, Consoles & Arcade",
+  "description": "Gaming venue Norwich: racing simulators in 4K or VR, games consoles on a 100-inch screen, digital pinball and a two-player arcade. Great for gaming parties."
  },
  "/who-its-for/fun-group-activities-norwich": {
   "title": "Fun Group Activities Norwich: Not Into Cars?",
-  "description": "Fun group activities Norwich for people who aren't into cars: Scalextric, pool, darts, air hockey, PS5 and arcade games alongside the racing sims."
+  "description": "Fun group activities Norwich for people who aren't into cars: Scalextric, pool, darts, air hockey, games consoles and arcade games alongside the racing sims."
  },
  "/who-its-for/rainy-day-activities-norwich": {
   "title": "Rainy Day Activities Norwich: Indoor Fun",
@@ -277,7 +277,7 @@
  },
  "/leman-cave-opening-times": {
   "title": "LeMan Cave Opening Times",
-  "description": "LeMan Cave opening times: Monday to Friday 06:30 to 21:30, Saturday 10:00 to 21:00, Sunday by request. All racing simulator and party bookings are pre-booked."
+  "description": "LeMan Cave opening times: Monday to Friday 18:00 to 21:00, Saturday 10:00 to 21:00, Sunday by request. All racing simulator and party bookings are pre-booked."
  },
  "/leman-cave-parking-and-travel": {
   "title": "LeMan Cave Parking & Directions",
@@ -341,7 +341,7 @@
  },
  "/compare/motion-vs-static-simulator": {
   "title": "Motion vs Static Simulator: Which Is Best?",
-  "description": "Motion vs static simulator compared: what 4 DOF motion adds, who should race in static mode and why under-16s use static at our motion simulator in Norwich."
+  "description": "Motion vs static simulator compared: what 4 DOF motion adds, who should race in static mode and why motion may be disabled for under-14s at our simulator in Norwich."
  },
  "/compare/sim-room-vs-whole-cave-hire": {
   "title": "Sim Room vs Whole Cave Hire: Which to Book?",

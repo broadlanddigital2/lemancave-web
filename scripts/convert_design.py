@@ -12,7 +12,7 @@ ROUTES = {
  'Pricing': '/party-packages-norwich', 'Gallery': '/leman-cave-photos', 'Visit': '/contact-leman-cave-norwich', 'Corporate': '/corporate-events-norwich',
  'Christmas': '/christmas-party-norwich', 'GiftVouchers': '/experience-gifts-norwich',
  'Simulator': '/attractions/racing-simulator-norwich', 'Scalextric': '/attractions/scalextric-track-norwich', 'Games': '/attractions/arcade-games-norwich',
- 'MotoSim': '/attractions/motorbike-simulator-norwich', 'PS5': '/attractions/ps5-gaming-lounge-norwich', 'Pinball': '/attractions/digital-pinball-norwich',
+ 'MotoSim': '/attractions/motorbike-simulator-norwich', 'PS5': '/attractions/gaming-lounge-norwich', 'Pinball': '/attractions/digital-pinball-norwich',
  'Pool': '/attractions/pool-table-norwich', 'AirHockey': '/attractions/air-hockey-norwich', 'TableFootball': '/attractions/table-football-norwich',
  'Darts': '/attractions/darts-norwich', 'Arcade': '/attractions/arcade-norwich', 'Memorabilia': '/attractions/motorsport-memorabilia-norwich',
  'VenueHire': '/party-venue-norwich', 'VenueHireNorwich': '/venue-hire-norwich', 'FunctionRooms': '/function-room-hire-norwich', 'WeddingReceptions': '/wedding-reception-venue-norwich', 'Birthday': '/birthday-party-venue-norwich', 'KidsParties': '/kids-party-venue-norwich', 'TeenParties': '/teenage-party-ideas-norwich',

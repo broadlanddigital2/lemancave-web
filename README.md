@@ -93,7 +93,7 @@ npm run preview    # static build + wrangler dev on http://localhost:8787
 | `/attractions/motorsport-memorabilia-norwich` | Memorabilia |
 | `/attractions/motorbike-simulator-norwich` | MotoSim |
 | `/attractions/pool-table-norwich` | Pool |
-| `/attractions/ps5-gaming-lounge-norwich` | PS5 |
+| `/attractions/gaming-lounge-norwich` | PS5 |
 | `/attractions/racing-simulator-norwich` | Simulator |
 | `/attractions/table-football-norwich` | TableFootball |
 | `/birthday-party-venue-norwich` | Birthday |
