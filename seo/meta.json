@@ -5,7 +5,7 @@
  },
  "/attractions": {
   "title": "Indoor Attractions Norwich: Sims & Games",
-  "description": "Indoor attractions Norwich-wide favourites under one roof: motion racing simulators, a six-lane digital Scalextric, motorbike sim, gaming lounge, pool and darts."
+  "description": "Indoor attractions Norwich-wide favourites under one roof: motion racing simulators, a six-lane digital Scalextric, motorbike sim, games console lounge, pool and darts."
  },
  "/parties-and-events-norwich": {
   "title": "Parties and Events Norwich: Private Hire",
@@ -76,16 +76,16 @@
   "description": "Motorbike simulator Norwich: ride our classic 1990s bike sim, lean into the corners and race your friends. Included with every whole-cave booking at LeMan Cave."
  },
  "/attractions/gaming-lounge-norwich": {
-  "title": "Gaming Lounge Norwich: 100in Big Screen",
-  "description": "Gaming lounge Norwich: games consoles on a 100-inch screen and a Mini Cooper sofa, with games provided. Included with every whole-cave booking at LeMan Cave."
+  "title": "Games Console Lounge Norwich: 100in Screen",
+  "description": "Games console lounge Norwich: games consoles on a 100-inch screen and a Mini Cooper sofa, with games provided. Included with every whole-cave booking at LeMan Cave."
  },
  "/attractions/digital-pinball-norwich": {
   "title": "Digital Pinball Norwich: Classic Tables",
   "description": "Digital pinball Norwich: a full-size digital pinball machine loaded with classic tables, included with every whole-cave booking at LeMan Cave."
  },
  "/attractions/pool-table-norwich": {
-  "title": "Pool Table Norwich: 9ft Pro Pool Table",
-  "description": "Pool table Norwich: play on a 9ft pro table with cues provided, included with every whole-cave booking alongside racing simulators and arcade games."
+  "title": "Pool / Billiards Table Norwich: 9ft US Spec",
+  "description": "Pool / billiards table Norwich: a 9ft US-spec table with cues provided, included with every whole-cave booking at LeMan Cave."
  },
  "/attractions/air-hockey-norwich": {
   "title": "Air Hockey Norwich: Fast Two-Player Table",
@@ -176,7 +176,7 @@
   "description": "Motorsport experience Norwich: pro racing simulators (one with full motion) with direct-drive wheels, a 160ft digital Scalextric and memorabilia. A racing experience in Norfolk."
  },
  "/who-its-for/gaming-venue-norwich": {
-  "title": "Gaming Venue Norwich: Sims, Consoles & Arcade",
+  "title": "Gaming Venue Norwich: Sims, Consoles, Arcade",
   "description": "Gaming venue Norwich: racing simulators in 4K or VR, games consoles on a 100-inch screen, digital pinball and a two-player arcade. Great for gaming parties."
  },
  "/who-its-for/fun-group-activities-norwich": {
