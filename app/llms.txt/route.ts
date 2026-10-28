@@ -24,7 +24,7 @@ const tidy = (s: string) => String(s || '').replace(/\bBYO\b/g, 'Bring Your Own'
 
 const INTRO = `# LeMan Cave
 
-> LeMan Cave is an indoor motorsport entertainment venue in Norwich, Norfolk: professional motion racing simulators, a 160ft digital Scalextric for up to six cars, a 1990s motorbike simulator, a games console lounge with games consoles on a 100-inch screen, pool, darts, air hockey, table football, arcade and digital pinball, with private hire for groups of up to about 50. Great for non-petrolheads as well as motorsport fans.
+> LeMan Cave is an indoor motorsport entertainment venue in Norwich, Norfolk: two professional racing simulators (one with 4 DOF full motion, one static), a 160ft digital Scalextric for up to six cars, a 1990s motorbike simulator, a games console lounge with a 100-inch screen, a poker table, pool / billiards, darts, air hockey, table football, arcade and digital pinball, with private hire for groups of up to about 50. Great for non-petrolheads as well as motorsport fans.
 
 ## Venue details
 
@@ -37,6 +37,16 @@ const INTRO = `# LeMan Cave
 - Space: around 1,600 sq ft for up to about 50 guests. Full parking on site. Fully accessible.
 - Booking: online at ${BASE}/book with 24 hours' notice (sooner by phone). Whole-cave sessions take a 25% deposit, with the balance due 7 days before.
 - Gift cards: digital, any amount from £10 to £2,000, valid 12 months, usable against any booking (${BASE}/experience-gifts-norwich).
+
+## Attractions
+
+- Racing simulators: two professional sims with direct-drive wheels, pedal haptics, ambient lighting effects, wind simulation and active harnesses. One sim has 4 DOF full motion, a 4K monitor or VR, and a ‘bazooka’ H-pattern shifter inspired by the Ford Escort Mk2 rally car. The other sim is static, with an HD monitor and a gated manual shifter. No triple or wraparound screens.
+- Digital Scalextric: a 160ft two-lane track with up to six cars racing at once.
+- 1990s motorbike simulator.
+- Games Console Lounge: games consoles and gaming PCs on a 100-inch screen (including classic Mario Kart with four wheel controllers), with a converted classic Mini sofa, oil drum chairs and an Alfa Romeo sofa.
+- Poker table for up to 8 players, just for fun with no real money.
+- 9ft slate pool / billiards table (US spec, cues provided), commercial full-size air hockey, table football, a two-player arcade with thousands of games, a digital pinball machine and darts with automatic scoring.
+- Up to about 34 people can play at once across all the activities.
 
 ## Prices
 
