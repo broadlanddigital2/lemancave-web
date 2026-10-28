@@ -25,7 +25,7 @@ in a Cowork session (Oct 2026). Setup and deploy steps are in `README.md`.
   - "No age limits on the experiences**". ** = "The simulators may be subject to height restrictions, and motion may be disabled for safety reasons for any guests under 14." (was under-16s static; changed 28 Oct 2026).
   - Everything is included with venue hire.
   - No outside food except cakes by prior arrangement. Pizza only on pizza packages, with a range of dietary options.
-  - BYO drinks: drop off in advance to be pre-chilled, or bring on the day. Glasses and ice provided. Leftovers collected after.
+  - BYO drinks: drop off in advance to be pre-chilled, or bring on the day. Cups and ice provided (not glasses). Leftovers collected after.
   - Deposit 25% at booking, balance 7 days before.
   - Gift cards are digital: any amount from £10 to £2,000, valid 12 months, usable against any booking.
 

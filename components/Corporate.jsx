@@ -35,7 +35,7 @@ export default class Corporate extends React.Component {
     const faqList = [
       ['How many people can you host?', 'Around 50 guests. For larger groups, get in touch and we’ll look at options.'],
       ['Can we have the venue to ourselves?', 'Yes. Exclusive venue hire is 3 hours, with longer bookings available on request.'],
-      ['Is food included?', 'Our Bring Your Own drink & pizza* packages include pizza* for your group. Drop your drinks off in advance and we’ll have them chilled, with glasses and ice provided.'],
+      ['Is food included?', 'Our Bring Your Own drink & pizza* packages include pizza* for your group. Drop your drinks off in advance and we’ll have them chilled, with cups and ice provided.'],
       ['How does payment work?', 'A 25% deposit is taken when you book, with the balance due 7 days before your event.']
     ];
     const faqs = faqList.map(([q, a], i) => {

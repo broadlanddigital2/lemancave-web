@@ -13,12 +13,12 @@ export default class Drinks extends React.Component {
   renderVals() {
     const accent = this.props.accent ?? '#ED2835';
     const amber = this.props.amber ?? '#FFC233';
-    const status = [['01', 'Drinks received'], ['02', 'Pre-chilled'], ['03', 'Glasses out'], ['04', 'Ice ready'], ['05', 'Your crew']].map(([n, label], i) => ({ n, label, state: i === 4 ? 'GO GO GO' : 'READY' }));
+    const status = [['01', 'Drinks received'], ['02', 'Pre-chilled'], ['03', 'Cups out'], ['04', 'Ice ready'], ['05', 'Your crew']].map(([n, label], i) => ({ n, label, state: i === 4 ? 'GO GO GO' : 'READY' }));
     const steps = [
       { n: '1', when: 'WHEN YOU BOOK', title: 'Pick a Bring Your Own package', copy: 'Choose a Bring Your Own drink hire — with or without pizza*.' },
       { n: '2', when: 'IN ADVANCE OR ON THE DAY', title: 'Bring your drinks', copy: 'Drop them off before your event so they’re pre-chilled, or bring them with you on the day.' },
       { n: '3', when: 'WE TAKE OVER', title: 'We chill them', copy: 'Dropped off early? They go straight into the chiller so they’re cold for lights out.' },
-      { n: '4', when: 'RACE DAY', title: 'Enjoy, then collect', copy: 'Glasses, ice and the essentials are ready and waiting. Any leftover drinks can be collected after the event.' }
+      { n: '4', when: 'RACE DAY', title: 'Enjoy, then collect', copy: 'Cups, ice and the essentials are ready and waiting. Any leftover drinks can be collected after the event.' }
     ];
     const card = 'display: flex; flex-direction: column; gap: 8px; padding: 30px; border-radius: 8px; background: #131316; ';
     const pkgs = [
@@ -45,10 +45,10 @@ export default class Drinks extends React.Component {
     const done = checkList.filter((_, i) => checked[i]).length;
     const faqList = [
       ['When should I drop my drinks off?', 'Any time before your event — dropping off in advance means they’ll be pre-chilled and ready. You can also bring them with you on the day.'],
-      ['What do you provide?', 'Glasses, ice and the essentials — you just bring the drinks.'],
+      ['What do you provide?', 'Cups, ice and the essentials — you just bring the drinks.'],
       ['Can we bring food as well?', 'Food isn’t permitted other than our pizza* packages — but you’re welcome to bring a celebration cake. Just speak to us in advance to arrange it.'],
       ['Which bookings include Bring Your Own drinks?', 'Our Bring Your Own packages on Saturday afternoons, Saturday nights and festive weeknights in December and early January. Rooms-only bookings don’t include drinks.'],
-      ['Can I bring drinks on the day instead?', 'Yes. Drinks dropped off in advance are pre-chilled, but you’re welcome to bring them on the day too — we’ll provide glasses and ice either way.'],
+      ['Can I bring drinks on the day instead?', 'Yes. Drinks dropped off in advance are pre-chilled, but you’re welcome to bring them on the day too — we’ll provide cups and ice either way.'],
       ['What happens to leftover drinks?', 'They’re yours — leftover drinks can be collected after the event.']
     ];
     const faqs = faqList.map(([q, a], i) => {
@@ -96,7 +96,7 @@ export default class Drinks extends React.Component {
 </nav>
 <h1 id="by-h" style={css("margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 500; line-height: 1.5; letter-spacing: 0.16em; color: #FFC233; text-transform: uppercase")}>{"Bring Your Own drinks venue Norwich \u00b7 we chill it"}</h1>
 <p style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(72px, 11vw, 160px); line-height: 0.86; color: #FFFFFF; text-transform: uppercase")}>{"You bring it."}<br /><span style={css(`color: ${V.accent}`)}>{"We chill it."}</span></p>
-<p style={css("margin: 28px 0 0; max-width: 540px; font-size: 20px; line-height: 1.55; color: #D4D4D8")}>{"Drop your drinks off before your event and we\u2019ll have them pre-chilled and waiting \u2014 or simply bring them on the day. Glasses, ice and the essentials are all on us."}</p>
+<p style={css("margin: 28px 0 0; max-width: 540px; font-size: 20px; line-height: 1.55; color: #D4D4D8")}>{"Drop your drinks off before your event and we\u2019ll have them pre-chilled and waiting \u2014 or simply bring them on the day. Cups, ice and the essentials are all on us."}</p>
 <div style={css("display: flex; flex-wrap: wrap; gap: 14px; margin-top: 36px")}>
 <A href="#how" style={css(`background: ${V.accent}; color: #09090B; font-weight: 700; font-size: 16px; letter-spacing: 0.06em; text-transform: uppercase; padding: 18px 30px; border-radius: 4px`)}>{"How it works"}</A>
 <A href="/party-packages-norwich" style={css("border: 1px solid #52525B; color: #FFFFFF; font-weight: 600; font-size: 16px; letter-spacing: 0.06em; text-transform: uppercase; padding: 17px 30px; border-radius: 4px")}>{"Bring Your Own packages"}</A>
@@ -146,7 +146,7 @@ export default class Drinks extends React.Component {
 </div>
 <div style={css("padding: 24px; background: #131316; border: 1px solid #232328; border-radius: 8px; display: flex; flex-direction: column; gap: 12px")}>
 <svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke={V.accent} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M7 3h10l-1 7a4 4 0 0 1-8 0z"></path><path d="M12 14v7M8 21h8"></path></svg>
-<span style={css("font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 26px; color: #FFFFFF; text-transform: uppercase")}>{"Glasses"}</span>
+<span style={css("font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 26px; color: #FFFFFF; text-transform: uppercase")}>{"Cups"}</span>
 </div>
 <div style={css("padding: 24px; background: #131316; border: 1px solid #232328; border-radius: 8px; display: flex; flex-direction: column; gap: 12px")}>
 <svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke={V.accent} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><rect x="4" y="4" width="7" height="7" rx="1.5"></rect><rect x="13" y="6" width="7" height="7" rx="1.5"></rect><rect x="7" y="13" width="7" height="7" rx="1.5"></rect></svg>
