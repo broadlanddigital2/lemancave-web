@@ -24,9 +24,33 @@
  "/party-venue-norwich": {
   "primary": "party venue norwich",
   "secondary": [
-   "venue hire norwich",
+   "venues for parties in norwich",
    "exclusive hire venue norwich",
    "private party venue norfolk"
+  ]
+ },
+ "/wedding-reception-venue-norwich": {
+  "primary": "wedding reception venue norwich",
+  "secondary": [
+   "reception venues norwich",
+   "evening wedding reception norwich",
+   "alternative wedding venue norwich"
+  ]
+ },
+ "/function-room-hire-norwich": {
+  "primary": "function room hire norwich",
+  "secondary": [
+   "function rooms norwich",
+   "hall hire norwich",
+   "private function room norwich"
+  ]
+ },
+ "/venue-hire-norwich": {
+  "primary": "venue hire norwich",
+  "secondary": [
+   "norwich venue",
+   "private room hire norwich",
+   "event venue norwich"
   ]
  },
  "/pizza-party-norwich": {
