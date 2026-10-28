@@ -24,7 +24,7 @@ const tidy = (s: string) => String(s || '').replace(/\bBYO\b/g, 'Bring Your Own'
 
 const INTRO = `# LeMan Cave
 
-> LeMan Cave is an indoor motorsport entertainment venue in Norwich, Norfolk: professional motion racing simulators, a 160ft six-lane digital Scalextric, a 1990s motorbike simulator, a games console lounge with games consoles on a 100-inch screen, pool, darts, air hockey, table football, arcade and digital pinball, with private hire for groups of up to about 50. Great for non-petrolheads as well as motorsport fans.
+> LeMan Cave is an indoor motorsport entertainment venue in Norwich, Norfolk: professional motion racing simulators, a 160ft digital Scalextric for up to six cars, a 1990s motorbike simulator, a games console lounge with games consoles on a 100-inch screen, pool, darts, air hockey, table football, arcade and digital pinball, with private hire for groups of up to about 50. Great for non-petrolheads as well as motorsport fans.
 
 ## Venue details
 
