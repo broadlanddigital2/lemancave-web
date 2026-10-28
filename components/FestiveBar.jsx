@@ -10,9 +10,9 @@ const FESTIVE_UNTIL = '2027-01-15T00:00:00Z';
 
 export default function FestiveBar() {
   const pathname = usePathname();
-  if (Date.now() >= Date.parse(FESTIVE_UNTIL) || pathname === '/christmas-parties') return null;
+  if (Date.now() >= Date.parse(FESTIVE_UNTIL) || pathname === '/christmas-party-norwich') return null;
   return (
-    <A href="/christmas-parties" className="lc-festive" aria-label="Christmas parties: now booking">
+    <A href="/christmas-party-norwich" className="lc-festive" aria-label="Christmas parties: now booking">
       <span className="lc-festive-bow" aria-hidden="true">
         <svg viewBox="0 0 48 28" width="40" height="24"><path d="M24 14C17 4 6 2 4 8s6 10 20 6Zm0 0c7-10 18-12 20-6s-6 10-20 6Zm0 0-7 13 4 0 3-6 3 6 4 0Z" fill="#ED2835" stroke="#FFC233" strokeWidth="1.2" strokeLinejoin="round" /><circle cx="24" cy="14" r="3.2" fill="#FFC233" /></svg>
       </span>

@@ -8,10 +8,10 @@ export default class SiteFooter extends React.Component {
     const L = (rows) => rows.map(([label, href]) => ({ label, href }));
     return {
       cols: [
-        { title: 'EXPLORE', links: L([['Attractions', '/attractions'], ['Food & Drink', '/food'], ['Parties & Events', '/parties-and-events'], ['Prices', '/prices'], ['Gallery', '/gallery'], ['Visit Us', '/visit-us']]) },
-        { title: 'POPULAR', links: L([['Pro Racing Simulator', '/attractions/racing-simulator'], ['Digital Scalextric', '/attractions/digital-scalextric'], ['Birthday Parties', '/birthday-parties'], ['Kids Parties', '/kids-parties'], ['Stag & Hen Dos', '/stag-do-norwich'], ['Team Building', '/team-building'], ['Christmas Parties', '/christmas-parties'], ['Exclusive Venue Hire', '/venue-hire']]) },
-        { title: 'PLAN YOUR VISIT', links: L([['Opening Times', '/opening-times'], ['Travel & Parking', '/travel-and-parking'], ['Accessibility', '/accessibility'], ['FAQs', '/faqs'], ['Gift Vouchers', '/gift-vouchers'], ['Advertise With Us', '/advertise'], ['Contact', '/visit-us']]) },
-        { title: 'MORE', links: L([['Who it’s for', '/parties-and-events'], ['All locations', '/locations'], ['Blog & guides', '/guides'], ['Corporate Events', '/corporate-events'], ['Comparisons', '/guides']]) }
+        { title: 'EXPLORE', links: L([['Attractions', '/attractions'], ['Food & Drink', '/pizza-party-norwich'], ['Parties & Events', '/parties-and-events-norwich'], ['Prices', '/party-packages-norwich'], ['Gallery', '/leman-cave-photos'], ['Visit Us', '/contact-leman-cave-norwich']]) },
+        { title: 'POPULAR', links: L([['Pro Racing Simulator', '/attractions/racing-simulator-norwich'], ['Digital Scalextric', '/attractions/scalextric-track-norwich'], ['Birthday Parties', '/birthday-party-venue-norwich'], ['Kids Parties', '/kids-party-venue-norwich'], ['Stag & Hen Dos', '/stag-do-norwich'], ['Team Building', '/team-building-norwich'], ['Christmas Parties', '/christmas-party-norwich'], ['Exclusive Venue Hire', '/party-venue-norwich']]) },
+        { title: 'PLAN YOUR VISIT', links: L([['Opening Times', '/leman-cave-opening-times'], ['Travel & Parking', '/leman-cave-parking-and-travel'], ['Accessibility', '/accessible-activities-norwich'], ['FAQs', '/leman-cave-faqs'], ['Gift Vouchers', '/experience-gifts-norwich'], ['Advertise With Us', '/advertising-screens-norwich'], ['Contact', '/contact-leman-cave-norwich']]) },
+        { title: 'MORE', links: L([['Who it’s for', '/parties-and-events-norwich'], ['All locations', '/locations'], ['Blog & guides', '/guides'], ['Corporate Events', '/corporate-events-norwich'], ['Comparisons', '/guides']]) }
       ],
       brands: [
         { name: 'Race Car Graphics UK', href: 'https://racecargraphics.uk/', logo: '/images/af46cb048a3538fff3ada1542e3a6666.png' },

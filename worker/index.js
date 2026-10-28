@@ -7,14 +7,18 @@
  *   (Supabase function `inbound-webform-email`) using LeMan Cave's web form key.
  *   The CRM creates the lead in "LeMan Cave leads → Incoming", links/creates the
  *   customer and emails the staff alert.
- * - Old URL redirects.
+ * - Old URL redirects (incl. seo/redirects.json; those paths are also listed in run_worker_first in wrangler.jsonc).
  *
  * Config (wrangler.jsonc vars): CRM_WEBFORM_URL, CRM_FORM_KEY
  */
 
+// Pages moved to keyword addresses (Oct 2026): seo/redirects.json, old path → new path.
+import MOVED from '../seo/redirects.json';
+
 const REDIRECTS = {
+  ...MOVED,
   '/experiences': '/attractions',
-  '/contact': '/visit-us',
+  '/contact': '/contact-leman-cave-norwich',
   '/login': '/account',
 };
 

@@ -14,14 +14,14 @@
    "arcade games norwich"
   ]
  },
- "/parties-and-events": {
+ "/parties-and-events-norwich": {
   "primary": "parties and events norwich",
   "secondary": [
    "party ideas norwich",
    "private party venue norwich"
   ]
  },
- "/venue-hire": {
+ "/party-venue-norwich": {
   "primary": "party venue norwich",
   "secondary": [
    "venue hire norwich",
@@ -29,42 +29,42 @@
    "private party venue norfolk"
   ]
  },
- "/food": {
+ "/pizza-party-norwich": {
   "primary": "pizza party norwich",
   "secondary": [
    "party food packages",
    "pizza party packages"
   ]
  },
- "/drinks": {
+ "/bring-your-own-drinks-venue-norwich": {
   "primary": "bring your own drinks venue norwich",
   "secondary": [
    "bring your own party venue",
    "party drinks norwich"
   ]
  },
- "/prices": {
+ "/party-packages-norwich": {
   "primary": "party packages norwich",
   "secondary": [
    "racing simulator prices",
    "venue hire prices norwich"
   ]
  },
- "/gallery": {
+ "/leman-cave-photos": {
   "primary": "leman cave photos",
   "secondary": [
    "racing simulator venue photos",
    "party venue photos norwich"
   ]
  },
- "/visit-us": {
+ "/contact-leman-cave-norwich": {
   "primary": "leman cave norwich",
   "secondary": [
    "contact leman cave",
    "directions to leman cave"
   ]
  },
- "/corporate-events": {
+ "/corporate-events-norwich": {
   "primary": "corporate events norwich",
   "secondary": [
    "corporate event venue norwich",
@@ -72,7 +72,7 @@
    "corporate entertainment norwich"
   ]
  },
- "/christmas-parties": {
+ "/christmas-party-norwich": {
   "primary": "christmas party norwich",
   "secondary": [
    "christmas party nights norwich",
@@ -80,14 +80,14 @@
    "christmas party venue norwich"
   ]
  },
- "/gift-vouchers": {
+ "/experience-gifts-norwich": {
   "primary": "experience gifts norwich",
   "secondary": [
    "gift vouchers norwich",
    "racing simulator gift voucher"
   ]
  },
- "/attractions/racing-simulator": {
+ "/attractions/racing-simulator-norwich": {
   "primary": "racing simulator norwich",
   "secondary": [
    "sim racing norwich",
@@ -95,81 +95,81 @@
    "driving simulator experience norfolk"
   ]
  },
- "/attractions/digital-scalextric": {
+ "/attractions/scalextric-track-norwich": {
   "primary": "scalextric track norwich",
   "secondary": [
    "digital scalextric",
    "scalextric racing norwich"
   ]
  },
- "/attractions/games-and-arcade": {
+ "/attractions/arcade-games-norwich": {
   "primary": "arcade games norwich",
   "secondary": [
    "games room norwich",
    "gaming venue norwich"
   ]
  },
- "/attractions/motorcycle-simulator": {
+ "/attractions/motorbike-simulator-norwich": {
   "primary": "motorbike simulator norwich",
   "secondary": [
    "motorcycle simulator",
    "motorbike racing game"
   ]
  },
- "/attractions/ps5-lounge": {
+ "/attractions/ps5-gaming-lounge-norwich": {
   "primary": "ps5 gaming lounge norwich",
   "secondary": [
    "big screen gaming norwich",
    "ps5 party norwich"
   ]
  },
- "/attractions/digital-pinball": {
+ "/attractions/digital-pinball-norwich": {
   "primary": "digital pinball norwich",
   "secondary": [
    "pinball machine norwich"
   ]
  },
- "/attractions/pool-table": {
+ "/attractions/pool-table-norwich": {
   "primary": "pool table norwich",
   "secondary": [
    "9ft pool table",
    "play pool norwich"
   ]
  },
- "/attractions/air-hockey": {
+ "/attractions/air-hockey-norwich": {
   "primary": "air hockey norwich",
   "secondary": [
    "air hockey table"
   ]
  },
- "/attractions/table-football": {
+ "/attractions/table-football-norwich": {
   "primary": "table football norwich",
   "secondary": [
    "foosball table"
   ]
  },
- "/attractions/darts": {
+ "/attractions/darts-norwich": {
   "primary": "darts norwich",
   "secondary": [
    "automatic scoring darts",
    "darts party norwich"
   ]
  },
- "/attractions/arcade": {
+ "/attractions/arcade-norwich": {
   "primary": "arcade norwich",
   "secondary": [
    "two player arcade machine",
    "retro arcade games"
   ]
  },
- "/attractions/memorabilia": {
+ "/attractions/motorsport-memorabilia-norwich": {
   "primary": "motorsport memorabilia norwich",
   "secondary": [
    "racing memorabilia",
    "motorsport collection"
   ]
  },
- "/birthday-parties": {
+ "/birthday-party-venue-norwich": {
   "primary": "birthday party venue norwich",
   "secondary": [
    "birthday party norwich",
@@ -177,7 +177,7 @@
    "private birthday party"
   ]
  },
- "/kids-parties": {
+ "/kids-party-venue-norwich": {
   "primary": "kids party venue norwich",
   "secondary": [
    "kids birthday party norwich",
@@ -185,7 +185,7 @@
    "boys birthday party ideas"
   ]
  },
- "/teen-parties": {
+ "/teenage-party-ideas-norwich": {
   "primary": "teenage party ideas norwich",
   "secondary": [
    "teen birthday party venue",
@@ -200,7 +200,7 @@
    "stag weekend norwich"
   ]
  },
- "/hen-do-norfolk": {
+ "/hen-do-norwich": {
   "primary": "hen do norwich",
   "secondary": [
    "hen do activities norwich",
@@ -208,119 +208,119 @@
    "hen do norfolk"
   ]
  },
- "/team-building": {
+ "/team-building-norwich": {
   "primary": "team building norwich",
   "secondary": [
    "team building activities norfolk",
    "team away day norwich"
   ]
  },
- "/client-entertaining": {
+ "/corporate-hospitality-norwich": {
   "primary": "corporate hospitality norwich",
   "secondary": [
    "client entertainment norwich",
    "corporate entertainment norfolk"
   ]
  },
- "/leaving-and-retirement-parties": {
+ "/leaving-do-ideas-norwich": {
   "primary": "leaving do ideas norwich",
   "secondary": [
    "retirement party venue norwich",
    "leaving party venue"
   ]
  },
- "/family-days-out": {
+ "/family-days-out-norfolk": {
   "primary": "family days out norfolk",
   "secondary": [
    "family activities norwich",
    "indoor family day out"
   ]
  },
- "/group-nights-out": {
+ "/night-out-norwich": {
   "primary": "night out norwich",
   "secondary": [
    "group night out ideas norwich",
    "things to do in norfolk for adults"
   ]
  },
- "/group-bookings": {
+ "/group-activities-norwich": {
   "primary": "group activities norwich",
   "secondary": [
    "group bookings norwich",
    "work social ideas norwich"
   ]
  },
- "/car-club-meets": {
+ "/car-club-meet-venue-norfolk": {
   "primary": "car club meet venue norfolk",
   "secondary": [
    "car club meet norwich",
    "car club events"
   ]
  },
- "/club-socials": {
+ "/club-social-ideas-norfolk": {
   "primary": "club social ideas norfolk",
   "secondary": [
    "sports club social",
    "club night out norwich"
   ]
  },
- "/who-its-for/families": {
+ "/who-its-for/family-entertainment-norwich": {
   "primary": "family entertainment norwich",
   "secondary": [
    "activities for kids and adults",
    "family party venue"
   ]
  },
- "/who-its-for/friends": {
+ "/who-its-for/things-to-do-with-friends-in-norwich": {
   "primary": "things to do with friends in norwich",
   "secondary": [
    "friends night out norwich",
    "group activities for friends"
   ]
  },
- "/who-its-for/corporate-teams": {
+ "/who-its-for/corporate-team-activities-norwich": {
   "primary": "corporate team activities norwich",
   "secondary": [
    "work team day out",
    "team social ideas"
   ]
  },
- "/who-its-for/motorsport-fans": {
+ "/who-its-for/motorsport-experience-norwich": {
   "primary": "motorsport experience norwich",
   "secondary": [
    "racing experience norfolk",
    "motorsport fan days out"
   ]
  },
- "/who-its-for/gamers": {
+ "/who-its-for/gaming-venue-norwich": {
   "primary": "gaming venue norwich",
   "secondary": [
    "racing games norwich",
    "gaming party norwich"
   ]
  },
- "/who-its-for/non-petrolheads": {
+ "/who-its-for/fun-group-activities-norwich": {
   "primary": "fun group activities norwich",
   "secondary": [
    "not into cars",
    "activities for non car fans"
   ]
  },
- "/who-its-for/tourists": {
+ "/who-its-for/rainy-day-activities-norwich": {
   "primary": "rainy day activities norwich",
   "secondary": [
    "things to do in norwich when it rains",
    "visiting norwich"
   ]
  },
- "/who-its-for/locals": {
+ "/who-its-for/things-to-do-in-norwich-for-adults": {
   "primary": "things to do in norwich for adults",
   "secondary": [
    "local entertainment norwich",
    "norwich night out ideas"
   ]
  },
- "/accessibility": {
+ "/accessible-activities-norwich": {
   "primary": "accessible activities norwich",
   "secondary": [
    "wheelchair accessible venue norwich",
@@ -334,14 +334,14 @@
    "group activities east anglia"
   ]
  },
- "/locations/norwich": {
+ "/locations/things-to-do-in-norwich-for-groups": {
   "primary": "things to do in norwich for groups",
   "secondary": [
    "party ideas norwich",
    "team days out norwich"
   ]
  },
- "/locations/norfolk": {
+ "/locations/party-venue-norfolk": {
   "primary": "party venue norfolk",
   "secondary": [
    "birthday party ideas norfolk",
@@ -349,7 +349,7 @@
    "team building norfolk"
   ]
  },
- "/locations/wroxham": {
+ "/locations/party-venue-near-wroxham": {
   "primary": "party venue near wroxham",
   "secondary": [
    "birthday party ideas wroxham",
@@ -357,7 +357,7 @@
    "team building wroxham"
   ]
  },
- "/locations/aylsham": {
+ "/locations/party-venue-near-aylsham": {
   "primary": "party venue near aylsham",
   "secondary": [
    "birthday party ideas aylsham",
@@ -365,7 +365,7 @@
    "team building aylsham"
   ]
  },
- "/locations/wymondham": {
+ "/locations/party-venue-near-wymondham": {
   "primary": "party venue near wymondham",
   "secondary": [
    "birthday party ideas wymondham",
@@ -373,7 +373,7 @@
    "team building wymondham"
   ]
  },
- "/locations/north-walsham": {
+ "/locations/party-venue-near-north-walsham": {
   "primary": "party venue near north walsham",
   "secondary": [
    "birthday party ideas north walsham",
@@ -381,7 +381,7 @@
    "team building north walsham"
   ]
  },
- "/locations/dereham": {
+ "/locations/party-venue-near-dereham": {
   "primary": "party venue near dereham",
   "secondary": [
    "birthday party ideas dereham",
@@ -389,7 +389,7 @@
    "team building dereham"
   ]
  },
- "/locations/cromer": {
+ "/locations/party-venue-near-cromer": {
   "primary": "party venue near cromer",
   "secondary": [
    "birthday party ideas cromer",
@@ -397,7 +397,7 @@
    "team building cromer"
   ]
  },
- "/locations/great-yarmouth": {
+ "/locations/party-venue-near-great-yarmouth": {
   "primary": "party venue near great yarmouth",
   "secondary": [
    "birthday party ideas great yarmouth",
@@ -405,7 +405,7 @@
    "team building great yarmouth"
   ]
  },
- "/locations/diss": {
+ "/locations/party-venue-near-diss": {
   "primary": "party venue near diss",
   "secondary": [
    "birthday party ideas diss",
@@ -413,7 +413,7 @@
    "team building diss"
   ]
  },
- "/locations/beccles": {
+ "/locations/party-venue-near-beccles": {
   "primary": "party venue near beccles",
   "secondary": [
    "birthday party ideas beccles",
@@ -421,7 +421,7 @@
    "team building beccles"
   ]
  },
- "/locations/lowestoft": {
+ "/locations/party-venue-near-lowestoft": {
   "primary": "party venue near lowestoft",
   "secondary": [
    "birthday party ideas lowestoft",
@@ -429,7 +429,7 @@
    "team building lowestoft"
   ]
  },
- "/locations/thetford": {
+ "/locations/party-venue-near-thetford": {
   "primary": "party venue near thetford",
   "secondary": [
    "birthday party ideas thetford",
@@ -437,7 +437,7 @@
    "team building thetford"
   ]
  },
- "/locations/kings-lynn": {
+ "/locations/party-venue-near-kings-lynn": {
   "primary": "party venue near kings lynn",
   "secondary": [
    "birthday party ideas kings lynn",
@@ -445,7 +445,7 @@
    "team building kings lynn"
   ]
  },
- "/locations/ipswich": {
+ "/locations/party-venue-near-ipswich": {
   "primary": "party venue near ipswich",
   "secondary": [
    "birthday party ideas ipswich",
@@ -453,7 +453,7 @@
    "team building ipswich"
   ]
  },
- "/locations/bury-st-edmunds": {
+ "/locations/party-venue-near-bury-st-edmunds": {
   "primary": "party venue near bury st edmunds",
   "secondary": [
    "birthday party ideas bury st edmunds",
@@ -461,7 +461,7 @@
    "team building bury st edmunds"
   ]
  },
- "/locations/cambridge": {
+ "/locations/party-venue-near-cambridge": {
   "primary": "party venue near cambridge",
   "secondary": [
    "birthday party ideas cambridge",
@@ -476,21 +476,21 @@
    "sim racing guides"
   ]
  },
- "/faqs": {
+ "/leman-cave-faqs": {
   "primary": "leman cave faqs",
   "secondary": [
    "racing simulator questions",
    "party booking questions"
   ]
  },
- "/opening-times": {
+ "/leman-cave-opening-times": {
   "primary": "leman cave opening times",
   "secondary": [
    "racing simulator opening hours",
    "party booking times"
   ]
  },
- "/travel-and-parking": {
+ "/leman-cave-parking-and-travel": {
   "primary": "leman cave parking",
   "secondary": [
    "directions to leman cave norwich",
@@ -560,7 +560,7 @@
    "how to get faster in sim racing"
   ]
  },
- "/guides/christmas-party-planner": {
+ "/guides/christmas-party-ideas-norwich": {
   "primary": "christmas party ideas norwich",
   "secondary": [
    "office christmas party ideas",
@@ -588,14 +588,14 @@
    "karting or sim racing"
   ]
  },
- "/compare/4k-vs-vr": {
+ "/compare/4k-vs-vr-racing": {
   "primary": "4k vs vr racing",
   "secondary": [
    "vr racing norwich",
    "vr racing simulator"
   ]
  },
- "/compare/motion-vs-static-simulators": {
+ "/compare/motion-vs-static-simulator": {
   "primary": "motion vs static simulator",
   "secondary": [
    "motion simulator norwich",
@@ -609,28 +609,28 @@
    "private hire norwich"
   ]
  },
- "/compare/saturday-packages": {
+ "/compare/saturday-party-packages-norwich": {
   "primary": "saturday party packages norwich",
   "secondary": [
    "bring your own drinks package",
    "pizza party package"
   ]
  },
- "/compare/indoor-activities-norwich": {
+ "/compare/best-indoor-activities-norwich": {
   "primary": "best indoor activities norwich",
   "secondary": [
    "bowling vs escape room vs sim racing",
    "group activities compared"
   ]
  },
- "/compare/team-building-activities": {
+ "/compare/team-building-activities-compared": {
   "primary": "team building activities compared",
   "secondary": [
    "team building ideas",
    "corporate team activities"
   ]
  },
- "/compare/party-venues": {
+ "/compare/party-venues-norwich-compared": {
   "primary": "party venues norwich compared",
   "secondary": [
    "best party venues norwich",
@@ -651,7 +651,7 @@
    "online booking"
   ]
  },
- "/advertise": {
+ "/advertising-screens-norwich": {
   "primary": "advertising screens norwich",
   "secondary": [
    "digital signage advertising norwich",

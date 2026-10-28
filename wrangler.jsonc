@@ -8,7 +8,25 @@
     "directory": "./out",
     "binding": "ASSETS",
     "not_found_handling": "404-page",
-    "run_worker_first": ["/api/*", "/experiences", "/contact", "/login"]
+    "run_worker_first": ["/api/*", "/experiences", "/contact", "/login",
+      "/accessibility", "/advertise", "/attractions/air-hockey", "/attractions/arcade",
+      "/attractions/darts", "/attractions/digital-pinball", "/attractions/digital-scalextric", "/attractions/games-and-arcade",
+      "/attractions/memorabilia", "/attractions/motorcycle-simulator", "/attractions/pool-table", "/attractions/ps5-lounge",
+      "/attractions/racing-simulator", "/attractions/table-football", "/birthday-parties", "/car-club-meets",
+      "/christmas-parties", "/client-entertaining", "/club-socials", "/compare/4k-vs-vr",
+      "/compare/indoor-activities-norwich", "/compare/motion-vs-static-simulators", "/compare/party-venues", "/compare/saturday-packages",
+      "/compare/team-building-activities", "/corporate-events", "/drinks", "/family-days-out",
+      "/faqs", "/food", "/gallery", "/gift-vouchers",
+      "/group-bookings", "/group-nights-out", "/guides/christmas-party-planner", "/hen-do-norfolk",
+      "/kids-parties", "/leaving-and-retirement-parties", "/locations/aylsham", "/locations/beccles",
+      "/locations/bury-st-edmunds", "/locations/cambridge", "/locations/cromer", "/locations/dereham",
+      "/locations/diss", "/locations/great-yarmouth", "/locations/ipswich", "/locations/kings-lynn",
+      "/locations/lowestoft", "/locations/norfolk", "/locations/north-walsham", "/locations/norwich",
+      "/locations/thetford", "/locations/wroxham", "/locations/wymondham", "/opening-times",
+      "/parties-and-events", "/prices", "/team-building", "/teen-parties",
+      "/travel-and-parking", "/venue-hire", "/visit-us", "/who-its-for/corporate-teams",
+      "/who-its-for/families", "/who-its-for/friends", "/who-its-for/gamers", "/who-its-for/locals",
+      "/who-its-for/motorsport-fans", "/who-its-for/non-petrolheads", "/who-its-for/tourists"]
   },
   "vars": {
     // Race Car Graphics CRM (Supabase) — website form intake, same function Auto Opulence uses

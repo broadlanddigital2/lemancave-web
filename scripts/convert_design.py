@@ -8,34 +8,34 @@ SRC, OUT = sys.argv[1], sys.argv[2]
 
 # ---------- routes ----------
 ROUTES = {
- 'Main': '/', 'Attractions': '/attractions', 'Events': '/parties-and-events', 'Food': '/food', 'Drinks': '/drinks',
- 'Pricing': '/prices', 'Gallery': '/gallery', 'Visit': '/visit-us', 'Corporate': '/corporate-events',
- 'Christmas': '/christmas-parties', 'GiftVouchers': '/gift-vouchers',
- 'Simulator': '/attractions/racing-simulator', 'Scalextric': '/attractions/digital-scalextric', 'Games': '/attractions/games-and-arcade',
- 'MotoSim': '/attractions/motorcycle-simulator', 'PS5': '/attractions/ps5-lounge', 'Pinball': '/attractions/digital-pinball',
- 'Pool': '/attractions/pool-table', 'AirHockey': '/attractions/air-hockey', 'TableFootball': '/attractions/table-football',
- 'Darts': '/attractions/darts', 'Arcade': '/attractions/arcade', 'Memorabilia': '/attractions/memorabilia',
- 'VenueHire': '/venue-hire', 'Birthday': '/birthday-parties', 'KidsParties': '/kids-parties', 'TeenParties': '/teen-parties',
- 'StagDo': '/stag-do-norwich', 'HenDo': '/hen-do-norfolk', 'TeamBuilding': '/team-building', 'ClientEntertaining': '/client-entertaining',
- 'LeavingParties': '/leaving-and-retirement-parties', 'FamilyDays': '/family-days-out', 'AdultGroups': '/group-nights-out',
- 'GroupBookings': '/group-bookings', 'CarClub': '/car-club-meets', 'ClubSocials': '/club-socials',
- 'ForFamilies': '/who-its-for/families', 'ForFriends': '/who-its-for/friends', 'ForCorporateTeams': '/who-its-for/corporate-teams',
- 'ForMotorsportFans': '/who-its-for/motorsport-fans', 'ForGamers': '/who-its-for/gamers', 'ForNonPetrolheads': '/who-its-for/non-petrolheads',
- 'ForTourists': '/who-its-for/tourists', 'ForLocals': '/who-its-for/locals', 'Accessibility': '/accessibility',
- 'EastAnglia': '/locations', 'Norwich': '/locations/norwich', 'Norfolk': '/locations/norfolk', 'Wroxham': '/locations/wroxham',
- 'Aylsham': '/locations/aylsham', 'Wymondham': '/locations/wymondham', 'NorthWalsham': '/locations/north-walsham',
- 'Dereham': '/locations/dereham', 'Cromer': '/locations/cromer', 'GreatYarmouth': '/locations/great-yarmouth', 'Diss': '/locations/diss',
- 'Beccles': '/locations/beccles', 'Lowestoft': '/locations/lowestoft', 'Thetford': '/locations/thetford', 'KingsLynn': '/locations/kings-lynn',
- 'Ipswich': '/locations/ipswich', 'BuryStEdmunds': '/locations/bury-st-edmunds', 'Cambridge': '/locations/cambridge',
- 'Blog': '/guides', 'FAQs': '/faqs', 'OpeningTimes': '/opening-times', 'TravelParking': '/travel-and-parking',
+ 'Main': '/', 'Attractions': '/attractions', 'Events': '/parties-and-events-norwich', 'Food': '/pizza-party-norwich', 'Drinks': '/bring-your-own-drinks-venue-norwich',
+ 'Pricing': '/party-packages-norwich', 'Gallery': '/leman-cave-photos', 'Visit': '/contact-leman-cave-norwich', 'Corporate': '/corporate-events-norwich',
+ 'Christmas': '/christmas-party-norwich', 'GiftVouchers': '/experience-gifts-norwich',
+ 'Simulator': '/attractions/racing-simulator-norwich', 'Scalextric': '/attractions/scalextric-track-norwich', 'Games': '/attractions/arcade-games-norwich',
+ 'MotoSim': '/attractions/motorbike-simulator-norwich', 'PS5': '/attractions/ps5-gaming-lounge-norwich', 'Pinball': '/attractions/digital-pinball-norwich',
+ 'Pool': '/attractions/pool-table-norwich', 'AirHockey': '/attractions/air-hockey-norwich', 'TableFootball': '/attractions/table-football-norwich',
+ 'Darts': '/attractions/darts-norwich', 'Arcade': '/attractions/arcade-norwich', 'Memorabilia': '/attractions/motorsport-memorabilia-norwich',
+ 'VenueHire': '/party-venue-norwich', 'Birthday': '/birthday-party-venue-norwich', 'KidsParties': '/kids-party-venue-norwich', 'TeenParties': '/teenage-party-ideas-norwich',
+ 'StagDo': '/stag-do-norwich', 'HenDo': '/hen-do-norwich', 'TeamBuilding': '/team-building-norwich', 'ClientEntertaining': '/corporate-hospitality-norwich',
+ 'LeavingParties': '/leaving-do-ideas-norwich', 'FamilyDays': '/family-days-out-norfolk', 'AdultGroups': '/night-out-norwich',
+ 'GroupBookings': '/group-activities-norwich', 'CarClub': '/car-club-meet-venue-norfolk', 'ClubSocials': '/club-social-ideas-norfolk',
+ 'ForFamilies': '/who-its-for/family-entertainment-norwich', 'ForFriends': '/who-its-for/things-to-do-with-friends-in-norwich', 'ForCorporateTeams': '/who-its-for/corporate-team-activities-norwich',
+ 'ForMotorsportFans': '/who-its-for/motorsport-experience-norwich', 'ForGamers': '/who-its-for/gaming-venue-norwich', 'ForNonPetrolheads': '/who-its-for/fun-group-activities-norwich',
+ 'ForTourists': '/who-its-for/rainy-day-activities-norwich', 'ForLocals': '/who-its-for/things-to-do-in-norwich-for-adults', 'Accessibility': '/accessible-activities-norwich',
+ 'EastAnglia': '/locations', 'Norwich': '/locations/things-to-do-in-norwich-for-groups', 'Norfolk': '/locations/party-venue-norfolk', 'Wroxham': '/locations/party-venue-near-wroxham',
+ 'Aylsham': '/locations/party-venue-near-aylsham', 'Wymondham': '/locations/party-venue-near-wymondham', 'NorthWalsham': '/locations/party-venue-near-north-walsham',
+ 'Dereham': '/locations/party-venue-near-dereham', 'Cromer': '/locations/party-venue-near-cromer', 'GreatYarmouth': '/locations/party-venue-near-great-yarmouth', 'Diss': '/locations/party-venue-near-diss',
+ 'Beccles': '/locations/party-venue-near-beccles', 'Lowestoft': '/locations/party-venue-near-lowestoft', 'Thetford': '/locations/party-venue-near-thetford', 'KingsLynn': '/locations/party-venue-near-kings-lynn',
+ 'Ipswich': '/locations/party-venue-near-ipswich', 'BuryStEdmunds': '/locations/party-venue-near-bury-st-edmunds', 'Cambridge': '/locations/party-venue-near-cambridge',
+ 'Blog': '/guides', 'FAQs': '/leman-cave-faqs', 'OpeningTimes': '/leman-cave-opening-times', 'TravelParking': '/leman-cave-parking-and-travel',
  'GuideNorwich': '/guides/things-to-do-in-norwich', 'GuideIndoor': '/guides/indoor-activities-norfolk', 'GuideTeamEvent': '/guides/planning-a-team-event',
  'GuideBirthday': '/guides/birthday-party-ideas', 'GuideSim': '/guides/race-simulator-guide', 'GuideVenueHire': '/guides/venue-hire-guide',
  'GuideKidsChecklist': '/guides/kids-party-checklist', 'GuideStagHen': '/guides/stag-and-hen-planner', 'GuideSimTips': '/guides/sim-racing-tips',
- 'GuideChristmas': '/guides/christmas-party-planner', 'GuideGifts': '/guides/gifts-for-petrolheads', 'GuideLeMans': '/guides/le-mans-history',
- 'CompareKarting': '/compare/sim-racing-vs-karting', 'Compare4kVr': '/compare/4k-vs-vr', 'CompareMotionStatic': '/compare/motion-vs-static-simulators',
- 'CompareSimVsHire': '/compare/sim-room-vs-whole-cave-hire', 'CompareSaturday': '/compare/saturday-packages', 'CompareIndoor': '/compare/indoor-activities-norwich',
- 'CompareTeamBuilding': '/compare/team-building-activities', 'ComparePartyVenues': '/compare/party-venues', 'CompareScalextric': '/compare/digital-vs-classic-scalextric',
- 'Sitemap': '/site-map', 'Book': '/book', 'Advertise': '/advertise', 'Account': '/account',
+ 'GuideChristmas': '/guides/christmas-party-ideas-norwich', 'GuideGifts': '/guides/gifts-for-petrolheads', 'GuideLeMans': '/guides/le-mans-history',
+ 'CompareKarting': '/compare/sim-racing-vs-karting', 'Compare4kVr': '/compare/4k-vs-vr-racing', 'CompareMotionStatic': '/compare/motion-vs-static-simulator',
+ 'CompareSimVsHire': '/compare/sim-room-vs-whole-cave-hire', 'CompareSaturday': '/compare/saturday-party-packages-norwich', 'CompareIndoor': '/compare/best-indoor-activities-norwich',
+ 'CompareTeamBuilding': '/compare/team-building-activities-compared', 'ComparePartyVenues': '/compare/party-venues-norwich-compared', 'CompareScalextric': '/compare/digital-vs-classic-scalextric',
+ 'Sitemap': '/site-map', 'Book': '/book', 'Advertise': '/advertising-screens-norwich', 'Account': '/account',
 }
 TEMPLATES = {'Landing', 'Guide', 'Compare', 'Hub', 'Product', 'SiteFooter'}
 SKIP = {'Sitemap'}  # strategy diagram board; replaced by a generated HTML site map
@@ -220,8 +220,8 @@ def fix_links(code, exts):
         return ROUTES.get(n, '/' + n.lower())
     code = re.sub(r'\b([A-Za-z0-9]+)\.dc\.html', r, code)
     code = code.replace('https://lemancave.co.uk/book', '/book').replace('https://lemancave.co.uk/login', '/account')
-    code = code.replace('https://lemancave.co.uk/experiences', '/attractions').replace('https://lemancave.co.uk/corporate-events', '/corporate-events')
-    code = code.replace('https://lemancave.co.uk/contact', '/visit-us').replace('https://lemancave.co.uk/', '/')
+    code = code.replace('https://lemancave.co.uk/experiences', '/attractions').replace('https://lemancave.co.uk/corporate-events', '/corporate-events-norwich')
+    code = code.replace('https://lemancave.co.uk/contact', '/contact-leman-cave-norwich').replace('https://lemancave.co.uk/', '/')
     code = re.sub(r"/_blob/([0-9a-f]{32})", lambda m: f"/images/{m.group(1)}.{exts.get(m.group(1), 'webp')}", code)
     code = code.replace("'/_blob/' + id", "'/images/' + id + '.webp'")
     # The text "Log in" link: the header's account icon (HeaderTools) replaces it.
@@ -268,6 +268,21 @@ def add_booking_widget(code):
     assert n == 1, 'booking widget placeholder not found'
     return code.replace("import { css } from '../lib/css';\n", "import { css } from '../lib/css';\nimport CrmBooking from './CrmBooking';\n", 1)
 
+def add_faqs(code):
+    # FAQ accordions: answers are always in the page's HTML (hidden until opened) so search engines can read them,
+    # and each FAQ list outputs FAQPage structured data (components/FaqSchema.jsx).
+    pat = re.compile(r'\{(\w+)\.open \? \(<>\n(<p [^\n]*?)>\{\1\.a\}</p>\n</>\) : null\}')
+    code, n = pat.subn(lambda m: m.group(2) + ' hidden={!' + m.group(1) + '.open}>{' + m.group(1) + '.a}</p>', code)
+    if not n:
+        return code
+    if '(V.faqGroups || []).map(' in code:
+        # Guide pages: one FAQPage for all the groups.
+        code = code.replace('{(V.faqGroups || []).map(', '<FaqSchema items={(V.faqGroups || []).flatMap((g) => g.items || [])} />\n{(V.faqGroups || []).map(', 1)
+    else:
+        code, k = re.subn(r'\{\((V\.faqs) \|\| \[\]\)\.map\(\(f, \$index\) =>', lambda m: '<FaqSchema items={' + m.group(1) + ' || []} />\n' + m.group(0), code, count=1)
+        assert k == 1, 'FAQ list not found'
+    return code.replace("import { css } from '../lib/css';\n", "import { css } from '../lib/css';\nimport FaqSchema from './FaqSchema';\n", 1)
+
 if __name__ == '__main__':
     exts = {}
     imgdir = os.path.join(OUT, 'public', 'images')
@@ -293,6 +308,7 @@ if __name__ == '__main__':
         code = add_header_tools(code)
         code = add_booking_widget(code)
         code = add_festive_bar(code)
+        code = add_faqs(code)
         if name == 'GiftVouchers' and 'formType="gift-voucher"' in code:
             code = re.sub(r'(<EnquiryForm formType="gift-voucher"[^>]*>)', lambda m: m.group(1) + '<input type="hidden" name="voucher" value={`${V.v.title} \u00b7 ${V.v.price}`} />', code, count=1)
             assert 'name="voucher"' in code

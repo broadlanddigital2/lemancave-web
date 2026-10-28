@@ -232,7 +232,11 @@ class Component extends DCLogic {
           S('Drive times', ['Approximate drive times — they vary with traffic. Tap a town for local tips.'], [['Norwich city centre', '4 mi · ~15 min'], ['Wroxham', '~7 mi · ~15 min'], ['Aylsham', '~10 mi · ~20 min'], ['Wymondham', '~12 mi · ~25 min'], ['North Walsham', '~14 mi · ~25 min'], ['Dereham', '~17 mi · ~30 min'], ['Cromer', '~20 mi · ~35 min'], ['Beccles', '~20 mi · ~35 min'], ['Great Yarmouth', '~22 mi · ~35 min'], ['Diss', '~22 mi · ~35 min'], ['Lowestoft', '~28 mi · ~45 min'], ['Thetford', '~30 mi · ~40 min'], ['King’s Lynn', '~45 mi · ~1 hr'], ['Bury St Edmunds', '~45 mi · ~1 hr'], ['Ipswich', '~45 mi · ~1 hr 5 min'], ['Cambridge', '~65 mi · ~1 hr 20 min']], 'Use postcode NR6 7BW in your sat nav.'),
           S('Public transport & taxis', ['[CONFIRM — nearest bus routes / taxi advice]']), S('Accessibility', ['LeMan Cave is fully accessible. If you have specific needs, email bookings@lemancave.co.uk before your visit.'], [], '', ['Accessibility', 'Accessibility.dc.html'])],
         related: [['Visiting from', ['Norwich', 'Norfolk', 'Wroxham', 'Cromer', 'GreatYarmouth', 'Lowestoft', 'Ipswich', 'Cambridge', 'EastAnglia']], ['Plan your visit', ['OpeningTimes', 'Pricing', 'FAQs', 'Visit']]] },
-      blog: { parentHref: 'Main.dc.html', parentLabel: 'HOME', ...book, crumb: 'BLOG & GUIDES', kicker: 'NEWS, IDEAS & GUIDES', title: 'Blog & guides', intro: 'Ideas for parties, days out and race nights, honest comparisons, and everything you need to know about our sims.',
+      blog: { parentHref: 'Visit.dc.html', parentLabel: 'VISIT US', ...book, crumb: 'BLOG & GUIDES', kicker: 'NEWS, IDEAS & GUIDES', title: 'Blog & guides', intro: 'Ideas for parties, days out and race nights, honest comparisons, and everything you need to know about our sims.',
+        image: IMG.podium, imageAlt: 'A group on the podium: party planning guides and ideas from LeMan Cave',
+        summary: ['Party planning guides for birthdays, kids parties, stag and hen dos, team events and Christmas, each with a checklist.', 'Sim racing guides for first-timers: how the simulators work, 4K or VR, motion or static, and tips to go faster.', 'Honest comparisons to help you choose: sim racing vs karting, sim room vs whole cave, and Saturday packages side by side.'],
+        things: ['sim', 'scalex', 'ps5', 'pool'],
+        toc: [['Birthday party ideas', 'GuideBirthday'], ['Kids party checklist', 'GuideKidsChecklist'], ['Stag & hen planner', 'GuideStagHen'], ['Planning a team event', 'GuideTeamEvent'], ['Christmas party planner', 'GuideChristmas'], ['Race simulator guide', 'GuideSim']],
         cards: [
           ['PARTIES', 'Best birthday party ideas', 'Make this year’s one to remember.', 'GuideBirthday', IMG.podium], ['PARTIES', 'Kids party checklist', 'Everything to sort before the big day.', 'GuideKidsChecklist', IMG.slotWin], ['PARTIES', 'Stag & hen planner', 'A send-off with a competitive streak.', 'GuideStagHen', IMG.feast],
           ['CORPORATE', 'Planning a team event', 'A step-by-step guide.', 'GuideTeamEvent', IMG.simLounge], ['SEASONAL', 'Christmas party planner', 'Dates, packages and timings.', 'GuideChristmas', IMG.bar], ['GIFTS', 'Gifts for petrolheads', 'Experiences they’ll actually use.', 'GuideGifts', IMG.gift],
@@ -331,6 +335,7 @@ class Component extends DCLogic {
         toggle: () => this.setState({ open: open ? '' : id }) };
     }) }));
     const toc = sections.length ? sections.map((s) => ({ href: '#' + s.id, label: s.h })) : faqGroups.map((f) => ({ href: '#', label: f.title }));
+    if (g.toc) toc.push(...g.toc.map(([label, page]) => ({ label, href: page + '.dc.html' })));
     const cards = (g.cards || []).map(([tag, title, copy, page, img]) => ({ tag, title, copy, href: page + '.dc.html', img }));
     const things = (g.things || []).map((k) => ({ name: T[k][0], href: T[k][1], img: T[k][2], alt: T[k][0] + ' at LeMan Cave' }));
     const linkGroups = (g.related || []).map(([title, ks]) => ({ title, links: ks.map(lk) }));

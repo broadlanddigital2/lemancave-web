@@ -19,7 +19,7 @@ It's set up the same way as the Auto Opulence site.
 
 Every form posts to `/api/enquiry`:
 - home page enquiry
-- contact (`/visit-us`)
+- contact (`/contact-leman-cave-norwich`)
 - corporate quote
 - gift voucher
 
@@ -74,7 +74,7 @@ npm run preview    # static build + wrangler dev on http://localhost:8787
   - pizza menu;
   - local recommendations in the guides.
 - Review placeholders `[NAME]`, and "Last reviewed: [DATE]" on the comparison pages.
-- **Map embed** on `/visit-us` is a placeholder box.
+- **Map embed** on `/contact-leman-cave-norwich` is a placeholder box.
 - **Images** are AI-generated stand-ins, and some show invented "LeMan Cave" signage and building exteriors. Replace them with real photos in `public/images/`.
 
 ## URL map
@@ -82,47 +82,47 @@ npm run preview    # static build + wrangler dev on http://localhost:8787
 | URL | Design page |
 |---|---|
 | `/` | Main |
-| `/accessibility` | Accessibility |
+| `/accessible-activities-norwich` | Accessibility |
 | `/attractions` | Attractions |
-| `/attractions/air-hockey` | AirHockey |
-| `/attractions/arcade` | Arcade |
-| `/attractions/darts` | Darts |
-| `/attractions/digital-pinball` | Pinball |
-| `/attractions/digital-scalextric` | Scalextric |
-| `/attractions/games-and-arcade` | Games |
-| `/attractions/memorabilia` | Memorabilia |
-| `/attractions/motorcycle-simulator` | MotoSim |
-| `/attractions/pool-table` | Pool |
-| `/attractions/ps5-lounge` | PS5 |
-| `/attractions/racing-simulator` | Simulator |
-| `/attractions/table-football` | TableFootball |
-| `/birthday-parties` | Birthday |
+| `/attractions/air-hockey-norwich` | AirHockey |
+| `/attractions/arcade-norwich` | Arcade |
+| `/attractions/darts-norwich` | Darts |
+| `/attractions/digital-pinball-norwich` | Pinball |
+| `/attractions/scalextric-track-norwich` | Scalextric |
+| `/attractions/arcade-games-norwich` | Games |
+| `/attractions/motorsport-memorabilia-norwich` | Memorabilia |
+| `/attractions/motorbike-simulator-norwich` | MotoSim |
+| `/attractions/pool-table-norwich` | Pool |
+| `/attractions/ps5-gaming-lounge-norwich` | PS5 |
+| `/attractions/racing-simulator-norwich` | Simulator |
+| `/attractions/table-football-norwich` | TableFootball |
+| `/birthday-party-venue-norwich` | Birthday |
 | `/book` | Book |
-| `/car-club-meets` | CarClub |
-| `/christmas-parties` | Christmas |
-| `/client-entertaining` | ClientEntertaining |
-| `/club-socials` | ClubSocials |
-| `/compare/4k-vs-vr` | Compare4kVr |
+| `/car-club-meet-venue-norfolk` | CarClub |
+| `/christmas-party-norwich` | Christmas |
+| `/corporate-hospitality-norwich` | ClientEntertaining |
+| `/club-social-ideas-norfolk` | ClubSocials |
+| `/compare/4k-vs-vr-racing` | Compare4kVr |
 | `/compare/digital-vs-classic-scalextric` | CompareScalextric |
-| `/compare/indoor-activities-norwich` | CompareIndoor |
-| `/compare/motion-vs-static-simulators` | CompareMotionStatic |
-| `/compare/party-venues` | ComparePartyVenues |
-| `/compare/saturday-packages` | CompareSaturday |
+| `/compare/best-indoor-activities-norwich` | CompareIndoor |
+| `/compare/motion-vs-static-simulator` | CompareMotionStatic |
+| `/compare/party-venues-norwich-compared` | ComparePartyVenues |
+| `/compare/saturday-party-packages-norwich` | CompareSaturday |
 | `/compare/sim-racing-vs-karting` | CompareKarting |
 | `/compare/sim-room-vs-whole-cave-hire` | CompareSimVsHire |
-| `/compare/team-building-activities` | CompareTeamBuilding |
-| `/corporate-events` | Corporate |
-| `/drinks` | Drinks |
-| `/family-days-out` | FamilyDays |
-| `/faqs` | FAQs |
-| `/food` | Food |
-| `/gallery` | Gallery |
-| `/gift-vouchers` | GiftVouchers |
-| `/group-bookings` | GroupBookings |
-| `/group-nights-out` | AdultGroups |
+| `/compare/team-building-activities-compared` | CompareTeamBuilding |
+| `/corporate-events-norwich` | Corporate |
+| `/bring-your-own-drinks-venue-norwich` | Drinks |
+| `/family-days-out-norfolk` | FamilyDays |
+| `/leman-cave-faqs` | FAQs |
+| `/pizza-party-norwich` | Food |
+| `/leman-cave-photos` | Gallery |
+| `/experience-gifts-norwich` | GiftVouchers |
+| `/group-activities-norwich` | GroupBookings |
+| `/night-out-norwich` | AdultGroups |
 | `/guides` | Blog |
 | `/guides/birthday-party-ideas` | GuideBirthday |
-| `/guides/christmas-party-planner` | GuideChristmas |
+| `/guides/christmas-party-ideas-norwich` | GuideChristmas |
 | `/guides/gifts-for-petrolheads` | GuideGifts |
 | `/guides/indoor-activities-norfolk` | GuideIndoor |
 | `/guides/kids-party-checklist` | GuideKidsChecklist |
@@ -133,41 +133,41 @@ npm run preview    # static build + wrangler dev on http://localhost:8787
 | `/guides/stag-and-hen-planner` | GuideStagHen |
 | `/guides/things-to-do-in-norwich` | GuideNorwich |
 | `/guides/venue-hire-guide` | GuideVenueHire |
-| `/hen-do-norfolk` | HenDo |
-| `/kids-parties` | KidsParties |
-| `/leaving-and-retirement-parties` | LeavingParties |
+| `/hen-do-norwich` | HenDo |
+| `/kids-party-venue-norwich` | KidsParties |
+| `/leaving-do-ideas-norwich` | LeavingParties |
 | `/locations` | EastAnglia |
-| `/locations/aylsham` | Aylsham |
-| `/locations/beccles` | Beccles |
-| `/locations/bury-st-edmunds` | BuryStEdmunds |
-| `/locations/cambridge` | Cambridge |
-| `/locations/cromer` | Cromer |
-| `/locations/dereham` | Dereham |
-| `/locations/diss` | Diss |
-| `/locations/great-yarmouth` | GreatYarmouth |
-| `/locations/ipswich` | Ipswich |
-| `/locations/kings-lynn` | KingsLynn |
-| `/locations/lowestoft` | Lowestoft |
-| `/locations/norfolk` | Norfolk |
-| `/locations/north-walsham` | NorthWalsham |
-| `/locations/norwich` | Norwich |
-| `/locations/thetford` | Thetford |
-| `/locations/wroxham` | Wroxham |
-| `/locations/wymondham` | Wymondham |
-| `/opening-times` | OpeningTimes |
-| `/parties-and-events` | Events |
-| `/prices` | Pricing |
+| `/locations/party-venue-near-aylsham` | Aylsham |
+| `/locations/party-venue-near-beccles` | Beccles |
+| `/locations/party-venue-near-bury-st-edmunds` | BuryStEdmunds |
+| `/locations/party-venue-near-cambridge` | Cambridge |
+| `/locations/party-venue-near-cromer` | Cromer |
+| `/locations/party-venue-near-dereham` | Dereham |
+| `/locations/party-venue-near-diss` | Diss |
+| `/locations/party-venue-near-great-yarmouth` | GreatYarmouth |
+| `/locations/party-venue-near-ipswich` | Ipswich |
+| `/locations/party-venue-near-kings-lynn` | KingsLynn |
+| `/locations/party-venue-near-lowestoft` | Lowestoft |
+| `/locations/party-venue-norfolk` | Norfolk |
+| `/locations/party-venue-near-north-walsham` | NorthWalsham |
+| `/locations/things-to-do-in-norwich-for-groups` | Norwich |
+| `/locations/party-venue-near-thetford` | Thetford |
+| `/locations/party-venue-near-wroxham` | Wroxham |
+| `/locations/party-venue-near-wymondham` | Wymondham |
+| `/leman-cave-opening-times` | OpeningTimes |
+| `/parties-and-events-norwich` | Events |
+| `/party-packages-norwich` | Pricing |
 | `/stag-do-norwich` | StagDo |
-| `/team-building` | TeamBuilding |
-| `/teen-parties` | TeenParties |
-| `/travel-and-parking` | TravelParking |
-| `/venue-hire` | VenueHire |
-| `/visit-us` | Visit |
-| `/who-its-for/corporate-teams` | ForCorporateTeams |
-| `/who-its-for/families` | ForFamilies |
-| `/who-its-for/friends` | ForFriends |
-| `/who-its-for/gamers` | ForGamers |
-| `/who-its-for/locals` | ForLocals |
-| `/who-its-for/motorsport-fans` | ForMotorsportFans |
-| `/who-its-for/non-petrolheads` | ForNonPetrolheads |
-| `/who-its-for/tourists` | ForTourists |
+| `/team-building-norwich` | TeamBuilding |
+| `/teenage-party-ideas-norwich` | TeenParties |
+| `/leman-cave-parking-and-travel` | TravelParking |
+| `/party-venue-norwich` | VenueHire |
+| `/contact-leman-cave-norwich` | Visit |
+| `/who-its-for/corporate-team-activities-norwich` | ForCorporateTeams |
+| `/who-its-for/family-entertainment-norwich` | ForFamilies |
+| `/who-its-for/things-to-do-with-friends-in-norwich` | ForFriends |
+| `/who-its-for/gaming-venue-norwich` | ForGamers |
+| `/who-its-for/things-to-do-in-norwich-for-adults` | ForLocals |
+| `/who-its-for/motorsport-experience-norwich` | ForMotorsportFans |
+| `/who-its-for/fun-group-activities-norwich` | ForNonPetrolheads |
+| `/who-its-for/rainy-day-activities-norwich` | ForTourists |
