@@ -82,7 +82,7 @@ export default class Main extends React.Component {
         { num: '03', title: 'Team Building', copy: 'Leagues, pit-stop challenges and lap-time leaderboards that get every department talking.' },
         { num: '04', title: 'Corporate Events', copy: 'Client hospitality, product launches and away days with tailored packages.' },
         { num: '05', title: 'Exclusive Hire', copy: 'Three hours, the whole cave, your playlist. Longer sessions on request.' },
-        { num: '06', title: 'Pizza* & Bring Your Own drinks', copy: 'Pit-stop pizza* for the group, and Bring Your Own drinks pre-chilled and waiting — glasses and ice provided.' }
+        { num: '06', title: 'Pizza* & Bring Your Own drinks', copy: 'Pit-stop pizza* for the group, and Bring Your Own drinks pre-chilled and waiting — cups and ice provided.' }
       ]
     };
   }

@@ -205,7 +205,7 @@ export default class Food extends React.Component {
 <div style={css("flex: 1 1 440px; padding: 48px; display: flex; flex-direction: column; justify-content: center; gap: 14px")}>
 <div style={css(`font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: ${V.amber}`)}>{"PERFECT PAIRING"}</div>
 <h2 id="pair-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 52px; line-height: 0.95; color: #FFFFFF; text-transform: uppercase")}>{"Pizza* meets"}<br />{"Bring Your Own"}</h2>
-<p style={css("margin: 0; max-width: 460px; font-size: 17px; line-height: 1.6; color: #A1A1AA")}>{"Drop your drinks off before the event and we\u2019ll have them chilled and waiting \u2014 glasses and ice included."}</p>
+<p style={css("margin: 0; max-width: 460px; font-size: 17px; line-height: 1.6; color: #A1A1AA")}>{"Drop your drinks off before the event and we\u2019ll have them chilled and waiting \u2014 cups and ice included."}</p>
 <A href="/bring-your-own-drinks-venue-norwich" style={css(`align-self: flex-start; color: ${V.accent}; font-weight: 700; font-size: 15px; letter-spacing: 0.06em; text-transform: uppercase; padding: 12px 0`)}>{"How Bring Your Own drinks work \u2192"}</A>
 </div>
 </div>
