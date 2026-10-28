@@ -12,7 +12,7 @@ in a Cowork session (Oct 2026). Setup and deploy steps are in `README.md`.
 - **Hours**: by booking only. Shown as the maximum hours sessions can run: Mon–Fri 09:00–21:00, Sat 10:00–21:00, Sun 12:00–16:00 (owner, 28 Oct 2026). Always say "bookings only" with them.
 - **Attractions**:
   - two pro racing simulators (direct-drive wheel, a 4K monitor each or VR; NOT triple or wraparound screens); only ONE has 4 DOF full motion, the other is static. Features: pedal haptics, ambient lighting (e.g. sun glare effects), wind simulation, active harness, and gear shifters: the motion sim has a ‘bazooka’ H-pattern shifter inspired by the Ford Escort Mk2 rally car; the static sim has a gated manual (owner, 28 Oct 2026). Never call the motion sim's shifter gated. Never write "full-motion simulators" (plural);
-  - 160ft six-lane digital Scalextric;
+  - 160ft digital Scalextric: TWO lanes, up to six cars at once (never "six lanes");
   - 1990s motorbike sim;
   - the Games Console Lounge: games consoles on a 100-inch screen with a Mini Cooper sofa (games provided). Don't name the console (it's a Wii, the owner prefers not to say). The page is /attractions/gaming-lounge-norwich (the old PS5 address redirects);
   - a poker table (8 players) [not on the site yet];

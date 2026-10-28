@@ -81,14 +81,14 @@ export default class Compare extends React.Component {
         sections: [['Budget', ['Bring Your Own drinks can keep costs predictable compared with bar prices.']]],
         faqs: [['Can we bring a cake?', 'Yes — by arrangement in advance.'], ['Can we bring our own food?', 'No — pizza* packages only.'], ['How many guests?', 'Up to around 50.']],
         method: 'Other venue types are described in general terms.', sideTitle: 'Your party, your cave', sideCopy: 'Exclusive hire from £40pp.', related: [['Read next', ['GuideBirthday', 'GuideStagHen', 'GuideVenueHire']], ['Book for', ['Birthday', 'StagDo', 'HenDo', 'AdultGroups']]] },
-      scalextric: { crumb: 'DIGITAL VS CLASSIC SCALEXTRIC', kicker: 'SLOT CARS', a: 'Digital', b: 'classic Scalextric', intro: 'Our 160ft six-lane track is digital. Here’s what that changes.', image: IMG.scalex, imageAlt: 'Slot cars through a bend',
+      scalextric: { crumb: 'DIGITAL VS CLASSIC SCALEXTRIC', kicker: 'SLOT CARS', a: 'Digital', b: 'classic Scalextric', intro: 'Our 160ft two-lane track is digital, with up to six cars racing at once. Here’s what that changes.', image: IMG.scalex, imageAlt: 'Slot cars through a bend',
         verdictTitle: 'Digital means real racing', verdict: 'Classic sets keep each car in its lane. Digital lets cars change lanes and overtake, with live timing for every lap — turning a nostalgic toy into a proper race.', winHref: '/attractions/scalextric-track-norwich', winCta: 'Our Scalextric',
         cols: ['Digital (LeMan Cave)', 'Classic home set'], win: 0,
         rows: [['Lane changes', 'Yes — overtake', 'No — fixed lanes'], ['Cars on track', 'Up to 6', 'Usually 2'], ['Timing', 'Live timing', 'Manual / lap counter'], ['Track length', '160ft', 'A few metres']],
         best: [['FAMILIES', 'Digital', 'Kids beat parents.', '/family-days-out-norfolk', 'Family days'], ['PARTIES', 'Digital', 'Six-way finals.', '/birthday-party-venue-norwich', 'Birthdays'], ['NOSTALGIA', 'Both', 'The same thrill, bigger.', '/attractions/scalextric-track-norwich', 'See the track']],
         sections: [['Why it works for groups', ['Six cars at once means heats, finals and plenty of noise.']]],
-        faqs: [['How long is the track?', '160ft, six lanes.'], ['Any age limit?', 'No age limits on the experiences**.']],
-        method: 'We compared lane changes, cars on track, timing and length.', sideTitle: 'Six lanes. 160ft.', sideCopy: 'Included with every whole-cave hire.', related: [['Read next', ['GuideKidsChecklist', 'GuideBirthday']], ['Book for', ['KidsParties', 'FamilyDays', 'Birthday']]] }
+        faqs: [['How long is the track?', '160ft, with two lanes and up to six cars racing at once.'], ['Any age limit?', 'No age limits on the experiences**.']],
+        method: 'We compared lane changes, cars on track, timing and length.', sideTitle: 'Six cars. 160ft.', sideCopy: 'Included with every whole-cave hire.', related: [['Read next', ['GuideKidsChecklist', 'GuideBirthday']], ['Book for', ['KidsParties', 'FamilyDays', 'Birthday']]] }
     };
 
     // SEO (Oct 2026): H1 (the hero's small line), image alt and two subheadings carry each comparison's keywords

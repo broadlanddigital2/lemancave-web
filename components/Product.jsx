@@ -124,7 +124,7 @@ export default class Product extends React.Component {
     if (slug === 'moto' || slug === 'memorabilia') {
       related = [
         { href: '/attractions/racing-simulator-norwich', img: IMG.sim, tag: '4 DOF · 4K OR VR', name: 'Pro Racing Simulator' },
-        { href: '/attractions/scalextric-track-norwich', img: IMG.scalextric, tag: '160FT · 6 LANES', name: 'Digital Scalextric' },
+        { href: '/attractions/scalextric-track-norwich', img: IMG.scalextric, tag: '160FT · UP TO 6 CARS', name: 'Digital Scalextric' },
         { href: '/attractions/arcade-games-norwich', img: IMG.arcade, tag: 'BETWEEN RACES', name: 'Games & Arcade' }
       ];
     } else {
