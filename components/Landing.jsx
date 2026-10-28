@@ -627,12 +627,6 @@ export default class Landing extends React.Component {
 </React.Fragment>))}
 </div>
 </section>
-<section className="lc-section" aria-label="Guest review" style={css("max-width: 1360px; margin: 0 auto; padding: 0 40px 100px")}>
-<figure style={css("margin: 0; padding: 36px 40px; border-radius: 10px; border: 1px dashed #3F3F46; display: flex; flex-direction: column; gap: 12px")}>
-<blockquote style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 30px; line-height: 1.15; color: #A1A1AA; text-transform: uppercase")}>{"[ Add a real guest review that matches this page ]"}</blockquote>
-<figcaption style={css("font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #71717A")}>{"\u2014 [NAME], VERIFIED GUEST \u00b7 REAL REVIEWS ONLY"}</figcaption>
-</figure>
-</section>
 <section id="faq" aria-labelledby="faq-h" style={css("background: #0F0F12; border-top: 1px solid #1F1F23; border-bottom: 1px solid #1F1F23")}>
 <div className="lc-section" style={css("max-width: 1360px; margin: 0 auto; padding: 100px 40px; display: flex; flex-wrap: wrap; gap: 64px")}>
 <div style={css("flex: 1 1 320px")}>
