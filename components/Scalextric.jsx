@@ -20,7 +20,7 @@ export default class Scalextric extends React.Component {
     const faqList = [
       ['How many people can race at once?', 'It’s digital Scalextric on a two-lane track, so up to six cars can race at once. Bigger groups can run heats and a grand final.'],
       ['Do I need any experience?', 'None at all. Our team will show you the controls, and you’ll be racing within minutes.'],
-      ['How long is a session?', 'Sessions are 30, 60 or 90 minutes, or hire the whole venue for 3 hours and mix the Scalextric with the simulators and games.'],
+      ['Can I book the Scalextric on its own?', 'The Scalextric is included as an experience within the hire of LeMan Cave. If you’re interested in an event made up entirely of Scalextric, get in touch to discuss a bespoke package.'],
       ['Is it good for parties?', 'It’s one of our most popular group activities — ideal for birthdays, stag and hen parties and team days. Get in touch to plan yours.']
     ];
     const faqs = faqList.map(([q, a], i) => {
@@ -94,8 +94,8 @@ export default class Scalextric extends React.Component {
 <div style={css("font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 32px; color: #FFFFFF; margin-top: 6px")}>{"Pit lane"}</div>
 </div>
 <div style={css("padding: 28px 0 28px 20px")}>
-<div style={css("font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: #71717A")}>{"SESSIONS"}</div>
-<div style={css("font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 32px; color: #FFFFFF; margin-top: 6px")}>{"30 \u00b7 60 \u00b7 90 min"}</div>
+<div style={css("font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: #71717A")}>{"BOOKING"}</div>
+<div style={css("font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 32px; color: #FFFFFF; margin-top: 6px")}>{"Included with hire"}</div>
 </div>
 </div>
 </section>
