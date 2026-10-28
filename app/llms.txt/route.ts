@@ -24,7 +24,7 @@ const tidy = (s: string) => String(s || '').replace(/\bBYO\b/g, 'Bring Your Own'
 
 const INTRO = `# LeMan Cave
 
-> LeMan Cave is an indoor motorsport entertainment venue in Norwich, Norfolk: professional motion racing simulators, a 160ft six-lane digital Scalextric, a 1990s motorbike simulator, a gaming lounge with games consoles on a 100-inch screen, pool, darts, air hockey, table football, arcade and digital pinball, with private hire for groups of up to about 50. Great for non-petrolheads as well as motorsport fans.
+> LeMan Cave is an indoor motorsport entertainment venue in Norwich, Norfolk: professional motion racing simulators, a 160ft six-lane digital Scalextric, a 1990s motorbike simulator, a games console lounge with games consoles on a 100-inch screen, pool, darts, air hockey, table football, arcade and digital pinball, with private hire for groups of up to about 50. Great for non-petrolheads as well as motorsport fans.
 
 ## Venue details
 
@@ -34,7 +34,7 @@ const INTRO = `# LeMan Cave
 - Instagram: https://www.instagram.com/leman.cave/
 - Website: ${BASE}/
 - Opening hours: Monday to Friday 09:00–21:00, Saturday 10:00–21:00, Sunday 12:00–16:00, by booking only. Pre-booked visits only.
-- Space: around 2,000 sq ft for up to about 50 guests. Full parking on site. Fully accessible.
+- Space: around 1,600 sq ft for up to about 50 guests. Full parking on site. Fully accessible.
 - Booking: online at ${BASE}/book with 24 hours' notice (sooner by phone). Whole-cave sessions take a 25% deposit, with the balance due 7 days before.
 - Gift cards: digital, any amount from £10 to £2,000, valid 12 months, usable against any booking (${BASE}/experience-gifts-norwich).
 
