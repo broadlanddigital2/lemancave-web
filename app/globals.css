@@ -142,5 +142,5 @@ a[href="/christmas-party-norwich"][style*="background:#ED2835" i] { background: 
 
 /* Footnotes for * (pizza) and ** (age / simulator safety), shown at the foot of every page. */
 .lc-smallprint { background: #09090B; border-top: 1px solid #1F1F23; padding: 14px 40px 18px; max-width: 1360px; margin: 0 auto; box-sizing: border-box; }
-.lc-smallprint p { margin: 0; font-size: 12px; line-height: 1.6; color: #71717A; }
+.lc-smallprint p { margin: 0; font-family: Barlow, sans-serif; font-size: 13px; line-height: 1.6; color: #71717A; }
 @media (max-width: 640px) { .lc-smallprint { padding: 12px 16px 84px; } }
