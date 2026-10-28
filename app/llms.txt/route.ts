@@ -33,7 +33,7 @@ const INTRO = `# LeMan Cave
 - Email: bookings@lemancave.co.uk
 - Instagram: https://www.instagram.com/leman.cave/
 - Website: ${BASE}/
-- Opening hours: Monday to Friday 18:00–21:00, Saturday 10:00–21:00, Sunday by request. Pre-booked visits only.
+- Opening hours: Monday to Friday 09:00–21:00, Saturday 10:00–21:00, Sunday 12:00–16:00, by booking only. Pre-booked visits only.
 - Space: around 2,000 sq ft for up to about 50 guests. Full parking on site. Fully accessible.
 - Booking: online at ${BASE}/book with 24 hours' notice (sooner by phone). Whole-cave sessions take a 25% deposit, with the balance due 7 days before.
 - Gift cards: digital, any amount from £10 to £2,000, valid 12 months, usable against any booking (${BASE}/experience-gifts-norwich).
