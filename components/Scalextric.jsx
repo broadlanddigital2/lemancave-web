@@ -214,7 +214,7 @@ export default class Scalextric extends React.Component {
 <div style={css(`position: relative; border-radius: 10px; overflow: hidden; background: ${V.accent}; padding: 64px 56px; display: flex; flex-wrap: wrap; gap: 40px; align-items: center; justify-content: space-between`)}>
 <div aria-hidden="true" style={css("position: absolute; right: 0; top: 0; bottom: 0; width: 220px; background: repeating-conic-gradient(#09090B 0% 25%, transparent 0% 50%) 0 0 / 40px 40px; opacity: 0.18")}></div>
 <div style={css("position: relative; flex: 1 1 460px")}>
-<h2 id="cta-h" style={css("margin: 0 0 14px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 80px); line-height: 0.92; color: #09090B; text-transform: uppercase")}>{"Six lanes."}<br />{"One winner."}</h2>
+<h2 id="cta-h" style={css("margin: 0 0 14px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 80px); line-height: 0.92; color: #09090B; text-transform: uppercase")}>{"Six cars."}<br />{"One winner."}</h2>
 <p style={css("margin: 0; font-size: 18px; line-height: 1.55; color: #1C1C1F")}>{"Mon\u2013Fri 09:00\u201321:00 \u00b7 Sat 10:00\u201321:00 \u00b7 Sun 12:00\u201316:00 \u00b7 bookings only"}</p>
 </div>
 <div style={css("position: relative; display: flex; flex-direction: column; gap: 12px; flex: 0 1 340px")}>
