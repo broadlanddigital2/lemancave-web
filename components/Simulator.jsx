@@ -31,7 +31,7 @@ export default class Simulator extends React.Component {
       ['Do I need racing experience?', 'Not at all. The simulator suits complete beginners and experienced racers alike, and our team will guide you through everything before you set off.'],
       ['How long is a session?', 'Sim room sessions are 1-hour slots for 2 people sharing 1 sim: £80 an hour Monday to Friday 9am–5pm, and £125 an hour on evenings and weekends. Whole-cave hire is 3 hours, from £600.'],
       ['Can I book parties or corporate events?', 'Yes. We run private parties and tailored packages for birthdays, stag and hen parties, team building and corporate events. Get in touch to plan yours.'],
-      ['Do you offer VR or 4K?', 'Both. Choose a crystal-clear 4K monitor or fully immersive VR when you book — or try each on the day.'],
+      ['Do you offer VR or 4K?', 'On the full-motion sim, yes: choose a crystal-clear 4K monitor or fully immersive VR when you book, or try each on the day. The static sim has an HD monitor (no VR).'],
       ['Can children use the simulator?', 'Yes. The simulators may have height restrictions, and motion may be disabled for safety for guests under 14 — everything else is the full experience.'],
       ['Is it suitable for beginners and experienced drivers?', 'Yes. Settings range from easy driving assists for newcomers to full pro settings for seasoned sim racers.']
     ];
