@@ -24,7 +24,7 @@ const tidy = (s: string) => String(s || '').replace(/\bBYO\b/g, 'Bring Your Own'
 
 const INTRO = `# LeMan Cave
 
-> LeMan Cave is an indoor motorsport entertainment venue in Norwich, Norfolk: professional motion racing simulators, a 160ft six-lane digital Scalextric, a 1990s motorbike simulator, a PS5 lounge on a 120-inch screen, pool, darts, air hockey, table football, arcade and digital pinball, with private hire for groups of up to about 50. Great for non-petrolheads as well as motorsport fans.
+> LeMan Cave is an indoor motorsport entertainment venue in Norwich, Norfolk: professional motion racing simulators, a 160ft six-lane digital Scalextric, a 1990s motorbike simulator, a gaming lounge with games consoles on a 100-inch screen, pool, darts, air hockey, table football, arcade and digital pinball, with private hire for groups of up to about 50. Great for non-petrolheads as well as motorsport fans.
 
 ## Venue details
 
@@ -33,7 +33,7 @@ const INTRO = `# LeMan Cave
 - Email: bookings@lemancave.co.uk
 - Instagram: https://www.instagram.com/leman.cave/
 - Website: ${BASE}/
-- Opening hours: Monday to Friday 06:30–21:30, Saturday 10:00–21:00, Sunday by request. Pre-booked visits only.
+- Opening hours: Monday to Friday 18:00–21:00, Saturday 10:00–21:00, Sunday by request. Pre-booked visits only.
 - Space: around 2,000 sq ft for up to about 50 guests. Full parking on site. Fully accessible.
 - Booking: online at ${BASE}/book with 24 hours' notice (sooner by phone). Whole-cave sessions take a 25% deposit, with the balance due 7 days before.
 - Gift cards: digital, any amount from £10 to £2,000, valid 12 months, usable against any booking (${BASE}/experience-gifts-norwich).
@@ -51,7 +51,7 @@ const INTRO = `# LeMan Cave
 
 ## Good to know
 
-- Every game and attraction is included with venue hire. No age limits on the games; under-16s use the simulators in static mode.
+- Every game and attraction is included with venue hire. No age limits on the experiences; the simulators may have height restrictions, and motion may be disabled for safety for guests under 14.
 - Drinks are Bring Your Own: drop them off in advance to be chilled, or bring them on the day. Glasses and ice are provided.
 - No outside food apart from cakes by arrangement. Pizza is available on the pizza packages, with a range of dietary options.
 - The motorsport memorabilia is on display during venue hire (not for sale).

@@ -9,19 +9,20 @@ in a Cowork session (Oct 2026). Setup and deploy steps are in `README.md`.
   - Around 50 guests across 2,000 sq ft.
   - Phone 01603 517080 (`tel:01603517080`). Email bookings@lemancave.co.uk. Instagram @leman.cave.
 - **Positioning**: a real motorsport venue that's great for non-petrolheads too. Imagery should show the general public, not just car fans.
-- **Hours**: Mon–Fri 06:30–21:30, Sat 10:00–21:00, Sun by request.
+- **Hours**: Mon–Fri 18:00–21:00, Sat 10:00–21:00, Sun by request (owner, 28 Oct 2026). Weekday daytime sim slots (09:00–17:00) and the After School Special (16:00–18:00) are still on the site and in the CRM: check with the owner how these fit the new hours.
 - **Attractions**:
-  - pro racing simulators (4 DOF motion, direct-drive wheel, 4K or VR);
+  - two pro racing simulators (direct-drive wheel, 4K or VR); only ONE has 4 DOF full motion, the other is static. Never write "full-motion simulators" (plural);
   - 160ft six-lane digital Scalextric;
   - 1990s motorbike sim;
-  - PS5 on a 120" screen with a Mini Cooper sofa (PS5 games provided only);
+  - games consoles on a 100-inch screen with a Mini Cooper sofa (games provided). Don't name the console (it's a Wii, the owner prefers not to say). The page is /attractions/gaming-lounge-norwich (the old PS5 address redirects);
+  - a poker table (8 players) [not on the site yet];
   - 1 digital pinball machine;
   - 9ft pro pool table (cues provided);
   - air hockey, table football, two-player arcade;
   - darts (provided, fully automated scoring);
   - memorabilia (venue hire only, not for sale; photos fine).
 - **Rules**:
-  - No age limits on games. Under-16s use the sims in static mode only.
+  - "No age limits on the experiences**". ** = "The simulators may be subject to height restrictions, and motion may be disabled for safety reasons for any guests under 14." (was under-16s static; changed 28 Oct 2026).
   - Everything is included with venue hire.
   - No outside food except cakes by prior arrangement. Pizza only on pizza packages, with a range of dietary options.
   - BYO drinks: drop off in advance to be pre-chilled, or bring on the day. Glasses and ice provided. Leftovers collected after.
@@ -121,6 +122,8 @@ Whole-cave prices are per person, with a minimum spend that still applies if few
 - **Image brief**: Claude Docs.
 
 ## Content rules
+- Every visible "pizza" is written "pizza*". The * and ** footnotes are in `app/layout.tsx` (`.lc-smallprint`) on every page. Not in alt text, aria-labels, meta descriptions or code keys.
+- Capacity: up to 50 people, with activities for 34 players at once (arcade 2, air hockey 2, darts 2, pool 2, motorbike 2, sim 1, sim 1, Scalextric 6, table football 4, console 4, poker 8).
 - Write "Bring Your Own" on the site, never "BYO" (the owner's preference, Oct 2026).
 - Never invent reviews, testimonials or ratings. Placeholders say `[ADD REAL REVIEW]` or similar.
 - Don't state unconfirmed facts. Mark them `[CONFIRM …]` instead.

@@ -13,7 +13,7 @@
  "/attractions/digital-scalextric": "/attractions/scalextric-track-norwich",
  "/attractions/games-and-arcade": "/attractions/arcade-games-norwich",
  "/attractions/motorcycle-simulator": "/attractions/motorbike-simulator-norwich",
- "/attractions/ps5-lounge": "/attractions/ps5-gaming-lounge-norwich",
+ "/attractions/ps5-lounge": "/attractions/gaming-lounge-norwich",
  "/attractions/digital-pinball": "/attractions/digital-pinball-norwich",
  "/attractions/pool-table": "/attractions/pool-table-norwich",
  "/attractions/air-hockey": "/attractions/air-hockey-norwich",
@@ -69,5 +69,6 @@
  "/locations/kings-lynn": "/locations/party-venue-near-kings-lynn",
  "/locations/ipswich": "/locations/party-venue-near-ipswich",
  "/locations/bury-st-edmunds": "/locations/party-venue-near-bury-st-edmunds",
- "/locations/cambridge": "/locations/party-venue-near-cambridge"
+ "/locations/cambridge": "/locations/party-venue-near-cambridge",
+ "/attractions/ps5-gaming-lounge-norwich": "/attractions/gaming-lounge-norwich"
 }
