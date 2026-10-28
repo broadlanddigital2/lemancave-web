@@ -11,7 +11,7 @@ in a Cowork session (Oct 2026). Setup and deploy steps are in `README.md`.
 - **Positioning**: a real motorsport venue that's great for non-petrolheads too. Imagery should show the general public, not just car fans.
 - **Hours**: by booking only. Shown as the maximum hours sessions can run: Mon–Fri 09:00–21:00, Sat 10:00–21:00, Sun 12:00–16:00 (owner, 28 Oct 2026). Always say "bookings only" with them.
 - **Attractions**:
-  - two pro racing simulators (direct-drive wheel, 4K or VR); only ONE has 4 DOF full motion, the other is static. Features: pedal haptics, ambient lighting (e.g. sun glare effects), wind simulation, active harness, and a ‘bazooka’ gated shifter inspired by the Ford Escort Mk2 rally car. Never write "full-motion simulators" (plural);
+  - two pro racing simulators (direct-drive wheel, a 4K monitor each or VR; NOT triple or wraparound screens); only ONE has 4 DOF full motion, the other is static. Features: pedal haptics, ambient lighting (e.g. sun glare effects), wind simulation, active harness, and a ‘bazooka’ gated shifter inspired by the Ford Escort Mk2 rally car. Never write "full-motion simulators" (plural);
   - 160ft six-lane digital Scalextric;
   - 1990s motorbike sim;
   - the Games Console Lounge: games consoles on a 100-inch screen with a Mini Cooper sofa (games provided). Don't name the console (it's a Wii, the owner prefers not to say). The page is /attractions/gaming-lounge-norwich (the old PS5 address redirects);
