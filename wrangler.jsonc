@@ -15,7 +15,7 @@
   "vars": {
     // Race Car Graphics CRM (Supabase) — website form intake, same function Auto Opulence uses
     "CRM_WEBFORM_URL": "https://dipjypzrfigkzuarlsov.supabase.co/functions/v1/inbound-webform-email",
-    // LeMan Cave Web Forms channel public key (CRM → channel_integrations)
+    // Le Man Cave Web Forms channel public key (CRM → channel_integrations)
     "CRM_FORM_KEY": "e12dbb86-3cd9-4065-afa5-31f974d9e710"
   },
   "observability": { "enabled": true },

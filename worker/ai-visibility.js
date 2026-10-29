@@ -1,5 +1,5 @@
 // AI visibility stats for the CRM (Marketing → SEO tracking → AI assistants). Shared by the Race Car Graphics,
-// Auto Opulence and LeMan Cave workers: keep the copies the same.
+// Auto Opulence and Le Man Cave workers: keep the copies the same.
 //
 // For each request it notes, in the background (never slowing or changing the response):
 //  - a crawler visit, when the user agent is a known AI or search crawler (GPTBot, OAI-SearchBot, ClaudeBot, Bingbot…),
@@ -46,7 +46,7 @@ export function assistantName(request, url) {
 
 /**
  * Call after building the response. feedKey: the site's seo_sites.feed_key. ctx: the fetch handler's context.
- * Skips the workers.dev preview unless countPreview is set (LeMan Cave counts its preview until go-live).
+ * Skips the workers.dev preview unless countPreview is set (Le Man Cave counts its preview until go-live).
  */
 export function trackAi(request, response, ctx, { feedKey, countPreview = false }) {
   try {

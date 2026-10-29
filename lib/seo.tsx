@@ -1,5 +1,5 @@
 // Page SEO (Oct 2026). Titles and meta descriptions live in seo/meta.json and each page's target keywords in
-// seo/keywords.json (the same keywords are in the CRM: Marketing → SEO optimiser → Page scores, site "LeMan Cave").
+// seo/keywords.json (the same keywords are in the CRM: Marketing → SEO optimiser → Page scores, site "Le Man Cave").
 // Every page's metadata and its structured data (WebPage + BreadcrumbList) come from here.
 import type { Metadata } from 'next';
 import META from '../seo/meta.json';
@@ -7,11 +7,11 @@ import META from '../seo/meta.json';
 type Meta = { title: string; description: string };
 const PAGES = META as Record<string, Meta>;
 const SITE = process.env.NEXT_PUBLIC_SITE_URL || 'https://lemancave.co.uk';
-const BRAND = 'LeMan Cave Norwich';
+const BRAND = 'Le Man Cave Norwich';
 // Default share image (1200×800) until pages have their own photography.
-const SHARE = { url: '/images/4dd1a9368ac845d9dff93d9afd206327.webp', width: 1200, height: 800, alt: 'Inside LeMan Cave, Norwich' };
+const SHARE = { url: '/images/4dd1a9368ac845d9dff93d9afd206327.webp', width: 1200, height: 800, alt: 'Inside Le Man Cave, Norwich' };
 
-const fullTitle = (path: string, m: Meta) => (path === '/' ? m.title + ' | LeMan Cave' : m.title + ' | ' + BRAND);
+const fullTitle = (path: string, m: Meta) => (path === '/' ? m.title + ' | Le Man Cave' : m.title + ' | ' + BRAND);
 
 export function pageMeta(path: string): Metadata {
   const m = PAGES[path];
@@ -22,7 +22,7 @@ export function pageMeta(path: string): Metadata {
     title: path === '/' ? { absolute: title } : m.title,
     description: m.description,
     alternates: { canonical: path },
-    openGraph: { title, description: m.description, url: path, siteName: 'LeMan Cave', locale: 'en_GB', type: 'website', images: [SHARE] },
+    openGraph: { title, description: m.description, url: path, siteName: 'Le Man Cave', locale: 'en_GB', type: 'website', images: [SHARE] },
     twitter: { card: 'summary_large_image', title, description: m.description, images: [SHARE.url] },
   };
 }
@@ -59,8 +59,8 @@ export function PageSchema({ path }: { path: string }) {
         name: fullTitle(path, m),
         description: m.description,
         inLanguage: 'en-GB',
-        isPartOf: { '@type': 'WebSite', name: 'LeMan Cave', url: SITE },
-        about: { '@type': 'EntertainmentBusiness', name: 'LeMan Cave', url: SITE },
+        isPartOf: { '@type': 'WebSite', name: 'Le Man Cave', url: SITE },
+        about: { '@type': 'EntertainmentBusiness', name: 'Le Man Cave', url: SITE },
         primaryImageOfPage: SITE + SHARE.url,
       },
       {

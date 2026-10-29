@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useState } from 'react';
 
-// Cookie banner (hand-written; not from the design converter). LeMan Cave has no advertising or Google Analytics
+// Cookie banner (hand-written; not from the design converter). Le Man Cave has no advertising or Google Analytics
 // tags. What needs consent:
 //  - "remember": the CRM site search and enquiry bot remembering a visitor between visits (visitor ID, recently
 //    viewed pages). Without it they only remember within the open tab. Signalled to both scripts with
@@ -49,7 +49,7 @@ export default function CookieConsent() {
   return (
     <div className="lc-cookies" role="dialog" aria-modal="false" aria-labelledby="lc-cookies-title" aria-describedby="lc-cookies-text">
       <div className="lc-cookies__body">
-        <p id="lc-cookies-title" className="lc-cookies__title">Cookies at LeMan Cave</p>
+        <p id="lc-cookies-title" className="lc-cookies__title">Cookies at Le Man Cave</p>
         <p id="lc-cookies-text">We use essential storage to make bookings, gift cards and your account work. With your OK, our site search and chat can remember you between visits, and our maps load from Google, which sets its own cookies. No advertising cookies. <a href="/cookie-policy">Cookie policy</a> · <a href="/privacy">Privacy policy</a></p>
         {manage && <fieldset className="lc-cookies__options">
           <legend>Choose what we can use</legend>

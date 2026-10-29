@@ -1,14 +1,14 @@
-// /llms.txt: a plain-text guide to LeMan Cave for AI assistants (ChatGPT, Claude, Perplexity, Copilot…), following the
+// /llms.txt: a plain-text guide to Le Man Cave for AI assistants (ChatGPT, Claude, Perplexity, Copilot…), following the
 // llms.txt convention (https://llmstxt.org). Built with the site (static export) from seo/meta.json, so every page's
 // title and description stay in step with the site. The facts below are the confirmed ones from CLAUDE.md; prices are
-// set in the CRM (Ecommerce → LeMan Cave), so check them here when they change there.
+// set in the CRM (Ecommerce → Le Man Cave), so check them here when they change there.
 import meta from '../../seo/meta.json';
 
 export const dynamic = 'force-static';
 
 const BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://lemancave.co.uk';
 const CORE = ['/', '/attractions', '/party-packages-norwich', '/book', '/experience-gifts-norwich', '/pizza-party-norwich',
-  '/bring-your-own-drinks-venue-norwich', '/leman-cave-opening-times', '/leman-cave-parking-and-travel', '/minibus-taxi-norwich', '/contact-leman-cave-norwich',
+  '/bring-your-own-drinks-venue-norwich', '/leman-cave-opening-times', '/leman-cave-parking-and-travel', '/minibus-taxi-norwich', '/event-photographer-norwich', '/contact-leman-cave-norwich',
   '/leman-cave-faqs', '/accessible-activities-norwich', '/leman-cave-photos', '/advertising-screens-norwich', '/blog'];
 const HIDDEN = ['/account', '/site-map', '/login', '/cookie-policy', '/privacy'];
 const GROUPS: [string, (p: string) => boolean][] = [
@@ -22,9 +22,9 @@ const GROUPS: [string, (p: string) => boolean][] = [
 ];
 const tidy = (s: string) => String(s || '').replace(/\bBYO\b/g, 'Bring Your Own').replace(/\s+/g, ' ').trim();
 
-const INTRO = `# LeMan Cave
+const INTRO = `# Le Man Cave
 
-> LeMan Cave is an indoor motorsport entertainment venue in Norwich, Norfolk: two professional racing simulators (one with 4 DOF full motion, one static), a 160ft digital Scalextric for up to six cars, a 1990s motorbike simulator, a games console lounge with a 100-inch screen, a poker table, pool / billiards, darts, air hockey, table football, arcade and digital pinball, with private hire for groups of up to about 50. Great for non-petrolheads as well as motorsport fans.
+> Le Man Cave is an indoor motorsport entertainment venue in Norwich, Norfolk: two professional racing simulators (one with 4 DOF full motion, one static), a 160ft digital Scalextric for up to six cars, a 1990s motorbike simulator, a games console lounge with a 100-inch screen, a poker table, pool / billiards, darts, air hockey, table football, arcade and digital pinball, with private hire for groups of up to about 50. Great for non-petrolheads as well as motorsport fans.
 
 ## Venue details
 
@@ -69,7 +69,7 @@ const INTRO = `# LeMan Cave
 
 ## Content guidance
 
-Use the page addresses below when citing LeMan Cave. The prices and booking pages are the authoritative source for current prices and availability.`;
+Use the page addresses below when citing Le Man Cave. The prices and booking pages are the authoritative source for current prices and availability.`;
 
 export function GET() {
   const pages = Object.entries(meta as Record<string, { title?: string; description?: string }>)

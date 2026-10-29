@@ -10,6 +10,9 @@ in a Cowork session (Oct 2026). Setup and deploy steps are in `README.md`.
   - Around 50 guests across about 1,600 sq ft (owner, 28 Oct 2026: 2,000 was a high estimate).
   - The site is about 0.5 acres; car clubs can arrange an external catering trailer or other facilities by special request (owner, 28 Oct 2026).
   - Legal entity: Le Man Cave Limited, company number 17032850, registered in England and Wales (owner, 29 Oct 2026).
+  - **Name**: written "Le Man Cave" (two words) everywhere on the site (owner, 29 Oct 2026). Never "LeMan". The domain, email, URLs and Instagram handle (@leman.cave) stay as they are. CRM labels such as "LeMan Cave leads" are internal names.
+  - Photography: a photographer for photos (and video as an add-on) of your event; 1, 2 or 3-hour packages, prices to be confirmed; page /event-photographer-norwich (owner, 29 Oct 2026).
+  - Checkout optional extras (CRM add-on group `quote`, £0, "quote to follow"): **Transport (taxi pick-up & drop-off)** on every service and **Photography package** on whole-cave services. Once a booking is paid, each one raises a `send_quote` task in the CRM (race-car-graphics-crm PR #58).
   - Phone 01603 517080 (`tel:01603517080`). Email bookings@lemancave.co.uk. Instagram @leman.cave.
 - **Positioning**: a real motorsport venue that's great for non-petrolheads too. Imagery should show the general public, not just car fans.
 - **Hours**: by booking only. Shown as the maximum hours sessions can run: Mon–Fri 09:00–21:00, Sat 10:00–21:00, Sun 12:00–16:00 (owner, 28 Oct 2026). Always say "bookings only" with them.

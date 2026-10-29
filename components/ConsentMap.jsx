@@ -13,7 +13,7 @@ export default function ConsentMap({ title, src, style, loading, referrerPolicy 
     return () => window.removeEventListener('lc:consent', check);
   }, []);
   if (show) return <iframe title={title} src={src} style={style} loading={loading} referrerPolicy={referrerPolicy} />;
-  const q = (() => { try { return new URL(src).searchParams.get('q') || 'LeMan Cave, Norwich NR6 7BW'; } catch { return 'LeMan Cave, Norwich NR6 7BW'; } })();
+  const q = (() => { try { return new URL(src).searchParams.get('q') || 'Le Man Cave, Norwich NR6 7BW'; } catch { return 'Le Man Cave, Norwich NR6 7BW'; } })();
   return (
     <div className="lc-map-off" style={{ ...style, filter: 'none' }} role="group" aria-label={title}>
       <p>The map loads from Google Maps, which sets its own cookies.</p>

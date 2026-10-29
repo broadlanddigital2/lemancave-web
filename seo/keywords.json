@@ -710,5 +710,12 @@
  "/privacy": {
   "primary": "leman cave privacy policy",
   "secondary": []
+ },
+ "/event-photographer-norwich": {
+  "primary": "event photographer norwich",
+  "secondary": [
+   "party photographer norwich",
+   "event videographer norwich"
+  ]
  }
 }

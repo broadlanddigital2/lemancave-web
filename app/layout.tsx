@@ -6,9 +6,9 @@ import './design.css';
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://lemancave.co.uk'),
-  title: { default: 'LeMan Cave Norwich — Racing Simulators, Scalextric & Party Venue', template: '%s | LeMan Cave Norwich' },
+  title: { default: 'Le Man Cave Norwich — Racing Simulators, Scalextric & Party Venue', template: '%s | Le Man Cave Norwich' },
   description: 'Norwich’s motorsport entertainment venue: racing simulators, digital Scalextric, games consoles, pool, darts and arcade. Parties, team days and nights out.',
-  openGraph: { siteName: 'LeMan Cave', locale: 'en_GB', type: 'website' },
+  openGraph: { siteName: 'Le Man Cave', locale: 'en_GB', type: 'website' },
   icons: { icon: '/images/d8a1bc65662ee5a26ca2d3cbc9ca559e.svg' },
 };
 
@@ -19,7 +19,7 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'EntertainmentBusiness',
   '@id': 'https://lemancave.co.uk/#business',
-  name: 'LeMan Cave',
+  name: 'Le Man Cave',
   legalName: 'Le Man Cave Limited',
   identifier: { '@type': 'PropertyValue', propertyID: 'Companies House', value: '17032850' },
   description: 'Indoor motorsport entertainment venue in Norwich: racing simulators (one with full motion), a 160ft digital Scalextric for up to six cars, motorbike simulator, a games console lounge with games consoles, pool, darts and arcade games, with private hire for parties and events of up to about 50 guests.',
@@ -67,12 +67,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {children}
         {/* Small print for the * and ** marks used across the site (owner, 28 Oct 2026). */}
         <aside className="lc-smallprint" aria-label="Notes">
-          <p>LeMan Cave is open for booked sessions and events only. There is no walk-in entry.</p>
+          <p>Le Man Cave is open for booked sessions and events only. There is no walk-in entry.</p>
           <p>*Pizza is an additional cost option.</p>
           <p>**The simulators may be subject to height restrictions, and motion may be disabled for safety reasons for any guests under 14.</p>
         </aside>
         {/* CRM site search (floating Search button, "/" or Ctrl/Cmd+K) and the AI enquiry bot. Both are set up in the
-            Race Car Graphics CRM (Marketing → Site search; Channels → LeMan Cave Enquiry Bot); leads go to LeMan Cave leads.
+            Race Car Graphics CRM (Marketing → Site search; Channels → Le Man Cave Enquiry Bot); leads go to Le Man Cave leads.
             Loaded after the page has started up (afterInteractive): loaded earlier, React's start-up could remove the
             search panel from the page, leaving a Search button that opened nothing. */}
         <CookieConsent />

@@ -39,8 +39,8 @@ export default function MobileMenu() {
   const panel = (
     <div id="lc-mob-panel" className="lc-mob-panel" role="dialog" aria-modal="true" aria-label="Menu" hidden={!open}>
       <div className="lc-mob-top">
-        <A href="/" onClick={close} aria-label="LeMan Cave home" className="lc-mob-logo">
-          <img src="/images/d8a1bc65662ee5a26ca2d3cbc9ca559e.svg" alt="LeMan Cave" />
+        <A href="/" onClick={close} aria-label="Le Man Cave home" className="lc-mob-logo">
+          <img src="/images/d8a1bc65662ee5a26ca2d3cbc9ca559e.svg" alt="Le Man Cave" />
         </A>
         <button type="button" className="lc-mob-btn" aria-label="Close menu" onClick={close}>
           <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><path d="M6 6l12 12M18 6L6 18" /></svg>

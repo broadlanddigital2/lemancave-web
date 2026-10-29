@@ -1,11 +1,11 @@
 /**
- * LeMan Cave website Worker (Cloudflare Workers + static assets).
+ * Le Man Cave website Worker (Cloudflare Workers + static assets).
  *
  * - Serves the static Next.js export in ./out (bound as ASSETS).
  * - POST /api/enquiry: every form on the site (enquiries, contact, corporate quotes,
  *   gift vouchers, booking requests) is forwarded to the Race Car Graphics CRM
- *   (Supabase function `inbound-webform-email`) using LeMan Cave's web form key.
- *   The CRM creates the lead in "LeMan Cave leads → Incoming", links/creates the
+ *   (Supabase function `inbound-webform-email`) using Le Man Cave's web form key.
+ *   The CRM creates the lead in "Le Man Cave leads → Incoming", links/creates the
  *   customer and emails the staff alert.
  * - Old URL redirects (incl. seo/redirects.json; those paths are also listed in run_worker_first in wrangler.jsonc).
  *
@@ -22,14 +22,14 @@ import MOVED from '../seo/redirects.json';
 // Blog: posts written and approved in the CRM (Marketing → Blog posts), rendered on request into the /blog shell page.
 const BLOG = {
   feedUrl: 'https://dipjypzrfigkzuarlsov.supabase.co/functions/v1/seo-blog',
-  feedKey: 'c2d40420-4d73-4077-9bbd-217be7ad301d', // seo_sites.feed_key for LeMan Cave
+  feedKey: 'c2d40420-4d73-4077-9bbd-217be7ad301d', // seo_sites.feed_key for Le Man Cave
   origin: 'https://lemancave.co.uk',
   basePath: '/blog',
   shellPath: '/blog',
-  siteName: 'LeMan Cave Norwich',
+  siteName: 'Le Man Cave Norwich',
   blogName: 'Blog',
-  blogTitle: 'The LeMan Cave blog',
-  kicker: 'LeMan Cave blog · Norwich',
+  blogTitle: 'The Le Man Cave blog',
+  kicker: 'Le Man Cave blog · Norwich',
   intro: 'Party ideas, sim racing tips, seasonal inspiration and news from Norwich’s motorsport entertainment venue.',
   guidesPath: '/guides',
   ctaHtml: '<p><strong>Ready to race?</strong> Book a sim session or the whole cave for your group, or call 01603 517080.</p><p><a class="crmblog-btn" href="/book">Book now</a> <a class="crmblog-btn2" href="/party-venue-norwich">Party venue hire</a></p>',
@@ -197,7 +197,7 @@ export default {
       return Response.redirect(host.toString(), 301);
     }
     const response = await handle(request, env);
-    // Counted on the workers.dev preview too until the lemancave.co.uk switch (the CRM's LeMan Cave site reads it).
+    // Counted on the workers.dev preview too until the lemancave.co.uk switch (the CRM's Le Man Cave site reads it).
     trackAi(request, response, ctx, { feedKey: BLOG.feedKey, countPreview: true });
     return response;
   },

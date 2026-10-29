@@ -33,17 +33,17 @@ export default function PrivacyPage() {
       <PageSchema path="/privacy" />
       <header style={{ borderBottom: '1px solid #1F1F23' }}>
         <div className="lc-section" style={{ maxWidth: 1360, margin: '0 auto', padding: '0 40px', height: 92, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          <Link href="/" aria-label="LeMan Cave home"><img src="/images/d8a1bc65662ee5a26ca2d3cbc9ca559e.svg" alt="LeMan Cave" style={{ height: 80, width: 'auto', display: 'block' }} /></Link>
+          <Link href="/" aria-label="Le Man Cave home"><img src="/images/d8a1bc65662ee5a26ca2d3cbc9ca559e.svg" alt="Le Man Cave" style={{ height: 80, width: 'auto', display: 'block' }} /></Link>
           <Link href="/book" style={{ background: '#ED2835', color: '#09090B', fontWeight: 700, fontSize: 14, letterSpacing: '0.06em', textTransform: 'uppercase', padding: '14px 20px', borderRadius: 4, textDecoration: 'none' }}>Book now</Link>
         </div>
       </header>
       <main className="lc-section" style={{ maxWidth: 1360, margin: '0 auto', padding: '72px 40px 100px' }}>
         <p style={{ margin: '0 0 14px', fontFamily: "'JetBrains Mono', monospace", fontSize: 13, letterSpacing: '0.14em', color: '#ED2835', textTransform: 'uppercase' }}>Legal · Last updated {UPDATED}</p>
         <h1 style={{ margin: '0 0 28px', fontFamily: "'Big Shoulders Display', sans-serif", fontWeight: 900, fontSize: 'clamp(52px, 8vw, 104px)', lineHeight: 0.9, color: '#fff', textTransform: 'uppercase' }}>Privacy policy</h1>
-        <p style={P}>This explains what personal information LeMan Cave collects when you use our website, make an enquiry or book, why we need it, who we share it with, how long we keep it and your rights. We only collect what we need to run your booking and answer your questions, and we never sell your information.</p>
+        <p style={P}>This explains what personal information Le Man Cave collects when you use our website, make an enquiry or book, why we need it, who we share it with, how long we keep it and your rights. We only collect what we need to run your booking and answer your questions, and we never sell your information.</p>
 
         <h2 style={H2}>Who we are</h2>
-        <p style={P}>LeMan Cave is an indoor motorsport entertainment venue at Unit 1, Consensus House, St Faith&rsquo;s Rd, Norwich NR6 7BW. LeMan Cave is run by Le Man Cave Limited, a company registered in England and Wales (company number 17032850). For the information described here, Le Man Cave Limited is the data controller, which means we decide how and why it is used.</p>
+        <p style={P}>Le Man Cave is an indoor motorsport entertainment venue at Unit 1, Consensus House, St Faith&rsquo;s Rd, Norwich NR6 7BW. Le Man Cave is run by Le Man Cave Limited, a company registered in England and Wales (company number 17032850). For the information described here, Le Man Cave Limited is the data controller, which means we decide how and why it is used.</p>
         <p style={P}>Questions about your information: email <a href="mailto:bookings@lemancave.co.uk" style={A}>bookings@lemancave.co.uk</a>, call <a href="tel:01603517080" style={A}>01603 517080</a> or write to us at the address above.</p>
 
         <h2 style={H2}>What we collect and why</h2>
@@ -75,7 +75,7 @@ export default function PrivacyPage() {
         <p style={P}>Some of these providers are based in, or may access data from, the USA. Where information leaves the UK, it is protected by the UK&rsquo;s adequacy regulations (including the UK&ndash;US Data Bridge) or the UK International Data Transfer Agreement or Addendum. We may also share information if the law requires it, for example with HMRC or the police.</p>
 
         <h2 style={H2}>Marketing</h2>
-        <p style={P}>We don&rsquo;t send marketing emails unless you have agreed to receive them, or you are a customer and we&rsquo;re telling you about similar experiences at LeMan Cave. Every marketing email has an unsubscribe link, and you can tell us to stop at any time. Booking confirmations, invoices and reminders are not marketing and are always sent.</p>
+        <p style={P}>We don&rsquo;t send marketing emails unless you have agreed to receive them, or you are a customer and we&rsquo;re telling you about similar experiences at Le Man Cave. Every marketing email has an unsubscribe link, and you can tell us to stop at any time. Booking confirmations, invoices and reminders are not marketing and are always sent.</p>
 
         <h2 style={H2}>How long we keep it</h2>
         <Table head={['Information', 'How long']} rows={[
