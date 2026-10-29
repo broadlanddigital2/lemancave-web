@@ -706,5 +706,9 @@
  "/cookie-policy": {
   "primary": "leman cave cookie policy",
   "secondary": []
+ },
+ "/privacy": {
+  "primary": "leman cave privacy policy",
+  "secondary": []
  }
 }

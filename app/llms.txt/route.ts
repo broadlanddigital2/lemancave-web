@@ -10,7 +10,7 @@ const BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://lemancave.co.uk';
 const CORE = ['/', '/attractions', '/party-packages-norwich', '/book', '/experience-gifts-norwich', '/pizza-party-norwich',
   '/bring-your-own-drinks-venue-norwich', '/leman-cave-opening-times', '/leman-cave-parking-and-travel', '/minibus-taxi-norwich', '/contact-leman-cave-norwich',
   '/leman-cave-faqs', '/accessible-activities-norwich', '/leman-cave-photos', '/advertising-screens-norwich', '/blog'];
-const HIDDEN = ['/account', '/site-map', '/login', '/cookie-policy'];
+const HIDDEN = ['/account', '/site-map', '/login', '/cookie-policy', '/privacy'];
 const GROUPS: [string, (p: string) => boolean][] = [
   ['Main pages', (p) => CORE.includes(p)],
   ['Attractions', (p) => p.startsWith('/attractions/')],

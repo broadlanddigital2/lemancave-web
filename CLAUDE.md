@@ -123,6 +123,13 @@ Whole-cave prices are per person, with a minimum spend that still applies if few
 - **Image list doc**: "Full Website Image List" (Claude Docs). Includes image sizes per page.
 - **Image brief**: Claude Docs.
 
+## Cookies and privacy (29 Oct 2026)
+- **Cookie banner**: `components/CookieConsent.jsx`, with the choice stored in localStorage `lc-cookie-consent`.
+  - **Remember my visits**: the CRM search and chat remember a visitor, via `window.__crmBotTracking`, which `app/layout.tsx` sets before those scripts load.
+  - **Google Maps**: the map embeds become `components/ConsentMap.jsx` (converter step `add_consent_maps`).
+- **Footer links**: Privacy, Cookie policy and Cookie settings. Any `#cookie-settings` link reopens the banner.
+- **Pages**: `/cookie-policy` and `/privacy` are hand-written in `app/`. If the site starts collecting or storing anything new, update both.
+
 ## Content rules
 - The small print on every page (`app/layout.tsx`, `.lc-smallprint`) also says the venue is open for booked sessions and events only.
 - Every visible "pizza" is written "pizza*". The * and ** footnotes are in `app/layout.tsx` (`.lc-smallprint`) on every page. Not in alt text, aria-labels, meta descriptions or code keys.
@@ -145,6 +152,6 @@ Whole-cave prices are per person, with a minimum spend that still applies if few
   - local picks in the guides.
 - Map embed on `/contact-leman-cave-norwich`.
 - Real photography.
-- Privacy policy and booking terms pages (the booking form links to `/privacy`).
+- Booking terms page. (`/privacy` was added on 29 Oct 2026. The owner still needs to review it and fill in the `[CONFIRM]` legal name and company number.)
 - Switch LeMan Cave Stripe to live mode.
 - Go-live domain switch.

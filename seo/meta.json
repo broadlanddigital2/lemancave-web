@@ -390,5 +390,9 @@
  "/cookie-policy": {
   "title": "Cookie Policy",
   "description": "What the LeMan Cave website stores in your browser, why, and how to change your cookie choice. No advertising cookies and no Google Analytics."
+ },
+ "/privacy": {
+  "title": "Privacy Policy",
+  "description": "How LeMan Cave collects, uses and protects your personal information when you book, buy a gift card, make an enquiry or use our website, and your rights."
  }
 }

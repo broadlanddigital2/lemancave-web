@@ -72,7 +72,7 @@ export default function CookiePolicyPage() {
         <p style={P}>Use <a href="#cookie-settings" style={{ color: '#ED2835' }}>Cookie settings</a> (also at the bottom of every page) at any time. If you withdraw permission, we remove what we stored for search and chat. You can also clear cookies and site data in your browser settings, but blocking everything may stop booking and sign-in from working.</p>
 
         <h2 style={H2}>Questions</h2>
-        <p style={P}>Email <a href="mailto:bookings@lemancave.co.uk" style={{ color: '#ED2835' }}>bookings@lemancave.co.uk</a> or call <a href="tel:01603517080" style={{ color: '#ED2835' }}>01603 517080</a>. LeMan Cave, Unit 1, Consensus House, St Faith&rsquo;s Rd, Norwich NR6 7BW. We&rsquo;ll update this page if anything changes.</p>
+        <p style={P}>Email <a href="mailto:bookings@lemancave.co.uk" style={{ color: '#ED2835' }}>bookings@lemancave.co.uk</a> or call <a href="tel:01603517080" style={{ color: '#ED2835' }}>01603 517080</a>. LeMan Cave, Unit 1, Consensus House, St Faith&rsquo;s Rd, Norwich NR6 7BW. We&rsquo;ll update this page if anything changes. How we use personal information more widely is in our <Link href="/privacy" style={{ color: '#ED2835' }}>privacy policy</Link>.</p>
       </main>
       <SiteFooter />
     </div>
