@@ -67,23 +67,20 @@ export default class Photography extends React.Component {
 </div>
 </nav>
 </header>
-<section aria-labelledby="ph-h" style={css("position: relative; overflow: hidden; background: #0B0B0E; border-bottom: 1px solid #1F1F23")}>
-<div aria-hidden="true" style={css("position: absolute; inset: 0; background: radial-gradient(ellipse 45% 60% at 78% 50%, rgba(237,40,53,0.16), transparent 70%)")}></div>
-<div className="lc-section" style={css("position: relative; max-width: 1360px; margin: 0 auto; padding: 100px 40px 90px; display: flex; flex-wrap: wrap; align-items: center; gap: 56px")}>
-<div style={css("flex: 1 1 480px")}>
+<section aria-labelledby="ph-h" style={css("position: relative; min-height: 700px; display: flex; align-items: flex-end; background: #0E0E11; overflow: hidden")}>
+<img src="/images/7d26389d238902bad7bd1dc05c04258e.webp" alt={"A photographer\u2019s camera and studio lights set up on a race car inside Le Man Cave, Norwich"} style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 70% 50%")} />
+<div aria-hidden="true" style={css("position: absolute; inset: 0; background: linear-gradient(90deg, rgba(9,9,11,0.95) 0%, rgba(9,9,11,0.8) 45%, rgba(9,9,11,0.35) 80%, rgba(9,9,11,0.25) 100%)")}></div>
+<div aria-hidden="true" style={css("position: absolute; left: 0; right: 0; bottom: 0; height: 300px; background: linear-gradient(to top, #09090B 10%, transparent)")}></div>
+<div className="lc-section" style={css("position: relative; max-width: 1360px; width: 100%; margin: 0 auto; padding: 140px 40px 64px; box-sizing: border-box")}>
 <nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
 <A href="/" style={css("color: #A1A1AA")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <span style={css("color: #ED2835")}>{"PHOTOGRAPHY"}</span>
 </nav>
 <h1 id="ph-h" style={css("margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 500; line-height: 1.5; letter-spacing: 0.16em; color: #FFC233; text-transform: uppercase")}>{"Event photographer Norwich \u00b7 photos & video"}</h1>
-<p style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(64px, 9.5vw, 140px); line-height: 0.86; color: #FFFFFF; text-transform: uppercase")}>{"Capture"}<br /><span style={css("color: #ED2835")}>{"the night."}</span></p>
-<p style={css("margin: 26px 0 0; max-width: 540px; font-size: 20px; line-height: 1.55; color: #D4D4D8")}>{"We can provide a photographer to take photos and videos of your evening, so you can enjoy the event and still have every podium moment to keep."}</p>
+<p style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(64px, 10vw, 144px); line-height: 0.88; color: #FFFFFF; text-transform: uppercase")}>{"Capture"}<br /><span style={css("color: #ED2835")}>{"the night."}</span></p>
+<p style={css("margin: 28px 0 0; max-width: 600px; font-size: 20px; line-height: 1.55; color: #D4D4D8")}>{"We can provide a photographer to take photos and videos of your evening, so you can enjoy the event and still have every podium moment to keep."}</p>
 <div style={css("display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px")}>
 <A href="#packages" style={css("display: inline-block; background: #ED2835; color: #09090B; font-weight: 700; font-size: 16px; letter-spacing: 0.06em; text-transform: uppercase; padding: 18px 30px; border-radius: 4px")}>{"See packages"}</A>
 <A href="#book" style={css("display: inline-block; border: 1px solid #3F3F46; color: #F4F4F5; font-weight: 700; font-size: 16px; letter-spacing: 0.06em; text-transform: uppercase; padding: 17px 28px; border-radius: 4px")}>{"How to book"}</A>
-</div>
-</div>
-<div style={css("flex: 1 1 460px; display: flex; justify-content: center")}>
-<figure style={css("margin: 0; width: 100%; max-width: 580px; aspect-ratio: 4 / 3; border-radius: 12px; overflow: hidden; border: 1px solid #3F3F46; box-shadow: 0 30px 80px rgba(0,0,0,0.6)")}><img src="/images/c2a615d5274599ccc19ef695052deaba.webp" alt="A group celebrating together at Le Man Cave" style={css("width: 100%; height: 100%; object-fit: cover; display: block")} /></figure>
 </div>
 </div>
 </section>
