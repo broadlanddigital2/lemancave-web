@@ -37,7 +37,7 @@ export default function CookiePolicyPage() {
       <main className="lc-section" style={{ maxWidth: 1360, margin: '0 auto', padding: '72px 40px 100px' }}>
         <p style={{ margin: '0 0 14px', fontFamily: "'JetBrains Mono', monospace", fontSize: 13, letterSpacing: '0.14em', color: '#ED2835', textTransform: 'uppercase' }}>Legal · Last updated {UPDATED}</p>
         <h1 style={{ margin: '0 0 28px', fontFamily: "'Big Shoulders Display', sans-serif", fontWeight: 900, fontSize: 'clamp(52px, 8vw, 104px)', lineHeight: 0.9, color: '#fff', textTransform: 'uppercase' }}>Cookie policy</h1>
-        <p style={P}>This page explains what the Le Man Cave website stores on your phone or computer, why, and how to change your choice. We keep it short: there are no advertising cookies on this site and we don&rsquo;t use Google Analytics.</p>
+        <p style={P}>This page explains what the Le Man Cave website stores on your phone or computer, why, and how to change your choice. We keep it short: there are no Google advertising cookies on this site and we don&rsquo;t use Google Analytics.</p>
         <p style={{ ...P, marginTop: 22 }}><a href="#cookie-settings" style={{ display: 'inline-block', background: '#ED2835', color: '#09090B', fontWeight: 700, fontSize: 14, letterSpacing: '0.06em', textTransform: 'uppercase', padding: '14px 20px', borderRadius: 4, textDecoration: 'none' }}>Change cookie settings</a></p>
 
         <h2 style={H2}>What cookies are</h2>
@@ -65,11 +65,17 @@ export default function CookiePolicyPage() {
         <h2 style={H2}>Google Maps (with your permission)</h2>
         <p style={P}>Our contact and visit pages can show a map from Google Maps. Google sets its own cookies when the map loads, so we only load it if you allow maps or click &ldquo;Show map&rdquo;. You can always use the &ldquo;Open in Google Maps&rdquo; link instead. See <a href="https://policies.google.com/technologies/cookies" target="_blank" rel="noopener" style={{ color: '#ED2835' }}>how Google uses cookies</a>.</p>
 
+        <h2 style={H2}>Measure our adverts (with your permission)</h2>
+        <p style={P}>We advertise on Google. When you click one of our ads, the web address includes a click reference from Google and tags naming the advert. If you allow it, we keep these in a cookie on our own site, so that if you then make an enquiry or a booking we can see which advert brought you, and tell Google Ads that the click led to an enquiry or booking. We don&rsquo;t load any Google advertising or tracking code. If you say no, nothing is stored.</p>
+        <Table rows={[
+          ['ins_ad', 'Cookie', 'The Google click reference (gclid, gbraid or wbraid) and advert tags (utm_source, utm_medium, utm_campaign, utm_term) from the ad you clicked.', '90 days, or until you withdraw consent'],
+        ]} />
+
         <h2 style={H2}>Other websites</h2>
         <p style={P}>Payments are taken on Stripe&rsquo;s secure checkout, and links to Instagram, WhatsApp, Google and our partners take you to their websites. They have their own cookies and policies, which our banner doesn&rsquo;t control.</p>
 
         <h2 style={H2}>Changing your choice</h2>
-        <p style={P}>Use <a href="#cookie-settings" style={{ color: '#ED2835' }}>Cookie settings</a> (also at the bottom of every page) at any time. If you withdraw permission, we remove what we stored for search and chat. You can also clear cookies and site data in your browser settings, but blocking everything may stop booking and sign-in from working.</p>
+        <p style={P}>Use <a href="#cookie-settings" style={{ color: '#ED2835' }}>Cookie settings</a> (also at the bottom of every page) at any time. If you withdraw permission, we remove what we stored for search, chat and advert measurement. You can also clear cookies and site data in your browser settings, but blocking everything may stop booking and sign-in from working.</p>
 
         <h2 style={H2}>Questions</h2>
         <p style={P}>Email <a href="mailto:bookings@lemancave.co.uk" style={{ color: '#ED2835' }}>bookings@lemancave.co.uk</a> or call <a href="tel:01603517080" style={{ color: '#ED2835' }}>01603 517080</a>. Le Man Cave, Unit 1, Consensus House, St Faith&rsquo;s Rd, Norwich NR6 7BW. We&rsquo;ll update this page if anything changes. How we use personal information more widely is in our <Link href="/privacy" style={{ color: '#ED2835' }}>privacy policy</Link>.</p>

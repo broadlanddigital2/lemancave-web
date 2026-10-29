@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import Script from 'next/script';
 import CookieConsent from '../components/CookieConsent';
+import AdClick from '../components/AdClick';
 import './globals.css';
 import './design.css';
 
@@ -76,6 +77,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             Loaded after the page has started up (afterInteractive): loaded earlier, React's start-up could remove the
             search panel from the page, leaving a Search button that opened nothing. */}
         <CookieConsent />
+        <AdClick />
         <Script src="https://crm.racecargraphics.uk/embed/site-search.js" data-key="9d5420c16e364a7da808bb67" strategy="afterInteractive" />
         <Script src="https://crm.racecargraphics.uk/rcg-enquiry-bot.js" data-bot-key="33e6abf2-2ff6-4e91-9076-1834fea322f8" strategy="afterInteractive" />
       </body>

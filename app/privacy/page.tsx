@@ -53,6 +53,7 @@ export default function PrivacyPage() {
           ['You buy a gift card', 'Your name and email, and the recipient’s name, email and any message you add.', 'To send the gift card and let the recipient use it.', 'Contract (and our legitimate interest in delivering it to the recipient)'],
           ['You send an enquiry or use the chat', 'Your name, email, phone, company (if given), your message or conversation and the page you were on.', 'To answer you and, if you ask, prepare a quote or booking.', 'Legitimate interests (replying to you); contract if it leads to a booking'],
           ['You order a screen advert', 'Your business name, contact details, the package you choose and the artwork you upload.', 'To quote, take payment and show your advert.', 'Contract'],
+          ['You arrive from one of our Google ads (only if you allow “Measure our adverts”)', 'The Google click reference and advert tags in the web address.', 'To see which adverts lead to enquiries and bookings, and to tell Google Ads which clicks led to one (we send Google the click reference, the type of conversion and, for bookings, its value).', 'Consent'],
           ['You search the site or ask the assistant', 'What you type, the results you click and, with your permission, a visitor ID.', 'To answer your question and improve the search.', 'Legitimate interests; consent for the visitor ID'],
           ['You visit the venue', 'Anything you share about guests’ needs, such as access or medical information you choose to tell us for safety.', 'To keep everyone safe and make reasonable adjustments.', 'Your explicit consent / vital interests'],
         ]} />
@@ -70,7 +71,7 @@ export default function PrivacyPage() {
           <li><b>Twilio SendGrid</b>, which delivers our booking and enquiry emails.</li>
           <li><b>Dropbox</b>, where files attached to enquiries (such as advert artwork) are stored.</li>
           <li><b>OpenAI</b>, which powers the website&rsquo;s chat assistant and search answers and helps us sort incoming enquiries. Conversations are not used to train their models.</li>
-          <li><b>Google</b>, only if you choose to show a map on our contact or visit pages.</li>
+          <li><b>Google</b>, only if you choose to show a map on our contact or visit pages, and Google Ads, which receives the click reference of an ad you clicked (with your permission) when it leads to an enquiry or booking.</li>
         </ul>
         <p style={P}>Some of these providers are based in, or may access data from, the USA. Where information leaves the UK, it is protected by the UK&rsquo;s adequacy regulations (including the UK&ndash;US Data Bridge) or the UK International Data Transfer Agreement or Addendum. We may also share information if the law requires it, for example with HMRC or the police.</p>
 

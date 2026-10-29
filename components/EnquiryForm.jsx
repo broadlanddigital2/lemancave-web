@@ -1,4 +1,5 @@
 'use client';
+import { pageWithAdClick } from './AdClick';
 import React, { useState } from 'react';
 
 /**
@@ -27,7 +28,7 @@ export default function EnquiryForm({ formType = 'enquiry', children, ...rest })
     const payload = {
       formType,
       fields,
-      page: typeof window !== 'undefined' ? window.location.pathname : '',
+      page: typeof window !== 'undefined' ? pageWithAdClick() : '',
       submittedAt: new Date().toISOString(),
     };
     setStatus('sending'); setError('');
