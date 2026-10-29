@@ -1,5 +1,5 @@
 /**
- * CRM blog (shared by the LeMan Cave, Auto Opulence and Race Car Graphics workers; keep the copies in step).
+ * CRM blog (shared by the Le Man Cave, Auto Opulence and Race Car Graphics workers; keep the copies in step).
  *
  * The CRM writes a blog post for the site every few days (Marketing → Blog posts) and staff approve it there. Published
  * posts come from the CRM's seo-blog feed and are rendered here on request, so a post is live as soon as it's approved:

@@ -1,4 +1,4 @@
-"""Convert LeMan Cave .dc.html design components into Next.js (React) components.
+"""Convert Le Man Cave .dc.html design components into Next.js (React) components.
 Usage: python3 -I conv.py <src_project_dir> <next_project_dir>
 """
 import sys, os, re, json, html
@@ -35,7 +35,7 @@ ROUTES = {
  'CompareKarting': '/compare/sim-racing-vs-karting', 'Compare4kVr': '/compare/4k-vs-vr-racing', 'CompareMotionStatic': '/compare/motion-vs-static-simulator',
  'CompareSimVsHire': '/compare/sim-room-vs-whole-cave-hire', 'CompareSaturday': '/compare/saturday-party-packages-norwich', 'CompareIndoor': '/compare/best-indoor-activities-norwich',
  'CompareTeamBuilding': '/compare/team-building-activities-compared', 'ComparePartyVenues': '/compare/party-venues-norwich-compared', 'CompareScalextric': '/compare/digital-vs-classic-scalextric',
- 'Sitemap': '/site-map', 'CookiePolicy': '/cookie-policy', 'Privacy': '/privacy', 'Book': '/book', 'BlogShell': '/blog', 'Advertise': '/advertising-screens-norwich', 'Account': '/account',
+ 'Sitemap': '/site-map', 'CookiePolicy': '/cookie-policy', 'Privacy': '/privacy', 'Book': '/book', 'BlogShell': '/blog', 'Advertise': '/advertising-screens-norwich', 'Photography': '/event-photographer-norwich', 'Account': '/account',
 }
 TEMPLATES = {'Landing', 'Guide', 'Compare', 'Hub', 'Product', 'SiteFooter'}
 SKIP = {'Sitemap'}  # strategy diagram board; replaced by a generated HTML site map

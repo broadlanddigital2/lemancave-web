@@ -5,7 +5,7 @@ import Account from '../../components/Account';
 // balances, gift cards and advertising, signed in with an emailed code.
 export const metadata: Metadata = {
   title: 'Your Account',
-  description: 'Your LeMan Cave bookings, invoices, gift cards and advertising.',
+  description: 'Your Le Man Cave bookings, invoices, gift cards and advertising.',
   alternates: { canonical: '/account' },
   robots: { index: false, follow: false },
 };

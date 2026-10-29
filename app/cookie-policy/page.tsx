@@ -30,14 +30,14 @@ export default function CookiePolicyPage() {
       <PageSchema path="/cookie-policy" />
       <header style={{ borderBottom: '1px solid #1F1F23' }}>
         <div className="lc-section" style={{ maxWidth: 1360, margin: '0 auto', padding: '0 40px', height: 92, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          <Link href="/" aria-label="LeMan Cave home"><img src="/images/d8a1bc65662ee5a26ca2d3cbc9ca559e.svg" alt="LeMan Cave" style={{ height: 80, width: 'auto', display: 'block' }} /></Link>
+          <Link href="/" aria-label="Le Man Cave home"><img src="/images/d8a1bc65662ee5a26ca2d3cbc9ca559e.svg" alt="Le Man Cave" style={{ height: 80, width: 'auto', display: 'block' }} /></Link>
           <Link href="/book" style={{ background: '#ED2835', color: '#09090B', fontWeight: 700, fontSize: 14, letterSpacing: '0.06em', textTransform: 'uppercase', padding: '14px 20px', borderRadius: 4, textDecoration: 'none' }}>Book now</Link>
         </div>
       </header>
       <main className="lc-section" style={{ maxWidth: 1360, margin: '0 auto', padding: '72px 40px 100px' }}>
         <p style={{ margin: '0 0 14px', fontFamily: "'JetBrains Mono', monospace", fontSize: 13, letterSpacing: '0.14em', color: '#ED2835', textTransform: 'uppercase' }}>Legal · Last updated {UPDATED}</p>
         <h1 style={{ margin: '0 0 28px', fontFamily: "'Big Shoulders Display', sans-serif", fontWeight: 900, fontSize: 'clamp(52px, 8vw, 104px)', lineHeight: 0.9, color: '#fff', textTransform: 'uppercase' }}>Cookie policy</h1>
-        <p style={P}>This page explains what the LeMan Cave website stores on your phone or computer, why, and how to change your choice. We keep it short: there are no advertising cookies on this site and we don&rsquo;t use Google Analytics.</p>
+        <p style={P}>This page explains what the Le Man Cave website stores on your phone or computer, why, and how to change your choice. We keep it short: there are no advertising cookies on this site and we don&rsquo;t use Google Analytics.</p>
         <p style={{ ...P, marginTop: 22 }}><a href="#cookie-settings" style={{ display: 'inline-block', background: '#ED2835', color: '#09090B', fontWeight: 700, fontSize: 14, letterSpacing: '0.06em', textTransform: 'uppercase', padding: '14px 20px', borderRadius: 4, textDecoration: 'none' }}>Change cookie settings</a></p>
 
         <h2 style={H2}>What cookies are</h2>
@@ -72,7 +72,7 @@ export default function CookiePolicyPage() {
         <p style={P}>Use <a href="#cookie-settings" style={{ color: '#ED2835' }}>Cookie settings</a> (also at the bottom of every page) at any time. If you withdraw permission, we remove what we stored for search and chat. You can also clear cookies and site data in your browser settings, but blocking everything may stop booking and sign-in from working.</p>
 
         <h2 style={H2}>Questions</h2>
-        <p style={P}>Email <a href="mailto:bookings@lemancave.co.uk" style={{ color: '#ED2835' }}>bookings@lemancave.co.uk</a> or call <a href="tel:01603517080" style={{ color: '#ED2835' }}>01603 517080</a>. LeMan Cave, Unit 1, Consensus House, St Faith&rsquo;s Rd, Norwich NR6 7BW. We&rsquo;ll update this page if anything changes. How we use personal information more widely is in our <Link href="/privacy" style={{ color: '#ED2835' }}>privacy policy</Link>.</p>
+        <p style={P}>Email <a href="mailto:bookings@lemancave.co.uk" style={{ color: '#ED2835' }}>bookings@lemancave.co.uk</a> or call <a href="tel:01603517080" style={{ color: '#ED2835' }}>01603 517080</a>. Le Man Cave, Unit 1, Consensus House, St Faith&rsquo;s Rd, Norwich NR6 7BW. We&rsquo;ll update this page if anything changes. How we use personal information more widely is in our <Link href="/privacy" style={{ color: '#ED2835' }}>privacy policy</Link>.</p>
       </main>
       <SiteFooter />
     </div>

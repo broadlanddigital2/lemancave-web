@@ -3,14 +3,14 @@ import Link from 'next/link';
 import SiteFooter from '../../components/SiteFooter';
 import { SITEMAP } from '../../lib/sitemap-data';
 
-export const metadata: Metadata = { title: 'Site map', description: 'Every page on the LeMan Cave website.', alternates: { canonical: '/site-map' } };
+export const metadata: Metadata = { title: 'Site map', description: 'Every page on the Le Man Cave website.', alternates: { canonical: '/site-map' } };
 
 export default function SiteMapPage() {
   return (
     <div style={{ fontFamily: "'Barlow', system-ui, sans-serif", color: '#E4E4E7', background: '#09090B', minHeight: '100vh' }}>
       <header style={{ borderBottom: '1px solid #1F1F23' }}>
         <div className="lc-section" style={{ maxWidth: 1360, margin: '0 auto', padding: '0 40px', height: 92, display: 'flex', alignItems: 'center' }}>
-          <Link href="/" aria-label="LeMan Cave home"><img src="/images/d8a1bc65662ee5a26ca2d3cbc9ca559e.svg" alt="LeMan Cave" style={{ height: 80, width: 'auto', display: 'block' }} /></Link>
+          <Link href="/" aria-label="Le Man Cave home"><img src="/images/d8a1bc65662ee5a26ca2d3cbc9ca559e.svg" alt="Le Man Cave" style={{ height: 80, width: 'auto', display: 'block' }} /></Link>
         </div>
       </header>
       <main className="lc-section" style={{ maxWidth: 1360, margin: '0 auto', padding: '80px 40px 100px' }}>
