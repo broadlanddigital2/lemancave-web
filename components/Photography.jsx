@@ -28,6 +28,7 @@ export default class Photography extends React.Component {
       points: [
         { text: 'A photographer at your event for ' + p.hours + ' ' + p.unit },
         { text: 'Photos of your group, the racing and the celebrations' },
+        { text: 'Emailed to you within 5 working days' },
         { text: 'Add video for £50' },
         { text: 'Choose it under optional extras when you book' }
       ]
@@ -36,7 +37,7 @@ export default class Photography extends React.Component {
       ['What do the photography packages include?', 'A photographer at your event for 1, 2 or 3 hours, taking photos of your group, the racing and the celebrations. Video can be added to any package.'],
       ['How much does it cost?', '£100 for 1 hour, £200 for 2 hours or £300 for 3 hours, plus £50 if you add video. Choose your package under optional extras when you book.'],
       ['Can we add video?', 'Yes — add video to any package for £50 when you book.'],
-      ['How do we get our photos?', '[CONFIRM how and when photos and videos are delivered]'],
+      ['How do we get our photos?', 'Your photos are delivered electronically to the email address of your choice, within 5 working days of your event.'],
       ['Which bookings can include photography?', 'Photography can be added to whole-cave bookings, from birthdays and stag dos to corporate events and wedding receptions. If you’re not sure, get in touch.'],
       ['Can you organise transport too?', 'Yes — tick Transport at checkout and we’ll quote for taxi pick-up and drop-off for your event.']
     ];
@@ -128,7 +129,7 @@ export default class Photography extends React.Component {
 <span style={css("align-self: flex-start; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.14em; color: #09090B; background: #FFC233; padding: 7px 12px; border-radius: 3px")}>{"INCLUDED"}</span>
 <h3 style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 44px; line-height: 0.95; color: #FFFFFF; text-transform: uppercase")}>{"Photos of your event"}</h3>
 <p style={css("margin: 0; font-size: 17px; line-height: 1.6; color: #D4D4D8")}>{"Your photographer captures the group, the racing and the moments in between, from the simulators and Scalextric to the podium celebrations."}</p>
-<p style={css("margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.08em; color: #A1A1AA")}>{"[CONFIRM HOW AND WHEN PHOTOS ARE DELIVERED]"}</p>
+<p style={css("margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.08em; color: #A1A1AA")}>{"Delivered by email to the address of your choice, within 5 working days of your event."}</p>
 </article>
 <article style={css("border-radius: 10px; background: #131316; border: 1px solid #ED2835; padding: 40px; display: flex; flex-direction: column; gap: 18px")}>
 <span style={css("align-self: flex-start; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.14em; color: #09090B; background: #ED2835; padding: 7px 12px; border-radius: 3px")}>{"+ \u00a350"}</span>
