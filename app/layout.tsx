@@ -20,6 +20,8 @@ const jsonLd = {
   '@type': 'EntertainmentBusiness',
   '@id': 'https://lemancave.co.uk/#business',
   name: 'LeMan Cave',
+  legalName: 'Le Man Cave Limited',
+  identifier: { '@type': 'PropertyValue', propertyID: 'Companies House', value: '17032850' },
   description: 'Indoor motorsport entertainment venue in Norwich: racing simulators (one with full motion), a 160ft digital Scalextric for up to six cars, motorbike simulator, a games console lounge with games consoles, pool, darts and arcade games, with private hire for parties and events of up to about 50 guests.',
   url: 'https://lemancave.co.uk',
   telephone: '+44 1603 517080',

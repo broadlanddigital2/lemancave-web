@@ -9,6 +9,7 @@ in a Cowork session (Oct 2026). Setup and deploy steps are in `README.md`.
   - Minibus taxi service operating from the site, run by Freedom Transport (https://freedomtransport.co.uk/), at additional cost; page /minibus-taxi-norwich (owner, 28 Oct 2026).
   - Around 50 guests across about 1,600 sq ft (owner, 28 Oct 2026: 2,000 was a high estimate).
   - The site is about 0.5 acres; car clubs can arrange an external catering trailer or other facilities by special request (owner, 28 Oct 2026).
+  - Legal entity: Le Man Cave Limited, company number 17032850, registered in England and Wales (owner, 29 Oct 2026).
   - Phone 01603 517080 (`tel:01603517080`). Email bookings@lemancave.co.uk. Instagram @leman.cave.
 - **Positioning**: a real motorsport venue that's great for non-petrolheads too. Imagery should show the general public, not just car fans.
 - **Hours**: by booking only. Shown as the maximum hours sessions can run: Mon–Fri 09:00–21:00, Sat 10:00–21:00, Sun 12:00–16:00 (owner, 28 Oct 2026). Always say "bookings only" with them.
@@ -152,6 +153,6 @@ Whole-cave prices are per person, with a minimum spend that still applies if few
   - local picks in the guides.
 - Map embed on `/contact-leman-cave-norwich`.
 - Real photography.
-- Booking terms page. (`/privacy` was added on 29 Oct 2026. The owner still needs to review it and fill in the `[CONFIRM]` legal name and company number.)
+- Booking terms page. (`/privacy` was added on 29 Oct 2026.)
 - Switch LeMan Cave Stripe to live mode.
 - Go-live domain switch.

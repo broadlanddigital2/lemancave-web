@@ -5,7 +5,7 @@ import { pageMeta, PageSchema } from '../../lib/seo';
 
 // Hand-written page (no design board), styled like /cookie-policy. Written 29 Oct 2026 from what the website and
 // the CRM actually collect (enquiry form, booking widget, gift cards, screen adverts, enquiry bot, site search).
-// The owner should review it, and fill in the [CONFIRM] items, before launch. The booking form links here.
+// Legal entity: Le Man Cave Limited, company number 17032850 (owner, 29 Oct 2026). The booking form links here.
 export const metadata: Metadata = pageMeta('/privacy');
 
 const UPDATED = '29 October 2026';
@@ -43,7 +43,7 @@ export default function PrivacyPage() {
         <p style={P}>This explains what personal information LeMan Cave collects when you use our website, make an enquiry or book, why we need it, who we share it with, how long we keep it and your rights. We only collect what we need to run your booking and answer your questions, and we never sell your information.</p>
 
         <h2 style={H2}>Who we are</h2>
-        <p style={P}>LeMan Cave is an indoor motorsport entertainment venue at Unit 1, Consensus House, St Faith&rsquo;s Rd, Norwich NR6 7BW. For the information described here, LeMan Cave [CONFIRM: legal business name, and company number if a limited company] is the data controller, which means we decide how and why it is used.</p>
+        <p style={P}>LeMan Cave is an indoor motorsport entertainment venue at Unit 1, Consensus House, St Faith&rsquo;s Rd, Norwich NR6 7BW. LeMan Cave is run by Le Man Cave Limited, a company registered in England and Wales (company number 17032850). For the information described here, Le Man Cave Limited is the data controller, which means we decide how and why it is used.</p>
         <p style={P}>Questions about your information: email <a href="mailto:bookings@lemancave.co.uk" style={A}>bookings@lemancave.co.uk</a>, call <a href="tel:01603517080" style={A}>01603 517080</a> or write to us at the address above.</p>
 
         <h2 style={H2}>What we collect and why</h2>
