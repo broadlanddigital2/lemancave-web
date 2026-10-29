@@ -62,6 +62,7 @@ const INTRO = `# LeMan Cave
 ## Good to know
 
 - Every game and attraction is included with venue hire. No age limits on the experiences; the simulators may have height restrictions, and motion may be disabled for safety for guests under 14.
+- Children must be accompanied by adults and supervised at all times. Staff are on hand to help with equipment and drinks only.
 - Drinks are Bring Your Own: drop them off in advance to be chilled, or bring them on the day. Cups and ice are provided.
 - No outside food apart from cakes by arrangement. Pizza is available on the pizza packages, with a range of dietary options.
 - The motorsport memorabilia is on display during venue hire (not for sale).
