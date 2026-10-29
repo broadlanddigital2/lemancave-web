@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import Script from 'next/script';
+import CookieConsent from '../components/CookieConsent';
 import './globals.css';
 import './design.css';
 
@@ -56,6 +57,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800;900&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap"
           rel="stylesheet"
         />
+        {/* Cookie choice for the CRM site search and enquiry bot, set before they load (components/CookieConsent.jsx). */}
+        <script dangerouslySetInnerHTML={{ __html: "try{var c=JSON.parse(localStorage.getItem('lc-cookie-consent')||'null');window.__crmBotTracking=!!(c&&c.v===1&&c.remember)}catch(e){window.__crmBotTracking=false}" }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       </head>
       <body>
@@ -70,6 +73,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             Race Car Graphics CRM (Marketing → Site search; Channels → LeMan Cave Enquiry Bot); leads go to LeMan Cave leads.
             Loaded after the page has started up (afterInteractive): loaded earlier, React's start-up could remove the
             search panel from the page, leaving a Search button that opened nothing. */}
+        <CookieConsent />
         <Script src="https://crm.racecargraphics.uk/embed/site-search.js" data-key="9d5420c16e364a7da808bb67" strategy="afterInteractive" />
         <Script src="https://crm.racecargraphics.uk/rcg-enquiry-bot.js" data-bot-key="33e6abf2-2ff6-4e91-9076-1834fea322f8" strategy="afterInteractive" />
       </body>

@@ -52,7 +52,7 @@ export default class SiteFooter extends React.Component {
 </div>
 <div className="lc-section" style={css("max-width: 1360px; margin: 0 auto; padding: 24px 40px 40px; border-top: 1px solid #18181B; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; font-size: 13px; color: #71717A")}>
 <span>{"\u00a9 2026 LeMan Cave. All rights reserved."}</span>
-<span>{"Norwich, Norfolk \u00b7 "}<A href="/site-map" style={css("color: #71717A")}>{"Site map"}</A></span>
+<span>{"Norwich, Norfolk \u00b7 "}<A href="/site-map" style={css("color: #71717A")}>{"Site map"}</A>{" \u00b7 "}<A href="/cookie-policy" style={css("color: #71717A")}>{"Cookie policy"}</A>{" \u00b7 "}<A href="#cookie-settings" style={css("color: #71717A")}>{"Cookie settings"}</A></span>
 </div>
 </footer>
 </>);

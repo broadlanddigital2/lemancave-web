@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import { css } from '../lib/css';
+import ConsentMap from './ConsentMap';
 import FaqSchema from './FaqSchema';
 import FestiveBar from './FestiveBar';
 import HeaderTools from './HeaderTools';
@@ -600,7 +601,7 @@ export default class Landing extends React.Component {
 </div>
 <div style={css("flex: 1 1 420px; display: flex; flex-direction: column; gap: 16px")}>
 {V.loc.photo ? (<><figure style={css("position: relative; margin: 0; height: 260px; border-radius: 10px; overflow: hidden; background: #131316")}><img src={V.loc.photo.src} alt={V.loc.photo.alt} loading="lazy" referrerPolicy="no-referrer" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} /><figcaption style={css("position: absolute; left: 0; right: 0; bottom: 0; padding: 36px 16px 10px; background: linear-gradient(to top, rgba(9,9,11,0.92), transparent); display: flex; flex-direction: column; gap: 2px")}><span style={css("font-weight: 600; font-size: 15px; color: #FFFFFF")}>{V.loc.photo.alt}</span><span style={css("font-size: 11px; color: #A1A1AA")}>{"Photo: "}<A href={V.loc.photo.page} target="_blank" rel="noopener" style={css("color: #D4D4D8; text-decoration: underline")}>{V.loc.photo.author}</A>{" \u00b7 "}<A href={V.loc.photo.licenseUrl} target="_blank" rel="noopener license" style={css("color: #D4D4D8; text-decoration: underline")}>{V.loc.photo.license}</A>{" \u00b7 Wikimedia Commons"}</span></figcaption></figure></>) : null}
-<div style={css("position: relative; height: 340px; border-radius: 10px; overflow: hidden; background: #131316; border: 1px solid #232328")}><iframe title={V.loc.mapTitle} src={V.loc.map} loading="lazy" referrerPolicy="no-referrer-when-downgrade" style={css("position: absolute; inset: 0; width: 100%; height: 100%; border: 0; filter: invert(90%) hue-rotate(180deg) saturate(0.85) contrast(0.95)")}></iframe><A href={V.loc.directions} target="_blank" rel="noopener" style={css("position: absolute; left: 14px; bottom: 14px; background: #ED2835; color: #09090B; font-weight: 700; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; padding: 10px 16px; border-radius: 4px")}>{"Directions from "}{V.loc.town}{" \u2192"}</A></div>
+<div style={css("position: relative; height: 340px; border-radius: 10px; overflow: hidden; background: #131316; border: 1px solid #232328")}><ConsentMap title={V.loc.mapTitle} src={V.loc.map} loading="lazy" referrerPolicy="no-referrer-when-downgrade" style={css("position: absolute; inset: 0; width: 100%; height: 100%; border: 0; filter: invert(90%) hue-rotate(180deg) saturate(0.85) contrast(0.95)")} /><A href={V.loc.directions} target="_blank" rel="noopener" style={css("position: absolute; left: 14px; bottom: 14px; background: #ED2835; color: #09090B; font-weight: 700; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; padding: 10px 16px; border-radius: 4px")}>{"Directions from "}{V.loc.town}{" \u2192"}</A></div>
 </div>
 </div>
 </section>
