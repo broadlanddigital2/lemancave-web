@@ -50,7 +50,7 @@ export default function CookieConsent() {
     <div className="lc-cookies" role="dialog" aria-modal="false" aria-labelledby="lc-cookies-title" aria-describedby="lc-cookies-text">
       <div className="lc-cookies__body">
         <p id="lc-cookies-title" className="lc-cookies__title">Cookies at LeMan Cave</p>
-        <p id="lc-cookies-text">We use essential storage to make bookings, gift cards and your account work. With your OK, our site search and chat can remember you between visits, and our maps load from Google, which sets its own cookies. No advertising cookies. <a href="/cookie-policy">Cookie policy</a></p>
+        <p id="lc-cookies-text">We use essential storage to make bookings, gift cards and your account work. With your OK, our site search and chat can remember you between visits, and our maps load from Google, which sets its own cookies. No advertising cookies. <a href="/cookie-policy">Cookie policy</a> · <a href="/privacy">Privacy policy</a></p>
         {manage && <fieldset className="lc-cookies__options">
           <legend>Choose what we can use</legend>
           <label><input type="checkbox" checked disabled /><span><b>Essential</b>Bookings, payments, gift cards, sign-in and security. Always on.</span></label>
