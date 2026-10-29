@@ -478,7 +478,8 @@ export default class Landing extends React.Component {
     const crossTitle = isLoc ? 'Popular with visitors' : p.cat === 'events' ? 'Perfect for' : 'Popular choices';
     const hubLabel = isLoc ? 'All locations' : p.cat === 'events' ? 'All parties & events' : 'Everyone welcome';
     const things = p.things.map((k) => ({ name: T[k][0], href: T[k][1], img: T[k][2], alt: T[k][0] + ' at Le Man Cave' }));
-    const reasons = p.reasons.map(([t, c], i) => ({ n: '0' + (i + 1), t, c }));
+    // Reasons that mention accessibility link to the accessibility page (owner, 29 Oct 2026).
+    const reasons = p.reasons.map(([t, c], i) => { const acc = slug !== 'accessibility' && /accessible/i.test(t + ' ' + c); return { n: '0' + (i + 1), t, c, hasLink: acc, href: acc ? '/accessible-activities-norwich' : '', linkLabel: 'Accessibility' }; });
     const active = isLoc ? '/contact-leman-cave-norwich' : '/parties-and-events-norwich';
     const nav = [['/attractions', 'Attractions'], ['/pizza-party-norwich', 'Food & Drink'], ['/parties-and-events-norwich', 'Parties & Events'], ['/party-packages-norwich', 'Prices'], ['/leman-cave-photos', 'Gallery'], ['/contact-leman-cave-norwich', 'Visit Us']].map(([href, label]) => ({ href, label, style: 'text-decoration: none; ' + (href === active ? 'color: #ED2835; padding: 8px 0; border-bottom: 2px solid #ED2835' : 'color: #F4F4F5') }));
     const NVK = { '/attractions': 'attractions', '/pizza-party-norwich': 'food', '/parties-and-events-norwich': 'events', '/party-packages-norwich': 'prices', '/leman-cave-photos': 'gallery', '/contact-leman-cave-norwich': 'visit' };
@@ -564,6 +565,9 @@ export default class Landing extends React.Component {
 <span style={css("font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 52px; line-height: 1; color: #ED2835")}>{r.n}</span>
 <h3 style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 28px; color: #FFFFFF; text-transform: uppercase")}>{r.t}</h3>
 <p style={css("margin: 0; font-size: 16px; line-height: 1.6; color: #A1A1AA")}>{r.c}</p>
+{r.hasLink ? (<>
+<A href={r.href} style={css("margin-top: auto; align-self: flex-start; color: #ED2835; font-weight: 700; font-size: 15px; letter-spacing: 0.04em; text-transform: uppercase; text-decoration: none")}>{r.linkLabel}{" \u2192"}</A>
+</>) : null}
 </article>
 </React.Fragment>))}
 </div>
