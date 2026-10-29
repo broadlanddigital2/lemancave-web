@@ -11,15 +11,16 @@ import SiteFooter from './SiteFooter';
 export default class Photography extends React.Component {
   constructor(props) { super(props); this.state = { open: 0 }; }
   renderVals() {
-    // Prices to be confirmed. At checkout, Photography package is a "quote" extra (CRM add-on group "quote").
+    // DEMO prices for testing (owner, 29 Oct 2026): 1/2/3 hours £100/£200/£300, video +£50. They are CRM add-ons on
+    // whole-cave services (group photography, video photography_addon); change them in the CRM and here together.
     const pk = [
-      { hours: '1', unit: 'hour', tag: 'HIGHLIGHTS', note: '1-HOUR SHOOT', featured: false },
-      { hours: '2', unit: 'hours', tag: 'MOST POPULAR', note: '2-HOUR SHOOT', featured: true },
-      { hours: '3', unit: 'hours', tag: 'THE WHOLE EVENT', note: '3-HOUR SHOOT', featured: false }
+      { hours: '1', unit: 'hour', tag: 'HIGHLIGHTS', note: '1-HOUR SHOOT', amount: '£100', featured: false },
+      { hours: '2', unit: 'hours', tag: 'MOST POPULAR', note: '2-HOUR SHOOT', amount: '£200', featured: true },
+      { hours: '3', unit: 'hours', tag: 'THE WHOLE EVENT', note: '3-HOUR SHOOT', amount: '£300', featured: false }
     ];
     const packages = pk.map(p => ({
       ...p,
-      price: 'PRICE TO BE CONFIRMED',
+      price: p.amount,
       cta: 'Book with photography',
       href: '#book',
       cardStyle: 'position: relative; overflow: hidden; border-radius: 10px; background: #131316; border: 1px solid ' + (p.featured ? '#ED2835' : '#232328') + '; padding: 40px; display: flex; flex-direction: column; gap: 20px',
@@ -27,14 +28,14 @@ export default class Photography extends React.Component {
       points: [
         { text: 'A photographer at your event for ' + p.hours + ' ' + p.unit },
         { text: 'Photos of your group, the racing and the celebrations' },
-        { text: '+ Video add-on: price to be confirmed' },
-        { text: 'Tick Photography package at checkout for a quote' }
+        { text: 'Add video for £50' },
+        { text: 'Choose it under optional extras when you book' }
       ]
     }));
     const faqList = [
       ['What do the photography packages include?', 'A photographer at your event for 1, 2 or 3 hours, taking photos of your group, the racing and the celebrations. Video can be added to any package.'],
-      ['How much does it cost?', 'Prices are to be confirmed. Tick Photography package under optional extras when you book, and we’ll send you a quote for the package you’d like.'],
-      ['Can we add video?', 'Yes — video is an add-on for every package. Let us know when we send your quote.'],
+      ['How much does it cost?', '£100 for 1 hour, £200 for 2 hours or £300 for 3 hours, plus £50 if you add video. Choose your package under optional extras when you book.'],
+      ['Can we add video?', 'Yes — add video to any package for £50 when you book.'],
       ['How do we get our photos?', '[CONFIRM how and when photos and videos are delivered]'],
       ['Which bookings can include photography?', 'Photography can be added to whole-cave bookings, from birthdays and stag dos to corporate events and wedding receptions. If you’re not sure, get in touch.'],
       ['Can you organise transport too?', 'Yes — tick Transport at checkout and we’ll quote for taxi pick-up and drop-off for your event.']
@@ -133,9 +134,9 @@ export default class Photography extends React.Component {
 <p style={css("margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.08em; color: #A1A1AA")}>{"[CONFIRM HOW AND WHEN PHOTOS ARE DELIVERED]"}</p>
 </article>
 <article style={css("border-radius: 10px; background: #131316; border: 1px solid #ED2835; padding: 40px; display: flex; flex-direction: column; gap: 18px")}>
-<span style={css("align-self: flex-start; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.14em; color: #09090B; background: #ED2835; padding: 7px 12px; border-radius: 3px")}>{"+ VIDEO ADD-ON"}</span>
+<span style={css("align-self: flex-start; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.14em; color: #09090B; background: #ED2835; padding: 7px 12px; border-radius: 3px")}>{"+ \u00a350"}</span>
 <h3 style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 44px; line-height: 0.95; color: #FFFFFF; text-transform: uppercase")}>{"Add video"}</h3>
-<p style={css("margin: 0; font-size: 17px; line-height: 1.6; color: #D4D4D8")}>{"Add video to any package and we\u2019ll film your evening as well as photographing it. Price to be confirmed: we\u2019ll include it in your quote."}</p>
+<p style={css("margin: 0; font-size: 17px; line-height: 1.6; color: #D4D4D8")}>{"Add video to any package for \u00a350 and we\u2019ll film your evening as well as photographing it."}</p>
 </article>
 </div>
 </div>
@@ -146,12 +147,12 @@ export default class Photography extends React.Component {
 <p style={css("margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: #ED2835")}>{"03 / HOW TO BOOK"}</p>
 <h2 id="bk-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(44px, 5.5vw, 80px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Add a photographer to your booking"}</h2>
 </div>
-<p style={css("margin: 0; max-width: 460px; font-size: 18px; line-height: 1.6; color: #A1A1AA")}>{"Photography is an optional extra on your booking. Tick it at checkout and we\u2019ll send you a quote."}</p>
+<p style={css("margin: 0; max-width: 460px; font-size: 18px; line-height: 1.6; color: #A1A1AA")}>{"Photography is an optional extra on your booking: choose your package, and video if you\u2019d like it, at checkout."}</p>
 </div>
 <ol style={css("list-style: none; margin: 0 0 44px; padding: 0; display: flex; flex-wrap: wrap; gap: 20px 32px")}>
 <li style={css("display: flex; gap: 16px; align-items: flex-start; flex: 1 1 240px")}><span style={css("flex: none; width: 34px; height: 34px; border-radius: 50%; background: #ED2835; color: #09090B; display: flex; align-items: center; justify-content: center; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 18px")}>{"1"}</span><span style={css("font-size: 17px; line-height: 1.55; color: #D4D4D8; padding-top: 4px")}>{"Book your session online and choose your date, time and guests."}</span></li>
-<li style={css("display: flex; gap: 16px; align-items: flex-start; flex: 1 1 240px")}><span style={css("flex: none; width: 34px; height: 34px; border-radius: 50%; background: #ED2835; color: #09090B; display: flex; align-items: center; justify-content: center; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 18px")}>{"2"}</span><span style={css("font-size: 17px; line-height: 1.55; color: #D4D4D8; padding-top: 4px")}>{"Under optional extras, tick Photography package (add Transport too if you\u2019d like a taxi)."}</span></li>
-<li style={css("display: flex; gap: 16px; align-items: flex-start; flex: 1 1 240px")}><span style={css("flex: none; width: 34px; height: 34px; border-radius: 50%; background: #ED2835; color: #09090B; display: flex; align-items: center; justify-content: center; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 18px")}>{"3"}</span><span style={css("font-size: 17px; line-height: 1.55; color: #D4D4D8; padding-top: 4px")}>{"We\u2019ll send you a quote for the package you\u2019d like, with or without video."}</span></li>
+<li style={css("display: flex; gap: 16px; align-items: flex-start; flex: 1 1 240px")}><span style={css("flex: none; width: 34px; height: 34px; border-radius: 50%; background: #ED2835; color: #09090B; display: flex; align-items: center; justify-content: center; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 18px")}>{"2"}</span><span style={css("font-size: 17px; line-height: 1.55; color: #D4D4D8; padding-top: 4px")}>{"Under optional extras, choose 1, 2 or 3 hours of photography, and add video if you\u2019d like it."}</span></li>
+<li style={css("display: flex; gap: 16px; align-items: flex-start; flex: 1 1 240px")}><span style={css("flex: none; width: 34px; height: 34px; border-radius: 50%; background: #ED2835; color: #09090B; display: flex; align-items: center; justify-content: center; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 18px")}>{"3"}</span><span style={css("font-size: 17px; line-height: 1.55; color: #D4D4D8; padding-top: 4px")}>{"Pay your deposit and your photographer is booked with your session."}</span></li>
 </ol>
 <div style={css("display: flex; flex-wrap: wrap; gap: 14px")}>
 <A href="/book" style={css("display: inline-block; background: #ED2835; color: #09090B; font-weight: 700; font-size: 16px; letter-spacing: 0.06em; text-transform: uppercase; padding: 18px 30px; border-radius: 4px")}>{"Book now"}</A>
