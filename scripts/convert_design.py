@@ -35,7 +35,7 @@ ROUTES = {
  'CompareKarting': '/compare/sim-racing-vs-karting', 'Compare4kVr': '/compare/4k-vs-vr-racing', 'CompareMotionStatic': '/compare/motion-vs-static-simulator',
  'CompareSimVsHire': '/compare/sim-room-vs-whole-cave-hire', 'CompareSaturday': '/compare/saturday-party-packages-norwich', 'CompareIndoor': '/compare/best-indoor-activities-norwich',
  'CompareTeamBuilding': '/compare/team-building-activities-compared', 'ComparePartyVenues': '/compare/party-venues-norwich-compared', 'CompareScalextric': '/compare/digital-vs-classic-scalextric',
- 'Sitemap': '/site-map', 'Book': '/book', 'BlogShell': '/blog', 'Advertise': '/advertising-screens-norwich', 'Account': '/account',
+ 'Sitemap': '/site-map', 'CookiePolicy': '/cookie-policy', 'Book': '/book', 'BlogShell': '/blog', 'Advertise': '/advertising-screens-norwich', 'Account': '/account',
 }
 TEMPLATES = {'Landing', 'Guide', 'Compare', 'Hub', 'Product', 'SiteFooter'}
 SKIP = {'Sitemap'}  # strategy diagram board; replaced by a generated HTML site map
@@ -283,6 +283,15 @@ def add_faqs(code):
         assert k == 1, 'FAQ list not found'
     return code.replace("import { css } from '../lib/css';\n", "import { css } from '../lib/css';\nimport FaqSchema from './FaqSchema';\n", 1)
 
+def add_consent_maps(code):
+    # Google Maps embeds set Google's own cookies, so they become components/ConsentMap.jsx: the map loads once the
+    # visitor allows maps in the cookie banner, or clicks "Show map"; until then a placeholder links to Google Maps.
+    if '<iframe ' not in code:
+        return code
+    code, n = re.subn(r'<iframe ([^>]*?src=[^>]*?)></iframe>', r'<ConsentMap \1 />', code)
+    assert n and '<iframe ' not in code, 'map iframe not converted'
+    return code.replace("import { css } from '../lib/css';\n", "import { css } from '../lib/css';\nimport ConsentMap from './ConsentMap';\n", 1)
+
 def add_blog_slot(code):
     # <div data-crm-blog="slot"></div> (the /blog shell page) becomes components/BlogSlot.jsx, which keeps the blog the
     # worker puts there when React takes over the page.
@@ -319,6 +328,7 @@ if __name__ == '__main__':
         code = add_festive_bar(code)
         code = add_faqs(code)
         code = add_blog_slot(code)
+        code = add_consent_maps(code)
         if name == 'GiftVouchers' and 'formType="gift-voucher"' in code:
             code = re.sub(r'(<EnquiryForm formType="gift-voucher"[^>]*>)', lambda m: m.group(1) + '<input type="hidden" name="voucher" value={`${V.v.title} \u00b7 ${V.v.price}`} />', code, count=1)
             assert 'name="voucher"' in code
