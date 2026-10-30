@@ -152,6 +152,20 @@ export async function handleEnquiry(request, env) {
   }
   if (!env.CRM_WEBFORM_URL || !env.CRM_FORM_KEY) return json({ ok: false, error: 'Form not configured' }, 500);
 
+  // CRM monitoring (hourly form check): with the monitor token the CRM checks the form key and fields, and nothing is
+  // saved or emailed. A wrong token is refused by the CRM.
+  if (body.monitor === true) {
+    try {
+      const res = await fetch(env.CRM_WEBFORM_URL, { method: 'POST', headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ ...payload, monitor: true, monitor_token: clean(body.monitor_token, 200) }) });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok || !data.monitor) return json({ ok: false, error: data.error || `CRM check failed (${res.status})` }, res.ok ? 502 : res.status);
+      return json({ ok: true, monitor: true, crm: data });
+    } catch (e) {
+      return json({ ok: false, error: 'CRM unreachable: ' + String(e).slice(0, 200) }, 502);
+    }
+  }
+
   try {
     const res = await fetch(env.CRM_WEBFORM_URL, {
       method: 'POST',
