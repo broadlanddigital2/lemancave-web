@@ -21,7 +21,9 @@ export async function fetchPosts(opts, slug = '') {
     const r = await fetch(url, { cf: { cacheTtl: 120, cacheEverything: true } });
     if (!r.ok) return null;
     const j = await r.json();
-    return Array.isArray(j.posts) ? j.posts : [];
+    const posts = Array.isArray(j.posts) ? j.posts : [];
+    posts.business = j.business || null; // name, address, phone, hours and map for the "Find us" block and schema
+    return posts;
   } catch {
     return null;
   }
@@ -76,8 +78,40 @@ ${posts.length ? `<div class="crmblog-grid">${cards}</div>` : `<p class="crmblog
 </section>`;
 }
 
-function postHtml(opts, p) {
-  return `<style>${opts.css}</style>
+const DAYS = { mon: 'Mo', tue: 'Tu', wed: 'We', thu: 'Th', fri: 'Fr', sat: 'Sa', sun: 'Su' };
+const DAY_NAMES = { mon: 'Monday', tue: 'Tuesday', wed: 'Wednesday', thu: 'Thursday', fri: 'Friday', sat: 'Saturday', sun: 'Sunday' };
+// The business as schema.org data (publisher of the post): name, address, phone, position and opening hours.
+function businessLd(b, origin, siteName) {
+  if (!b) return { '@type': 'Organization', name: siteName, url: origin };
+  const hours = b.hours ? Object.entries(DAYS).filter(([k]) => /^\d{2}:\d{2}-\d{2}:\d{2}$/.test(String(b.hours[k] || ''))).map(([k, d]) => `${d} ${b.hours[k]}`) : [];
+  return { '@type': 'LocalBusiness', '@id': origin + '/#business', name: b.name || siteName, url: origin, telephone: b.phone || undefined, email: b.email || undefined,
+    address: { '@type': 'PostalAddress', streetAddress: (b.address || []).filter((l) => l !== b.locality && l !== b.postcode).join(', '), addressLocality: b.locality || undefined, addressRegion: b.region || undefined, postalCode: b.postcode || undefined, addressCountry: 'GB' },
+    geo: b.lat ? { '@type': 'GeoCoordinates', latitude: b.lat, longitude: b.lng } : undefined, hasMap: b.mapsUrl, openingHours: hours.length ? hours : undefined };
+}
+// "Find us" block under each post: name, address, phone, hours, a map and a directions link.
+function visitHtml(b) {
+  if (!b || !(b.address || []).length) return '';
+  const tel = String(b.phone || '').replace(/[^\d+]/g, '');
+  const hours = b.hours ? Object.keys(DAY_NAMES).filter((k) => b.hours[k]).map((k) => `<li><span>${DAY_NAMES[k]}</span> ${esc(b.hours[k] === 'closed' ? 'Closed' : String(b.hours[k]).replace('-', '–'))}</li>`).join('') : '';
+  return `<section class="crmblog-visit" aria-label="Find us">
+<div class="crmblog-nap"><h2>Find ${esc(b.name)}</h2>
+<p><strong>${esc(b.name)}</strong><br>${(b.address || []).map(esc).join('<br>')}</p>
+${b.phone ? `<p>Phone: <a href="tel:${esc(tel)}">${esc(b.phone)}</a>${b.email ? `<br>Email: <a href="mailto:${esc(b.email)}">${esc(b.email)}</a>` : ''}</p>` : ''}
+${hours ? `<ul class="crmblog-hours">${hours}</ul>${b.hours.note ? `<p class="crmblog-hoursnote">${esc(b.hours.note)}</p>` : ''}` : ''}
+<p><a class="crmblog-btn2" href="${esc(b.mapsUrl)}" target="_blank" rel="noopener">Get directions</a></p></div>
+${b.mapImage ? `<a class="crmblog-map" href="${esc(b.mapsUrl)}" target="_blank" rel="noopener"><img src="${esc(b.mapImage)}" alt="Map showing where ${esc(b.name)} is" width="640" height="320" loading="lazy"></a>` : ''}
+</section>`;
+}
+
+// Neutral styles for the "Find us" block (works on light and dark sites; a site's own css can override them).
+const VISIT_CSS = `.crmblog-visit{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:24px;align-items:start;margin:36px 0 0;padding:24px;border-radius:10px;border:1px solid rgba(127,127,127,.28);background:rgba(127,127,127,.07)}
+.crmblog-visit h2{margin:0 0 10px;font-size:26px;line-height:1.1}.crmblog-nap p{margin:0 0 12px;line-height:1.55}
+.crmblog-hours{list-style:none;margin:0 0 6px;padding:0;font-size:15px}.crmblog-hours li{display:flex;justify-content:space-between;gap:12px;max-width:280px;padding:2px 0}
+.crmblog-hoursnote{font-size:14px;opacity:.8}.crmblog-map img{width:100%;height:auto;border-radius:8px;display:block}
+@media (max-width:760px){.crmblog-visit{grid-template-columns:1fr}}`;
+
+function postHtml(opts, p, biz) {
+  return `<style>${opts.css}${VISIT_CSS}</style>
 <article class="crmblog crmblog-post">
 <nav class="crmblog-crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">/</span> <a href="${esc(opts.basePath)}">${esc(opts.blogName)}</a> <span aria-hidden="true">/</span> <span>${esc(p.title)}</span></nav>
 <p class="crmblog-meta">${esc(p.category || 'Blog')} · <time datetime="${esc(p.publishedAt || '')}">${esc(date(p.publishedAt))}</time></p>
@@ -86,6 +120,7 @@ ${p.excerpt ? `<p class="crmblog-lead">${esc(p.excerpt)}</p>` : ''}
 ${p.image ? `<img class="crmblog-hero" src="${esc(p.image.url)}" alt="${esc(p.image.alt)}" width="${p.image.width || 1536}" height="${p.image.height || 1024}">` : ''}
 <div class="crmblog-body">${p.html}</div>
 <div class="crmblog-cta">${opts.ctaHtml || ''}</div>
+${visitHtml(biz)}
 <p class="crmblog-back"><a href="${esc(opts.basePath)}">← All posts</a></p>
 </article>`;
 }
@@ -127,12 +162,15 @@ export async function blogResponse(request, env, opts) {
     const nf = await env.ASSETS.fetch(new Request(new URL('/404', url.origin)));
     return new Response(nf.ok ? await nf.text() : 'Not found', { status: 404, headers: { 'Content-Type': 'text/html; charset=utf-8' } });
   }
-  const html = setHead(fill(shell, postHtml(opts, p), branded(p.metaTitle || p.title, opts.siteName)), {
+  const biz = posts.business || null;
+  const html = setHead(fill(shell, postHtml(opts, p, biz), branded(p.metaTitle || p.title, opts.siteName)), {
     title: branded(p.metaTitle || p.title, opts.siteName), description: p.metaDescription || p.excerpt, url: origin + p.path, image: p.image?.url,
     jsonLd: { '@context': 'https://schema.org', '@graph': [
       { '@type': 'BlogPosting', headline: p.title, description: p.metaDescription || p.excerpt, url: origin + p.path, mainEntityOfPage: origin + p.path,
         datePublished: p.publishedAt, dateModified: p.updatedAt || p.publishedAt, image: p.image ? [p.image.url] : undefined, keywords: (p.keywords || []).join(', '),
-        wordCount: p.wordCount || undefined, inLanguage: 'en-GB', author: { '@type': 'Organization', name: opts.siteName, url: origin }, publisher: { '@type': 'Organization', name: opts.siteName, url: origin } },
+        wordCount: p.wordCount || undefined, inLanguage: 'en-GB', author: { '@type': 'Organization', name: opts.siteName, url: origin }, publisher: biz ? { '@id': origin + '/#business' } : { '@type': 'Organization', name: opts.siteName, url: origin } },
+      ...(biz ? [businessLd(biz, origin, opts.siteName)] : []),
+      ...((p.faq || []).length ? [{ '@type': 'FAQPage', mainEntity: p.faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) }] : []),
       { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: origin + '/' }, { '@type': 'ListItem', position: 2, name: opts.blogName, item: origin + base }, { '@type': 'ListItem', position: 3, name: p.title, item: origin + p.path }] },
     ] },
   });
