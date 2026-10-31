@@ -16,7 +16,7 @@ const date = (v) => (v ? new Date(v).toLocaleDateString('en-GB', { day: 'numeric
 
 /** Published posts from the CRM (cached at the edge for two minutes). */
 export async function fetchPosts(opts, slug = '') {
-  const url = `${opts.feedUrl}?key=${encodeURIComponent(opts.feedKey)}${slug ? '&slug=' + encodeURIComponent(slug) : ''}`;
+  const url = `${opts.feedUrl}?key=${encodeURIComponent(opts.feedKey)}${opts.kind ? '&kind=' + encodeURIComponent(opts.kind) : ''}${slug ? '&slug=' + encodeURIComponent(slug) : ''}`;
   try {
     const r = await fetch(url, { cf: { cacheTtl: 120, cacheEverything: true } });
     if (!r.ok) return null;
@@ -92,7 +92,7 @@ ${p.image ? `<img class="crmblog-hero" src="${esc(p.image.url)}" alt="${esc(p.im
 
 /**
  * Serves the blog list and posts. Returns null for other paths.
- * opts: { feedUrl, feedKey, origin, basePath, shellPath, siteName, blogName, blogTitle, kicker, intro, guidesPath, ctaHtml, css }
+ * opts: { feedUrl, feedKey, kind ('news' for the CRM's news updates; default blog articles), origin, basePath, shellPath, siteName, blogName, blogTitle, kicker, intro, guidesPath, ctaHtml, css }
  */
 export async function blogResponse(request, env, opts) {
   const url = new URL(request.url);

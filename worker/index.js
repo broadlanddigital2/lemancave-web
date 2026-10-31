@@ -184,6 +184,18 @@ export async function handleEnquiry(request, env) {
   }
 }
 
+// News: short updates written and queued in the CRM (Marketing → Blog posts → News updates); one goes live each day.
+// Uses the /blog page as its shell (crm-blog.js replaces the title, description, canonical and structured data).
+const NEWS = {
+  ...BLOG,
+  kind: 'news',
+  basePath: '/news',
+  blogName: 'News',
+  blogTitle: 'Le Man Cave news',
+  kicker: 'Latest from the cave · Norwich',
+  intro: 'Updates from Le Man Cave: what’s new, what’s coming and how to book Norwich’s motorsport entertainment venue.',
+};
+
 async function handle(request, env) {
     const url = new URL(request.url);
     if (url.pathname === '/api/enquiry') {
@@ -192,10 +204,12 @@ async function handle(request, env) {
     }
     const blog = await blogResponse(request, env, BLOG);
     if (blog) return blog;
+    const news = await blogResponse(request, env, NEWS);
+    if (news) return news;
     if (url.pathname === '/sitemap.xml') {
       const res = await env.ASSETS.fetch(request);
       if (!res.ok) return res;
-      return new Response(await addPostsToSitemap(await res.text(), BLOG), { headers: { 'Content-Type': 'application/xml; charset=utf-8', 'Cache-Control': 'public, max-age=300' } });
+      return new Response(await addPostsToSitemap(await addPostsToSitemap(await res.text(), BLOG), NEWS), { headers: { 'Content-Type': 'application/xml; charset=utf-8', 'Cache-Control': 'public, max-age=300' } });
     }
     const to = REDIRECTS[url.pathname.replace(/\/$/, '')];
     if (to) return Response.redirect(url.origin + to + url.search, 301);
