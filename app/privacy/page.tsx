@@ -8,7 +8,7 @@ import { pageMeta, PageSchema } from '../../lib/seo';
 // Legal entity: Le Man Cave Limited, company number 17032850 (owner, 29 Oct 2026). The booking form links here.
 export const metadata: Metadata = pageMeta('/privacy');
 
-const UPDATED = '29 October 2026';
+const UPDATED = '1 November 2026';
 const H2 = { margin: '48px 0 14px', fontFamily: "'Big Shoulders Display', sans-serif", fontWeight: 800, fontSize: 32, lineHeight: 1.05, color: '#fff', textTransform: 'uppercase' as const };
 const P = { margin: '0 0 14px', fontSize: 17, lineHeight: 1.65, color: '#D4D4D8', maxWidth: 820 };
 const UL = { margin: '0 0 14px', paddingLeft: 22, fontSize: 17, lineHeight: 1.65, color: '#D4D4D8', maxWidth: 820 };
@@ -54,6 +54,7 @@ export default function PrivacyPage() {
           ['You send an enquiry or use the chat', 'Your name, email, phone, company (if given), your message or conversation and the page you were on.', 'To answer you and, if you ask, prepare a quote or booking.', 'Legitimate interests (replying to you); contract if it leads to a booking'],
           ['You order a screen advert', 'Your business name, contact details, the package you choose and the artwork you upload.', 'To quote, take payment and show your advert.', 'Contract'],
           ['You arrive from one of our Google ads (only if you allow “Measure our adverts”)', 'The Google click reference and advert tags in the web address.', 'To see which adverts lead to enquiries and bookings, and to tell Google Ads which clicks led to one (we send Google the click reference, the type of conversion and, for bookings, its value).', 'Consent'],
+          ['You send an enquiry, book or phone us', 'A scrambled (hashed) copy of your email address and phone number, with the type of enquiry, booking or call and, for bookings, its value.', 'To let Google Ads match enquiries, bookings and calls to its adverts, so we can see which adverts work. Google only receives the scrambled values, uses them to match with its own records and is told not to use them to personalise adverts.', 'Legitimate interests (measuring and improving our advertising). You can object at any time.'],
           ['You search the site or ask the assistant', 'What you type, the results you click and, with your permission, a visitor ID.', 'To answer your question and improve the search.', 'Legitimate interests; consent for the visitor ID'],
           ['You visit the venue', 'Anything you share about guests’ needs, such as access or medical information you choose to tell us for safety.', 'To keep everyone safe and make reasonable adjustments.', 'Your explicit consent / vital interests'],
         ]} />
@@ -71,7 +72,7 @@ export default function PrivacyPage() {
           <li><b>Twilio SendGrid</b>, which delivers our booking and enquiry emails.</li>
           <li><b>Dropbox</b>, where files attached to enquiries (such as advert artwork) are stored.</li>
           <li><b>OpenAI</b>, which powers the website&rsquo;s chat assistant and search answers and helps us sort incoming enquiries. Conversations are not used to train their models.</li>
-          <li><b>Google</b>, only if you choose to show a map on our contact or visit pages, and Google Ads, which receives the click reference of an ad you clicked (with your permission) when it leads to an enquiry or booking.</li>
+          <li><b>Google</b>, only if you choose to show a map on our contact or visit pages, and Google Ads, which receives the click reference of an ad you clicked (with your permission) and a scrambled (hashed) copy of your email address and phone number when you enquire, book or call, to measure which adverts work.</li>
         </ul>
         <p style={P}>Some of these providers are based in, or may access data from, the USA. Where information leaves the UK, it is protected by the UK&rsquo;s adequacy regulations (including the UK&ndash;US Data Bridge) or the UK International Data Transfer Agreement or Addendum. We may also share information if the law requires it, for example with HMRC or the police.</p>
 
