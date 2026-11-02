@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import { css } from '../lib/css';
+import Img from './Img';
 import A from './A';
 
 export default class SiteFooter extends React.Component {
@@ -27,7 +28,7 @@ export default class SiteFooter extends React.Component {
 <footer style={css("font-family: 'Barlow', system-ui, sans-serif; color: #E4E4E7; border-top: 1px solid #1F1F23; background: #060608")}>
 <div className="lc-section" style={css("max-width: 1360px; margin: 0 auto; padding: 64px 40px 48px; display: flex; flex-wrap: wrap; gap: 48px")}>
 <div style={css("flex: 1 1 260px; display: flex; flex-direction: column; gap: 16px")}>
-<A href="/" aria-label="Le Man Cave home"><img src="/images/d8a1bc65662ee5a26ca2d3cbc9ca559e.svg" alt="Le Man Cave" style={css("width: 220px; height: auto; display: block; margin-left: -12px")} /></A>
+<A href="/" aria-label="Le Man Cave home"><img width="206" height="103" src="/images/d8a1bc65662ee5a26ca2d3cbc9ca559e.svg" alt="Le Man Cave" style={css("width: 220px; height: auto; display: block; margin-left: -12px")} /></A>
 <p style={css("margin: 0; color: #A1A1AA; font-size: 15px; line-height: 1.6; max-width: 280px")}>{"Norwich\u2019s motorsport entertainment venue \u2014 built for petrolheads, brilliant for everyone."}</p>
 <A href="/book" style={css("align-self: flex-start; background: #ED2835; color: #09090B; font-weight: 700; font-size: 14px; letter-spacing: 0.06em; text-transform: uppercase; padding: 14px 20px; border-radius: 4px; text-decoration: none")}>{"Book now"}</A>
 </div>
@@ -45,7 +46,7 @@ export default class SiteFooter extends React.Component {
 <div style={css("display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px")}>
 {(V.brands || []).map((b, $index) => (<React.Fragment key={$index}>
 <A href={b.href} aria-label={b.name} style={css("display: flex; align-items: center; justify-content: center; height: 104px; padding: 16px; box-sizing: border-box; border: 1px solid #27272A; border-radius: 6px; background: #0B0B0E")}>
-<img src={b.logo} alt={b.name} style={css("max-height: 56px; max-width: 80%; width: auto; height: auto; display: block")} />
+<Img src={b.logo} alt={b.name} style={css("max-height: 56px; max-width: 80%; width: auto; height: auto; display: block")} />
 </A>
 </React.Fragment>))}
 </div>

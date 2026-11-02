@@ -96,6 +96,30 @@ a{color:#F4F4F5;text-decoration:none}a:hover{color:#FFFFFF}
 </div>
 </section>
 
+<!-- FAQ (SEO optimiser, 2 Nov 2026) -->
+<section aria-labelledby="faq-h" style="background: #0F0F12; border-top: 1px solid #1F1F23; border-bottom: 1px solid #1F1F23">
+<div class="lc-section" style="max-width: 1360px; margin: 0 auto; padding: 100px 40px; display: flex; flex-wrap: wrap; gap: 64px">
+<div style="flex: 1 1 340px">
+<p style="margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: #ED2835">GOOD TO KNOW</p>
+<h2 id="faq-h" style="margin: 0 0 20px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(40px, 5vw, 64px); line-height: 0.95; color: #FFFFFF; text-transform: uppercase">{{faqTitle}}</h2>
+<a href="FAQs.dc.html" style="display: inline-block; border: 1px solid #52525B; color: #FFFFFF; font-weight: 600; font-size: 15px; letter-spacing: 0.06em; text-transform: uppercase; padding: 16px 24px; border-radius: 4px; text-decoration: none">All FAQs</a>
+</div>
+<div style="flex: 2 1 560px; border-top: 1px solid #27272A">
+<sc-for list="{{faqs}}" as="f" hint-placeholder-count="3">
+<div style="border-bottom: 1px solid #27272A">
+<button type="button" onClick="{{f.toggle}}" aria-expanded="{{f.expanded}}" style="width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 20px; background: none; border: 0; padding: 24px 0; cursor: pointer; text-align: left; font: inherit; color: #FFFFFF; font-size: 19px; font-weight: 600">
+<span>{{f.q}}</span>
+<span aria-hidden="true" style="{{f.iconStyle}}">+</span>
+</button>
+<sc-if value="{{f.open}}" hint-placeholder-val="{{ false }}">
+<p style="margin: 0; padding: 0 48px 26px 0; font-size: 17px; line-height: 1.65; color: #A1A1AA">{{f.a}}</p>
+</sc-if>
+</div>
+</sc-for>
+</div>
+</div>
+</section>
+
 <dc-import name="SiteFooter" hint-size="100%,780px"></dc-import>
 </div>
 </x-dc>
@@ -103,7 +127,18 @@ a{color:#F4F4F5;text-decoration:none}a:hover{color:#FFFFFF}
 class Component extends DCLogic {
   renderVals() {
     const prices = [['Sim room, weekday daytime', '£80/hr'], ['Sim room, evenings & weekends', '£125/hr'], ['After School Special', '£40pp'], ['Saturday & Sunday sessions', 'from £45pp'], ['Bring Your Own drink & pizza*', '£60pp']].map(([label, price]) => ({ label, price }));
-    return { prices };
+    const FAQS = [
+      ['How much notice do I need to book online?', 'Online bookings need 24 hours’ notice. For anything sooner, or a special request, use “Have an urgent booking?” in the form or call 01603 517080.'],
+      ['Do I pay in full or a deposit?', 'Sim room hours are paid in full. Whole-cave bookings take a 25% deposit, with the balance due 7 days before. Sessions starting within 14 days are paid in full when you book.'],
+      ['Can I use a gift card?', 'Yes. Enter the code when you review your booking: the card comes off first, any deposit still due is charged, and the rest stays on the card.'],
+      ['Where can I see my booking?', 'You’ll get a confirmation email straight away, and you can sign in to your account with an email code to see your bookings, invoices and gift cards.']
+    ];
+    // FAQs (SEO optimiser, 2 Nov 2026): answered only from confirmed facts; the converter adds FAQPage schema.
+    const faqOpen = (this.state || {}).faqOpen;
+    const faqs = FAQS.map(([q, a], i) => { const open = faqOpen === i; return { q, a, open, expanded: open ? 'true' : 'false',
+      iconStyle: 'flex: none; width: 34px; height: 34px; border-radius: 50%; border: 1px solid #3F3F46; display: flex; align-items: center; justify-content: center; font-size: 20px; color: ' + (open ? '#ED2835' : '#E4E4E7') + '; transform: rotate(' + (open ? '45' : '0') + 'deg); transition: transform .2s',
+      toggle: () => this.setState({ faqOpen: open ? -1 : i }) }; });
+    return { faqs, faqTitle: 'Booking questions', prices };
   }
 }
 </script>

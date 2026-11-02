@@ -85,6 +85,7 @@ Whole-cave prices are per person, with a minimum spend that still applies if few
 
   Every page links up to its hub, across to related pages, and down to guides and comparisons. Keep that internal linking when adding pages.
 - **Header**: a mega menu (Attractions / Food & Drink / Parties & Events / Visit Us), then search and account icons (`components/HeaderTools.jsx`, inserted by the converter) and the main button. The footer is deliberately slim.
+- **Images** (SEO optimiser, 2 Nov 2026): the converter gives every `<img>` its width and height (`lib/image-sizes.json`, generated from `public/images`; images whose address comes from page data use `components/Img.jsx`). The mega menu's feature cards use lazy-loaded thumbnails in `public/images/menu/` (made by the converter). Keep new photos under 300 KB (WebP, at most 1920px wide). The location pages hot-link 960px Wikimedia thumbnails with their sizes in `PHOTOS` (`design/Landing.dc.html`).
 - **Mobile menu**: `components/MobileMenu.jsx` (hand-written, links in `lib/nav.js`, styles `.lc-mob-*` in `app/globals.css`). The converter inserts `<MobileMenu />` into every page header. If the mega menu's links change in the design, update `lib/nav.js` to match.
 
 ## Hosting and CRM

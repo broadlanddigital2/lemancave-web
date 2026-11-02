@@ -292,6 +292,73 @@ def add_consent_maps(code):
     assert n and '<iframe ' not in code, 'map iframe not converted'
     return code.replace("import { css } from '../lib/css';\n", "import { css } from '../lib/css';\nimport ConsentMap from './ConsentMap';\n", 1)
 
+def image_sizes(imgdir):
+    # Intrinsic width and height of every image in public/images (lib/image-sizes.json), so each <img> gets width and
+    # height attributes: the browser reserves the space before the image loads (no layout shift). SEO optimiser check.
+    from PIL import Image
+    sizes = {}
+    files = sorted(os.listdir(imgdir)) + ['menu/' + f for f in sorted(os.listdir(os.path.join(imgdir, 'menu')))] if os.path.isdir(os.path.join(imgdir, 'menu')) else sorted(os.listdir(imgdir))
+    for f in files:
+        path = os.path.join(imgdir, f)
+        if os.path.isdir(path):
+            continue
+        if f.endswith('.svg'):
+            head = open(path).read(2000)
+            svg = re.search(r'<svg\b[^>]*>', head).group(0)
+            w, h = re.search(r'\swidth="([\d.]+)"', svg), re.search(r'\sheight="([\d.]+)"', svg)
+            if w and h:
+                sizes['/images/' + f] = [round(float(w.group(1))), round(float(h.group(1)))]
+            else:
+                vb = re.search(r'viewBox="[\d.\s-]+?([\d.]+)\s+([\d.]+)"', svg)
+                sizes['/images/' + f] = [round(float(vb.group(1))), round(float(vb.group(2)))]
+        else:
+            with Image.open(path) as im:
+                sizes['/images/' + f] = list(im.size)
+    return sizes
+
+def add_menu_thumbs(code, imgdir, sizes):
+    # The header mega menu's feature cards (decorative, alt="") use small thumbnails in public/images/menu/, loaded
+    # lazily: the menu is hidden until opened, so full-size photos there were downloaded on every page for nothing.
+    # Separate files also keep the page's own (described) photo from being mistaken for the menu's copy.
+    if '<header' not in code:
+        return code
+    from PIL import Image
+    start, end = code.index('<header'), code.index('</header>')
+    head = code[start:end]
+    def thumb(m):
+        name = m.group(1)
+        out = os.path.join(imgdir, 'menu', os.path.splitext(name)[0] + '.webp')
+        if not os.path.exists(out):
+            os.makedirs(os.path.dirname(out), exist_ok=True)
+            with Image.open(os.path.join(imgdir, name)) as im:
+                im = im.convert('RGB')
+                im.thumbnail((640, 640))
+                im.save(out, 'WEBP', quality=78, method=6)
+        key = '/images/menu/' + os.path.basename(out)
+        if key not in sizes:
+            with Image.open(out) as im:
+                sizes[key] = list(im.size)
+        return '<img src="' + key + '" alt="" loading="lazy" '
+    head = re.sub(r'<img src="/images/([0-9a-f]{32}\.\w+)" alt="" ', thumb, head)
+    return code[:start] + head + code[end:]
+
+def add_image_sizes(code, sizes):
+    # Images with a fixed address get their width and height written in; images whose address comes from page data
+    # use components/Img.jsx, which looks the size up in lib/image-sizes.json (or uses the width/height in the data).
+    def fix(m):
+        tag = m.group(0)
+        if ' width=' in tag:
+            return tag
+        src = re.match(r'<img src="([^"]+)"', tag)
+        if src:
+            w, h = sizes[src.group(1)]  # every local image must be in public/images
+            return tag.replace('<img ', f'<img width="{w}" height="{h}" ', 1)
+        return '<Img ' + tag[5:]
+    code = re.sub(r'<img [^>]*?/>', fix, code)
+    if '<Img ' in code:
+        code = code.replace("import { css } from '../lib/css';\n", "import { css } from '../lib/css';\nimport Img from './Img';\n", 1)
+    return code
+
 def add_blog_slot(code):
     # <div data-crm-blog="slot"></div> (the /blog shell page) becomes components/BlogSlot.jsx, which keeps the blog the
     # worker puts there when React takes over the page.
@@ -307,6 +374,7 @@ if __name__ == '__main__':
     for f in os.listdir(imgdir):
         b, e = os.path.splitext(f); exts[b] = e[1:]
     os.makedirs(os.path.join(OUT, 'components'), exist_ok=True)
+    sizes = image_sizes(imgdir)
     all_css, pages = [], {}
     for f in sorted(os.listdir(SRC)):
         if not f.endswith('.dc.html'): continue
@@ -329,12 +397,15 @@ if __name__ == '__main__':
         code = add_faqs(code)
         code = add_blog_slot(code)
         code = add_consent_maps(code)
+        code = add_menu_thumbs(code, imgdir, sizes)
+        code = add_image_sizes(code, sizes)
         if name == 'GiftVouchers' and 'formType="gift-voucher"' in code:
             code = re.sub(r'(<EnquiryForm formType="gift-voucher"[^>]*>)', lambda m: m.group(1) + '<input type="hidden" name="voucher" value={`${V.v.title} \u00b7 ${V.v.price}`} />', code, count=1)
             assert 'name="voucher"' in code
         open(os.path.join(OUT, 'components', name + '.jsx'), 'w').write(code)
         if name not in TEMPLATES:
             pages[name] = {'component': name, 'slug': None, 'title': title}
+    json.dump(sizes, open(os.path.join(OUT, 'lib', 'image-sizes.json'), 'w'), indent=0, sort_keys=True)
     json.dump({'pages': pages, 'routes': ROUTES}, open(os.path.join(OUT, 'scripts', 'pages.json'), 'w'), indent=1)
     # global css: dedupe rule blocks
     seen, lines = set(), []

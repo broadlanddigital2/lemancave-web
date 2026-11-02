@@ -69,6 +69,30 @@ body{margin:0}
 </section>
 </sc-for>
 
+<!-- FAQ (SEO optimiser, 2 Nov 2026) -->
+<section aria-labelledby="faq-h" style="background: #0F0F12; border-top: 1px solid #1F1F23; border-bottom: 1px solid #1F1F23">
+<div class="lc-section" style="max-width: 1360px; margin: 0 auto; padding: 100px 40px; display: flex; flex-wrap: wrap; gap: 64px">
+<div style="flex: 1 1 340px">
+<p style="margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: #ED2835">GOOD TO KNOW</p>
+<h2 id="faq-h" style="margin: 0 0 20px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(40px, 5vw, 64px); line-height: 0.95; color: #FFFFFF; text-transform: uppercase">{{faqTitle}}</h2>
+<a href="FAQs.dc.html" style="display: inline-block; border: 1px solid #52525B; color: #FFFFFF; font-weight: 600; font-size: 15px; letter-spacing: 0.06em; text-transform: uppercase; padding: 16px 24px; border-radius: 4px; text-decoration: none">All FAQs</a>
+</div>
+<div style="flex: 2 1 560px; border-top: 1px solid #27272A">
+<sc-for list="{{faqs}}" as="f" hint-placeholder-count="3">
+<div style="border-bottom: 1px solid #27272A">
+<button type="button" onClick="{{f.toggle}}" aria-expanded="{{f.expanded}}" style="width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 20px; background: none; border: 0; padding: 24px 0; cursor: pointer; text-align: left; font: inherit; color: #FFFFFF; font-size: 19px; font-weight: 600">
+<span>{{f.q}}</span>
+<span aria-hidden="true" style="{{f.iconStyle}}">+</span>
+</button>
+<sc-if value="{{f.open}}" hint-placeholder-val="{{ false }}">
+<p style="margin: 0; padding: 0 48px 26px 0; font-size: 17px; line-height: 1.65; color: #A1A1AA">{{f.a}}</p>
+</sc-if>
+</div>
+</sc-for>
+</div>
+</div>
+</section>
+
 <!-- CTA BAND -->
 <section class="lc-section" aria-labelledby="cta-h" style="max-width: 1360px; margin: 0 auto; padding: 120px 40px">
 <div style="position: relative; border-radius: 10px; overflow: hidden; background: #ED2835; padding: 60px 56px; display: flex; flex-wrap: wrap; gap: 40px; align-items: center; justify-content: space-between">
@@ -123,7 +147,28 @@ class Component extends DCLogic {
     const nav = [['Attractions.dc.html', 'Attractions'], ['Food.dc.html', 'Food & Drink'], ['Events.dc.html', 'Parties & Events'], ['Pricing.dc.html', 'Prices'], ['Gallery.dc.html', 'Gallery'], ['Visit.dc.html', 'Visit Us']].map(([href, label]) => ({ href, label, style: 'text-decoration: none; ' + (href === h.active ? 'color: #ED2835; padding: 8px 0; border-bottom: 2px solid #ED2835' : 'color: #F4F4F5') }));
     const NVK = { 'Attractions.dc.html': 'attractions', 'Food.dc.html': 'food', 'Events.dc.html': 'events', 'Pricing.dc.html': 'prices', 'Gallery.dc.html': 'gallery', 'Visit.dc.html': 'visit' };
     const nv = Object.fromEntries(nav.map((n) => [NVK[n.href], 'display: flex; align-items: center; gap: 6px; height: 92px; box-sizing: border-box; white-space: nowrap; flex: none; text-decoration: none; ' + (n.style.includes('#ED2835') ? 'color: #ED2835; border-bottom: 2px solid #ED2835' : 'color: #F4F4F5; border-bottom: 2px solid transparent')]));
-    return { nv, h, groups, nav };
+    const FAQ_BY = {
+      attractions: [
+        ['Is everything included when we hire the venue?', 'Yes. Every attraction is included with whole-cave hire: the racing simulators, Scalextric, motorbike sim, games console lounge, pool / billiards, darts, air hockey, table football, poker, pinball and arcade.'],
+        ['Can I book just the racing simulators?', 'Yes. Book the sim room in 1-hour slots, 2 people sharing 1 sim: £80 an hour on weekdays 09:00–17:00 and £125 an hour on evenings and weekends.'],
+        ['How many people can play at once?', 'There are activities for 34 players at once, and the venue holds up to 50 guests.'],
+        ['Do I need to be into cars?', 'Not at all. Pool / billiards, darts, air hockey, table football, no-stakes poker, pinball, the arcade and consoles on a 100-inch screen keep everyone busy.'],
+      ],
+      events: [
+        ['How many guests can we bring?', 'Up to 50 guests, with activities for 34 players at once.'],
+        ['How does pricing work?', 'Whole-cave packages are priced per person with a minimum spend, from £40 per person for the After School Special and £45 per person at weekends. Whole-cave bookings take a 25% deposit, with the balance due 7 days before. Sessions starting within 14 days are paid in full when you book.'],
+        ['Can we bring food and drink?', 'Drinks are Bring Your Own on Bring Your Own packages, with cups and ice provided. Pizza* is available on pizza* packages. No other outside food is allowed, apart from cakes by prior arrangement.'],
+        ['Do your staff supervise children?', 'No. Children must be accompanied by adults and supervised at all times. Our staff are on hand to help with equipment and drinks only.'],
+        ['Can you arrange transport?', 'Yes. A minibus taxi service run by Freedom Transport operates from the site, at additional cost. Add taxi pick-up & drop-off when you book and we’ll send a quote.'],
+      ],
+    };
+    const FAQS = FAQ_BY[this.props.slug] || FAQ_BY.attractions;
+    // FAQs (SEO optimiser, 2 Nov 2026): answered only from confirmed facts; the converter adds FAQPage schema.
+    const faqOpen = (this.state || {}).faqOpen;
+    const faqs = FAQS.map(([q, a], i) => { const open = faqOpen === i; return { q, a, open, expanded: open ? 'true' : 'false',
+      iconStyle: 'flex: none; width: 34px; height: 34px; border-radius: 50%; border: 1px solid #3F3F46; display: flex; align-items: center; justify-content: center; font-size: 20px; color: ' + (open ? '#ED2835' : '#E4E4E7') + '; transform: rotate(' + (open ? '45' : '0') + 'deg); transition: transform .2s',
+      toggle: () => this.setState({ faqOpen: open ? -1 : i }) }; });
+    return { faqs, faqTitle: this.props.slug === 'events' ? 'Parties and events Norwich: questions' : 'Indoor attractions Norwich: questions', nv, h, groups, nav };
   }
 }
 </script>

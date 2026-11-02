@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import SiteFooter from '../../components/SiteFooter';
+import FaqSchema from '../../components/FaqSchema';
 import { pageMeta, PageSchema } from '../../lib/seo';
 
 // Hand-written page (no design board), styled like /site-map. Keep it in step with components/CookieConsent.jsx and
@@ -8,6 +9,11 @@ import { pageMeta, PageSchema } from '../../lib/seo';
 export const metadata: Metadata = pageMeta('/cookie-policy');
 
 const UPDATED = '29 October 2026';
+const COOKIE_FAQS = [
+  { q: 'Does the Le Man Cave website use advertising cookies or Google Analytics?', a: 'No. There are no Google advertising cookies on this site and we don’t use Google Analytics. If you allow “Measure our adverts”, we keep the Google click reference from an ad you clicked in a cookie on our own site for 90 days.' },
+  { q: 'Will booking work if I say no to cookies?', a: 'Yes. The essential storage that makes booking, paying, gift cards and your account work is always on. Blocking everything in your browser settings may stop booking and sign-in from working.' },
+  { q: 'How do I change my cookie choice?', a: 'Use Cookie settings, at the bottom of every page, at any time. If you withdraw permission, we remove what we stored for search, chat and advert measurement.' },
+];
 const H2 = { margin: '48px 0 14px', fontFamily: "'Big Shoulders Display', sans-serif", fontWeight: 800, fontSize: 32, lineHeight: 1.05, color: '#fff', textTransform: 'uppercase' as const };
 const P = { margin: '0 0 14px', fontSize: 17, lineHeight: 1.65, color: '#D4D4D8', maxWidth: 820 };
 const TH = { textAlign: 'left' as const, padding: '10px 12px', fontFamily: "'JetBrains Mono', monospace", fontSize: 12, letterSpacing: '0.1em', color: '#A1A1AA', borderBottom: '1px solid #27272A', textTransform: 'uppercase' as const };
@@ -30,17 +36,17 @@ export default function CookiePolicyPage() {
       <PageSchema path="/cookie-policy" />
       <header style={{ borderBottom: '1px solid #1F1F23' }}>
         <div className="lc-section" style={{ maxWidth: 1360, margin: '0 auto', padding: '0 40px', height: 92, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          <Link href="/" aria-label="Le Man Cave home"><img src="/images/d8a1bc65662ee5a26ca2d3cbc9ca559e.svg" alt="Le Man Cave" style={{ height: 80, width: 'auto', display: 'block' }} /></Link>
+          <Link href="/" aria-label="Le Man Cave home"><img src="/images/d8a1bc65662ee5a26ca2d3cbc9ca559e.svg" alt="Le Man Cave" width={206} height={103} style={{ height: 80, width: 'auto', display: 'block' }} /></Link>
           <Link href="/book" style={{ background: '#ED2835', color: '#09090B', fontWeight: 700, fontSize: 14, letterSpacing: '0.06em', textTransform: 'uppercase', padding: '14px 20px', borderRadius: 4, textDecoration: 'none' }}>Book now</Link>
         </div>
       </header>
       <main className="lc-section" style={{ maxWidth: 1360, margin: '0 auto', padding: '72px 40px 100px' }}>
         <p style={{ margin: '0 0 14px', fontFamily: "'JetBrains Mono', monospace", fontSize: 13, letterSpacing: '0.14em', color: '#ED2835', textTransform: 'uppercase' }}>Legal · Last updated {UPDATED}</p>
-        <h1 style={{ margin: '0 0 28px', fontFamily: "'Big Shoulders Display', sans-serif", fontWeight: 900, fontSize: 'clamp(52px, 8vw, 104px)', lineHeight: 0.9, color: '#fff', textTransform: 'uppercase' }}>Cookie policy</h1>
-        <p style={P}>This page explains what the Le Man Cave website stores on your phone or computer, why, and how to change your choice. We keep it short: there are no Google advertising cookies on this site and we don&rsquo;t use Google Analytics.</p>
+        <h1 style={{ margin: '0 0 28px', fontFamily: "'Big Shoulders Display', sans-serif", fontWeight: 900, fontSize: 'clamp(52px, 8vw, 104px)', lineHeight: 0.9, color: '#fff', textTransform: 'uppercase' }}>Le Man Cave cookie policy</h1>
+        <p style={P}>The Le Man Cave cookie policy explains what our website stores on your phone or computer, why, and how to change your choice. We keep it short: there are no Google advertising cookies on this site and we don&rsquo;t use Google Analytics.</p>
         <p style={{ ...P, marginTop: 22 }}><a href="#cookie-settings" style={{ display: 'inline-block', background: '#ED2835', color: '#09090B', fontWeight: 700, fontSize: 14, letterSpacing: '0.06em', textTransform: 'uppercase', padding: '14px 20px', borderRadius: 4, textDecoration: 'none' }}>Change cookie settings</a></p>
 
-        <h2 style={H2}>What cookies are</h2>
+        <h2 style={H2}>What cookies are, and the cookies we use</h2>
         <p style={P}>Cookies are small files a website saves in your browser. Websites can also use similar browser storage (called local storage and session storage). We use the word &ldquo;cookies&rdquo; for all of these. Some are essential for the site to work; others need your permission first.</p>
 
         <h2 style={H2}>Essential (always on)</h2>
@@ -74,11 +80,20 @@ export default function CookiePolicyPage() {
         <h2 style={H2}>Other websites</h2>
         <p style={P}>Payments are taken on Stripe&rsquo;s secure checkout, and links to Instagram, WhatsApp, Google and our partners take you to their websites. They have their own cookies and policies, which our banner doesn&rsquo;t control.</p>
 
-        <h2 style={H2}>Changing your choice</h2>
+        <h2 style={H2}>Changing your cookie settings</h2>
         <p style={P}>Use <a href="#cookie-settings" style={{ color: '#ED2835' }}>Cookie settings</a> (also at the bottom of every page) at any time. If you withdraw permission, we remove what we stored for search, chat and advert measurement. You can also clear cookies and site data in your browser settings, but blocking everything may stop booking and sign-in from working.</p>
 
         <h2 style={H2}>Questions</h2>
         <p style={P}>Email <a href="mailto:bookings@lemancave.co.uk" style={{ color: '#ED2835' }}>bookings@lemancave.co.uk</a> or call <a href="tel:01603517080" style={{ color: '#ED2835' }}>01603 517080</a>. Le Man Cave, Unit 1, Consensus House, St Faith&rsquo;s Rd, Norwich NR6 7BW. We&rsquo;ll update this page if anything changes. How we use personal information more widely is in our <Link href="/privacy" style={{ color: '#ED2835' }}>privacy policy</Link>.</p>
+        {/* Quick answers (SEO optimiser, 2 Nov 2026): each one repeats what the policy above says, with FAQPage schema. */}
+        <h2 style={H2}>Cookie questions</h2>
+        <FaqSchema items={COOKIE_FAQS} />
+        {COOKIE_FAQS.map((f) => (
+          <div key={f.q} style={{ maxWidth: 820 }}>
+            <h3 style={{ margin: '22px 0 8px', fontSize: 19, fontWeight: 600, color: '#fff' }}>{f.q}</h3>
+            <p style={P}>{f.a}</p>
+          </div>
+        ))}
       </main>
       <SiteFooter />
     </div>
