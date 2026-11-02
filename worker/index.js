@@ -30,7 +30,7 @@ const BLOG = {
   blogName: 'Blog',
   blogTitle: 'The Le Man Cave blog',
   kicker: 'Le Man Cave blog · Norwich',
-  intro: 'Party ideas, sim racing tips, seasonal inspiration and news from Norwich’s motorsport entertainment venue.',
+  intro: 'The Le Man Cave blog: party ideas, sim racing tips, seasonal inspiration and news from Norwich’s motorsport entertainment venue at St Faith’s Rd.',
   guidesPath: '/guides',
   ctaHtml: '<p><strong>Ready to race?</strong> Book a sim session or the whole cave for your group, or call 01603 517080.</p><p><a class="crmblog-btn" href="/book">Book now</a> <a class="crmblog-btn2" href="/party-venue-norwich">Party venue hire</a></p>',
   css: `.crmblog{max-width:880px;margin:0 auto;color:#E4E4E7;font-family:Barlow,system-ui,sans-serif}
@@ -193,7 +193,7 @@ const NEWS = {
   blogName: 'News',
   blogTitle: 'Le Man Cave news',
   kicker: 'Latest from the cave · Norwich',
-  intro: 'Updates from Le Man Cave: what’s new, what’s coming and how to book Norwich’s motorsport entertainment venue.',
+  intro: 'Le Man Cave news and updates: what’s new, what’s coming and how to book sim sessions and parties at Norwich’s motorsport entertainment venue.',
 };
 
 async function handle(request, env) {

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import SiteFooter from '../../components/SiteFooter';
+import FaqSchema from '../../components/FaqSchema';
 import { pageMeta, PageSchema } from '../../lib/seo';
 
 // Hand-written page (no design board), styled like /cookie-policy. Written 29 Oct 2026 from what the website and
@@ -9,6 +10,12 @@ import { pageMeta, PageSchema } from '../../lib/seo';
 export const metadata: Metadata = pageMeta('/privacy');
 
 const UPDATED = '1 November 2026';
+const PRIVACY_FAQS = [
+  { q: 'Do you sell my personal information?', a: 'No. We only collect what we need to run your booking and answer your questions, and we never sell your information.' },
+  { q: 'Do you see or store my card details?', a: 'No. Card payments are taken by Stripe on its secure checkout. Your card details go straight to Stripe; we keep a record of what was paid and when.' },
+  { q: 'How do I get a copy of my data or ask you to delete it?', a: 'Email bookings@lemancave.co.uk. It’s free, and we’ll reply within one month. We may need to check your identity first.' },
+  { q: 'Will you send me marketing emails?', a: 'Only if you have agreed to receive them, or you are a customer and we’re telling you about similar experiences at Le Man Cave. Every marketing email has an unsubscribe link.' },
+];
 const H2 = { margin: '48px 0 14px', fontFamily: "'Big Shoulders Display', sans-serif", fontWeight: 800, fontSize: 32, lineHeight: 1.05, color: '#fff', textTransform: 'uppercase' as const };
 const P = { margin: '0 0 14px', fontSize: 17, lineHeight: 1.65, color: '#D4D4D8', maxWidth: 820 };
 const UL = { margin: '0 0 14px', paddingLeft: 22, fontSize: 17, lineHeight: 1.65, color: '#D4D4D8', maxWidth: 820 };
@@ -33,14 +40,14 @@ export default function PrivacyPage() {
       <PageSchema path="/privacy" />
       <header style={{ borderBottom: '1px solid #1F1F23' }}>
         <div className="lc-section" style={{ maxWidth: 1360, margin: '0 auto', padding: '0 40px', height: 92, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          <Link href="/" aria-label="Le Man Cave home"><img src="/images/d8a1bc65662ee5a26ca2d3cbc9ca559e.svg" alt="Le Man Cave" style={{ height: 80, width: 'auto', display: 'block' }} /></Link>
+          <Link href="/" aria-label="Le Man Cave home"><img src="/images/d8a1bc65662ee5a26ca2d3cbc9ca559e.svg" alt="Le Man Cave" width={206} height={103} style={{ height: 80, width: 'auto', display: 'block' }} /></Link>
           <Link href="/book" style={{ background: '#ED2835', color: '#09090B', fontWeight: 700, fontSize: 14, letterSpacing: '0.06em', textTransform: 'uppercase', padding: '14px 20px', borderRadius: 4, textDecoration: 'none' }}>Book now</Link>
         </div>
       </header>
       <main className="lc-section" style={{ maxWidth: 1360, margin: '0 auto', padding: '72px 40px 100px' }}>
         <p style={{ margin: '0 0 14px', fontFamily: "'JetBrains Mono', monospace", fontSize: 13, letterSpacing: '0.14em', color: '#ED2835', textTransform: 'uppercase' }}>Legal · Last updated {UPDATED}</p>
-        <h1 style={{ margin: '0 0 28px', fontFamily: "'Big Shoulders Display', sans-serif", fontWeight: 900, fontSize: 'clamp(52px, 8vw, 104px)', lineHeight: 0.9, color: '#fff', textTransform: 'uppercase' }}>Privacy policy</h1>
-        <p style={P}>This explains what personal information Le Man Cave collects when you use our website, make an enquiry or book, why we need it, who we share it with, how long we keep it and your rights. We only collect what we need to run your booking and answer your questions, and we never sell your information.</p>
+        <h1 style={{ margin: '0 0 28px', fontFamily: "'Big Shoulders Display', sans-serif", fontWeight: 900, fontSize: 'clamp(52px, 8vw, 104px)', lineHeight: 0.9, color: '#fff', textTransform: 'uppercase' }}>Le Man Cave privacy policy</h1>
+        <p style={P}>The Le Man Cave privacy policy explains what personal information we collect when you use our website, make an enquiry or book, why we need it, who we share it with, how long we keep it and your rights. We only collect what we need to run your booking and answer your questions, and we never sell your information.</p>
 
         <h2 style={H2}>Who we are</h2>
         <p style={P}>Le Man Cave is an indoor motorsport entertainment venue at Unit 1, Consensus House, St Faith&rsquo;s Rd, Norwich NR6 7BW. Le Man Cave is run by Le Man Cave Limited, a company registered in England and Wales (company number 17032850). For the information described here, Le Man Cave Limited is the data controller, which means we decide how and why it is used.</p>
@@ -63,7 +70,7 @@ export default function PrivacyPage() {
         <h2 style={H2}>Payments</h2>
         <p style={P}>Card payments are taken by Stripe on its secure checkout. Your card details go straight to Stripe and we never see or store them. We keep a record of what was paid and when. See <a href="https://stripe.com/gb/privacy" target="_blank" rel="noopener" style={A}>Stripe&rsquo;s privacy policy</a>.</p>
 
-        <h2 style={H2}>Who we share it with</h2>
+        <h2 style={H2}>Who we share your data with</h2>
         <p style={P}>We use trusted providers to run our website and bookings. They only use your information to provide their service to us, under contract:</p>
         <ul style={UL}>
           <li><b>Our booking and customer system</b> (built and run for us by Broadland Digital, Norwich), with its database hosted by Supabase in London, UK.</li>
@@ -89,7 +96,7 @@ export default function PrivacyPage() {
           ['Access or medical information you share for a visit', 'Until shortly after the visit, unless there was an incident we need to record'],
         ]} />
 
-        <h2 style={H2}>Your rights</h2>
+        <h2 style={H2}>Your data rights</h2>
         <p style={P}>Under UK data protection law (the UK GDPR and the Data Protection Act 2018) you can ask us to:</p>
         <ul style={UL}>
           <li>give you a copy of the information we hold about you;</li>
@@ -110,6 +117,15 @@ export default function PrivacyPage() {
 
         <h2 style={H2}>Changes</h2>
         <p style={P}>We&rsquo;ll update this policy if the way we use information changes, and change the date at the top. Significant changes will also be shown on the website.</p>
+        {/* Quick answers (SEO optimiser, 2 Nov 2026): each one repeats what the policy above says, with FAQPage schema. */}
+        <h2 style={H2}>Privacy questions</h2>
+        <FaqSchema items={PRIVACY_FAQS} />
+        {PRIVACY_FAQS.map((f) => (
+          <div key={f.q} style={{ maxWidth: 820 }}>
+            <h3 style={{ margin: '22px 0 8px', fontSize: 19, fontWeight: 600, color: '#fff' }}>{f.q}</h3>
+            <p style={P}>{f.a}</p>
+          </div>
+        ))}
       </main>
       <SiteFooter />
     </div>

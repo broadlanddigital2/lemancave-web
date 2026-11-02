@@ -210,7 +210,7 @@ class Component extends DCLogic {
     const S = (h, p, list, tip, link) => ({ h, p, list: list || [], tip: tip || '', link: link || null });
     const DEP = 'A 25% deposit is taken when you book, with the balance due 7 days before your event.';
     const G = {
-      faqs: { ...plan, ...book, crumb: 'FAQS', kicker: 'QUICK ANSWERS', title: 'Frequently asked questions', intro: 'Everything you need to know before you visit — bookings, food and drink, ages, access and more.',
+      faqs: { ...plan, ...book, crumb: 'FAQS', kicker: 'QUICK ANSWERS', title: 'Frequently asked questions', intro: 'Everything you need to know before you visit — bookings, food and drink, ages, access and more.', image: IMG.group, imageAlt: 'A group celebrating at the venue',
         summary: ['Sim room from £80/hr (2 sharing 1 sim); whole-cave hire from £40 per person.', 'No age limits on the experiences**; motion may be disabled on the sims for guests under 14.', 'Pizza* packages and Bring Your Own drinks — no other outside food (cakes by arrangement).'],
         faqGroups: [
           ['Booking & pricing', [['How does pricing work?', 'Sim room slots are priced per hour (2 people sharing 1 sim). Whole-cave hires are priced per person with a minimum spend.'], ['What if we have fewer guests than the minimum?', 'That’s fine — the minimum spend still applies.'], ['Do I need to pay a deposit?', DEP], ['Is everything included with venue hire?', 'Yes — games, simulators and Scalextric are all included when you hire the venue.'], ['How many guests can you hold?', 'Around 50 guests, across 1,600 sq ft.'], ['Do you sell gift vouchers?', 'Yes — e-vouchers. See our Gift Vouchers page.']]],
@@ -304,12 +304,96 @@ class Component extends DCLogic {
         things: ['memo', 'sim', 'scalex', 'moto'], related: [['For fans', ['ForMotorsportFans', 'CarClub', 'Simulator', 'Memorabilia']], ['Read next', ['GuideSim', 'GuideSimTips', 'GuideGifts']]] }
     };
 
+    // FAQs for the guide pages (SEO optimiser, 2 Nov 2026): 3–5 real questions per page, answered only from confirmed
+    // facts (CLAUDE.md). The converter adds FAQPage structured data from the same list. [group title, [[q, a], …]]
+    const GDEP = 'Whole-cave bookings take a 25% deposit, with the balance due 7 days before. Sessions starting within 14 days are paid in full when you book.';
+    const FAQ = {
+      opening: ['Racing simulator opening hours: questions', [
+        ['Can we just turn up?', 'No. Le Man Cave is open for booked sessions and events only, so there are no walk-ins. Book online or call 01603 517080.'],
+        ['What are the racing simulator opening hours?', 'The sim room runs in 1-hour slots: Mon–Fri 09:00–17:00 at £80 an hour, and evenings and weekends at £125 an hour (Mon–Fri 17:00–20:00, Saturday 12:00–20:00, Sunday 12:00–16:00) when the cave isn’t booked for private hire.'],
+        ['How much notice do I need to book?', 'Online bookings need 24 hours’ notice. For anything sooner, use the “Have an urgent booking?” form on the booking page or call 01603 517080.'],
+        ['Are you open for Christmas parties?', 'Yes. Saturday Night packages also run on weeknights through December and the first two weeks of January. The After School Special isn’t available in December or early January.']]],
+      travel: ['Directions to Le Man Cave, Norwich: questions', [
+        ['Where is Le Man Cave?', 'Unit 1, Consensus House, St Faith’s Rd, Norwich NR6 7BW, about 4 miles (around 15 minutes’ drive) from Norwich city centre.'],
+        ['Is there parking at Le Man Cave?', 'Yes, there’s full parking on site, so just drive in and park up.'],
+        ['Can you arrange a taxi home?', 'Yes. A minibus taxi service run by Freedom Transport operates from the site. It’s an additional cost: add taxi pick-up & drop-off when you book and we’ll send a quote, or get in touch.'],
+        ['Is the venue accessible?', 'Yes. Le Man Cave is fully accessible, with disabled access and Part M toilets. If you or a guest need extra assistance, please tell us when you book.']]],
+      taxi: ['Taxi home after a party in Norwich: questions', [
+        ['Who runs the minibus taxi?', 'Freedom Transport, whose minibus taxi service operates from the Le Man Cave site.'],
+        ['How much does the minibus taxi cost?', 'The taxi is an additional cost. Add taxi pick-up & drop-off as an extra when you book online and we’ll send you a quote, or ask us when you get in touch.'],
+        ['Can it take us on to a night out in the city?', 'Yes. Whether you want to carry on the party in the city or simply get home safe and sound, the minibus taxi can take you.'],
+        ['How do we arrange it?', 'Tell us when you book, or call 01603 517080 or email bookings@lemancave.co.uk before your event with your pick-up time and where you’re heading.']]],
+      blog: ['Party planning guides: questions', [
+        ['What guides do you have?', 'Party planning guides for birthdays, kids parties, stag and hen dos, team events and Christmas parties, each with a checklist, plus sim racing guides and honest comparisons to help you choose.'],
+        ['Where can I see your prices?', 'All our prices are on the party packages page: the sim room from £80 an hour and whole-cave hire from £40 per person with a minimum spend.'],
+        ['Do you have a blog?', 'Yes. The Le Man Cave blog has new posts on party ideas, sim racing and events at the venue.']]],
+      norwich: ['Indoor things to do in Norwich: questions', [
+        ['What can groups do at Le Man Cave?', 'Race two pro simulators, take on the 160ft digital Scalextric, ride the 1990s motorbike sim and play pool / billiards, darts, air hockey, table football, poker, pinball, arcade games and consoles on a 100-inch screen.'],
+        ['Is Le Man Cave in Norwich city centre?', 'It’s about 4 miles from the city centre at St Faith’s Rd, Norwich NR6 7BW, with full parking on site.'],
+        ['Can adults book without a party?', 'Yes. Book the sim room by the hour, 2 people sharing 1 sim, from £80 an hour on weekdays.'],
+        ['Do we need to book?', 'Yes. Le Man Cave is open for booked sessions and events only.']]],
+      indoor: ['Rainy day activities in Norfolk: questions', [
+        ['Is everything indoors?', 'Yes. Every activity at Le Man Cave is indoors, so the weather never stops play.'],
+        ['What’s included when we hire the venue?', 'Everything: the racing simulators, Scalextric, motorbike sim, games and arcade are all included with whole-cave hire.'],
+        ['Are there age limits?', 'No age limits on the experiences**. Children must be accompanied and supervised by adults at all times.'],
+        ['How many people can come?', 'Up to 50 guests, with activities for 34 players at once.']]],
+      teamevent: ['Team building ideas in Norwich: questions', [
+        ['How many people can we bring?', 'Up to 50 guests, with activities for 34 players at once, so nobody waits around for long.'],
+        ['Can we bring drinks?', 'Yes, on Bring Your Own packages. Drop drinks off in advance to be pre-chilled, or bring them on the day. Cups and ice are provided.'],
+        ['Is food available?', 'Pizza* is available on pizza* packages, with a range of dietary options. No other outside food is allowed, apart from cakes by prior arrangement.'],
+        ['How do we pay?', GDEP]]],
+      birthday: ['Adult birthday party ideas: questions', [
+        ['How much is a birthday party at Le Man Cave?', 'Saturday afternoon and Saturday night packages start at £45 per person (rooms only), £50 with Bring Your Own drinks and £60 with Bring Your Own drinks & pizza*, each with a minimum spend.'],
+        ['Can we bring a birthday cake?', 'Yes, cakes are welcome by prior arrangement. Let us know when you book.'],
+        ['Can children come?', 'Yes, there are no age limits on the experiences**. Children must be accompanied and supervised by adults at all times; our staff help with equipment and drinks only.'],
+        ['How many guests can we invite?', 'Up to 50. If fewer come, the minimum spend still applies.']]],
+      simguide: ['What is a racing simulator? Questions', [
+        ['What’s the difference between your two simulators?', 'One has 4 DOF full motion with a 4K monitor or VR and a ‘bazooka’ H-pattern shifter inspired by the Ford Escort Mk2 rally car. The other is static, with an HD monitor and a gated manual. Both have direct-drive wheels.'],
+        ['Do I need racing experience?', 'No. Our team guides everyone, and settings range from easy assists to full pro.'],
+        ['Is there an age limit?', 'No age limits on the experiences**. The simulators may be subject to height restrictions, and motion may be disabled for guests under 14.'],
+        ['Do I need to be fit to drive a simulator?', 'No special fitness is needed. Please tell us about any medical conditions (heart conditions, epilepsy, motion sickness, pregnancy, etc.) when you book.']]],
+      venuehire: ['Venue hire checklist: questions', [
+        ['What’s included when we hire Le Man Cave?', 'Everything: racing simulators, Scalextric, games and the arcade are all included with venue hire.'],
+        ['How many guests does the venue hold?', 'Around 50 guests, across about 1,600 sq ft.'],
+        ['What if fewer guests come?', 'Whole-cave prices are per person with a minimum spend, and the minimum still applies if fewer guests come.'],
+        ['How do deposits work?', GDEP]]],
+      kidschecklist: ['Kids party planning: questions', [
+        ['Do your staff supervise the children?', 'No. Children must be accompanied by adults and supervised at all times. Our staff are on hand to help with equipment and drinks only.'],
+        ['Can kids use the racing simulators?', 'Yes, there are no age limits on the experiences**. The simulators may be subject to height restrictions, and motion may be disabled for guests under 14.'],
+        ['When is the After School Special?', 'Monday to Thursday, 16:00–18:00, at £40 per person with a £440 minimum spend. It isn’t available in December or early January.'],
+        ['Can we bring party food?', 'Cakes are welcome by prior arrangement. No other outside food is allowed; pizza* is available on pizza* packages.']]],
+      staghen: ['Stag do and hen party ideas in Norfolk: questions', [
+        ['Can we bring our own drinks?', 'Yes, on Bring Your Own packages. Drop drinks off in advance to be pre-chilled, or bring them on the day. Cups and ice are provided (not glasses), and leftovers can be collected after.'],
+        ['How much is a Saturday night?', 'Saturday Night (18:00–21:00) is £45 per person rooms only, £50 with Bring Your Own drinks or £60 with Bring Your Own drinks & pizza*, each with a minimum spend.'],
+        ['Is it only for car fans?', 'Not at all. Alongside the sims there’s pool / billiards, darts, air hockey, table football, no-stakes poker, consoles on a 100-inch screen and an arcade.'],
+        ['Can you get us home afterwards?', 'A minibus taxi service run by Freedom Transport operates from the site, at additional cost. Ask us when you book.']]],
+      simtips: ['Racing simulator tips: questions', [
+        ['Where can I practise sim racing in Norwich?', 'Book the Le Man Cave sim room in 1-hour slots: £80 an hour on weekdays 09:00–17:00 and £125 an hour on evenings and weekends, 2 people sharing 1 sim.'],
+        ['Do I need my own wheel or pedals?', 'No. Both sims have direct-drive wheels, pedal haptics and gear shifters, so just turn up for your booked slot.'],
+        ['Can beginners use the sims?', 'Yes. Settings range from easy assists to full pro, and our team will help you get set up.'],
+        ['Do I need to be fit to sim race?', 'No special fitness is needed. Please tell us about any medical conditions (heart conditions, epilepsy, motion sickness, pregnancy, etc.) when you book.']]],
+      christmas: ['Work Christmas party planning: questions', [
+        ['Which dates can we book for Christmas?', 'Saturday Night packages run on weeknights through December and the first two weeks of January, as well as on Saturdays.'],
+        ['How much is a Christmas party?', 'From £45 per person rooms only, £50 with Bring Your Own drinks and £60 with Bring Your Own drinks & pizza*, each with a minimum spend.'],
+        ['How many people can come?', 'Up to 50 guests, with activities for 34 players at once.'],
+        ['How do we pay?', GDEP]]],
+      gifts: ['Gifts for car lovers: questions', [
+        ['How do Le Man Cave gift cards work?', 'Gift cards are digital and can be any amount from £10 to £2,000. They’re emailed with a code to you or straight to the recipient.'],
+        ['How long is a gift card valid?', '12 months, and it can be used against any booking.'],
+        ['Can the memorabilia be bought as a gift?', 'No. The memorabilia is part of the venue experience and isn’t for sale.']]],
+      lemans: ['24 Hours of Le Mans: questions', [
+        ['When was the first 24 Hours of Le Mans?', 'The race was first held in 1923.'],
+        ['Where is the 24 Hours of Le Mans raced?', 'On the Circuit de la Sarthe in western France, which combines a permanent track with public roads, including the Mulsanne Straight.'],
+        ['Can I see Le Mans memorabilia at Le Man Cave?', 'Our memorabilia includes many motor racing pieces, including some from Le Mans. It can be enjoyed as part of your venue hire and isn’t for sale. Photos are fine.']]],
+    };
+    Object.keys(FAQ).forEach((k) => { if (G[k] && !G[k].faqGroups) G[k].faqGroups = [FAQ[k]]; });
+
     // SEO (Oct 2026): H1 (the hero's small line), image alt and two subheadings carry each page's keywords
     // (seo/keywords.json in the site repo; also in the CRM SEO optimiser). [h1, alt, shortTitle, tryTitle, faq group titles?]
     const SEO = {
-      faqs: ['Le Man Cave FAQs · quick answers', '', 'The short version', 'Try it at Le Man Cave', ['Party booking questions: booking & pricing', 'Food & drink', 'Racing simulator questions: ages & experience', 'Getting here & access']],
+      faqs: ['Le Man Cave FAQs · quick answers', 'A group celebrating at the venue: Le Man Cave FAQs answered', 'The short version', 'Try it at Le Man Cave', ['Party booking questions: booking & pricing', 'Food & drink', 'Racing simulator questions: ages & experience', 'Getting here & access']],
       opening: ['Le Man Cave opening times', 'The venue lit up: Le Man Cave opening times', 'Party booking times at a glance', 'Racing simulator opening hours: what to book'],
-      taxi: ['Minibus taxi Norwich · getting home', 'A Freedom Transport minibus taxi Norwich groups can arrange from Le Man Cave', 'Minibus taxi service: the short version', 'Plan your night: try Le Man Cave'],
+      taxi: ['Minibus taxi Norwich · getting home', 'A Freedom Transport minibus taxi Norwich groups can arrange from Le Man Cave', 'Minibus hire for a Norwich night out: the short version', 'Plan your night: try Le Man Cave'],
       travel: ['Le Man Cave parking & travel', 'Car park and entrance: Le Man Cave parking on site', 'How to get to Le Man Cave', 'Directions to Le Man Cave, Norwich: what’s nearby'],
       blog: ['Party planning guides · ideas & checklists', '', 'Party ideas and checklists', 'Sim racing guides: try it at Le Man Cave'],
       norwich: ['Things to do in Norwich · our guide', 'Inside Le Man Cave, one of the things to do in Norwich', 'Things to do in Norwich for adults: the short version', 'Indoor things to do in Norwich: try Le Man Cave'],

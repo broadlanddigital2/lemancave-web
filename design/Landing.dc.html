@@ -143,7 +143,7 @@ body{margin:0}
 <p style="margin: 0; font-size: 18px; line-height: 1.7; color: #D4D4D8">{{loc.day}}</p>
 </div>
 <div style="flex: 1 1 420px; display: flex; flex-direction: column; gap: 16px">
-<sc-if value="{{loc.photo}}" hint-placeholder-val="{{ true }}"><figure style="position: relative; margin: 0; height: 260px; border-radius: 10px; overflow: hidden; background: #131316"><img src="{{loc.photo.src}}" alt="{{loc.photo.alt}}" loading="lazy" referrerpolicy="no-referrer" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover"><figcaption style="position: absolute; left: 0; right: 0; bottom: 0; padding: 36px 16px 10px; background: linear-gradient(to top, rgba(9,9,11,0.92), transparent); display: flex; flex-direction: column; gap: 2px"><span style="font-weight: 600; font-size: 15px; color: #FFFFFF">{{loc.photo.alt}}</span><span style="font-size: 11px; color: #A1A1AA">Photo: <a href="{{loc.photo.page}}" target="_blank" rel="noopener" style="color: #D4D4D8; text-decoration: underline">{{loc.photo.author}}</a> · <a href="{{loc.photo.licenseUrl}}" target="_blank" rel="noopener license" style="color: #D4D4D8; text-decoration: underline">{{loc.photo.license}}</a> · Wikimedia Commons</span></figcaption></figure></sc-if>
+<sc-if value="{{loc.photo}}" hint-placeholder-val="{{ true }}"><figure style="position: relative; margin: 0; height: 260px; border-radius: 10px; overflow: hidden; background: #131316"><img src="{{loc.photo.src}}" alt="{{loc.photo.alt}}" width="{{loc.photo.width}}" height="{{loc.photo.height}}" loading="lazy" referrerpolicy="no-referrer" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover"><figcaption style="position: absolute; left: 0; right: 0; bottom: 0; padding: 36px 16px 10px; background: linear-gradient(to top, rgba(9,9,11,0.92), transparent); display: flex; flex-direction: column; gap: 2px"><span style="font-weight: 600; font-size: 15px; color: #FFFFFF">{{loc.photo.alt}}</span><span style="font-size: 11px; color: #A1A1AA">Photo: <a href="{{loc.photo.page}}" target="_blank" rel="noopener" style="color: #D4D4D8; text-decoration: underline">{{loc.photo.author}}</a> · <a href="{{loc.photo.licenseUrl}}" target="_blank" rel="noopener license" style="color: #D4D4D8; text-decoration: underline">{{loc.photo.license}}</a> · Wikimedia Commons</span></figcaption></figure></sc-if>
 <div style="position: relative; height: 340px; border-radius: 10px; overflow: hidden; background: #131316; border: 1px solid #232328"><iframe title="{{loc.mapTitle}}" src="{{loc.map}}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="position: absolute; inset: 0; width: 100%; height: 100%; border: 0; filter: invert(90%) hue-rotate(180deg) saturate(0.85) contrast(0.95)"></iframe><a href="{{loc.directions}}" target="_blank" rel="noopener" style="position: absolute; left: 14px; bottom: 14px; background: #ED2835; color: #09090B; font-weight: 700; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; padding: 10px 16px; border-radius: 4px">Directions from {{loc.town}} →</a></div>
 </div>
 </div>
@@ -446,11 +446,13 @@ class Component extends DCLogic {
     const CAVE = "Consensus House, St Faith's Rd, Norwich NR6 7BW";
     // Map pin: NR6 7BW coordinates (a text search for the address lands on St Faith's Lane in the city centre).
     const CAVE_LL = '52.672141,1.298626';
-    // Local photos for the location pages: openly licensed photos from Wikimedia Commons (hot-linked, credited as their
+    // Local photos for the location pages: openly licensed photos from Wikimedia Commons (hot-linked 960px thumbnails, each under 240 KB, with their sizes, credited as their
     // licences require). Replace with your own photos any time.
     const PHOTOS = {
       "Norwich": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Norwich_Cathedral_from_Lower_Close%2C_Norwich%2C_Norfolk.jpg/1280px-Norwich_Cathedral_from_Lower_Close%2C_Norwich%2C_Norfolk.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Norwich_Cathedral_from_Lower_Close%2C_Norwich%2C_Norfolk.jpg/960px-Norwich_Cathedral_from_Lower_Close%2C_Norwich%2C_Norfolk.jpg",
+      "width": 960,
+      "height": 640,
       "alt": "Norwich Cathedral from the Lower Close",
       "credit": "Photo: Robert Scarth · CC BY-SA 2.0 · Wikimedia Commons",
       "author": "Robert Scarth",
@@ -459,7 +461,9 @@ class Component extends DCLogic {
       "page": "https://commons.wikimedia.org/wiki/File:Norwich_Cathedral_from_Lower_Close,_Norwich,_Norfolk.jpg"
       },
       "Norfolk": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Horsey_Windpump%2C_Norfolk%2C_Inglaterra%2C_2022-11-20%2C_DD_01.jpg/1280px-Horsey_Windpump%2C_Norfolk%2C_Inglaterra%2C_2022-11-20%2C_DD_01.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Horsey_Windpump%2C_Norfolk%2C_Inglaterra%2C_2022-11-20%2C_DD_01.jpg/960px-Horsey_Windpump%2C_Norfolk%2C_Inglaterra%2C_2022-11-20%2C_DD_01.jpg",
+      "width": 960,
+      "height": 640,
       "alt": "Horsey Windpump on the Norfolk Broads",
       "credit": "Photo: Diego Delso · CC BY-SA 4.0 · Wikimedia Commons",
       "author": "Diego Delso",
@@ -468,7 +472,9 @@ class Component extends DCLogic {
       "page": "https://commons.wikimedia.org/wiki/File:Horsey_Windpump,_Norfolk,_Inglaterra,_2022-11-20,_DD_01.jpg"
       },
       "Wroxham": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Horsey_Windpump%2C_Norfolk%2C_Inglaterra%2C_2022-11-20%2C_DD_27.jpg/1280px-Horsey_Windpump%2C_Norfolk%2C_Inglaterra%2C_2022-11-20%2C_DD_27.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Horsey_Windpump%2C_Norfolk%2C_Inglaterra%2C_2022-11-20%2C_DD_27.jpg/960px-Horsey_Windpump%2C_Norfolk%2C_Inglaterra%2C_2022-11-20%2C_DD_27.jpg",
+      "width": 960,
+      "height": 640,
       "alt": "The Norfolk Broads at Horsey",
       "credit": "Photo: Diego Delso · CC BY-SA 4.0 · Wikimedia Commons",
       "author": "Diego Delso",
@@ -477,7 +483,9 @@ class Component extends DCLogic {
       "page": "https://commons.wikimedia.org/wiki/File:Horsey_Windpump,_Norfolk,_Inglaterra,_2022-11-20,_DD_27.jpg"
       },
       "Aylsham": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Market_Place%2C_Aylsham_-_geograph.org.uk_-_7771400.jpg/1280px-Market_Place%2C_Aylsham_-_geograph.org.uk_-_7771400.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Market_Place%2C_Aylsham_-_geograph.org.uk_-_7771400.jpg/960px-Market_Place%2C_Aylsham_-_geograph.org.uk_-_7771400.jpg",
+      "width": 960,
+      "height": 540,
       "alt": "Aylsham Market Place",
       "credit": "Photo: Chris Morgan · CC BY-SA 2.0 · Wikimedia Commons",
       "author": "Chris Morgan",
@@ -486,7 +494,9 @@ class Component extends DCLogic {
       "page": "https://commons.wikimedia.org/wiki/File:Market_Place,_Aylsham_-_geograph.org.uk_-_7771400.jpg"
       },
       "Wymondham": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Wymondham_Abbey_-_geograph.org.uk_-_2410775.jpg/1280px-Wymondham_Abbey_-_geograph.org.uk_-_2410775.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Wymondham_Abbey_-_geograph.org.uk_-_2410775.jpg/960px-Wymondham_Abbey_-_geograph.org.uk_-_2410775.jpg",
+      "width": 960,
+      "height": 640,
       "alt": "Wymondham Abbey",
       "credit": "Photo: Glen Denny · CC BY-SA 2.0 · Wikimedia Commons",
       "author": "Glen Denny",
@@ -495,7 +505,9 @@ class Component extends DCLogic {
       "page": "https://commons.wikimedia.org/wiki/File:Wymondham_Abbey_-_geograph.org.uk_-_2410775.jpg"
       },
       "North Walsham": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/North_Walsham_Market_Place_-_geograph.org.uk_-_6405859.jpg/1280px-North_Walsham_Market_Place_-_geograph.org.uk_-_6405859.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/North_Walsham_Market_Place_-_geograph.org.uk_-_6405859.jpg/960px-North_Walsham_Market_Place_-_geograph.org.uk_-_6405859.jpg",
+      "width": 960,
+      "height": 640,
       "alt": "North Walsham Market Place",
       "credit": "Photo: Michael Garlick · CC BY-SA 2.0 · Wikimedia Commons",
       "author": "Michael Garlick",
@@ -504,7 +516,9 @@ class Component extends DCLogic {
       "page": "https://commons.wikimedia.org/wiki/File:North_Walsham_Market_Place_-_geograph.org.uk_-_6405859.jpg"
       },
       "Dereham": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Dereham_-_Bishop_Bonner%27s_Cottage_Museum_-_geograph.org.uk_-_5228133.jpg/1280px-Dereham_-_Bishop_Bonner%27s_Cottage_Museum_-_geograph.org.uk_-_5228133.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Dereham_-_Bishop_Bonner%27s_Cottage_Museum_-_geograph.org.uk_-_5228133.jpg/960px-Dereham_-_Bishop_Bonner%27s_Cottage_Museum_-_geograph.org.uk_-_5228133.jpg",
+      "width": 960,
+      "height": 720,
       "alt": "Bishop Bonner’s Cottage, Dereham",
       "credit": "Photo: James Emmans · CC BY-SA 2.0 · Wikimedia Commons",
       "author": "James Emmans",
@@ -513,7 +527,9 @@ class Component extends DCLogic {
       "page": "https://commons.wikimedia.org/wiki/File:Dereham_-_Bishop_Bonner%27s_Cottage_Museum_-_geograph.org.uk_-_5228133.jpg"
       },
       "Cromer": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Cromer_Pier_in_Summer.jpg/1280px-Cromer_Pier_in_Summer.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Cromer_Pier_in_Summer.jpg/960px-Cromer_Pier_in_Summer.jpg",
+      "width": 960,
+      "height": 542,
       "alt": "Cromer Pier in summer",
       "credit": "Photo: Marley Sexton · CC0 · Wikimedia Commons",
       "author": "Marley Sexton",
@@ -522,7 +538,9 @@ class Component extends DCLogic {
       "page": "https://commons.wikimedia.org/wiki/File:Cromer_Pier_in_Summer.jpg"
       },
       "Great Yarmouth": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Beach_huts_on_Great_Yarmouth_seafront_-_geograph.org.uk_-_2651558.jpg/1280px-Beach_huts_on_Great_Yarmouth_seafront_-_geograph.org.uk_-_2651558.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Beach_huts_on_Great_Yarmouth_seafront_-_geograph.org.uk_-_2651558.jpg/960px-Beach_huts_on_Great_Yarmouth_seafront_-_geograph.org.uk_-_2651558.jpg",
+      "width": 960,
+      "height": 720,
       "alt": "Beach huts on Great Yarmouth seafront",
       "credit": "Photo: Peter Robinson · CC BY-SA 2.0 · Wikimedia Commons",
       "author": "Peter Robinson",
@@ -531,7 +549,9 @@ class Component extends DCLogic {
       "page": "https://commons.wikimedia.org/wiki/File:Beach_huts_on_Great_Yarmouth_seafront_-_geograph.org.uk_-_2651558.jpg"
       },
       "Diss": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Diss%2C_The_Mere_-_geograph.org.uk_-_6095203.jpg/1280px-Diss%2C_The_Mere_-_geograph.org.uk_-_6095203.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Diss%2C_The_Mere_-_geograph.org.uk_-_6095203.jpg/960px-Diss%2C_The_Mere_-_geograph.org.uk_-_6095203.jpg",
+      "width": 960,
+      "height": 640,
       "alt": "The Mere, Diss",
       "credit": "Photo: Michael Garlick · CC BY-SA 2.0 · Wikimedia Commons",
       "author": "Michael Garlick",
@@ -540,7 +560,9 @@ class Component extends DCLogic {
       "page": "https://commons.wikimedia.org/wiki/File:Diss,_The_Mere_-_geograph.org.uk_-_6095203.jpg"
       },
       "Beccles": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/River_Waveney_at_Beccles_Quay_from_Beccles_Bridge_-_geograph.org.uk_-_6830180.jpg/1280px-River_Waveney_at_Beccles_Quay_from_Beccles_Bridge_-_geograph.org.uk_-_6830180.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/River_Waveney_at_Beccles_Quay_from_Beccles_Bridge_-_geograph.org.uk_-_6830180.jpg/960px-River_Waveney_at_Beccles_Quay_from_Beccles_Bridge_-_geograph.org.uk_-_6830180.jpg",
+      "width": 960,
+      "height": 720,
       "alt": "The River Waveney at Beccles Quay",
       "credit": "Photo: Adrian S Pye · CC BY-SA 2.0 · Wikimedia Commons",
       "author": "Adrian S Pye",
@@ -549,7 +571,9 @@ class Component extends DCLogic {
       "page": "https://commons.wikimedia.org/wiki/File:River_Waveney_at_Beccles_Quay_from_Beccles_Bridge_-_geograph.org.uk_-_6830180.jpg"
       },
       "Lowestoft": {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/2/25/Claremont_Pier_in_Lowestoft_-_geograph.org.uk_-_2213998.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Claremont_Pier_in_Lowestoft_-_geograph.org.uk_-_2213998.jpg/960px-Claremont_Pier_in_Lowestoft_-_geograph.org.uk_-_2213998.jpg",
+      "width": 960,
+      "height": 640,
       "alt": "Claremont Pier, Lowestoft",
       "credit": "Photo: Steve Daniels · CC BY-SA 2.0 · Wikimedia Commons",
       "author": "Steve Daniels",
@@ -558,7 +582,9 @@ class Component extends DCLogic {
       "page": "https://commons.wikimedia.org/wiki/File:Claremont_Pier_in_Lowestoft_-_geograph.org.uk_-_2213998.jpg"
       },
       "Thetford": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/ThetfordPriory.jpg/1280px-ThetfordPriory.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/ThetfordPriory.jpg/960px-ThetfordPriory.jpg",
+      "width": 960,
+      "height": 720,
       "alt": "Thetford Priory",
       "credit": "Photo: JohnArmagh · CC BY-SA 3.0 · Wikimedia Commons",
       "author": "JohnArmagh",
@@ -567,7 +593,9 @@ class Component extends DCLogic {
       "page": "https://commons.wikimedia.org/wiki/File:ThetfordPriory.jpg"
       },
       "King’s Lynn": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/King%27s_Lynn_and_West_Norfolk_-_Custom_House_Including_North_Bank_Of_Purfleet_Quay_-_20230914111539.jpg/1280px-King%27s_Lynn_and_West_Norfolk_-_Custom_House_Including_North_Bank_Of_Purfleet_Quay_-_20230914111539.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/King%27s_Lynn_and_West_Norfolk_-_Custom_House_Including_North_Bank_Of_Purfleet_Quay_-_20230914111539.jpg/960px-King%27s_Lynn_and_West_Norfolk_-_Custom_House_Including_North_Bank_Of_Purfleet_Quay_-_20230914111539.jpg",
+      "width": 960,
+      "height": 540,
       "alt": "The Custom House, King’s Lynn",
       "credit": "Photo: Shiratlas · CC BY-SA 4.0 · Wikimedia Commons",
       "author": "Shiratlas",
@@ -576,7 +604,9 @@ class Component extends DCLogic {
       "page": "https://commons.wikimedia.org/wiki/File:King%27s_Lynn_and_West_Norfolk_-_Custom_House_Including_North_Bank_Of_Purfleet_Quay_-_20230914111539.jpg"
       },
       "Ipswich": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Ipswich_Marina_Suffolk.jpg/1280px-Ipswich_Marina_Suffolk.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Ipswich_Marina_Suffolk.jpg/960px-Ipswich_Marina_Suffolk.jpg",
+      "width": 960,
+      "height": 720,
       "alt": "Ipswich Marina",
       "credit": "Photo: Jim Linwood · CC BY 2.0 · Wikimedia Commons",
       "author": "Jim Linwood",
@@ -585,7 +615,9 @@ class Component extends DCLogic {
       "page": "https://commons.wikimedia.org/wiki/File:Ipswich_Marina_Suffolk.jpg"
       },
       "Bury St Edmunds": {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/0/01/The_Abbey_Gate%2C_Bury_St._Edmunds_-_geograph.org.uk_-_4778267.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/The_Abbey_Gate%2C_Bury_St._Edmunds_-_geograph.org.uk_-_4778267.jpg/960px-The_Abbey_Gate%2C_Bury_St._Edmunds_-_geograph.org.uk_-_4778267.jpg",
+      "width": 960,
+      "height": 720,
       "alt": "The Abbey Gate, Bury St Edmunds",
       "credit": "Photo: Oliver Mills · CC BY-SA 2.0 · Wikimedia Commons",
       "author": "Oliver Mills",
@@ -594,7 +626,9 @@ class Component extends DCLogic {
       "page": "https://commons.wikimedia.org/wiki/File:The_Abbey_Gate,_Bury_St._Edmunds_-_geograph.org.uk_-_4778267.jpg"
       },
       "Cambridge": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/King%27s_College_Chapel%2C_Cambridge_-_Over_the_Backs_-_geograph.org.uk_-_3999954.jpg/1280px-King%27s_College_Chapel%2C_Cambridge_-_Over_the_Backs_-_geograph.org.uk_-_3999954.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/King%27s_College_Chapel%2C_Cambridge_-_Over_the_Backs_-_geograph.org.uk_-_3999954.jpg/960px-King%27s_College_Chapel%2C_Cambridge_-_Over_the_Backs_-_geograph.org.uk_-_3999954.jpg",
+      "width": 960,
+      "height": 720,
       "alt": "King’s College Chapel over the Backs, Cambridge",
       "credit": "Photo: Sandra Humphrey · CC BY-SA 2.0 · Wikimedia Commons",
       "author": "Sandra Humphrey",
@@ -603,7 +637,9 @@ class Component extends DCLogic {
       "page": "https://commons.wikimedia.org/wiki/File:King%27s_College_Chapel,_Cambridge_-_Over_the_Backs_-_geograph.org.uk_-_3999954.jpg"
       },
       "East Anglia": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Horsey_Windpump_-_geograph.org.uk_-_6359903.jpg/1280px-Horsey_Windpump_-_geograph.org.uk_-_6359903.jpg",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Horsey_Windpump_-_geograph.org.uk_-_6359903.jpg/960px-Horsey_Windpump_-_geograph.org.uk_-_6359903.jpg",
+      "width": 960,
+      "height": 640,
       "alt": "Horsey Windpump, Norfolk",
       "credit": "Photo: Michael Garlick · CC BY-SA 2.0 · Wikimedia Commons",
       "author": "Michael Garlick",
@@ -790,9 +826,9 @@ class Component extends DCLogic {
     // h1 · alt · about · why · gk ("Good to know") · faq
     const SEO = {
       venuehire: ['Party venue Norwich · exclusive whole-cave hire', 'The whole of Le Man Cave set up for a private party: a party venue Norwich groups hire whole', 'Party venue hire: how exclusive hire works', 'An exclusive hire venue in Norwich, done properly', 'Private party venue for Norfolk groups: good to know', 'Party venue Norwich FAQs'],
-      hire: ['Venue hire Norwich · sim room or whole cave', 'Le Man Cave ready for a group booking: venue hire Norwich with the entertainment built in', 'Venue hire Norwich: two ways to hire', 'A Norwich venue with the entertainment built in', 'Private room hire Norwich: good to know', 'Venue hire Norwich FAQs'],
-      functionroom: ['Function room hire Norwich · private hire for ~50', 'The lounge at Le Man Cave, a function room hire Norwich groups book', 'Function rooms in Norwich, reimagined', 'A private function room with racing built in', 'An alternative to hall hire in Norwich: good to know', 'Function room hire Norwich FAQs'],
-      wedding: ['Wedding reception venue Norwich · evening receptions', 'Guests celebrating on the podium at Le Man Cave, a wedding reception venue in Norwich', 'An alternative wedding venue in Norwich', 'Reception venues in Norwich don’t have to be formal', 'Evening wedding receptions: good to know', 'Wedding reception venue Norwich FAQs'],
+      hire: ['Venue hire Norwich · sim room or whole cave', 'Le Man Cave ready for a group booking: venue hire Norwich with the entertainment built in', 'Venue hire Norwich: two ways to hire', 'A Norwich venue with the entertainment built in', 'Private room hire Norwich: good to know', 'Venue hire FAQs: an event venue in Norwich'],
+      functionroom: ['Function room hire Norwich · private hire for ~50', 'The lounge at Le Man Cave, a function room hire Norwich groups book', 'Function rooms in Norwich, reimagined', 'A private function room in Norwich with racing built in', 'An alternative to hall hire in Norwich: good to know', 'Function room hire Norwich FAQs'],
+      wedding: ['Wedding reception venue Norwich · evening receptions', 'Guests celebrating on the podium at Le Man Cave, the wedding reception venue Norwich couples can hire', 'An alternative wedding venue in Norwich', 'Reception venues in Norwich don’t have to be formal', 'Evening wedding receptions in Norwich: good to know', 'Wedding reception venue Norwich FAQs'],
       birthday: ['Birthday party venue Norwich · whole-cave hire', 'Friends celebrating in the lounge at Le Man Cave, a birthday party venue Norwich groups hire', 'Birthday party Norwich style at Le Man Cave', 'Adult birthday party in Norwich, done differently', 'Private birthday party: good to know', 'Birthday party venue Norwich FAQs'],
       kids: ['Kids party venue Norwich · Scalextric, sims & arcade', 'Kids and parents racing the Scalextric at Le Man Cave, a kids party venue Norwich families book', 'Kids birthday party Norwich: what’s included', 'Built for young racers: children’s party venues in Norfolk', 'Boys and girls birthday party ideas: good to know', 'Kids party venue Norwich FAQs'],
       teen: ['Teenage party ideas Norwich · sims, consoles & Scalextric', 'Teenagers racing side by side, one of the teenage party ideas Norwich teens love', 'A teen birthday party venue they’ll actually want', 'Why a teenage birthday party in Norwich works here', '', 'Teenage party ideas Norwich: FAQs'],

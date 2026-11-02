@@ -75,17 +75,17 @@
   ]
  },
  "/leman-cave-photos": {
-  "primary": "leman cave photos",
+  "primary": "le man cave photos",
   "secondary": [
    "racing simulator venue photos",
    "party venue photos norwich"
   ]
  },
  "/contact-leman-cave-norwich": {
-  "primary": "leman cave norwich",
+  "primary": "le man cave norwich",
   "secondary": [
-   "contact leman cave",
-   "directions to leman cave"
+   "contact le man cave",
+   "directions to le man cave"
   ]
  },
  "/corporate-events-norwich": {
@@ -508,24 +508,24 @@
   ]
  },
  "/leman-cave-faqs": {
-  "primary": "leman cave faqs",
+  "primary": "le man cave faqs",
   "secondary": [
    "racing simulator questions",
    "party booking questions"
   ]
  },
  "/leman-cave-opening-times": {
-  "primary": "leman cave opening times",
+  "primary": "le man cave opening times",
   "secondary": [
    "racing simulator opening hours",
    "party booking times"
   ]
  },
  "/leman-cave-parking-and-travel": {
-  "primary": "leman cave parking",
+  "primary": "le man cave parking",
   "secondary": [
-   "directions to leman cave norwich",
-   "how to get to leman cave"
+   "directions to le man cave norwich",
+   "how to get to le man cave"
   ]
  },
  "/guides/things-to-do-in-norwich": {
@@ -690,7 +690,7 @@
   ]
  },
  "/blog": {
-  "primary": "leman cave blog",
+  "primary": "le man cave blog",
   "secondary": [
    "party ideas norwich",
    "sim racing tips"
@@ -704,18 +704,32 @@
   ]
  },
  "/cookie-policy": {
-  "primary": "leman cave cookie policy",
-  "secondary": []
+  "primary": "le man cave cookie policy",
+  "secondary": [
+   "cookies we use",
+   "cookie settings"
+  ]
  },
  "/privacy": {
-  "primary": "leman cave privacy policy",
-  "secondary": []
+  "primary": "le man cave privacy policy",
+  "secondary": [
+   "your data rights",
+   "who we share your data with"
+  ]
  },
  "/event-photographer-norwich": {
   "primary": "event photographer norwich",
   "secondary": [
    "party photographer norwich",
    "event videographer norwich"
+  ]
+ },
+ "/news": {
+  "primary": "le man cave news",
+  "secondary": [
+   "le man cave updates",
+   "party ideas norwich",
+   "sim racing tips"
   ]
  }
 }
