@@ -90,9 +90,11 @@ export default class Simulator extends React.Component {
 <h1 id="sim-h" style={css("margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 500; line-height: 1.5; letter-spacing: 0.16em; color: #FFC233; text-transform: uppercase")}>{"Racing simulator Norwich \u00b7 4 DOF full motion"}</h1>
 <p style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(64px, 10vw, 152px); line-height: 0.88; color: #FFFFFF; text-transform: uppercase")}>{"Feel."}<br />{"Control."}<br /><span style={css(`color: ${V.accent}`)}>{"Compete."}</span></p>
 <p style={css("margin: 28px 0 0; max-width: 560px; font-size: 20px; line-height: 1.55; color: #D4D4D8")}>{"A professional-grade racing simulator built for speed and immersion. Full motion, real racing kit and your choice of 4K or VR."}</p>
-<div style={css("display: flex; flex-wrap: wrap; gap: 14px; margin-top: 36px")}>
+<p style={css("margin: 22px 0 0; font-family: 'JetBrains Mono', monospace; font-size: 15px; letter-spacing: 0.08em; color: #FFFFFF; text-transform: uppercase")}>{"Sim room from "}<span style={css("color: #FFC233; font-weight: 700")}>{"\u00a380/hr"}</span>{" (2 sharing) \u00b7 1-hour slots"}</p>
+<div style={css("display: flex; flex-wrap: wrap; gap: 14px; margin-top: 26px")}>
 <A href="/book" style={css(`background: ${V.accent}; color: #09090B; font-weight: 700; font-size: 16px; letter-spacing: 0.06em; text-transform: uppercase; padding: 18px 30px; border-radius: 4px`)}>{"Book a sim session"}</A>
-<A href="/attractions" style={css("border: 1px solid #52525B; color: #FFFFFF; font-weight: 600; font-size: 16px; letter-spacing: 0.06em; text-transform: uppercase; padding: 17px 30px; border-radius: 4px")}>{"View all experiences"}</A>
+<A href="#prices" style={css("border: 1px solid #52525B; color: #FFFFFF; font-weight: 600; font-size: 16px; letter-spacing: 0.06em; text-transform: uppercase; padding: 17px 30px; border-radius: 4px")}>{"See prices"}</A>
+<A href="tel:01603517080" style={css("border: 1px solid #52525B; color: #FFFFFF; font-weight: 600; font-size: 16px; letter-spacing: 0.06em; text-transform: uppercase; padding: 17px 30px; border-radius: 4px")}>{"Call 01603 517080"}</A>
 </div>
 </div>
 </section>
@@ -213,7 +215,7 @@ export default class Simulator extends React.Component {
 </div>
 </div>
 </section>
-<section aria-labelledby="sess-h" style={css("background: #0F0F12; border-top: 1px solid #1F1F23; border-bottom: 1px solid #1F1F23")}>
+<section id="prices" aria-labelledby="sess-h" style={css("scroll-margin-top: 92px; background: #0F0F12; border-top: 1px solid #1F1F23; border-bottom: 1px solid #1F1F23")}>
 <div className="lc-section" style={css("max-width: 1360px; margin: 0 auto; padding: 120px 40px")}>
 <div style={css("display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 48px")}>
 <div>

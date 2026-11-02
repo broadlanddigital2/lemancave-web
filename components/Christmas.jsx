@@ -133,8 +133,11 @@ export default class Christmas extends React.Component {
 <h1 id="xm-h" style={css("margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 500; line-height: 1.5; letter-spacing: 0.16em; color: #FFC233; text-transform: uppercase")}>{"Christmas party Norwich \u00b7 now booking"}</h1>
 <p style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(68px, 10.5vw, 160px); line-height: 0.86; color: #FFFFFF; text-transform: uppercase")}>{"The Festive"}<br /><span style={css(`color: ${V.accent}`)}>{"Grand"}</span> <span style={css(`color: ${V.green}`)}>{"Prix."}</span></p>
 <p style={css("margin: 28px 0 0; max-width: 580px; font-size: 20px; line-height: 1.55; color: #D4D4D8")}>{"Swap the same old Christmas do for a race night. Take over the whole cave \u2014 simulators, Scalextric, games, pizza* and your own drinks \u2014 every weeknight in December and Saturday nights through the season."}</p>
-<div style={css("display: flex; flex-wrap: wrap; gap: 14px; margin-top: 36px")}>
-<A href="#packages" style={css(`background: ${V.accent}; color: #09090B; font-weight: 700; font-size: 16px; letter-spacing: 0.06em; text-transform: uppercase; padding: 18px 30px; border-radius: 4px`)}>{"See festive packages"}</A>
+<p style={css("margin: 22px 0 0; font-family: 'JetBrains Mono', monospace; font-size: 15px; letter-spacing: 0.08em; color: #FFFFFF; text-transform: uppercase")}>{"From "}<span style={css(`color: ${V.gold}; font-weight: 700`)}>{"\u00a345pp"}</span>{" \u00b7 whole-cave Christmas parties \u00b7 18:00\u201321:00"}</p>
+<div style={css("display: flex; flex-wrap: wrap; gap: 14px; margin-top: 26px")}>
+<A href="/book" style={css(`background: ${V.accent}; color: #09090B; font-weight: 700; font-size: 16px; letter-spacing: 0.06em; text-transform: uppercase; padding: 18px 30px; border-radius: 4px`)}>{"Book"}</A>
+<A href="tel:01603517080" style={css("border: 1px solid #52525B; color: #FFFFFF; font-weight: 600; font-size: 16px; letter-spacing: 0.06em; text-transform: uppercase; padding: 17px 30px; border-radius: 4px")}>{"Call 01603 517080"}</A>
+<A href="#packages" style={css("border: 1px solid #52525B; color: #FFFFFF; font-weight: 600; font-size: 16px; letter-spacing: 0.06em; text-transform: uppercase; padding: 17px 30px; border-radius: 4px")}>{"See festive packages"}</A>
 <A href="/contact-leman-cave-norwich" style={css("border: 1px solid #52525B; color: #FFFFFF; font-weight: 600; font-size: 16px; letter-spacing: 0.06em; text-transform: uppercase; padding: 17px 30px; border-radius: 4px")}>{"Enquire about a date"}</A>
 </div>
 </div>
