@@ -27,6 +27,8 @@ const jsonLd = {
   url: 'https://lemancave.co.uk',
   telephone: '+44 1603 517080',
   logo: 'https://lemancave.co.uk/images/d8a1bc65662ee5a26ca2d3cbc9ca559e.svg',
+  // Photo of the venue (Google uses it for the business in search results). Same picture as the share image in lib/seo.tsx.
+  image: 'https://lemancave.co.uk/images/4dd1a9368ac845d9dff93d9afd206327.webp',
   email: 'bookings@lemancave.co.uk',
   address: {
     '@type': 'PostalAddress',
