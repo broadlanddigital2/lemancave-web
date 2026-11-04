@@ -29,6 +29,8 @@ const jsonLd = {
   logo: 'https://lemancave.co.uk/images/d8a1bc65662ee5a26ca2d3cbc9ca559e.svg',
   // Photo of the venue (Google uses it for the business in search results). Same picture as the share image in lib/seo.tsx.
   image: 'https://lemancave.co.uk/images/4dd1a9368ac845d9dff93d9afd206327.webp',
+  // Google Maps (the Business Profile listing), so Google can tie the site to the map pin.
+  hasMap: 'https://maps.google.com/maps?cid=28223290013748974',
   email: 'bookings@lemancave.co.uk',
   address: {
     '@type': 'PostalAddress',
