@@ -145,6 +145,7 @@ Whole-cave prices are per person, with a minimum spend that still applies if few
 - Every visible "pizza" is written "pizza*". The * and ** footnotes are in `app/layout.tsx` (`.lc-smallprint`) on every page. Not in alt text, aria-labels, meta descriptions or code keys.
 - Capacity: up to 50 people, with activities for 34 players at once (arcade 2, air hockey 2, darts 2, pool 2, motorbike 2, sim 1, sim 1, Scalextric 6, table football 4, console 4, poker 8).
 - Write "Bring Your Own" on the site, never "BYO" (the owner's preference, Oct 2026).
+- The £60 package is "Pizza* Included + Bring Your Own Drinks" (column/menu label "+ PIZZA* INCLUDED"; CRM services "Saturday Afternoon/Night · Pizza Included + Bring Your Own Drinks"). Never "Bring Your Own drink & pizza", which reads as if guests bring the pizza (owner, 9 Nov 2026).
 - "Do I need to be fit?" answers end by asking guests to tell us about medical conditions (heart conditions, epilepsy, motion sickness, pregnancy, etc.).
 - Never invent reviews, testimonials or ratings. Placeholders say `[ADD REAL REVIEW]` or similar.
 - Don't state unconfirmed facts. Mark them `[CONFIRM …]` instead.
