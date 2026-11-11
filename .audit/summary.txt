@@ -1,6 +1,0 @@
-Location pages                     pages=   17 median unique=12% median words= 1276 <15%=  15 <30%=  17
-Who it's for                       pages=    8 median unique=24% median words= 1055 <15%=   0 <30%=   8
-Guides                             pages=   13 median unique=70% median words=  461 <15%=   0 <30%=   0
-Comparisons                        pages=    9 median unique=75% median words=  446 <15%=   0 <30%=   0
-Attractions                        pages=   13 median unique=48% median words=  328 <15%=   0 <30%=   0
-Hire-type and core pages           pages=   40 median unique=52% median words= 1057 <15%=   0 <30%=  12
