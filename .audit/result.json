@@ -1,0 +1,756 @@
+{
+ "Location pages": {
+  "pages": 17,
+  "median_unique": 0.295,
+  "median_words": 1279,
+  "under_15pct_unique": 0,
+  "under_30pct_unique": 10,
+  "rows": [
+   {
+    "path": "/locations/party-venue-near-thetford",
+    "words": 1225,
+    "unique_share": 0.263,
+    "max_sim": 0.433,
+    "closest": "/locations/party-venue-near-wymondham"
+   },
+   {
+    "path": "/locations/party-venue-near-bury-st-edmunds",
+    "words": 1276,
+    "unique_share": 0.268,
+    "max_sim": 0.47,
+    "closest": "/locations/party-venue-near-kings-lynn"
+   },
+   {
+    "path": "/locations/party-venue-near-beccles",
+    "words": 1276,
+    "unique_share": 0.272,
+    "max_sim": 0.429,
+    "closest": "/locations/party-venue-near-cromer"
+   },
+   {
+    "path": "/locations/party-venue-near-kings-lynn",
+    "words": 1294,
+    "unique_share": 0.277,
+    "max_sim": 0.47,
+    "closest": "/locations/party-venue-near-bury-st-edmunds"
+   },
+   {
+    "path": "/locations/party-venue-near-wymondham",
+    "words": 1261,
+    "unique_share": 0.279,
+    "max_sim": 0.433,
+    "closest": "/locations/party-venue-near-thetford"
+   },
+   {
+    "path": "/locations/party-venue-near-diss",
+    "words": 1275,
+    "unique_share": 0.28,
+    "max_sim": 0.414,
+    "closest": "/locations/party-venue-near-lowestoft"
+   },
+   {
+    "path": "/locations/party-venue-near-ipswich",
+    "words": 1299,
+    "unique_share": 0.289,
+    "max_sim": 0.409,
+    "closest": "/locations/party-venue-near-lowestoft"
+   },
+   {
+    "path": "/locations/party-venue-near-cromer",
+    "words": 1269,
+    "unique_share": 0.293,
+    "max_sim": 0.429,
+    "closest": "/locations/party-venue-near-beccles"
+   },
+   {
+    "path": "/locations/party-venue-near-great-yarmouth",
+    "words": 1278,
+    "unique_share": 0.295,
+    "max_sim": 0.41,
+    "closest": "/locations/party-venue-near-thetford"
+   },
+   {
+    "path": "/locations/party-venue-near-dereham",
+    "words": 1264,
+    "unique_share": 0.298,
+    "max_sim": 0.428,
+    "closest": "/locations/party-venue-near-thetford"
+   },
+   {
+    "path": "/locations/party-venue-near-lowestoft",
+    "words": 1288,
+    "unique_share": 0.3,
+    "max_sim": 0.414,
+    "closest": "/locations/party-venue-near-diss"
+   },
+   {
+    "path": "/locations/party-venue-near-aylsham",
+    "words": 1285,
+    "unique_share": 0.312,
+    "max_sim": 0.383,
+    "closest": "/locations/party-venue-near-dereham"
+   },
+   {
+    "path": "/locations/party-venue-near-cambridge",
+    "words": 1288,
+    "unique_share": 0.315,
+    "max_sim": 0.404,
+    "closest": "/locations/party-venue-near-kings-lynn"
+   },
+   {
+    "path": "/locations/party-venue-near-north-walsham",
+    "words": 1303,
+    "unique_share": 0.323,
+    "max_sim": 0.386,
+    "closest": "/locations/party-venue-near-cromer"
+   },
+   {
+    "path": "/locations/party-venue-near-wroxham",
+    "words": 1279,
+    "unique_share": 0.33,
+    "max_sim": 0.375,
+    "closest": "/locations/party-venue-near-aylsham"
+   },
+   {
+    "path": "/locations/things-to-do-in-norwich-for-groups",
+    "words": 1371,
+    "unique_share": 0.367,
+    "max_sim": 0.377,
+    "closest": "/locations/party-venue-near-aylsham"
+   },
+   {
+    "path": "/locations/party-venue-norfolk",
+    "words": 1345,
+    "unique_share": 0.379,
+    "max_sim": 0.358,
+    "closest": "/locations/party-venue-near-wymondham"
+   }
+  ]
+ },
+ "Who it's for": {
+  "pages": 8,
+  "median_unique": 0.243,
+  "median_words": 1055,
+  "under_15pct_unique": 0,
+  "under_30pct_unique": 8,
+  "rows": [
+   {
+    "path": "/who-its-for/things-to-do-with-friends-in-norwich",
+    "words": 1055,
+    "unique_share": 0.205,
+    "max_sim": 0.565,
+    "closest": "/who-its-for/fun-group-activities-norwich"
+   },
+   {
+    "path": "/who-its-for/things-to-do-in-norwich-for-adults",
+    "words": 1046,
+    "unique_share": 0.232,
+    "max_sim": 0.552,
+    "closest": "/who-its-for/rainy-day-activities-norwich"
+   },
+   {
+    "path": "/who-its-for/rainy-day-activities-norwich",
+    "words": 1038,
+    "unique_share": 0.237,
+    "max_sim": 0.552,
+    "closest": "/who-its-for/things-to-do-in-norwich-for-adults"
+   },
+   {
+    "path": "/who-its-for/gaming-venue-norwich",
+    "words": 1048,
+    "unique_share": 0.241,
+    "max_sim": 0.515,
+    "closest": "/who-its-for/rainy-day-activities-norwich"
+   },
+   {
+    "path": "/who-its-for/corporate-team-activities-norwich",
+    "words": 1032,
+    "unique_share": 0.243,
+    "max_sim": 0.518,
+    "closest": "/who-its-for/things-to-do-with-friends-in-norwich"
+   },
+   {
+    "path": "/who-its-for/fun-group-activities-norwich",
+    "words": 1083,
+    "unique_share": 0.25,
+    "max_sim": 0.565,
+    "closest": "/who-its-for/things-to-do-with-friends-in-norwich"
+   },
+   {
+    "path": "/who-its-for/family-entertainment-norwich",
+    "words": 1083,
+    "unique_share": 0.28,
+    "max_sim": 0.488,
+    "closest": "/who-its-for/things-to-do-with-friends-in-norwich"
+   },
+   {
+    "path": "/who-its-for/motorsport-experience-norwich",
+    "words": 1063,
+    "unique_share": 0.295,
+    "max_sim": 0.482,
+    "closest": "/who-its-for/rainy-day-activities-norwich"
+   }
+  ]
+ },
+ "Guides": {
+  "pages": 13,
+  "median_unique": 0.7,
+  "median_words": 461,
+  "under_15pct_unique": 0,
+  "under_30pct_unique": 0,
+  "rows": [
+   {
+    "path": "/guides/christmas-party-ideas-norwich",
+    "words": 436,
+    "unique_share": 0.583,
+    "max_sim": 0.162,
+    "closest": "/guides/planning-a-team-event"
+   },
+   {
+    "path": "/guides/planning-a-team-event",
+    "words": 461,
+    "unique_share": 0.638,
+    "max_sim": 0.162,
+    "closest": "/guides/christmas-party-ideas-norwich"
+   },
+   {
+    "path": "/guides/birthday-party-ideas",
+    "words": 422,
+    "unique_share": 0.648,
+    "max_sim": 0.138,
+    "closest": "/guides/christmas-party-ideas-norwich"
+   },
+   {
+    "path": "/guides/venue-hire-guide",
+    "words": 459,
+    "unique_share": 0.648,
+    "max_sim": 0.144,
+    "closest": "/guides/planning-a-team-event"
+   },
+   {
+    "path": "/guides/stag-and-hen-planner",
+    "words": 485,
+    "unique_share": 0.655,
+    "max_sim": 0.137,
+    "closest": "/guides/christmas-party-ideas-norwich"
+   },
+   {
+    "path": "/guides/indoor-activities-norfolk",
+    "words": 418,
+    "unique_share": 0.672,
+    "max_sim": 0.125,
+    "closest": "/guides/venue-hire-guide"
+   },
+   {
+    "path": "/guides/race-simulator-guide",
+    "words": 494,
+    "unique_share": 0.7,
+    "max_sim": 0.147,
+    "closest": "/guides/sim-racing-tips"
+   },
+   {
+    "path": "/guides/kids-party-checklist",
+    "words": 514,
+    "unique_share": 0.715,
+    "max_sim": 0.125,
+    "closest": "/guides/birthday-party-ideas"
+   },
+   {
+    "path": "/guides/sim-racing-tips",
+    "words": 482,
+    "unique_share": 0.719,
+    "max_sim": 0.147,
+    "closest": "/guides/race-simulator-guide"
+   },
+   {
+    "path": "/guides/gifts-for-petrolheads",
+    "words": 354,
+    "unique_share": 0.734,
+    "max_sim": 0.118,
+    "closest": "/guides/race-simulator-guide"
+   },
+   {
+    "path": "/guides",
+    "words": 532,
+    "unique_share": 0.755,
+    "max_sim": 0.115,
+    "closest": "/guides/venue-hire-guide"
+   },
+   {
+    "path": "/guides/le-mans-history",
+    "words": 443,
+    "unique_share": 0.756,
+    "max_sim": 0.124,
+    "closest": "/guides/indoor-activities-norfolk"
+   },
+   {
+    "path": "/guides/things-to-do-in-norwich",
+    "words": 491,
+    "unique_share": 0.759,
+    "max_sim": 0.122,
+    "closest": "/guides/indoor-activities-norfolk"
+   }
+  ]
+ },
+ "Comparisons": {
+  "pages": 9,
+  "median_unique": 0.754,
+  "median_words": 446,
+  "under_15pct_unique": 0,
+  "under_30pct_unique": 0,
+  "rows": [
+   {
+    "path": "/compare/digital-vs-classic-scalextric",
+    "words": 337,
+    "unique_share": 0.703,
+    "max_sim": 0.147,
+    "closest": "/compare/motion-vs-static-simulator"
+   },
+   {
+    "path": "/compare/party-venues-norwich-compared",
+    "words": 376,
+    "unique_share": 0.706,
+    "max_sim": 0.149,
+    "closest": "/compare/saturday-party-packages-norwich"
+   },
+   {
+    "path": "/compare/team-building-activities-compared",
+    "words": 372,
+    "unique_share": 0.728,
+    "max_sim": 0.144,
+    "closest": "/compare/digital-vs-classic-scalextric"
+   },
+   {
+    "path": "/compare/motion-vs-static-simulator",
+    "words": 445,
+    "unique_share": 0.748,
+    "max_sim": 0.147,
+    "closest": "/compare/digital-vs-classic-scalextric"
+   },
+   {
+    "path": "/compare/saturday-party-packages-norwich",
+    "words": 463,
+    "unique_share": 0.754,
+    "max_sim": 0.149,
+    "closest": "/compare/party-venues-norwich-compared"
+   },
+   {
+    "path": "/compare/4k-vs-vr-racing",
+    "words": 458,
+    "unique_share": 0.761,
+    "max_sim": 0.125,
+    "closest": "/compare/digital-vs-classic-scalextric"
+   },
+   {
+    "path": "/compare/best-indoor-activities-norwich",
+    "words": 446,
+    "unique_share": 0.766,
+    "max_sim": 0.132,
+    "closest": "/compare/digital-vs-classic-scalextric"
+   },
+   {
+    "path": "/compare/sim-room-vs-whole-cave-hire",
+    "words": 473,
+    "unique_share": 0.773,
+    "max_sim": 0.132,
+    "closest": "/compare/team-building-activities-compared"
+   },
+   {
+    "path": "/compare/sim-racing-vs-karting",
+    "words": 641,
+    "unique_share": 0.812,
+    "max_sim": 0.103,
+    "closest": "/compare/digital-vs-classic-scalextric"
+   }
+  ]
+ },
+ "Attractions": {
+  "pages": 13,
+  "median_unique": 0.485,
+  "median_words": 328,
+  "under_15pct_unique": 0,
+  "under_30pct_unique": 0,
+  "rows": [
+   {
+    "path": "/attractions/table-football-norwich",
+    "words": 291,
+    "unique_share": 0.373,
+    "max_sim": 0.365,
+    "closest": "/attractions/arcade-norwich"
+   },
+   {
+    "path": "/attractions/arcade-norwich",
+    "words": 310,
+    "unique_share": 0.414,
+    "max_sim": 0.365,
+    "closest": "/attractions/table-football-norwich"
+   },
+   {
+    "path": "/attractions/air-hockey-norwich",
+    "words": 300,
+    "unique_share": 0.419,
+    "max_sim": 0.353,
+    "closest": "/attractions/table-football-norwich"
+   },
+   {
+    "path": "/attractions/digital-pinball-norwich",
+    "words": 314,
+    "unique_share": 0.428,
+    "max_sim": 0.365,
+    "closest": "/attractions/table-football-norwich"
+   },
+   {
+    "path": "/attractions/pool-table-norwich",
+    "words": 333,
+    "unique_share": 0.451,
+    "max_sim": 0.342,
+    "closest": "/attractions/air-hockey-norwich"
+   },
+   {
+    "path": "/attractions/darts-norwich",
+    "words": 310,
+    "unique_share": 0.454,
+    "max_sim": 0.351,
+    "closest": "/attractions/table-football-norwich"
+   },
+   {
+    "path": "/attractions/poker-table-norwich",
+    "words": 372,
+    "unique_share": 0.485,
+    "max_sim": 0.329,
+    "closest": "/attractions/air-hockey-norwich"
+   },
+   {
+    "path": "/attractions/motorbike-simulator-norwich",
+    "words": 328,
+    "unique_share": 0.522,
+    "max_sim": 0.278,
+    "closest": "/attractions/motorsport-memorabilia-norwich"
+   },
+   {
+    "path": "/attractions/motorsport-memorabilia-norwich",
+    "words": 327,
+    "unique_share": 0.544,
+    "max_sim": 0.278,
+    "closest": "/attractions/motorbike-simulator-norwich"
+   },
+   {
+    "path": "/attractions/gaming-lounge-norwich",
+    "words": 408,
+    "unique_share": 0.548,
+    "max_sim": 0.26,
+    "closest": "/attractions/arcade-norwich"
+   },
+   {
+    "path": "/attractions/arcade-games-norwich",
+    "words": 498,
+    "unique_share": 0.695,
+    "max_sim": 0.142,
+    "closest": "/attractions/gaming-lounge-norwich"
+   },
+   {
+    "path": "/attractions/scalextric-track-norwich",
+    "words": 529,
+    "unique_share": 0.845,
+    "max_sim": 0.102,
+    "closest": "/attractions/table-football-norwich"
+   },
+   {
+    "path": "/attractions/racing-simulator-norwich",
+    "words": 880,
+    "unique_share": 0.903,
+    "max_sim": 0.071,
+    "closest": "/attractions/motorbike-simulator-norwich"
+   }
+  ]
+ },
+ "Hire-type and core pages": {
+  "pages": 40,
+  "median_unique": 0.519,
+  "median_words": 1057,
+  "under_15pct_unique": 0,
+  "under_30pct_unique": 12,
+  "rows": [
+   {
+    "path": "/night-out-norwich",
+    "words": 1148,
+    "unique_share": 0.173,
+    "max_sim": 0.563,
+    "closest": "/stag-do-norwich"
+   },
+   {
+    "path": "/group-activities-norwich",
+    "words": 1129,
+    "unique_share": 0.184,
+    "max_sim": 0.57,
+    "closest": "/club-social-ideas-norfolk"
+   },
+   {
+    "path": "/club-social-ideas-norfolk",
+    "words": 1098,
+    "unique_share": 0.184,
+    "max_sim": 0.57,
+    "closest": "/group-activities-norwich"
+   },
+   {
+    "path": "/leaving-do-ideas-norwich",
+    "words": 1118,
+    "unique_share": 0.187,
+    "max_sim": 0.545,
+    "closest": "/club-social-ideas-norfolk"
+   },
+   {
+    "path": "/corporate-hospitality-norwich",
+    "words": 1057,
+    "unique_share": 0.191,
+    "max_sim": 0.439,
+    "closest": "/team-building-norwich"
+   },
+   {
+    "path": "/stag-do-norwich",
+    "words": 1184,
+    "unique_share": 0.195,
+    "max_sim": 0.563,
+    "closest": "/night-out-norwich"
+   },
+   {
+    "path": "/family-days-out-norfolk",
+    "words": 1124,
+    "unique_share": 0.206,
+    "max_sim": 0.534,
+    "closest": "/teenage-party-ideas-norwich"
+   },
+   {
+    "path": "/party-venue-norwich",
+    "words": 1238,
+    "unique_share": 0.217,
+    "max_sim": 0.488,
+    "closest": "/group-activities-norwich"
+   },
+   {
+    "path": "/birthday-party-venue-norwich",
+    "words": 1219,
+    "unique_share": 0.22,
+    "max_sim": 0.541,
+    "closest": "/night-out-norwich"
+   },
+   {
+    "path": "/teenage-party-ideas-norwich",
+    "words": 1198,
+    "unique_share": 0.22,
+    "max_sim": 0.534,
+    "closest": "/family-days-out-norfolk"
+   },
+   {
+    "path": "/hen-do-norwich",
+    "words": 1202,
+    "unique_share": 0.222,
+    "max_sim": 0.559,
+    "closest": "/night-out-norwich"
+   },
+   {
+    "path": "/team-building-norwich",
+    "words": 1146,
+    "unique_share": 0.234,
+    "max_sim": 0.498,
+    "closest": "/group-activities-norwich"
+   },
+   {
+    "path": "/kids-party-venue-norwich",
+    "words": 1208,
+    "unique_share": 0.317,
+    "max_sim": 0.452,
+    "closest": "/teenage-party-ideas-norwich"
+   },
+   {
+    "path": "/car-club-meet-venue-norfolk",
+    "words": 1100,
+    "unique_share": 0.344,
+    "max_sim": 0.413,
+    "closest": "/group-activities-norwich"
+   },
+   {
+    "path": "/accessible-activities-norwich",
+    "words": 1231,
+    "unique_share": 0.366,
+    "max_sim": 0.364,
+    "closest": "/corporate-hospitality-norwich"
+   },
+   {
+    "path": "/wedding-reception-venue-norwich",
+    "words": 1688,
+    "unique_share": 0.418,
+    "max_sim": 0.391,
+    "closest": "/stag-do-norwich"
+   },
+   {
+    "path": "/function-room-hire-norwich",
+    "words": 1760,
+    "unique_share": 0.42,
+    "max_sim": 0.35,
+    "closest": "/party-venue-norwich"
+   },
+   {
+    "path": "/locations",
+    "words": 1275,
+    "unique_share": 0.448,
+    "max_sim": 0.256,
+    "closest": "/leaving-do-ideas-norwich"
+   },
+   {
+    "path": "/venue-hire-norwich",
+    "words": 1874,
+    "unique_share": 0.45,
+    "max_sim": 0.325,
+    "closest": "/team-building-norwich"
+   },
+   {
+    "path": "/blog",
+    "words": 114,
+    "unique_share": 0.482,
+    "max_sim": 0.148,
+    "closest": "/contact-leman-cave-norwich"
+   },
+   {
+    "path": "/contact-leman-cave-norwich",
+    "words": 325,
+    "unique_share": 0.519,
+    "max_sim": 0.133,
+    "closest": "/leman-cave-opening-times"
+   },
+   {
+    "path": "/leman-cave-faqs",
+    "words": 608,
+    "unique_share": 0.539,
+    "max_sim": 0.089,
+    "closest": "/corporate-hospitality-norwich"
+   },
+   {
+    "path": "/leman-cave-opening-times",
+    "words": 516,
+    "unique_share": 0.592,
+    "max_sim": 0.133,
+    "closest": "/contact-leman-cave-norwich"
+   },
+   {
+    "path": "/book",
+    "words": 530,
+    "unique_share": 0.625,
+    "max_sim": 0.104,
+    "closest": "/parties-and-events-norwich"
+   },
+   {
+    "path": "/leman-cave-parking-and-travel",
+    "words": 569,
+    "unique_share": 0.633,
+    "max_sim": 0.13,
+    "closest": "/minibus-taxi-norwich"
+   },
+   {
+    "path": "/minibus-taxi-norwich",
+    "words": 513,
+    "unique_share": 0.674,
+    "max_sim": 0.13,
+    "closest": "/leman-cave-parking-and-travel"
+   },
+   {
+    "path": "/parties-and-events-norwich",
+    "words": 513,
+    "unique_share": 0.676,
+    "max_sim": 0.104,
+    "closest": "/book"
+   },
+   {
+    "path": "/christmas-party-norwich",
+    "words": 678,
+    "unique_share": 0.74,
+    "max_sim": 0.064,
+    "closest": "/bring-your-own-drinks-venue-norwich"
+   },
+   {
+    "path": "/leman-cave-photos",
+    "words": 457,
+    "unique_share": 0.746,
+    "max_sim": 0.08,
+    "closest": "/leman-cave-faqs"
+   },
+   {
+    "path": "/attractions",
+    "words": 412,
+    "unique_share": 0.756,
+    "max_sim": 0.083,
+    "closest": "/parties-and-events-norwich"
+   },
+   {
+    "path": "/pizza-party-norwich",
+    "words": 509,
+    "unique_share": 0.759,
+    "max_sim": 0.076,
+    "closest": "/leman-cave-faqs"
+   },
+   {
+    "path": "/party-packages-norwich",
+    "words": 745,
+    "unique_share": 0.762,
+    "max_sim": 0.081,
+    "closest": "/leman-cave-opening-times"
+   },
+   {
+    "path": "/experience-gifts-norwich",
+    "words": 408,
+    "unique_share": 0.763,
+    "max_sim": 0.124,
+    "closest": "/contact-leman-cave-norwich"
+   },
+   {
+    "path": "/corporate-events-norwich",
+    "words": 545,
+    "unique_share": 0.773,
+    "max_sim": 0.062,
+    "closest": "/experience-gifts-norwich"
+   },
+   {
+    "path": "/bring-your-own-drinks-venue-norwich",
+    "words": 705,
+    "unique_share": 0.789,
+    "max_sim": 0.076,
+    "closest": "/blog"
+   },
+   {
+    "path": "/advertising-screens-norwich",
+    "words": 671,
+    "unique_share": 0.878,
+    "max_sim": 0.077,
+    "closest": "/contact-leman-cave-norwich"
+   },
+   {
+    "path": "/event-photographer-norwich",
+    "words": 623,
+    "unique_share": 0.882,
+    "max_sim": 0.069,
+    "closest": "/contact-leman-cave-norwich"
+   },
+   {
+    "path": "/cookie-policy",
+    "words": 925,
+    "unique_share": 0.978,
+    "max_sim": 0.01,
+    "closest": "/contact-leman-cave-norwich"
+   },
+   {
+    "path": "/site-map",
+    "words": 365,
+    "unique_share": 0.978,
+    "max_sim": 0.004,
+    "closest": "/blog"
+   },
+   {
+    "path": "/privacy",
+    "words": 1459,
+    "unique_share": 0.983,
+    "max_sim": 0.006,
+    "closest": "/cookie-policy"
+   }
+  ]
+ }
+}
