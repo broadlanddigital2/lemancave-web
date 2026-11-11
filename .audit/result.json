@@ -1,129 +1,129 @@
 {
  "Location pages": {
   "pages": 17,
-  "median_unique": 0.295,
-  "median_words": 1279,
+  "median_unique": 0.334,
+  "median_words": 1172,
   "under_15pct_unique": 0,
-  "under_30pct_unique": 10,
+  "under_30pct_unique": 0,
   "rows": [
    {
     "path": "/locations/party-venue-near-thetford",
-    "words": 1225,
-    "unique_share": 0.263,
-    "max_sim": 0.433,
+    "words": 1119,
+    "unique_share": 0.3,
+    "max_sim": 0.398,
     "closest": "/locations/party-venue-near-wymondham"
    },
    {
     "path": "/locations/party-venue-near-bury-st-edmunds",
-    "words": 1276,
-    "unique_share": 0.268,
-    "max_sim": 0.47,
+    "words": 1172,
+    "unique_share": 0.303,
+    "max_sim": 0.414,
     "closest": "/locations/party-venue-near-kings-lynn"
    },
    {
     "path": "/locations/party-venue-near-beccles",
-    "words": 1276,
-    "unique_share": 0.272,
-    "max_sim": 0.429,
+    "words": 1167,
+    "unique_share": 0.308,
+    "max_sim": 0.373,
     "closest": "/locations/party-venue-near-cromer"
    },
    {
-    "path": "/locations/party-venue-near-kings-lynn",
-    "words": 1294,
-    "unique_share": 0.277,
-    "max_sim": 0.47,
-    "closest": "/locations/party-venue-near-bury-st-edmunds"
+    "path": "/locations/party-venue-near-diss",
+    "words": 1167,
+    "unique_share": 0.315,
+    "max_sim": 0.363,
+    "closest": "/locations/party-venue-near-wymondham"
    },
    {
     "path": "/locations/party-venue-near-wymondham",
-    "words": 1261,
-    "unique_share": 0.279,
-    "max_sim": 0.433,
+    "words": 1151,
+    "unique_share": 0.316,
+    "max_sim": 0.398,
     "closest": "/locations/party-venue-near-thetford"
    },
    {
-    "path": "/locations/party-venue-near-diss",
-    "words": 1275,
-    "unique_share": 0.28,
+    "path": "/locations/party-venue-near-kings-lynn",
+    "words": 1186,
+    "unique_share": 0.319,
     "max_sim": 0.414,
-    "closest": "/locations/party-venue-near-lowestoft"
-   },
-   {
-    "path": "/locations/party-venue-near-ipswich",
-    "words": 1299,
-    "unique_share": 0.289,
-    "max_sim": 0.409,
-    "closest": "/locations/party-venue-near-lowestoft"
-   },
-   {
-    "path": "/locations/party-venue-near-cromer",
-    "words": 1269,
-    "unique_share": 0.293,
-    "max_sim": 0.429,
-    "closest": "/locations/party-venue-near-beccles"
+    "closest": "/locations/party-venue-near-bury-st-edmunds"
    },
    {
     "path": "/locations/party-venue-near-great-yarmouth",
-    "words": 1278,
-    "unique_share": 0.295,
-    "max_sim": 0.41,
-    "closest": "/locations/party-venue-near-thetford"
+    "words": 1168,
+    "unique_share": 0.331,
+    "max_sim": 0.364,
+    "closest": "/locations/party-venue-near-ipswich"
+   },
+   {
+    "path": "/locations/party-venue-near-ipswich",
+    "words": 1193,
+    "unique_share": 0.332,
+    "max_sim": 0.364,
+    "closest": "/locations/party-venue-near-great-yarmouth"
+   },
+   {
+    "path": "/locations/party-venue-near-cromer",
+    "words": 1160,
+    "unique_share": 0.334,
+    "max_sim": 0.373,
+    "closest": "/locations/party-venue-near-beccles"
    },
    {
     "path": "/locations/party-venue-near-dereham",
-    "words": 1264,
-    "unique_share": 0.298,
-    "max_sim": 0.428,
+    "words": 1154,
+    "unique_share": 0.342,
+    "max_sim": 0.385,
     "closest": "/locations/party-venue-near-thetford"
    },
    {
     "path": "/locations/party-venue-near-lowestoft",
-    "words": 1288,
-    "unique_share": 0.3,
-    "max_sim": 0.414,
+    "words": 1179,
+    "unique_share": 0.343,
+    "max_sim": 0.358,
     "closest": "/locations/party-venue-near-diss"
    },
    {
     "path": "/locations/party-venue-near-aylsham",
-    "words": 1285,
-    "unique_share": 0.312,
-    "max_sim": 0.383,
-    "closest": "/locations/party-venue-near-dereham"
-   },
-   {
-    "path": "/locations/party-venue-near-cambridge",
-    "words": 1288,
-    "unique_share": 0.315,
-    "max_sim": 0.404,
-    "closest": "/locations/party-venue-near-kings-lynn"
-   },
-   {
-    "path": "/locations/party-venue-near-north-walsham",
-    "words": 1303,
-    "unique_share": 0.323,
-    "max_sim": 0.386,
+    "words": 1174,
+    "unique_share": 0.347,
+    "max_sim": 0.333,
     "closest": "/locations/party-venue-near-cromer"
    },
    {
+    "path": "/locations/party-venue-near-cambridge",
+    "words": 1184,
+    "unique_share": 0.35,
+    "max_sim": 0.355,
+    "closest": "/locations/party-venue-near-thetford"
+   },
+   {
+    "path": "/locations/party-venue-near-north-walsham",
+    "words": 1193,
+    "unique_share": 0.358,
+    "max_sim": 0.345,
+    "closest": "/locations/party-venue-near-kings-lynn"
+   },
+   {
     "path": "/locations/party-venue-near-wroxham",
-    "words": 1279,
-    "unique_share": 0.33,
-    "max_sim": 0.375,
-    "closest": "/locations/party-venue-near-aylsham"
+    "words": 1169,
+    "unique_share": 0.371,
+    "max_sim": 0.324,
+    "closest": "/locations/party-venue-near-dereham"
    },
    {
     "path": "/locations/things-to-do-in-norwich-for-groups",
-    "words": 1371,
-    "unique_share": 0.367,
-    "max_sim": 0.377,
+    "words": 1261,
+    "unique_share": 0.408,
+    "max_sim": 0.326,
     "closest": "/locations/party-venue-near-aylsham"
    },
    {
     "path": "/locations/party-venue-norfolk",
-    "words": 1345,
-    "unique_share": 0.379,
-    "max_sim": 0.358,
-    "closest": "/locations/party-venue-near-wymondham"
+    "words": 1237,
+    "unique_share": 0.428,
+    "max_sim": 0.315,
+    "closest": "/locations/party-venue-near-lowestoft"
    }
   ]
  },
@@ -376,7 +376,7 @@
     "words": 291,
     "unique_share": 0.373,
     "max_sim": 0.365,
-    "closest": "/attractions/arcade-norwich"
+    "closest": "/attractions/digital-pinball-norwich"
    },
    {
     "path": "/attractions/arcade-norwich",
@@ -592,8 +592,8 @@
    },
    {
     "path": "/locations",
-    "words": 1275,
-    "unique_share": 0.448,
+    "words": 1273,
+    "unique_share": 0.447,
     "max_sim": 0.256,
     "closest": "/leaving-do-ideas-norwich"
    },
