@@ -1,6 +1,9 @@
 import re,sys,html,os,collections,random,glob
 build=sys.argv[1]; pattern=sys.argv[2]; n=int(sys.argv[3]) if len(sys.argv)>3 else 60
-files=[f for f in glob.glob(build+'/**/index.html',recursive=True) if re.search(pattern,'/'+os.path.relpath(f,build)[:-11])]
+def pth(f):
+    r=os.path.relpath(f,build).replace(os.sep,'/')
+    return '/' if r=='index.html' else '/'+(r[:-11] if r.endswith('/index.html') else r[:-5])
+files=[f for f in glob.glob(build+'/**/*.html',recursive=True) if '404' not in f and re.search(pattern,pth(f))]
 random.seed(2); files=random.sample(files,min(n,len(files)))
 def secs(h):
     m=re.search(r"<main\b[^>]*>(.*)</main>",h,re.S); b=m.group(1) if m else h
