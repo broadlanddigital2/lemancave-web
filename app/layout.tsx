@@ -67,8 +67,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* Cookie choice for the CRM site search and enquiry bot, set before they load (components/CookieConsent.jsx). */}
         <script dangerouslySetInnerHTML={{ __html: "try{var c=JSON.parse(localStorage.getItem('lc-cookie-consent')||'null');window.__crmBotTracking=!!(c&&c.v===1&&c.remember)}catch(e){window.__crmBotTracking=false}" }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+        {/* Google Tag Manager GTM-P5RK5S9M (owner, 15 Nov 2026), with Google Consent Mode: storage is denied until the visitor
+            agrees in the cookie banner ("Website statistics" → analytics_storage, "Measure our adverts" → ad_storage etc.).
+            The saved choice is applied here before GTM loads; components/CookieConsent.jsx sends updates. */}
+        <script dangerouslySetInnerHTML={{ __html: "window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}var lcC=null;try{lcC=JSON.parse(localStorage.getItem('lc-cookie-consent')||'null');if(!lcC||lcC.v!==1)lcC=null}catch(e){}var lcA=lcC&&lcC.ads?'granted':'denied';gtag('consent','default',{analytics_storage:lcC&&lcC.stats?'granted':'denied',ad_storage:lcA,ad_user_data:lcA,ad_personalization:lcA,functionality_storage:'granted',security_storage:'granted',wait_for_update:500});gtag('js',new Date());dataLayer.push({'gtm.start':new Date().getTime(),event:'gtm.js'});" }} />
+        <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-P5RK5S9M" />
       </head>
       <body>
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P5RK5S9M" height="0" width="0" style={{ display: 'none', visibility: 'hidden' }} title="Google Tag Manager" /></noscript>
         {children}
         {/* Small print for the * and ** marks used across the site (owner, 28 Oct 2026). */}
         <aside className="lc-smallprint" aria-label="Notes">

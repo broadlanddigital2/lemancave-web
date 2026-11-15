@@ -9,7 +9,7 @@ import { pageMeta, PageSchema } from '../../lib/seo';
 // Legal entity: Le Man Cave Limited, company number 17032850 (owner, 29 Oct 2026). The booking form links here.
 export const metadata: Metadata = pageMeta('/privacy');
 
-const UPDATED = '1 November 2026';
+const UPDATED = '15 November 2026';
 const PRIVACY_FAQS = [
   { q: 'Do you sell my personal information?', a: 'No. We only collect what we need to run your booking and answer your questions, and we never sell your information.' },
   { q: 'Do you see or store my card details?', a: 'No. Card payments are taken by Stripe on its secure checkout. Your card details go straight to Stripe; we keep a record of what was paid and when.' },
@@ -79,7 +79,7 @@ export default function PrivacyPage() {
           <li><b>Twilio SendGrid</b>, which delivers our booking and enquiry emails.</li>
           <li><b>Dropbox</b>, where files attached to enquiries (such as advert artwork) are stored.</li>
           <li><b>OpenAI</b>, which powers the website&rsquo;s chat assistant and search answers and helps us sort incoming enquiries. Conversations are not used to train their models.</li>
-          <li><b>Google</b>, only if you choose to show a map on our contact or visit pages, and Google Ads, which receives the click reference of an ad you clicked (with your permission) and a scrambled (hashed) copy of your email address and phone number when you enquire, book or call, to measure which adverts work.</li>
+          <li><b>Google</b>: Google Tag Manager runs on every page; Google Analytics (only if you allow &ldquo;Website statistics&rdquo;) measures how the site is used; Google Maps loads only if you choose to show a map on our contact or visit pages; and Google Ads, which receives the click reference of an ad you clicked (with your permission) and a scrambled (hashed) copy of your email address and phone number when you enquire, book or call, to measure which adverts work.</li>
         </ul>
         <p style={P}>Some of these providers are based in, or may access data from, the USA. Where information leaves the UK, it is protected by the UK&rsquo;s adequacy regulations (including the UK&ndash;US Data Bridge) or the UK International Data Transfer Agreement or Addendum. We may also share information if the law requires it, for example with HMRC or the police.</p>
 

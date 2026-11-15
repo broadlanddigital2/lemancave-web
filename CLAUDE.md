@@ -131,13 +131,15 @@ Whole-cave prices are per person, with a minimum spend that still applies if few
 
 ## Cookies and privacy (29 Oct 2026)
 - **Cookie banner**: `components/CookieConsent.jsx`, with the choice stored in localStorage `lc-cookie-consent`.
+  - **Website statistics**: Google Analytics through GTM (Consent Mode `analytics_storage`).
   - **Remember my visits**: the CRM search and chat remember a visitor, via `window.__crmBotTracking`, which `app/layout.tsx` sets before those scripts load.
   - **Google Maps**: the map embeds become `components/ConsentMap.jsx` (converter step `add_consent_maps`).
 - **Footer links**: Privacy, Cookie policy and Cookie settings. Any `#cookie-settings` link reopens the banner.
 - **Pages**: `/cookie-policy` and `/privacy` are hand-written in `app/`. If the site starts collecting or storing anything new, update both.
 
 ## Google Ads (29 Oct 2026)
-- **Measurement**: no Google tags. With "Measure our adverts" consent (cookie banner), `components/AdClick.jsx` keeps the ad click ID and UTM tags in the first-party cookie `ins_ad` (90 days). The enquiry form sends them in `page_url`, and the CRM booking widget reads the same cookie. The CRM matches them to leads and paid bookings and uploads "CRM enquiry" and "CRM sale" conversions (race-car-graphics-crm `google-ads/tracking.ts`).
+- **Google Tag Manager** (15 Nov 2026): `GTM-P5RK5S9M` loads in the head of every page (`app/layout.tsx`) with Google Consent Mode, everything denied by default. Cookie banner choices: "Website statistics" (`stats`) → `analytics_storage`; "Measure our adverts" (`ads`) → `ad_storage`, `ad_user_data`, `ad_personalization`. `CookieConsent.jsx` sends `consent update` plus the dataLayer event `lc_consent_update`. Tags set up inside GTM must respect consent (Google tags do this automatically; others need consent checks). The cookie policy and privacy pages describe it.
+- **Measurement**: With "Measure our adverts" consent (cookie banner), `components/AdClick.jsx` keeps the ad click ID and UTM tags in the first-party cookie `ins_ad` (90 days). The enquiry form sends them in `page_url`, and the CRM booking widget reads the same cookie. The CRM matches them to leads and paid bookings and uploads "CRM enquiry" and "CRM sale" conversions (race-car-graphics-crm `google-ads/tracking.ts`).
 - **Campaigns**: run from the CRM (Marketing → Google Ads), not Adspirer. Plans are CRM drafts (`google_ads_drafts`, business Le Man Cave): Parties & Venue Hire, Things to Do & Racing Sims, Christmas & Corporate. They are created paused once a Le Man Cave ad account exists under the BD manager account and is linked to the business.
 
 ## Content rules
