@@ -17,7 +17,7 @@ in a Cowork session (Oct 2026). Setup and deploy steps are in `README.md`.
 - **Positioning**: a real motorsport venue that's great for non-petrolheads too. Imagery should show the general public, not just car fans.
 - **Hours**: by booking only. Shown as the maximum hours sessions can run: Mon–Fri 09:00–21:00, Sat 10:00–21:00, Sun 12:00–16:00 (owner, 28 Oct 2026). Always say "bookings only" with them.
 - **Attractions**:
-  - two pro racing simulators (direct-drive wheel; the motion sim has a 4K monitor or VR, the static sim an HD monitor and NO VR (owner, 28 Oct 2026); NOT triple or wraparound screens); only ONE has 4 DOF full motion, the other is static. Features: pedal haptics, ambient lighting (e.g. sun glare effects), wind simulation, active harness, and gear shifters: the motion sim has a ‘bazooka’ H-pattern shifter inspired by the Ford Escort Mk2 rally car; the static sim has a gated manual (owner, 28 Oct 2026). Never call the motion sim's shifter gated. Never write "full-motion simulators" (plural);
+  - two pro racing simulators (direct-drive wheel; the motion sim has a 4K monitor or VR, the static sim an HD monitor and NO VR (owner, 28 Oct 2026); NOT triple or wraparound screens); only ONE has 4 DOF full motion, the other is static. Features: pedal haptics, ambient lighting (e.g. sun glare effects), wind simulation, active harness, and gear shifters: the motion sim has a ‘bazooka’ H-pattern shifter inspired by the Ford Escort Mk2 rally car; the static sim has a gated manual (owner, 28 Oct 2026). Never call the motion sim's shifter gated. Never write "full-motion simulators" (plural). Tracks: all the major tracks are available, e.g. Spa, Zandvoort, the Nürburgring (owner, 22 Nov 2026);
   - 160ft digital Scalextric: TWO lanes, up to six cars at once (never "six lanes");
   - 1990s motorbike sim;
   - the Games Console Lounge: games consoles on a 100-inch screen; seating is a converted classic Mini sofa (NOT a Mini Cooper), oil drum chairs and a Top Gear-style Alfa Romeo sofa (games provided). Consoles: Nintendo Wii, PlayStation or Steam gaming PCs (owner, 28 Oct 2026). Games: the classic Mario Kart with four wheel controllers; other games on request before booking. The page is /attractions/gaming-lounge-norwich (the old PS5 address redirects);
@@ -157,7 +157,6 @@ Whole-cave prices are per person, with a minimum spend that still applies if few
 
 ## Open items (as of 27 Oct 2026)
 - **`[CONFIRM]` items**:
-  - sim titles;
   - VR age policy;
   - public transport;
   - accessibility details;
