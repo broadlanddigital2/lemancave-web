@@ -154,6 +154,7 @@ Whole-cave prices are per person, with a minimum spend that still applies if few
 - **Images** are AI-generated stand-ins until real photos arrive.
   - Some show invented "LeMan Cave" signage. Batch 20 shows a fake building exterior that's only for visuals.
   - Avoid images with Pac-Man or other copyrighted characters.
+  - Real venue photos (from 24 Nov 2026) replace them page by page, with keyword file names (e.g. `table-football-norwich.webp`) and descriptive alt text. Blurred-edge shots are used as featured (hero) images. Games showing on the lounge screen in real photos don't need blurring (owner, 24 Nov 2026).
 
 ## Open items (as of 27 Oct 2026)
 - **`[CONFIRM]` items**:
