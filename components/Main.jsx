@@ -39,11 +39,11 @@ export default class Main extends React.Component {
       };
     });
     const SL = [
+      ['/images/christmas-party-norwich-race-car-christmas-tree.webp', 'A red GT race car beside a lit Christmas tree and presents at a snowy pit lane', 'CHRISTMAS PARTIES · DEC WEEKNIGHTS & SATURDAYS', 'Festive', 'grand prix.', 'Whole-cave Christmas parties with pizza* and Bring Your Own drinks for the team — from £45 per person, weeknights through December.', 'Book Christmas', '/christmas-party-norwich', 'Christmas planner', '/guides/christmas-party-ideas-norwich', '70% 50%'],
       ['/images/scalextric-norwich-group-racing-wide.webp', 'Families racing on the 160ft digital Scalextric at Le Man Cave, Norwich', 'NORWICH’S MOTORSPORT VENUE · BUILT FOR EVERYONE', 'Lights out.', 'Game on.', 'A real motorsport venue that’s brilliant for everyone. Petrolheads get a full-motion simulator and a 160ft Scalextric circuit. Everyone else gets big-screen gaming, pool, pinball, pizza* and a cracking night out.', 'Book your visit', '/book', 'Plan an event', '/parties-and-events-norwich'],
       ['/images/racing-simulator-norwich-motion-sim-cockpit.webp', 'Driver on the motion racing simulator at Le Man Cave, Norwich, with friends watching', 'PRO RACING SIMULATORS · 4K OR VR', 'Full motion.', 'Real race kit.', '4 DOF motion, a direct-drive wheel, real pedals, a ‘bazooka’ H-pattern shifter and an active harness. Book the sim room by the hour from £80 for up to 2 people.', 'Book a sim session', '/book', 'See the simulators', '/attractions/racing-simulator-norwich', '70% 50%'],
       ['/images/scalextric-party-norwich-group-racing.webp', 'A party group gathered round the digital Scalextric at Le Man Cave', 'BIRTHDAYS · STAG & HEN · TEAM DAYS', 'Parties with', 'pole position.', 'Take over the whole cave for up to 50 people, with activities for 34 players at once — racing, games, pizza* and your own drinks, from £40 per person.', 'Book a party', '/book', 'Parties & events', '/parties-and-events-norwich'],
       ['/images/games-console-lounge-norwich-100-inch-screen.webp', 'Two players racing Mario Kart with wheel controllers on the 100-inch screen', 'NOT A PETROLHEAD? PERFECT.', 'Not into cars?', 'Come anyway.', 'Games consoles on big-screen TVs, pool, darts, pinball, air hockey and arcade classics. No licence, no experience, no age limits on the experiences**.', 'See all attractions', '/attractions', 'Why it works for you', '/who-its-for/fun-group-activities-norwich'],
-      ['/images/christmas-party-norwich-race-car-christmas-tree.webp', 'A red GT race car beside a lit Christmas tree and presents at a snowy pit lane', 'CHRISTMAS PARTIES · DEC WEEKNIGHTS & SATURDAYS', 'Festive', 'grand prix.', 'Whole-cave Christmas parties with pizza* and Bring Your Own drinks for the team — from £45 per person, weeknights through December.', 'Book Christmas', '/christmas-party-norwich', 'Christmas planner', '/guides/christmas-party-ideas-norwich', '70% 50%'],
       ['/images/motorsport-memorabilia-norwich-corvette-racing.webp', 'Corvette Racing C6R rear panel with glowing tail lights, part of the memorabilia at Le Man Cave', 'MOTORSPORT MEMORABILIA · ON EVERY WALL', 'A museum', 'you can race in.', 'Le Mans memorabilia, race suits, a Corvette Racing C6R panel and neon & vintage signs throughout. Photos welcome.', 'Book your visit', '/book', 'See the collection', '/attractions/motorsport-memorabilia-norwich']
     ];
     const si = this.state.slide % SL.length;
@@ -82,12 +82,12 @@ export default class Main extends React.Component {
       glow: 'rgba(' + r + ',' + gg + ',' + b + ',' + g + ')',
       types,
       gallery: [
-        { label: 'Slot cars racing past cheering friends', src: '/images/df355e4462e1a0cc01c740047878ecdf.webp', style: tile('') },
-        { label: 'Race suit and helmets on display', src: '/images/b1f31c249d74acb3cc85257e6956012e.webp', style: tile('grid-row: span 2; ') },
-        { label: 'Group lifting a trophy on race night', src: '/images/b9fe66c760257f986f787f1fb05c7ef2.webp', style: tile('') },
-        { label: 'Wide view of the venue with the neon on', src: '/images/d8088e3823809fc023e85fd23c0ce0d9.webp', style: tile('grid-column: span 2; ') },
-        { label: 'Close-up of a glowing pinball playfield', src: '/images/087eb617edc639f42d522945ddefd32b.webp', style: tile('') },
-        { label: 'The classic Mini sofa in the lounge', src: '/images/d76d56e086301523c4971afc4f5dfe57.webp', style: tile('') }
+        { label: 'Families racing on the digital Scalextric', src: '/images/scalextric-norwich-families-racing.webp', style: tile('') },
+        { label: 'Vintage Super Shell petrol pump', src: '/images/vintage-shell-pump-le-man-cave-norwich.webp', style: tile('grid-row: span 2; ') },
+        { label: 'Le Mans GTE race car panel on the wall', src: '/images/le-mans-gte-panel-le-man-cave-norwich.webp', style: tile('') },
+        { label: 'Lambretta neon and vintage signs on the timber wall', src: '/images/neon-vintage-signs-le-man-cave-norwich.webp', style: tile('grid-column: span 2; ') },
+        { label: 'Rally model cars in the display cabinet', src: '/images/rally-model-cars-le-man-cave-norwich.webp', style: tile('') },
+        { label: 'Corvette Racing C6R rear panel', src: '/images/corvette-racing-panel-le-man-cave-norwich.webp', style: tile('') }
       ],
       brands: [
         { name: 'Race Car Graphics UK', href: 'https://racecargraphics.uk/', logo: '/images/af46cb048a3538fff3ada1542e3a6666.png' },
@@ -96,14 +96,14 @@ export default class Main extends React.Component {
         { name: 'Auto Opulence', href: 'https://autoopulence.co.uk/', logo: '/images/30d005beeac001ad9a9af4176bcf0bb6.svg' }
       ],
       games: [
-        { tag: '100IN SCREEN', name: 'Games Console Lounge', href: '/attractions/gaming-lounge-norwich', copy: 'Console games on a 100-inch screen, from a sofa built out of a converted classic Mini.', photo: '/images/9dc6e1e4d0002cd48daa24a834848cbd.webp', alt: 'classic Mini sofa facing the big screen' },
+        { tag: '100IN SCREEN', name: 'Games Console Lounge', href: '/attractions/gaming-lounge-norwich', copy: 'Console games on a 100-inch screen, from a sofa built out of a converted classic Mini.', photo: '/images/games-console-lounge-norwich-mini-sofa-screen.webp', alt: 'The converted classic Mini sofa facing the 100-inch screen' },
         { tag: 'FLIPPERS', name: 'Digital Pinball', href: '/attractions/digital-pinball-norwich', copy: 'Full-size digital pinball with all the lights, sound and multiball chaos.', photo: '/images/61be8e75bbfd3651047d20e5a346ffd3.webp', alt: 'Hands on the flippers of a glowing pinball machine' },
-        { tag: 'CUE UP', name: '9ft Pool / Billiards', href: '/attractions/pool-table-norwich', copy: 'A 9ft championship-grade slate pool / billiards table for the sharp shooters in the group. Cues provided.', photo: '/images/44da4bb4e9c2f25471b7f35352440547.webp', alt: 'View along the cue on the 9ft pool / billiards table' },
-        { tag: 'FAST HANDS', name: 'Air Hockey', href: '/attractions/air-hockey-norwich', copy: 'A commercial, full-size table. Quick, loud and fiercely competitive. Best of three?', photo: '/images/4b14d96bd1414bd7eaf55fc8afca2612.webp', alt: 'Two players mid-rally at air hockey' },
-        { tag: 'TABLE TOP', name: 'Table Football', href: '/attractions/table-football-norwich', copy: 'Classic foosball for settling office rivalries — no spinning.', photo: '/images/acb9b99ec403334bf4a49d12c7cc7fb9.webp', alt: 'Close-up of a table football game' },
+        { tag: 'CUE UP', name: '9ft Pool / Billiards', href: '/attractions/pool-table-norwich', copy: 'A 9ft championship-grade slate pool / billiards table for the sharp shooters in the group. Cues provided.', photo: '/images/pool-billiards-norwich-racked-balls-red-cloth.webp', alt: 'Racked balls on the red cloth of the 9ft pool / billiards table' },
+        { tag: 'FAST HANDS', name: 'Air Hockey', href: '/attractions/air-hockey-norwich', copy: 'A commercial, full-size table. Quick, loud and fiercely competitive. Best of three?', photo: '/images/air-hockey-norwich-commercial-table.webp', alt: 'The full-size commercial air hockey table with blue edge lighting' },
+        { tag: 'TABLE TOP', name: 'Table Football', href: '/attractions/table-football-norwich', copy: 'Classic foosball for settling office rivalries — no spinning.', photo: '/images/table-football-norwich-foosball-players.webp', alt: 'Red and white players lined up on the table football table' },
         { tag: 'PLAYER 2', name: 'Two-Player Arcade', href: '/attractions/arcade-norwich', copy: 'Side-by-side retro arcade classics for head-to-head high scores.', photo: '/images/30c5e67b4cd608a17bdb32e677371fd2.webp', alt: 'Two friends playing a retro arcade cabinet' },
-        { tag: 'AUTO SCORING', name: 'Darts', href: '/attractions/darts-norwich', copy: 'Darts with fully automated scoring, so nobody argues over the maths.', photo: '/images/7c1e54e0a4d7ce95deabcd2d695065d8.webp', alt: 'Darts board with automated scoring' },
-        { tag: 'PURELY FOR FUN', name: 'No-Stakes Poker', href: '/attractions/poker-table-norwich', copy: 'An eight-seat poker table with no real money, so nobody leaves on a downer.', photo: '/images/d76d56e086301523c4971afc4f5dfe57.webp', alt: 'The lounge at Le Man Cave' }
+        { tag: 'AUTO SCORING', name: 'Darts', href: '/attractions/darts-norwich', copy: 'Darts with fully automated scoring, so nobody argues over the maths.', photo: '/images/darts-norwich-automatic-scoring-board.webp', alt: 'Winmau dartboard on the red darts wall' },
+        { tag: 'PURELY FOR FUN', name: 'No-Stakes Poker', href: '/attractions/poker-table-norwich', copy: 'An eight-seat poker table with no real money, so nobody leaves on a downer.', photo: '/images/no-stakes-poker-norwich-eight-seat-table.webp', alt: 'The eight-seat no-stakes poker table with a hand dealt' }
       ],
       offers: [
         { num: '01', title: 'Birthdays', copy: 'Race nights for any age. Bring the cake, we’ll bring the chequered flag.' },
@@ -192,7 +192,7 @@ export default class Main extends React.Component {
 </div>
 <div style={css("display: grid; grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); gap: 20px")}>
 <A href="/attractions/racing-simulator-norwich" style={css("position: relative; min-height: 560px; border-radius: 10px; overflow: hidden; background: #131316; display: flex; flex-direction: column; justify-content: flex-end; text-decoration: none")}>
-<img width="1800" height="1200" src="/images/87af79a958a3ccd899908f5b2bb8b25b.webp" alt="Driver on the pro racing simulator at Le Man Cave, indoor activities Norwich" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} />
+<img width="1400" height="1112" src="/images/indoor-activities-norwich-static-racing-simulator.webp" alt="Driver on the static racing simulator at Le Man Cave, indoor activities Norwich" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} />
 <span aria-hidden="true" style={css("position: absolute; inset: 0; background: linear-gradient(to top, rgba(9,9,11,0.97) 0%, rgba(9,9,11,0.6) 45%, rgba(9,9,11,0.1) 75%)")}></span>
 <span style={css("position: relative; padding: 40px; display: flex; flex-direction: column; gap: 14px")}>
 <span style={css(`align-self: flex-start; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: #09090B; background: ${V.accent}; padding: 6px 10px; border-radius: 3px`)}>{"PETROLHEADS"}</span>
@@ -202,7 +202,7 @@ export default class Main extends React.Component {
 </span>
 </A>
 <A href="/attractions/arcade-games-norwich" style={css("position: relative; min-height: 560px; border-radius: 10px; overflow: hidden; background: #131316; display: flex; flex-direction: column; justify-content: flex-end; text-decoration: none")}>
-<img width="1200" height="600" src="/images/30c5e67b4cd608a17bdb32e677371fd2.webp" alt="Two friends laughing as they play a retro arcade game" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} />
+<img width="1400" height="1110" src="/images/indoor-activities-norwich-mario-kart-games-lounge.webp" alt="A family racing Mario Kart from the classic Mini sofa, table football and darts behind" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} />
 <span aria-hidden="true" style={css("position: absolute; inset: 0; background: linear-gradient(to top, rgba(9,9,11,0.97) 0%, rgba(9,9,11,0.6) 45%, rgba(9,9,11,0.1) 75%)")}></span>
 <span style={css("position: relative; padding: 40px; display: flex; flex-direction: column; gap: 14px")}>
 <span style={css(`align-self: flex-start; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: #09090B; background: ${V.amber}; padding: 6px 10px; border-radius: 3px`)}>{"EVERYONE ELSE"}</span>
@@ -237,7 +237,7 @@ export default class Main extends React.Component {
 </div>
 <div style={css("display: flex; flex-wrap: wrap; gap: 20px")}>
 <article style={css("flex: 2 1 560px; min-height: 540px; position: relative; border-radius: 8px; overflow: hidden; background: #131316; border: 1px solid #232328; display: flex; flex-direction: column; justify-content: flex-end")}>
-<img width="1800" height="1200" src="/images/87af79a958a3ccd899908f5b2bb8b25b.webp" alt="Driver gripping the wheel of the pro racing simulator, one of the indoor activities Norwich groups book" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%")} />
+<img width="1400" height="987" src="/images/racing-simulators-norwich-motion-sim-driver.webp" alt="Driver at the wheel of the motion racing simulator, one of the indoor activities Norwich groups book" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%")} />
 <div aria-hidden="true" style={css("position: absolute; inset: 0; background: linear-gradient(to top, rgba(9,9,11,0.96) 0%, rgba(9,9,11,0.75) 40%, rgba(9,9,11,0.1) 75%)")}></div>
 <div style={css("position: relative; padding: 36px")}>
 <div style={css(`display: inline-block; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #09090B; background: ${V.amber}; padding: 6px 10px; border-radius: 3px`)}>{"FLAGSHIP"}</div>
@@ -254,7 +254,7 @@ export default class Main extends React.Component {
 </div>
 </article>
 <article style={css("flex: 1 1 340px; min-height: 540px; position: relative; border-radius: 8px; overflow: hidden; background: #131316; border: 1px solid #232328; display: flex; flex-direction: column; justify-content: flex-end")}>
-<img width="1200" height="1500" src="/images/a4d76c894b274fea3d423afb9eae94ae.webp" alt="Digital Scalextric cars racing through a bend under red light" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} />
+<img width="1400" height="934" src="/images/digital-scalextric-norwich-goodyear-bridge-straight.webp" alt="Slot cars on the straight under the Goodyear bridge on the digital Scalextric" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} />
 <div aria-hidden="true" style={css("position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(9,9,11,0.85) 0%, rgba(9,9,11,0.1) 35%, rgba(9,9,11,0.1) 50%, rgba(9,9,11,0.95) 85%)")}></div>
 <div style={css(`position: absolute; top: 90px; left: 36px; right: 36px; font-family: 'JetBrains Mono', monospace; color: ${V.amber}`)}>
 <div style={css("font-size: 12px; letter-spacing: 0.14em; color: #71717A")}>{"FASTEST LAP \u00b7 TODAY"}</div>
@@ -267,7 +267,7 @@ export default class Main extends React.Component {
 </div>
 </article>
 <article style={css("flex: 1 1 100%; min-height: 280px; border-radius: 8px; overflow: hidden; background: #131316; border: 1px solid #232328; display: flex; flex-wrap: wrap")}>
-<div style={css("flex: 1 1 420px; min-height: 280px; position: relative; background: #18181C")}><img width="1600" height="800" src="/images/80e1b5cd2743753b0c06cbf34ef30502.webp" alt="Rider leaning into a corner on the classic 1990s motorcycle simulator" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} /></div>
+<div style={css("flex: 1 1 420px; min-height: 280px; position: relative; background: #18181C")}><img width="1352" height="1004" src="/images/motorbike-simulator-norwich-rider-superbikes.webp" alt="Rider leaning into a bend on the Super Bikes motorbike simulator" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} /></div>
 <div style={css("flex: 1 1 420px; padding: 40px; display: flex; flex-direction: column; justify-content: center; gap: 12px")}>
 <div style={css(`font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: ${V.amber}`)}>{"RETRO \u00b7 TWO WHEELS"}</div>
 <h3 style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 44px; line-height: 0.95; color: #FFFFFF; text-transform: uppercase")}>{"Classic Motorcycle Sim"}</h3>
@@ -338,7 +338,7 @@ export default class Main extends React.Component {
 <section id="venue" className="lc-section" aria-labelledby="venue-h" style={css("max-width: 1360px; margin: 0 auto; padding: 120px 40px")}>
 <div style={css("display: flex; flex-wrap: wrap; gap: 64px; align-items: stretch")}>
 <div style={css("flex: 1 1 520px; min-height: 520px; position: relative; border-radius: 8px; overflow: hidden; background: #131316; border: 1px solid #232328")}>
-<img width="1448" height="1086" src="/images/4a552ab4df1d6b27548d7bd0e68e6d3e.webp" alt="Inside Le Man Cave: race suits and helmets on the wall, neon signs, bar and pool / billiards table" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} />
+<img width="1600" height="1068" src="/images/inside-le-man-cave-norwich-games-room.webp" alt="Inside Le Man Cave: friends at the pool / billiards table, race suits on the wall and the Scalextric behind" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} />
 <div style={css("position: absolute; left: 24px; bottom: 24px; background: rgba(9,9,11,0.85); border: 1px solid #27272A; border-radius: 6px; padding: 18px 22px; backdrop-filter: blur(6px)")}>
 <div style={css("font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: #71717A")}>{"ON THE WALLS"}</div>
 <div style={css("font-size: 16px; color: #E4E4E7; margin-top: 6px")}>{"Race suits \u00b7 helmets \u00b7 signed prints \u00b7 neon"}</div>
@@ -426,7 +426,7 @@ export default class Main extends React.Component {
 </div>
 <div className="lc-gallery" style={css("display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); grid-auto-rows: 220px; gap: 12px")}>
 <figure style={css("margin: 0; grid-column: span 2; grid-row: span 2; border-radius: 8px; overflow: hidden; position: relative; background: #131316")}>
-<img width="1200" height="600" src="/images/4b14d96bd1414bd7eaf55fc8afca2612.webp" alt="Friends laughing over a game of air hockey" style={css("width: 100%; height: 100%; object-fit: cover; display: block")} />
+<img width="1000" height="706" src="/images/air-hockey-norwich-blue-light-table.webp" alt="The commercial air hockey table glowing blue, mallet ready" style={css("width: 100%; height: 100%; object-fit: cover; display: block")} />
 </figure>
 {(V.gallery || []).map((g, $index) => (<React.Fragment key={$index}>
 <figure style={css(g.style)}>

@@ -351,6 +351,14 @@
 800,
 241
 ],
+"/images/air-hockey-norwich-blue-light-table.webp": [
+1000,
+706
+],
+"/images/air-hockey-norwich-commercial-table.webp": [
+1000,
+534
+],
 "/images/air-hockey-table-norwich-full-size.webp": [
 1536,
 1024
@@ -411,6 +419,10 @@
 1672,
 941
 ],
+"/images/corvette-racing-panel-le-man-cave-norwich.webp": [
+1000,
+712
+],
 "/images/d0527a3883ecd970e50b857071a89b0f.webp": [
 1920,
 1080
@@ -439,6 +451,10 @@
 1920,
 1282
 ],
+"/images/darts-norwich-automatic-scoring-board.webp": [
+1000,
+945
+],
 "/images/darts-norwich-oche-le-man-cave.webp": [
 1367,
 2048
@@ -454,6 +470,10 @@
 "/images/digital-scalextric-norwich-copper-track-bend.webp": [
 1920,
 1282
+],
+"/images/digital-scalextric-norwich-goodyear-bridge-straight.webp": [
+1400,
+934
 ],
 "/images/digital-scalextric-norwich-goodyear-bridge.webp": [
 1920,
@@ -539,9 +559,29 @@
 1920,
 1282
 ],
+"/images/games-console-lounge-norwich-mini-sofa-screen.webp": [
+1000,
+534
+],
+"/images/indoor-activities-norwich-mario-kart-games-lounge.webp": [
+1400,
+1110
+],
+"/images/indoor-activities-norwich-static-racing-simulator.webp": [
+1400,
+1112
+],
+"/images/inside-le-man-cave-norwich-games-room.webp": [
+1600,
+1068
+],
 "/images/lambretta-neon-sign-vintage-signs-le-man-cave-norwich.webp": [
 1920,
 1283
+],
+"/images/le-mans-gte-panel-le-man-cave-norwich.webp": [
+1000,
+751
 ],
 "/images/le-mans-gte-race-car-panel-motorsport-memorabilia-norwich.webp": [
 1920,
@@ -567,6 +607,10 @@
 640,
 427
 ],
+"/images/motorbike-simulator-norwich-rider-superbikes.webp": [
+1352,
+1004
+],
 "/images/motorbike-simulator-norwich-superbikes-rider.webp": [
 1536,
 1024
@@ -579,9 +623,21 @@
 1920,
 1282
 ],
+"/images/neon-vintage-signs-le-man-cave-norwich.webp": [
+1400,
+935
+],
+"/images/no-stakes-poker-norwich-eight-seat-table.webp": [
+1000,
+583
+],
 "/images/poker-table-norwich-8-seats.webp": [
 1536,
 1024
+],
+"/images/pool-billiards-norwich-racked-balls-red-cloth.webp": [
+1000,
+572
 ],
 "/images/pool-billiards-table-norwich-game-in-play.webp": [
 1920,
@@ -611,9 +667,21 @@
 1920,
 1282
 ],
+"/images/racing-simulators-norwich-motion-sim-driver.webp": [
+1400,
+987
+],
+"/images/rally-model-cars-le-man-cave-norwich.webp": [
+1000,
+668
+],
 "/images/rally-model-cars-motorsport-memorabilia-norwich.webp": [
 1920,
 1282
+],
+"/images/scalextric-norwich-families-racing.webp": [
+1000,
+668
 ],
 "/images/scalextric-norwich-group-racing-wide.webp": [
 1920,
@@ -635,6 +703,10 @@
 1920,
 1282
 ],
+"/images/table-football-norwich-foosball-players.webp": [
+1000,
+667
+],
 "/images/table-football-norwich.webp": [
 1920,
 1282
@@ -650,5 +722,9 @@
 "/images/vintage-shell-petrol-pump-memorabilia-norwich.webp": [
 1367,
 2048
+],
+"/images/vintage-shell-pump-le-man-cave-norwich.webp": [
+900,
+1348
 ]
 }
