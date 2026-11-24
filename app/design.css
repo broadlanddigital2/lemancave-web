@@ -21,6 +21,11 @@ body{margin:0}
 .lc-gal{grid-template-columns:repeat(2,minmax(0,1fr)) !important}
 }
 .lc input,.lc textarea,.lc select{font:inherit}
+@keyframes lcUpA{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@keyframes lcUpB{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@keyframes lcFillA{from{background-size:0% 100%}to{background-size:100% 100%}}
+@keyframes lcFillB{from{background-size:0% 100%}to{background-size:100% 100%}}
+@media (prefers-reduced-motion: reduce){.lc-hero-img{transition:opacity .5s ease !important;transform:none !important;filter:none !important}.lc-hero-anim{animation:none !important}}
 @media (max-width:760px){
 .lc-nav-links{display:none !important}
 .lc-gallery{grid-template-columns:repeat(2,minmax(0,1fr)) !important;grid-auto-rows:160px !important}

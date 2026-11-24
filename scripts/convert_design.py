@@ -407,10 +407,10 @@ if __name__ == '__main__':
             pages[name] = {'component': name, 'slug': None, 'title': title}
     json.dump(sizes, open(os.path.join(OUT, 'lib', 'image-sizes.json'), 'w'), indent=0, sort_keys=True)
     json.dump({'pages': pages, 'routes': ROUTES}, open(os.path.join(OUT, 'scripts', 'pages.json'), 'w'), indent=1)
-    # global css: dedupe rule blocks
+    # global css: dedupe rule blocks (@media and @keyframes blocks are kept whole)
     seen, lines = set(), []
     for c in all_css:
-        for blk in re.findall(r'@media[^{]*\{(?:[^{}]*\{[^{}]*\})*[^{}]*\}|[^{}@]+\{[^{}]*\}', c):
+        for blk in re.findall(r'@(?:media|keyframes)[^{]*\{(?:[^{}]*\{[^{}]*\})*[^{}]*\}|[^{}@]+\{[^{}]*\}', c):
             k = re.sub(r'\s+', ' ', blk.strip())
             if k and k not in seen: seen.add(k); lines.append(blk.strip())
     open(os.path.join(OUT, 'app', 'design.css'), 'w').write('/* Collected from the design canvas pages */\n' + '\n'.join(lines) + '\n')
