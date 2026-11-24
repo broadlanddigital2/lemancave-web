@@ -254,7 +254,7 @@ export default class Main extends React.Component {
 </div>
 </article>
 <article style={css("flex: 1 1 340px; min-height: 540px; position: relative; border-radius: 8px; overflow: hidden; background: #131316; border: 1px solid #232328; display: flex; flex-direction: column; justify-content: flex-end")}>
-<img width="1400" height="934" src="/images/digital-scalextric-norwich-goodyear-bridge-straight.webp" alt="Slot cars on the straight under the Goodyear bridge on the digital Scalextric" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} />
+<img width="1200" height="1508" src="/images/digital-scalextric-norwich-slot-cars-shell-bend.webp" alt="Mini, SEAT, Jaguar and Audi slot cars lined up on the grass beside the digital Scalextric track" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} />
 <div aria-hidden="true" style={css("position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(9,9,11,0.85) 0%, rgba(9,9,11,0.1) 35%, rgba(9,9,11,0.1) 50%, rgba(9,9,11,0.95) 85%)")}></div>
 <div style={css(`position: absolute; top: 90px; left: 36px; right: 36px; font-family: 'JetBrains Mono', monospace; color: ${V.amber}`)}>
 <div style={css("font-size: 12px; letter-spacing: 0.14em; color: #71717A")}>{"FASTEST LAP \u00b7 TODAY"}</div>
