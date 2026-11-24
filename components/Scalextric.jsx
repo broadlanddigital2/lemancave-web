@@ -59,7 +59,7 @@ export default class Scalextric extends React.Component {
 </nav>
 </header>
 <section aria-labelledby="sx-h" style={css("position: relative; min-height: 720px; display: flex; align-items: flex-end; background: #0E0E11; overflow: hidden")}>
-<img width="1600" height="1140" src="/images/c2a615d5274599ccc19ef695052deaba.webp" alt="A group gathered round the Scalextric track Norwich groups race on, mid-race" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 60% 50%")} />
+<img width="1920" height="1282" src="/images/digital-scalextric-norwich-track-bridge.webp" alt="The 160ft digital Scalextric track Norwich groups race on, with its stone bridge, river and pit buildings" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 60% 50%")} />
 <div aria-hidden="true" style={css("position: absolute; inset: 0; background: linear-gradient(90deg, rgba(9,9,11,0.94) 0%, rgba(9,9,11,0.75) 40%, rgba(9,9,11,0.2) 72%, rgba(9,9,11,0.1) 100%)")}></div>
 <div aria-hidden="true" style={css("position: absolute; left: 0; right: 0; bottom: 0; height: 300px; background: linear-gradient(to top, #09090B 10%, transparent)")}></div>
 <div className="lc-section" style={css("position: relative; max-width: 1360px; width: 100%; margin: 0 auto; padding: 140px 40px 64px; box-sizing: border-box")}>
@@ -129,7 +129,7 @@ export default class Scalextric extends React.Component {
 <h2 id="feat-h" style={css("margin: 0 0 56px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 84px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Proper race"}<br />{"kit, small scale"}</h2>
 <div style={css("display: flex; flex-wrap: wrap; gap: 20px")}>
 <div style={css("flex: 1.3 1 480px; min-height: 520px; position: relative; border-radius: 8px; overflow: hidden; background: #131316; border: 1px solid #232328")}>
-<img width="1200" height="1500" src="/images/a4d76c894b274fea3d423afb9eae94ae.webp" alt="Digital Scalextric cars racing through a bend under red light" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} />
+<img width="1920" height="1282" src="/images/digital-scalextric-norwich-copper-track-bend.webp" alt="Copper-taped bend and stone bridge on the digital Scalextric layout" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} />
 </div>
 <div style={css("flex: 1 1 420px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; background: #27272A; border: 1px solid #27272A; border-radius: 8px; overflow: hidden")}>
 <div style={css("background: #0F0F12; padding: 32px 28px; display: flex; flex-direction: column; gap: 12px")}>
@@ -184,8 +184,8 @@ export default class Scalextric extends React.Component {
 </section>
 <section className="lc-section" aria-label="Scalextric photos" style={css("max-width: 1360px; margin: 0 auto; padding: 0 40px 120px")}>
 <div style={css("display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px")}>
-<div style={css("height: 300px; border-radius: 8px; overflow: hidden; background: #131316")}><img width="900" height="640" src="/images/df355e4462e1a0cc01c740047878ecdf.webp" alt="Slot cars racing past cheering friends" style={css("width: 100%; height: 100%; object-fit: cover; display: block")} /></div>
-<div style={css("height: 300px; border-radius: 8px; overflow: hidden; background: #131316")}><img width="900" height="900" src="/images/a0e87d9be4bcb5246b3cc004a7b3cf86.webp" alt="Slot cars lined up in the pit lane" style={css("width: 100%; height: 100%; object-fit: cover; display: block")} /></div>
+<div style={css("height: 300px; border-radius: 8px; overflow: hidden; background: #131316")}><img width="1920" height="1282" src="/images/scalextric-party-norwich-group-racing.webp" alt="Families racing on the digital Scalextric at a Le Man Cave party" style={css("width: 100%; height: 100%; object-fit: cover; display: block")} /></div>
+<div style={css("height: 300px; border-radius: 8px; overflow: hidden; background: #131316")}><img width="1367" height="2048" src="/images/scalextric-slot-cars-norwich-mini-cooper.webp" alt="Mini, SEAT and Jaguar slot cars lined up on the grass verge beside the track" style={css("width: 100%; height: 100%; object-fit: cover; display: block")} /></div>
 <div style={css("height: 300px; border-radius: 8px; overflow: hidden; background: #131316")}><img width="900" height="900" src="/images/002cef838ff9172727fdab6d097cc372.webp" alt="Live timing leaderboard screen" style={css("width: 100%; height: 100%; object-fit: cover; display: block")} /></div>
 </div>
 </section>

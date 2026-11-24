@@ -80,7 +80,7 @@ export default class Simulator extends React.Component {
 </nav>
 </header>
 <section aria-labelledby="sim-h" style={css("position: relative; min-height: 720px; display: flex; align-items: flex-end; background: #0E0E11; overflow: hidden")}>
-<img width="1800" height="1200" src="/images/87af79a958a3ccd899908f5b2bb8b25b.webp" alt="Driver gripping the wheel of the pro racing simulator Norwich drivers book, the screen showing a mountain circuit" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 60% 40%")} />
+<img width="1920" height="1282" src="/images/racing-simulator-norwich-motion-sim.webp" alt="Driver at the wheel of the motion racing simulator Norwich drivers book, with harness, shifter and 4K screen" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 60% 40%")} />
 <div aria-hidden="true" style={css("position: absolute; inset: 0; background: linear-gradient(90deg, rgba(9,9,11,0.94) 0%, rgba(9,9,11,0.75) 40%, rgba(9,9,11,0.2) 72%, rgba(9,9,11,0.1) 100%)")}></div>
 <div aria-hidden="true" style={css("position: absolute; left: 0; right: 0; bottom: 0; height: 300px; background: linear-gradient(to top, #09090B 10%, transparent)")}></div>
 <div className="lc-section" style={css("position: relative; max-width: 1360px; width: 100%; margin: 0 auto; padding: 140px 40px 64px; box-sizing: border-box")}>
@@ -135,7 +135,7 @@ export default class Simulator extends React.Component {
 <span style={css("font-size: 14px; font-weight: 600; letter-spacing: 0.06em; padding: 10px 16px; border: 1px solid #3F3F46; border-radius: 999px; color: #E4E4E7")}>{"RALLY STAGES"}</span>
 </div>
 </div>
-<div style={css("flex: 1 1 520px; min-height: 480px; position: relative; border-radius: 8px; overflow: hidden; background: #131316; border: 1px solid #232328")}><img width="1536" height="1024" src="/images/38659ed2c56c5d457e12206f390b3c66.webp" alt="Driver racing on the pro simulator in the sim lounge" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} /></div>
+<div style={css("flex: 1 1 520px; min-height: 480px; position: relative; border-radius: 8px; overflow: hidden; background: #131316; border: 1px solid #232328")}><img width="1920" height="1282" src="/images/sim-room-norwich-motion-and-static-simulators.webp" alt="Friends watching a driver on the motion sim, with the static sim behind, in the Le Man Cave sim room" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} /></div>
 </div>
 </section>
 <section aria-labelledby="feat-h" style={css("background: #0F0F12; border-top: 1px solid #1F1F23; border-bottom: 1px solid #1F1F23")}>
