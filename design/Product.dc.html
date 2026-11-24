@@ -179,22 +179,22 @@ class Component extends DCLogic {
     const amber = this.props.amber ?? '#FFC233';
     const B = (id) => '/_blob/' + id;
     const IMG = {
-      ps5: B('9dc6e1e4d0002cd48daa24a834848cbd'), lounge: B('d76d56e086301523c4971afc4f5dfe57'),
+      ps5: '/images/games-console-lounge-norwich-100-inch-screen.webp', lounge: B('d76d56e086301523c4971afc4f5dfe57'),
       pinball: B('61be8e75bbfd3651047d20e5a346ffd3'), pinball2: B('087eb617edc639f42d522945ddefd32b'),
-      pool: B('44da4bb4e9c2f25471b7f35352440547'), airhockey: B('4b14d96bd1414bd7eaf55fc8afca2612'),
+      pool: B('44da4bb4e9c2f25471b7f35352440547'), airhockey: '/images/air-hockey-table-norwich.webp',
       football: B('acb9b99ec403334bf4a49d12c7cc7fb9'), arcade: B('30c5e67b4cd608a17bdb32e677371fd2'),
-      moto: B('80e1b5cd2743753b0c06cbf34ef30502'), sim: B('87af79a958a3ccd899908f5b2bb8b25b'),
-      scalextric: B('df355e4462e1a0cc01c740047878ecdf'), venue: B('4a552ab4df1d6b27548d7bd0e68e6d3e'), suits: B('b1f31c249d74acb3cc85257e6956012e'), wide: B('d8088e3823809fc023e85fd23c0ce0d9')
+      moto: B('80e1b5cd2743753b0c06cbf34ef30502'), sim: '/images/racing-simulator-norwich-motion-sim.webp',
+      scalextric: '/images/digital-scalextric-norwich-slot-car.webp', venue: B('4a552ab4df1d6b27548d7bd0e68e6d3e'), suits: B('b1f31c249d74acb3cc85257e6956012e'), wide: B('d8088e3823809fc023e85fd23c0ce0d9')
     };
     const games = { parentHref: 'Games.dc.html', parentLabel: 'GAMES & ARCADE', parentCta: 'All games & arcade', navActive: 'Games.dc.html', relatedTitle: 'More to play' };
     const P = {
       ps5: { ...games, file: 'PS5.dc.html', crumb: 'GAMES CONSOLE LOUNGE', name: 'Games Console Lounge', tag: '100IN SCREEN', kicker: 'GAMES CONSOLES · 100IN SCREEN', line1: 'Big screen.', line2: 'Bigger rivalries.',
         intro: 'The gaming lounge Norwich groups head for: games consoles on a 100-inch big screen, played from a sofa built out of a converted classic Mini.',
-        hero: IMG.ps5, heroAlt: 'Friends on the classic Mini sofa playing a racing game on the 100-inch screen', cta: 'Book the lounge',
+        hero: IMG.ps5, heroAlt: 'Two players racing with wheel controllers on the 100-inch screen in the Games Console Lounge, Norwich', cta: 'Book the lounge',
         specs: [['SCREEN', '100in'], ['CONSOLE', 'Nintendo Wii, PlayStation or Steam gaming PCs'], ['SEATING', 'Classic Mini sofa, oil drum chairs & Alfa Romeo sofa'], ['INCLUDED', 'With venue hire']],
         detailTitle: 'The best seat in the house', detail: 'Our gaming lounge in Norwich is built for rivalry. Sink into our converted classic Mini sofa, an oil drum chair or the Top Gear-style Alfa Romeo sofa and take on your mates on a wall-sized screen. Racers, sports and party games — perfect between sim sessions or as the main event.',
         points: ['100-inch big screen', 'Nintendo Wii, PlayStation or Steam gaming PCs', 'Converted classic Mini sofa', 'Oil drum chairs', 'Top Gear-style Alfa Romeo sofa', 'Included with venue hire'],
-        detailImg: B('e99e1654859658bbd21c96f616aa54ea'), detailAlt: 'The classic Mini sofa in the games lounge', ctaTitle: 'Controllers ready.',
+        detailImg: '/images/games-console-lounge-norwich-classic-mini-sofa.webp', detailAlt: 'The converted classic Mini sofa facing the 100-inch screen in the Games Console Lounge, Norwich', ctaTitle: 'Controllers ready.',
         faqs: [['Which games do you have?', 'We’ve stuck with the classic Mario Kart, complete with four wheel controllers. Many other console games are available, so get in touch before your booking and we’ll accommodate any special requests.'], ['Is the games console lounge included with venue hire?', 'Yes — everything is included with exclusive venue hire.'], ['Can I bring my own games?', 'No — games are provided, so just bring your skills.']] },
       pinball: { ...games, file: 'Pinball.dc.html', crumb: 'DIGITAL PINBALL', name: 'Digital Pinball', tag: 'FULL-SIZE CABINET', kicker: 'FULL-SIZE CABINET', line1: 'Tilt at your', line2: 'own risk.',
         intro: 'One full-size digital pinball machine — all the lights, sound and multiball chaos of classic pinball, with a digital twist.',
@@ -206,11 +206,11 @@ class Component extends DCLogic {
         faqs: [['How many pinball machines are there?', 'We have one full-size digital pinball machine.'], ['Is it included with venue hire?', 'Yes — everything is included with exclusive venue hire.'], ['Can kids play?', 'No age limits** — everyone can play.']] },
       pool: { ...games, file: 'Pool.dc.html', crumb: 'POOL / BILLIARDS TABLE', name: 'Pool / Billiards Table', tag: '9FT SLATE', kicker: '9FT CHAMPIONSHIP-GRADE SLATE TABLE', line1: 'Rack ’em', line2: 'up.',
         intro: 'A 9ft championship-grade slate pool / billiards table, US spec — a proper table for proper shots, under the low glow of the cave. Cues provided.',
-        hero: B('fad7e0da23e886ea2f41d6f857255765'), heroAlt: 'The 9ft pool / billiards table under pendant lights and red neon', cta: 'Book your visit',
+        hero: '/images/pool-table-norwich-racked-balls.webp', heroAlt: 'Racked balls on the red cloth of the 9ft pool / billiards table at Le Man Cave, Norwich', cta: 'Book your visit',
         specs: [['TABLE', '9ft championship-grade slate'], ['GAME', 'Pool / billiards (US spec)'], ['CUES', 'Provided'], ['INCLUDED', 'With venue hire']],
         detailTitle: 'A table worth the trip', detail: 'Our 9ft championship-grade slate table plays true and fast, and cues are provided. Settle a score, run a doubles knockout or just take a break from the racing.',
         points: ['9ft championship-grade slate table', 'US-spec pool / billiards', 'Cues provided', 'Singles or doubles', 'Included with venue hire'],
-        detailImg: B('4ce867edd79a7d832da29a7c7aa700dd'), detailAlt: 'Racked balls and cues on the 9ft pool / billiards table', ctaTitle: 'Break off.',
+        detailImg: '/images/pool-billiards-table-norwich-games-room.webp', detailAlt: 'Friends playing on the 9ft pool / billiards table in the Le Man Cave games room', ctaTitle: 'Break off.',
         faqs: [['Do you provide cues?', 'Yes — cues are provided, so just bring your best break.'], ['Is it included with venue hire?', 'Yes — everything is included with exclusive venue hire.'], ['Can we run a tournament?', 'Yes — talk to us when you book and we’ll help you set it up.']] },
       poker: { ...games, file: 'Poker.dc.html', crumb: 'POKER TABLE', name: 'Poker Table', tag: '8 PLAYERS', kicker: 'NO-STAKES POKER · 8 SEATS', line1: 'Poker face', line2: 'on.',
         intro: 'No-stakes poker for up to eight players: purely for fun, with no real money, so nobody leaves on a downer. Deal everyone in between races and see who keeps their nerve.',
@@ -221,7 +221,7 @@ class Component extends DCLogic {
         faqs: [['How many people can play?', 'Up to eight players at once.'], ['Do you play for real money?', 'No — it’s no-stakes poker, purely for fun with no real money, so nobody leaves on a downer.'], ['Is it included with venue hire?', 'Yes — everything is included with exclusive venue hire.'], ['Can we run a tournament?', 'Yes — ask us when you book.']] },
       airhockey: { ...games, file: 'AirHockey.dc.html', crumb: 'AIR HOCKEY', name: 'Air Hockey', tag: 'COMMERCIAL', kicker: 'COMMERCIAL FULL-SIZE TABLE', line1: 'Fast hands', line2: 'only.',
         intro: 'A commercial, full-size air hockey table. Quick, loud and fiercely competitive — the fastest game in the cave.',
-        hero: IMG.airhockey, heroAlt: 'Two players mid-rally at air hockey', cta: 'Book your visit',
+        hero: IMG.airhockey, heroAlt: 'The commercial full-size air hockey table lit up in blue at Le Man Cave, Norwich', cta: 'Book your visit',
         specs: [['TABLE', 'Commercial, full size'], ['PLAYERS', '2'], ['PACE', 'Flat out'], ['INCLUDED', 'With venue hire']],
         detailTitle: 'Head to head', detail: 'Two players, one puck each and no hiding place. Air hockey is the perfect quick-fire grudge match between races.',
         points: ['Commercial, full-size table', 'Two-player head-to-head', 'Quick games, easy to pick up', 'Perfect for tournaments'],
@@ -229,7 +229,7 @@ class Component extends DCLogic {
         faqs: [['Is it suitable for kids?', 'No age limits** — everyone can play.'], ['Is it included with venue hire?', 'Yes — everything is included with exclusive venue hire.'], ['Can we run a tournament?', 'Yes — ask us when you book.']] },
       football: { ...games, file: 'TableFootball.dc.html', crumb: 'FOOTBALL TABLE', name: 'Football Table', tag: 'LEAGUE-GRADE', kicker: 'LEAGUE-GRADE TABLE', line1: 'No spinning.', line2: 'Mostly.',
         intro: 'A league-grade table football unit for settling office rivalries and family feuds alike.',
-        hero: B('80c2ad5ad02f459c89546738d1b1a09e'), heroAlt: 'League-grade table football table under red neon', cta: 'Book your visit',
+        hero: '/images/table-football-norwich.webp', heroAlt: 'Red and white players lined up on the table football table at Le Man Cave, Norwich', cta: 'Book your visit',
         specs: [['TABLE', 'League-grade'], ['PLAYERS', '2–4'], ['FORMAT', 'Singles or doubles'], ['INCLUDED', 'With venue hire']],
         detailTitle: 'Every office needs a champion', detail: 'A sturdy, league-grade table built for fast, competitive games. Play one-on-one or two-on-two.',
         points: ['League-grade table', 'Singles or doubles', 'Easy to learn, hard to master', 'Great for team days'],
@@ -254,20 +254,20 @@ class Component extends DCLogic {
         faqs: [['Do I need a motorbike licence?', 'Not at all — it’s an arcade game, so anyone can ride.'], ['Is there an age limit?', 'No age limit** — anyone can ride.'], ['Is it included with venue hire?', 'Yes — everything is included with exclusive venue hire.']] },
       darts: { ...games, file: 'Darts.dc.html', crumb: 'DARTS', name: 'Darts', tag: 'AIM · PLAY · COMPETE', kicker: 'AIM · PLAY · COMPETE', line1: 'One hundred', line2: 'and eighty!',
         intro: 'Step up to the oche with a fully automated scoring system — no chalk, no maths, just throw.',
-        hero: B('7c1e54e0a4d7ce95deabcd2d695065d8'), heroAlt: 'Darts in the board with the scoring screen glowing behind', cta: 'Book your visit',
+        hero: '/images/darts-board-norwich-winmau.webp', heroAlt: 'Winmau dartboard with a lit surround on the red darts wall at Le Man Cave, Norwich', cta: 'Book your visit',
         specs: [['SCORING', 'Fully automated'], ['PLAYERS', '2+'], ['GAMES', '501 & more'], ['INCLUDED', 'With venue hire']],
         detailTitle: 'Aim for the treble twenty', detail: 'Our fully automated darts scoring system keeps track of every throw, so you can focus on hitting the treble twenty. Perfect for quick-fire games between races.',
         points: ['Fully automated scoring system', 'Singles or team games', 'Great between races', 'Included with venue hire'],
-        detailImg: B('39178d73e26841e6a0dec70c93e456e9'), detailAlt: 'Three darts on the board under neon glow', ctaTitle: 'Game on.',
+        detailImg: '/images/darts-norwich-oche-le-man-cave.webp', detailAlt: 'A player throwing at the oche in front of the Le Man Cave darts wall', ctaTitle: 'Game on.',
         faqs: [['Do we need to keep score?', 'No — our fully automated scoring system does it all for you.'], ['Are darts provided?', 'Yes — darts are provided.'], ['Is it included with venue hire?', 'Yes — everything is included with exclusive venue hire.'], ] },
       memorabilia: { file: 'Memorabilia.dc.html', parentHref: 'Attractions.dc.html', parentLabel: 'ATTRACTIONS', parentCta: 'All attractions', navActive: 'Attractions.dc.html', relatedTitle: 'More racing',
         crumb: 'RETRO MEMORABILIA', name: 'Retro Memorabilia', tag: 'MOTORSPORT HISTORY', kicker: 'MOTORSPORT HISTORY', line1: 'Racing history', line2: 'on every wall.',
         intro: 'Autographed race suits, F1 spoilers, NASCAR wheels, Le Mans memorabilia and neon and vintage signs — a museum you can race in, included with your venue hire.',
-        hero: B('391bb670a4d33c1c7c09c18bb09b8a63'), heroAlt: 'Race suit and helmets on display', cta: 'Book your visit',
+        hero: '/images/motorsport-memorabilia-norwich-corvette-racing.webp', heroAlt: 'Corvette Racing C6R rear panel with glowing tail lights, part of the motorsport memorabilia at Le Man Cave, Norwich', cta: 'Book your visit',
         specs: [['RACE SUITS', 'Autographed'], ['F1', 'Spoilers'], ['LE MANS', 'Race panels'], ['VIEWING', 'Venue hire only']],
         detailTitle: 'A museum you can race in', detail: 'Every corner of Le Man Cave is packed with motorsport memorabilia — from autographed race suits to genuine race panels from Le Mans.',
         points: ['Autographed race suits', 'F1 spoilers and NASCAR wheels', 'Pieces from Le Mans', 'Neon & vintage signs throughout'],
-        detailImg: B('fc7112025e8ba60f1f0ccd133931c460'), detailAlt: 'Le Mans car, race suit and trophies in the memorabilia room', ctaTitle: 'Come and see it.',
+        detailImg: '/images/motorsport-memorabilia-vintage-bugatti-sign.webp', detailAlt: 'Vintage Bugatti sign on the reclaimed timber wall at Le Man Cave', ctaTitle: 'Come and see it.',
         faqs: [['Can I visit just to see the memorabilia?', 'No — the memorabilia can be enjoyed as part of your venue hire only.'], ['Is the memorabilia for sale?', 'No — the collection is not for sale.'], ['Can I take photos?', 'Yes — photos of the venue are fine. Tag us @leman.cave!']] }
     };
 
@@ -275,15 +275,15 @@ class Component extends DCLogic {
     // (seo/keywords.json in the site repo; also in the CRM SEO optimiser). [h1, heroAlt, detailTitle, perfectTitle]
     const SEO = {
       poker: ['Poker table Norwich · no-stakes, 8 seats', 'The lounge at Le Man Cave, home to the poker table Norwich groups play at', 'A poker night venue in Norwich: deal everyone in', 'Group games in Norwich: perfect for'],
-      ps5: ['Gaming lounge Norwich · games consoles on a 100in screen', 'Friends on the classic Mini sofa in the gaming lounge Norwich groups love', 'Big screen gaming in Norwich: the best seat in the house', 'Perfect for a console gaming party in Norwich'],
+      ps5: ['Gaming lounge Norwich · games consoles on a 100in screen', 'Two players racing with wheel controllers on the 100-inch screen in the gaming lounge Norwich groups love', 'Big screen gaming in Norwich: the best seat in the house', 'Perfect for a console gaming party in Norwich'],
       pinball: ['Digital pinball Norwich · full-size cabinet', 'Hands on the flippers: digital pinball Norwich', 'A pinball machine in Norwich, flippers at the ready', 'Perfect for'],
-      pool: ['Pool table Norwich · 9ft pro table', 'The 9ft pool / billiards table under red neon, the pool table Norwich players book', 'A 9ft pool / billiards table worth the trip', 'Play pool in Norwich: perfect for'],
-      airhockey: ['Air hockey Norwich · pro-grade table', 'Two players mid-rally: air hockey Norwich', 'Head to head on the air hockey table', 'Perfect for'],
-      football: ['Table football Norwich · league-grade table', 'A league-grade table: table football Norwich', 'Every office needs a foosball table champion', 'Perfect for'],
+      pool: ['Pool table Norwich · 9ft pro table', 'Racked balls on the red cloth of the 9ft pool / billiards table, the pool table Norwich players book', 'A 9ft pool / billiards table worth the trip', 'Play pool in Norwich: perfect for'],
+      airhockey: ['Air hockey Norwich · pro-grade table', 'The full-size air hockey table lit up in blue: air hockey Norwich', 'Head to head on the air hockey table', 'Perfect for'],
+      football: ['Table football Norwich · league-grade table', 'Red and white players lined up for kick-off: table football Norwich', 'Every office needs a foosball table champion', 'Perfect for'],
       arcade: ['Arcade Norwich · two-player classics', 'Two friends playing a retro cabinet: arcade Norwich', 'Old school, new rivals: a two-player arcade machine', 'Retro arcade games: perfect for'],
       moto: ['Motorbike simulator Norwich · 1990s classic', 'A rider leaning into a corner on the motorbike simulator Norwich riders love', 'Pure 90s nostalgia: a classic motorcycle simulator', 'A motorbike racing game for real: perfect for'],
-      darts: ['Darts Norwich · automatic scoring', 'Darts in the board: darts Norwich with automatic scoring', 'Automatic scoring darts: aim for the treble twenty', 'A darts party in Norwich: perfect for'],
-      memorabilia: ['Motorsport memorabilia Norwich · on every wall', 'Race suit and helmets: motorsport memorabilia Norwich', 'Racing memorabilia: a museum you can race in', 'A motorsport collection: perfect for'],
+      darts: ['Darts Norwich · automatic scoring', 'Winmau dartboard with a lit surround: darts Norwich with automatic scoring', 'Automatic scoring darts: aim for the treble twenty', 'A darts party in Norwich: perfect for'],
+      memorabilia: ['Motorsport memorabilia Norwich · on every wall', 'Corvette Racing C6R rear panel with glowing tail lights: motorsport memorabilia Norwich', 'Racing memorabilia: a museum you can race in', 'A motorsport collection: perfect for'],
     };
     Object.keys(P).forEach((k) => { const x = SEO[k]; P[k] = { ...P[k], perfectTitle: (x && x[3]) || 'Perfect for' }; if (x) Object.assign(P[k], { kicker: x[0], heroAlt: x[1], detailTitle: x[2] }); });
     const slug = P[this.props.slug] ? this.props.slug : 'pool';

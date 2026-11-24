@@ -12,8 +12,11 @@ import EnquiryForm from './EnquiryForm';
 import SiteFooter from './SiteFooter';
 
 export default class Main extends React.Component {
-  constructor(props) { super(props); this.state = { type: 'Birthday', slide: 0, paused: false }; }
-  componentDidMount() { this.timer = setInterval(() => { if (!this.state.paused) this.setState({ slide: (this.state.slide + 1) % 5 }); }, 7000); }
+  constructor(props) { super(props); this.state = { type: 'Birthday', slide: 0, paused: false, run: 0 }; }
+  // Hero slideshow: 7s per slide. Manual navigation and resume restart the timer, so the progress bar stays in step.
+  startTimer() { clearInterval(this.timer); this.timer = setInterval(() => { if (!this.state.paused) this.setState({ slide: this.state.slide + 1 }); }, 7000); }
+  goTo(i) { this.setState({ slide: i, run: this.state.run + 1 }); if (!this.state.paused) this.startTimer(); }
+  componentDidMount() { this.startTimer(); }
   componentWillUnmount() { clearInterval(this.timer); }
   hexToRgb(h) {
     const m = /^#?([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})$/i.exec(h || '');
@@ -36,23 +39,30 @@ export default class Main extends React.Component {
       };
     });
     const SL = [
-      ['c2a615d5274599ccc19ef695052deaba', 'Friends cheering round the digital Scalextric track', 'NORWICH’S MOTORSPORT VENUE · BUILT FOR EVERYONE', 'Lights out.', 'Game on.', 'A real motorsport venue that’s brilliant for everyone. Petrolheads get a full-motion simulator and a 160ft Scalextric circuit. Everyone else gets big-screen gaming, pool, pinball, pizza* and a cracking night out.', 'Book your visit', '/book', 'Plan an event', '/parties-and-events-norwich'],
-      ['7c15572ebe192fbe0f7eae982a1bb152', 'Driver in a full-motion racing simulator', 'PRO RACING SIMULATORS · 4K OR VR', 'Full motion.', 'Real race kit.', '4 DOF motion, a direct-drive wheel, real pedals, a ‘bazooka’ H-pattern shifter and an active harness. Book the sim room by the hour from £80 for up to 2 people.', 'Book a sim session', '/book', 'See the simulators', '/attractions/racing-simulator-norwich'],
-      ['b9fe66c760257f986f787f1fb05c7ef2', 'Group celebrating on the podium with a trophy', 'BIRTHDAYS · STAG & HEN · TEAM DAYS', 'Parties with', 'pole position.', 'Take over the whole cave for up to 50 people, with activities for 34 players at once — racing, games, pizza* and your own drinks, from £40 per person.', 'Book a party', '/book', 'Parties & events', '/parties-and-events-norwich'],
-      ['3bb7b8b6d1661fa12a1c6d470c802daf', 'Friends laughing over a two-player arcade game', 'NOT A PETROLHEAD? PERFECT.', 'Not into cars?', 'Come anyway.', 'Games consoles on big-screen TVs, pool, darts, pinball, air hockey and arcade classics. No licence, no experience, no age limits on the experiences**.', 'See all attractions', '/attractions', 'Why it works for you', '/who-its-for/fun-group-activities-norwich'],
-      ['3d9a0547fd1c48350560b4509e8d5467', 'Drinks on ice at the bar', 'CHRISTMAS PARTIES · DEC WEEKNIGHTS & SATURDAYS', 'Festive', 'grand prix.', 'Whole-cave Christmas parties with pizza* and Bring Your Own drinks for the team — from £45 per person, weeknights through December.', 'Book Christmas', '/christmas-party-norwich', 'Christmas planner', '/guides/christmas-party-ideas-norwich']
+      ['/images/scalextric-norwich-group-racing-wide.webp', 'Families racing on the 160ft digital Scalextric at Le Man Cave, Norwich', 'NORWICH’S MOTORSPORT VENUE · BUILT FOR EVERYONE', 'Lights out.', 'Game on.', 'A real motorsport venue that’s brilliant for everyone. Petrolheads get a full-motion simulator and a 160ft Scalextric circuit. Everyone else gets big-screen gaming, pool, pinball, pizza* and a cracking night out.', 'Book your visit', '/book', 'Plan an event', '/parties-and-events-norwich'],
+      ['/images/racing-simulator-norwich-motion-sim.webp', 'Driver at the wheel of the motion racing simulator, with harness and H-pattern shifter', 'PRO RACING SIMULATORS · 4K OR VR', 'Full motion.', 'Real race kit.', '4 DOF motion, a direct-drive wheel, real pedals, a ‘bazooka’ H-pattern shifter and an active harness. Book the sim room by the hour from £80 for up to 2 people.', 'Book a sim session', '/book', 'See the simulators', '/attractions/racing-simulator-norwich'],
+      ['/images/scalextric-party-norwich-group-racing.webp', 'A party group gathered round the digital Scalextric at Le Man Cave', 'BIRTHDAYS · STAG & HEN · TEAM DAYS', 'Parties with', 'pole position.', 'Take over the whole cave for up to 50 people, with activities for 34 players at once — racing, games, pizza* and your own drinks, from £40 per person.', 'Book a party', '/book', 'Parties & events', '/parties-and-events-norwich'],
+      ['/images/games-console-lounge-norwich-100-inch-screen.webp', 'Two players racing Mario Kart with wheel controllers on the 100-inch screen', 'NOT A PETROLHEAD? PERFECT.', 'Not into cars?', 'Come anyway.', 'Games consoles on big-screen TVs, pool, darts, pinball, air hockey and arcade classics. No licence, no experience, no age limits on the experiences**.', 'See all attractions', '/attractions', 'Why it works for you', '/who-its-for/fun-group-activities-norwich'],
+      ['3d9a0547fd1c48350560b4509e8d5467', 'Drinks on ice at the bar', 'CHRISTMAS PARTIES · DEC WEEKNIGHTS & SATURDAYS', 'Festive', 'grand prix.', 'Whole-cave Christmas parties with pizza* and Bring Your Own drinks for the team — from £45 per person, weeknights through December.', 'Book Christmas', '/christmas-party-norwich', 'Christmas planner', '/guides/christmas-party-ideas-norwich'],
+      ['/images/motorsport-memorabilia-norwich-corvette-racing.webp', 'Corvette Racing C6R rear panel with glowing tail lights, part of the memorabilia at Le Man Cave', 'MOTORSPORT MEMORABILIA · ON EVERY WALL', 'A museum', 'you can race in.', 'Le Mans memorabilia, race suits, a Corvette Racing C6R panel and neon & vintage signs throughout. Photos welcome.', 'Book your visit', '/book', 'See the collection', '/attractions/motorsport-memorabilia-norwich']
     ];
     const si = this.state.slide % SL.length;
-    const slides = SL.map(([id, alt, kicker, l1, l2, copy, cta1, href1, cta2, href2], i) => ({ img: '/images/' + id + '.webp', alt, kicker, l1, l2, copy, cta1, href1, cta2, href2, hidden: i === si ? 'false' : 'true', selected: i === si ? 'true' : 'false', label: 'Slide ' + (i + 1) + ': ' + l1 + ' ' + l2,
-      imgStyle: 'position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 60% 50%; transition: opacity 1.1s ease, transform 8s ease-out; opacity: ' + (i === si ? '1' : '0') + '; transform: scale(' + (i === si ? '1.06' : '1') + ')',
+    // Effects: crossfade from a soft blur, Ken Burns zoom/pan in a different direction per slide, text that rises in
+    // line by line (keyframe names alternate A/B so the animation replays on every change) and a filling progress bar.
+    const KB = [['30% 45%', -2, -1], ['70% 35%', 2, -1], ['50% 70%', 0, -2], ['25% 55%', -2, 1], ['75% 50%', 2, 1], ['50% 40%', 0, 2]];
+    const par = (si % 2) ? 'B' : 'A';
+    const anim = (d) => 'animation: lcUp' + par + ' .9s cubic-bezier(.2,.7,.2,1) ' + d + 's both';
+    const bar = ((this.state.run + si) % 2) ? 'B' : 'A';
+    const slides = SL.map(([id, alt, kicker, l1, l2, copy, cta1, href1, cta2, href2], i) => ({ img: id.charAt(0) === '/' ? id : '/images/' + id + '.webp', alt, kicker, l1, l2, copy, cta1, href1, cta2, href2, hidden: i === si ? 'false' : 'true', selected: i === si ? 'true' : 'false', label: 'Slide ' + (i + 1) + ': ' + l1 + ' ' + l2,
+      imgStyle: 'position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 60% 50%; will-change: opacity, transform; transform-origin: ' + KB[i % KB.length][0] + '; transition: opacity 1.4s ease, filter 1.4s ease, transform 9s cubic-bezier(.25,.1,.25,1); opacity: ' + (i === si ? '1' : '0') + '; filter: blur(' + (i === si ? '0' : '8px') + '); transform: ' + (i === si ? 'scale(1.14) translate(' + KB[i % KB.length][1] + '%, ' + KB[i % KB.length][2] + '%)' : 'scale(1.02)'),
       dotStyle: 'flex: 1; height: 44px; padding: 0; border: 0; background: none; cursor: pointer; display: flex; align-items: center',
-      barStyle: 'display: block; width: 100%; height: 4px; border-radius: 2px; transition: background .3s; background: ' + (i === si ? accent : (i < si ? '#A1A1AA' : '#3F3F46')),
-      go: () => this.setState({ slide: i }) }));
+      barStyle: 'display: block; width: 100%; height: 4px; border-radius: 2px; background-color: ' + (i < si ? '#A1A1AA' : '#3F3F46') + (i === si ? '; background-image: linear-gradient(' + accent + ', ' + accent + '); background-repeat: no-repeat; background-size: 0% 100%; animation: lcFill' + bar + ' 7s linear forwards; animation-play-state: ' + (this.state.paused ? 'paused' : 'running') : ''),
+      go: () => this.goTo(i) }));
     const cur = slides[si];
     const counter = String(si + 1).padStart(2, '0') + ' / ' + String(SL.length).padStart(2, '0');
-    const prev = () => this.setState({ slide: (si - 1 + SL.length) % SL.length });
-    const next = () => this.setState({ slide: (si + 1) % SL.length });
-    const togglePause = () => this.setState({ paused: !this.state.paused });
+    const prev = () => this.goTo((si - 1 + SL.length) % SL.length);
+    const next = () => this.goTo((si + 1) % SL.length);
+    const togglePause = () => { const paused = !this.state.paused; this.setState({ paused, run: paused ? this.state.run : this.state.run + 1 }); if (paused) clearInterval(this.timer); else this.startTimer(); };
     const FAQS = [
       ['What is Le Man Cave?', 'An indoor motorsport entertainment venue in Norwich with two pro racing simulators (one with 4 DOF full motion), a 160ft digital Scalextric, a 1990s motorbike sim, a games console lounge, pool / billiards, darts, air hockey and more. It’s a real motorsport venue that’s great for non-petrolheads too.'],
       ['Can we just turn up?', 'No. Le Man Cave is open for booked sessions and events only. Book the sim room by the hour or hire the whole cave for your group.'],
@@ -66,7 +76,7 @@ export default class Main extends React.Component {
     const faqs = FAQS.map(([q, a], i) => { const open = faqOpen === i; return { q, a, open, expanded: open ? 'true' : 'false',
       iconStyle: 'flex: none; width: 34px; height: 34px; border-radius: 50%; border: 1px solid #3F3F46; display: flex; align-items: center; justify-content: center; font-size: 20px; color: ' + (open ? '#ED2835' : '#E4E4E7') + '; transform: rotate(' + (open ? '45' : '0') + 'deg); transition: transform .2s',
       toggle: () => this.setState({ faqOpen: open ? -1 : i }) }; });
-    return { faqs, faqTitle: 'Indoor activities Norwich: your questions', slides, cur, counter, prev, next, togglePause, pauseLabel: this.state.paused ? "Play slideshow" : "Pause slideshow", pauseIcon: this.state.paused ? "▶" : "❚❚",
+    return { faqs, faqTitle: 'Indoor activities Norwich: your questions', slides, cur, counter, aK: anim(0), aH: anim(0.12), aC: anim(0.26), aB: anim(0.38), prev, next, togglePause, pauseLabel: this.state.paused ? "Play slideshow" : "Pause slideshow", pauseIcon: this.state.paused ? "▶" : "❚❚",
       accent, amber,
       glow: 'rgba(' + r + ',' + gg + ',' + b + ',' + g + ')',
       types,
@@ -125,17 +135,17 @@ export default class Main extends React.Component {
 </header>
 <section id="top" aria-roledescription="carousel" aria-label="Welcome to Le Man Cave" style={css("position: relative; min-height: 800px; display: flex; align-items: flex-end; background: #0E0E11; overflow: hidden")}>
 {(V.slides || []).map((sl, $index) => (<React.Fragment key={$index}>
-<Img src={sl.img} alt={sl.alt} aria-hidden={sl.hidden} style={css(sl.imgStyle)} />
+<Img className="lc-hero-img" src={sl.img} alt={sl.alt} aria-hidden={sl.hidden} style={css(sl.imgStyle)} />
 </React.Fragment>))}
 <div aria-hidden="true" style={css("position: absolute; inset: 0; background: linear-gradient(90deg, rgba(9,9,11,0.94) 0%, rgba(9,9,11,0.72) 40%, rgba(9,9,11,0.15) 72%, rgba(9,9,11,0.05) 100%)")}></div>
 <div aria-hidden="true" style={css("position: absolute; left: 0; right: 0; bottom: 0; height: 340px; background: linear-gradient(to top, #09090B 10%, transparent)")}></div>
 <div className="lc-section" style={css("position: relative; max-width: 1360px; width: 100%; margin: 0 auto; padding: 170px 40px 72px; box-sizing: border-box")}>
 <h1 style={css("margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 500; line-height: 1.5; letter-spacing: 0.16em; color: #FFC233; text-transform: uppercase")}>{"Indoor activities Norwich \u00b7 racing sims & games"}</h1>
 <div aria-live="polite" style={css("min-height: 440px; display: flex; flex-direction: column; justify-content: flex-end")}>
-<p style={css(`margin: 0 0 20px; font-family: 'JetBrains Mono', monospace; font-size: 14px; letter-spacing: 0.16em; color: ${V.accent}`)}>{V.cur.kicker}</p>
-<p style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(64px, 11vw, 168px); line-height: 0.88; letter-spacing: -0.01em; color: #FFFFFF; text-transform: uppercase")}>{V.cur.l1}<br /><span style={css(`color: ${V.accent}`)}>{V.cur.l2}</span></p>
-<p style={css("margin: 28px 0 0; max-width: 580px; font-size: 20px; line-height: 1.55; color: #D4D4D8")}>{V.cur.copy}</p>
-<div style={css("display: flex; flex-wrap: wrap; gap: 14px; margin-top: 36px")}>
+<p className="lc-hero-anim" style={css(`margin: 0 0 20px; font-family: 'JetBrains Mono', monospace; font-size: 14px; letter-spacing: 0.16em; color: ${V.accent}; ${V.aK}`)}>{V.cur.kicker}</p>
+<p className="lc-hero-anim" style={css(`margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(64px, 11vw, 168px); line-height: 0.88; letter-spacing: -0.01em; color: #FFFFFF; text-transform: uppercase; ${V.aH}`)}>{V.cur.l1}<br /><span style={css(`color: ${V.accent}`)}>{V.cur.l2}</span></p>
+<p className="lc-hero-anim" style={css(`margin: 28px 0 0; max-width: 580px; font-size: 20px; line-height: 1.55; color: #D4D4D8; ${V.aC}`)}>{V.cur.copy}</p>
+<div className="lc-hero-anim" style={css(`display: flex; flex-wrap: wrap; gap: 14px; margin-top: 36px; ${V.aB}`)}>
 <A href={V.cur.href1} style={css(`background: ${V.accent}; color: #09090B; font-weight: 700; font-size: 16px; letter-spacing: 0.06em; text-transform: uppercase; padding: 18px 30px; border-radius: 4px`)}>{V.cur.cta1}</A>
 <A href={V.cur.href2} style={css("border: 1px solid #52525B; color: #FFFFFF; font-weight: 600; font-size: 16px; letter-spacing: 0.06em; text-transform: uppercase; padding: 17px 30px; border-radius: 4px")}>{V.cur.cta2}</A>
 </div>

@@ -12,8 +12,37 @@ import SiteFooter from './SiteFooter';
 export default class Gallery extends React.Component {
   constructor(props) { super(props); this.state = { f: 'all' }; }
   renderVals() {
-    const B = (id) => '/images/' + id + '.webp';
+    const B = (id) => id.charAt(0) === '/' ? id : '/images/' + id + '.webp';
     const all = [
+      ['/images/scalextric-norwich-group-racing-wide.webp', 'parties', 'Le Man Cave photos: families racing on the 160ft digital Scalextric', 'SCALEXTRIC PARTY', 2, 2],
+      ['/images/racing-simulator-norwich-motion-sim.webp', 'racing', 'Driver at the wheel of the motion racing simulator in Norwich', 'MOTION SIM', 1, 1],
+      ['/images/games-console-lounge-norwich-100-inch-screen.webp', 'games', 'Two players racing with wheel controllers on the 100-inch screen', 'GAMES CONSOLE LOUNGE', 1, 1],
+      ['/images/pool-billiards-table-norwich-games-room.webp', 'games', 'Friends playing on the 9ft pool / billiards table', 'POOL / BILLIARDS', 2, 1],
+      ['/images/digital-scalextric-norwich-slot-car.webp', 'racing', 'Slot car taking a kerbed bend on the digital Scalextric', 'DIGITAL SCALEXTRIC', 1, 2],
+      ['/images/sim-room-norwich-motion-and-static-simulators.webp', 'racing', 'Friends watching a driver on the motion sim, with the static sim behind', 'SIM ROOM', 1, 1],
+      ['/images/darts-norwich-oche-le-man-cave.webp', 'games', 'A player throwing at the oche in front of the Le Man Cave darts wall', 'DARTS', 1, 2],
+      ['/images/motorsport-memorabilia-norwich-corvette-racing.webp', 'venue', 'Corvette Racing C6R rear panel with glowing tail lights', 'CORVETTE C6R', 2, 1],
+      ['/images/digital-scalextric-norwich-track-bridge.webp', 'racing', 'Racing simulator venue photos: the Scalextric bridge, river and pit buildings', 'THE LAYOUT', 2, 1],
+      ['/images/table-football-norwich.webp', 'games', 'Red and white players lined up on the table football table', 'TABLE FOOTBALL', 1, 1],
+      ['/images/air-hockey-table-norwich.webp', 'games', 'The full-size air hockey table lit up in blue', 'AIR HOCKEY', 1, 1],
+      ['/images/vintage-shell-petrol-pump-memorabilia-norwich.webp', 'venue', 'Vintage Super Shell petrol pump and oil can', 'SHELL PUMP', 1, 2],
+      ['/images/games-console-lounge-norwich-mario-kart-mini-sofa.webp', 'games', 'Mario Kart on the big screen from the classic Mini sofa, table football and darts behind', 'MARIO KART', 2, 1],
+      ['/images/static-racing-simulator-norwich.webp', 'racing', 'Driver on the static racing simulator with its HD screen', 'STATIC SIM', 1, 1],
+      ['/images/darts-board-norwich-winmau.webp', 'games', 'Winmau dartboard with a lit surround on the red darts wall', 'OCHE', 1, 1],
+      ['/images/digital-scalextric-norwich-stone-bridge.webp', 'racing', 'The stone bridge section of the digital Scalextric', 'STONE BRIDGE', 1, 2],
+      ['/images/pool-table-norwich-racked-balls.webp', 'games', 'Racked balls on the red cloth of the pool / billiards table', 'BREAK OFF', 1, 1],
+      ['/images/motorsport-memorabilia-vintage-bugatti-sign.webp', 'venue', 'Vintage Bugatti sign on the reclaimed timber wall', 'BUGATTI', 2, 1],
+      ['/images/scalextric-party-norwich-group-racing.webp', 'parties', 'Party venue photos, Norwich: families gathered round the Scalextric', 'RACE DAY', 2, 1],
+      ['/images/trophy-cabinet-motorsport-memorabilia-norwich.webp', 'venue', 'Trophy and model cars in the display cabinet', 'TROPHY CABINET', 1, 2],
+      ['/images/digital-scalextric-norwich-copper-track-bend.webp', 'racing', 'Copper-taped bend on the digital Scalextric layout', 'COPPER BEND', 1, 1],
+      ['/images/rally-model-cars-motorsport-memorabilia-norwich.webp', 'venue', 'Subaru and Corolla rally model cars in the cabinet', 'RALLY MODELS', 1, 1],
+      ['/images/games-console-lounge-norwich-classic-mini-sofa.webp', 'games', 'The converted classic Mini sofa facing the 100-inch screen', 'THE MINI SOFA', 2, 1],
+      ['/images/vintage-austin-grille-memorabilia-norwich.webp', 'venue', 'Vintage Austin radiator grille on the timber wall', 'AUSTIN GRILLE', 1, 2],
+      ['/images/scalextric-slot-cars-norwich-mini-cooper.webp', 'racing', 'Mini, SEAT and Jaguar slot cars lined up on the grass verge', 'ON THE GRID', 1, 2],
+      ['/images/digital-scalextric-norwich-goodyear-bridge.webp', 'racing', 'Slot cars on the straight under the Goodyear bridge', 'GOODYEAR BRIDGE', 2, 1],
+      ['/images/pool-table-norwich-rasson-9ft.webp', 'games', 'The 9ft Rasson pool / billiards table', '9FT TABLE', 1, 1],
+      ['/images/digital-scalextric-norwich-layout.webp', 'racing', 'The Scalextric layout winding over the river', 'THE CIRCUIT', 2, 1],
+      ['/images/pool-table-norwich-pocket-close-up.webp', 'games', 'Corner pocket of the pool / billiards table, close-up', 'CORNER POCKET', 1, 1],
       ['7c15572ebe192fbe0f7eae982a1bb152', 'racing', 'Le Man Cave photos: the pro simulator under red light', 'PRO SIMULATOR', 2, 2],
       ['c2a615d5274599ccc19ef695052deaba', 'parties', 'Friends round the Scalextric', 'SCALEXTRIC NIGHT', 2, 1],
       ['b1f31c249d74acb3cc85257e6956012e', 'venue', 'Race suit and helmets on display', 'MEMORABILIA', 1, 2],
