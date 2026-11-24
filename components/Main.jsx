@@ -338,7 +338,7 @@ export default class Main extends React.Component {
 <section id="venue" className="lc-section" aria-labelledby="venue-h" style={css("max-width: 1360px; margin: 0 auto; padding: 120px 40px")}>
 <div style={css("display: flex; flex-wrap: wrap; gap: 64px; align-items: stretch")}>
 <div style={css("flex: 1 1 520px; min-height: 520px; position: relative; border-radius: 8px; overflow: hidden; background: #131316; border: 1px solid #232328")}>
-<img width="1600" height="1068" src="/images/inside-le-man-cave-norwich-games-room.webp" alt="Inside Le Man Cave: friends at the pool / billiards table, race suits on the wall and the Scalextric behind" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} />
+<img width="1535" height="1024" src="/images/inside-le-man-cave-norwich-after-dark.webp" alt="Inside Le Man Cave after dark: pool / billiards, the digital Scalextric, the classic Mini sofa lounge and table football under neon" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} />
 <div style={css("position: absolute; left: 24px; bottom: 24px; background: rgba(9,9,11,0.85); border: 1px solid #27272A; border-radius: 6px; padding: 18px 22px; backdrop-filter: blur(6px)")}>
 <div style={css("font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: #71717A")}>{"ON THE WALLS"}</div>
 <div style={css("font-size: 16px; color: #E4E4E7; margin-top: 6px")}>{"Race suits \u00b7 helmets \u00b7 signed prints \u00b7 neon"}</div>
