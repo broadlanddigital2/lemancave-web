@@ -16,7 +16,7 @@ export default class Product extends React.Component {
     const amber = this.props.amber ?? '#FFC233';
     const B = (id) => '/images/' + id + '.webp';
     const IMG = {
-      ps5: B('9dc6e1e4d0002cd48daa24a834848cbd'), lounge: B('d76d56e086301523c4971afc4f5dfe57'),
+      ps5: '/images/games-console-lounge-norwich-100-inch-screen.webp', lounge: B('d76d56e086301523c4971afc4f5dfe57'),
       pinball: B('61be8e75bbfd3651047d20e5a346ffd3'), pinball2: B('087eb617edc639f42d522945ddefd32b'),
       pool: B('44da4bb4e9c2f25471b7f35352440547'), airhockey: '/images/air-hockey-table-norwich.webp',
       football: B('acb9b99ec403334bf4a49d12c7cc7fb9'), arcade: B('30c5e67b4cd608a17bdb32e677371fd2'),
@@ -27,7 +27,7 @@ export default class Product extends React.Component {
     const P = {
       ps5: { ...games, file: '/attractions/gaming-lounge-norwich', crumb: 'GAMES CONSOLE LOUNGE', name: 'Games Console Lounge', tag: '100IN SCREEN', kicker: 'GAMES CONSOLES · 100IN SCREEN', line1: 'Big screen.', line2: 'Bigger rivalries.',
         intro: 'The gaming lounge Norwich groups head for: games consoles on a 100-inch big screen, played from a sofa built out of a converted classic Mini.',
-        hero: IMG.ps5, heroAlt: 'Friends on the classic Mini sofa playing a racing game on the 100-inch screen', cta: 'Book the lounge',
+        hero: IMG.ps5, heroAlt: 'Two players racing with wheel controllers on the 100-inch screen in the Games Console Lounge, Norwich', cta: 'Book the lounge',
         specs: [['SCREEN', '100in'], ['CONSOLE', 'Nintendo Wii, PlayStation or Steam gaming PCs'], ['SEATING', 'Classic Mini sofa, oil drum chairs & Alfa Romeo sofa'], ['INCLUDED', 'With venue hire']],
         detailTitle: 'The best seat in the house', detail: 'Our gaming lounge in Norwich is built for rivalry. Sink into our converted classic Mini sofa, an oil drum chair or the Top Gear-style Alfa Romeo sofa and take on your mates on a wall-sized screen. Racers, sports and party games — perfect between sim sessions or as the main event.',
         points: ['100-inch big screen', 'Nintendo Wii, PlayStation or Steam gaming PCs', 'Converted classic Mini sofa', 'Oil drum chairs', 'Top Gear-style Alfa Romeo sofa', 'Included with venue hire'],
@@ -112,7 +112,7 @@ export default class Product extends React.Component {
     // (seo/keywords.json in the site repo; also in the CRM SEO optimiser). [h1, heroAlt, detailTitle, perfectTitle]
     const SEO = {
       poker: ['Poker table Norwich · no-stakes, 8 seats', 'The lounge at Le Man Cave, home to the poker table Norwich groups play at', 'A poker night venue in Norwich: deal everyone in', 'Group games in Norwich: perfect for'],
-      ps5: ['Gaming lounge Norwich · games consoles on a 100in screen', 'Friends on the classic Mini sofa in the gaming lounge Norwich groups love', 'Big screen gaming in Norwich: the best seat in the house', 'Perfect for a console gaming party in Norwich'],
+      ps5: ['Gaming lounge Norwich · games consoles on a 100in screen', 'Two players racing with wheel controllers on the 100-inch screen in the gaming lounge Norwich groups love', 'Big screen gaming in Norwich: the best seat in the house', 'Perfect for a console gaming party in Norwich'],
       pinball: ['Digital pinball Norwich · full-size cabinet', 'Hands on the flippers: digital pinball Norwich', 'A pinball machine in Norwich, flippers at the ready', 'Perfect for'],
       pool: ['Pool table Norwich · 9ft pro table', 'Racked balls on the red cloth of the 9ft pool / billiards table, the pool table Norwich players book', 'A 9ft pool / billiards table worth the trip', 'Play pool in Norwich: perfect for'],
       airhockey: ['Air hockey Norwich · pro-grade table', 'The full-size air hockey table lit up in blue: air hockey Norwich', 'Head to head on the air hockey table', 'Perfect for'],
