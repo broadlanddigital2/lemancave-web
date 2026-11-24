@@ -339,7 +339,7 @@ def add_menu_thumbs(code, imgdir, sizes):
             with Image.open(out) as im:
                 sizes[key] = list(im.size)
         return '<img src="' + key + '" alt="" loading="lazy" '
-    head = re.sub(r'<img src="/images/([0-9a-f]{32}\.\w+)" alt="" ', thumb, head)
+    head = re.sub(r'<img src="/images/([0-9a-f]{32}\.\w+|[a-z0-9]+(?:-[a-z0-9]+)+\.webp)" alt="" ', thumb, head)
     return code[:start] + head + code[end:]
 
 def add_image_sizes(code, sizes):
