@@ -94,7 +94,7 @@ export default class Christmas extends React.Component {
 </nav>
 </header>
 <section aria-labelledby="xm-h" style={css("position: relative; min-height: 760px; display: flex; align-items: flex-end; background: #0E0E11; overflow: hidden")}>
-<img width="1672" height="941" src="/images/336075970ba46c355a5d6ca9b2187bf9.webp" alt="Racing simulator decorated for a Christmas party Norwich groups book, with a tree and presents" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 60% 50%")} />
+<img width="1672" height="941" src="/images/christmas-party-norwich-race-car-christmas-tree.webp" alt="A red GT race car beside a lit Christmas tree and presents at a snowy pit lane: Christmas party Norwich groups book" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 70% 50%")} />
 <div aria-hidden="true" style={css("position: absolute; inset: 0; background: linear-gradient(90deg, rgba(9,9,11,0.96) 0%, rgba(9,9,11,0.82) 45%, rgba(9,9,11,0.3) 78%, rgba(9,9,11,0.2) 100%)")}></div>
 <div aria-hidden="true" style={css("position: absolute; inset: 0; background-image: radial-gradient(rgba(255,255,255,0.5) 1px, transparent 1.5px), radial-gradient(rgba(255,255,255,0.3) 1px, transparent 1.5px); background-size: 90px 90px, 140px 140px; background-position: 0 0, 45px 70px; opacity: 0.5")}></div>
 <div aria-hidden="true" style={css("position: absolute; left: 0; right: 0; bottom: 0; height: 300px; background: linear-gradient(to top, #09090B 10%, transparent)")}></div>
