@@ -25,7 +25,7 @@ export default class Gallery extends React.Component {
       ['/images/motorsport-memorabilia-norwich-corvette-racing.webp', 'venue', 'Corvette Racing C6R rear panel with glowing tail lights', 'CORVETTE C6R', 2, 1],
       ['/images/digital-scalextric-norwich-track-bridge.webp', 'racing', 'Racing simulator venue photos: the Scalextric bridge, river and pit buildings', 'THE LAYOUT', 2, 1],
       ['/images/motorbike-simulator-norwich-superbikes-rider.webp', 'racing', 'Rider on the Super Bikes motorbike simulator', 'MOTORBIKE SIM', 2, 1],
-      ['/images/poker-table-norwich-no-stakes.webp', 'games', 'The no-stakes poker table with chips and cards', 'POKER', 1, 1],
+      ['/images/poker-table-norwich-8-seats.webp', 'games', 'The eight-seat no-stakes poker table with a hand dealt', 'POKER · 8 SEATS', 2, 1],
       ['/images/air-hockey-table-norwich-full-size.webp', 'games', 'The full-size air hockey table with blue edge lighting', 'FULL-SIZE AIR HOCKEY', 1, 1],
       ['/images/table-football-norwich.webp', 'games', 'Red and white players lined up on the table football table', 'TABLE FOOTBALL', 1, 1],
       ['/images/air-hockey-table-norwich.webp', 'games', 'The full-size air hockey table lit up in blue', 'AIR HOCKEY', 1, 1],
