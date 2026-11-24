@@ -104,7 +104,7 @@ export default class Product extends React.Component {
         specs: [['RACE SUITS', 'Autographed'], ['F1', 'Spoilers'], ['LE MANS', 'Race panels'], ['VIEWING', 'Venue hire only']],
         detailTitle: 'A museum you can race in', detail: 'Every corner of Le Man Cave is packed with motorsport memorabilia — from autographed race suits to genuine race panels from Le Mans.',
         points: ['Autographed race suits', 'F1 spoilers and NASCAR wheels', 'Pieces from Le Mans', 'Neon & vintage signs throughout'],
-        detailImg: '/images/motorsport-memorabilia-vintage-bugatti-sign.webp', detailAlt: 'Vintage Bugatti sign on the reclaimed timber wall at Le Man Cave', ctaTitle: 'Come and see it.',
+        detailImg: '/images/le-mans-gte-race-car-panel-motorsport-memorabilia-norwich.webp', detailAlt: 'Rear bodywork from a European Le Mans Series GTE race car, number 69, on the wall at Le Man Cave', ctaTitle: 'Come and see it.',
         faqs: [['Can I visit just to see the memorabilia?', 'No — the memorabilia can be enjoyed as part of your venue hire only.'], ['Is the memorabilia for sale?', 'No — the collection is not for sale.'], ['Can I take photos?', 'Yes — photos of the venue are fine. Tag us @leman.cave!']] }
     };
 
