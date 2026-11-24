@@ -80,7 +80,7 @@ export default class Simulator extends React.Component {
 </nav>
 </header>
 <section aria-labelledby="sim-h" style={css("position: relative; min-height: 720px; display: flex; align-items: flex-end; background: #0E0E11; overflow: hidden")}>
-<img width="1920" height="1282" src="/images/racing-simulator-norwich-motion-sim.webp" alt="Driver at the wheel of the motion racing simulator Norwich drivers book, with harness, shifter and 4K screen" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 60% 40%")} />
+<img width="1920" height="726" src="/images/racing-simulator-norwich-motion-sim-cockpit.webp" alt="Driver on the motion racing simulator Norwich drivers book, with friends watching from the side" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 70% 50%")} />
 <div aria-hidden="true" style={css("position: absolute; inset: 0; background: linear-gradient(90deg, rgba(9,9,11,0.94) 0%, rgba(9,9,11,0.75) 40%, rgba(9,9,11,0.2) 72%, rgba(9,9,11,0.1) 100%)")}></div>
 <div aria-hidden="true" style={css("position: absolute; left: 0; right: 0; bottom: 0; height: 300px; background: linear-gradient(to top, #09090B 10%, transparent)")}></div>
 <div className="lc-section" style={css("position: relative; max-width: 1360px; width: 100%; margin: 0 auto; padding: 140px 40px 64px; box-sizing: border-box")}>

@@ -20,7 +20,7 @@ export default class Product extends React.Component {
       pinball: B('61be8e75bbfd3651047d20e5a346ffd3'), pinball2: B('087eb617edc639f42d522945ddefd32b'),
       pool: B('44da4bb4e9c2f25471b7f35352440547'), airhockey: '/images/air-hockey-table-norwich.webp',
       football: B('acb9b99ec403334bf4a49d12c7cc7fb9'), arcade: B('30c5e67b4cd608a17bdb32e677371fd2'),
-      moto: B('80e1b5cd2743753b0c06cbf34ef30502'), sim: '/images/racing-simulator-norwich-motion-sim.webp',
+      moto: '/images/motorbike-simulator-norwich-superbikes-rider.webp', sim: '/images/racing-simulator-norwich-motion-sim.webp',
       scalextric: '/images/digital-scalextric-norwich-slot-car.webp', venue: B('4a552ab4df1d6b27548d7bd0e68e6d3e'), suits: B('b1f31c249d74acb3cc85257e6956012e'), wide: B('d8088e3823809fc023e85fd23c0ce0d9')
     };
     const games = { parentHref: '/attractions/arcade-games-norwich', parentLabel: 'GAMES & ARCADE', parentCta: 'All games & arcade', navActive: '/attractions/arcade-games-norwich', relatedTitle: 'More to play' };
@@ -51,7 +51,7 @@ export default class Product extends React.Component {
         faqs: [['Do you provide cues?', 'Yes — cues are provided, so just bring your best break.'], ['Is it included with venue hire?', 'Yes — everything is included with exclusive venue hire.'], ['Can we run a tournament?', 'Yes — talk to us when you book and we’ll help you set it up.']] },
       poker: { ...games, file: '/attractions/poker-table-norwich', crumb: 'POKER TABLE', name: 'Poker Table', tag: '8 PLAYERS', kicker: 'NO-STAKES POKER · 8 SEATS', line1: 'Poker face', line2: 'on.',
         intro: 'No-stakes poker for up to eight players: purely for fun, with no real money, so nobody leaves on a downer. Deal everyone in between races and see who keeps their nerve.',
-        hero: IMG.lounge, heroAlt: 'The lounge at Le Man Cave, home to the poker table', cta: 'Book your visit',
+        hero: '/images/poker-table-norwich-8-seats.webp', heroAlt: 'The eight-seat poker table with chips and cards dealt at Le Man Cave, Norwich', cta: 'Book your visit',
         specs: [['SEATS', '8 players'], ['GAME', 'No-stakes poker'], ['MONEY', 'None, just for fun'], ['INCLUDED', 'With venue hire']],
         detailTitle: 'Deal everyone in', detail: 'Eight seats around one table make poker one of the easiest ways to bring a group together between sim sessions and Scalextric heats. Play a few hands, run a mini tournament or just take a break from the racing.',
         points: ['Seats 8 players', 'No-stakes, purely for fun', 'Great for groups between races', 'Run a mini tournament', 'Included with venue hire'], ctaTitle: 'Shuffle up.',
@@ -62,7 +62,7 @@ export default class Product extends React.Component {
         specs: [['TABLE', 'Commercial, full size'], ['PLAYERS', '2'], ['PACE', 'Flat out'], ['INCLUDED', 'With venue hire']],
         detailTitle: 'Head to head', detail: 'Two players, one puck each and no hiding place. Air hockey is the perfect quick-fire grudge match between races.',
         points: ['Commercial, full-size table', 'Two-player head-to-head', 'Quick games, easy to pick up', 'Perfect for tournaments'],
-        detailImg: B('a36aa54903a7cf23a4c34b30de115426'), detailAlt: 'Air hockey table beside the pool / billiards table under neon', ctaTitle: 'Face off.',
+        detailImg: '/images/air-hockey-table-norwich-full-size.webp', detailAlt: 'The full-size air hockey table with blue edge lighting, beside the Le Mans GTE panel', ctaTitle: 'Face off.',
         faqs: [['Is it suitable for kids?', 'No age limits** — everyone can play.'], ['Is it included with venue hire?', 'Yes — everything is included with exclusive venue hire.'], ['Can we run a tournament?', 'Yes — ask us when you book.']] },
       football: { ...games, file: '/attractions/table-football-norwich', crumb: 'FOOTBALL TABLE', name: 'Football Table', tag: 'LEAGUE-GRADE', kicker: 'LEAGUE-GRADE TABLE', line1: 'No spinning.', line2: 'Mostly.',
         intro: 'A league-grade table football unit for settling office rivalries and family feuds alike.',
@@ -83,7 +83,7 @@ export default class Product extends React.Component {
       moto: { file: '/attractions/motorbike-simulator-norwich', parentHref: '/attractions/racing-simulator-norwich', parentLabel: 'SIMULATOR', parentCta: 'See the pro simulator', navActive: '/attractions/racing-simulator-norwich', relatedTitle: 'More racing',
         crumb: 'MOTORCYCLE SIMULATOR', name: 'Motorcycle Sim', tag: 'RETRO · TWO WHEELS', kicker: 'FOR THE LOVERS OF TWO WHEELS', line1: 'Lean in.', line2: 'Open it up.',
         intro: 'A classic 1990s motorcycle simulator. Swap four wheels for two, lean into the bends and chase the lap record.',
-        hero: IMG.moto, heroAlt: 'Rider leaning into a corner on the classic 1990s motorcycle simulator', cta: 'Book a ride',
+        hero: IMG.moto, heroAlt: 'Rider leaning into a bend on the Super Bikes motorbike simulator at Le Man Cave, Norwich', cta: 'Book a ride',
         specs: [['ERA', '1990s classic'], ['WHEELS', 'Two'], ['STYLE', 'Ride-on arcade'], ['RIDERS', '1 at a time']],
         detailTitle: 'Pure 90s nostalgia', detail: 'A genuine 1990s arcade motorcycle simulator — sit astride the bike, lean to steer and twist the throttle. Retro fun for riders and racers alike.',
         points: ['Classic 1990s ride-on cabinet', 'Lean to steer, twist to go', 'Retro arcade fun', 'Pairs perfectly with the pro sims'],
@@ -104,21 +104,21 @@ export default class Product extends React.Component {
         specs: [['RACE SUITS', 'Autographed'], ['F1', 'Spoilers'], ['LE MANS', 'Race panels'], ['VIEWING', 'Venue hire only']],
         detailTitle: 'A museum you can race in', detail: 'Every corner of Le Man Cave is packed with motorsport memorabilia — from autographed race suits to genuine race panels from Le Mans.',
         points: ['Autographed race suits', 'F1 spoilers and NASCAR wheels', 'Pieces from Le Mans', 'Neon & vintage signs throughout'],
-        detailImg: '/images/motorsport-memorabilia-vintage-bugatti-sign.webp', detailAlt: 'Vintage Bugatti sign on the reclaimed timber wall at Le Man Cave', ctaTitle: 'Come and see it.',
+        detailImg: '/images/le-mans-gte-race-car-panel-motorsport-memorabilia-norwich.webp', detailAlt: 'Rear bodywork from a European Le Mans Series GTE race car, number 69, on the wall at Le Man Cave', ctaTitle: 'Come and see it.',
         faqs: [['Can I visit just to see the memorabilia?', 'No — the memorabilia can be enjoyed as part of your venue hire only.'], ['Is the memorabilia for sale?', 'No — the collection is not for sale.'], ['Can I take photos?', 'Yes — photos of the venue are fine. Tag us @leman.cave!']] }
     };
 
     // SEO (Oct 2026): H1 (the hero's small line), hero alt and two subheadings carry each attraction's keywords
     // (seo/keywords.json in the site repo; also in the CRM SEO optimiser). [h1, heroAlt, detailTitle, perfectTitle]
     const SEO = {
-      poker: ['Poker table Norwich · no-stakes, 8 seats', 'The lounge at Le Man Cave, home to the poker table Norwich groups play at', 'A poker night venue in Norwich: deal everyone in', 'Group games in Norwich: perfect for'],
+      poker: ['Poker table Norwich · no-stakes, 8 seats', 'The eight-seat, no-stakes poker table Norwich groups play at, with a hand dealt', 'A poker night venue in Norwich: deal everyone in', 'Group games in Norwich: perfect for'],
       ps5: ['Gaming lounge Norwich · games consoles on a 100in screen', 'Two players racing with wheel controllers on the 100-inch screen in the gaming lounge Norwich groups love', 'Big screen gaming in Norwich: the best seat in the house', 'Perfect for a console gaming party in Norwich'],
       pinball: ['Digital pinball Norwich · full-size cabinet', 'Hands on the flippers: digital pinball Norwich', 'A pinball machine in Norwich, flippers at the ready', 'Perfect for'],
       pool: ['Pool table Norwich · 9ft pro table', 'Racked balls on the red cloth of the 9ft pool / billiards table, the pool table Norwich players book', 'A 9ft pool / billiards table worth the trip', 'Play pool in Norwich: perfect for'],
       airhockey: ['Air hockey Norwich · pro-grade table', 'The full-size air hockey table lit up in blue: air hockey Norwich', 'Head to head on the air hockey table', 'Perfect for'],
       football: ['Table football Norwich · league-grade table', 'Red and white players lined up for kick-off: table football Norwich', 'Every office needs a foosball table champion', 'Perfect for'],
       arcade: ['Arcade Norwich · two-player classics', 'Two friends playing a retro cabinet: arcade Norwich', 'Old school, new rivals: a two-player arcade machine', 'Retro arcade games: perfect for'],
-      moto: ['Motorbike simulator Norwich · 1990s classic', 'A rider leaning into a corner on the motorbike simulator Norwich riders love', 'Pure 90s nostalgia: a classic motorcycle simulator', 'A motorbike racing game for real: perfect for'],
+      moto: ['Motorbike simulator Norwich · 1990s classic', 'A rider leaning into a bend on the motorbike simulator Norwich riders love', 'Pure 90s nostalgia: a classic motorcycle simulator', 'A motorbike racing game for real: perfect for'],
       darts: ['Darts Norwich · automatic scoring', 'Winmau dartboard with a lit surround: darts Norwich with automatic scoring', 'Automatic scoring darts: aim for the treble twenty', 'A darts party in Norwich: perfect for'],
       memorabilia: ['Motorsport memorabilia Norwich · on every wall', 'Corvette Racing C6R rear panel with glowing tail lights: motorsport memorabilia Norwich', 'Racing memorabilia: a museum you can race in', 'A motorsport collection: perfect for'],
     };
