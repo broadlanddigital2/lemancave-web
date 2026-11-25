@@ -354,5 +354,15 @@ a.lc-hero-cta.lc-hero-cta[href] { box-shadow: none !important; }
   .lc-chips::-webkit-scrollbar { display: none; }
   form:has(.lc-chips), form fieldset:has(.lc-chips) { min-width: 0 !important; max-width: 100%; }
   .lc-chips > * { flex: none !important; white-space: nowrap; }
+
+  /* Homepage slideshow: counter, progress lines and buttons on one line */
+  .lc-hero-controls { flex-wrap: nowrap !important; gap: 10px !important; margin-top: 22px !important; }
+  .lc-hero-controls > span { min-width: 0 !important; font-size: 11px !important; letter-spacing: 0.06em !important; flex: none; }
+  .lc-hero-controls > [role="tablist"] { flex: 1 1 auto !important; min-width: 0; gap: 4px !important; }
+  .lc-hero-controls > [role="tablist"] > button { flex: 1 1 0 !important; min-width: 0 !important; padding-left: 0 !important; padding-right: 0 !important; }
+  .lc-hero-controls > div:last-child { gap: 6px !important; flex: none; }
+  .lc-hero-controls > div:last-child > button { width: 36px !important; height: 36px !important; font-size: 14px !important; }
+  /* Belt and braces: nothing can make the page slide sideways on phones */
+  body { overflow-x: hidden; }
 }
 

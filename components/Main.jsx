@@ -151,7 +151,7 @@ export default class Main extends React.Component {
 <A href={V.cur.href2} style={css("border: 1px solid #52525B; color: #FFFFFF; font-weight: 600; font-size: 16px; letter-spacing: 0.06em; text-transform: uppercase; padding: 17px 30px; border-radius: 4px")}>{V.cur.cta2}</A>
 </div>
 </div>
-<div style={css("display: flex; flex-wrap: wrap; align-items: center; gap: 18px; margin-top: 44px")}>
+<div className="lc-hero-controls" style={css("display: flex; flex-wrap: wrap; align-items: center; gap: 18px; margin-top: 44px")}>
 <span style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #F4F4F5; min-width: 64px")}>{V.counter}</span>
 <div role="tablist" aria-label="Choose slide" style={css("display: flex; gap: 8px; flex: 1 1 260px; max-width: 520px")}>
 {(V.slides || []).map((d, $index) => (<React.Fragment key={$index}>
