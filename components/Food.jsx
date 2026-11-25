@@ -87,33 +87,7 @@ export default class Food extends React.Component {
 </div>
 </div>
 <div style={css("flex: 1 1 420px; display: flex; justify-content: center")}>
-<svg role="img" aria-label="Illustration of a pepperoni pizza drawn as a racing tyre" viewBox="0 0 400 400" style={css("width: 100%; max-width: 520px; height: auto")}>
-<circle cx="200" cy="200" r="188" fill="#141417"></circle>
-<circle cx="200" cy="200" r="182" fill="none" stroke="#26262C" strokeWidth="16" strokeDasharray="10 9"></circle>
-<circle cx="200" cy="200" r="168" fill="none" stroke={V.accent} strokeWidth="3"></circle>
-<text x="200" y="40" textAnchor="middle" fontFamily="JetBrains Mono, monospace" fontSize="11" letterSpacing="4" fill="#A1A1AA">{"LEMAN CAVE \u00b7 PIT STOP"}</text>
-<circle cx="200" cy="200" r="158" fill="#C8873A"></circle>
-<circle cx="200" cy="200" r="143" fill="#E2A65A"></circle>
-<circle cx="200" cy="200" r="132" fill="#B8321F"></circle>
-<ellipse cx="160" cy="150" rx="40" ry="26" fill="#F6CF6B" opacity="0.9"></ellipse>
-<ellipse cx="250" cy="170" rx="34" ry="24" fill="#F6CF6B" opacity="0.9"></ellipse>
-<ellipse cx="190" cy="250" rx="46" ry="28" fill="#F6CF6B" opacity="0.9"></ellipse>
-<ellipse cx="270" cy="250" rx="28" ry="20" fill="#F6CF6B" opacity="0.85"></ellipse>
-<ellipse cx="125" cy="220" rx="26" ry="20" fill="#F6CF6B" opacity="0.85"></ellipse>
-<circle cx="150" cy="140" r="17" fill="#8E1B17"></circle><circle cx="145" cy="135" r="3" fill="#6B1311"></circle>
-<circle cx="235" cy="125" r="16" fill="#8E1B17"></circle><circle cx="240" cy="121" r="3" fill="#6B1311"></circle>
-<circle cx="275" cy="200" r="17" fill="#8E1B17"></circle><circle cx="270" cy="204" r="3" fill="#6B1311"></circle>
-<circle cx="205" cy="195" r="16" fill="#8E1B17"></circle><circle cx="210" cy="190" r="3" fill="#6B1311"></circle>
-<circle cx="130" cy="250" r="15" fill="#8E1B17"></circle><circle cx="134" cy="246" r="3" fill="#6B1311"></circle>
-<circle cx="225" cy="270" r="17" fill="#8E1B17"></circle><circle cx="220" cy="275" r="3" fill="#6B1311"></circle>
-<circle cx="170" cy="300" r="14" fill="#8E1B17"></circle>
-<circle cx="290" cy="290" r="12" fill="#8E1B17"></circle>
-<g stroke="#5A3416" strokeWidth="3" opacity="0.55">
-<line x1="200" y1="58" x2="200" y2="342"></line><line x1="58" y1="200" x2="342" y2="200"></line>
-<line x1="100" y1="100" x2="300" y2="300"></line><line x1="300" y1="100" x2="100" y2="300"></line>
-</g>
-<circle cx="200" cy="200" r="10" fill="#141417"></circle>
-</svg>
+<img width="1536" height="1024" srcSet="/images/w/pizza-party-norwich-pepperoni-pizza-box-480.webp 480w, /images/w/pizza-party-norwich-pepperoni-pizza-box-800.webp 800w, /images/w/pizza-party-norwich-pepperoni-pizza-box-1200.webp 1200w, /images/pizza-party-norwich-pepperoni-pizza-box.webp 1536w" sizes="100vw" src="/images/pizza-party-norwich-pepperoni-pizza-box.webp" alt="A hot pepperoni pizza* with blistered crust and fresh basil in an open pizza box, as served at Le Man Cave pizza* parties in Norwich" style={css("width: 100%; max-width: 620px; height: auto; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 10px; border: 1px solid #27272A; box-shadow: 0 30px 80px rgba(0,0,0,0.55)")} />
 </div>
 </div>
 </section>
