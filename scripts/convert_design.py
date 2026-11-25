@@ -316,6 +316,35 @@ def image_sizes(imgdir):
                 sizes['/images/' + f] = list(im.size)
     return sizes
 
+VARIANT_WIDTHS = (480, 800, 1200)
+SRC_SIZES = '100vw'
+
+def image_variants(imgdir, sizes):
+    # Smaller copies of every photo wider than 480px in public/images/w/ (name-480.webp, -800, -1200), so phones download
+    # a file near the size they show instead of the 1920px original. Each <img> gets srcset and sizes from
+    # lib/image-srcset.json (written here). Copies are made once and kept; delete one to have it made again.
+    from PIL import Image
+    out = {}
+    for key, (w, h) in sorted(sizes.items()):
+        name = key[len('/images/'):]
+        if '/' in name or name.endswith('.svg') or name.endswith('.gif') or w <= VARIANT_WIDTHS[0]:
+            continue
+        parts = []
+        for vw in VARIANT_WIDTHS:
+            if vw >= w:
+                break
+            dest = os.path.join(imgdir, 'w', os.path.splitext(name)[0] + f'-{vw}.webp')
+            if not os.path.exists(dest):
+                os.makedirs(os.path.dirname(dest), exist_ok=True)
+                with Image.open(os.path.join(imgdir, name)) as im:
+                    im = im.convert('RGB')
+                    im = im.resize((vw, round(h * vw / w)), Image.LANCZOS)
+                    im.save(dest, 'WEBP', quality=76, method=6)
+            parts.append('/images/w/' + os.path.basename(dest) + f' {vw}w')
+        parts.append(f'{key} {w}w')
+        out[key] = ', '.join(parts)
+    return out
+
 def add_menu_thumbs(code, imgdir, sizes):
     # The header mega menu's feature cards (decorative, alt="") use small thumbnails in public/images/menu/, loaded
     # lazily: the menu is hidden until opened, so full-size photos there were downloaded on every page for nothing.
@@ -342,7 +371,7 @@ def add_menu_thumbs(code, imgdir, sizes):
     head = re.sub(r'<img src="/images/([0-9a-f]{32}\.\w+|[a-z0-9]+(?:-[a-z0-9]+)+\.webp)" alt="" ', thumb, head)
     return code[:start] + head + code[end:]
 
-def add_image_sizes(code, sizes):
+def add_image_sizes(code, sizes, srcsets=None):
     # Images with a fixed address get their width and height written in; images whose address comes from page data
     # use components/Img.jsx, which looks the size up in lib/image-sizes.json (or uses the width/height in the data).
     def fix(m):
@@ -352,7 +381,10 @@ def add_image_sizes(code, sizes):
         src = re.match(r'<img src="([^"]+)"', tag)
         if src:
             w, h = sizes[src.group(1)]  # every local image must be in public/images
-            return tag.replace('<img ', f'<img width="{w}" height="{h}" ', 1)
+            extra = ''
+            if srcsets and src.group(1) in srcsets and ' srcSet=' not in tag:
+                extra = f'srcSet="{srcsets[src.group(1)]}" sizes="{SRC_SIZES}" '
+            return tag.replace('<img ', f'<img width="{w}" height="{h}" {extra}', 1)
         return '<Img ' + tag[5:]
     code = re.sub(r'<img [^>]*?/>', fix, code)
     if '<Img ' in code:
@@ -375,6 +407,7 @@ if __name__ == '__main__':
         b, e = os.path.splitext(f); exts[b] = e[1:]
     os.makedirs(os.path.join(OUT, 'components'), exist_ok=True)
     sizes = image_sizes(imgdir)
+    srcsets = image_variants(imgdir, sizes)
     all_css, pages = [], {}
     for f in sorted(os.listdir(SRC)):
         if not f.endswith('.dc.html'): continue
@@ -398,7 +431,7 @@ if __name__ == '__main__':
         code = add_blog_slot(code)
         code = add_consent_maps(code)
         code = add_menu_thumbs(code, imgdir, sizes)
-        code = add_image_sizes(code, sizes)
+        code = add_image_sizes(code, sizes, srcsets)
         if name == 'GiftVouchers' and 'formType="gift-voucher"' in code:
             code = re.sub(r'(<EnquiryForm formType="gift-voucher"[^>]*>)', lambda m: m.group(1) + '<input type="hidden" name="voucher" value={`${V.v.title} \u00b7 ${V.v.price}`} />', code, count=1)
             assert 'name="voucher"' in code
@@ -406,6 +439,7 @@ if __name__ == '__main__':
         if name not in TEMPLATES:
             pages[name] = {'component': name, 'slug': None, 'title': title}
     json.dump(sizes, open(os.path.join(OUT, 'lib', 'image-sizes.json'), 'w'), indent=0, sort_keys=True)
+    json.dump(srcsets, open(os.path.join(OUT, 'lib', 'image-srcset.json'), 'w'), indent=0, sort_keys=True)
     json.dump({'pages': pages, 'routes': ROUTES}, open(os.path.join(OUT, 'scripts', 'pages.json'), 'w'), indent=1)
     # global css: dedupe rule blocks (@media and @keyframes blocks are kept whole)
     seen, lines = set(), []

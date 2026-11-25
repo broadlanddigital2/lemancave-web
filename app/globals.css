@@ -169,3 +169,59 @@ a[href="/christmas-party-norwich"][style*="background:#ED2835" i] { background: 
 .lc-map-off button,.lc-map-off a{font:700 13px 'Barlow',system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase;border-radius:4px;padding:11px 16px;cursor:pointer;text-decoration:none}
 .lc-map-off button{background:#ED2835;color:#09090B;border:1px solid #ED2835}
 .lc-map-off a{color:#fff;border:1px solid #3F3F46}
+
+/* ---------- Mobile tidy (Nov 2026) ----------
+   lib/css.js multiplies large inline spacing (--lc-sp), min-heights (--lc-mh) and display type (--lc-fs, --lc-fm) by these
+   variables, so the desktop design is unchanged and phones get tighter sections, shorter heroes and smaller headlines.
+   Card grids become sideways swipe rows with arrow buttons (components/MobileScrollers.jsx, same selector). */
+.lc-festive-short { display: none; }
+.lc-hs-nav { display: none; }
+@media (max-width: 760px) {
+  :root { --lc-sp: 0.5; --lc-mh: 0.55; --lc-fs: 0.64; --lc-fm: 0.76; }
+
+  /* Christmas banner: one slim line */
+  .lc-festive { padding: 7px 12px 7px 50px; font-size: 13px; border-width: 2px; flex-wrap: nowrap; }
+  .lc-festive-long, .lc-festive-tag { display: none; }
+  .lc-festive-short { display: inline; white-space: nowrap; }
+  .lc-festive-short u { text-underline-offset: 3px; margin-left: 6px; }
+  .lc-festive-bow svg { width: 30px; height: 18px; }
+  .lc-festive::before { left: 24px; width: 10px; }
+  .lc-festive-bow { left: 14px; }
+
+  /* Header: slimmer bar */
+  header nav.lc-section { height: 60px !important; }
+  header nav.lc-section > a img { height: 44px !important; width: auto !important; }
+
+  /* Heroes: tighter copy under the shorter min-height */
+  header + section p[style*="font-size:20px"], header + section p[style*="font-size:19px"] { font-size: 16px !important; line-height: 1.5 !important; }
+  header + section a[style*="padding:18px 30px"], header + section a[style*="padding:17px 30px"] { padding: 13px 18px !important; font-size: 14px !important; }
+  header + section h1 { font-size: 12px !important; }
+  header + section nav[aria-label="Breadcrumb"] { font-size: 11px !important; margin-bottom: 12px !important; }
+
+  /* Big card titles inside swipe rows fit the narrower card */
+  .lc-hscroll h3[style*="--lc-fs"], article h3[style*="--lc-fs"] { font-size: 30px !important; }
+
+  /* Pictures inside content: never taller than most of the screen */
+  section img:not([style*="position:absolute"]):not(.lc-hero-img) { max-height: 62vh; object-fit: cover; }
+
+  /* Card grids → swipe rows */
+  :is(div[style*="grid-template-columns"]:has(> :nth-child(3)):is(:has(> a), :has(> article), :has(> div img), :has(> figure img)), .lc-hscroll):not(header *, footer *, .lc-gal, .lc-gallery, .lc-gallery *, .lc-noscroll, [style*="minmax(min("]) {
+    display: flex !important; flex-wrap: nowrap !important; overflow-x: auto; scroll-snap-type: x mandatory; gap: 12px !important;
+    margin-right: -20px !important; padding-right: 20px !important; padding-bottom: 4px;
+    scrollbar-width: none; -webkit-overflow-scrolling: touch; overscroll-behavior-x: contain;
+  }
+  :is(div[style*="grid-template-columns"]:has(> :nth-child(3)):is(:has(> a), :has(> article), :has(> div img), :has(> figure img)), .lc-hscroll):not(header *, footer *, .lc-gal, .lc-gallery, .lc-gallery *, .lc-noscroll, [style*="minmax(min("])::-webkit-scrollbar { display: none; }
+  :is(div[style*="grid-template-columns"]:has(> :nth-child(3)):is(:has(> a), :has(> article), :has(> div img), :has(> figure img)), .lc-hscroll):not(header *, footer *, .lc-gal, .lc-gallery, .lc-gallery *, .lc-noscroll, [style*="minmax(min("]) > * {
+    flex: 0 0 min(80%, 330px) !important; min-width: 0; scroll-snap-align: start; grid-column: auto !important; grid-row: auto !important;
+  }
+  .lc-hs-nav { display: flex; align-items: center; justify-content: flex-end; gap: 8px; margin-top: 14px; }
+  .lc-hs-nav[hidden] { display: none !important; }
+  .lc-hs-count { margin-right: auto; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #A1A1AA; }
+  .lc-hs-btn {
+    width: 44px; height: 44px; border-radius: 50%; border: 1px solid #3F3F46; background: #131316; color: #F4F4F5;
+    font-size: 18px; line-height: 1; cursor: pointer;
+  }
+  .lc-hs-btn:not(:disabled):last-child { background: #ED2835; border-color: #ED2835; color: #09090B; font-weight: 800; }
+  .lc-hs-btn:disabled { opacity: 0.35; cursor: default; }
+  .lc-hs-btn:focus-visible { outline: 2px solid #FFC233; outline-offset: 2px; }
+}

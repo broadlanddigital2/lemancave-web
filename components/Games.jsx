@@ -54,7 +54,7 @@ export default class Games extends React.Component {
   render() {
     const V = this.renderVals() || {};
     return (<>
-<div style={css("font-family: 'Barlow', system-ui, sans-serif; color: #E4E4E7; background: #09090B; min-height: 100vh; overflow-x: hidden")}>
+<div style={css("font-family: 'Barlow', system-ui, sans-serif; color: #E4E4E7; background: #09090B; min-height: 100vh; overflow-x: clip")}>
 <FestiveBar />
 <header style={css("position: sticky; top: 0; z-index: 10; background: rgba(9,9,11,0.92); border-bottom: 1px solid #1F1F23; backdrop-filter: blur(10px)")}>
 <nav className="lc-section" aria-label="Main" style={css("max-width: 1360px; margin: 0 auto; padding: 0 40px; height: 92px; display: flex; align-items: center; justify-content: space-between; gap: 24px")}>
@@ -71,7 +71,7 @@ export default class Games extends React.Component {
 </nav>
 </header>
 <section aria-labelledby="gm-h" style={css("position: relative; min-height: 680px; display: flex; align-items: flex-end; background: #0E0E11; overflow: hidden")}>
-<img width="1920" height="1283" src="/images/games-console-lounge-norwich-100-inch-screen.webp" alt="Two players racing on the 100-inch screen in the games lounge, among the arcade games Norwich groups love" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 70% 50%")} />
+<img width="1920" height="1283" srcSet="/images/w/games-console-lounge-norwich-100-inch-screen-480.webp 480w, /images/w/games-console-lounge-norwich-100-inch-screen-800.webp 800w, /images/w/games-console-lounge-norwich-100-inch-screen-1200.webp 1200w, /images/games-console-lounge-norwich-100-inch-screen.webp 1920w" sizes="100vw" src="/images/games-console-lounge-norwich-100-inch-screen.webp" alt="Two players racing on the 100-inch screen in the games lounge, among the arcade games Norwich groups love" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 70% 50%")} />
 <div aria-hidden="true" style={css("position: absolute; inset: 0; background: linear-gradient(90deg, rgba(9,9,11,0.94) 0%, rgba(9,9,11,0.75) 40%, rgba(9,9,11,0.2) 72%, rgba(9,9,11,0.1) 100%)")}></div>
 <div aria-hidden="true" style={css("position: absolute; left: 0; right: 0; bottom: 0; height: 300px; background: linear-gradient(to top, #09090B 10%, transparent)")}></div>
 <div className="lc-section" style={css("position: relative; max-width: 1360px; width: 100%; margin: 0 auto; padding: 140px 40px 64px; box-sizing: border-box")}>
@@ -137,7 +137,7 @@ export default class Games extends React.Component {
 <div className="lc-section" style={css("max-width: 1360px; margin: 0 auto; padding: 120px 40px")}>
 <div style={css("display: flex; flex-wrap: wrap; gap: 64px; align-items: center")}>
 <div style={css("flex: 1.2 1 520px; min-height: 460px; position: relative; border-radius: 8px; overflow: hidden; background: #131316")}>
-<img width="1920" height="1282" src="/images/games-console-lounge-norwich-classic-mini-sofa.webp" alt="The classic Mini sofa in the games lounge" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} />
+<img width="1920" height="1282" srcSet="/images/w/games-console-lounge-norwich-classic-mini-sofa-480.webp 480w, /images/w/games-console-lounge-norwich-classic-mini-sofa-800.webp 800w, /images/w/games-console-lounge-norwich-classic-mini-sofa-1200.webp 1200w, /images/games-console-lounge-norwich-classic-mini-sofa.webp 1920w" sizes="100vw" src="/images/games-console-lounge-norwich-classic-mini-sofa.webp" alt="The classic Mini sofa in the games lounge" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} />
 </div>
 <div style={css("flex: 1 1 400px")}>
 <p style={css(`margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: ${V.accent}`)}>{"02 / THE LOUNGE"}</p>

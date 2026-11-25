@@ -63,7 +63,7 @@ export default class Simulator extends React.Component {
   render() {
     const V = this.renderVals() || {};
     return (<>
-<div style={css("font-family: 'Barlow', system-ui, sans-serif; color: #E4E4E7; background: #09090B; min-height: 100vh; overflow-x: hidden")}>
+<div style={css("font-family: 'Barlow', system-ui, sans-serif; color: #E4E4E7; background: #09090B; min-height: 100vh; overflow-x: clip")}>
 <FestiveBar />
 <header style={css("position: sticky; top: 0; z-index: 10; background: rgba(9,9,11,0.92); border-bottom: 1px solid #1F1F23; backdrop-filter: blur(10px)")}>
 <nav className="lc-section" aria-label="Main" style={css("max-width: 1360px; margin: 0 auto; padding: 0 40px; height: 92px; display: flex; align-items: center; justify-content: space-between; gap: 24px")}>
@@ -80,7 +80,7 @@ export default class Simulator extends React.Component {
 </nav>
 </header>
 <section aria-labelledby="sim-h" style={css("position: relative; min-height: 720px; display: flex; align-items: flex-end; background: #0E0E11; overflow: hidden")}>
-<img width="1920" height="726" src="/images/racing-simulator-norwich-motion-sim-cockpit.webp" alt="Driver on the motion racing simulator Norwich drivers book, with friends watching from the side" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 70% 50%")} />
+<img width="1920" height="726" srcSet="/images/w/racing-simulator-norwich-motion-sim-cockpit-480.webp 480w, /images/w/racing-simulator-norwich-motion-sim-cockpit-800.webp 800w, /images/w/racing-simulator-norwich-motion-sim-cockpit-1200.webp 1200w, /images/racing-simulator-norwich-motion-sim-cockpit.webp 1920w" sizes="100vw" src="/images/racing-simulator-norwich-motion-sim-cockpit.webp" alt="Driver on the motion racing simulator Norwich drivers book, with friends watching from the side" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 70% 50%")} />
 <div aria-hidden="true" style={css("position: absolute; inset: 0; background: linear-gradient(90deg, rgba(9,9,11,0.94) 0%, rgba(9,9,11,0.75) 40%, rgba(9,9,11,0.2) 72%, rgba(9,9,11,0.1) 100%)")}></div>
 <div aria-hidden="true" style={css("position: absolute; left: 0; right: 0; bottom: 0; height: 300px; background: linear-gradient(to top, #09090B 10%, transparent)")}></div>
 <div className="lc-section" style={css("position: relative; max-width: 1360px; width: 100%; margin: 0 auto; padding: 140px 40px 64px; box-sizing: border-box")}>
@@ -135,7 +135,7 @@ export default class Simulator extends React.Component {
 <span style={css("font-size: 14px; font-weight: 600; letter-spacing: 0.06em; padding: 10px 16px; border: 1px solid #3F3F46; border-radius: 999px; color: #E4E4E7")}>{"RALLY STAGES"}</span>
 </div>
 </div>
-<div style={css("flex: 1 1 520px; min-height: 480px; position: relative; border-radius: 8px; overflow: hidden; background: #131316; border: 1px solid #232328")}><img width="1920" height="1282" src="/images/sim-room-norwich-motion-and-static-simulators.webp" alt="Friends watching a driver on the motion sim, with the static sim behind, in the Le Man Cave sim room" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} /></div>
+<div style={css("flex: 1 1 520px; min-height: 480px; position: relative; border-radius: 8px; overflow: hidden; background: #131316; border: 1px solid #232328")}><img width="1920" height="1282" srcSet="/images/w/sim-room-norwich-motion-and-static-simulators-480.webp 480w, /images/w/sim-room-norwich-motion-and-static-simulators-800.webp 800w, /images/w/sim-room-norwich-motion-and-static-simulators-1200.webp 1200w, /images/sim-room-norwich-motion-and-static-simulators.webp 1920w" sizes="100vw" src="/images/sim-room-norwich-motion-and-static-simulators.webp" alt="Friends watching a driver on the motion sim, with the static sim behind, in the Le Man Cave sim room" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} /></div>
 </div>
 </section>
 <section aria-labelledby="feat-h" style={css("background: #0F0F12; border-top: 1px solid #1F1F23; border-bottom: 1px solid #1F1F23")}>
@@ -201,10 +201,10 @@ export default class Simulator extends React.Component {
 <div style={css("display: flex; flex-wrap: wrap; border-radius: 10px; overflow: hidden; border: 1px solid #232328; background: #131316")}>
 <div style={css("flex: 1.4 1 520px; min-height: 440px; position: relative; background: #18181C; display: flex; align-items: center; justify-content: center")}>
 {V.is4k ? (<>
-<img width="1920" height="1282" src="/images/racing-simulator-norwich-motion-sim.webp" alt="A 4K monitor in front of the simulator cockpit" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} />
+<img width="1920" height="1282" srcSet="/images/w/racing-simulator-norwich-motion-sim-480.webp 480w, /images/w/racing-simulator-norwich-motion-sim-800.webp 800w, /images/w/racing-simulator-norwich-motion-sim-1200.webp 1200w, /images/racing-simulator-norwich-motion-sim.webp 1920w" sizes="100vw" src="/images/racing-simulator-norwich-motion-sim.webp" alt="A 4K monitor in front of the simulator cockpit" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} />
 </>) : null}
 {V.isVr ? (<>
-<img width="1200" height="800" src="/images/536b036d141561157d953a6c5dd5f3f9.webp" alt="Driver wearing a VR headset in the simulator rig" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} />
+<img width="1200" height="800" srcSet="/images/w/536b036d141561157d953a6c5dd5f3f9-480.webp 480w, /images/w/536b036d141561157d953a6c5dd5f3f9-800.webp 800w, /images/536b036d141561157d953a6c5dd5f3f9.webp 1200w" sizes="100vw" src="/images/536b036d141561157d953a6c5dd5f3f9.webp" alt="Driver wearing a VR headset in the simulator rig" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} />
 </>) : null}
 </div>
 <div style={css("flex: 1 1 380px; padding: 48px; display: flex; flex-direction: column; justify-content: center; gap: 18px")}>
@@ -242,7 +242,7 @@ export default class Simulator extends React.Component {
 </section>
 <section className="lc-section" aria-labelledby="moto-h" style={css("max-width: 1360px; margin: 0 auto; padding: 120px 40px 60px")}>
 <div style={css("display: flex; flex-wrap: wrap; border-radius: 10px; overflow: hidden; border: 1px solid #232328; background: #131316")}>
-<div style={css("flex: 1 1 460px; min-height: 340px; position: relative")}><img width="1536" height="1024" src="/images/motorbike-simulator-norwich-superbikes-rider.webp" alt="Rider leaning into a bend on the Super Bikes motorbike simulator" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} /></div>
+<div style={css("flex: 1 1 460px; min-height: 340px; position: relative")}><img width="1536" height="1024" srcSet="/images/w/motorbike-simulator-norwich-superbikes-rider-480.webp 480w, /images/w/motorbike-simulator-norwich-superbikes-rider-800.webp 800w, /images/w/motorbike-simulator-norwich-superbikes-rider-1200.webp 1200w, /images/motorbike-simulator-norwich-superbikes-rider.webp 1536w" sizes="100vw" src="/images/motorbike-simulator-norwich-superbikes-rider.webp" alt="Rider leaning into a bend on the Super Bikes motorbike simulator" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} /></div>
 <div style={css("flex: 1 1 420px; padding: 48px; display: flex; flex-direction: column; justify-content: center; gap: 14px")}>
 <div style={css(`font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: ${V.amber}`)}>{"FOR THE LOVERS OF TWO WHEELS"}</div>
 <h2 id="moto-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 52px; line-height: 0.95; color: #FFFFFF; text-transform: uppercase")}>{"Classic 1990s"}<br />{"motorcycle sim"}</h2>

@@ -17,8 +17,9 @@ export default function FestiveBar() {
         <svg viewBox="0 0 48 28" width="40" height="24"><path d="M24 14C17 4 6 2 4 8s6 10 20 6Zm0 0c7-10 18-12 20-6s-6 10-20 6Zm0 0-7 13 4 0 3-6 3 6 4 0Z" fill="#ED2835" stroke="#FFC233" strokeWidth="1.2" strokeLinejoin="round" /><circle cx="24" cy="14" r="3.2" fill="#FFC233" /></svg>
       </span>
       <span className="lc-festive-tag">Now booking</span>
-      <span>Christmas parties: every weeknight in December, from £45pp</span>
-      <span className="lc-festive-link">The Festive Grand Prix →</span>
+      <span className="lc-festive-long">Christmas parties: every weeknight in December, from £45pp</span>
+      <span className="lc-festive-link lc-festive-long">The Festive Grand Prix →</span>
+      <span className="lc-festive-short">Christmas parties from £45pp <u>Book →</u></span>
     </A>
   );
 }
