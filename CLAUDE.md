@@ -51,7 +51,7 @@ Whole-cave prices are per person, with a minimum spend that still applies if few
   | BYO & pizza | £60pp | £720 |
 
 - **Sunday 13–16**: £45pp, min £600.
-- **Saturday 18–21**:
+- **Evening Party, any night Mon–Sat 18–21** (owner, 25 Nov 2026; was Saturday nights plus December/early January weeknights):
 
   | Package | Price | Min spend |
   |---|---|---|
@@ -59,7 +59,7 @@ Whole-cave prices are per person, with a minimum spend that still applies if few
   | BYO | £50pp | £700 |
   | BYO & pizza | £60pp | £840 |
 
-  Also runs on weeknights in December and the first two weeks of January.
+  Christmas parties are these evening sessions in December. Never say evenings are Saturday-only.
 
 ## Brand
 - **Colours**:
@@ -105,13 +105,13 @@ Whole-cave prices are per person, with a minimum spend that still applies if few
   - The CRM reads labelled lines from `details`: `Name:`, `Email:`, `Phone:`, `Company:`. It takes the lead message from the `Enquiry:` line.
   - Keep the words enquiry, message, details and comments out of subjects (see `buildCrmPayload`).
 - **Booking**: `/book` has live online booking: the CRM booking widget (`components/CrmBooking.jsx`, loaded from `https://crm.racecargraphics.uk/embed/booking.js`, inserted by the converter in place of `<div data-lc-booking="form">` in `design/Book.dc.html`). Stripe returns to `/book?session_id=…`, which shows the receipt.
-  - Services, prices and opening times live in the CRM (Ecommerce, LeMan Cave): Sim Room (Sim 1, Sim 2; daytime £80, evenings & weekends £125, 1-hour slots, paid in full) and Whole Cave Hire (After School, Car Club, Saturday Afternoon x3, Sunday, Saturday Night x3; per person with a minimum spend, 25% deposit). The Saturday Night services are named "Saturday Night & Christmas Party · …" (25 Nov 2026) because they also run every weeknight in December and early January. Change prices there, not on the site.
+  - Services, prices and opening times live in the CRM (Ecommerce, LeMan Cave): Sim Room (Sim 1, Sim 2; daytime £80, evenings & weekends £125, 1-hour slots, paid in full) and Whole Cave Hire (After School, Car Club, Saturday Afternoon x3, Sunday, Saturday Night x3; per person with a minimum spend, 25% deposit). The evening services are named "Evening Party · …" (25 Nov 2026) and run any night, Monday to Saturday, 18:00–21:00 (undated availability rules). Change prices there, not on the site.
   - Online bookings need 24 hours' notice (CRM: `ecommerce_sites.min_notice_minutes = 1440`). Anything sooner, or a special request, goes through the widget's "Have an urgent booking?" form (a lead in LeMan Cave leads, alert to bookings@) or by phone.
   - Sessions starting within 14 days are paid in full at checkout instead of the deposit (CRM: `ecommerce_sites.full_payment_within_days`).
   - Deposit bookings get a final invoice for the balance 14 days before (email with invoice PDF and a "Pay balance" link to `/book?pay_balance=…`), due 7 days before, plus a "Check balance paid" task in the CRM that closes itself when paid online. Settings: `ecommerce_sites.balance_invoice_days_before`, `balance_due_days_before`, and `site_url` (the booking page the pay link uses; change it to https://lemancave.co.uk/book at go-live).
   - **Gift cards**: `/experience-gifts-norwich` sells digital gift cards for any amount from £10 to £2,000 (`<CrmBooking mode="gift-card" />`), emailed with a code to the buyer or the recipient, valid 12 months. Customers enter the code on the booking review: the card comes off first, any deposit still due is charged, and the rest stays on the card. Settings: `ecommerce_sites.gift_cards_enabled`, `gift_card_min_amount`, `gift_card_max_amount`, `gift_card_valid_days`; cards are in `ecommerce_gift_cards`.
   - A whole-cave booking blocks both sims; a sim booking blocks only that sim and the overlapping whole-cave session.
-  - Seasonal rules (After School off in December and early January; Saturday Night on December weeknights and early January) are dated rules that run to January 2028. Renew them before then.
+  - Seasonal rules (After School off in December and early January) are dated rules that run to January 2028. Renew them before then.
   - Stripe for LeMan Cave is in **test mode**. Switch to live keys in the CRM (Ecommerce → Payments) before taking real bookings.
   - CRM side: `ecommerce_create_guest_service_order`, `slot_mode = 'clock'`, `venue_space` providers and the widget's venue profile (race-car-graphics-crm, Oct 2026).
 - **Site search and AI enquiry bot** (Oct 2026): `app/layout.tsx` loads the CRM's `embed/site-search.js` (no floating button since 25 Nov 2026, `appearance.floating_button = false`: it opens from the header search icon, `/` or Ctrl/Cmd+K, and "Search the site" in the mobile menu; its contact options include WhatsApp) and `rcg-enquiry-bot.js` (chat launcher bottom-right). Configured in the CRM: Marketing → Site search, and Channels → LeMan Cave Enquiry Bot (tables `site_search_configs`, `enquiry_bot_configs`). Bot leads land in LeMan Cave leads with alerts to bookings@ (Boxly off). The bot learns the site by crawling it; until go-live both point at the workers.dev preview. **At go-live** set `site_url` (and search `appearance.booking_url` / `enquiry_url`, and the services' `source_url`) to https://lemancave.co.uk, then refresh the bot index and reindex search.
@@ -152,7 +152,7 @@ Whole-cave prices are per person, with a minimum spend that still applies if few
 - Every visible "pizza" is written "pizza*". The * and ** footnotes are in `app/layout.tsx` (`.lc-smallprint`) on every page. Not in alt text, aria-labels, meta descriptions or code keys.
 - Capacity: up to 50 people, with activities for 34 players at once (arcade 2, air hockey 2, darts 2, pool 2, motorbike 2, sim 1, sim 1, Scalextric 6, table football 4, console 4, poker 8).
 - Write "Bring Your Own" on the site, never "BYO" (the owner's preference, Oct 2026).
-- The £60 package is "Pizza* Included + Bring Your Own Drinks" (column/menu label "+ PIZZA* INCLUDED"; CRM services "Saturday Afternoon/Night · Pizza Included + Bring Your Own Drinks"). Never "Bring Your Own drink & pizza", which reads as if guests bring the pizza (owner, 9 Nov 2026).
+- The £60 package is "Pizza* Included + Bring Your Own Drinks" (column/menu label "+ PIZZA* INCLUDED"; CRM services "Saturday Afternoon · …" / "Evening Party · Pizza Included + Bring Your Own Drinks"). Never "Bring Your Own drink & pizza", which reads as if guests bring the pizza (owner, 9 Nov 2026).
 - "Do I need to be fit?" answers end by asking guests to tell us about medical conditions (heart conditions, epilepsy, motion sickness, pregnancy, etc.).
 - Never invent reviews, testimonials or ratings. Placeholders say `[ADD REAL REVIEW]` or similar.
 - Don't state unconfirmed facts. Mark them `[CONFIRM …]` instead.
