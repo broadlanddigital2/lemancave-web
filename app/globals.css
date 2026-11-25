@@ -270,7 +270,7 @@ a.lc-hero-cta.lc-hero-cta[href] { box-shadow: none !important; }
   header + section:has(> img) > div[aria-hidden][style*="inset:0"] { display: none !important; }
   header + section:has(> img) > div[aria-hidden][style*="bottom:0"] {
     top: calc(min(60vw, 300px) - 80px) !important; bottom: auto !important; height: 80px !important;
-    background: linear-gradient(to top, #2B0C11, transparent) !important;
+    background: linear-gradient(to top, #3D0F17, transparent) !important;
   }
   header + section:has(> img) > .lc-section {
     padding-top: calc(min(60vw, 300px) + 14px) !important; padding-bottom: 32px !important;
@@ -373,9 +373,14 @@ a.lc-hero-cta.lc-hero-cta[href] { box-shadow: none !important; }
   /* Decorative timeline lines that poke past the right edge */
   span[style*="right:-24px"] { right: 0 !important; }
 }
-/* Hero banners on every page: a deep red panel, so it's clear where the banner ends and the page starts
+/* Hero banners on every page: a red panel with rounded bottom corners and a shadow, so it's clear where the banner ends and the page starts
    (on desktop this shows on heroes without a full photo; on phones under the photo banner too). */
-header + section { background: linear-gradient(180deg, #2B0C11 0%, #1C080C 100%) !important; border-bottom: 0 !important; }
+header + section {
+  background: linear-gradient(180deg, #3D0F17 0%, #250A0F 100%) !important; border-bottom: 0 !important;
+  border-radius: 0 0 28px 28px; overflow: hidden; margin-bottom: 14px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.07), 0 22px 44px -12px rgba(0, 0, 0, 0.85);
+}
+@media (max-width: 760px) { header + section { border-radius: 0 0 20px 20px; } }
 header + section > div[aria-hidden][style*="90deg, #0B0B0E"] { display: none !important; }
 header + section .lc-hero-stats > div { background: rgba(0, 0, 0, 0.32) !important; border-color: rgba(255, 255, 255, 0.08) !important; border-left-color: #ED2835 !important; }
 /* Browsers without overflow-x: clip (older iPhones) fall back to hidden on the page wrappers, so nothing can make the
