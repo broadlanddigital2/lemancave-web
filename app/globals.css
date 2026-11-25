@@ -388,4 +388,10 @@ a.lc-hero-cta.lc-hero-cta[href] { box-shadow: none !important; }
 }
 /* Breadcrumbs bar at the start of the page content, below the hero banner (converter step move_breadcrumbs) */
 .lc-crumbs nav[aria-label="Breadcrumb"] { margin: 0 !important; }
+/* WhatsApp button, phones only, bottom left (app/layout.tsx); hidden while the mobile menu is open */
+.lc-whatsapp { position: fixed; z-index: 80; bottom: 18px; left: 18px; display: none; width: 56px; height: 56px; place-items: center; border-radius: 50%; color: #FFFFFF; background: #25D366; box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4); transition: transform .18s ease; }
+.lc-whatsapp:hover { color: #FFFFFF; transform: translateY(-2px); }
+.lc-whatsapp:focus-visible { outline: 2px solid #FFC233; outline-offset: 3px; }
+@media (max-width: 760px) { .lc-whatsapp { display: grid; } }
+html.lc-mob-lock .lc-whatsapp { display: none; }
 

@@ -90,6 +90,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             search panel from the page, leaving a Search button that opened nothing. */}
         <CookieConsent />
         <MobileScrollers />
+        {/* WhatsApp on phones, bottom left (same number and behaviour as the Race Car Graphics site). The CRM site search
+            no longer has a floating button (CRM: site_search_configs.appearance.floating_button = false); it opens from
+            the header search icon and "Search the site" in the mobile menu. */}
+        <a className="lc-whatsapp" href="https://wa.me/447383563859" target="_blank" rel="noopener noreferrer" aria-label="Chat with Le Man Cave on WhatsApp">
+          <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" /></svg>
+        </a>
         <WidgetTweaks />
         <AdClick />
         <Script src="https://crm.racecargraphics.uk/embed/site-search.js" data-key="9d5420c16e364a7da808bb67" strategy="afterInteractive" />
