@@ -193,8 +193,8 @@ a[href="/christmas-party-norwich"][style*="background:#ED2835" i] { background: 
   header nav.lc-section > a img { height: 44px !important; width: auto !important; }
 
   /* Heroes: tighter copy under the shorter min-height */
-  header + section p[style*="font-size:20px"], header + section p[style*="font-size:19px"] { font-size: 16px !important; line-height: 1.5 !important; }
-  header + section a[style*="padding:18px 30px"], header + section a[style*="padding:17px 30px"] { padding: 13px 18px !important; font-size: 14px !important; }
+  header + section p:is([style*="font-size:20px"], [style*="font-size: 20px"], [style*="font-size:19px"], [style*="font-size: 19px"]) { font-size: 16px !important; line-height: 1.5 !important; }
+  header + section a:is([style*="padding:18px 30px"], [style*="padding: 18px 30px"], [style*="padding:17px 30px"], [style*="padding: 17px 30px"]) { padding: 13px 18px !important; font-size: 14px !important; }
   header + section h1 { font-size: 12px !important; }
   header + section nav[aria-label="Breadcrumb"] { font-size: 11px !important; margin-bottom: 12px !important; }
 
@@ -255,21 +255,23 @@ a[href="/christmas-party-norwich"][style*="background:#ED2835" i] { background: 
   article > div:has(> img[style*="position:absolute"]) { min-height: 200px !important; flex-basis: 100% !important; }
   article > div:has(> img[style*="position:absolute"]) + div { padding: 20px 20px 22px !important; gap: 10px !important; }
 
+  /* NB: React rewrites a style attribute it updates with spaces ("position: absolute"), so hero rules below match the
+     element, not its inline style (the homepage slides change style every few seconds). */
   /* Heroes with a photo: the photo becomes a banner across the top (whole width, not zoomed or panned) and the
      headline sits underneath on the dark background, so it always reads clearly. */
-  header + section:has(> img[style*="position:absolute"]) { display: block !important; min-height: 0 !important; }
-  header + section:has(> img[style*="position:absolute"]) > img[style*="position:absolute"] {
+  header + section:has(> img) { display: block !important; min-height: 0 !important; }
+  header + section:has(> img) > img {
     top: 0 !important; left: 0 !important; right: 0 !important; bottom: auto !important; width: 100% !important;
     height: min(60vw, 300px) !important; max-height: none !important; transform: none !important; filter: none !important;
   }
-  header + section:has(> img[style*="position:absolute"]) > div[aria-hidden][style*="inset:0"] { display: none !important; }
-  header + section:has(> img[style*="position:absolute"]) > div[aria-hidden][style*="bottom:0"] {
+  header + section:has(> img) > div[aria-hidden][style*="inset:0"] { display: none !important; }
+  header + section:has(> img) > div[aria-hidden][style*="bottom:0"] {
     top: calc(min(60vw, 300px) - 80px) !important; bottom: auto !important; height: 80px !important;
     background: linear-gradient(to top, #09090B, transparent) !important;
   }
-  header + section:has(> img[style*="position:absolute"]) > .lc-section {
+  header + section:has(> img) > .lc-section {
     padding-top: calc(min(60vw, 300px) + 14px) !important; padding-bottom: 32px !important;
   }
-  header + section:has(> img[style*="position:absolute"]) > .lc-section [aria-live] { min-height: 0 !important; }
+  header + section:has(> img) > .lc-section [aria-live] { min-height: 0 !important; }
 }
 
