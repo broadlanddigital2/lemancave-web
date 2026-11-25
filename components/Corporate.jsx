@@ -74,7 +74,7 @@ export default class Corporate extends React.Component {
 </nav>
 </header>
 <section aria-labelledby="co-h" style={css("position: relative; min-height: 700px; display: flex; align-items: flex-end; background: #0E0E11; overflow: hidden")}>
-<img width="1920" height="1282" src="/images/sim-room-norwich-motion-and-static-simulators.webp" alt="Colleague racing the simulator while the team cheers at one of our corporate events Norwich teams book" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%")} />
+<img width="1920" height="1280" src="/images/corporate-events-norwich-colleagues-high-five.webp" alt="Colleagues sharing a high-five at one of our corporate events Norwich teams book" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%")} />
 <div aria-hidden="true" style={css("position: absolute; inset: 0; background: linear-gradient(90deg, rgba(9,9,11,0.95) 0%, rgba(9,9,11,0.8) 45%, rgba(9,9,11,0.35) 80%, rgba(9,9,11,0.25) 100%)")}></div>
 <div aria-hidden="true" style={css("position: absolute; left: 0; right: 0; bottom: 0; height: 300px; background: linear-gradient(to top, #09090B 10%, transparent)")}></div>
 <div className="lc-section" style={css("position: relative; max-width: 1360px; width: 100%; margin: 0 auto; padding: 140px 40px 64px; box-sizing: border-box")}>
