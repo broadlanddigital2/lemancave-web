@@ -491,7 +491,7 @@ export default class Main extends React.Component {
 <EnquiryForm formType="general-enquiry" aria-label="Enquiry form" style={css("flex: 1.3 1 480px; background: #131316; border: 1px solid #232328; border-radius: 10px; padding: 44px; display: flex; flex-direction: column; gap: 22px")}>
 <fieldset style={css("border: 0; padding: 0; margin: 0")}>
 <legend style={css("font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #A1A1AA; margin-bottom: 12px")}>{"What are you planning?"}</legend>
-<div style={css("display: flex; flex-wrap: wrap; gap: 10px")}>
+<div className="lc-chips" style={css("display: flex; flex-wrap: wrap; gap: 10px")}>
 {(V.types || []).map((t, $index) => (<React.Fragment key={$index}>
 <button type="button" onClick={t.pick} aria-pressed={t.pressed} style={css(t.style)}>{t.label}</button>
 </React.Fragment>))}

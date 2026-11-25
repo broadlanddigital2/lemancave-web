@@ -441,7 +441,7 @@ Follow @leman.cave</a>
 <form aria-label="Enquiry form" style="flex: 1.3 1 480px; background: #131316; border: 1px solid #232328; border-radius: 10px; padding: 44px; display: flex; flex-direction: column; gap: 22px">
 <fieldset style="border: 0; padding: 0; margin: 0">
 <legend style="font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #A1A1AA; margin-bottom: 12px">What are you planning?</legend>
-<div style="display: flex; flex-wrap: wrap; gap: 10px">
+<div class="lc-chips" style="display: flex; flex-wrap: wrap; gap: 10px">
 <sc-for list="{{types}}" as="t" hint-placeholder-count="5">
 <button type="button" onClick="{{t.pick}}" aria-pressed="{{t.pressed}}" style="{{t.style}}">{{t.label}}</button>
 </sc-for>
