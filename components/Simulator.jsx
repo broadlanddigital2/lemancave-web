@@ -47,11 +47,6 @@ export default class Simulator extends React.Component {
       viewTitle: is4k ? '4K monitor' : 'Step inside the car',
       viewCopy: is4k ? 'A crisp, ultra-high-definition 4K monitor in front of the cockpit — ideal if you want to race with friends watching on.' : 'Pull on the headset and the garage disappears. Look into the apex, check your mirrors and feel completely surrounded by the race.',
       sessions, faqs,
-      reviews: [
-        { name: 'James T.', quote: '[PASTE JAMES T.’S REVIEW VERBATIM — on the simulator’s realism.]' },
-        { name: 'Luke P.', quote: '[PASTE LUKE P.’S REVIEW VERBATIM — on the range of activities and atmosphere.]' },
-        { name: 'Sarah M.', quote: '[PASTE SARAH M.’S REVIEW VERBATIM — on her birthday party.]' }
-      ],
       brands: [
         { name: 'Race Car Graphics UK', href: 'https://racecargraphics.uk/', logo: '/images/af46cb048a3538fff3ada1542e3a6666.png' },
         { name: 'Broadland Digital', href: 'https://broadlanddigital.co.uk/', logo: '/images/3af5e52699d5da909dbac3e38fd47a32.svg' },
@@ -251,25 +246,7 @@ export default class Simulator extends React.Component {
 </div>
 </div>
 </section>
-<section className="lc-section" aria-labelledby="rev-h" style={css("max-width: 1360px; margin: 0 auto; padding: 60px 40px 120px")}>
-<p style={css(`margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: ${V.accent}`)}>{"05 / FROM THE GRID"}</p>
-<h2 id="rev-h" style={css("margin: 0 0 48px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 84px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Driver reviews"}</h2>
-<div style={css("display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px")}>
-{(V.reviews || []).map((r, $index) => (<React.Fragment key={$index}>
-<figure style={css("margin: 0; padding: 32px; background: #131316; border: 1px solid #232328; border-radius: 8px; display: flex; flex-direction: column; gap: 18px")}>
-<div aria-label="5 out of 5 stars" style={css(`display: flex; gap: 4px; color: ${V.amber}`)}>
-<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7 7 .6-5.4 4.7 1.7 7.2L12 17.8 5.7 21.5l1.7-7.2L2 9.6 9 9z"></path></svg>
-<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7 7 .6-5.4 4.7 1.7 7.2L12 17.8 5.7 21.5l1.7-7.2L2 9.6 9 9z"></path></svg>
-<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7 7 .6-5.4 4.7 1.7 7.2L12 17.8 5.7 21.5l1.7-7.2L2 9.6 9 9z"></path></svg>
-<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7 7 .6-5.4 4.7 1.7 7.2L12 17.8 5.7 21.5l1.7-7.2L2 9.6 9 9z"></path></svg>
-<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7 7 .6-5.4 4.7 1.7 7.2L12 17.8 5.7 21.5l1.7-7.2L2 9.6 9 9z"></path></svg>
-</div>
-<blockquote style={css("margin: 0; font-size: 18px; line-height: 1.6; color: #D4D4D8; flex: 1")}>{r.quote}</blockquote>
-<figcaption style={css("font-size: 15px; color: #A1A1AA")}><span style={css("color: #FFFFFF; font-weight: 600")}>{r.name}</span>{" \u00b7 Verified customer"}</figcaption>
-</figure>
-</React.Fragment>))}
-</div>
-</section>
+<div data-crm-google-reviews="" aria-label="Google reviews"></div>
 <section aria-labelledby="faq-h" style={css("background: #0F0F12; border-top: 1px solid #1F1F23; border-bottom: 1px solid #1F1F23")}>
 <div className="lc-section" style={css("max-width: 1360px; margin: 0 auto; padding: 120px 40px; display: flex; flex-wrap: wrap; gap: 64px")}>
 <div style={css("flex: 1 1 340px")}>

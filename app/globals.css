@@ -130,6 +130,8 @@ a[href="/christmas-party-norwich"][style*="border-radius"][style*="color:#ED2835
 a[href="/christmas-party-norwich"][style*="border-radius"] [style*="background:#ED2835" i],
 a[href="/christmas-party-norwich"][style*="background:#ED2835" i] { background: #1E9E5E !important; color: #FFFFFF !important; }
 .lc-mm-feat:hover { color: #5BE09A !important; }
+/* Homepage slide buttons: no glow (the Christmas slide's button is green from the slide data in design/Main.dc.html) */
+a.lc-hero-cta.lc-hero-cta[href] { box-shadow: none !important; }
 /* Mobile menu: featured item (Christmas Parties) */
 .lc-mob-feat {
   display: flex; flex-direction: column; gap: 4px; margin: 6px 0 14px; padding: 14px 16px; border-radius: 8px;
@@ -336,18 +338,14 @@ a[href="/christmas-party-norwich"][style*="background:#ED2835" i] { background: 
   /* Christmas page header button stays on one line */
   header a[href="#packages"] { padding: 12px 12px !important; font-size: 13px !important; letter-spacing: 0.03em !important; white-space: nowrap; }
 
-  /* Homepage Sim room / Exclusive hire / hours: broken off from the hero as a red panel like the booking band */
-  .lc-hero-stats {
-    position: relative; display: grid !important; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 28px !important;
-    padding: 32px 14px 14px; border-top: 0 !important; border-radius: 10px; background: #ED2835; overflow: hidden;
+  /* Homepage Sim room / Exclusive hire / hours: the same tiles as the attraction pages' key facts */
+  .lc-hero-stats { display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 8px !important; margin-top: 28px !important; border-top: 0 !important; }
+  .lc-hero-stats > div {
+    padding: 11px 12px 12px !important; border: 1px solid #232328; border-left: 3px solid #ED2835; border-radius: 6px;
+    background: #131316; min-width: 0;
   }
-  .lc-hero-stats::before {
-    content: ''; position: absolute; left: 0; right: 0; top: 0; height: 16px; opacity: 0.3;
-    background: repeating-conic-gradient(#09090B 0% 25%, transparent 0% 50%) 0 0 / 16px 16px;
-  }
-  .lc-hero-stats > div { padding: 10px 12px 12px !important; border-radius: 6px; background: rgba(9, 9, 11, 0.1); min-width: 0; }
-  .lc-hero-stats > div > div:first-child { font-size: 10px !important; letter-spacing: 0.1em !important; color: #3F0A0E !important; }
-  .lc-hero-stats > div > div + div { font-size: 20px !important; line-height: 1.05 !important; margin-top: 4px !important; color: #09090B !important; }
+  .lc-hero-stats > div > div:first-child { font-size: 10px !important; letter-spacing: 0.1em !important; }
+  .lc-hero-stats > div > div + div { font-size: 19px !important; line-height: 1.05 !important; margin-top: 4px !important; }
   /* Enquiry form "What are you planning?" choices: one swipeable line */
   .lc-chips {
     flex-wrap: nowrap !important; overflow-x: auto; margin-right: -20px; padding-right: 20px; scrollbar-width: none;
