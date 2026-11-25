@@ -164,7 +164,7 @@ export default class Main extends React.Component {
 <button type="button" aria-label="Next slide" onClick={V.next} style={css(`width: 44px; height: 44px; border-radius: 50%; border: 1px solid #3F3F46; background: ${V.accent}; color: #09090B; cursor: pointer; font-size: 18px; font-weight: 800`)}>{"\u2192"}</button>
 </div>
 </div>
-<div style={css("display: flex; flex-wrap: wrap; gap: 0; margin-top: 64px; border-top: 1px solid #27272A")}>
+<div className="lc-hero-stats" style={css("display: flex; flex-wrap: wrap; gap: 0; margin-top: 64px; border-top: 1px solid #27272A")}>
 <div style={css("flex: 1 1 200px; padding: 22px 24px 0 0")}>
 <div style={css("font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: #71717A")}>{"SIM ROOM"}</div>
 <div style={css(`font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 34px; color: ${V.amber}; margin-top: 6px`)}>{"FROM \u00a380/HR"}</div>
