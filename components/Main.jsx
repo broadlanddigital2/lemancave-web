@@ -256,7 +256,7 @@ export default class Main extends React.Component {
 <article style={css("flex: 1 1 340px; min-height: 540px; position: relative; border-radius: 8px; overflow: hidden; background: #131316; border: 1px solid #232328; display: flex; flex-direction: column; justify-content: flex-end")}>
 <img width="1200" height="1508" srcSet="/images/w/digital-scalextric-norwich-slot-cars-shell-bend-480.webp 480w, /images/w/digital-scalextric-norwich-slot-cars-shell-bend-800.webp 800w, /images/digital-scalextric-norwich-slot-cars-shell-bend.webp 1200w" sizes="100vw" src="/images/digital-scalextric-norwich-slot-cars-shell-bend.webp" alt="Mini, SEAT, Jaguar and Audi slot cars lined up on the grass beside the digital Scalextric track" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} />
 <div aria-hidden="true" style={css("position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(9,9,11,0.85) 0%, rgba(9,9,11,0.1) 35%, rgba(9,9,11,0.1) 50%, rgba(9,9,11,0.95) 85%)")}></div>
-<div style={css(`position: absolute; top: 90px; left: 36px; right: 36px; font-family: 'JetBrains Mono', monospace; color: ${V.amber}`)}>
+<div className="lc-mob-hide" style={css(`position: absolute; top: 90px; left: 36px; right: 36px; font-family: 'JetBrains Mono', monospace; color: ${V.amber}`)}>
 <div style={css("font-size: 12px; letter-spacing: 0.14em; color: #71717A")}>{"FASTEST LAP \u00b7 TODAY"}</div>
 <div style={css("font-size: 44px; margin-top: 6px")}>{"00:06.214"}</div>
 </div>
