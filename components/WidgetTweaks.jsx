@@ -3,8 +3,7 @@ import { useEffect } from 'react';
 
 // The CRM widgets draw inside their own shadow DOM, which page CSS can't reach, so this adds a style sheet inside
 // each one once it appears. Google reviews block: brand colours and type everywhere.
-// Phones: the CRM's floating Search button (bottom left) shrinks to a small round icon ("Search the site" is also in
-// the mobile menu). The chat launcher keeps its "Need help?" label and pop-up teaser, as on the other sites. Loaded once from app/layout.tsx.
+// The chat launcher keeps its "Need help?" label and pop-up teaser, as on the other sites. Loaded once from app/layout.tsx.
 const STYLES = {
   // Google reviews block: brand colours and heading type on every screen size
   'crm-google-reviews': `.wrap { --bg: #0F0F12; --card: #131316; --line: #27272A; --muted: #A1A1AA; border-top: 1px solid #1F1F23; }
@@ -14,11 +13,6 @@ const STYLES = {
     .btn { border-radius: 4px; text-transform: uppercase; letter-spacing: 0.06em; }
     .card { border-radius: 8px; }
     @media (max-width: 760px) { .in { padding: 0 20px; } .head { gap: 16px; } .score { width: 100%; } }`,
-  'site-search-root': `@media (max-width: 760px) {
-    .fab { width: 44px !important; height: 44px !important; min-width: 0 !important; padding: 0 !important;
-      font-size: 0 !important; gap: 0 !important; justify-content: center !important; left: 14px !important; bottom: 18px !important; opacity: 0.92; }
-    .fab span { display: none !important; }
-  }`,
 };
 
 function apply() {
