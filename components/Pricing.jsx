@@ -304,7 +304,8 @@ export default class Pricing extends React.Component {
 </div>
 <div style={css("position: relative; display: flex; flex-direction: column; gap: 12px; flex: 0 1 340px")}>
 <A href="/corporate-events-norwich" style={css("display: flex; justify-content: space-between; align-items: center; background: #09090B; color: #FFFFFF; font-weight: 700; font-size: 16px; letter-spacing: 0.06em; text-transform: uppercase; padding: 20px 24px; border-radius: 4px")}>{"Corporate events\n"}<svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></A>
-<A href="/contact-leman-cave-norwich" style={css("color: #09090B; font-weight: 600; font-size: 15px; padding: 10px 0; text-decoration: underline")}>{"Make an enquiry"}</A>
+<A href="/contact-leman-cave-norwich" style={css("display: flex; justify-content: space-between; align-items: center; background: rgba(9,9,11,0.12); border: 2px solid #09090B; color: #09090B; font-weight: 700; font-size: 16px; letter-spacing: 0.06em; text-transform: uppercase; padding: 18px 22px; border-radius: 4px")}>{"Make an enquiry\n"}<svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></A>
+<A href="tel:01603517080" style={css("color: #09090B; font-weight: 600; font-size: 15px; padding: 10px 0; text-decoration: underline")}>{"Or call 01603 517080"}</A>
 </div>
 </div>
 </section>

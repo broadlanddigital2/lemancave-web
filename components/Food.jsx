@@ -215,7 +215,8 @@ export default class Food extends React.Component {
 </div>
 <div style={css("position: relative; display: flex; flex-direction: column; gap: 12px; flex: 0 1 340px")}>
 <A href="/party-packages-norwich" style={css("display: flex; justify-content: space-between; align-items: center; background: #09090B; color: #FFFFFF; font-weight: 700; font-size: 16px; letter-spacing: 0.06em; text-transform: uppercase; padding: 20px 24px; border-radius: 4px")}>{"See all prices\n"}<svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></A>
-<A href="/book" style={css("color: #09090B; font-weight: 600; font-size: 15px; padding: 10px 0; text-decoration: underline")}>{"Book now"}</A>
+<A href="/book" style={css("display: flex; justify-content: space-between; align-items: center; background: rgba(9,9,11,0.12); border: 2px solid #09090B; color: #09090B; font-weight: 700; font-size: 16px; letter-spacing: 0.06em; text-transform: uppercase; padding: 18px 22px; border-radius: 4px")}>{"Book now\n"}<svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></A>
+<A href="/bring-your-own-drinks-venue-norwich" style={css("color: #09090B; font-weight: 600; font-size: 15px; padding: 10px 0; text-decoration: underline")}>{"How Bring Your Own drinks work"}</A>
 </div>
 </div>
 </section>
