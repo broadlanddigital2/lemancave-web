@@ -294,10 +294,28 @@ a[href="/christmas-party-norwich"][style*="background:#ED2835" i] { background: 
   form input, form select, form textarea { font-size: 16px !important; }
   form[aria-label] { padding: 20px !important; }
   form[aria-label] button[type="submit"] { align-self: stretch !important; justify-content: center; }
-  /* Attraction spec strip ("9ft championship-grade slate"): two to a row */
-  .lc-specs { grid-template-columns: 1fr 1fr !important; }
-  .lc-specs > div { padding: 16px 12px !important; border-right: 0 !important; border-bottom: 1px solid #1F1F23; }
-  .lc-specs > div > div + div { font-size: 22px !important; line-height: 1.05; }
+  /* Attraction "key facts" strip under the banner: a tidy grid of small tiles instead of tall stacked rows */
+  section:is([aria-label="Key facts"], [aria-label="Key specifications"]) { background: transparent !important; border: 0 !important; }
+  section:is([aria-label="Key facts"], [aria-label="Key specifications"]) > div {
+    grid-template-columns: 1fr 1fr !important; gap: 8px !important; padding: 18px 20px 4px !important;
+  }
+  /* Homepage hero prices and hours (Sim room, Exclusive hire, Mon–Fri, Saturday): the same tiles, two to a row */
+  .lc-hero-stats { display: grid !important; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 24px !important; border-top: 0 !important; }
+  section:is([aria-label="Key facts"], [aria-label="Key specifications"]) > div > div {
+    padding: 11px 12px 12px !important; border: 1px solid #232328 !important; border-left: 3px solid #ED2835 !important;
+    border-radius: 6px; background: #131316; min-width: 0;
+  }
+  section:is([aria-label="Key facts"], [aria-label="Key specifications"]) > div > div:last-child:nth-child(odd) { grid-column: 1 / -1; }
+  .lc-hero-stats > div {
+    padding: 11px 12px 12px !important; border: 1px solid #232328; border-left: 3px solid #ED2835; border-radius: 6px;
+    background: #131316; min-width: 0;
+  }
+  .lc-hero-stats > div > div:first-child { font-size: 10px !important; letter-spacing: 0.1em !important; }
+  .lc-hero-stats > div > div + div { font-size: 21px !important; line-height: 1.05 !important; margin-top: 4px !important; }
+  section:is([aria-label="Key facts"], [aria-label="Key specifications"]) > div > div > div:first-child { font-size: 10px !important; letter-spacing: 0.12em !important; }
+  section:is([aria-label="Key facts"], [aria-label="Key specifications"]) > div > div > div + div {
+    font-size: 19px !important; line-height: 1.05 !important; margin-top: 4px !important; overflow-wrap: break-word;
+  }
   /* Price list: each session becomes a card, its three package prices side by side underneath */
   div[style*="min-width:980px"] { min-width: 0 !important; }
   div[style*="min-width:980px"] > div[style*="grid-template-columns:2.1fr"] { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }

@@ -93,6 +93,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <WidgetTweaks />
         <AdClick />
         <Script src="https://crm.racecargraphics.uk/embed/site-search.js" data-key="9d5420c16e364a7da808bb67" strategy="afterInteractive" />
+        {/* Google reviews (imported daily from the Google Business Profile by the CRM), placed above the footer */}
+        <Script src="https://crm.racecargraphics.uk/embed/google-reviews.js" data-business="leman-cave" data-theme="dark" data-accent="#ED2835" data-before="footer" data-exclude="/book,/account,/login,/cookie-policy,/privacy" data-heading="What our guests say" data-intro="Real reviews from Le Man Cave guests on Google." strategy="afterInteractive" />
         <Script src="https://crm.racecargraphics.uk/rcg-enquiry-bot.js" data-bot-key="33e6abf2-2ff6-4e91-9076-1834fea322f8" strategy="afterInteractive" />
       </body>
     </html>
