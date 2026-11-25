@@ -16,7 +16,7 @@ export default function ConsentMap({ title, src, style, loading, referrerPolicy 
   const q = (() => { try { return new URL(src).searchParams.get('q') || 'Le Man Cave, Norwich NR6 7BW'; } catch { return 'Le Man Cave, Norwich NR6 7BW'; } })();
   return (
     <div className="lc-map-off" style={{ ...style, filter: 'none' }} role="group" aria-label={title}>
-      <p>The map loads from Google Maps, which sets its own cookies.</p>
+      <p>Tap <b>Show map</b> to load Google Maps here. Google sets its own cookies.</p>
       <div>
         <button type="button" onClick={() => setShow(true)}>Show map</button>
         <a href={'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(q)} target="_blank" rel="noopener">Open in Google Maps</a>

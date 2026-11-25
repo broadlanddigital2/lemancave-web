@@ -205,14 +205,14 @@ a[href="/christmas-party-norwich"][style*="background:#ED2835" i] { background: 
   section img:not([style*="position:absolute"]):not(.lc-hero-img) { max-height: 62vh; object-fit: cover; }
 
   /* Card grids → swipe rows */
-  :is(div[style*="grid-template-columns"]:has(> :nth-child(3)):is(:has(> a), :has(> article), :has(> div img), :has(> figure img)), .lc-hscroll):not(header *, footer *, .lc-gal, .lc-gallery, .lc-gallery *, .lc-noscroll, [style*="minmax(min("]) {
+  :is(div[style*="grid-template-columns"]:has(> :nth-child(3)):is(:has(> a), :has(> article), :has(> div img), :has(> figure img)), .lc-hscroll):not(header *, footer :not(.lc-hscroll), .lc-gal, .lc-gallery, .lc-gallery *, .lc-noscroll, [style*="minmax(min("]) {
     display: flex !important; flex-wrap: nowrap !important; overflow-x: auto; scroll-snap-type: x mandatory; gap: 12px !important;
     margin-right: -20px !important; padding-right: 20px !important; padding-bottom: 4px;
     scrollbar-width: none; -webkit-overflow-scrolling: touch; overscroll-behavior-x: contain;
   }
-  :is(div[style*="grid-template-columns"]:has(> :nth-child(3)):is(:has(> a), :has(> article), :has(> div img), :has(> figure img)), .lc-hscroll):not(header *, footer *, .lc-gal, .lc-gallery, .lc-gallery *, .lc-noscroll, [style*="minmax(min("])::-webkit-scrollbar { display: none; }
-  :is(div[style*="grid-template-columns"]:has(> :nth-child(3)):is(:has(> a), :has(> article), :has(> div img), :has(> figure img)), .lc-hscroll):not(header *, footer *, .lc-gal, .lc-gallery, .lc-gallery *, .lc-noscroll, [style*="minmax(min("]) > * {
-    flex: 0 0 min(80%, 330px) !important; min-width: 0; scroll-snap-align: start; grid-column: auto !important; grid-row: auto !important;
+  :is(div[style*="grid-template-columns"]:has(> :nth-child(3)):is(:has(> a), :has(> article), :has(> div img), :has(> figure img)), .lc-hscroll):not(header *, footer :not(.lc-hscroll), .lc-gal, .lc-gallery, .lc-gallery *, .lc-noscroll, [style*="minmax(min("])::-webkit-scrollbar { display: none; }
+  :is(div[style*="grid-template-columns"]:has(> :nth-child(3)):is(:has(> a), :has(> article), :has(> div img), :has(> figure img)), .lc-hscroll):not(header *, footer :not(.lc-hscroll), .lc-gal, .lc-gallery, .lc-gallery *, .lc-noscroll, [style*="minmax(min("]) > * {
+    flex: 0 0 var(--lc-card, min(80%, 330px)) !important; min-width: 0; scroll-snap-align: start; grid-column: auto !important; grid-row: auto !important;
   }
   .lc-hs-nav { display: flex; align-items: center; justify-content: flex-end; gap: 8px; margin-top: 14px; }
   .lc-hs-nav[hidden] { display: none !important; }
@@ -273,5 +273,20 @@ a[href="/christmas-party-norwich"][style*="background:#ED2835" i] { background: 
     padding-top: calc(min(60vw, 300px) + 14px) !important; padding-bottom: 32px !important;
   }
   header + section:has(> img) > .lc-section [aria-live] { min-height: 0 !important; }
+
+  /* Booking bands ("Grid slots fill fast" and the like): the chequered flag moves from behind the text to a strip
+     along the top, so the copy reads cleanly on the red. */
+  div[aria-hidden][style*="width:220px"][style*="repeating-conic-gradient"] {
+    left: 0 !important; right: 0 !important; bottom: auto !important; width: auto !important; height: 20px !important;
+    background-size: 20px 20px !important; opacity: 0.3 !important;
+  }
+  div:has(> div[aria-hidden][style*="width:220px"][style*="repeating-conic-gradient"]) { padding-top: 48px !important; }
+
+  /* Footer "Part of the family" logos swipe too, two at a time */
+  footer .lc-hscroll { --lc-card: calc(50% - 6px); }
+  /* Maps: tall enough that the "Show map" buttons clear the Get directions button */
+  div:has(> .lc-map-off), div:has(> iframe[title^="Map"]) { min-height: 380px !important; }
+  div:has(> .lc-map-off, > iframe[title^="Map"]) > span[style*="right:14px"] { bottom: auto !important; top: 14px !important; }
+  .lc-map-off { justify-content: flex-start !important; padding-top: 64px !important; }
 }
 

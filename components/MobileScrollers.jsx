@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation';
 // Phones: card grids become sideways swipe rows (CSS in app/globals.css, "Mobile tidy"). This adds the left and right
 // arrow buttons under each row and keeps them in step with the scroll position. The CSS selector below must match the
 // one in globals.css. Desktop is untouched. Loaded once from app/layout.tsx.
-export const ROW = ':is(div[style*="grid-template-columns"]:has(> :nth-child(3)):is(:has(> a), :has(> article), :has(> div img), :has(> figure img)), .lc-hscroll):not(header *, footer *, .lc-gal, .lc-gallery, .lc-gallery *, .lc-noscroll, [style*="minmax(min("])';
+export const ROW = ':is(div[style*="grid-template-columns"]:has(> :nth-child(3)):is(:has(> a), :has(> article), :has(> div img), :has(> figure img)), .lc-hscroll):not(header *, footer :not(.lc-hscroll), .lc-gal, .lc-gallery, .lc-gallery *, .lc-noscroll, [style*="minmax(min("])';
 
 function arrow(dir) {
   const b = document.createElement('button');
