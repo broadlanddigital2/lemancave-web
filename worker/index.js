@@ -224,7 +224,15 @@ export default {
       host.hostname = 'lemancave.co.uk';
       return Response.redirect(host.toString(), 301);
     }
-    const response = await handle(request, env);
+    let response = await handle(request, env);
+    // Pages always revalidate (25 Nov 2026): a page republished on deploy must not be served from an old copy
+    // in a browser or at Cloudflare's edge. Images, fonts and scripts keep their own caching (new names on change).
+    const type = response.headers.get('content-type') || '';
+    if (type.includes('text/html') || type.includes('text/x-component')) {
+      response = new Response(response.body, response);
+      response.headers.set('Cache-Control', 'public, max-age=0, must-revalidate');
+      response.headers.set('Cloudflare-CDN-Cache-Control', 'no-store');
+    }
     // Counted on the workers.dev preview too until the lemancave.co.uk switch (the CRM's Le Man Cave site reads it).
     trackAi(request, response, ctx, { feedKey: BLOG.feedKey, countPreview: true });
     return response;
