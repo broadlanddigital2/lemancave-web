@@ -67,13 +67,14 @@ export default class Advertise extends React.Component {
 </div>
 </nav>
 </header>
+<div className="lc-section lc-crumbs" style={css("max-width: 1360px; margin: 0 auto; padding: 16px 40px 0")}><nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
+<A href="/" style={css("color: #A1A1AA")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <span style={css("color: #ED2835")}>{"ADVERTISE"}</span>
+</nav></div>
 <section aria-labelledby="ad-h" style={css("position: relative; overflow: hidden; background: #0B0B0E; border-bottom: 1px solid #1F1F23")}>
 <div aria-hidden="true" style={css("position: absolute; inset: 0; background: radial-gradient(ellipse 45% 60% at 78% 50%, rgba(237,40,53,0.16), transparent 70%)")}></div>
 <div className="lc-section" style={css("position: relative; max-width: 1360px; margin: 0 auto; padding: 100px 40px 90px; display: flex; flex-wrap: wrap; align-items: center; gap: 56px")}>
 <div style={css("flex: 1 1 480px")}>
-<nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
-<A href="/" style={css("color: #A1A1AA")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <span style={css("color: #ED2835")}>{"ADVERTISE"}</span>
-</nav>
+
 <h1 id="ad-h" style={css("margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 500; line-height: 1.5; letter-spacing: 0.16em; color: #FFC233; text-transform: uppercase")}>{"Advertising screens Norwich \u00b7 digital signage"}</h1>
 <p style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(64px, 9.5vw, 140px); line-height: 0.86; color: #FFFFFF; text-transform: uppercase")}>{"Advertise"}<br /><span style={css("color: #ED2835")}>{"at Le Man Cave."}</span></p>
 <p style={css("margin: 26px 0 0; max-width: 540px; font-size: 20px; line-height: 1.55; color: #D4D4D8")}>{"Advertise your business on our digital signage screens around the building, seen by the parties, corporate teams, car clubs and families who visit the cave."}</p>

@@ -48,13 +48,14 @@ export default class GiftVouchers extends React.Component {
 </div>
 </nav>
 </header>
+<div className="lc-section lc-crumbs" style={css("max-width: 1360px; margin: 0 auto; padding: 16px 40px 0")}><nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
+<A href="/" style={css("color: #A1A1AA")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <span style={css("color: #ED2835")}>{"GIFT VOUCHERS"}</span>
+</nav></div>
 <section aria-labelledby="gv-h" style={css("position: relative; overflow: hidden; background: #0B0B0E; border-bottom: 1px solid #1F1F23")}>
 <div aria-hidden="true" style={css("position: absolute; inset: 0; background: radial-gradient(ellipse 45% 60% at 75% 50%, rgba(255,194,51,0.12), transparent 70%)")}></div>
 <div className="lc-section" style={css("position: relative; max-width: 1360px; margin: 0 auto; padding: 100px 40px 90px; display: flex; flex-wrap: wrap; align-items: center; gap: 56px")}>
 <div style={css("flex: 1 1 480px")}>
-<nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
-<A href="/" style={css("color: #A1A1AA")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <span style={css("color: #ED2835")}>{"GIFT VOUCHERS"}</span>
-</nav>
+
 <h1 id="gv-h" style={css("margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 500; line-height: 1.5; letter-spacing: 0.16em; color: #FFC233; text-transform: uppercase")}>{"Experience gifts Norwich \u00b7 digital gift cards"}</h1>
 <p style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(68px, 10vw, 148px); line-height: 0.86; color: #FFFFFF; text-transform: uppercase")}>{"Give them"}<br /><span style={css("color: #ED2835")}>{"pole position."}</span></p>
 <p style={css("margin: 26px 0 0; max-width: 520px; font-size: 20px; line-height: 1.55; color: #D4D4D8")}>{"A Le Man Cave gift card \u2014 for petrolheads, gamers and anyone who loves a good night out. Pick any amount from \u00a310 to \u00a32,000, pay online, and we email a digital gift card with its own code, to you or straight to them."}</p>

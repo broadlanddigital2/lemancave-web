@@ -90,13 +90,14 @@ export default class Pricing extends React.Component {
 </div>
 </nav>
 </header>
+<div className="lc-section lc-crumbs" style={css("max-width: 1360px; margin: 0 auto; padding: 16px 40px 0")}><nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
+<A href="/" style={css("color: #A1A1AA")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <span style={css(`color: ${V.accent}`)}>{"PRICE LIST"}</span>
+</nav></div>
 <section aria-labelledby="pr-h" style={css("position: relative; overflow: hidden; background: #0B0B0E; border-bottom: 1px solid #1F1F23")}>
 <div aria-hidden="true" style={css("position: absolute; right: -40px; top: 0; bottom: 0; width: 420px; background: repeating-conic-gradient(#1C1C21 0% 25%, transparent 0% 50%) 0 0 / 60px 60px; opacity: 0.7")}></div>
 <div aria-hidden="true" style={css("position: absolute; right: 0; top: 0; bottom: 0; width: 520px; background: linear-gradient(90deg, #0B0B0E, transparent)")}></div>
 <div className="lc-section" style={css("position: relative; max-width: 1360px; margin: 0 auto; padding: 120px 40px 80px")}>
-<nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
-<A href="/" style={css("color: #A1A1AA")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <span style={css(`color: ${V.accent}`)}>{"PRICE LIST"}</span>
-</nav>
+
 <h1 id="pr-h" style={css("margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 500; line-height: 1.5; letter-spacing: 0.16em; color: #FFC233; text-transform: uppercase")}>{"Party packages Norwich \u00b7 prices"}</h1>
 <p style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(64px, 10vw, 152px); line-height: 0.88; color: #FFFFFF; text-transform: uppercase")}>{"Pick your"}<br /><span style={css(`color: ${V.accent}`)}>{"grid slot."}</span></p>
 <p style={css("margin: 28px 0 0; max-width: 600px; font-size: 20px; line-height: 1.55; color: #D4D4D8")}>{"Book the sim room by the hour, or take over the whole cave with your crew. Every price, every slot, all in one place."}</p>

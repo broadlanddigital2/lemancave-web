@@ -58,14 +58,15 @@ export default class Scalextric extends React.Component {
 </div>
 </nav>
 </header>
+<div className="lc-section lc-crumbs" style={css("max-width: 1360px; margin: 0 auto; padding: 16px 40px 0")}><nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
+<A href="/" style={css("color: #A1A1AA")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <A href="/attractions" style={css("color: #A1A1AA")}>{"EXPERIENCES"}</A> <span aria-hidden="true">{"/"}</span> <span style={css(`color: ${V.accent}`)}>{"DIGITAL SCALEXTRIC"}</span>
+</nav></div>
 <section aria-labelledby="sx-h" style={css("position: relative; min-height: 720px; display: flex; align-items: flex-end; background: #0E0E11; overflow: hidden")}>
 <img width="1920" height="1282" srcSet="/images/w/digital-scalextric-norwich-track-bridge-480.webp 480w, /images/w/digital-scalextric-norwich-track-bridge-800.webp 800w, /images/w/digital-scalextric-norwich-track-bridge-1200.webp 1200w, /images/digital-scalextric-norwich-track-bridge.webp 1920w" sizes="100vw" src="/images/digital-scalextric-norwich-track-bridge.webp" alt="The 160ft digital Scalextric track Norwich groups race on, with its stone bridge, river and pit buildings" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 60% 50%")} />
 <div aria-hidden="true" style={css("position: absolute; inset: 0; background: linear-gradient(90deg, rgba(9,9,11,0.94) 0%, rgba(9,9,11,0.75) 40%, rgba(9,9,11,0.2) 72%, rgba(9,9,11,0.1) 100%)")}></div>
 <div aria-hidden="true" style={css("position: absolute; left: 0; right: 0; bottom: 0; height: 300px; background: linear-gradient(to top, #09090B 10%, transparent)")}></div>
 <div className="lc-section" style={css("position: relative; max-width: 1360px; width: 100%; margin: 0 auto; padding: 140px 40px 64px; box-sizing: border-box")}>
-<nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
-<A href="/" style={css("color: #A1A1AA")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <A href="/attractions" style={css("color: #A1A1AA")}>{"EXPERIENCES"}</A> <span aria-hidden="true">{"/"}</span> <span style={css(`color: ${V.accent}`)}>{"DIGITAL SCALEXTRIC"}</span>
-</nav>
+
 <h1 id="sx-h" style={css("margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 500; line-height: 1.5; letter-spacing: 0.16em; color: #FFC233; text-transform: uppercase")}>{"Scalextric track Norwich \u00b7 160ft digital"}</h1>
 <p style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(64px, 10vw, 152px); line-height: 0.88; color: #FFFFFF; text-transform: uppercase")}>{"160ft of"}<br /><span style={css(`color: ${V.accent}`)}>{"pure rivalry."}</span></p>
 <p style={css("margin: 28px 0 0; max-width: 560px; font-size: 20px; line-height: 1.55; color: #D4D4D8")}>{"Digital Scalextric for up to six cars on a two-lane circuit, with lap timers, a working pit lane and live timing screens. Easy to pick up, impossible to put down."}</p>

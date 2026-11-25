@@ -150,13 +150,14 @@ export default class Compare extends React.Component {
 </div>
 </nav>
 </header>
+<div className="lc-section lc-crumbs" style={css("max-width: 1360px; margin: 0 auto; padding: 16px 40px 0")}><nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
+<A href="/" style={css("color: #A1A1AA; text-decoration: none")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <A href="/guides" style={css("color: #A1A1AA; text-decoration: none")}>{"BLOG & GUIDES"}</A> <span aria-hidden="true">{"/"}</span> <span style={css("color: #ED2835")}>{V.c.crumb}</span>
+</nav></div>
 <section aria-labelledby="c-h" style={css("position: relative; overflow: hidden; background: #0B0B0E; border-bottom: 1px solid #1F1F23")}>
 <div aria-hidden="true" style={css("position: absolute; right: -40px; top: 0; bottom: 0; width: 380px; background: repeating-conic-gradient(#1C1C21 0% 25%, transparent 0% 50%) 0 0 / 56px 56px; opacity: 0.6")}></div>
 <div aria-hidden="true" style={css("position: absolute; right: 0; top: 0; bottom: 0; width: 480px; background: linear-gradient(90deg, #0B0B0E, transparent)")}></div>
 <div className="lc-section" style={css("position: relative; max-width: 1360px; margin: 0 auto; padding: 100px 40px 70px")}>
-<nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
-<A href="/" style={css("color: #A1A1AA; text-decoration: none")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <A href="/guides" style={css("color: #A1A1AA; text-decoration: none")}>{"BLOG & GUIDES"}</A> <span aria-hidden="true">{"/"}</span> <span style={css("color: #ED2835")}>{V.c.crumb}</span>
-</nav>
+
 <h1 id="c-h" style={css("margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 500; line-height: 1.5; letter-spacing: 0.16em; color: #FFC233; text-transform: uppercase")}>{V.c.h1}</h1>
 <p style={css("margin: 0; max-width: 1080px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(56px, 8vw, 116px); line-height: 0.9; color: #FFFFFF; text-transform: uppercase")}>{V.c.a}{" "}<span style={css("color: #ED2835")}>{"vs"}</span>{" "}{V.c.b}</p>
 <p style={css("margin: 24px 0 0; max-width: 720px; font-size: 20px; line-height: 1.55; color: #D4D4D8")}>{V.c.intro}</p>

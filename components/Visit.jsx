@@ -44,10 +44,11 @@ export default class Visit extends React.Component {
 </div>
 </nav>
 </header>
-<section className="lc-section" aria-labelledby="v-h" style={css("max-width: 1360px; margin: 0 auto; padding: 100px 40px 60px")}>
-<nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
+<div className="lc-section lc-crumbs" style={css("max-width: 1360px; margin: 0 auto; padding: 16px 40px 0")}><nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
 <A href="/" style={css("color: #A1A1AA")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <span style={css("color: #ED2835")}>{"VISIT & CONTACT"}</span>
-</nav>
+</nav></div>
+<section className="lc-section" aria-labelledby="v-h" style={css("max-width: 1360px; margin: 0 auto; padding: 100px 40px 60px")}>
+
 <h1 id="v-h" style={css("margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 500; line-height: 1.5; letter-spacing: 0.16em; color: #FFC233; text-transform: uppercase")}>{"Le Man Cave Norwich \u00b7 find us & contact"}</h1>
 <p style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(64px, 10vw, 144px); line-height: 0.88; color: #FFFFFF; text-transform: uppercase")}>{"Find us."}<br /><span style={css("color: #ED2835")}>{"Race us."}</span></p>
 <p style={css("margin: 22px 0 0; max-width: 560px; font-size: 19px; line-height: 1.55; color: #D4D4D8")}>{"Everything you need to plan your visit \u2014 where we are, when we\u2019re open and how to get in touch."}</p>

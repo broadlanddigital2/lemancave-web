@@ -73,14 +73,15 @@ export default class Corporate extends React.Component {
 </div>
 </nav>
 </header>
+<div className="lc-section lc-crumbs" style={css("max-width: 1360px; margin: 0 auto; padding: 16px 40px 0")}><nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
+<A href="/" style={css("color: #A1A1AA")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <span style={css(`color: ${V.accent}`)}>{"CORPORATE EVENTS"}</span>
+</nav></div>
 <section aria-labelledby="co-h" style={css("position: relative; min-height: 700px; display: flex; align-items: flex-end; background: #0E0E11; overflow: hidden")}>
 <img width="1920" height="1280" srcSet="/images/w/corporate-events-norwich-colleagues-high-five-480.webp 480w, /images/w/corporate-events-norwich-colleagues-high-five-800.webp 800w, /images/w/corporate-events-norwich-colleagues-high-five-1200.webp 1200w, /images/corporate-events-norwich-colleagues-high-five.webp 1920w" sizes="100vw" src="/images/corporate-events-norwich-colleagues-high-five.webp" alt="Colleagues sharing a high-five at one of our corporate events Norwich teams book" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%")} />
 <div aria-hidden="true" style={css("position: absolute; inset: 0; background: linear-gradient(90deg, rgba(9,9,11,0.95) 0%, rgba(9,9,11,0.8) 45%, rgba(9,9,11,0.35) 80%, rgba(9,9,11,0.25) 100%)")}></div>
 <div aria-hidden="true" style={css("position: absolute; left: 0; right: 0; bottom: 0; height: 300px; background: linear-gradient(to top, #09090B 10%, transparent)")}></div>
 <div className="lc-section" style={css("position: relative; max-width: 1360px; width: 100%; margin: 0 auto; padding: 140px 40px 64px; box-sizing: border-box")}>
-<nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
-<A href="/" style={css("color: #A1A1AA")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <span style={css(`color: ${V.accent}`)}>{"CORPORATE EVENTS"}</span>
-</nav>
+
 <h1 id="co-h" style={css("margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 500; line-height: 1.5; letter-spacing: 0.16em; color: #FFC233; text-transform: uppercase")}>{"Corporate events Norwich \u00b7 team days & client hospitality"}</h1>
 <p style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(64px, 10vw, 144px); line-height: 0.88; color: #FFFFFF; text-transform: uppercase")}>{"Team day?"}<br /><span style={css(`color: ${V.accent}`)}>{"Race day."}</span></p>
 <p style={css("margin: 28px 0 0; max-width: 600px; font-size: 20px; line-height: 1.55; color: #D4D4D8")}>{"Team building, client entertaining and away days in Norwich\u2019s motorsport venue. Pro simulators, digital Scalextric and games \u2014 tailored to your group."}</p>

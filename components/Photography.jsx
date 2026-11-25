@@ -68,14 +68,15 @@ export default class Photography extends React.Component {
 </div>
 </nav>
 </header>
+<div className="lc-section lc-crumbs" style={css("max-width: 1360px; margin: 0 auto; padding: 16px 40px 0")}><nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
+<A href="/" style={css("color: #A1A1AA")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <span style={css("color: #ED2835")}>{"PHOTOGRAPHY"}</span>
+</nav></div>
 <section aria-labelledby="ph-h" style={css("position: relative; min-height: 700px; display: flex; align-items: flex-end; background: #0E0E11; overflow: hidden")}>
 <img width="1983" height="793" srcSet="/images/w/7d26389d238902bad7bd1dc05c04258e-480.webp 480w, /images/w/7d26389d238902bad7bd1dc05c04258e-800.webp 800w, /images/w/7d26389d238902bad7bd1dc05c04258e-1200.webp 1200w, /images/7d26389d238902bad7bd1dc05c04258e.webp 1983w" sizes="100vw" src="/images/7d26389d238902bad7bd1dc05c04258e.webp" alt="A camera and studio lights set up on a race car: the event photographer Norwich groups can add at Le Man Cave" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 70% 50%")} />
 <div aria-hidden="true" style={css("position: absolute; inset: 0; background: linear-gradient(90deg, rgba(9,9,11,0.95) 0%, rgba(9,9,11,0.8) 45%, rgba(9,9,11,0.35) 80%, rgba(9,9,11,0.25) 100%)")}></div>
 <div aria-hidden="true" style={css("position: absolute; left: 0; right: 0; bottom: 0; height: 300px; background: linear-gradient(to top, #09090B 10%, transparent)")}></div>
 <div className="lc-section" style={css("position: relative; max-width: 1360px; width: 100%; margin: 0 auto; padding: 140px 40px 64px; box-sizing: border-box")}>
-<nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
-<A href="/" style={css("color: #A1A1AA")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <span style={css("color: #ED2835")}>{"PHOTOGRAPHY"}</span>
-</nav>
+
 <h1 id="ph-h" style={css("margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 500; line-height: 1.5; letter-spacing: 0.16em; color: #FFC233; text-transform: uppercase")}>{"Event photographer Norwich \u00b7 photos & video"}</h1>
 <p style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(64px, 10vw, 144px); line-height: 0.88; color: #FFFFFF; text-transform: uppercase")}>{"Capture"}<br /><span style={css("color: #ED2835")}>{"the night."}</span></p>
 <p style={css("margin: 28px 0 0; max-width: 600px; font-size: 20px; line-height: 1.55; color: #D4D4D8")}>{"We can provide a photographer to take photos and videos of your evening, so you can enjoy the event and still have every podium moment to keep."}</p>
