@@ -45,7 +45,9 @@ export default function CookieConsent() {
 
   useEffect(() => {
     const c = readConsent();
-    if (!c) setOpen(true); else { setRemember(!!c.remember); setMaps(!!c.maps); setAds(!!c.ads); setStats(!!c.stats); }
+    // Ask again if the saved choice predates the statistics and advert options (added 29 Oct / 15 Nov 2026), so
+    // returning visitors get the chance to allow advert measurement before the ads go live.
+    if (!c || c.ads === undefined || c.stats === undefined) { setOpen(true); if (c) { setRemember(!!c.remember); setMaps(!!c.maps); } } else { setRemember(!!c.remember); setMaps(!!c.maps); setAds(!!c.ads); setStats(!!c.stats); }
     const reopen = (e) => {
       const a = e.target?.closest?.('a[href$="#cookie-settings"]');
       if (!a) return;
