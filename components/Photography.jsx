@@ -68,9 +68,6 @@ export default class Photography extends React.Component {
 </div>
 </nav>
 </header>
-<div className="lc-section lc-crumbs" style={css("max-width: 1360px; margin: 0 auto; padding: 16px 40px 0")}><nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
-<A href="/" style={css("color: #A1A1AA")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <span style={css("color: #ED2835")}>{"PHOTOGRAPHY"}</span>
-</nav></div>
 <section aria-labelledby="ph-h" style={css("position: relative; min-height: 700px; display: flex; align-items: flex-end; background: #0E0E11; overflow: hidden")}>
 <img width="1983" height="793" srcSet="/images/w/7d26389d238902bad7bd1dc05c04258e-480.webp 480w, /images/w/7d26389d238902bad7bd1dc05c04258e-800.webp 800w, /images/w/7d26389d238902bad7bd1dc05c04258e-1200.webp 1200w, /images/7d26389d238902bad7bd1dc05c04258e.webp 1983w" sizes="100vw" src="/images/7d26389d238902bad7bd1dc05c04258e.webp" alt="A camera and studio lights set up on a race car: the event photographer Norwich groups can add at Le Man Cave" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 70% 50%")} />
 <div aria-hidden="true" style={css("position: absolute; inset: 0; background: linear-gradient(90deg, rgba(9,9,11,0.95) 0%, rgba(9,9,11,0.8) 45%, rgba(9,9,11,0.35) 80%, rgba(9,9,11,0.25) 100%)")}></div>
@@ -86,6 +83,9 @@ export default class Photography extends React.Component {
 </div>
 </div>
 </section>
+<div className="lc-section lc-crumbs" style={css("max-width: 1360px; margin: 0 auto; padding: 18px 40px 0")}><nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
+<A href="/" style={css("color: #A1A1AA")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <span style={css("color: #ED2835")}>{"PHOTOGRAPHY"}</span>
+</nav></div>
 <section id="packages" className="lc-section" aria-labelledby="pk-h" style={css("max-width: 1360px; margin: 0 auto; padding: 110px 40px")}>
 <div style={css("display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 44px")}>
 <div>

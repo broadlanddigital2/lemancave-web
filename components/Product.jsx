@@ -181,9 +181,6 @@ export default class Product extends React.Component {
 </div>
 </nav>
 </header>
-<div className="lc-section lc-crumbs" style={css("max-width: 1360px; margin: 0 auto; padding: 16px 40px 0")}><nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
-<A href="/" style={css("color: #A1A1AA; text-decoration: none")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <A href={V.p.parentHref} style={css("color: #A1A1AA; text-decoration: none")}>{V.p.parentLabel}</A> <span aria-hidden="true">{"/"}</span> <span style={css(`color: ${V.accent}`)}>{V.p.crumb}</span>
-</nav></div>
 <section aria-labelledby="p-h" style={css("position: relative; min-height: 640px; display: flex; align-items: flex-end; background: #0E0E11; overflow: hidden")}>
 <Img src={V.p.hero} alt={V.p.heroAlt} style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 65% 50%")} />
 <div aria-hidden="true" style={css("position: absolute; inset: 0; background: linear-gradient(90deg, rgba(9,9,11,0.95) 0%, rgba(9,9,11,0.78) 42%, rgba(9,9,11,0.2) 75%, rgba(9,9,11,0.1) 100%)")}></div>
@@ -199,6 +196,9 @@ export default class Product extends React.Component {
 </div>
 </div>
 </section>
+<div className="lc-section lc-crumbs" style={css("max-width: 1360px; margin: 0 auto; padding: 18px 40px 0")}><nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
+<A href="/" style={css("color: #A1A1AA; text-decoration: none")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <A href={V.p.parentHref} style={css("color: #A1A1AA; text-decoration: none")}>{V.p.parentLabel}</A> <span aria-hidden="true">{"/"}</span> <span style={css(`color: ${V.accent}`)}>{V.p.crumb}</span>
+</nav></div>
 <section aria-label="Key facts" style={css("border-top: 1px solid #1F1F23; border-bottom: 1px solid #1F1F23; background: #0F0F12")}>
 <div className="lc-section lc-specs" style={css("max-width: 1360px; margin: 0 auto; padding: 0 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr))")}>
 {(V.p.specs || []).map((s, $index) => (<React.Fragment key={$index}>

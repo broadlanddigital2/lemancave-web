@@ -217,6 +217,9 @@ a.lc-hero-cta.lc-hero-cta[href] { box-shadow: none !important; }
   :is(div[style*="grid-template-columns"]:has(> :nth-child(3)):is(:has(> a), :has(> article), :has(> div img), :has(> figure img)), .lc-hscroll):not(header *, footer :not(.lc-hscroll), .lc-gal, .lc-gallery, .lc-gallery *, .lc-noscroll, [style*="minmax(min("]) > * {
     flex: 0 0 var(--lc-card, min(80%, 330px)) !important; min-width: 0; scroll-snap-align: start; grid-column: auto !important; grid-row: auto !important;
   }
+
+  /* Photo tiles whose picture is absolutely positioned (pizza page mosaic) need a height of their own in a swipe row */
+  :is(div[style*="grid-template-columns"]:has(> :nth-child(3)):is(:has(> a), :has(> article), :has(> div img), :has(> figure img)), .lc-hscroll):not(header *, footer :not(.lc-hscroll), .lc-gal, .lc-gallery, .lc-gallery *, .lc-noscroll, [style*="minmax(min("]) > :is(figure, div):has(> img:is([style*="position:absolute"], [style*="position: absolute"])) { height: 240px !important; min-height: 240px; }
   .lc-hs-nav { display: flex; align-items: center; justify-content: flex-end; gap: 8px; margin-top: 14px; }
   .lc-hs-nav[hidden] { display: none !important; }
   .lc-hs-count { margin-right: auto; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #A1A1AA; }
@@ -393,6 +396,6 @@ a.lc-hero-cta.lc-hero-cta[href] { box-shadow: none !important; }
 @supports not (overflow-x: clip) {
   div:is([style*="overflow-x:clip"], [style*="overflow-x: clip"]), .lc { overflow-x: hidden !important; }
 }
-/* Breadcrumbs bar above the hero banner (converter step move_breadcrumbs) */
-.lc-crumbs nav[aria-label="Breadcrumb"] { margin: 0 0 14px !important; }
+/* Breadcrumbs bar at the start of the page content, below the hero banner (converter step move_breadcrumbs) */
+.lc-crumbs nav[aria-label="Breadcrumb"] { margin: 0 !important; }
 

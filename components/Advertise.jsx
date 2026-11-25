@@ -67,9 +67,6 @@ export default class Advertise extends React.Component {
 </div>
 </nav>
 </header>
-<div className="lc-section lc-crumbs" style={css("max-width: 1360px; margin: 0 auto; padding: 16px 40px 0")}><nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
-<A href="/" style={css("color: #A1A1AA")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <span style={css("color: #ED2835")}>{"ADVERTISE"}</span>
-</nav></div>
 <section aria-labelledby="ad-h" style={css("position: relative; overflow: hidden; background: #0B0B0E; border-bottom: 1px solid #1F1F23")}>
 <div aria-hidden="true" style={css("position: absolute; inset: 0; background: radial-gradient(ellipse 45% 60% at 78% 50%, rgba(237,40,53,0.16), transparent 70%)")}></div>
 <div className="lc-section" style={css("position: relative; max-width: 1360px; margin: 0 auto; padding: 100px 40px 90px; display: flex; flex-wrap: wrap; align-items: center; gap: 56px")}>
@@ -100,6 +97,9 @@ export default class Advertise extends React.Component {
 </div>
 </div>
 </section>
+<div className="lc-section lc-crumbs" style={css("max-width: 1360px; margin: 0 auto; padding: 18px 40px 0")}><nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
+<A href="/" style={css("color: #A1A1AA")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <span style={css("color: #ED2835")}>{"ADVERTISE"}</span>
+</nav></div>
 <section id="packages" className="lc-section" aria-labelledby="pk-h" style={css("max-width: 1360px; margin: 0 auto; padding: 110px 40px")}>
 <div style={css("display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 44px")}>
 <div>

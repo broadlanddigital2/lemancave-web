@@ -269,22 +269,33 @@ def add_booking_widget(code):
     return code.replace("import { css } from '../lib/css';\n", "import { css } from '../lib/css';\nimport CrmBooking from './CrmBooking';\n", 1)
 
 def move_breadcrumbs(code):
-    # Breadcrumbs sit just above the hero banner, not inside it (owner, 25 Nov 2026): the first
-    # <nav aria-label="Breadcrumb"> after the header moves into its own .lc-crumbs bar before the hero section.
+    # Breadcrumbs open the page content, just below the hero banner (owner, 25 Nov 2026): the first
+    # <nav aria-label="Breadcrumb"> after the header moves out of the hero section into a .lc-crumbs bar after it.
     h = code.find('</header>')
     if h < 0:
         return code
     a = code.find('<nav aria-label="Breadcrumb"', h)
     if a < 0:
         return code
-    b = code.find('</nav>', a) + len('</nav>')
     sec = code.find('<section', h)
     if sec < 0 or sec > a:
         return code
+    b = code.find('</nav>', a) + len('</nav>')
     nav = code[a:b]
     code = code[:a] + code[b:]
-    bar = '<div className="lc-section lc-crumbs" style={css("max-width: 1360px; margin: 0 auto; padding: 16px 40px 0")}>' + nav + '</div>\n'
-    return code[:sec] + bar + code[sec:]
+    depth, i = 0, sec          # find the end of the hero section (sections can nest)
+    while True:
+        o = code.find('<section', i + 1 if depth else i)
+        c = code.find('</section>', i + 1)
+        if o != -1 and o < c:
+            depth += 1; i = o
+        else:
+            depth -= 1; i = c
+            if depth == 0:
+                break
+    end = i + len('</section>')
+    bar = '\n<div className="lc-section lc-crumbs" style={css("max-width: 1360px; margin: 0 auto; padding: 18px 40px 0")}>' + nav + '</div>'
+    return code[:end] + bar + code[end:]
 
 def add_faqs(code):
     # FAQ accordions: answers are always in the page's HTML (hidden until opened) so search engines can read them,

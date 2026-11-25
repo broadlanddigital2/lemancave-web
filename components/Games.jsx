@@ -70,9 +70,6 @@ export default class Games extends React.Component {
 </div>
 </nav>
 </header>
-<div className="lc-section lc-crumbs" style={css("max-width: 1360px; margin: 0 auto; padding: 16px 40px 0")}><nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
-<A href="/" style={css("color: #A1A1AA")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <A href="/attractions" style={css("color: #A1A1AA")}>{"EXPERIENCES"}</A> <span aria-hidden="true">{"/"}</span> <span style={css(`color: ${V.accent}`)}>{"GAMES & ARCADE"}</span>
-</nav></div>
 <section aria-labelledby="gm-h" style={css("position: relative; min-height: 680px; display: flex; align-items: flex-end; background: #0E0E11; overflow: hidden")}>
 <img width="1920" height="1283" srcSet="/images/w/games-console-lounge-norwich-100-inch-screen-480.webp 480w, /images/w/games-console-lounge-norwich-100-inch-screen-800.webp 800w, /images/w/games-console-lounge-norwich-100-inch-screen-1200.webp 1200w, /images/games-console-lounge-norwich-100-inch-screen.webp 1920w" sizes="100vw" src="/images/games-console-lounge-norwich-100-inch-screen.webp" alt="Two players racing on the 100-inch screen in the games lounge, among the arcade games Norwich groups love" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 70% 50%")} />
 <div aria-hidden="true" style={css("position: absolute; inset: 0; background: linear-gradient(90deg, rgba(9,9,11,0.94) 0%, rgba(9,9,11,0.75) 40%, rgba(9,9,11,0.2) 72%, rgba(9,9,11,0.1) 100%)")}></div>
@@ -88,6 +85,9 @@ export default class Games extends React.Component {
 </div>
 </div>
 </section>
+<div className="lc-section lc-crumbs" style={css("max-width: 1360px; margin: 0 auto; padding: 18px 40px 0")}><nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
+<A href="/" style={css("color: #A1A1AA")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <A href="/attractions" style={css("color: #A1A1AA")}>{"EXPERIENCES"}</A> <span aria-hidden="true">{"/"}</span> <span style={css(`color: ${V.accent}`)}>{"GAMES & ARCADE"}</span>
+</nav></div>
 <section aria-label="Key facts" style={css("border-top: 1px solid #1F1F23; border-bottom: 1px solid #1F1F23; background: #0F0F12")}>
 <div className="lc-section" style={css("max-width: 1360px; margin: 0 auto; padding: 0 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))")}>
 <div style={css("padding: 28px 20px 28px 0; border-right: 1px solid #1F1F23")}>
