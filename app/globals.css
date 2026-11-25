@@ -270,7 +270,7 @@ a.lc-hero-cta.lc-hero-cta[href] { box-shadow: none !important; }
   header + section:has(> img) > div[aria-hidden][style*="inset:0"] { display: none !important; }
   header + section:has(> img) > div[aria-hidden][style*="bottom:0"] {
     top: calc(min(60vw, 300px) - 80px) !important; bottom: auto !important; height: 80px !important;
-    background: linear-gradient(to top, #151519, transparent) !important;
+    background: linear-gradient(to top, #2B0C11, transparent) !important;
   }
   header + section:has(> img) > .lc-section {
     padding-top: calc(min(60vw, 300px) + 14px) !important; padding-bottom: 32px !important;
@@ -373,10 +373,11 @@ a.lc-hero-cta.lc-hero-cta[href] { box-shadow: none !important; }
   /* Decorative timeline lines that poke past the right edge */
   span[style*="right:-24px"] { right: 0 !important; }
 }
-/* Hero banners on every page: a lighter panel with a red edge, so it's clear where the banner ends and the page starts
+/* Hero banners on every page: a deep red panel with a red edge, so it's clear where the banner ends and the page starts
    (on desktop this shows on heroes without a full photo; on phones under the photo banner too). */
-header + section { background: #151519 !important; border-bottom: 2px solid #ED2835 !important; }
-header + section .lc-hero-stats > div { background: #1E1E24 !important; }
+header + section { background: linear-gradient(180deg, #2B0C11 0%, #1C080C 100%) !important; border-bottom: 3px solid #ED2835 !important; }
+header + section > div[aria-hidden][style*="90deg, #0B0B0E"] { display: none !important; }
+header + section .lc-hero-stats > div { background: rgba(0, 0, 0, 0.32) !important; border-color: rgba(255, 255, 255, 0.08) !important; border-left-color: #ED2835 !important; }
 /* Browsers without overflow-x: clip (older iPhones) fall back to hidden on the page wrappers, so nothing can make the
    page wider than the screen (the sticky header may not stick there). */
 @supports not (overflow-x: clip) {
