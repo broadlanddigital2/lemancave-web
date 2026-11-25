@@ -32,13 +32,17 @@ const STYLES = {
 function apply() {
   let left = 0;
   for (const [id, css] of Object.entries(STYLES)) {
-    const root = document.getElementById(id)?.shadowRoot;
-    if (!root) { left++; continue; }
-    if (root.querySelector('style[data-lc-tweak]')) continue;
-    const s = document.createElement('style');
-    s.setAttribute('data-lc-tweak', '');
-    s.textContent = css;
-    root.appendChild(s);
+    // The reviews block can also sit in a page's own slot (<div data-crm-google-reviews>, e.g. the simulator page)
+    const hosts = id === 'crm-google-reviews' ? document.querySelectorAll('#crm-google-reviews, [data-crm-google-reviews]') : [document.getElementById(id)];
+    for (const host of hosts) {
+      const root = host?.shadowRoot;
+      if (!root) { left++; continue; }
+      if (root.querySelector('style[data-lc-tweak]')) continue;
+      const s = document.createElement('style');
+      s.setAttribute('data-lc-tweak', '');
+      s.textContent = css;
+      root.appendChild(s);
+    }
   }
   return left;
 }

@@ -54,7 +54,7 @@ export default class Main extends React.Component {
     const anim = (d) => 'animation: lcUp' + par + ' .9s cubic-bezier(.2,.7,.2,1) ' + d + 's both';
     const bar = ((this.state.run + si) % 2) ? 'B' : 'A';
     // An optional 11th value sets the photo's object-position (default 60% 50%).
-    const slides = SL.map(([id, alt, kicker, l1, l2, copy, cta1, href1, cta2, href2, pos], i) => ({ img: id.charAt(0) === '/' ? id : '/images/' + id + '.webp', alt, kicker, l1, l2, copy, cta1, href1, cta2, href2, hidden: i === si ? 'false' : 'true', selected: i === si ? 'true' : 'false', label: 'Slide ' + (i + 1) + ': ' + l1 + ' ' + l2,
+    const slides = SL.map(([id, alt, kicker, l1, l2, copy, cta1, href1, cta2, href2, pos], i) => ({ img: id.charAt(0) === '/' ? id : '/images/' + id + '.webp', alt, kicker, l1, l2, copy, cta1, href1, cta2, href2, btnBg: /christmas/i.test(href1) ? '#1E9E5E' : accent, btnInk: /christmas/i.test(href1) ? '#FFFFFF' : '#09090B', hidden: i === si ? 'false' : 'true', selected: i === si ? 'true' : 'false', label: 'Slide ' + (i + 1) + ': ' + l1 + ' ' + l2,
       imgStyle: 'position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: ' + (pos || '60% 50%') + '; will-change: opacity, transform; transform-origin: ' + KB[i % KB.length][0] + '; transition: opacity 1.4s ease, filter 1.4s ease, transform 9s cubic-bezier(.25,.1,.25,1); opacity: ' + (i === si ? '1' : '0') + '; filter: blur(' + (i === si ? '0' : '8px') + '); transform: ' + (i === si ? 'scale(1.14) translate(' + KB[i % KB.length][1] + '%, ' + KB[i % KB.length][2] + '%)' : 'scale(1.02)'),
       dotStyle: 'flex: 1; height: 44px; padding: 0; border: 0; background: none; cursor: pointer; display: flex; align-items: center',
       barStyle: 'display: block; width: 100%; height: 4px; border-radius: 2px; background-color: ' + (i < si ? '#A1A1AA' : '#3F3F46') + (i === si ? '; background-image: linear-gradient(' + accent + ', ' + accent + '); background-repeat: no-repeat; background-size: 0% 100%; animation: lcFill' + bar + ' 7s linear forwards; animation-play-state: ' + (this.state.paused ? 'paused' : 'running') : ''),
@@ -147,7 +147,7 @@ export default class Main extends React.Component {
 <p className="lc-hero-anim" style={css(`margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(64px, 11vw, 168px); line-height: 0.88; letter-spacing: -0.01em; color: #FFFFFF; text-transform: uppercase; ${V.aH}`)}>{V.cur.l1}<br /><span style={css(`color: ${V.accent}`)}>{V.cur.l2}</span></p>
 <p className="lc-hero-anim" style={css(`margin: 28px 0 0; max-width: 580px; font-size: 20px; line-height: 1.55; color: #D4D4D8; ${V.aC}`)}>{V.cur.copy}</p>
 <div className="lc-hero-anim" style={css(`display: flex; flex-wrap: wrap; gap: 14px; margin-top: 36px; ${V.aB}`)}>
-<A href={V.cur.href1} style={css(`background: ${V.accent}; color: #09090B; font-weight: 700; font-size: 16px; letter-spacing: 0.06em; text-transform: uppercase; padding: 18px 30px; border-radius: 4px`)}>{V.cur.cta1}</A>
+<A href={V.cur.href1} className="lc-hero-cta" style={css(`background: ${V.cur.btnBg}; color: ${V.cur.btnInk}; font-weight: 700; font-size: 16px; letter-spacing: 0.06em; text-transform: uppercase; padding: 18px 30px; border-radius: 4px`)}>{V.cur.cta1}</A>
 <A href={V.cur.href2} style={css("border: 1px solid #52525B; color: #FFFFFF; font-weight: 600; font-size: 16px; letter-spacing: 0.06em; text-transform: uppercase; padding: 17px 30px; border-radius: 4px")}>{V.cur.cta2}</A>
 </div>
 </div>
