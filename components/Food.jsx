@@ -24,10 +24,10 @@ export default class Food extends React.Component {
     ];
     shots.forEach((s) => { s.hasImg = !!s.src; s.noImg = !s.src; });
     const pizzas = [
-      { pos: '1', name: 'Margherita', copy: 'Tomato, mozzarella and fresh basil. [CONFIRM]', img: '/images/pizza-norwich-margherita-kraft-box.webp', alt: 'A Margherita pizza with tomato, melted mozzarella and fresh basil in a kraft pizza box' },
-      { pos: '2', name: 'Pepperoni', copy: 'Tomato, mozzarella and pepperoni. [CONFIRM]', img: '/images/pizza-norwich-pepperoni-kraft-box.webp', alt: 'A pepperoni pizza with crisp cupped pepperoni and a stretchy cheese pull in a kraft pizza box' },
-      { pos: '3', name: 'Hawaiian', copy: 'Tomato, mozzarella, ham and pineapple. [CONFIRM]', img: '/images/pizza-norwich-hawaiian-ham-pineapple.webp', alt: 'A Hawaiian pizza topped with ham and pineapple chunks in a kraft pizza box' },
-      { pos: '4', name: 'Meat Feast', copy: 'Pepperoni, ham, bacon and sausage. [CONFIRM]', img: '/images/pizza-norwich-meat-feast.webp', alt: 'A meat feast pizza loaded with pepperoni, ham, bacon and sausage in a kraft pizza box' }
+      { pos: '1', name: 'Margherita', copy: 'Tomato, mozzarella and fresh basil.', img: '/images/pizza-norwich-margherita-kraft-box.webp', alt: 'A Margherita pizza with tomato, melted mozzarella and fresh basil in a kraft pizza box' },
+      { pos: '2', name: 'Pepperoni', copy: 'Tomato, mozzarella and pepperoni.', img: '/images/pizza-norwich-pepperoni-kraft-box.webp', alt: 'A pepperoni pizza with crisp cupped pepperoni and a stretchy cheese pull in a kraft pizza box' },
+      { pos: '3', name: 'Hawaiian', copy: 'Tomato, mozzarella, ham and pineapple.', img: '/images/pizza-norwich-hawaiian-ham-pineapple.webp', alt: 'A Hawaiian pizza topped with ham and pineapple chunks in a kraft pizza box' },
+      { pos: '4', name: 'Meat Feast', copy: 'Pepperoni, ham, bacon and sausage.', img: '/images/pizza-norwich-meat-feast.webp', alt: 'A meat feast pizza loaded with pepperoni, ham, bacon and sausage in a kraft pizza box' }
     ];
     const faqList = [
       ['Which bookings include pizza*?', 'Our Pizza* Included + Bring Your Own Drinks packages: Saturday Afternoon, Saturday Night and festive weeknights in December and early January. See the price list for details.'],
@@ -71,13 +71,14 @@ export default class Food extends React.Component {
 </div>
 </nav>
 </header>
+<div className="lc-section lc-crumbs" style={css("max-width: 1360px; margin: 0 auto; padding: 16px 40px 0")}><nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
+<A href="/" style={css("color: #A1A1AA")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <span style={css(`color: ${V.accent}`)}>{"PIZZA*"}</span>
+</nav></div>
 <section aria-labelledby="pz-h" style={css("position: relative; overflow: hidden; background: #0B0B0E; border-bottom: 1px solid #1F1F23")}>
 <div aria-hidden="true" style={css("position: absolute; inset: 0; background: radial-gradient(ellipse 45% 60% at 75% 50%, rgba(237,40,53,0.22), transparent 70%)")}></div>
 <div className="lc-section" style={css("position: relative; max-width: 1360px; margin: 0 auto; padding: 100px 40px 90px; display: flex; flex-wrap: wrap; align-items: center; gap: 48px")}>
 <div style={css("flex: 1 1 520px")}>
-<nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
-<A href="/" style={css("color: #A1A1AA")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <span style={css(`color: ${V.accent}`)}>{"PIZZA*"}</span>
-</nav>
+
 <h1 id="pz-h" style={css("margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 500; line-height: 1.5; letter-spacing: 0.16em; color: #FFC233; text-transform: uppercase")}>{"Pizza* party Norwich \u00b7 pit-stop pizza*"}</h1>
 <p style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(72px, 11vw, 168px); line-height: 0.86; color: #FFFFFF; text-transform: uppercase")}>{"Pit-stop"}<br /><span style={css(`color: ${V.accent}`)}>{"pizza*."}</span></p>
 <p style={css("margin: 28px 0 0; max-width: 540px; font-size: 20px; line-height: 1.55; color: #D4D4D8")}>{"Hot pizza* for your whole crew, served right in the cave \u2014 a large selection, with options for a range of dietary needs. Add it to your hire with our Pizza* Included + Bring Your Own Drinks packages \u2014 you bring the drinks, we bring the pizza*."}</p>

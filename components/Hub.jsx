@@ -85,14 +85,15 @@ export default class Hub extends React.Component {
 </div>
 </nav>
 </header>
+<div className="lc-section lc-crumbs" style={css("max-width: 1360px; margin: 0 auto; padding: 16px 40px 0")}><nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
+<A href="/" style={css("color: #A1A1AA; text-decoration: none")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <span style={css("color: #ED2835")}>{V.h.crumb}</span>
+</nav></div>
 <section aria-labelledby="h-h" style={css("position: relative; min-height: 560px; display: flex; align-items: flex-end; background: #0E0E11; overflow: hidden")}>
 <Img src={V.h.hero} alt={V.h.heroAlt} style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 60% 50%")} />
 <div aria-hidden="true" style={css("position: absolute; inset: 0; background: linear-gradient(90deg, rgba(9,9,11,0.95) 0%, rgba(9,9,11,0.78) 45%, rgba(9,9,11,0.25) 80%)")}></div>
 <div aria-hidden="true" style={css("position: absolute; left: 0; right: 0; bottom: 0; height: 260px; background: linear-gradient(to top, #09090B 10%, transparent)")}></div>
 <div className="lc-section" style={css("position: relative; max-width: 1360px; width: 100%; margin: 0 auto; padding: 120px 40px 56px; box-sizing: border-box")}>
-<nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
-<A href="/" style={css("color: #A1A1AA; text-decoration: none")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <span style={css("color: #ED2835")}>{V.h.crumb}</span>
-</nav>
+
 <h1 id="h-h" style={css("margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 500; line-height: 1.5; letter-spacing: 0.16em; color: #FFC233; text-transform: uppercase")}>{V.h.h1}</h1>
 <p style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(64px, 10vw, 144px); line-height: 0.88; color: #FFFFFF; text-transform: uppercase")}>{V.h.line1}<br /><span style={css("color: #ED2835")}>{V.h.line2}</span></p>
 <p style={css("margin: 24px 0 0; max-width: 600px; font-size: 20px; line-height: 1.55; color: #D4D4D8")}>{V.h.intro}</p>

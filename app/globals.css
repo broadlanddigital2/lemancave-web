@@ -125,10 +125,10 @@ a[href="/christmas-party-norwich"][style*="border-radius"] {
   border-color: #1E9E5E !important;
   box-shadow: 0 0 0 1px #1E9E5E, 0 0 30px rgba(30, 158, 94, 0.22) !important;
 }
-a[href="/christmas-party-norwich"][style*="border-radius"] [style*="color:#ED2835" i],
-a[href="/christmas-party-norwich"][style*="border-radius"][style*="color:#ED2835" i] { color: #34C77B !important; }
-a[href="/christmas-party-norwich"][style*="border-radius"] [style*="background:#ED2835" i],
-a[href="/christmas-party-norwich"][style*="background:#ED2835" i] { background: #1E9E5E !important; color: #FFFFFF !important; }
+a[href="/christmas-party-norwich"][style*="border-radius"] :is([style*="color:#ED2835" i], [style*="color: rgb(237, 40, 53)" i]),
+a[href="/christmas-party-norwich"][style*="border-radius"]:is([style*="color:#ED2835" i], [style*="color: rgb(237, 40, 53)" i]) { color: #34C77B !important; }
+a[href="/christmas-party-norwich"][style*="border-radius"] :is([style*="background:#ED2835" i], [style*="background: rgb(237, 40, 53)" i]),
+a[href="/christmas-party-norwich"]:is([style*="background:#ED2835" i], [style*="background: rgb(237, 40, 53)" i]) { background: #1E9E5E !important; color: #FFFFFF !important; }
 .lc-mm-feat:hover { color: #5BE09A !important; }
 /* Homepage slide buttons: no glow (the Christmas slide's button is green from the slide data in design/Main.dc.html) */
 a.lc-hero-cta.lc-hero-cta[href] { box-shadow: none !important; }
@@ -196,16 +196,16 @@ a.lc-hero-cta.lc-hero-cta[href] { box-shadow: none !important; }
   header nav.lc-section > a:first-child { flex: none; }
 
   /* Heroes: tighter copy under the shorter min-height */
-  header + section p:is([style*="font-size:20px"], [style*="font-size: 20px"], [style*="font-size:19px"], [style*="font-size: 19px"]) { font-size: 16px !important; line-height: 1.5 !important; }
-  header + section a:is([style*="padding:18px 30px"], [style*="padding: 18px 30px"], [style*="padding:17px 30px"], [style*="padding: 17px 30px"]) { padding: 13px 18px !important; font-size: 14px !important; }
-  header + section h1 { font-size: 12px !important; }
-  header + section nav[aria-label="Breadcrumb"] { font-size: 11px !important; margin-bottom: 12px !important; }
+  :is(header, header + .lc-crumbs) + section p:is(:is([style*="font-size:20px"], [style*="font-size: 20px"]), [style*="font-size: 20px"], :is([style*="font-size:19px"], [style*="font-size: 19px"]), [style*="font-size: 19px"]) { font-size: 16px !important; line-height: 1.5 !important; }
+  :is(header, header + .lc-crumbs) + section a:is(:is([style*="padding:18px 30px"], [style*="padding: 18px 30px"]), [style*="padding: 18px 30px"], :is([style*="padding:17px 30px"], [style*="padding: 17px 30px"]), [style*="padding: 17px 30px"]) { padding: 13px 18px !important; font-size: 14px !important; }
+  :is(header, header + .lc-crumbs) + section h1 { font-size: 12px !important; }
+  .lc-crumbs nav[aria-label="Breadcrumb"] { font-size: 11px !important; margin-bottom: 12px !important; }
 
   /* Big card titles inside swipe rows fit the narrower card */
   .lc-hscroll h3[style*="--lc-fs"], article h3[style*="--lc-fs"] { font-size: 33px !important; }
 
   /* Pictures inside content: never taller than most of the screen */
-  section img:not([style*="position:absolute"]):not(.lc-hero-img) { max-height: 62vh; object-fit: cover; }
+  section img:not(:is([style*="position:absolute"], [style*="position: absolute"])):not(.lc-hero-img) { max-height: 62vh; object-fit: cover; }
 
   /* Card grids → swipe rows */
   :is(div[style*="grid-template-columns"]:has(> :nth-child(3)):is(:has(> a), :has(> article), :has(> div img), :has(> figure img)), .lc-hscroll):not(header *, footer :not(.lc-hscroll), .lc-gal, .lc-gallery, .lc-gallery *, .lc-noscroll, [style*="minmax(min("]) {
@@ -231,65 +231,65 @@ a.lc-hero-cta.lc-hero-cta[href] { box-shadow: none !important; }
   /* Service cards: photo on top, text panel underneath (the Classic Motorcycle Sim card's layout) instead of text over
      the photo. Applies to every card link or article whose photo fills it (Hub, Landing, Product, Main, Corporate). */
   .lc-mob-hide { display: none !important; }
-  :is(a, article):has(> img[style*="position:absolute"]):not(header *) {
+  :is(a, article):has(> img:is([style*="position:absolute"], [style*="position: absolute"])):not(header *) {
     display: flex !important; flex-direction: column !important; justify-content: flex-start !important;
     height: auto !important; min-height: 0 !important; background: #131316 !important; border: 1px solid #232328 !important;
     border-radius: 8px !important;
   }
-  :is(a, article):has(> img[style*="position:absolute"]):not(header *) > img[style*="position:absolute"] {
+  :is(a, article):has(> img:is([style*="position:absolute"], [style*="position: absolute"])):not(header *) > img:is([style*="position:absolute"], [style*="position: absolute"]) {
     position: relative !important; inset: auto !important; flex: none !important; width: 100% !important;
     height: 200px !important; max-height: none !important;
   }
-  :is(a, article):has(> img[style*="position:absolute"]):not(header *) > [aria-hidden][style*="inset:0"] { display: none !important; }
-  :is(a, article):has(> img[style*="position:absolute"]):not(header *) > :not([aria-hidden], .lc-mob-hide):is(span, div) {
+  :is(a, article):has(> img:is([style*="position:absolute"], [style*="position: absolute"])):not(header *) > [aria-hidden]:is([style*="inset:0"], [style*="inset: 0px"]) { display: none !important; }
+  :is(a, article):has(> img:is([style*="position:absolute"], [style*="position: absolute"])):not(header *) > :not([aria-hidden], .lc-mob-hide):is(span, div) {
     position: relative !important; inset: auto !important; padding: 20px 20px 22px !important; flex: 1 1 auto;
     display: flex !important; flex-direction: column !important; gap: 10px !important; justify-content: flex-start !important;
   }
-  :is(a, article):has(> img[style*="position:absolute"]):not(header *) > :not([aria-hidden])[style*="top:"] {
+  :is(a, article):has(> img:is([style*="position:absolute"], [style*="position: absolute"])):not(header *) > :not([aria-hidden]):is([style*="top:"], [style*="top: "]) {
     align-self: flex-start; flex: none; margin: 18px 20px -8px !important; padding: 6px 10px !important;
   }
-  :is(a, article):has(> img[style*="position:absolute"]):not(header *) > :not([aria-hidden]) [style*="font-family:'Big Shoulders Display'"] {
+  :is(a, article):has(> img:is([style*="position:absolute"], [style*="position: absolute"])):not(header *) > :not([aria-hidden]) :is([style*="font-family:'Big Shoulders Display'"], [style*='font-family: "Big Shoulders Display"']) {
     font-size: 31px !important; line-height: 0.95 !important; margin-top: 0 !important;
   }
-  :is(a, article):has(> img[style*="position:absolute"]):not(header *) > div [style*="display:inline-block"] { align-self: flex-start; }
+  :is(a, article):has(> img:is([style*="position:absolute"], [style*="position: absolute"])):not(header *) > div :is([style*="display:inline-block"], [style*="display: inline-block"]) { align-self: flex-start; }
   /* Two-up grids with wide columns stack on phones instead of running off the screen */
   div[style*="grid-template-columns"]:is([style*="minmax(4"], [style*="minmax(5"]) { grid-template-columns: 1fr !important; }
   /* the Classic Motorcycle Sim card itself: same photo height */
-  article > div:has(> img[style*="position:absolute"]) { min-height: 200px !important; flex-basis: 100% !important; }
-  article > div:has(> img[style*="position:absolute"]) + div { padding: 20px 20px 22px !important; gap: 10px !important; }
+  article > div:has(> img:is([style*="position:absolute"], [style*="position: absolute"])) { min-height: 200px !important; flex-basis: 100% !important; }
+  article > div:has(> img:is([style*="position:absolute"], [style*="position: absolute"])) + div { padding: 20px 20px 22px !important; gap: 10px !important; }
 
   /* NB: React rewrites a style attribute it updates with spaces ("position: absolute"), so hero rules below match the
      element, not its inline style (the homepage slides change style every few seconds). */
   /* Heroes with a photo: the photo becomes a banner across the top (whole width, not zoomed or panned) and the
      headline sits underneath on the dark background, so it always reads clearly. */
-  header + section:has(> img) { display: block !important; min-height: 0 !important; }
-  header + section:has(> img) > img {
+  :is(header, header + .lc-crumbs) + section:has(> img) { display: block !important; min-height: 0 !important; }
+  :is(header, header + .lc-crumbs) + section:has(> img) > img {
     top: 0 !important; left: 0 !important; right: 0 !important; bottom: auto !important; width: 100% !important;
     height: min(60vw, 300px) !important; max-height: none !important; transform: none !important; filter: none !important;
   }
-  header + section:has(> img) > div[aria-hidden][style*="inset:0"] { display: none !important; }
-  header + section:has(> img) > div[aria-hidden][style*="bottom:0"] {
+  :is(header, header + .lc-crumbs) + section:has(> img) > div[aria-hidden]:is([style*="inset:0"], [style*="inset: 0px"]) { display: none !important; }
+  :is(header, header + .lc-crumbs) + section:has(> img) > div[aria-hidden]:is([style*="bottom:0"], [style*="bottom: 0px"]) {
     top: calc(min(60vw, 300px) - 80px) !important; bottom: auto !important; height: 80px !important;
     background: linear-gradient(to top, #3D0F17, transparent) !important;
   }
-  header + section:has(> img) > .lc-section {
+  :is(header, header + .lc-crumbs) + section:has(> img) > .lc-section {
     padding-top: calc(min(60vw, 300px) + 14px) !important; padding-bottom: 32px !important;
   }
-  header + section:has(> img) > .lc-section [aria-live] { min-height: 0 !important; }
+  :is(header, header + .lc-crumbs) + section:has(> img) > .lc-section [aria-live] { min-height: 0 !important; }
 
   /* Booking bands ("Grid slots fill fast" and the like): the chequered flag moves from behind the text to a strip
      along the top, so the copy reads cleanly on the red. */
-  div[aria-hidden][style*="width:220px"][style*="repeating-conic-gradient"] {
+  div[aria-hidden]:is([style*="width:220px"], [style*="width: 220px"])[style*="repeating-conic-gradient"] {
     left: 0 !important; right: 0 !important; bottom: auto !important; width: auto !important; height: 20px !important;
     background-size: 20px 20px !important; opacity: 0.3 !important;
   }
-  div:has(> div[aria-hidden][style*="width:220px"][style*="repeating-conic-gradient"]) { padding-top: 48px !important; }
+  div:has(> div[aria-hidden]:is([style*="width:220px"], [style*="width: 220px"])[style*="repeating-conic-gradient"]) { padding-top: 48px !important; }
 
   /* Footer "Part of the family" logos swipe too, two at a time */
   footer .lc-hscroll { --lc-card: calc(50% - 6px); }
   /* Maps: tall enough that the "Show map" buttons clear the Get directions button */
   div:has(> .lc-map-off), div:has(> iframe[title^="Map"]) { min-height: 380px !important; }
-  div:has(> .lc-map-off, > iframe[title^="Map"]) > span[style*="right:14px"] { bottom: auto !important; top: 14px !important; }
+  div:has(> .lc-map-off, > iframe[title^="Map"]) > span:is([style*="right:14px"], [style*="right: 14px"]) { bottom: auto !important; top: 14px !important; }
   .lc-map-off { justify-content: flex-start !important; padding-top: 64px !important; }
 
   /* Forms: full-width send button; 16px fields so iPhones don't zoom in when a field is tapped */
@@ -312,29 +312,29 @@ a.lc-hero-cta.lc-hero-cta[href] { box-shadow: none !important; }
     font-size: 19px !important; line-height: 1.05 !important; margin-top: 4px !important; overflow-wrap: break-word;
   }
   /* Price list: each session becomes a card, its three package prices side by side underneath */
-  div[style*="min-width:980px"] { min-width: 0 !important; }
-  div[style*="min-width:980px"] > div[style*="grid-template-columns:2.1fr"] { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
-  div[style*="min-width:980px"] > div[style*="grid-template-columns:2.1fr"] > :first-child { grid-column: 1 / -1; padding: 18px 16px 12px !important; }
-  div[style*="min-width:980px"] > div[style*="grid-template-columns:2.1fr"] > :not(:first-child) { padding: 12px 10px !important; font-size: 13px; }
-  div[style*="min-width:980px"] > div[style*="grid-template-columns:2.1fr"] > :nth-child(2) { border-left: 0 !important; }
-  div[style*="min-width:980px"] > div[style*="grid-template-columns:2.1fr"] > :first-child span[style*="font-size:28px"] { font-size: 24px !important; }
+  div:is([style*="min-width:980px"], [style*="min-width: 980px"]) { min-width: 0 !important; }
+  div:is([style*="min-width:980px"], [style*="min-width: 980px"]) > div:is([style*="grid-template-columns:2.1fr"], [style*="grid-template-columns: 2.1fr"]) { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
+  div:is([style*="min-width:980px"], [style*="min-width: 980px"]) > div:is([style*="grid-template-columns:2.1fr"], [style*="grid-template-columns: 2.1fr"]) > :first-child { grid-column: 1 / -1; padding: 18px 16px 12px !important; }
+  div:is([style*="min-width:980px"], [style*="min-width: 980px"]) > div:is([style*="grid-template-columns:2.1fr"], [style*="grid-template-columns: 2.1fr"]) > :not(:first-child) { padding: 12px 10px !important; font-size: 13px; }
+  div:is([style*="min-width:980px"], [style*="min-width: 980px"]) > div:is([style*="grid-template-columns:2.1fr"], [style*="grid-template-columns: 2.1fr"]) > :nth-child(2) { border-left: 0 !important; }
+  div:is([style*="min-width:980px"], [style*="min-width: 980px"]) > div:is([style*="grid-template-columns:2.1fr"], [style*="grid-template-columns: 2.1fr"]) > :first-child span:is([style*="font-size:28px"], [style*="font-size: 28px"]) { font-size: 24px !important; }
   /* "Visiting from" drive-time board: distance and drive time stack on the right so town names have room */
-  :is(a, div)[style*="grid-template-columns:44px 1fr 96px 96px 28px"] {
+  :is(a, div):is([style*="grid-template-columns:44px 1fr 96px 96px 28px"], [style*="grid-template-columns: 44px 1fr 96px 96px 28px"]) {
     grid-template-columns: 26px minmax(0, 1fr) auto 12px !important; column-gap: 10px; row-gap: 2px; padding: 12px 4px !important;
   }
-  :is(a, div)[style*="grid-template-columns:44px 1fr 96px 96px 28px"] > * { font-size: 12px !important; }
-  :is(a, div)[style*="grid-template-columns:44px 1fr 96px 96px 28px"] > :nth-child(1) { grid-row: 1 / 3; }
-  :is(a, div)[style*="grid-template-columns:44px 1fr 96px 96px 28px"] > :nth-child(2) { grid-row: 1 / 3; }
-  a[style*="grid-template-columns:44px 1fr 96px 96px 28px"] > :nth-child(2) { font-size: 21px !important; }
-  div[style*="grid-template-columns:44px 1fr 96px 96px 28px"] > :nth-child(1) { visibility: hidden; }
-  :is(a, div)[style*="grid-template-columns:44px 1fr 96px 96px 28px"] > :nth-child(3) { grid-column: 3; grid-row: 1; text-align: right; }
-  :is(a, div)[style*="grid-template-columns:44px 1fr 96px 96px 28px"] > :nth-child(4) { grid-column: 3; grid-row: 2; text-align: right; }
-  :is(a, div)[style*="grid-template-columns:44px 1fr 96px 96px 28px"] > :nth-child(5) { grid-column: 4; grid-row: 1 / 3; }
+  :is(a, div):is([style*="grid-template-columns:44px 1fr 96px 96px 28px"], [style*="grid-template-columns: 44px 1fr 96px 96px 28px"]) > * { font-size: 12px !important; }
+  :is(a, div):is([style*="grid-template-columns:44px 1fr 96px 96px 28px"], [style*="grid-template-columns: 44px 1fr 96px 96px 28px"]) > :nth-child(1) { grid-row: 1 / 3; }
+  :is(a, div):is([style*="grid-template-columns:44px 1fr 96px 96px 28px"], [style*="grid-template-columns: 44px 1fr 96px 96px 28px"]) > :nth-child(2) { grid-row: 1 / 3; }
+  a:is([style*="grid-template-columns:44px 1fr 96px 96px 28px"], [style*="grid-template-columns: 44px 1fr 96px 96px 28px"]) > :nth-child(2) { font-size: 21px !important; }
+  div:is([style*="grid-template-columns:44px 1fr 96px 96px 28px"], [style*="grid-template-columns: 44px 1fr 96px 96px 28px"]) > :nth-child(1) { visibility: hidden; }
+  :is(a, div):is([style*="grid-template-columns:44px 1fr 96px 96px 28px"], [style*="grid-template-columns: 44px 1fr 96px 96px 28px"]) > :nth-child(3) { grid-column: 3; grid-row: 1; text-align: right; }
+  :is(a, div):is([style*="grid-template-columns:44px 1fr 96px 96px 28px"], [style*="grid-template-columns: 44px 1fr 96px 96px 28px"]) > :nth-child(4) { grid-column: 3; grid-row: 2; text-align: right; }
+  :is(a, div):is([style*="grid-template-columns:44px 1fr 96px 96px 28px"], [style*="grid-template-columns: 44px 1fr 96px 96px 28px"]) > :nth-child(5) { grid-column: 4; grid-row: 1 / 3; }
 
   /* Comparison tables fit the screen instead of hiding columns off to the right */
-  table[style*="min-width:640px"] { min-width: 0 !important; font-size: 13px !important; table-layout: fixed; }
-  table[style*="min-width:640px"] :is(th, td) { padding: 10px 8px !important; overflow-wrap: break-word; hyphens: auto; vertical-align: top; }
-  table[style*="min-width:640px"] th { font-size: 11px !important; letter-spacing: 0.06em !important; }
+  table:is([style*="min-width:640px"], [style*="min-width: 640px"]) { min-width: 0 !important; font-size: 13px !important; table-layout: fixed; }
+  table:is([style*="min-width:640px"], [style*="min-width: 640px"]) :is(th, td) { padding: 10px 8px !important; overflow-wrap: break-word; hyphens: auto; vertical-align: top; }
+  table:is([style*="min-width:640px"], [style*="min-width: 640px"]) th { font-size: 11px !important; letter-spacing: 0.06em !important; }
   /* Christmas page header button stays on one line */
   header a[href="#packages"] { padding: 12px 14px !important; font-size: 0 !important; white-space: nowrap; }
   header a[href="#packages"]::after { content: 'Book now'; font-size: 14px; letter-spacing: 0.06em; }
@@ -371,25 +371,28 @@ a.lc-hero-cta.lc-hero-cta[href] { box-shadow: none !important; }
   /* Christmas page header: the account icon covers log in, so the extra text link goes */
   header nav a[href*="/login"]:not(.lc-hdr-icon) { display: none !important; }
   /* Decorative timeline lines that poke past the right edge */
-  span[style*="right:-24px"] { right: 0 !important; }
+  span:is([style*="right:-24px"], [style*="right: -24px"]) { right: 0 !important; }
 }
 @media (max-width: 760px) {
   /* Contact page "Directions to Le Man Cave: visiting from": an even two-column grid of buttons */
-  section[aria-labelledby="from-h"] > div[style*="flex-wrap:wrap"] { display: grid !important; grid-template-columns: 1fr 1fr; gap: 8px !important; }
-  section[aria-labelledby="from-h"] > div[style*="flex-wrap:wrap"] > a { text-align: center; border-radius: 8px !important; padding: 13px 10px !important; background: #131316; }
+  section[aria-labelledby="from-h"] > div:is([style*="flex-wrap:wrap"], [style*="flex-wrap: wrap"]) { display: grid !important; grid-template-columns: 1fr 1fr; gap: 8px !important; }
+  section[aria-labelledby="from-h"] > div:is([style*="flex-wrap:wrap"], [style*="flex-wrap: wrap"]) > a { text-align: center; border-radius: 8px !important; padding: 13px 10px !important; background: #131316; }
 }
 /* Hero banners on every page: a red panel with rounded bottom corners and a shadow, so it's clear where the banner ends and the page starts
    (on desktop this shows on heroes without a full photo; on phones under the photo banner too). */
-header + section {
+:is(header, header + .lc-crumbs) + section {
   background: linear-gradient(180deg, #3D0F17 0%, #250A0F 100%) !important; border-bottom: 0 !important;
   border-radius: 0 0 28px 28px; overflow: hidden; margin-bottom: 14px;
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.07), 0 22px 44px -12px rgba(0, 0, 0, 0.85);
 }
-@media (max-width: 760px) { header + section { border-radius: 0 0 20px 20px; } }
-header + section > div[aria-hidden][style*="90deg, #0B0B0E"] { display: none !important; }
-header + section .lc-hero-stats > div { background: rgba(0, 0, 0, 0.32) !important; border-color: rgba(255, 255, 255, 0.08) !important; border-left-color: #ED2835 !important; }
+@media (max-width: 760px) { :is(header, header + .lc-crumbs) + section { border-radius: 0 0 20px 20px; } }
+:is(header, header + .lc-crumbs) + section > div[aria-hidden]:is([style*="90deg, #0B0B0E"], [style*="90deg, rgb(11, 11, 14)"]) { display: none !important; }
+:is(header, header + .lc-crumbs) + section .lc-hero-stats > div { background: rgba(0, 0, 0, 0.32) !important; border-color: rgba(255, 255, 255, 0.08) !important; border-left-color: #ED2835 !important; }
 /* Browsers without overflow-x: clip (older iPhones) fall back to hidden on the page wrappers, so nothing can make the
    page wider than the screen (the sticky header may not stick there). */
 @supports not (overflow-x: clip) {
-  div[style*="overflow-x:clip"], .lc { overflow-x: hidden !important; }
+  div:is([style*="overflow-x:clip"], [style*="overflow-x: clip"]), .lc { overflow-x: hidden !important; }
 }
+/* Breadcrumbs bar above the hero banner (converter step move_breadcrumbs) */
+.lc-crumbs nav[aria-label="Breadcrumb"] { margin: 0 0 14px !important; }
+

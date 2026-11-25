@@ -93,6 +93,9 @@ export default class Christmas extends React.Component {
 </div>
 </nav>
 </header>
+<div className="lc-section lc-crumbs" style={css("max-width: 1360px; margin: 0 auto; padding: 16px 40px 0")}><nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
+<A href="/" style={css("color: #A1A1AA")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <span style={css(`color: ${V.green}`)}>{"CHRISTMAS PARTIES"}</span>
+</nav></div>
 <section aria-labelledby="xm-h" style={css("position: relative; min-height: 760px; display: flex; align-items: flex-end; background: #0E0E11; overflow: hidden")}>
 <img width="1672" height="941" srcSet="/images/w/christmas-party-norwich-race-car-christmas-tree-480.webp 480w, /images/w/christmas-party-norwich-race-car-christmas-tree-800.webp 800w, /images/w/christmas-party-norwich-race-car-christmas-tree-1200.webp 1200w, /images/christmas-party-norwich-race-car-christmas-tree.webp 1672w" sizes="100vw" src="/images/christmas-party-norwich-race-car-christmas-tree.webp" alt="A red GT race car beside a lit Christmas tree and presents at a snowy pit lane: Christmas party Norwich groups book" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 70% 50%")} />
 <div aria-hidden="true" style={css("position: absolute; inset: 0; background: linear-gradient(90deg, rgba(9,9,11,0.96) 0%, rgba(9,9,11,0.82) 45%, rgba(9,9,11,0.3) 78%, rgba(9,9,11,0.2) 100%)")}></div>
@@ -127,9 +130,7 @@ export default class Christmas extends React.Component {
 </svg>
 <div className="lc-section" style={css("position: relative; max-width: 1360px; width: 100%; margin: 0 auto; padding: 160px 40px 64px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 40px")}>
 <div style={css("flex: 1 1 620px")}>
-<nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
-<A href="/" style={css("color: #A1A1AA")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <span style={css(`color: ${V.green}`)}>{"CHRISTMAS PARTIES"}</span>
-</nav>
+
 <h1 id="xm-h" style={css("margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 500; line-height: 1.5; letter-spacing: 0.16em; color: #FFC233; text-transform: uppercase")}>{"Christmas party Norwich \u00b7 now booking"}</h1>
 <p style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(68px, 10.5vw, 160px); line-height: 0.86; color: #FFFFFF; text-transform: uppercase")}>{"The Festive"}<br /><span style={css(`color: ${V.accent}`)}>{"Grand"}</span> <span style={css(`color: ${V.green}`)}>{"Prix."}</span></p>
 <p style={css("margin: 28px 0 0; max-width: 580px; font-size: 20px; line-height: 1.55; color: #D4D4D8")}>{"Swap the same old Christmas do for a race night. Take over the whole cave \u2014 simulators, Scalextric, games, pizza* and your own drinks \u2014 every weeknight in December and Saturday nights through the season."}</p>

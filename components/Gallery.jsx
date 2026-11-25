@@ -91,10 +91,11 @@ export default class Gallery extends React.Component {
 </div>
 </nav>
 </header>
-<section className="lc-section" aria-labelledby="gal-h" style={css("max-width: 1360px; margin: 0 auto; padding: 100px 40px 120px")}>
-<nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
+<div className="lc-section lc-crumbs" style={css("max-width: 1360px; margin: 0 auto; padding: 16px 40px 0")}><nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
 <A href="/" style={css("color: #A1A1AA")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <span style={css("color: #ED2835")}>{"GALLERY"}</span>
-</nav>
+</nav></div>
+<section className="lc-section" aria-labelledby="gal-h" style={css("max-width: 1360px; margin: 0 auto; padding: 100px 40px 120px")}>
+
 <div style={css("display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 40px")}>
 <div>
 <h1 id="gal-h" style={css("margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 500; line-height: 1.5; letter-spacing: 0.16em; color: #FFC233; text-transform: uppercase")}>{"Le Man Cave photos \u00b7 inside the cave"}</h1>
