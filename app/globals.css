@@ -177,7 +177,7 @@ a[href="/christmas-party-norwich"][style*="background:#ED2835" i] { background: 
 .lc-festive-short { display: none; }
 .lc-hs-nav { display: none; }
 @media (max-width: 760px) {
-  :root { --lc-sp: 0.5; --lc-mh: 0.55; --lc-fs: 0.64; --lc-fm: 0.76; }
+  :root { --lc-sp: 0.5; --lc-mh: 0.55; --lc-fs: 0.72; --lc-fm: 0.84; }
 
   /* Christmas banner: one slim line */
   .lc-festive { padding: 7px 12px 7px 50px; font-size: 13px; border-width: 2px; flex-wrap: nowrap; }
@@ -191,6 +191,7 @@ a[href="/christmas-party-norwich"][style*="background:#ED2835" i] { background: 
   /* Header: slimmer bar */
   header nav.lc-section { height: 60px !important; }
   header nav.lc-section > a img { height: 44px !important; width: auto !important; }
+  header nav.lc-section > a:first-child { flex: none; }
 
   /* Heroes: tighter copy under the shorter min-height */
   header + section p:is([style*="font-size:20px"], [style*="font-size: 20px"], [style*="font-size:19px"], [style*="font-size: 19px"]) { font-size: 16px !important; line-height: 1.5 !important; }
@@ -199,20 +200,20 @@ a[href="/christmas-party-norwich"][style*="background:#ED2835" i] { background: 
   header + section nav[aria-label="Breadcrumb"] { font-size: 11px !important; margin-bottom: 12px !important; }
 
   /* Big card titles inside swipe rows fit the narrower card */
-  .lc-hscroll h3[style*="--lc-fs"], article h3[style*="--lc-fs"] { font-size: 30px !important; }
+  .lc-hscroll h3[style*="--lc-fs"], article h3[style*="--lc-fs"] { font-size: 33px !important; }
 
   /* Pictures inside content: never taller than most of the screen */
   section img:not([style*="position:absolute"]):not(.lc-hero-img) { max-height: 62vh; object-fit: cover; }
 
   /* Card grids → swipe rows */
-  :is(div[style*="grid-template-columns"]:has(> :nth-child(3)):is(:has(> a), :has(> article), :has(> div img), :has(> figure img)), .lc-hscroll):not(header *, footer *, .lc-gal, .lc-gallery, .lc-gallery *, .lc-noscroll, [style*="minmax(min("]) {
+  :is(div[style*="grid-template-columns"]:has(> :nth-child(3)):is(:has(> a), :has(> article), :has(> div img), :has(> figure img)), .lc-hscroll):not(header *, footer :not(.lc-hscroll), .lc-gal, .lc-gallery, .lc-gallery *, .lc-noscroll, [style*="minmax(min("]) {
     display: flex !important; flex-wrap: nowrap !important; overflow-x: auto; scroll-snap-type: x mandatory; gap: 12px !important;
     margin-right: -20px !important; padding-right: 20px !important; padding-bottom: 4px;
     scrollbar-width: none; -webkit-overflow-scrolling: touch; overscroll-behavior-x: contain;
   }
-  :is(div[style*="grid-template-columns"]:has(> :nth-child(3)):is(:has(> a), :has(> article), :has(> div img), :has(> figure img)), .lc-hscroll):not(header *, footer *, .lc-gal, .lc-gallery, .lc-gallery *, .lc-noscroll, [style*="minmax(min("])::-webkit-scrollbar { display: none; }
-  :is(div[style*="grid-template-columns"]:has(> :nth-child(3)):is(:has(> a), :has(> article), :has(> div img), :has(> figure img)), .lc-hscroll):not(header *, footer *, .lc-gal, .lc-gallery, .lc-gallery *, .lc-noscroll, [style*="minmax(min("]) > * {
-    flex: 0 0 min(80%, 330px) !important; min-width: 0; scroll-snap-align: start; grid-column: auto !important; grid-row: auto !important;
+  :is(div[style*="grid-template-columns"]:has(> :nth-child(3)):is(:has(> a), :has(> article), :has(> div img), :has(> figure img)), .lc-hscroll):not(header *, footer :not(.lc-hscroll), .lc-gal, .lc-gallery, .lc-gallery *, .lc-noscroll, [style*="minmax(min("])::-webkit-scrollbar { display: none; }
+  :is(div[style*="grid-template-columns"]:has(> :nth-child(3)):is(:has(> a), :has(> article), :has(> div img), :has(> figure img)), .lc-hscroll):not(header *, footer :not(.lc-hscroll), .lc-gal, .lc-gallery, .lc-gallery *, .lc-noscroll, [style*="minmax(min("]) > * {
+    flex: 0 0 var(--lc-card, min(80%, 330px)) !important; min-width: 0; scroll-snap-align: start; grid-column: auto !important; grid-row: auto !important;
   }
   .lc-hs-nav { display: flex; align-items: center; justify-content: flex-end; gap: 8px; margin-top: 14px; }
   .lc-hs-nav[hidden] { display: none !important; }
@@ -246,7 +247,7 @@ a[href="/christmas-party-norwich"][style*="background:#ED2835" i] { background: 
     align-self: flex-start; flex: none; margin: 18px 20px -8px !important; padding: 6px 10px !important;
   }
   :is(a, article):has(> img[style*="position:absolute"]):not(header *) > :not([aria-hidden]) [style*="font-family:'Big Shoulders Display'"] {
-    font-size: 28px !important; line-height: 0.95 !important; margin-top: 0 !important;
+    font-size: 31px !important; line-height: 0.95 !important; margin-top: 0 !important;
   }
   :is(a, article):has(> img[style*="position:absolute"]):not(header *) > div [style*="display:inline-block"] { align-self: flex-start; }
   /* Two-up grids with wide columns stack on phones instead of running off the screen */
@@ -273,5 +274,55 @@ a[href="/christmas-party-norwich"][style*="background:#ED2835" i] { background: 
     padding-top: calc(min(60vw, 300px) + 14px) !important; padding-bottom: 32px !important;
   }
   header + section:has(> img) > .lc-section [aria-live] { min-height: 0 !important; }
+
+  /* Booking bands ("Grid slots fill fast" and the like): the chequered flag moves from behind the text to a strip
+     along the top, so the copy reads cleanly on the red. */
+  div[aria-hidden][style*="width:220px"][style*="repeating-conic-gradient"] {
+    left: 0 !important; right: 0 !important; bottom: auto !important; width: auto !important; height: 20px !important;
+    background-size: 20px 20px !important; opacity: 0.3 !important;
+  }
+  div:has(> div[aria-hidden][style*="width:220px"][style*="repeating-conic-gradient"]) { padding-top: 48px !important; }
+
+  /* Footer "Part of the family" logos swipe too, two at a time */
+  footer .lc-hscroll { --lc-card: calc(50% - 6px); }
+  /* Maps: tall enough that the "Show map" buttons clear the Get directions button */
+  div:has(> .lc-map-off), div:has(> iframe[title^="Map"]) { min-height: 380px !important; }
+  div:has(> .lc-map-off, > iframe[title^="Map"]) > span[style*="right:14px"] { bottom: auto !important; top: 14px !important; }
+  .lc-map-off { justify-content: flex-start !important; padding-top: 64px !important; }
+
+  /* Forms: full-width send button; 16px fields so iPhones don't zoom in when a field is tapped */
+  form input, form select, form textarea { font-size: 16px !important; }
+  form[aria-label] { padding: 20px !important; }
+  form[aria-label] button[type="submit"] { align-self: stretch !important; justify-content: center; }
+  /* Attraction spec strip ("9ft championship-grade slate"): two to a row */
+  .lc-specs { grid-template-columns: 1fr 1fr !important; }
+  .lc-specs > div { padding: 16px 12px !important; border-right: 0 !important; border-bottom: 1px solid #1F1F23; }
+  .lc-specs > div > div + div { font-size: 22px !important; line-height: 1.05; }
+  /* Price list: each session becomes a card, its three package prices side by side underneath */
+  div[style*="min-width:980px"] { min-width: 0 !important; }
+  div[style*="min-width:980px"] > div[style*="grid-template-columns:2.1fr"] { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
+  div[style*="min-width:980px"] > div[style*="grid-template-columns:2.1fr"] > :first-child { grid-column: 1 / -1; padding: 18px 16px 12px !important; }
+  div[style*="min-width:980px"] > div[style*="grid-template-columns:2.1fr"] > :not(:first-child) { padding: 12px 10px !important; font-size: 13px; }
+  div[style*="min-width:980px"] > div[style*="grid-template-columns:2.1fr"] > :nth-child(2) { border-left: 0 !important; }
+  div[style*="min-width:980px"] > div[style*="grid-template-columns:2.1fr"] > :first-child span[style*="font-size:28px"] { font-size: 24px !important; }
+  /* "Visiting from" drive-time board: distance and drive time stack on the right so town names have room */
+  :is(a, div)[style*="grid-template-columns:44px 1fr 96px 96px 28px"] {
+    grid-template-columns: 26px minmax(0, 1fr) auto 12px !important; column-gap: 10px; row-gap: 2px; padding: 12px 4px !important;
+  }
+  :is(a, div)[style*="grid-template-columns:44px 1fr 96px 96px 28px"] > * { font-size: 12px !important; }
+  :is(a, div)[style*="grid-template-columns:44px 1fr 96px 96px 28px"] > :nth-child(1) { grid-row: 1 / 3; }
+  :is(a, div)[style*="grid-template-columns:44px 1fr 96px 96px 28px"] > :nth-child(2) { grid-row: 1 / 3; }
+  a[style*="grid-template-columns:44px 1fr 96px 96px 28px"] > :nth-child(2) { font-size: 21px !important; }
+  div[style*="grid-template-columns:44px 1fr 96px 96px 28px"] > :nth-child(1) { visibility: hidden; }
+  :is(a, div)[style*="grid-template-columns:44px 1fr 96px 96px 28px"] > :nth-child(3) { grid-column: 3; grid-row: 1; text-align: right; }
+  :is(a, div)[style*="grid-template-columns:44px 1fr 96px 96px 28px"] > :nth-child(4) { grid-column: 3; grid-row: 2; text-align: right; }
+  :is(a, div)[style*="grid-template-columns:44px 1fr 96px 96px 28px"] > :nth-child(5) { grid-column: 4; grid-row: 1 / 3; }
+
+  /* Comparison tables fit the screen instead of hiding columns off to the right */
+  table[style*="min-width:640px"] { min-width: 0 !important; font-size: 13px !important; table-layout: fixed; }
+  table[style*="min-width:640px"] :is(th, td) { padding: 10px 8px !important; overflow-wrap: break-word; hyphens: auto; vertical-align: top; }
+  table[style*="min-width:640px"] th { font-size: 11px !important; letter-spacing: 0.06em !important; }
+  /* Christmas page header button stays on one line */
+  header a[href="#packages"] { padding: 12px 12px !important; font-size: 13px !important; letter-spacing: 0.03em !important; white-space: nowrap; }
 }
 

@@ -43,7 +43,7 @@ export default class SiteFooter extends React.Component {
 </div>
 <div className="lc-section" style={css("max-width: 1360px; margin: 0 auto; padding: 32px 40px 40px; border-top: 1px solid #18181B")}>
 <p style={css("margin: 0 0 18px; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.16em; color: #71717A")}>{"PART OF THE FAMILY"}</p>
-<div style={css("display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px")}>
+<div className="lc-hscroll" style={css("display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px")}>
 {(V.brands || []).map((b, $index) => (<React.Fragment key={$index}>
 <A href={b.href} aria-label={b.name} style={css("display: flex; align-items: center; justify-content: center; height: 104px; padding: 16px; box-sizing: border-box; border: 1px solid #27272A; border-radius: 6px; background: #0B0B0E")}>
 <Img src={b.logo} alt={b.name} style={css("max-height: 56px; max-width: 80%; width: auto; height: auto; display: block")} />

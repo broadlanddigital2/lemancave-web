@@ -199,7 +199,7 @@ export default class Product extends React.Component {
 </div>
 </section>
 <section aria-label="Key facts" style={css("border-top: 1px solid #1F1F23; border-bottom: 1px solid #1F1F23; background: #0F0F12")}>
-<div className="lc-section" style={css("max-width: 1360px; margin: 0 auto; padding: 0 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr))")}>
+<div className="lc-section lc-specs" style={css("max-width: 1360px; margin: 0 auto; padding: 0 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr))")}>
 {(V.p.specs || []).map((s, $index) => (<React.Fragment key={$index}>
 <div style={css("padding: 28px 20px; border-right: 1px solid #1F1F23")}>
 <div style={css("font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: #71717A")}>{s.k}</div>
