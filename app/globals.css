@@ -373,6 +373,11 @@ a.lc-hero-cta.lc-hero-cta[href] { box-shadow: none !important; }
   /* Decorative timeline lines that poke past the right edge */
   span[style*="right:-24px"] { right: 0 !important; }
 }
+@media (max-width: 760px) {
+  /* Contact page "Directions to Le Man Cave: visiting from": an even two-column grid of buttons */
+  section[aria-labelledby="from-h"] > div[style*="flex-wrap:wrap"] { display: grid !important; grid-template-columns: 1fr 1fr; gap: 8px !important; }
+  section[aria-labelledby="from-h"] > div[style*="flex-wrap:wrap"] > a { text-align: center; border-radius: 8px !important; padding: 13px 10px !important; background: #131316; }
+}
 /* Hero banners on every page: a red panel with rounded bottom corners and a shadow, so it's clear where the banner ends and the page starts
    (on desktop this shows on heroes without a full photo; on phones under the photo banner too). */
 header + section {
