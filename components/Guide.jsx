@@ -270,9 +270,6 @@ export default class Guide extends React.Component {
 </div>
 </nav>
 </header>
-<div className="lc-section lc-crumbs" style={css("max-width: 1360px; margin: 0 auto; padding: 16px 40px 0")}><nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
-<A href="/" style={css("color: #A1A1AA; text-decoration: none")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <A href={V.g.parentHref} style={css("color: #A1A1AA; text-decoration: none")}>{V.g.parentLabel}</A> <span aria-hidden="true">{"/"}</span> <span style={css("color: #ED2835")}>{V.g.crumb}</span>
-</nav></div>
 <section aria-labelledby="g-h" style={css("position: relative; overflow: hidden; background: #0B0B0E; border-bottom: 1px solid #1F1F23")}>
 <div aria-hidden="true" style={css("position: absolute; right: -40px; top: 0; bottom: 0; width: 380px; background: repeating-conic-gradient(#1C1C21 0% 25%, transparent 0% 50%) 0 0 / 56px 56px; opacity: 0.6")}></div>
 <div aria-hidden="true" style={css("position: absolute; right: 0; top: 0; bottom: 0; width: 480px; background: linear-gradient(90deg, #0B0B0E, transparent)")}></div>
@@ -283,6 +280,9 @@ export default class Guide extends React.Component {
 <p style={css("margin: 24px 0 0; max-width: 680px; font-size: 20px; line-height: 1.55; color: #D4D4D8")}>{V.g.intro}</p>
 </div>
 </section>
+<div className="lc-section lc-crumbs" style={css("max-width: 1360px; margin: 0 auto; padding: 18px 40px 0")}><nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
+<A href="/" style={css("color: #A1A1AA; text-decoration: none")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <A href={V.g.parentHref} style={css("color: #A1A1AA; text-decoration: none")}>{V.g.parentLabel}</A> <span aria-hidden="true">{"/"}</span> <span style={css("color: #ED2835")}>{V.g.crumb}</span>
+</nav></div>
 <section className="lc-section" style={css("max-width: 1360px; margin: 0 auto; padding: 90px 40px; display: flex; flex-wrap: wrap; gap: 64px; align-items: flex-start")}>
 <div style={css("flex: 2 1 640px; min-width: 0; display: flex; flex-direction: column; gap: 56px")}>
 {V.hasSummary ? (<>

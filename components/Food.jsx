@@ -71,9 +71,6 @@ export default class Food extends React.Component {
 </div>
 </nav>
 </header>
-<div className="lc-section lc-crumbs" style={css("max-width: 1360px; margin: 0 auto; padding: 16px 40px 0")}><nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
-<A href="/" style={css("color: #A1A1AA")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <span style={css(`color: ${V.accent}`)}>{"PIZZA*"}</span>
-</nav></div>
 <section aria-labelledby="pz-h" style={css("position: relative; overflow: hidden; background: #0B0B0E; border-bottom: 1px solid #1F1F23")}>
 <div aria-hidden="true" style={css("position: absolute; inset: 0; background: radial-gradient(ellipse 45% 60% at 75% 50%, rgba(237,40,53,0.22), transparent 70%)")}></div>
 <div className="lc-section" style={css("position: relative; max-width: 1360px; margin: 0 auto; padding: 100px 40px 90px; display: flex; flex-wrap: wrap; align-items: center; gap: 48px")}>
@@ -92,6 +89,9 @@ export default class Food extends React.Component {
 </div>
 </div>
 </section>
+<div className="lc-section lc-crumbs" style={css("max-width: 1360px; margin: 0 auto; padding: 18px 40px 0")}><nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
+<A href="/" style={css("color: #A1A1AA")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <span style={css(`color: ${V.accent}`)}>{"PIZZA*"}</span>
+</nav></div>
 <section aria-labelledby="pk-h" style={css("background: #0F0F12; border-bottom: 1px solid #1F1F23")}>
 <div className="lc-section" style={css("max-width: 1360px; margin: 0 auto; padding: 56px 40px; display: flex; flex-wrap: wrap; align-items: center; gap: 32px")}>
 <h2 id="pk-h" style={css("flex: 0 1 260px; margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 40px; line-height: 0.95; color: #FFFFFF; text-transform: uppercase")}>{"Pizza* party packages: pizza* is on the menu for"}</h2>

@@ -551,9 +551,6 @@ export default class Landing extends React.Component {
 </div>
 </nav>
 </header>
-<div className="lc-section lc-crumbs" style={css("max-width: 1360px; margin: 0 auto; padding: 16px 40px 0")}><nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
-<A href="/" style={css("color: #A1A1AA; text-decoration: none")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <A href={V.p.parentHref} style={css("color: #A1A1AA; text-decoration: none")}>{V.p.parentLabel}</A> <span aria-hidden="true">{"/"}</span> <span style={css("color: #ED2835")}>{V.p.crumb}</span>
-</nav></div>
 <section aria-labelledby="l-h" style={css("position: relative; min-height: 640px; display: flex; align-items: flex-end; background: #0E0E11; overflow: hidden")}>
 <Img src={V.p.hero} alt={V.p.heroAlt} style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 60% 50%")} />
 <div aria-hidden="true" style={css("position: absolute; inset: 0; background: linear-gradient(90deg, rgba(9,9,11,0.96) 0%, rgba(9,9,11,0.82) 45%, rgba(9,9,11,0.28) 78%, rgba(9,9,11,0.15) 100%)")}></div>
@@ -575,6 +572,9 @@ export default class Landing extends React.Component {
 </ul>
 </div>
 </section>
+<div className="lc-section lc-crumbs" style={css("max-width: 1360px; margin: 0 auto; padding: 18px 40px 0")}><nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
+<A href="/" style={css("color: #A1A1AA; text-decoration: none")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <A href={V.p.parentHref} style={css("color: #A1A1AA; text-decoration: none")}>{V.p.parentLabel}</A> <span aria-hidden="true">{"/"}</span> <span style={css("color: #ED2835")}>{V.p.crumb}</span>
+</nav></div>
 <section className="lc-section" aria-label="In short" style={css("max-width: 1360px; margin: 0 auto; padding: 72px 40px 0; display: flex; flex-wrap: wrap; gap: 24px")}>
 <div style={css("flex: 2 1 560px; padding: 32px 36px; border-radius: 10px; background: #131316; border: 1px solid #232328; border-left: 4px solid #ED2835")}>
 <div style={css("font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.16em; color: #FFC233; margin-bottom: 12px")}>{"IN SHORT"}</div>

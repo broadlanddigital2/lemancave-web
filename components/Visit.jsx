@@ -44,15 +44,15 @@ export default class Visit extends React.Component {
 </div>
 </nav>
 </header>
-<div className="lc-section lc-crumbs" style={css("max-width: 1360px; margin: 0 auto; padding: 16px 40px 0")}><nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
-<A href="/" style={css("color: #A1A1AA")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <span style={css("color: #ED2835")}>{"VISIT & CONTACT"}</span>
-</nav></div>
 <section className="lc-section" aria-labelledby="v-h" style={css("max-width: 1360px; margin: 0 auto; padding: 100px 40px 60px")}>
 
 <h1 id="v-h" style={css("margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 500; line-height: 1.5; letter-spacing: 0.16em; color: #FFC233; text-transform: uppercase")}>{"Le Man Cave Norwich \u00b7 find us & contact"}</h1>
 <p style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(64px, 10vw, 144px); line-height: 0.88; color: #FFFFFF; text-transform: uppercase")}>{"Find us."}<br /><span style={css("color: #ED2835")}>{"Race us."}</span></p>
 <p style={css("margin: 22px 0 0; max-width: 560px; font-size: 19px; line-height: 1.55; color: #D4D4D8")}>{"Everything you need to plan your visit \u2014 where we are, when we\u2019re open and how to get in touch."}</p>
 </section>
+<div className="lc-section lc-crumbs" style={css("max-width: 1360px; margin: 0 auto; padding: 18px 40px 0")}><nav aria-label="Breadcrumb" style={css("font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #A1A1AA; margin-bottom: 22px")}>
+<A href="/" style={css("color: #A1A1AA")}>{"HOME"}</A> <span aria-hidden="true">{"/"}</span> <span style={css("color: #ED2835")}>{"VISIT & CONTACT"}</span>
+</nav></div>
 <section className="lc-section" aria-label="Arriving at Le Man Cave" style={css("max-width: 1360px; margin: 0 auto; padding: 0 40px 4px; display: flex; flex-wrap: wrap; gap: 24px")}>
 <figure style={css("position: relative; margin: 0; flex: 1.3 1 560px; min-height: 360px; aspect-ratio: 16 / 9; border-radius: 10px; overflow: hidden; background: #131316")}><img width="1600" height="1200" srcSet="/images/w/1f8523dff0e8abab56a7b3457a5e06ba-480.webp 480w, /images/w/1f8523dff0e8abab56a7b3457a5e06ba-800.webp 800w, /images/w/1f8523dff0e8abab56a7b3457a5e06ba-1200.webp 1200w, /images/1f8523dff0e8abab56a7b3457a5e06ba.webp 1600w" sizes="100vw" src="/images/1f8523dff0e8abab56a7b3457a5e06ba.webp" alt="The front of Le Man Cave, Norwich, with its glass entrance doors" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} /><figcaption style={css("position: absolute; left: 0; right: 0; bottom: 0; padding: 40px 18px 14px; background: linear-gradient(to top, rgba(9,9,11,0.92), transparent); font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #F4F4F5")}>{"ARRIVING AT THE CAVE"}</figcaption></figure>
 <div style={css("flex: 1 1 380px; display: flex; flex-direction: column; gap: 16px")}>
