@@ -57,7 +57,7 @@ export default class Corporate extends React.Component {
   render() {
     const V = this.renderVals() || {};
     return (<>
-<div className="lc" style={css("font-family: 'Barlow', system-ui, sans-serif; color: #E4E4E7; background: #09090B; min-height: 100vh; overflow-x: hidden")}>
+<div className="lc" style={css("font-family: 'Barlow', system-ui, sans-serif; color: #E4E4E7; background: #09090B; min-height: 100vh; overflow-x: clip")}>
 <FestiveBar />
 <header style={css("position: sticky; top: 0; z-index: 10; background: rgba(9,9,11,0.92); border-bottom: 1px solid #1F1F23; backdrop-filter: blur(10px)")}>
 <nav className="lc-section" aria-label="Main" style={css("max-width: 1360px; margin: 0 auto; padding: 0 40px; height: 92px; display: flex; align-items: center; justify-content: space-between; gap: 24px")}>
@@ -74,7 +74,7 @@ export default class Corporate extends React.Component {
 </nav>
 </header>
 <section aria-labelledby="co-h" style={css("position: relative; min-height: 700px; display: flex; align-items: flex-end; background: #0E0E11; overflow: hidden")}>
-<img width="1920" height="1280" src="/images/corporate-events-norwich-colleagues-high-five.webp" alt="Colleagues sharing a high-five at one of our corporate events Norwich teams book" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%")} />
+<img width="1920" height="1280" srcSet="/images/w/corporate-events-norwich-colleagues-high-five-480.webp 480w, /images/w/corporate-events-norwich-colleagues-high-five-800.webp 800w, /images/w/corporate-events-norwich-colleagues-high-five-1200.webp 1200w, /images/corporate-events-norwich-colleagues-high-five.webp 1920w" sizes="100vw" src="/images/corporate-events-norwich-colleagues-high-five.webp" alt="Colleagues sharing a high-five at one of our corporate events Norwich teams book" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%")} />
 <div aria-hidden="true" style={css("position: absolute; inset: 0; background: linear-gradient(90deg, rgba(9,9,11,0.95) 0%, rgba(9,9,11,0.8) 45%, rgba(9,9,11,0.35) 80%, rgba(9,9,11,0.25) 100%)")}></div>
 <div aria-hidden="true" style={css("position: absolute; left: 0; right: 0; bottom: 0; height: 300px; background: linear-gradient(to top, #09090B 10%, transparent)")}></div>
 <div className="lc-section" style={css("position: relative; max-width: 1360px; width: 100%; margin: 0 auto; padding: 140px 40px 64px; box-sizing: border-box")}>
@@ -131,7 +131,7 @@ export default class Corporate extends React.Component {
 <h2 id="inc-h" style={css("margin: 0 0 48px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 84px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Staff party ideas in Norwich: mix your own day"}</h2>
 <div style={css("display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px")}>
 <A href="/attractions/racing-simulator-norwich" style={css("position: relative; height: 340px; border-radius: 8px; overflow: hidden; background: #131316; display: block")}>
-<img width="1200" height="800" src="/images/e0f543b4818c089dbaa999e13ff06616.webp" alt="" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} />
+<img width="1200" height="800" srcSet="/images/w/e0f543b4818c089dbaa999e13ff06616-480.webp 480w, /images/w/e0f543b4818c089dbaa999e13ff06616-800.webp 800w, /images/e0f543b4818c089dbaa999e13ff06616.webp 1200w" sizes="100vw" src="/images/e0f543b4818c089dbaa999e13ff06616.webp" alt="" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} />
 <span aria-hidden="true" style={css("position: absolute; inset: 0; background: linear-gradient(to top, rgba(9,9,11,0.95) 0%, rgba(9,9,11,0.1) 65%)")}></span>
 <span style={css("position: absolute; left: 28px; right: 28px; bottom: 26px; display: flex; flex-direction: column; gap: 6px")}>
 <span style={css("font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 34px; color: #FFFFFF; text-transform: uppercase")}>{"Pro simulator"}</span>
@@ -139,7 +139,7 @@ export default class Corporate extends React.Component {
 </span>
 </A>
 <A href="/attractions/scalextric-track-norwich" style={css("position: relative; height: 340px; border-radius: 8px; overflow: hidden; background: #131316; display: block")}>
-<img width="1200" height="800" src="/images/1bf961cc647813720648004a5b5de718.webp" alt="" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} />
+<img width="1200" height="800" srcSet="/images/w/1bf961cc647813720648004a5b5de718-480.webp 480w, /images/w/1bf961cc647813720648004a5b5de718-800.webp 800w, /images/1bf961cc647813720648004a5b5de718.webp 1200w" sizes="100vw" src="/images/1bf961cc647813720648004a5b5de718.webp" alt="" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} />
 <span aria-hidden="true" style={css("position: absolute; inset: 0; background: linear-gradient(to top, rgba(9,9,11,0.95) 0%, rgba(9,9,11,0.1) 65%)")}></span>
 <span style={css("position: absolute; left: 28px; right: 28px; bottom: 26px; display: flex; flex-direction: column; gap: 6px")}>
 <span style={css("font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 34px; color: #FFFFFF; text-transform: uppercase")}>{"Digital Scalextric"}</span>
@@ -147,7 +147,7 @@ export default class Corporate extends React.Component {
 </span>
 </A>
 <A href="/attractions/arcade-games-norwich" style={css("position: relative; height: 340px; border-radius: 8px; overflow: hidden; background: #131316; display: block")}>
-<img width="1535" height="1024" src="/images/inside-le-man-cave-norwich-after-dark.webp" alt="" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} />
+<img width="1535" height="1024" srcSet="/images/w/inside-le-man-cave-norwich-after-dark-480.webp 480w, /images/w/inside-le-man-cave-norwich-after-dark-800.webp 800w, /images/w/inside-le-man-cave-norwich-after-dark-1200.webp 1200w, /images/inside-le-man-cave-norwich-after-dark.webp 1535w" sizes="100vw" src="/images/inside-le-man-cave-norwich-after-dark.webp" alt="" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} />
 <span aria-hidden="true" style={css("position: absolute; inset: 0; background: linear-gradient(to top, rgba(9,9,11,0.95) 0%, rgba(9,9,11,0.1) 65%)")}></span>
 <span style={css("position: absolute; left: 28px; right: 28px; bottom: 26px; display: flex; flex-direction: column; gap: 6px")}>
 <span style={css("font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 34px; color: #FFFFFF; text-transform: uppercase")}>{"Games & arcade"}</span>
@@ -155,7 +155,7 @@ export default class Corporate extends React.Component {
 </span>
 </A>
 <A href="/pizza-party-norwich" style={css("position: relative; height: 340px; border-radius: 8px; overflow: hidden; background: #131316; display: block")}>
-<img width="1200" height="800" src="/images/779730ccbe33ccd0a1379d14c422ae4e.webp" alt="" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} />
+<img width="1200" height="800" srcSet="/images/w/779730ccbe33ccd0a1379d14c422ae4e-480.webp 480w, /images/w/779730ccbe33ccd0a1379d14c422ae4e-800.webp 800w, /images/779730ccbe33ccd0a1379d14c422ae4e.webp 1200w" sizes="100vw" src="/images/779730ccbe33ccd0a1379d14c422ae4e.webp" alt="" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} />
 <span aria-hidden="true" style={css("position: absolute; inset: 0; background: linear-gradient(to top, rgba(9,9,11,0.95) 0%, rgba(9,9,11,0.1) 65%)")}></span>
 <span style={css("position: absolute; left: 28px; right: 28px; bottom: 26px; display: flex; flex-direction: column; gap: 6px")}>
 <span style={css("font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 34px; color: #FFFFFF; text-transform: uppercase")}>{"Pizza* & Bring Your Own"}</span>

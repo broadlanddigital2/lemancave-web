@@ -118,7 +118,7 @@ export default class Main extends React.Component {
   render() {
     const V = this.renderVals() || {};
     return (<>
-<div className="lc" style={css("font-family: 'Barlow', system-ui, sans-serif; color: #E4E4E7; background: #09090B; min-height: 100vh; overflow-x: hidden")}>
+<div className="lc" style={css("font-family: 'Barlow', system-ui, sans-serif; color: #E4E4E7; background: #09090B; min-height: 100vh; overflow-x: clip")}>
 <FestiveBar />
 <header style={css("position: sticky; top: 0; z-index: 10; background: rgba(9,9,11,0.92); border-bottom: 1px solid #1F1F23; backdrop-filter: blur(10px)")}>
 <nav className="lc-section" aria-label="Main" style={css("max-width: 1360px; margin: 0 auto; padding: 0 40px; height: 92px; display: flex; align-items: center; justify-content: space-between; gap: 24px")}>
@@ -192,7 +192,7 @@ export default class Main extends React.Component {
 </div>
 <div style={css("display: grid; grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); gap: 20px")}>
 <A href="/attractions/racing-simulator-norwich" style={css("position: relative; min-height: 560px; border-radius: 10px; overflow: hidden; background: #131316; display: flex; flex-direction: column; justify-content: flex-end; text-decoration: none")}>
-<img width="1400" height="1112" src="/images/indoor-activities-norwich-static-racing-simulator.webp" alt="Driver on the static racing simulator at Le Man Cave, indoor activities Norwich" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} />
+<img width="1400" height="1112" srcSet="/images/w/indoor-activities-norwich-static-racing-simulator-480.webp 480w, /images/w/indoor-activities-norwich-static-racing-simulator-800.webp 800w, /images/w/indoor-activities-norwich-static-racing-simulator-1200.webp 1200w, /images/indoor-activities-norwich-static-racing-simulator.webp 1400w" sizes="100vw" src="/images/indoor-activities-norwich-static-racing-simulator.webp" alt="Driver on the static racing simulator at Le Man Cave, indoor activities Norwich" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} />
 <span aria-hidden="true" style={css("position: absolute; inset: 0; background: linear-gradient(to top, rgba(9,9,11,0.97) 0%, rgba(9,9,11,0.6) 45%, rgba(9,9,11,0.1) 75%)")}></span>
 <span style={css("position: relative; padding: 40px; display: flex; flex-direction: column; gap: 14px")}>
 <span style={css(`align-self: flex-start; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: #09090B; background: ${V.accent}; padding: 6px 10px; border-radius: 3px`)}>{"PETROLHEADS"}</span>
@@ -202,7 +202,7 @@ export default class Main extends React.Component {
 </span>
 </A>
 <A href="/attractions/arcade-games-norwich" style={css("position: relative; min-height: 560px; border-radius: 10px; overflow: hidden; background: #131316; display: flex; flex-direction: column; justify-content: flex-end; text-decoration: none")}>
-<img width="1400" height="1110" src="/images/indoor-activities-norwich-mario-kart-games-lounge.webp" alt="A family racing Mario Kart from the classic Mini sofa, table football and darts behind" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} />
+<img width="1400" height="1110" srcSet="/images/w/indoor-activities-norwich-mario-kart-games-lounge-480.webp 480w, /images/w/indoor-activities-norwich-mario-kart-games-lounge-800.webp 800w, /images/w/indoor-activities-norwich-mario-kart-games-lounge-1200.webp 1200w, /images/indoor-activities-norwich-mario-kart-games-lounge.webp 1400w" sizes="100vw" src="/images/indoor-activities-norwich-mario-kart-games-lounge.webp" alt="A family racing Mario Kart from the classic Mini sofa, table football and darts behind" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} />
 <span aria-hidden="true" style={css("position: absolute; inset: 0; background: linear-gradient(to top, rgba(9,9,11,0.97) 0%, rgba(9,9,11,0.6) 45%, rgba(9,9,11,0.1) 75%)")}></span>
 <span style={css("position: relative; padding: 40px; display: flex; flex-direction: column; gap: 14px")}>
 <span style={css(`align-self: flex-start; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: #09090B; background: ${V.amber}; padding: 6px 10px; border-radius: 3px`)}>{"EVERYONE ELSE"}</span>
@@ -235,9 +235,9 @@ export default class Main extends React.Component {
 </div>
 <p style={css("margin: 0; max-width: 420px; font-size: 18px; line-height: 1.6; color: #A1A1AA")}>{"A full-motion rig, live timing and a proper grid. Book by the half-hour, or take over the whole cave."}</p>
 </div>
-<div style={css("display: flex; flex-wrap: wrap; gap: 20px")}>
+<div className="lc-hscroll" style={css("display: flex; flex-wrap: wrap; gap: 20px")}>
 <article style={css("flex: 2 1 560px; min-height: 540px; position: relative; border-radius: 8px; overflow: hidden; background: #131316; border: 1px solid #232328; display: flex; flex-direction: column; justify-content: flex-end")}>
-<img width="1400" height="987" src="/images/racing-simulators-norwich-motion-sim-driver.webp" alt="Driver at the wheel of the motion racing simulator, one of the indoor activities Norwich groups book" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%")} />
+<img width="1400" height="987" srcSet="/images/w/racing-simulators-norwich-motion-sim-driver-480.webp 480w, /images/w/racing-simulators-norwich-motion-sim-driver-800.webp 800w, /images/w/racing-simulators-norwich-motion-sim-driver-1200.webp 1200w, /images/racing-simulators-norwich-motion-sim-driver.webp 1400w" sizes="100vw" src="/images/racing-simulators-norwich-motion-sim-driver.webp" alt="Driver at the wheel of the motion racing simulator, one of the indoor activities Norwich groups book" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%")} />
 <div aria-hidden="true" style={css("position: absolute; inset: 0; background: linear-gradient(to top, rgba(9,9,11,0.96) 0%, rgba(9,9,11,0.75) 40%, rgba(9,9,11,0.1) 75%)")}></div>
 <div style={css("position: relative; padding: 36px")}>
 <div style={css(`display: inline-block; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #09090B; background: ${V.amber}; padding: 6px 10px; border-radius: 3px`)}>{"FLAGSHIP"}</div>
@@ -254,7 +254,7 @@ export default class Main extends React.Component {
 </div>
 </article>
 <article style={css("flex: 1 1 340px; min-height: 540px; position: relative; border-radius: 8px; overflow: hidden; background: #131316; border: 1px solid #232328; display: flex; flex-direction: column; justify-content: flex-end")}>
-<img width="1200" height="1508" src="/images/digital-scalextric-norwich-slot-cars-shell-bend.webp" alt="Mini, SEAT, Jaguar and Audi slot cars lined up on the grass beside the digital Scalextric track" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} />
+<img width="1200" height="1508" srcSet="/images/w/digital-scalextric-norwich-slot-cars-shell-bend-480.webp 480w, /images/w/digital-scalextric-norwich-slot-cars-shell-bend-800.webp 800w, /images/digital-scalextric-norwich-slot-cars-shell-bend.webp 1200w" sizes="100vw" src="/images/digital-scalextric-norwich-slot-cars-shell-bend.webp" alt="Mini, SEAT, Jaguar and Audi slot cars lined up on the grass beside the digital Scalextric track" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} />
 <div aria-hidden="true" style={css("position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(9,9,11,0.85) 0%, rgba(9,9,11,0.1) 35%, rgba(9,9,11,0.1) 50%, rgba(9,9,11,0.95) 85%)")}></div>
 <div style={css(`position: absolute; top: 90px; left: 36px; right: 36px; font-family: 'JetBrains Mono', monospace; color: ${V.amber}`)}>
 <div style={css("font-size: 12px; letter-spacing: 0.14em; color: #71717A")}>{"FASTEST LAP \u00b7 TODAY"}</div>
@@ -267,7 +267,7 @@ export default class Main extends React.Component {
 </div>
 </article>
 <article style={css("flex: 1 1 100%; min-height: 280px; border-radius: 8px; overflow: hidden; background: #131316; border: 1px solid #232328; display: flex; flex-wrap: wrap")}>
-<div style={css("flex: 1 1 420px; min-height: 280px; position: relative; background: #18181C")}><img width="1352" height="1004" src="/images/motorbike-simulator-norwich-rider-superbikes.webp" alt="Rider leaning into a bend on the Super Bikes motorbike simulator" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} /></div>
+<div style={css("flex: 1 1 420px; min-height: 280px; position: relative; background: #18181C")}><img width="1352" height="1004" srcSet="/images/w/motorbike-simulator-norwich-rider-superbikes-480.webp 480w, /images/w/motorbike-simulator-norwich-rider-superbikes-800.webp 800w, /images/w/motorbike-simulator-norwich-rider-superbikes-1200.webp 1200w, /images/motorbike-simulator-norwich-rider-superbikes.webp 1352w" sizes="100vw" src="/images/motorbike-simulator-norwich-rider-superbikes.webp" alt="Rider leaning into a bend on the Super Bikes motorbike simulator" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} /></div>
 <div style={css("flex: 1 1 420px; padding: 40px; display: flex; flex-direction: column; justify-content: center; gap: 12px")}>
 <div style={css(`font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: ${V.amber}`)}>{"RETRO \u00b7 TWO WHEELS"}</div>
 <h3 style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 44px; line-height: 0.95; color: #FFFFFF; text-transform: uppercase")}>{"Classic Motorcycle Sim"}</h3>
@@ -338,7 +338,7 @@ export default class Main extends React.Component {
 <section id="venue" className="lc-section" aria-labelledby="venue-h" style={css("max-width: 1360px; margin: 0 auto; padding: 120px 40px")}>
 <div style={css("display: flex; flex-wrap: wrap; gap: 64px; align-items: stretch")}>
 <div style={css("flex: 1 1 520px; min-height: 520px; position: relative; border-radius: 8px; overflow: hidden; background: #131316; border: 1px solid #232328")}>
-<img width="1535" height="1024" src="/images/inside-le-man-cave-norwich-after-dark.webp" alt="Inside Le Man Cave after dark: pool / billiards, the digital Scalextric, the classic Mini sofa lounge and table football under neon" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} />
+<img width="1535" height="1024" srcSet="/images/w/inside-le-man-cave-norwich-after-dark-480.webp 480w, /images/w/inside-le-man-cave-norwich-after-dark-800.webp 800w, /images/w/inside-le-man-cave-norwich-after-dark-1200.webp 1200w, /images/inside-le-man-cave-norwich-after-dark.webp 1535w" sizes="100vw" src="/images/inside-le-man-cave-norwich-after-dark.webp" alt="Inside Le Man Cave after dark: pool / billiards, the digital Scalextric, the classic Mini sofa lounge and table football under neon" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} />
 <div style={css("position: absolute; left: 24px; bottom: 24px; background: rgba(9,9,11,0.85); border: 1px solid #27272A; border-radius: 6px; padding: 18px 22px; backdrop-filter: blur(6px)")}>
 <div style={css("font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: #71717A")}>{"ON THE WALLS"}</div>
 <div style={css("font-size: 16px; color: #E4E4E7; margin-top: 6px")}>{"Race suits \u00b7 helmets \u00b7 signed prints \u00b7 neon"}</div>
@@ -401,7 +401,7 @@ export default class Main extends React.Component {
 </div>
 <A href="/contact-leman-cave-norwich" style={css("border: 1px solid #52525B; color: #FFFFFF; font-weight: 600; font-size: 15px; letter-spacing: 0.06em; text-transform: uppercase; padding: 16px 26px; border-radius: 4px")}>{"Ask about packages"}</A>
 </div>
-<div style={css("display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1px; background: #27272A; border: 1px solid #27272A; border-radius: 8px; overflow: hidden")}>
+<div className="lc-hscroll" style={css("display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1px; background: #27272A; border: 1px solid #27272A; border-radius: 8px; overflow: hidden")}>
 {(V.offers || []).map((o, $index) => (<React.Fragment key={$index}>
 <div style={css("background: #0F0F12; padding: 36px 32px; display: flex; flex-direction: column; gap: 14px; min-height: 220px")}>
 <div style={css("display: flex; justify-content: space-between; align-items: center")}>
@@ -426,7 +426,7 @@ export default class Main extends React.Component {
 </div>
 <div className="lc-gallery" style={css("display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); grid-auto-rows: 220px; gap: 12px")}>
 <figure style={css("margin: 0; grid-column: span 2; grid-row: span 2; border-radius: 8px; overflow: hidden; position: relative; background: #131316")}>
-<img width="1000" height="706" src="/images/air-hockey-norwich-blue-light-table.webp" alt="The commercial air hockey table glowing blue, mallet ready" style={css("width: 100%; height: 100%; object-fit: cover; display: block")} />
+<img width="1000" height="706" srcSet="/images/w/air-hockey-norwich-blue-light-table-480.webp 480w, /images/w/air-hockey-norwich-blue-light-table-800.webp 800w, /images/air-hockey-norwich-blue-light-table.webp 1000w" sizes="100vw" src="/images/air-hockey-norwich-blue-light-table.webp" alt="The commercial air hockey table glowing blue, mallet ready" style={css("width: 100%; height: 100%; object-fit: cover; display: block")} />
 </figure>
 {(V.gallery || []).map((g, $index) => (<React.Fragment key={$index}>
 <figure style={css(g.style)}>

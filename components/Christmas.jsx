@@ -77,7 +77,7 @@ export default class Christmas extends React.Component {
   render() {
     const V = this.renderVals() || {};
     return (<>
-<div style={css("font-family: 'Barlow', system-ui, sans-serif; color: #E4E4E7; background: #09090B; min-height: 100vh; overflow-x: hidden")}>
+<div style={css("font-family: 'Barlow', system-ui, sans-serif; color: #E4E4E7; background: #09090B; min-height: 100vh; overflow-x: clip")}>
 <FestiveBar />
 <header style={css("position: sticky; top: 0; z-index: 10; background: rgba(9,9,11,0.92); border-bottom: 1px solid #1F1F23; backdrop-filter: blur(10px)")}>
 <nav className="lc-section" aria-label="Main" style={css("max-width: 1360px; margin: 0 auto; padding: 0 40px; height: 92px; display: flex; align-items: center; justify-content: space-between; gap: 24px")}>
@@ -94,7 +94,7 @@ export default class Christmas extends React.Component {
 </nav>
 </header>
 <section aria-labelledby="xm-h" style={css("position: relative; min-height: 760px; display: flex; align-items: flex-end; background: #0E0E11; overflow: hidden")}>
-<img width="1672" height="941" src="/images/christmas-party-norwich-race-car-christmas-tree.webp" alt="A red GT race car beside a lit Christmas tree and presents at a snowy pit lane: Christmas party Norwich groups book" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 70% 50%")} />
+<img width="1672" height="941" srcSet="/images/w/christmas-party-norwich-race-car-christmas-tree-480.webp 480w, /images/w/christmas-party-norwich-race-car-christmas-tree-800.webp 800w, /images/w/christmas-party-norwich-race-car-christmas-tree-1200.webp 1200w, /images/christmas-party-norwich-race-car-christmas-tree.webp 1672w" sizes="100vw" src="/images/christmas-party-norwich-race-car-christmas-tree.webp" alt="A red GT race car beside a lit Christmas tree and presents at a snowy pit lane: Christmas party Norwich groups book" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 70% 50%")} />
 <div aria-hidden="true" style={css("position: absolute; inset: 0; background: linear-gradient(90deg, rgba(9,9,11,0.96) 0%, rgba(9,9,11,0.82) 45%, rgba(9,9,11,0.3) 78%, rgba(9,9,11,0.2) 100%)")}></div>
 <div aria-hidden="true" style={css("position: absolute; inset: 0; background-image: radial-gradient(rgba(255,255,255,0.5) 1px, transparent 1.5px), radial-gradient(rgba(255,255,255,0.3) 1px, transparent 1.5px); background-size: 90px 90px, 140px 140px; background-position: 0 0, 45px 70px; opacity: 0.5")}></div>
 <div aria-hidden="true" style={css("position: absolute; left: 0; right: 0; bottom: 0; height: 300px; background: linear-gradient(to top, #09090B 10%, transparent)")}></div>
@@ -243,7 +243,7 @@ export default class Christmas extends React.Component {
 <p style={css(`margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: ${V.green}`)}>{"03 / THE BIG NIGHT"}</p>
 <h2 id="run-h" style={css("margin: 0 0 24px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 84px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"A Christmas party venue in Norwich, built for race night"}</h2>
 <p style={css("margin: 0 0 18px; font-size: 18px; line-height: 1.6; color: #A1A1AA")}>{"An example of how three festive hours could run. We\u2019ll tailor the night to your group."}</p>
-<div style={css("height: 320px; border-radius: 8px; position: relative; overflow: hidden; background: #131316")}><img width="1920" height="1282" src="/images/scalextric-party-norwich-group-racing.webp" alt="Friends racing Scalextric at a Le Man Cave party" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 100%")} /></div>
+<div style={css("height: 320px; border-radius: 8px; position: relative; overflow: hidden; background: #131316")}><img width="1920" height="1282" srcSet="/images/w/scalextric-party-norwich-group-racing-480.webp 480w, /images/w/scalextric-party-norwich-group-racing-800.webp 800w, /images/w/scalextric-party-norwich-group-racing-1200.webp 1200w, /images/scalextric-party-norwich-group-racing.webp 1920w" sizes="100vw" src="/images/scalextric-party-norwich-group-racing.webp" alt="Friends racing Scalextric at a Le Man Cave party" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 100%")} /></div>
 </div>
 <ol style={css("flex: 1.5 1 560px; list-style: none; margin: 0; padding: 0; border-left: 2px solid #27272A")}>
 {(V.agenda || []).map((a, $index) => (<React.Fragment key={$index}>

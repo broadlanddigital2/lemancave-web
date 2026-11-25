@@ -71,7 +71,7 @@ export default class Drinks extends React.Component {
   render() {
     const V = this.renderVals() || {};
     return (<>
-<div style={css("font-family: 'Barlow', system-ui, sans-serif; color: #E4E4E7; background: #09090B; min-height: 100vh; overflow-x: hidden")}>
+<div style={css("font-family: 'Barlow', system-ui, sans-serif; color: #E4E4E7; background: #09090B; min-height: 100vh; overflow-x: clip")}>
 <FestiveBar />
 <header style={css("position: sticky; top: 0; z-index: 10; background: rgba(9,9,11,0.92); border-bottom: 1px solid #1F1F23; backdrop-filter: blur(10px)")}>
 <nav className="lc-section" aria-label="Main" style={css("max-width: 1360px; margin: 0 auto; padding: 0 40px; height: 92px; display: flex; align-items: center; justify-content: space-between; gap: 24px")}>
@@ -158,7 +158,7 @@ export default class Drinks extends React.Component {
 </div>
 </div>
 </div>
-<div style={css("flex: 1.2 1 480px; min-height: 480px; border-radius: 10px; overflow: hidden; position: relative; background: #131316")}><img width="1448" height="1086" src="/images/0c8a70eb98bd990c9de8c330cbcda0a9.webp" alt="Bottles and cans chilling in an ice bucket, glasses lined up on the bar at a Bring Your Own drinks venue Norwich party" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} /></div>
+<div style={css("flex: 1.2 1 480px; min-height: 480px; border-radius: 10px; overflow: hidden; position: relative; background: #131316")}><img width="1448" height="1086" srcSet="/images/w/0c8a70eb98bd990c9de8c330cbcda0a9-480.webp 480w, /images/w/0c8a70eb98bd990c9de8c330cbcda0a9-800.webp 800w, /images/w/0c8a70eb98bd990c9de8c330cbcda0a9-1200.webp 1200w, /images/0c8a70eb98bd990c9de8c330cbcda0a9.webp 1448w" sizes="100vw" src="/images/0c8a70eb98bd990c9de8c330cbcda0a9.webp" alt="Bottles and cans chilling in an ice bucket, glasses lined up on the bar at a Bring Your Own drinks venue Norwich party" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} /></div>
 </div>
 </div>
 </section>

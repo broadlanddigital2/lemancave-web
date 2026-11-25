@@ -52,7 +52,7 @@ export default class Photography extends React.Component {
   render() {
     const V = this.renderVals() || {};
     return (<>
-<div className="lc" style={css("font-family: 'Barlow', system-ui, sans-serif; color: #E4E4E7; background: #09090B; min-height: 100vh; overflow-x: hidden")}>
+<div className="lc" style={css("font-family: 'Barlow', system-ui, sans-serif; color: #E4E4E7; background: #09090B; min-height: 100vh; overflow-x: clip")}>
 <FestiveBar />
 <header style={css("position: sticky; top: 0; z-index: 10; background: rgba(9,9,11,0.92); border-bottom: 1px solid #1F1F23; backdrop-filter: blur(10px)")}>
 <nav className="lc-section" aria-label="Main" style={css("max-width: 1360px; margin: 0 auto; padding: 0 40px; height: 92px; display: flex; align-items: center; justify-content: space-between; gap: 24px")}>
@@ -69,7 +69,7 @@ export default class Photography extends React.Component {
 </nav>
 </header>
 <section aria-labelledby="ph-h" style={css("position: relative; min-height: 700px; display: flex; align-items: flex-end; background: #0E0E11; overflow: hidden")}>
-<img width="1983" height="793" src="/images/7d26389d238902bad7bd1dc05c04258e.webp" alt="A camera and studio lights set up on a race car: the event photographer Norwich groups can add at Le Man Cave" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 70% 50%")} />
+<img width="1983" height="793" srcSet="/images/w/7d26389d238902bad7bd1dc05c04258e-480.webp 480w, /images/w/7d26389d238902bad7bd1dc05c04258e-800.webp 800w, /images/w/7d26389d238902bad7bd1dc05c04258e-1200.webp 1200w, /images/7d26389d238902bad7bd1dc05c04258e.webp 1983w" sizes="100vw" src="/images/7d26389d238902bad7bd1dc05c04258e.webp" alt="A camera and studio lights set up on a race car: the event photographer Norwich groups can add at Le Man Cave" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 70% 50%")} />
 <div aria-hidden="true" style={css("position: absolute; inset: 0; background: linear-gradient(90deg, rgba(9,9,11,0.95) 0%, rgba(9,9,11,0.8) 45%, rgba(9,9,11,0.35) 80%, rgba(9,9,11,0.25) 100%)")}></div>
 <div aria-hidden="true" style={css("position: absolute; left: 0; right: 0; bottom: 0; height: 300px; background: linear-gradient(to top, #09090B 10%, transparent)")}></div>
 <div className="lc-section" style={css("position: relative; max-width: 1360px; width: 100%; margin: 0 auto; padding: 140px 40px 64px; box-sizing: border-box")}>

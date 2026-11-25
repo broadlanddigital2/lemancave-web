@@ -28,7 +28,7 @@ export default class Book extends React.Component {
   render() {
     const V = this.renderVals() || {};
     return (<>
-<div className="lc" style={css("font-family: 'Barlow', system-ui, sans-serif; color: #E4E4E7; background: #09090B; min-height: 100vh; overflow-x: hidden")}>
+<div className="lc" style={css("font-family: 'Barlow', system-ui, sans-serif; color: #E4E4E7; background: #09090B; min-height: 100vh; overflow-x: clip")}>
 <FestiveBar />
 <header style={css("position: sticky; top: 0; z-index: 10; background: rgba(9,9,11,0.92); border-bottom: 1px solid #1F1F23; backdrop-filter: blur(10px)")}>
 <nav className="lc-section" aria-label="Main" style={css("max-width: 1360px; margin: 0 auto; padding: 0 40px; height: 92px; display: flex; align-items: center; justify-content: space-between; gap: 24px")}>
@@ -72,7 +72,7 @@ export default class Book extends React.Component {
 <A href="/party-venue-norwich" style={css("color: #ED2835; font-weight: 700; font-size: 14px; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none")}>{"Party venue hire \u2192"}</A>
 </div>
 <div style={css("flex: 1 1 320px; min-height: 280px; border-radius: 10px; overflow: hidden; position: relative; background: #131316")}>
-<img width="1920" height="726" src="/images/racing-simulator-norwich-motion-sim-cockpit.webp" alt="Book racing simulator Norwich sessions online: a driver on the pro simulator" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} />
+<img width="1920" height="726" srcSet="/images/w/racing-simulator-norwich-motion-sim-cockpit-480.webp 480w, /images/w/racing-simulator-norwich-motion-sim-cockpit-800.webp 800w, /images/w/racing-simulator-norwich-motion-sim-cockpit-1200.webp 1200w, /images/racing-simulator-norwich-motion-sim-cockpit.webp 1920w" sizes="100vw" src="/images/racing-simulator-norwich-motion-sim-cockpit.webp" alt="Book racing simulator Norwich sessions online: a driver on the pro simulator" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} />
 </div>
 </section>
 <section className="lc-section" aria-label="Good to know" style={css("max-width: 1360px; margin: 0 auto; padding: 0 40px 110px; display: flex; flex-wrap: wrap; gap: 24px; align-items: stretch")}>

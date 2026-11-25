@@ -42,7 +42,7 @@ export default class Scalextric extends React.Component {
   render() {
     const V = this.renderVals() || {};
     return (<>
-<div style={css("font-family: 'Barlow', system-ui, sans-serif; color: #E4E4E7; background: #09090B; min-height: 100vh; overflow-x: hidden")}>
+<div style={css("font-family: 'Barlow', system-ui, sans-serif; color: #E4E4E7; background: #09090B; min-height: 100vh; overflow-x: clip")}>
 <FestiveBar />
 <header style={css("position: sticky; top: 0; z-index: 10; background: rgba(9,9,11,0.92); border-bottom: 1px solid #1F1F23; backdrop-filter: blur(10px)")}>
 <nav className="lc-section" aria-label="Main" style={css("max-width: 1360px; margin: 0 auto; padding: 0 40px; height: 92px; display: flex; align-items: center; justify-content: space-between; gap: 24px")}>
@@ -59,7 +59,7 @@ export default class Scalextric extends React.Component {
 </nav>
 </header>
 <section aria-labelledby="sx-h" style={css("position: relative; min-height: 720px; display: flex; align-items: flex-end; background: #0E0E11; overflow: hidden")}>
-<img width="1920" height="1282" src="/images/digital-scalextric-norwich-track-bridge.webp" alt="The 160ft digital Scalextric track Norwich groups race on, with its stone bridge, river and pit buildings" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 60% 50%")} />
+<img width="1920" height="1282" srcSet="/images/w/digital-scalextric-norwich-track-bridge-480.webp 480w, /images/w/digital-scalextric-norwich-track-bridge-800.webp 800w, /images/w/digital-scalextric-norwich-track-bridge-1200.webp 1200w, /images/digital-scalextric-norwich-track-bridge.webp 1920w" sizes="100vw" src="/images/digital-scalextric-norwich-track-bridge.webp" alt="The 160ft digital Scalextric track Norwich groups race on, with its stone bridge, river and pit buildings" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 60% 50%")} />
 <div aria-hidden="true" style={css("position: absolute; inset: 0; background: linear-gradient(90deg, rgba(9,9,11,0.94) 0%, rgba(9,9,11,0.75) 40%, rgba(9,9,11,0.2) 72%, rgba(9,9,11,0.1) 100%)")}></div>
 <div aria-hidden="true" style={css("position: absolute; left: 0; right: 0; bottom: 0; height: 300px; background: linear-gradient(to top, #09090B 10%, transparent)")}></div>
 <div className="lc-section" style={css("position: relative; max-width: 1360px; width: 100%; margin: 0 auto; padding: 140px 40px 64px; box-sizing: border-box")}>
@@ -129,7 +129,7 @@ export default class Scalextric extends React.Component {
 <h2 id="feat-h" style={css("margin: 0 0 56px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 84px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"Proper race"}<br />{"kit, small scale"}</h2>
 <div style={css("display: flex; flex-wrap: wrap; gap: 20px")}>
 <div style={css("flex: 1.3 1 480px; min-height: 520px; position: relative; border-radius: 8px; overflow: hidden; background: #131316; border: 1px solid #232328")}>
-<img width="1920" height="1282" src="/images/digital-scalextric-norwich-copper-track-bend.webp" alt="Copper-taped bend and stone bridge on the digital Scalextric layout" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} />
+<img width="1920" height="1282" srcSet="/images/w/digital-scalextric-norwich-copper-track-bend-480.webp 480w, /images/w/digital-scalextric-norwich-copper-track-bend-800.webp 800w, /images/w/digital-scalextric-norwich-copper-track-bend-1200.webp 1200w, /images/digital-scalextric-norwich-copper-track-bend.webp 1920w" sizes="100vw" src="/images/digital-scalextric-norwich-copper-track-bend.webp" alt="Copper-taped bend and stone bridge on the digital Scalextric layout" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} />
 </div>
 <div style={css("flex: 1 1 420px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; background: #27272A; border: 1px solid #27272A; border-radius: 8px; overflow: hidden")}>
 <div style={css("background: #0F0F12; padding: 32px 28px; display: flex; flex-direction: column; gap: 12px")}>
@@ -184,9 +184,9 @@ export default class Scalextric extends React.Component {
 </section>
 <section className="lc-section" aria-label="Scalextric photos" style={css("max-width: 1360px; margin: 0 auto; padding: 0 40px 120px")}>
 <div style={css("display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px")}>
-<div style={css("height: 300px; border-radius: 8px; overflow: hidden; background: #131316")}><img width="1920" height="1282" src="/images/scalextric-party-norwich-group-racing.webp" alt="Families racing on the digital Scalextric at a Le Man Cave party" style={css("width: 100%; height: 100%; object-fit: cover; display: block")} /></div>
-<div style={css("height: 300px; border-radius: 8px; overflow: hidden; background: #131316")}><img width="1367" height="2048" src="/images/scalextric-slot-cars-norwich-mini-cooper.webp" alt="Mini, SEAT and Jaguar slot cars lined up on the grass verge beside the track" style={css("width: 100%; height: 100%; object-fit: cover; display: block")} /></div>
-<div style={css("height: 300px; border-radius: 8px; overflow: hidden; background: #131316")}><img width="900" height="900" src="/images/002cef838ff9172727fdab6d097cc372.webp" alt="Live timing leaderboard screen" style={css("width: 100%; height: 100%; object-fit: cover; display: block")} /></div>
+<div style={css("height: 300px; border-radius: 8px; overflow: hidden; background: #131316")}><img width="1920" height="1282" srcSet="/images/w/scalextric-party-norwich-group-racing-480.webp 480w, /images/w/scalextric-party-norwich-group-racing-800.webp 800w, /images/w/scalextric-party-norwich-group-racing-1200.webp 1200w, /images/scalextric-party-norwich-group-racing.webp 1920w" sizes="100vw" src="/images/scalextric-party-norwich-group-racing.webp" alt="Families racing on the digital Scalextric at a Le Man Cave party" style={css("width: 100%; height: 100%; object-fit: cover; display: block")} /></div>
+<div style={css("height: 300px; border-radius: 8px; overflow: hidden; background: #131316")}><img width="1367" height="2048" srcSet="/images/w/scalextric-slot-cars-norwich-mini-cooper-480.webp 480w, /images/w/scalextric-slot-cars-norwich-mini-cooper-800.webp 800w, /images/w/scalextric-slot-cars-norwich-mini-cooper-1200.webp 1200w, /images/scalextric-slot-cars-norwich-mini-cooper.webp 1367w" sizes="100vw" src="/images/scalextric-slot-cars-norwich-mini-cooper.webp" alt="Mini, SEAT and Jaguar slot cars lined up on the grass verge beside the track" style={css("width: 100%; height: 100%; object-fit: cover; display: block")} /></div>
+<div style={css("height: 300px; border-radius: 8px; overflow: hidden; background: #131316")}><img width="900" height="900" srcSet="/images/w/002cef838ff9172727fdab6d097cc372-480.webp 480w, /images/w/002cef838ff9172727fdab6d097cc372-800.webp 800w, /images/002cef838ff9172727fdab6d097cc372.webp 900w" sizes="100vw" src="/images/002cef838ff9172727fdab6d097cc372.webp" alt="Live timing leaderboard screen" style={css("width: 100%; height: 100%; object-fit: cover; display: block")} /></div>
 </div>
 </section>
 <section aria-labelledby="faq-h" style={css("background: #0F0F12; border-top: 1px solid #1F1F23; border-bottom: 1px solid #1F1F23")}>

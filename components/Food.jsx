@@ -55,7 +55,7 @@ export default class Food extends React.Component {
   render() {
     const V = this.renderVals() || {};
     return (<>
-<div style={css("font-family: 'Barlow', system-ui, sans-serif; color: #E4E4E7; background: #09090B; min-height: 100vh; overflow-x: hidden")}>
+<div style={css("font-family: 'Barlow', system-ui, sans-serif; color: #E4E4E7; background: #09090B; min-height: 100vh; overflow-x: clip")}>
 <FestiveBar />
 <header style={css("position: sticky; top: 0; z-index: 10; background: rgba(9,9,11,0.92); border-bottom: 1px solid #1F1F23; backdrop-filter: blur(10px)")}>
 <nav className="lc-section" aria-label="Main" style={css("max-width: 1360px; margin: 0 auto; padding: 0 40px; height: 92px; display: flex; align-items: center; justify-content: space-between; gap: 24px")}>
@@ -202,7 +202,7 @@ export default class Food extends React.Component {
 </section>
 <section className="lc-section" aria-labelledby="pair-h" style={css("max-width: 1360px; margin: 0 auto; padding: 0 40px 120px")}>
 <div style={css("display: flex; flex-wrap: wrap; border-radius: 10px; overflow: hidden; border: 1px solid #232328; background: #131316")}>
-<div style={css("flex: 1 1 440px; min-height: 340px; position: relative; background: #18181C")}><img width="1448" height="1086" src="/images/75b0be67d4e541bd9a3256d10090ecb7.webp" alt="Bottles chilling on ice beside fresh pizzas on the bar" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} /></div>
+<div style={css("flex: 1 1 440px; min-height: 340px; position: relative; background: #18181C")}><img width="1448" height="1086" srcSet="/images/w/75b0be67d4e541bd9a3256d10090ecb7-480.webp 480w, /images/w/75b0be67d4e541bd9a3256d10090ecb7-800.webp 800w, /images/w/75b0be67d4e541bd9a3256d10090ecb7-1200.webp 1200w, /images/75b0be67d4e541bd9a3256d10090ecb7.webp 1448w" sizes="100vw" src="/images/75b0be67d4e541bd9a3256d10090ecb7.webp" alt="Bottles chilling on ice beside fresh pizzas on the bar" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} /></div>
 <div style={css("flex: 1 1 440px; padding: 48px; display: flex; flex-direction: column; justify-content: center; gap: 14px")}>
 <div style={css(`font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: ${V.amber}`)}>{"PERFECT PAIRING"}</div>
 <h2 id="pair-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 52px; line-height: 0.95; color: #FFFFFF; text-transform: uppercase")}>{"Pizza* meets"}<br />{"Bring Your Own"}</h2>
