@@ -210,7 +210,7 @@ a.lc-hero-cta.lc-hero-cta[href] { box-shadow: none !important; }
   /* Card grids → swipe rows */
   :is(div[style*="grid-template-columns"]:has(> :nth-child(3)):is(:has(> a), :has(> article), :has(> div img), :has(> figure img)), .lc-hscroll):not(header *, footer :not(.lc-hscroll), .lc-gal, .lc-gallery, .lc-gallery *, .lc-noscroll, [style*="minmax(min("]) {
     display: flex !important; flex-wrap: nowrap !important; overflow-x: auto; scroll-snap-type: x mandatory; gap: 12px !important;
-    margin-right: -20px !important; padding-right: 20px !important; padding-bottom: 4px;
+    margin-right: 0 !important; padding-right: 0 !important; padding-bottom: 4px; max-width: 100%;
     scrollbar-width: none; -webkit-overflow-scrolling: touch; overscroll-behavior-x: contain;
   }
   :is(div[style*="grid-template-columns"]:has(> :nth-child(3)):is(:has(> a), :has(> article), :has(> div img), :has(> figure img)), .lc-hscroll):not(header *, footer :not(.lc-hscroll), .lc-gal, .lc-gallery, .lc-gallery *, .lc-noscroll, [style*="minmax(min("])::-webkit-scrollbar { display: none; }
@@ -270,7 +270,7 @@ a.lc-hero-cta.lc-hero-cta[href] { box-shadow: none !important; }
   header + section:has(> img) > div[aria-hidden][style*="inset:0"] { display: none !important; }
   header + section:has(> img) > div[aria-hidden][style*="bottom:0"] {
     top: calc(min(60vw, 300px) - 80px) !important; bottom: auto !important; height: 80px !important;
-    background: linear-gradient(to top, #09090B, transparent) !important;
+    background: linear-gradient(to top, #151519, transparent) !important;
   }
   header + section:has(> img) > .lc-section {
     padding-top: calc(min(60vw, 300px) + 14px) !important; padding-bottom: 32px !important;
@@ -336,7 +336,8 @@ a.lc-hero-cta.lc-hero-cta[href] { box-shadow: none !important; }
   table[style*="min-width:640px"] :is(th, td) { padding: 10px 8px !important; overflow-wrap: break-word; hyphens: auto; vertical-align: top; }
   table[style*="min-width:640px"] th { font-size: 11px !important; letter-spacing: 0.06em !important; }
   /* Christmas page header button stays on one line */
-  header a[href="#packages"] { padding: 12px 12px !important; font-size: 13px !important; letter-spacing: 0.03em !important; white-space: nowrap; }
+  header a[href="#packages"] { padding: 12px 14px !important; font-size: 0 !important; white-space: nowrap; }
+  header a[href="#packages"]::after { content: 'Book now'; font-size: 14px; letter-spacing: 0.06em; }
 
   /* Homepage Sim room / Exclusive hire / hours: the same tiles as the attraction pages' key facts */
   .lc-hero-stats { display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 8px !important; margin-top: 28px !important; border-top: 0 !important; }
@@ -348,7 +349,7 @@ a.lc-hero-cta.lc-hero-cta[href] { box-shadow: none !important; }
   .lc-hero-stats > div > div + div { font-size: 19px !important; line-height: 1.05 !important; margin-top: 4px !important; }
   /* Enquiry form "What are you planning?" choices: one swipeable line */
   .lc-chips {
-    flex-wrap: nowrap !important; overflow-x: auto; margin-right: -20px; padding-right: 20px; scrollbar-width: none;
+    flex-wrap: nowrap !important; overflow-x: auto; max-width: 100%; scrollbar-width: none;
     -webkit-mask-image: linear-gradient(to right, #000 85%, transparent); mask-image: linear-gradient(to right, #000 85%, transparent);
   }
   .lc-chips::-webkit-scrollbar { display: none; }
@@ -364,5 +365,20 @@ a.lc-hero-cta.lc-hero-cta[href] { box-shadow: none !important; }
   .lc-hero-controls > div:last-child > button { width: 36px !important; height: 36px !important; font-size: 14px !important; }
   /* Belt and braces: nothing can make the page slide sideways on phones */
   body { overflow-x: hidden; }
+  html, body { max-width: 100%; }
 }
-
+@media (max-width: 760px) {
+  /* Christmas page header: the account icon covers log in, so the extra text link goes */
+  header nav a[href*="/login"]:not(.lc-hdr-icon) { display: none !important; }
+  /* Decorative timeline lines that poke past the right edge */
+  span[style*="right:-24px"] { right: 0 !important; }
+}
+/* Hero banners on every page: a lighter panel with a red edge, so it's clear where the banner ends and the page starts
+   (on desktop this shows on heroes without a full photo; on phones under the photo banner too). */
+header + section { background: #151519 !important; border-bottom: 2px solid #ED2835 !important; }
+header + section .lc-hero-stats > div { background: #1E1E24 !important; }
+/* Browsers without overflow-x: clip (older iPhones) fall back to hidden on the page wrappers, so nothing can make the
+   page wider than the screen (the sticky header may not stick there). */
+@supports not (overflow-x: clip) {
+  div[style*="overflow-x:clip"], .lc { overflow-x: hidden !important; }
+}
