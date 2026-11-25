@@ -24,10 +24,10 @@ export default class Food extends React.Component {
     ];
     shots.forEach((s) => { s.hasImg = !!s.src; s.noImg = !s.src; });
     const pizzas = [
-      { pos: '1', name: 'Margherita', copy: 'Tomato, mozzarella and fresh basil. [CONFIRM]', img: '/images/9b7ffaf52daa0e567dc86082f20db456.webp', alt: 'Margherita pizza' },
-      { pos: '2', name: 'Pepperoni', copy: 'Tomato, mozzarella and pepperoni. [CONFIRM]', img: '/images/6b70836bdb7a6ffa1b24a23dbf626d4b.webp', alt: 'Pepperoni pizza' },
-      { pos: '3', name: 'Prosciutto & Rocket', copy: 'Prosciutto, rocket and parmesan shavings. [CONFIRM]', img: '/images/5d94b15c7fa716a5b500a87e07e33c15.webp', alt: 'Prosciutto and rocket pizza' },
-      { pos: '4', name: 'Truffle Mushroom', copy: 'Mushroom, truffle and mozzarella white base. [CONFIRM]', img: '/images/044f5cbf207b9bc451021c6f2aea07c5.webp', alt: 'Truffle mushroom pizza' }
+      { pos: '1', name: 'Margherita', copy: 'Tomato, mozzarella and fresh basil. [CONFIRM]', img: '/images/pizza-norwich-margherita-kraft-box.webp', alt: 'A Margherita pizza with tomato, melted mozzarella and fresh basil in a kraft pizza box' },
+      { pos: '2', name: 'Pepperoni', copy: 'Tomato, mozzarella and pepperoni. [CONFIRM]', img: '/images/pizza-norwich-pepperoni-kraft-box.webp', alt: 'A pepperoni pizza with crisp cupped pepperoni and a stretchy cheese pull in a kraft pizza box' },
+      { pos: '3', name: 'Hawaiian', copy: 'Tomato, mozzarella, ham and pineapple. [CONFIRM]', img: '/images/pizza-norwich-hawaiian-ham-pineapple.webp', alt: 'A Hawaiian pizza topped with ham and pineapple chunks in a kraft pizza box' },
+      { pos: '4', name: 'Meat Feast', copy: 'Pepperoni, ham, bacon and sausage. [CONFIRM]', img: '/images/pizza-norwich-meat-feast.webp', alt: 'A meat feast pizza loaded with pepperoni, ham, bacon and sausage in a kraft pizza box' }
     ];
     const faqList = [
       ['Which bookings include pizza*?', 'Our Pizza* Included + Bring Your Own Drinks packages: Saturday Afternoon, Saturday Night and festive weeknights in December and early January. See the price list for details.'],
@@ -159,7 +159,7 @@ export default class Food extends React.Component {
 <p style={css(`margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.16em; color: ${V.accent}`)}>{"03 / THE LINE-UP"}</p>
 <h2 id="menu-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: clamp(48px, 6vw, 84px); line-height: 0.92; color: #FFFFFF; text-transform: uppercase")}>{"On the grid"}</h2>
 </div>
-<p style={css("margin: 0; max-width: 420px; font-size: 18px; line-height: 1.6; color: #A1A1AA")}>{"A large selection of pizzas*, with options for a range of dietary needs. [ADD FEATURED PIZZAS]"}</p>
+<p style={css("margin: 0; max-width: 420px; font-size: 18px; line-height: 1.6; color: #A1A1AA")}>{"A large selection of pizzas*, with options for a range of dietary needs."}</p>
 </div>
 <div style={css("display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px")}>
 {(V.pizzas || []).map((z, $index) => (<React.Fragment key={$index}>
@@ -176,7 +176,7 @@ export default class Food extends React.Component {
 </section>
 <section className="lc-section" aria-labelledby="pair-h" style={css("max-width: 1360px; margin: 0 auto; padding: 0 40px 120px")}>
 <div style={css("display: flex; flex-wrap: wrap; border-radius: 10px; overflow: hidden; border: 1px solid #232328; background: #131316")}>
-<div style={css("flex: 1 1 440px; min-height: 340px; position: relative; background: #18181C")}><img width="1448" height="1086" srcSet="/images/w/75b0be67d4e541bd9a3256d10090ecb7-480.webp 480w, /images/w/75b0be67d4e541bd9a3256d10090ecb7-800.webp 800w, /images/w/75b0be67d4e541bd9a3256d10090ecb7-1200.webp 1200w, /images/75b0be67d4e541bd9a3256d10090ecb7.webp 1448w" sizes="100vw" src="/images/75b0be67d4e541bd9a3256d10090ecb7.webp" alt="Bottles chilling on ice beside fresh pizzas on the bar" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} /></div>
+<div style={css("flex: 1 1 440px; min-height: 340px; position: relative; background: #18181C")}><img width="1536" height="1024" srcSet="/images/w/pizza-party-norwich-pepperoni-bring-your-own-drinks-480.webp 480w, /images/w/pizza-party-norwich-pepperoni-bring-your-own-drinks-800.webp 800w, /images/w/pizza-party-norwich-pepperoni-bring-your-own-drinks-1200.webp 1200w, /images/pizza-party-norwich-pepperoni-bring-your-own-drinks.webp 1536w" sizes="100vw" src="/images/pizza-party-norwich-pepperoni-bring-your-own-drinks.webp" alt="A boxed pepperoni pizza beside a chilled bottle, a can and plastic cups on a chequered napkin, for a Bring Your Own drinks pizza party in Norwich" style={css("position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover")} /></div>
 <div style={css("flex: 1 1 440px; padding: 48px; display: flex; flex-direction: column; justify-content: center; gap: 14px")}>
 <div style={css(`font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: ${V.amber}`)}>{"PERFECT PAIRING"}</div>
 <h2 id="pair-h" style={css("margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 52px; line-height: 0.95; color: #FFFFFF; text-transform: uppercase")}>{"Pizza* meets"}<br />{"Bring Your Own"}</h2>
